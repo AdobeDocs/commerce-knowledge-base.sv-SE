@@ -1,0 +1,49 @@
+---
+title: Begäran om förbättrad integreringsmiljö - Pro och Starter
+description: Om du är kund hos Adobe Commerce på en Pro-planarkitektur i molnet och för närvarande använder integreringsmiljöer av standardstorlek, eller om du är kund hos Adobe Commerce på en Starter-planarkitektur i molnet och för närvarande använder den standardiserade mellanlagringsmiljön och vill ha mer kraft, kan du begära en uppgradering till förbättrade integreringsmiljöer, som ger ungefär fyra gånger så höga prestanda. I den här artikeln finns olika instruktioner för Pro-kunder och Starter-kunder.
+exl-id: c49b049b-efb8-412f-b27d-a89f8a758d85
+feature: Integration
+role: Admin
+source-git-commit: 43be85de953909253900d60488f76a20bac91793
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 0%
+
+---
+
+# Begäran om förbättrad integreringsmiljö - Pro och Starter
+
+Om du är kund hos Adobe Commerce på en Pro-planarkitektur i molnet och för närvarande använder integreringsmiljöer av standardstorlek, eller om du är kund hos Adobe Commerce på en Starter-planarkitektur i molnet och för närvarande använder den standardiserade mellanlagringsmiljön och vill ha mer kraft, kan du begära en uppgradering till förbättrade integreringsmiljöer, som ger ungefär fyra gånger så höga prestanda. I den här artikeln finns olika instruktioner för Pro-kunder och Starter-kunder.
+
+## Pro
+
+1. Om du använder Pro måste du minska antalet integreringsgrenar till två (**huvudgrenen Integration ingår i summan**). **Obs! Räkna inte med den primära grenen i den här summan. Den primära grenen betraktas inte som en integreringsgren.** Följ stegen i [Hantera grenar med molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) i vår dokumentation för utvecklare.
+1. Handlaren måste [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) begära uppgradering till Enhanced Integration Environment, med hjälp av kontaktorsaken &quot;*Begär en molnkonfigurationsändring*&quot;.
+1. Adobe kundkonstruktionsgrupp bekräftar antalet integreringsmiljöer och påbörjar ändringen.
+1. Handlaren meddelas i biljetten när uppgraderingen är klar.
+1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://devdocs.magento.com/cloud/env/environments-start.html#merge) i vår dokumentation för utvecklare. *Anteckning*: Distributionen sker automatiskt när du kör: <pre>git push-ursprung <branch-name></pre>
+
+Förbättrade prestanda innebär en lyckad uppgradering till förbättrade integreringsmiljöer.
+
+**Anteckningar**:
+
+* Standardstorleken och den förbättrade storleken är de enda två tillgängliga storlekarna.
+* Alla integreringsmiljöer för en viss butik har samma storlek - de kan inte storleksändras separat.
+* Om du behöver mer än två av de förbättrade integreringsmiljöerna kontaktar du ditt Adobe-kontoteam.
+
+## Starter
+
+1. Starter-planer får inte ha några integreringsgrenar: handlarna måste ta bort integreringsmiljöerna och bara lämna mellanlagringsmiljön. Följ stegen i [Hantera grenar med molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) i vår dokumentation för utvecklare. Antalet tillgängliga miljöer minskas så att maximalt en integreringsmiljö tillåts.
+1. Handlaren måste [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) begära en uppgradering till förbättrade integreringsmiljöer, med hjälp av kontaktorsaken *&quot;Begär en ändring av molnkonfigurationen&quot;* -  **din mellanlagringsmiljö är en namngiven integreringsmiljö**.
+1. Adobe kundkonstruktionsgrupp bekräftar antalet integreringsmiljöer och påbörjar ändringen.
+1. Handlaren meddelas i biljetten när uppgraderingen är klar.
+1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://devdocs.magento.com/cloud/env/environments-start.html#merge) i vår dokumentation för utvecklare. *Anteckning*: Distributionen sker automatiskt när du kör: <pre>git push-ursprung <branch-name></pre>
+
+Förbättrade prestanda innebär en lyckad uppgradering till förbättrade integreringsmiljöer.
+
+**Anteckningar**:
+
+* Standardstorleken och den förbättrade storleken är de enda två tillgängliga storlekarna.
+* Alla integreringsmiljöer för en viss butik har samma storlek - de kan inte storleksändras separat.
+* Om du behöver integreringsmiljöer utanför mellanlagring kan du kontakta ditt Adobe-kontoteam.
+* Om köpet görs efter den 17 september 2020 kommer den här förbättringen inte att gälla på grund av förstorade integreringsmiljöer.

@@ -1,0 +1,97 @@
+---
+title: 'ACSD-46192: Problem med async/bulk/V1/configurable-products/bySku/options endpoint'
+description: Korrigeringen ACSD-46192 åtgärdar problemet med slutpunkten async/bulk/V1/configurable-products/bySku/options. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 är installerat. Korrigerings-ID är ACSD-46192. Observera att problemet har åtgärdats i Adobe Commerce 2.4.5.
+exl-id: fed49708-868a-48ec-8dbc-638d75506a40
+feature: Configuration, Products
+role: Admin
+source-git-commit: 6c04285321879dae82fe3c5aa04f165fdba42bbd
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
+
+---
+
+# ACSD-46192: Problem med async/bulk/V1/configurable-products/bySku/options-slutpunkt
+
+Korrigeringen ACSD-46192 åtgärdar problemet med `async/bulk/V1/configurable-products/bySku/options` slutpunkt. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 är installerat. Korrigerings-ID är ACSD-46192. Observera att problemet har åtgärdats i Adobe Commerce 2.4.5.
+
+## Berörda produkter och versioner
+
+**Korrigeringen skapas för Adobe Commerce-versionen:**
+
+* Adobe Commerce (alla distributionsmetoder) 2.3.6 - 2.4.4-p1
+
+**Kompatibel med Adobe Commerce:**
+
+* Adobe Commerce (alla distributionsmetoder) 2.4.3 och 2.4.4
+
+>[!NOTE]
+>
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+
+## Problem
+
+Ett fel inträffar när en POST skickas till `async/bulk/V1/configurable-products/bySku/`.
+
+<u>Steg som ska återskapas</u>:
+
+1. Skicka en begäran om POST till `async/bulk/V1/configurable-products/bySku/`.
+
+```JSON
+[{
+  "sku": "MS-Champ",
+  "option": {
+    "attribute_id": "141",
+    "label": "Size",
+    "position": 0,
+    "is_use_default": true,
+    "values": [
+      {
+        "value_index": 9
+      }
+    ]
+  }
+}]
+```
+
+<u>Förväntade resultat</u>:
+
+Det finns inget fel. Du får följande svar:
+
+```JSON
+{
+  "bulk_uuid": "e5a94361-e16e-432b-a000-c1351a0d01b3",
+  "request_items": [
+    {
+      "id": 0,
+      "data_hash": "3e7369ffc0a1602c1f25601a2e11b130f65fd01e68b5091ad746d0cac5b7f35d",
+      "status": "accepted"
+    }
+  ],
+  "errors": false
+}
+```
+
+<u>Faktiska resultat</u>:
+
+Följande fel inträffar:
+
+```PHP
+TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::process() must be of the type array, string given, called in /var/www/html/vendor/magento/module-webapi-async/Controller/Rest/Asynchronous/InputParamsResolver.php on line 154 and defined in /var/www/html/vendor/magento/framework/Webapi/ServiceInputProcessor.php:172
+```
+
+## Tillämpa korrigeringen
+
+Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
+
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
+* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+
+## Relaterad läsning
+
+Mer information om verktyget för kvalitetskorrigeringar finns i:
+
+* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+
+Mer information om andra patchar som finns i QPT finns i [Patchar tillgängliga i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår dokumentation för utvecklare.

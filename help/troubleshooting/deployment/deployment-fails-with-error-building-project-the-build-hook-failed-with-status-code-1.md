@@ -1,0 +1,114 @@
+---
+title: '"Distributionen misslyckas med "Fel vid projektskapande: Byggkroken misslyckades med statuskod 1"'
+description: '"I den här artikeln beskrivs orsakerna till och lösningarna för Adobe Commerce när det gäller molninfrastruktursproblem, där installationsfasen misslyckas och felmeddelandet sammanfattas med: *"Fel i byggprojekt: Byggprocessen misslyckades med statuskod 1"*."'
+exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
+feature: Build, Deploy
+role: Developer
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '750'
+ht-degree: 0%
+
+---
+
+# Distributionen misslyckas med felet&quot;Error building project: The build krok failed with status code 1&quot;
+
+I den här artikeln beskrivs orsakerna till och lösningarna för Adobe Commerce när det gäller molninfrastrukturproblem, där installationsfasen misslyckas och felmeddelandet sammanfattas: *&quot;Fel när projekt skapades: Byggkroken misslyckades med statuskod 1&quot;*.
+
+## Berörda produkter och versioner
+
+* Adobe Commerce om molninfrastruktur, alla versioner
+
+## Problem
+
+<u>Steg som ska återskapas</u>:
+
+Utlös distributionen manuellt eller genom att utföra en sammanslagning, push eller synkronisering av din miljö.
+
+<u>Förväntat resultat</u>:
+
+Distributionen har slutförts.
+
+<u>Faktiskt resultat</u>:
+
+1. Byggfasen misslyckas och hela installationsprocessen fastnar.
+1. I distributionsfelloggen avslutas felmeddelandet med: *&quot;Fel när projekt skapades: Byggkroken misslyckades med statuskod 1. Avbruten generering&quot;.*
+
+## Orsak
+
+Det finns många orsaker till varför det inte går att bygga upp miljön. Vanligtvis visas ett långt felmeddelande i distributionsloggen, där den första delen är mer specifik vad gäller orsaken och slutsatsen blir *&quot;Fel när projekt skapades: Byggkroken misslyckades med statuskod 1. Avbruten generering&quot;.*
+
+Om du tittar närmare på den första problemspecifika delen kan du identifiera problemet. Här är de vanligaste och i nästa avsnitt finns lösningar:
+
+* Det finns inget tillgängligt lagringsutrymme.
+* Ogiltig ECE-verktygskonfiguration.
+* Den korrigering du försöker tillämpa är inte kompatibel med din Adobe Commerce-version eller har konflikter med andra korrigeringsfiler som används eller dina anpassningar.
+* Problem med anpassad modulkod förhindrar att det går att skapa.
+
+## Lösning
+
+* Kontrollera att det finns tillräckligt med lagringsutrymme. Information om hur du kontrollerar tillgängligt utrymme finns i [Kontrollera diskutrymme i molnmiljö med CLI](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md) artikel. Du kan överväga att rensa loggkatalogerna och/eller öka diskutrymmet.
+* Kontrollera att ECE-verktygen är korrekt konfigurerade.
+* Kontrollera om det är korrigeringen som orsakar problemet. Lös konflikten eller kontakten [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Mer information finns nedan.
+* Kontrollera om det är det anpassade tillägg som orsakar problemet. Lös konflikten eller kontakta tilläggsutvecklarna för lösningen.
+
+I följande stycken finns mer information.
+
+### Rengör loggar och/eller öka utrymmet
+
+Kataloger som ska beaktas för rensning:
+
+* `var/log`
+* `var/report`
+* `var/debug/`
+* `var`
+
+Mer information om hur du kan öka diskutrymmet om du har en Adobe Commerce-arkitektur för molninfrastrukturplanen Starter finns i [Öka diskutrymmet för integreringsmiljön i molnet](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md). Samma instruktioner kan användas för att öka utrymmet för Adobe Commerce i molninfrastrukturen Pro-planens integreringsmiljö. För Pro Production/Staging måste du skicka in en biljett till [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)och begär mer diskutrymme. Men det övervakas av Platform. I vanliga fall behöver du inte hantera detta när Adobe Commerce övervakar parametrarna och meddelar dig och/eller vidtar åtgärder enligt avtalet.
+
+### Kontrollera att ECE-verktygen är korrekt konfigurerade
+
+1. Kontrollera att byggarhakarna är korrekt definierade i `magento.app.yaml` -fil. Om du använder Adobe Commerce 2.2.X ska du definiera byggkrokar enligt följande:
+
+   ```yaml
+   # We run build hooks before your application has been packaged.
+   build: |
+       php ./vendor/bin/ece-tools build
+   # We run deploy hook after your application has been deployed and started.
+   deploy: |
+       php ./vendor/bin/ece-tools deploy
+   ```
+
+   Använd [Uppgradera till skolverktygen](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) artikel för referens.
+
+1. Kontrollera att ECE-verktygspaketet finns i `composer.lock` genom att köra följande kommando:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; disposition.lock</code></pre>    Om de anges ser svaret ut som i följande exempel:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
+
+Se [Uppgradera till skolverktygen](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) artikel för referens.
+
+### Orsakar korrigeringen problemet?
+
+Om det är den tillämpade korrigeringen som förhindrar miljön från att skapas korrekt, kommer du att se något liknande i distributionsloggen:
+
+```bash
+%patch_name%.composer.patch
+[2019-02-19 18:12:59] CRITICAL:
+....
+[2019-02-19 18:12:59] CRITICAL: Command git apply --check --reverse /app/m2-hotfixes/%patch_name%.composer.patch returned code 1
+...
+W:
+W: Command git apply --check --reverse /app/m2-hotfixes/%patch_name%.composer.patch returned code 1
+W:
+W:
+W: build
+...
+E: Error building project: The build hook failed with status code 1. Aborted build.
+```
+
+Dessa felmeddelanden innebär att den korrigering du försöker tillämpa antingen har skapats för en annan version av Adobe Commerce eller är i konflikt med dina anpassningar eller tidigare tillämpade korrigeringar. Försök att lösa konflikten eller kontakta [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+
+### Är tillägget orsaken till problemet?
+
+Om det är det anpassade tillägg som förhindrar att miljön kan byggas ut visas namnen på de anpassade modulerna i distributionsloggen tillsammans med den särskilda konflikt som den här modulen orsakat. Lös konflikten eller kontakta tilläggsutvecklarna för lösningen.
+
+### Se till att ändringarna tillämpas
+
+Verkställ och push-styr ändringarna. Detta utlöser distributionen automatiskt.

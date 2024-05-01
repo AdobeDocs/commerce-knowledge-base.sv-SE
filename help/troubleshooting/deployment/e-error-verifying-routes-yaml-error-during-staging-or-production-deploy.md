@@ -1,0 +1,79 @@
+---
+title: "E: Fel vid verifiering av vägar.yaml-fel under mellanlagring eller produktionsdistribution"
+description: '"I den här artikeln finns en lösning på problemet med molninfrastruktur, där du får felmeddelandet *"E: Error while verification route.yaml"* när du försöker distribuera projektet till förproduktionsmiljön."'
+exl-id: 7f58591a-5581-46cd-984d-09ac2c0f3903
+feature: Deploy, Routes, Staging
+role: Developer
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 0%
+
+---
+
+# E: Fel vid verifiering av vägar.yaml-fel under mellanlagrings- eller produktionsdistributionen
+
+Den här artikeln innehåller en lösning på Adobe Commerce problem med molninfrastruktur, där du får *&quot;E: Fel vid verifiering av route.yaml&quot;* felmeddelande när projektet ska distribueras till förproduktionsmiljön.
+
+## Berörda versioner
+
+* Adobe Commerce om molninfrastruktur, alla versioner
+
+## Problem
+
+<u>Steg som ska återskapas</u>:
+
+Utlös en distribution genom att överföra koden till mellanlagrings- eller produktionsmiljön.
+
+<u>Förväntat beteende</u>:
+
+Distributionen har slutförts.
+
+<u>Faktiskt beteende</u>:
+
+Distributionen är blockerad och följande felmeddelande visas i loggen:
+
+<pre>Distribuerar program Verifierar konfiguration E: Fel vid verifiering av route.yaml.
+Följande domäner är konfigurerade för ditt kluster, men har inga definierade vägar i dina vägar.yaml-fil: - store1.example.com - store2.example.com - test-store.example.com Med dina aktuella vägar.yaml-konfiguration kommer dessa domäner INTE att hanteras!
+
+För att fortsätta, se här för instruktioner om felsökning: /help/troubleshooting/deployment/e-error-verifying-routes-yaml-error-during-staging-or-production-deploy.md</pre>
+
+## Orsak
+
+Det här felet inträffar om flödeskonfigurationen för eventuella ytterligare domäner som har lagts till i ditt projekt saknas i `routes.yaml` -fil.
+
+Som en del av uppgraderingen av Adobe Commerce självbetjäningsaktivering för konfiguration av självbetjäningsvägar har vi lagt till en kontroll före driftsättningen för att säkerställa att alla domäner i ditt projekt har konfigurerade vägar i `routes.yaml` -fil. Om någon domän saknar vägkonfiguration blockeras distributionen.
+
+## Lösning
+
+Du kan åtgärda den blockerade distributionen genom att uppdatera `routes.yaml` fil för att konfigurera vägar för domänerna som anges i felmeddelandet med någon av följande metoder:
+
+* Använd den patch som Adobe Commerce tillhandahåller under uppgraderingsprocessen.
+* Lägg till den saknade vägkonfigurationen manuellt i `routes.yaml` -fil.
+
+### Metod 1: Använd patchen som tillhandahålls av Adobe Commerce
+
+1. Leta efter en Adobe Commerce-supportbiljett med titeln *Aktivera självbetjäningsfunktioner för &lt;project _id=&quot;&quot;>&quot;.*
+1. Följ instruktionerna i biljetten för att tillämpa korrigeringen, som uppdaterar vägkonfigurationen för din molnmiljö.
+1. С implementera och push-implementera ändringarna för att omdistribuera projektet.
+
+### Metod 2: Lägg till den saknade flödeskonfigurationen manuellt
+
+1. Om du vill betjäna alla domäner i projektet med samma vägkonfiguration uppdaterar du `routes.yaml` fil som lägger till flödesmallar för standarddomänen och alla andra domäner i ditt projekt enligt följande exempel:
+
+   ```yaml
+   "http://{default}/":
+       type: upstream
+       upstream: "mymagento:http"
+   "http://{all}/":
+       type: upstream
+       upstream: "mymagento:http"
+   ```
+
+1. С implementera och implementera ändringarna för att omdistribuera projektet.
+
+Detaljerade instruktioner om hur du uppdaterar flödeskonfigurationen finns i [Cloud for Adobe Commerce > Konfigurera vägar](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_routes.html) i vår dokumentation för utvecklare.
+
+>[!NOTE]
+>
+>Om projektkonfigurationen anger domäner som inte längre används följer du de här stegen för att ta bort dem från projektet så snart som möjligt: 1. Skicka en supportanmälan med en lista över domäner som ska tas bort från dina projektmiljöer. 2. När supportteamet tagit bort domänerna uppdaterar du `routes.yaml` om du vill ta bort alla referenser till de föråldrade domänerna.

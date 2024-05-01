@@ -1,0 +1,70 @@
+---
+title: Behörighetsproblem för var-/exportmappen för Adobe Commerce i molnet
+description: I den här artikeln finns en lösning på ett problem där du inte kan exportera produktdata på grund av ett filbehörighetsproblem på servern i mappen "var/export/email". Symtomen är bland annat att produkt- och katalogexport inte är tillgänglig i användargränssnittet, men visas när SSH används.
+exl-id: 68120d3b-f5df-43a5-91f6-2ec519cc25ac
+feature: Cloud, Communications, Data Import/Export, Paas, Roles/Permissions
+role: Developer
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 0%
+
+---
+
+# Behörighetsproblem för var-/exportmappen för Adobe Commerce i molnet
+
+Den här artikeln innehåller en lösning på ett problem där du inte kan exportera produktdata på grund av ett filbehörighetsproblem på servern i `var/export/email` mapp. Symtomen är bland annat att produkt- och katalogexport inte är tillgänglig i användargränssnittet, men visas när SSH används.
+
+## Berörda produkter och versioner
+
+Adobe Commerce om molninfrastruktur, 2.3.0-2.3.7-p2, 2.4.0-2.4.3-p1
+
+## Problem
+
+Du kan inte exportera filer i `var/export/email` eller `var/export/archive` mapp.
+Distributionen misslyckades på grund av behörigheter på `var/export/email` eller `var/export/email/archive` därför att arkivmappen skapas via e-post och om jag bara gör exporten/e-postmeddelandet ibland finns det fortfarande ett problem) förutom att lägga till något för undermappen `var/export/email/archive`.
+
+<u>Steg som ska återskapas</u>:
+
+Gå till Admin **System** > *Dataöverföring* > **Exportera**.
+Välj de CSV-filer som ska sparas i `var/export/` mapp.
+
+<u>Förväntat resultat</u>:
+
+CSV-filer är synliga och kan exporteras.
+
+<u>Faktiskt resultat</u>:
+
+CSV-filer är inte synliga. Du ser även ett meddelande om nekad behörighet: *RecursiveDirectoryIterator::__construct(/app/project id>/var/export/email): failed open dir: Permission deny*
+
+Du får samma meddelande för alla exporttyper: Avancerade priser, Kundekonomi, Kundens huvudfil och Kundadresser.
+
+## Orsak
+
+Detta orsakas av en mapp som skapats i `/var` som har felaktiga behörigheter: `d-wxrwsr-T`. T-klisterbiten innebär att användarna bara kan ta bort de filer de äger, men den saknade körbara filen innebär att de inte kan skapa filer i katalogen.
+
+Detta märks ofta när en mapp med namnet `export`som innehåller en mapp med namnet `email`som innehåller en mapp med namnet `archive`.
+
+Om du vill kontrollera om katalogen har dessa felkonfigurerade behörigheter kör du följande kommando i CLI/Terminal:
+
+`ls -ld var/export/`
+
+Om behörigheterna är felkonfigurerade blir utdata:
+
+`d-wxrwsr-T 3 web web 4096 Aug 15 19:12 var/export/`
+
+
+## Lösning
+
+Du kan åtgärda detta genom att uppdatera behörigheterna för mapparna till 777 och sedan alla filer rekursivt genom att köra följande kommandon:
+
+```bash
+chmod 777 var/export/
+chmod 777 var/export/email/
+chmod 777 var/export/email/archive/
+chmod 777 -R var/export/
+```
+
+## Relaterad läsning
+
+* [Exportera](https://docs.magento.com/user-guide/system/data-export.html) i vår användarhandbok.

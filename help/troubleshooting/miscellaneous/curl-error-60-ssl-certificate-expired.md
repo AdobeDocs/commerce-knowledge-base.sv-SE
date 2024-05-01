@@ -1,0 +1,63 @@
+---
+title: 'cURL-fel 60: SSL-certifikatet har upphört att gälla'
+description: "I den här artikeln visas hur du kontrollerar när en gren senast distribuerades efter att ha fått ett cURL-fel 60: SSL-certifikatet har upphört att gälla i huvud- eller integreringsgrenarna på Adobe Commerce i molninfrastrukturen."
+exl-id: 74f1db7e-ee2b-4e27-8fcc-fe462a9e72c3
+feature: Configuration
+role: Developer
+source-git-commit: 6f631ca35b663c386bca9efe6e56db266502c0b1
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 0%
+
+---
+
+# cURL-fel 60: SSL-certifikatet har upphört att gälla
+
+I den här artikeln visas hur du kontrollerar när en gren senast distribuerades efter att ha tagit emot en `cURL error 60`: [!DNL SSL certificate] har gått ut i [!DNL Master] eller [!DNL Integration] på Adobe Commerce om molninfrastruktur.
+
+## Berörda produkter och versioner
+
+* Adobe Commerce om molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+
+## Orsak
+
+The [!DNL SSL certificates] i dessa filialer är endast giltiga i 30 dagar och filialen har kanske inte distribuerats om mer än 30 dagar.
+
+Felet ser ut ungefär så här:
+
+```cURL
+cURL error 60: SSL certificate problem: certificate has expired
+```
+
+## Lösning
+
+Kontrollera när grenen senast distribuerades. Om gränsvärdet är över 30 dagar ska du distribuera grenen igen.
+
+Två metoder för att kontrollera när den senaste distributionen utfördes:
+
+* [Metod 1: Användning [!DNL magento-cloud] CLI](#meth2).
+* [Metod 2: Öppna [!DNL Project URL]](#meth3).
+
+Om distributionen har slutförts utan fel visas [!DNL SSL certificate] förnyas automatiskt.
+
+Om distributionen misslyckas och du behöver hjälp med att lösa den, [skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
+### Metod 1: Användning [!DNL magento-cloud] CLI {#meth2}
+
+Kör det här kommandot: `magento-cloud activity:list`
+
+### Metod 2: Öppna [!DNL Project URL] {#meth3}
+
+Gå till exempel: `https://demo.magento.cloud/#/projects/<project>/environments/<environment>`och kontrollera när den senaste distributionen utfördes.
+
+## Relaterad läsning
+
+I vår utvecklardokumentation:
+
+* [Cloud Manager API: SSLCertificates](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/SSLCertificates)
+* [Konfigurera snabbt: Tillhandahåll SSL-/TLS-certifikat](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates)
+
+I vår kunskapsbas:
+
+* [Information om förfallodatum för anpassat SSL-certifikat](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.html)
+* [SSL-certifikat (TLS) för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html)

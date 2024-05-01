@@ -1,0 +1,72 @@
+---
+title: 'ACSD-50813: Administratören kan inte lägga till paketerade produkter som innehåller ett snedstreck'
+description: Använd patchen ACSD-50813 för att åtgärda prestandaproblemet i Adobe Commerce där administratören inte kan lägga till paketerade produkter som innehåller ett snedstreck (`/`) i SKU:n med funktionen *Lägg till produkter efter SKU* i administratörsbeställningen.
+exl-id: 80dfe877-9dfd-44a9-9bf0-37e929642fc0
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+workflow-type: tm+mt
+source-wordcount: '408'
+ht-degree: 0%
+
+---
+
+# ACSD-50813: Administratören kan inte lägga till paketerade produkter som innehåller ett snedstreck
+
+Korrigeringen ACSD-50813 åtgärdar ett problem där administratören inte kan lägga till paketerade produkter som innehåller ett snedstreck (`/`) i SKU med *[!UICONTROL Add Products by SKU]* till administratörsordningen. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.34 är installerat. Korrigerings-ID är ACSD-50813. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
+
+## Berörda produkter och versioner
+
+**Korrigeringen skapas för Adobe Commerce-versionen:**
+
+* Adobe Commerce (alla distributionsmetoder) 2.4.5-p1
+
+**Kompatibel med Adobe Commerce:**
+
+* Adobe Commerce (alla distributionsmetoder) 2.4.5 - 2.4.6-p1
+
+>[!NOTE]
+>
+>Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+
+## Problem
+
+Administratören kan inte lägga till paketerade produkter som innehåller ett snedstreck (`/`) i SKU med *[!UICONTROL Add Products by SKU]* till administratörsordningen.
+
+<u>Steg som ska återskapas</u>:
+
+1. Gå till **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
+1. Skapa en enkel produkt.
+1. Skapa en ny paketerad produkt.
+1. Lägg till ett snedstreck (`/`) mitt i SKU:n (Exempel: *Bu/ndle*).
+1. Lägg till ett paketalternativ med **[!UICONTROL Input Type]** = *[!UICONTROL Dropdown]*.
+1. Tilldela alternativet minst en enkel produkt.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Orders]** och skapa en ny order.
+1. Klicka på **[!UICONTROL Add Products by SKU]**.
+1. Ange SKU:n och klicka på **[!UICONTROL Add to Order]**.
+1. Öppna konsolen.
+1. Klicka på **[!UICONTROL Configure]**.
+
+<u>Förväntade resultat</u>:
+
+Det finns inget fel.
+
+<u>Faktiska resultat</u>:
+
+JS-fel i konsolen:
+
+*Ohanterat fel: Syntaxfel, okänt uttryck: div[id=sku_bu/ndle]*
+
+## Tillämpa korrigeringen
+
+Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
+
+* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
+* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+
+## Relaterad läsning
+
+Mer information om [!DNL Quality Patches Tool], se:
+
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+
+Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.

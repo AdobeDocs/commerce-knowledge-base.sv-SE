@@ -1,0 +1,61 @@
+---
+title: Långsam prestanda på grund av fullständig omindexering
+description: Den här artikeln innehåller en korrigering för dålig prestanda på grund av fullständig omindexering (där data i de indexeringsrelaterade databastabellerna uppdateras).
+exl-id: 4f20a862-cf54-4196-8a88-101f0c80f8f1
+feature: Best Practices
+role: Developer
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
+
+---
+
+# Långsam prestanda på grund av fullständig omindexering
+
+Den här artikeln innehåller en korrigering för dålig prestanda på grund av fullständig omindexering (där data i de indexeringsrelaterade databastabellerna uppdateras).
+
+## Berörda versioner och produkter
+
+* Adobe Commerce i molninfrastruktur 2.x.x
+* Adobe Commerce lokal 2.x.x
+
+### Problem
+
+Konstant tömning och indexåterskapande är några av orsakerna till prestandaförsämring. Dessutom lägger konstant, fullständig omindexering till lås i tabeller, vilket gör att webbplatsen fungerar mycket långsammare än förväntat.
+
+### Orsak
+
+Åtgärder som kan ge fullständig omindexering utfördes från administratören:
+
+* Spara produktattribut
+* Spara webbplats-/butiksvy
+* Butikskonfiguration
+
+>[!NOTE]
+>
+>Dessa åtgärder bör köras utanför kontorstid för att säkerställa att dessa åtgärder inte påverkar prestanda under kontorstid.
+
+[Tredjepartstillägg](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) kan också leda till att indexeringen görs om fullständigt. Fullständig omindexering kan också köras manuellt från CLI. Så här tar du reda på om du har index som omindexeras och som kan ge sämre prestanda:
+
+1. Utför den här frågan för att hitta indexerare som har indexerats om helt under de senaste 15 minuterna:
+
+   ```
+   SELECT * FROM indexer_state WHERE updated > NOW() - INTERVAL 15 MINUTE;
+   ```
+
+   Ett indexerarnamn i utdata innebär att indexeraren har indexerats om minst en gång under de senaste 15 minuterna.
+
+1. Om du har hittat fullständig omindexering ofta bör du ta reda på följande:
+   * Vem gör detta manuellt från CLI:n?
+   * Vad tredjepartsmodulen gör omindexeringen
+   * Vilken tredjepartsmodul markerar indexerare som *Ogiltig*
+
+### Lösning
+
+Kör bara omindexering när det behövs. Om du vill se steg går du igenom [Konfigurera indexerare](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) i vår dokumentation för utvecklare. En allmän rekommendation och bästa praxis är att tillåta den partiella omindexeringsmekanismen att hantera omindexering av data utan manuell åtgärd från en handlare. All omindexering ska göras med den inbyggda Adobe Commerce-funktionen (Mview). Mview utför partiell omindexering, vilket är det mest effektiva sättet att indexera om data. Mer information om Mview finns i [Indexeringsöversikt: Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) i vår dokumentation för utvecklare.
+
+## Relaterad läsning
+
+* [Indexeringsöversikt: Indexera om](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#how-to-reindex) i vår dokumentation för utvecklare.
+* [Okänd cache orsakar försämrad svarstid](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) i vår kunskapsbas för support.

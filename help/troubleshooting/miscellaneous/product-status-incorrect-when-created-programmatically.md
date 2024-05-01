@@ -1,0 +1,37 @@
+---
+title: Produktstatusen är felaktig när den skapas programmatiskt
+description: I den här artikeln finns en korrigering för när produktstatus är inaktiverad och produkter inte visas i butiken, eller tilldelas till fel butiksvyer när de skapas/uppdateras programmatiskt.
+exl-id: ac02f961-f9e2-4620-839f-b8dbd0befb15
+feature: Products
+role: Developer
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '212'
+ht-degree: 0%
+
+---
+
+# Produktstatusen är felaktig när den skapas programmatiskt
+
+I den här artikeln finns en korrigering för när produktstatus är inaktiverad och produkter inte visas i butiken, eller tilldelas till fel butiksvyer när de skapas/uppdateras programmatiskt.
+
+## Berörda produkter och versioner
+
+* Adobe Commerce i molninfrastruktur 2.X.X
+* Adobe Commerce lokal 2.X.X
+
+## Problem
+
+När katalogprodukterna skapas eller uppdateras via programkod från ett skript med Adobe Commerce-programmet startat, kan produkterna ha statusen Inaktiverat och/eller tilldelats fel butiksvy.
+
+## Orsak
+
+Problemet kan uppstå på grund av ACL-begränsningar för Adobe Commerce instansadministratörsroller. Om det är ett startprogram kommer det inte att finnas några initierade administratörssessioner med lämpliga ACL-inställningar. Det skulle få valideringar att misslyckas i `Magento_AdminGws` -modul som ansvarar för behörighetskontroll för sådana åtgärder.
+
+## Lösning för felaktig produktstatus
+
+Ange ett dynamiskt ID för `Magento\Framework\Authorization\PolicyInterface`, enligt beskrivningen i [ObjectManager>Programmatiska produktuppdateringar](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) i vår dokumentation för utvecklare.
+
+## Relaterad läsning
+
+* [Github: Det går inte att ändra produktstatus för produkt som skapats med productRepository](https://github.com/magento/magento2/issues/5664)

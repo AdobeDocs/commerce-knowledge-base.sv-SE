@@ -1,0 +1,32 @@
+---
+title: 'Översikt: [!DNL Quality Patches Tool] (QPT) v1.1.48'
+description: Detta underavsnitt innehåller en detaljerad beskrivning av de problem som åtgärdats av patcharna i [!DNL Quality Patches Tool] (QPT) v1.1.48.
+feature: Tools and External Services
+role: Admin, Developer
+exl-id: 6170c616-312c-4de3-98dc-e2c27c376608
+source-git-commit: 42712af2ce4337cd64b8dea555139e4252fb91cf
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 0%
+
+---
+
+# Översikt [!DNL Quality Patches Tool] (QPT) v1.1.48
+
+Detta underavsnitt innehåller en detaljerad beskrivning av de problem som åtgärdats av patcharna i [!DNL Quality Patches Tool] (QPT) v1.1.48.
+
+QPT v1.1.48 innehåller följande patchar:
+
+1. **ACSD-55566**: Åtgärdar problemet där *[!UICONTROL mergeCart mutation]* misslyckas med *Internt serverfel* i GraphQL-svar när käll- och destinationskort slås samman har samma paketerade artiklar.
+1. **ACSD-56546**: Korrigerar problemet där konfigurerbara och paketerade produkter visas som *[!UICONTROL Out of Stock]* på butiken när *[!UICONTROL Display Out of Stock Product]* konfigurationen är inaktiverad.
+1. **ACSD-56635**: Korrigerar problemet där den importerade kunden dupliceras med samma e-postadress när importen används med [!UICONTROL Account Sharing] ange till *[!UICONTROL Global]*.
+1. **ACSD-56741**: Åtgärdar felmeddelandet *Försöker få åtkomst till matrisförskjutning på värdet av typen null* som visas under `setup:upgrade` när databasen innehåller en anpassad MySQL-utlösare som inte är relaterad till indexeringsmekanismen och [!DNL MView].
+1. **ACSD-57315**: Korrigerar problemet där en ny transaktion skapas i [!DNL PayPal Payflow Pro] varje gång **[!UICONTROL Fetch]** klickas på knappen på skärmen Visa transaktion i [!UICONTROL Admin].
+1. **ACSD-57337**: Korrigerar problemet där en administratörsanvändare med åtkomstbegränsningar för specifika webbplatser kan se företag från alla webbplatser på *[!UICONTROL Companies]* rutnät.
+1. **ACSD-57394**: Korrigerar felaktig produktsortering efter flera sorteringsfält i GraphQL.
+1. **ACSD-57565**: Åtgärdar problemet där *[!UICONTROL Order]* Instrumentpanelen visar felaktig orderinformation tills tidsperioden uppdateras. På kontrollpanelen visas nu korrekt orderstatistik vid första inläsningen.
+1. **ACSD-57854**: Korrigerar problemet där produkt-GraphQL begär returnerar inaktiverade kategorier i kategoriaggregeringar.
+1. **ACSD-58008**: Korrigerar problemet där en uppdatering av en schemalagd uppdatering tar bort den tidigare versionen av det mellanlagrade objektet om inget slutdatum anges.
+
+Använd menyn till vänster för att navigera till en viss korrigeringssida.
+

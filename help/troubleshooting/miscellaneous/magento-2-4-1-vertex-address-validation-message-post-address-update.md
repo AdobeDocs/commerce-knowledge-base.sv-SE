@@ -1,0 +1,76 @@
+---
+title: Adobe Commerce 2.4.1 Vertex Address validation message post address update
+description: I den här artikeln beskrivs ett känt Adobe Commerce 2.4.1-problem där vertex-adressvalidering inte fungerar under betalningssteget när en annan leveransadress än faktureringsadressen används. Problemet är schemalagt att åtgärdas i Adobe Commerce 2.4.2.
+exl-id: c2abeb96-e837-4d16-92dd-82fea5661dd9
+feature: Shipping/Delivery
+role: Developer
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 0%
+
+---
+
+# Adobe Commerce 2.4.1 Vertex Address validation message post address update
+
+I den här artikeln beskrivs ett känt Adobe Commerce 2.4.1-problem där vertex-adressvalidering inte fungerar under betalningssteget när en annan leveransadress än faktureringsadressen används. Problemet är schemalagt att åtgärdas i Adobe Commerce 2.4.2.
+
+## Berörda produkter och versioner
+
+* Adobe Commerce lokalt 2.4.1 med Vertex-integrering aktiverad
+* Adobe Commerce i molninfrastruktur 2.4.1 med Vertex-integrering aktiverad
+
+## Problem
+
+Förutsättningar:
+
+Aktivera **Rensning av vertex-adress**. Om du vill se steg går du till [Konfigurerar adressrensning för Storefront](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) i vår användarhandbok.
+
+<u>Steg som ska återskapas:</u>
+
+1. Skapa ett konto och logga in.
+1. Lägg till en artikel i kundvagnen genom att klicka **Lägg i kundvagnen**. Klicka på kundvagnsikonen och klicka sedan på **Gå till kassan**.
+1. Ange en giltig adress i dialogrutan **Leveransadress** fält.
+1. Markera något av alternativen under **Leveransmetoder**. Klicka sedan på **Nästa**.
+1. Om adressverifieringen föreslår en annan adressinformation klickar du på **Uppdatera adress** och klicka **Nästa**.
+1. Avmarkera **Fakturerings- och leveransadressen är samma** kryssrutan.
+
+<u>Första scenariot:</u>
+
+Följ [över sex steg](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) och sedan:
+
+1. Ange en ny giltig faktureringsadress.
+1. Klicka på **Uppdatera** -knappen. Meddelandet/förslaget visas enligt följande: *Adressen är inte giltig.* Detta följer med ett adressförslag som: *Postnummer: XXXXX-XXXX Street: XXX City Street XXX*
+1. Klicka på **Uppdatera** (klicka inte på **Uppdatera adress** -knapp för vertex-adressförslag).
+1. Klicka på **Redigera** knappen för den uppdaterade faktureringsadressen.
+1. Välj adressen i listrutan Adress.
+1. Klicka på **Uppdatera** -knappen.
+
+<u>Förväntat resultat:</u>
+
+Det gamla meddelandet/förslaget för validering har tagits bort.
+
+<u>Faktiskt resultat:</u>
+
+Meddelande/förslag för validering *&quot;Vi hittade ingen giltig adress Postnummer: XXXXX-XXXX Street : XXX City street XXX&quot;* meddelandet är **NOT** borttagen. Samma problem uppstår om du anger en ogiltig adress i formuläret.
+
+<u>Andra scenariot:</u>
+
+Följ [över sex steg](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) och sedan:
+
+1. Ange en giltig adress i adressformuläret.
+1. Klicka på **Uppdatera** -knappen. Meddelandet/förslaget visas enligt följande: *Adressen är inte giltig.* Detta följer med ett adressförslag som: *Postnummer: XXXXX-XXXX Street: XXX City Street XXX*.
+1. Klicka på **Uppdatera** (klicka inte på **Uppdatera adress** knappen för vertex-adressförslag).
+1. Kontrollera ***Fakturerings- och leveransadressen är samma*** nedrullningsbar meny.
+
+<u>Förväntat resultat:</u>
+
+Det gamla meddelandet/förslaget för validering har tagits bort.
+
+<u>Faktiskt resultat:</u>
+
+Meddelande/förslag för validering *&quot;Vi hittade ingen giltig adress Postnummer: XXXXX-XXXX Street XXX City street XXX&quot;* meddelandet är **NOT** borttagen. Samma problem uppstår om du anger en ogiltig adress i formuläret.
+
+## Relaterad läsning i vår kunskapsbas:
+
+[Problem med Adobe Commerce 2.3.6, 2.4.0-p1 och 2.4.1: det går inte att logga in på dotdigital när kontot är aktiverat](/help/troubleshooting/miscellaneous/magento-2-3-6-2-4-0-p1-2-4-1-known-issue-dotdigital-login.md)

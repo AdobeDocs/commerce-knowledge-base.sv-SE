@@ -1,0 +1,72 @@
+---
+title: 'ACSD-56023: Widgetinnehåll uppdateras inte på CMS-sidan'
+description: Använd korrigeringsfilen ACSD-56023 för att åtgärda Adobe Commerce-problemet där widgetinnehållet inte uppdateras på CMS-sidan
+feature: CMS
+role: Admin, Developer
+exl-id: 2ff33b1c-ae92-4c59-83d2-e252bf543bab
+source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 0%
+
+---
+
+# ACSD-56023: Widgetinnehåll uppdateras inte på CMS-sidan
+
+Korrigeringen ACSD-56023 åtgärdar ett problem där widgetinnehållet inte uppdateras på CMS-sidan. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.44 är installerat. Korrigerings-ID är ACSD-56023. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
+
+## Berörda produkter och versioner
+
+**Korrigeringen skapas för Adobe Commerce-versionen:**
+
+* Adobe Commerce (alla distributionsmetoder) 2.4.5-p5
+
+**Kompatibel med Adobe Commerce:**
+
+* Adobe Commerce (alla distributionsmetoder) 2.4.2 - 2.4.6-p3
+
+>[!NOTE]
+>
+>Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+
+## Problem
+
+Widgetinnehåll uppdateras inte på CMS-sidan.
+
+<u>Steg som ska återskapas</u>:
+
+1. Skapa några produkter.
+1. Skapa den nya CMS-sidan och lägg till nya produkter i innehållet:
+
+   ```
+      {{widget type="Magento\Catalog\Block\Product\Widget\NewWidget" display_type="new_products" show_pager="1" products_per_page="5" products_count="10" template="product/widget/new/content/new_grid.phtml" page_var_name="pnetpm"}} 
+   ```
+
+1. Öppna den skapade sidan i butiken. Se till att cachelagra den.
+1. Öppna från Admin **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
+1. Välj valfri produkt för redigering och växling **[!UICONTROL Set Product as New]** till *Ja*.
+1. Gå till den skapade *CMS-sida* igen.
+
+<u>Förväntade resultat</u>:
+
+Sidan innehåller *Ny widget för produkter* med produkterna.
+
+<u>Faktiska resultat</u>:
+
+Sidan innehåller inte *Ny widget för produkter* och de nya produkterna visas inte.
+
+## Tillämpa korrigeringen
+
+Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
+
+* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
+* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+
+## Relaterad läsning
+
+Mer information om [!DNL Quality Patches Tool], se:
+
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+
+Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.

@@ -1,0 +1,36 @@
+---
+title: Stock-statusen är felaktig efter installation av Inventory management
+description: I den här artikeln finns en korrigering som anger att Stock-statusen är felaktig efter installation/uppgradering av Inventory management.
+exl-id: ae32fbe3-deab-4f31-b427-95f8b54a476f
+feature: Install, Inventory, Orders
+role: Developer
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 0%
+
+---
+
+# Stock-statusen är felaktig efter installation av Inventory management
+
+I den här artikeln finns en korrigering som anger att Stock-statusen är felaktig efter installation/uppgradering av Inventory management.
+
+## Stock-statusen är felaktig på vissa webbplatser
+
+När du först installerat eller uppgraderat för att ha Inventory management i Adobe Commerce-miljön för flera webbplatser har inte alla webbplatser rätt Stock-status för produkter.
+
+## Berörda produkter och versioner
+
+* Adobe Commerce i molninfrastrukturen, alla versioner, med Inventory management installerat
+* Adobe Commerce lokal 2.3.0 och senare, med Inventory management installerat
+* Magento Open Source 2.3.0 och senare, med Inventory management installerat
+
+## Orsak
+
+När du först installerar/uppgraderar tilldelas alla produkter standardkällan och alla kvantiteter kopplas till den källan. Standardkällan tilldelas standardStock, med webbplatsen Standard associerad.
+
+## Lösning
+
+Om du har fler än en webbplats måste du lägga till dessa webbplatser som Sales Channeler i standardlagret eller andra anpassade resurser.
+
+Se [Stock-delen av wiki-/användarhandboken](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) i vår användarhandbok för mer information om hur du gör detta.

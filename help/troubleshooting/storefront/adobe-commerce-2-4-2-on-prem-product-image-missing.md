@@ -1,0 +1,67 @@
+---
+title: "Adobe Commerce lokal 2.4.2: produktbild saknas"
+description: I den här artikeln beskrivs ett känt problem med Adobe Commerce lokalt 2.4.2 där produktbilden inte överförs till produktsidan. Problemet är planerat att åtgärdas i en framtida version efter version 2.4.3. Det finns ingen tillgänglig lösning för tillfället, men som en tillfällig lösning kan du inaktivera Nginx för att ändra storlek på bilder.
+exl-id: c4d9240e-5df5-4eab-bb4e-1f06f9bd3a1e
+feature: Iaas, Products, Storefront
+role: Admin
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 0%
+
+---
+
+# Adobe Commerce lokal 2.4.2: produktbild saknas
+
+I den här artikeln beskrivs ett känt problem med Adobe Commerce lokalt 2.4.2 där produktbilden inte överförs till produktsidan. Problemet är planerat att åtgärdas i en framtida version efter version 2.4.3. Det finns ingen tillgänglig lösning för tillfället, men som en tillfällig lösning kan du inaktivera Nginx för att ändra storlek på bilder.
+
+## Berörda produkter och versioner
+
+* Adobe Commerce lokal 2.4.2
+
+## Problem
+
+Produktbilden sparas i `s3` men den synkroniseras inte tillbaka till `pub/media` katalog. Problemet uppstår bara när du använder båda:
+
+* Webbplatsaktiverad Nginx för att ändra storlek på bilder
+* AWS `s3` som medielagring
+
+<u>Förutsättningar</u>:
+
+Adobe Commerce installerat med Nginx.
+
+<u>Steg som ska återskapas</u>:
+
+1. Konfigurera Adobe Commerce att använda AWS `s3` som medielagring.
+1. Konfigurera Nginx med `nginx.conf.sample` konfigurationsfilen som finns i Adobe Commerce installationskatalog och en Nginx virtuell värd. Se [Konfigurera Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) i vår dokumentation för utvecklare.
+1. Skapa en enkel produkt med en produktbild.
+1. Nginx har en okommenterad konfiguration för storleksändring av bilder i `nginx.conf.sample` liknar detta:
+
+```conf
+load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
+location /media/ {
+    location ~* ^/media/catalog/.* {
+        set $width "-";
+        set $height "-";
+        if ($arg_width != '') {
+            set $width $arg_width;
+        }
+        if ($arg_height != '') {
+            set $height $arg_height;
+        }
+        image_filter resize $width $height;
+        image_filter_jpeg_quality 90;
+    }
+```
+
+<u>Förväntade resultat</u>:
+
+Produktbilden överförs till produktsidan.
+
+<u>Faktiska resultat</u>:
+
+Produktbilden överförs inte till produktsidan.
+
+## Tillfällig lösning
+
+Inaktivera Nginx om du vill ändra storlek på bilder.

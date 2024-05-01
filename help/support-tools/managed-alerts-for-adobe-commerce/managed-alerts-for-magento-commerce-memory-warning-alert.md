@@ -1,0 +1,59 @@
+---
+title: 'Hanterade aviseringar för Adobe Commerce: minnesvarning'
+description: I den här artikeln beskrivs felsökningssteg för när du får en minnesvarning för Adobe Commerce i New Relic. Det krävs omedelbara åtgärder för att åtgärda problemet. Varningen ser ut ungefär så här, beroende på vilken meddelandekanal du valt.
+exl-id: bb5eb3f4-b162-4737-93d5-4037f2844bb1
+feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
+role: Admin
+source-git-commit: 8ef51d4e6d6efa51ad4b328a48b84e10c73f3ac6
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 0%
+
+---
+
+# Hanterade varningar för Adobe Commerce: minnesvarning
+
+I den här artikeln beskrivs felsökningssteg för när du får en minnesvarning för Adobe Commerce i New Relic. Det krävs omedelbara åtgärder för att åtgärda problemet. Varningen ser ut ungefär så här, beroende på vilken meddelandekanal du valt.
+
+![minnesvarning](assets/memory-warning-magento-managed.png){width="500"}
+
+## Berörda produkter och versioner
+
+Adobe Commerce om molninfrastruktur Pro planarkitektur
+
+## Problem
+
+Du får ett varningsmeddelande i New Relic om du har registrerat dig för [Hanterade aviseringar för Adobe Commerce](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) och ett eller flera av tröskelvärdena för larm har överskridits. Dessa varningar har utvecklats av Adobe Commerce för att ge kunderna en standarduppsättning med hjälp av insikter från support och konstruktion.
+
+<u>**Gör!**</u>:
+
+* Vi rekommenderar att du avbryter alla schemalagda distributioner tills den här aviseringen har rensats.
+* Placera platsen i underhållsläge omedelbart om platsen inte svarar eller inte svarar alls. Om du vill se steg går du till [Installationsguide > Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) i vår dokumentation för utvecklare. Se till att du lägger till din IP-adress i listan över undantagna IP-adresser för att vara säker på att du fortfarande kan komma åt din webbplats för felsökning. Om du vill se steg går du till [Underhåll listan över undantagna IP-adresser](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten#instgde-cli-maint-exempt) i vår dokumentation för utvecklare.
+
+<u>**Gör det inte!**</u>:
+
+* lansera fler marknadsföringskampanjer som kan ge er webbplats fler sidvisningar.
+* Kör indexerare eller ytterligare kroner, vilket kan orsaka extra belastning på processorn eller disken.
+* Utför några större administrativa uppgifter (dvs. administratören, import/export av data).
+* Rensa cachen.
+
+## Lösning
+
+Följ de här stegen för att identifiera och felsöka orsaken.
+
+1. Använd [Infrastruktursida för New Relic APM](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/) för att identifiera de mest minnesintensiva processerna. Anvisningar finns i New Relic [Värdsida för infrastrukturövervakning > fliken Processer](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes). Om tjänster som Redis eller MySQL är den främsta källan för minnesförbrukning kan du försöka med följande:
+
+   * Kontrollera att du har den senaste versionen. Nyare versioner kan ibland åtgärda minnesläckor. Om du inte har den senaste versionen bör du uppgradera. Om du vill se steg går du till [Adobe Commerce om molninfrastruktur > Tjänster > Ändra tjänster](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) i vår dokumentation för utvecklare.
+   * Om du fortfarande inte kan identifiera källan till ökad minnesförbrukning söker du efter MySQL-problem som långvariga frågor, odefinierade primärnycklar och dubblerade index. Om du vill se steg går du till [De vanligaste databasproblemen i Adobe Commerce om molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) i vår kunskapsbas för support.
+   * Om det inte finns några MySQL-problem söker du efter PHP-problem. Granska pågående processer genom att köra `ps aufx` i CLI/Terminal. I slutversionen ser du vilka kroniska jobb och processer som körs. Kontrollera utdata för processernas körningstid. Om det finns en kron med lång exekveringstid kan kronen hänga. Se [Långsamma prestanda, långsamma och långvariga kroner](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md) och [Kronjobbet fastnade i körningsstatus](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md) i vår supportkunskapsbas för felsökningssteg.
+
+1. Om du fortfarande har svårt att identifiera orsaken till problemet kan du använda [New Relic APM&#39;s Transaction page](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems) för att identifiera transaktioner med prestandaproblem:
+
+   * Sortera transaktioner efter stigande Apdex-poäng. [Apdex](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction) avser hur nöjda användarna är med svarstiden för dina webbprogram och -tjänster. A [low Apdex score](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md) kan tyda på en flaskhals (en transaktion med en högre svarstid). Vanligtvis är det databasen, Redis eller PHP. Anvisningar finns i New Relic [Visa transaktioner med största missnöjd med Apdex](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/view-your-apdex-score#apdex-dissat).
+   * Sortera transaktioner efter högsta genomströmning, den långsammaste genomsnittliga svarstiden, den mest tidskrävande och andra tröskelvärden. Anvisningar finns i New Relic [Hitta specifika prestandaproblem](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems). Om du fortfarande har svårt att identifiera problemet kan du använda infrastruktursidan för New Relic APM.
+
+1. Om du inte kan identifiera orsaken till den ökade minnesanvändningen kan du granska aktuella trender för att identifiera problem med nyligen använda koddistributioner eller konfigurationsändringar (till exempel nya kundgrupper och stora ändringar i katalogen). Vi rekommenderar att du granskar de senaste sju dagarnas aktivitet för att se eventuella samband i koddistributioner eller ändringar.
+
+1. Om ovanstående metoder inte hjälper dig att hitta orsaken och/eller lösningen inom rimlig tid, begär du en uppgradering eller placerar platsen i underhållsläge om du inte redan har gjort det. Om du vill se steg går du till [Så här begär du tillfällig storlek](/help/how-to/general/how-to-request-temporary-magento-upsize.md) i vår kunskapsbas och [Installationsguide > Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) i vår dokumentation för utvecklare.
+
+1. Om storleken på upp-sidan återställer webbplatsen till normal drift kan du begära en permanent storlek (kontakta ditt Adobe-kontoteam) eller försöka återskapa problemet i din dedikerade mellanlagring genom att köra ett inläsningstest och optimera frågor, eller kod som minskar trycket på tjänsterna. Se [Adobe Commerce i molninfrastruktur > Testa driftsättning > Belastnings- och stresstestning](https://devdocs.magento.com/cloud/live/stage-prod-test.html#loadtest) i vår dokumentation för utvecklare.

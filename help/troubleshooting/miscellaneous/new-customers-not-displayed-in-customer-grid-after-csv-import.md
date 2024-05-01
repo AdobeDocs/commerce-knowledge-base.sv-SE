@@ -1,0 +1,50 @@
+---
+title: Nya kunder visas inte i kundrutnätet efter CSV-import
+description: I den här artikeln finns en korrigering av problemet när du inte kan se nya kunder under **Kunder** &gt; **Alla kunder** efter en import från en .csv-fil. Lösningen är att ställa in indexeraren "customer_grid" till "Update on Save" och manuellt indexera om kundrutnätet.
+exl-id: e4d9d60a-a0d1-4602-924e-a338e56de61d
+feature: Data Import/Export
+role: Developer
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 0%
+
+---
+
+# Nya kunder visas inte i kundrutnätet efter CSV-import
+
+Den här artikeln innehåller en korrigering av problemet när du inte kan se nya kunder under **Kunder** > **Alla kunder** efter import från `.csv` -fil. Lösningen är att ställa in `customer_grid` indexerare till&quot;Update on Save&quot; och manuellt indexera om kundrutnätet.
+
+## Berörda versioner
+
+* Adobe Commerce lokal 2.2.0 och senare
+* Adobe Commerce om molninfrastruktur 2.2.0 och senare
+
+## Problem
+
+Efter import av nya kunder från en `.csv` med hjälp av den inbyggda importfunktionen i Adobe Commerce kanske du inte kan se de nya kundposterna under **Kunder** > **Alla kunder** i Admin tills du indexerar om `customer_grid` indexerare.
+
+## Orsak
+
+Indexeringsläget Uppdatera enligt schema i Adobe Commerce 2.2.0 och senare stöder inte `customer_grid` indexerare på grund av prestandaproblem.
+
+## Lösning
+
+Konfigurera `customer_grid` indexerare som ska indexeras om med läget &quot;Uppdatera vid spara&quot;. Gör så här:
+
+1. Logga in på Commerce Admin.
+1. Klicka **System** > **verktyg** > **Indexhantering**.
+1. Markera kryssrutan bredvid indexeraren för kundstödraster.
+1. I **Åtgärder** nedrullningsbar lista, välja *Uppdatera vid Spara*.
+1. Klicka **Skicka**.
+
+Vi rekommenderar även att du indexerar om `customer_grid` indexeraren efter att indexeringsläget har konfigurerats för att säkerställa att indexet är uppdaterat och kan fungera med cron. Använd följande kommando om du vill indexera om manuellt:
+
+`bin/magento indexer:reindex customer_grid`
+
+## Mer information
+
+Länkar till relaterade ämnen i vår utvecklardokumentation:
+
+* [Översikt över indexering](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
+* [Hantera indexerare](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
