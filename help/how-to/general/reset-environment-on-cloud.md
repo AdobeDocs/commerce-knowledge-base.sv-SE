@@ -3,9 +3,9 @@ title: Återställ miljö på Adobe Commerce i molninfrastruktur
 description: I den här artikeln visas olika scenarier för återställning av en miljö på Adobe Commerce i molninfrastruktur.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: ddde2385f1d94194b34e9ed51f6cbda55c916d90
+source-git-commit: f2aeb0262ddcb3d7e78028d08b9323db243fc96b
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -156,8 +156,8 @@ Om du kör `setup:uninstall` -kommandot misslyckas med ett fel och kan inte slut
 
 1. [SSH i din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Anslut till MySQL DB: `mysql -h database.internal` (För Pro-miljöer, se: [Konfigurera tjänsten MySQL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html)).
-1. Släpp databasen \`main\`: `drop database main;`
-1. Skapa en tom \`main\`-databas: `create database main;`
+1. Släpp `main` DB: `drop database main;`
+1. Skapa en tom `main` DB: `create database main;`
 1. Ta bort följande konfigurationsfiler: `config.php` , `config.php` , `.bak,` , `env.php`, `env.php.bak`
 
 När databasen har återställts [skapa [!DNL git] push to the environment to trigger redeploy](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html) och installera Adobe Commerce i en ny databas. eller [kör kommandot redeploy](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
