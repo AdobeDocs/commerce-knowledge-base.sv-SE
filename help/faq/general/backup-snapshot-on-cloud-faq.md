@@ -3,9 +3,9 @@ title: 'Säkerhetskopiera (ögonblicksbild) i molnet: Vanliga frågor'
 description: I den här artikeln beskrivs grunderna för säkerhetskopiering av miljöer med ögonblicksbilder av Adobe Commerce om molninfrastruktur.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 9491279d147eac9ed36ad236c227b08e7c6e0211
+source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ I den här artikeln beskrivs hur du säkerhetskopierar miljöer med ögonblicksb
 
 ## Återställ en ögonblicksbild av miljön
 
-Om du vill återställa en befintlig ögonblicksbild (i den miljö som stöds: Integration, Mellanlagring, Produktion på Starter-plan eller Integrering på Pro-plan) följer du stegen i [Hantering av säkerhetskopiering: Återställ en manuell säkerhetskopiering](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) i vår Commerce on Cloud Infrastructure Guide.
+Om du vill återställa en befintlig ögonblicksbild (i den miljö som stöds: Integration, Mellanlagring, Produktion på Starter-plan eller Integrering på Pro-plan) följer du stegen i [Hantering av säkerhetskopiering: Återställ en manuell säkerhetskopiering](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) i vår Commerce on Cloud Infrastructure Guide.
 
 ## Säkerhetskopiering av databas (DB)
 
