@@ -4,9 +4,9 @@ description: I den här artikeln finns en lösning på problemet där du försö
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 465eb89cf5c5169b0b459ab7e6bdcbd418781093
+source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,10 @@ Om du vill lägga till processen som ett cron-jobb måste du lägga till `CRON_C
 >[!NOTE]
 >
 >Om du inte hittar `.magento.env.yaml` för din miljö, och du tror att den har tagits bort, måste du skapa en ny `.magento.env.yaml`. Det kan vara tomt från början, du kan lägga till information där efter behov. Referera till följande artiklar: [Konfigurera miljövariabler för distribution](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) och [Miljövariabler](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) i vår dokumentation för utvecklare.
+
+>[!TIP]
+>
+>[YAML-filer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) är skiftlägeskänsliga och tillåter inte tabbar. Var noga med att använda konsekvent indrag i hela .magento.env.yaml-filen, annars kanske inte konfigurationen fungerar som förväntat. Exemplen i dokumentationen och i exempelfilen använder indrag med två mellanslag. Kontrollera konfigurationen med hjälp av kommandot validate för verktygen.
 
 >[!NOTE]
 >
