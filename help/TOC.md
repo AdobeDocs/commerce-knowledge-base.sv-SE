@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: cdfcfbb1c6b91eb06bb028179676d022a1e27000
+source-git-commit: 76be98e46941bc6a7857aba8e95c8415ce3fc978
 workflow-type: tm+mt
-source-wordcount: '11006'
+source-wordcount: '11017'
 ht-degree: 0%
 
 ---
@@ -1110,6 +1110,7 @@ ht-degree: 0%
       * [Distributionsfel vid implementering av felaktiga filer](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [Distributionsfel där korrigeringar inte hittas](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [Distributionen misslyckades: Det finns inga definierade kommandon i namnområdesfelet &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
+      * [Distributionen misslyckas med rätt åtkomstnycklar i env:COMPOSER_AUTH eller auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Kända fel {#known-issues-patches-attached}
       * [[!DNL UPS] migrering av leveransmetodintegration från [!DNL SOAP] till [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Stöd för hotfix för leveransmetoden för markförmåner för AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
