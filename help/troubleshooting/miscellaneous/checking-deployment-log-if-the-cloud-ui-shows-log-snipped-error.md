@@ -1,19 +1,19 @@
 ---
 title: Kontrollerar distributionsloggen om molnanvändargränssnittet har fel av typen"loggutdragen"
-description: I den här artikeln finns en lösning på problemet där användargränssnittet i Adobe Commerce för molninfrastruktur visar *-loggen som klippts ut eftersom den var för lång* felmeddelande när distributionsloggen skulle visas.
+description: I den här artikeln finns en lösning på problemet där användargränssnittet i Adobe Commerce för molninfrastruktur visar *-loggen som klippts ut eftersom den var för lång* när du försökte visa distributionsloggen i molnprojektgränssnittet.
 exl-id: 04d28741-72c1-4722-be46-425fe136b9a6
 feature: Cloud, Deploy, Logs, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 71bec5b99063d771982f6dcab111b9e5a4aaec69
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# Kontrollerar distributionsloggen om molnanvändargränssnittet har fel av typen&quot;loggutdragen&quot;
+# Kontrollerar distributionsloggen om molngränssnittet har *loggen har klippts* fel
 
-Den här artikeln innehåller en lösning på problemet där användargränssnittet i Adobe Commerce för molninfrastruktur visar *loggen har klippts av eftersom den var för lång* felmeddelande när distributionsloggen visas.
+Den här artikeln innehåller en lösning på problemet där Adobe Commerce i molninfrastruktursgränssnittet visar *loggen har klippts av eftersom den var för lång* felmeddelande vid försök att visa distributionsloggen i molnprojektets användargränssnitt. (Gäller inte [Adobe Commerce Cloud Console](https://console.adobecommerce.com/).)
 
 ## Berörda produkter
 
@@ -21,7 +21,7 @@ Adobe Commerce om molninfrastruktur (alla versioner som stöds)
 
 ## Problem
 
-När du försöker visa distributionsloggen visas följande felmeddelande i användargränssnittet för molninfrastruktur: *loggen har klippts av eftersom den var för lång*.
+När du försöker visa distributionsloggen i molnprojektgränssnittet visas följande felmeddelande i Adobe Commerce i molninfrastrukturgränssnittet: *loggen har klippts av eftersom den var för lång*.
 
 ## Steg som ska återskapas
 
