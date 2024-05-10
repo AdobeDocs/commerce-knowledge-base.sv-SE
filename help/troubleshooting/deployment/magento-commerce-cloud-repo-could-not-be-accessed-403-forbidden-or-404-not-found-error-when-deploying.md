@@ -4,9 +4,9 @@ description: 'I den här artikeln beskrivs hur du löser problemet med misslycka
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Några orsaker till att nycklarna inte är giltiga är:
 Gör så här för att lösa problemet med auktoriseringsnycklarna (se avsnitten nedan för mer information om varje steg):
 
 1. Hämta giltiga auktoriseringsnycklar (hoppa över detta om du är helt säker på att din nyckel är giltig).
-1. Lägg till nyckelvärdet i `env:COMPOSER_AUTH` variabeln (eller kontrollera att rätt värde finns) och kontrollera om nycklarna anges konsekvent i variabeln och `auth.json` i projektets rot.
+1. Lägg till nyckelvärdet i `env:COMPOSER_AUTH` variabeln (eller kontrollera att rätt värde finns) och kontrollera om nycklarna anges konsekvent i variabeln på projektnivå och miljönivå samt i `auth.json` filen (om den finns) i projektets rot.
 1. Uppdatera eller ta bort `auth.json`, till att ha en plats där nyckeln är konfigurerad, om värdena för auktoriseringsnycklar inte har angetts eller har ett annat värde.
 
 ### 1. Skaffa giltiga auktoriseringsnycklar
