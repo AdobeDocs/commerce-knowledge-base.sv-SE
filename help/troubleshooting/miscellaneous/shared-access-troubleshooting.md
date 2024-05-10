@@ -4,9 +4,9 @@ description: '**Problem:** Du vill ge delad åtkomst till din betrodda kollega, 
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ ht-degree: 0%
 1. Om den specifika resursen saknas kan du kontakta kontoägaren (primär kontoinnehavare).
 
 Om du fortfarande har problem kontaktar du kontoteamet på Adobe eller skickar ett e-postmeddelande till grp-Magento-HelpCenterLoginIssues@adobe.com. Ange ditt namn och den e-postadress som är kopplad till ditt konto.
+
+## Jag använde delad åtkomst och klickade på [!UICONTROL Support], men när jag öppnade en ny biljett [!UICONTROL Organization] listrutan visas inte
+
+**Problem:** Jag har växlat till kontot för delad åtkomst men kan inte komma åt **[!UICONTROL Support tab]** (till exempel).
+
+**Möjlig orsak:** Du har bara beviljats delad åtkomst till en handlare i ditt konto.
+
+**Lösning:**
+
+1. Växla tillbaka till **[!UICONTROL My Account]**.
+1. Om bara en lista visas **[!UICONTROL Shared Name]**, det är *standardorganisation* att era biljetter öppnas under.
+
+Om du fortfarande har problem kontaktar du ditt Adobe-kontoteam eller skickar ett e-postmeddelande till grp-Magento-HelpCenterLoginIssues@adobe.com. Ange ditt namn och den e-postadress som är kopplad till ditt konto.
 
 ## Jag använde delad åtkomst men ser fortfarande mina biljetter istället för de delade
 

@@ -2,9 +2,9 @@
 title: "[!DNL Fastly] Frågor och svar om ursprungsinsvepning"
 description: Vanliga frågor och svar om [!DNL Fastly] aktivering av ursprungsinsvepning i Adobe Commerce (som har implementerats fullt ut 2021).
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
-source-git-commit: 348a1f6e455aff9ad7c562ea20c95f27c9ee0b86
+source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Den här funktionen skapades ursprungligen för att gynna Adobe Commerce på mol
 
 ## Behöver jag begära aktivering av ursprungsinsvepning för mitt projekt?
 
-Nej. Den här funktionen bör redan ha implementerats för alla molnprojekt och alla projekt som har etablerats sedan 2021 skulle ha aktiverats som standard. Du kan dock begära att ursprungsinsvepning inaktiveras för ditt projekt av [skicka en supportförfrågan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Nej. Den här funktionen bör redan ha implementerats för alla molnprojekt och alla projekt som har etablerats sedan 2021 skulle ha aktiverats som standard.
 
 ## Ändrar ursprungsinsvepning den utgående IP-adressen?
 
@@ -37,8 +37,22 @@ Nej, det gör det inte.
 
 [!DNL Fastly] cachelagrar inte API-anrop, så klienten bör klara ändringen. Insvepning av enbart ursprung blockerar begäranden som går direkt till ursprunget, som:
 
+* Produktion
+
 ```php
 mywebsite.com.c.abcdefghijkl.ent.magento.cloud
+```
+
+* Mellanlagring
+
+```php
+mcstaging2.mywebsite.com.c.abcdefghijkl.dev.ent.magento.cloud
+```
+
+* StagingX
+
+```php
+mcstagingX.mywebsite.com.c.abcdefghijkl.X.dev.ent.magento.cloud
 ```
 
 I det här exemplet kan klienten fortfarande nå API:t om de ändrar URL:en till ``mywebsite.com``:
