@@ -4,9 +4,9 @@ description: Under högsädessäsongen (ungefär mellan mitten november och mitt
 exl-id: 9d6910bf-30bc-4117-bf7f-a0316f9506b5
 feature: Cloud, Paas
 role: Admin
-source-git-commit: dfd3f788f42677b631ffb5b3153a1c79c2cc1ca3
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ När du är klar med den rekommenderade beräkningen kan du fortsätta med näst
 
 **Visa historiken för dina uppgraderingar**
 
-Du kan visa historiken över begärda storlekar i [Projektportal (introduktionsgränssnitt)](https://devdocs.magento.com/cloud/onboarding/onboarding-tasks.html), under **Projekt** > **Tjänster** > **Processoranvändningsspårning**.
+Du kan visa historiken för begärda storlekar genom att begära information från **CSM (kundframgångsansvarig)**.
 Följande information finns för varje begäran om storleksändring:
 
 * **Storlek på startdatum**: datum för begäran om uppgradering.

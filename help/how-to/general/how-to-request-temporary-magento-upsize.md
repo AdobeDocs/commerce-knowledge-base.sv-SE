@@ -3,9 +3,9 @@ title: Hur man begär tillfälliga Adobe Commerce-lösningar för molninfrastruk
 description: Om din organisation planerar en onlinehändelse där du förväntar dig hög trafik, eller om du plötsligt upptäcker att din webbplats håller på att genomgå en stor trafikaktivitet, kan du arkivera en [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) och begära tillfällig ytterligare molnkapacitet för din Adobe Commerce i molninfrastrukturbutiken.
 exl-id: 561e2bdd-718a-45c1-8b6c-a0e3a6c8ad04
 feature: Cloud, Iaas
-source-git-commit: a445bae7f013b29cb83fc96eb26dcbfd186a4de7
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Skicka en [Supportanmälan på Adobe Commerce Support Center](/help/help-center-
 
 ## Visa historiken för dina uppgraderingar
 
-Du kan visa historiken över begärda storlekar i [Projektportal (introduktionsgränssnitt)](/docs/commerce-cloud-service/start/onboarding.html#cloud-project-portal-(onboarding-ui)), under **Projekt** > **Tjänster** > **Processoranvändningsspårning**.
+Du kan visa historiken för begärda storlekar genom att begära information från **CSM (kundframgångsansvarig)**.
 Följande information finns för varje begäran om storleksändring:
 
 * **Storlek på startdatum**: datum för begäran om uppgradering.
