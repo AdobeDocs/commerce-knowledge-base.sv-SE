@@ -3,9 +3,9 @@ title: Användarhandbok för Adobe Commerce Help Center
 description: Lär dig hur du skickar en supportanmälan till Adobe Commerce Help Center, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 4e8833d100b776ca3c66a96274cde2d68eb0fd10
+source-git-commit: 86810427e8f902dc184b377257c8e86dd28f38f6
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '3992'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ Läs om hur du skickar en supportanmälan till [Adobe Commerce Help Center](http
 * [Åtkomst till delat konto (växlingskonton)](#switch-accounts)
 * [Felsökning av delad åtkomst](#troubleshooting-shared-access)
 
-**[VANLIGA FRÅGOR OM FAKTURERING FÖR ADOBE COMMERCE](#billing-faq)**
+**[FAKTURERINGSFRÅGOR FÖR ADOBE COMMERCE](#billing-faq)**
 
-**[MAGENTO U INGÅR NUMERA I ADOBE DIGITAL LEARNING SERVICES](#magento-u)**
+**[MAGENTO U ÄR NU EN DEL AV ADOBE DIGITALA LÄRNINGSTJÄNSTER](#magento-u)**
 
 ## VAD ÄR ADOBE COMMERCE HELP CENTER? {#what-is}
 
@@ -108,7 +108,7 @@ Så här skickar du en ny supportanmälan på din kontosida i Magento:
 
    ![magento_account_support_tab](assets/magento_account_support_tab.png){width="800"}
 
-1. Hjälpcentrets startsida visas.
+1. Startsidan för Help Center visas.
 1. Klicka **Skicka en biljett** längst upp till höger.
 1. Fyll i fälten.
 1. Klicka **Skicka**.
@@ -153,10 +153,10 @@ The **Skicka en biljett** -länken visas endast för kunder med ett e-postmeddel
 
 #### Använda konto för delad åtkomst
 
-För att kunna använda kontot för delad åtkomst för att skicka supportärenden måste du utföra följande (detta behöver bara göras en gång):
+Om du vill kunna använda kontot för delad åtkomst för att skicka supportärenden måste du göra följande (detta behöver bara göras en gång):
 
-1. Efter att ha tagit emot [delad åtkomst](https://support.magento.com/hc/en-us/articles/360052444712#who-can-provide-shared-access)loggar du in på ditt [Magento Account på webbplatsen magento.com](https://account.magento.com/).
-1. I dialogrutan **Växla konton** rullgardinsmenyn i det övre högra hörnet väljer du kontot för delad åtkomst.
+1. Efter mottagande [delad åtkomst](https://support.magento.com/hc/en-us/articles/360052444712#who-can-provide-shared-access)loggar du in på [Magento-konto på magento.com webbplats](https://account.magento.com/).
+1. I **Byt konto** i det övre högra hörnet väljer du kontot för delad åtkomst.
 1. Klicka på **Support** i den vänstra panelen. På så sätt ser du till att Adobe Commerce Help Center är korrekt konfigurerad via SSO-anropet från Magento.com till Adobe Commerce Help Center.
 
 #### Ser du fortfarande inte **Skicka en biljett** link
@@ -208,7 +208,7 @@ Lösningen är att validera din e-postadress:
 
 #### Problem
 
-<span class="wysiwyg-underline">Förutsättningar</span>: du har ett konto med delad åtkomst som du har fått av en handlare.
+<span class="wysiwyg-underline">Förutsättningar</span>: du har ett konto för delad åtkomst som beviljats av en handlare.
 
 <span class="wysiwyg-underline">Steg som ska återskapas</span>:
 
@@ -257,7 +257,7 @@ Klicka på motsvarande flik för att växla mellan dina biljetter och de biljett
 
 ![hc_my-tickets_tabs.png](assets/hc_my-tickets_tabs.png)
 
-Klicka på om du vill sortera biljetter **Skapad** eller **Senaste aktivitet** kolumnrubriker.
+Sortera biljetter genom att klicka **Skapad** eller **Senaste aktivitet** kolumnrubriker.
 
 #### Sök efter biljetter
 
@@ -311,7 +311,7 @@ E-post till de personer som du vill följa efter din biljett (till exempel *firs
 
 Du får lägga till e-post till personer som inte har ett Magento-konto eller ett Zendesk-konto. Dessa personer kan fortfarande delta i samtalet i din biljett.
 
-Så här lägger du till flera e-postmeddelanden i CC:
+Så här lägger du till flera e-postmeddelanden till CC:
 
 >[!NOTE]
 >
@@ -417,7 +417,7 @@ Om du har delad åtkomst till flera organisationer men det här fältet inte är
 
 #### Partnernamn (handelsnamn)
 
-För handlare: **Partnernamn** är utvecklingsorganisationens namn (Adobe Commerce [Teknikpartner](https://partners.magento.com/portal/directory/?&amp;partner_type=6) eller [Lösningspartner](https://partners.magento.com/portal/directory/?&amp;partner_type=1)) som deltar i utvecklingen av Adobe Commerce-butiken.
+För handlare: **Partnernamn** är namnet på utvecklingsorganisationen (Adobe Commerce) [Technology Partner](https://partners.magento.com/portal/directory/?&amp;partner_type=6) eller [Solution Partner](https://partners.magento.com/portal/directory/?&amp;partner_type=1)) som deltar i utvecklingen av Adobe Commerce Store.
 
 För partners: **Affärsnamn** är namnet på din kund.
 
@@ -518,19 +518,19 @@ Du kan ge andra kontoinnehavare på Magento begränsad åtkomst till ditt konto.
 
 Du kan ange och hantera delad åtkomst via kontosidan på Magento [https://account.magento.com](https://account.magento.com/).
 
-### Vilka kan ge delad åtkomst {#who-can-provide-shared-access}
+### Vem kan ge delad åtkomst? {#who-can-provide-shared-access}
 
-Endast kontoägaren (den primära kontoinnehavaren) med motsvarande behörigheter kan ge delad åtkomst för andra användare.
+Det är bara kontoägaren (primär kontoinnehavare) som har behörighet att ge delad åtkomst för andra användare.
 
 Det är kundens ansvar att hantera användare och deras åtkomst, särskilt när det gäller delad åtkomst. Adobe Commerce supportteam kan alltså inte ge delad åtkomst till ett Magento-konto åt en kund. Kunderna uppmuntras att lägga till användare med delad åtkomst själva med hjälp av [Magento-kontosida](https://account.magento.com/).
 
-Användare som har fått delad åtkomst kan inte överföra eller bevilja sådan åtkomst till andra användare.
+Användare som har fått delad åtkomst kan inte överföra eller ge sådan åtkomst till andra användare.
 
 ### Ge delad åtkomst {#provide-shared-access}
 
-Se [Dela ditt konto](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) i användarhandboken för Adobe Commerce finns detaljerad information om hur du konfigurerar ett delat konto.
+Se [Dela ditt konto](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) i Adobe Commerce användarhandbok för mer information om hur du skapar ett delat konto.
 
-När du har gett delad åtkomst för en ny användare är den relaterade informationen tillgänglig i **Delad åtkomst** > **Hantera behörigheter** på din Magento-kontosida.
+När en ny användare har fått delad åtkomst är den relaterade informationen tillgänglig i **Delad åtkomst** > **Hantera behörigheter** på Magento-kontosidan.
 
 ![magento-account-shared-manage-permissions](assets/magento-account-shared-manage-permissions.png){width="800"}
 
@@ -574,7 +574,7 @@ När du har återkallat behörigheten för dessa användare med delad åtkomst h
 1. Hitta användaren som den delade åtkomsten ska återkallas från och klicka på **[!UICONTROL Edit]** i användarens rad (*[!UICONTROL Actions]* kolumn).
 1. Avmarkera alla resurser under *[!UICONTROL Grant Account Permissions]*.
 
-![image](https://git.corp.adobe.com/storage/user/38345/files/2d42fa60-559f-4697-a3cf-287c7e765405)
+![grant-account-permissions-image](assets/help-center-user-guide-grant-account-permissions-image.png){width="800"}
 
 Mer information finns i [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) dokumentation om vår Commerce om Cloud Infrastructure Guide.
 
