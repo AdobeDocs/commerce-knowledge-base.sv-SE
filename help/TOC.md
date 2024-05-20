@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 5e20e9d150eb8a527e530a19abd8b364f55a5aa6
+source-git-commit: 5fb41bb335b03804f38b3bd95d699f0026ca8970
 workflow-type: tm+mt
-source-wordcount: '11013'
+source-wordcount: '11021'
 ht-degree: 0%
 
 ---
@@ -914,6 +914,7 @@ ht-degree: 0%
    * Diverse {#miscellaneous}
       * [Så här kontrollerar du varför [!DNL cron] har inaktiverats](/help/troubleshooting/miscellaneous/how-to-check-why-cron-was-disabled.md)
       * [Fel [!DNL opensearch] sökmotorn finns inte. Fallar tillbaka till [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [E-post som anger att exportlagringen är nästan full](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Indexen har gjorts ogiltig och &quot;indexer_reindex_all_invalid&quot; körs hela tiden](/help/troubleshooting/miscellaneous/constant-reindexing-with-cron-job-indexer-reindex-all-invalid.md)
       * [Konfigurationsfilen saknas eller har ändrats](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-fel 60: SSL-certifikatet har upphört att gälla](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
