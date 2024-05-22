@@ -3,9 +3,9 @@ title: '[!DNL Elasticsearch] visas som sökmotor trots [!DNL OpenSearch] install
 description: Den här artikeln innehåller en lösning på problemet där [!DNL Elasticsearch] visas fortfarande som sökmotor för Adobe Commerce i molnet även efter installation eller uppgradering till [!DNL OpenSearch].
 exl-id: cdd8a35d-da6f-46d3-b732-65626487c9bb
 feature: Install
-source-git-commit: 1a36e74807e6d32b0810416b6fb61aeca6f9be94
+source-git-commit: 1f053f76ae56edc06bfe82e55210244c8ec4b8eb
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,8 @@ Adobe Commerce i molnet 2.4.3-p2 - 2.4.5-p6
 
 Adobe Commerce är hårdkodat att ange [!DNL Elasticsearch7] som sökmotor.
 
+Detta ska inte blandas ihop med den installerade versionen av tjänsten. Programmet känner bara igen [!DNL Elasticsearch7] som sökmotor, men inte [!DNL OpenSearch]även om den använder det underliggande [!DNL OpenSearch] som motor i serverdelen.
+
 ## Lösning
 
 Verifiera om [!DNL OpenSearch] har installerats kör du följande kommando:
@@ -42,6 +44,29 @@ Verifiera om [!DNL OpenSearch] har installerats kör du följande kommando:
 **Metod 1**:
 
 * Kör följande kommando på servern: `curl 127.0.0.1:9200`. Den borde returnera [!DNL OpenSearch] med versionen.
+
+Exempel:
+
+```
+$ curl 127.0.0.1:9200
+{
+  "name" : $clusterName,
+  "cluster_name" : "opensearch_stg",
+  "cluster_uuid" : $clusterUuid,
+  "version" : {
+    "distribution" : "opensearch",
+    "number" : "1.2.4",
+    "build_type" : "deb",
+    "build_hash" : "44ccdbaed5fe5a8b02d99a611857a671b6dd909d",
+    "build_date" : "2022-11-08T09:23:45.993372Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.10.1",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "The OpenSearch Project: https://opensearch.org/"
+}
+```
 
 **Metod 2**:
 
