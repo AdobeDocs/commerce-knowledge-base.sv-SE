@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 5fb41bb335b03804f38b3bd95d699f0026ca8970
+source-git-commit: 45ab0d3a858239dc8a35ed81c3b0d2f7cda5c85b
 workflow-type: tm+mt
-source-wordcount: '11021'
+source-wordcount: '11031'
 ht-degree: 0%
 
 ---
@@ -1255,6 +1255,7 @@ ht-degree: 0%
    * [Ta bort Magento Order Management](/help/how-to/general/how-to-remove-mom.md)
    * [Tips om Commerce semester](/help/how-to/general/tech-tips-for-commerce-holiday-readiness.md)
    * [Åsidosätta WAF för GraphQL-förfrågningar](/help/how-to/general/how-to-bypass-waf-for-graphql-requests.md)
+   * [Uppgradera MariaDB 10.4 till 10.5 för Adobe Commerce i molnet](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * Vanliga frågor {#faq}
    * [Frågor och svar - översikt](/help/faq/overview.md)
    * [Brandvägg för webbaserade program (WAF) med stöd för Fast: Frågor och svar](/help/faq/general/web-application-firewall-waf-powered-by-fastly-the-faq.md)
