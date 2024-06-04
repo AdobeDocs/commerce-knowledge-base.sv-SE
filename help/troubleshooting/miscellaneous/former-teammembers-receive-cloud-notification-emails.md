@@ -4,16 +4,18 @@ description: Den här artikeln innehåller en lösning på e-postmeddelanden om 
 exl-id: b2535f66-8aec-4ddf-9a69-60879a0a1939
 feature: Cloud, Communications, Paas
 role: Developer
-source-git-commit: 075f295c5b600fcca9fbecc5aad20b0640d900f9
+source-git-commit: 0017d43e221ef3023630f714c34aa65b368e214f
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # Före detta teammedlemmar får Adobe Commerce molnmeddelanden via e-post
 
-Den här artikeln innehåller en lösning där gruppmedlemmar som inte längre är associerade med ditt projekt får meddelanden även fortsättningsvis.
+Den här artikeln innehåller en lösning för att ta bort användare från mottagarens lista med e-postmeddelanden som är:
+* Tidigare teammedlemmar som inte längre är kopplade till ditt projekt.
+* Aktuella teammedlemmar som inte ska ta emot meddelanden.
 
 ## Problem
 
