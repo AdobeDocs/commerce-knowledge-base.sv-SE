@@ -3,7 +3,7 @@ title: Återställningsmiljö utan ögonblicksbild i molnet
 description: I den här artikeln beskrivs två lösningar för att återställa en miljö utan att du behöver ha en ögonblicksbild av din miljö på Adobe Commerce i molninfrastruktur.
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: f3c976bd44dbc47bd5cc8076f1679d56910cfaf3
+source-git-commit: 5347e8714ef1374440f5d246100a0221e4b189fc
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -44,13 +44,13 @@ Läs de detaljerade stegen nedan:
 
 Vi måste inaktivera Configuration Management så att den inte automatiskt tillämpar de tidigare konfigurationsinställningarna under distributionen.
 
-Om du vill inaktivera konfigurationshantering måste du se till att `/app/etc/` katalogen innehåller inte `config.php` (för Adobe Commerce 2.2.x) eller `config.local.php` (för Adobe Commerce 2.1.x).
+Om du vill inaktivera konfigurationshantering måste du se till att `/app/etc/` katalogen innehåller inte `config.php` (för Adobe Commerce 2.4.x) eller `config.local.php` (för Adobe Commerce 2.1.x).
 
 Så här tar du bort konfigurationsfilen:
 
 1. [SSH i din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Ta bort konfigurationsfilen:
-   * För Adobe Commerce 2.2:
+   * För Adobe Commerce 2.4:
 
    ```php
     rm app/etc/config.php
