@@ -3,9 +3,9 @@ title: Användarhandbok för Adobe Commerce Help Center
 description: Lär dig hur du skickar en supportanmälan till Adobe Commerce Help Center, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 86810427e8f902dc184b377257c8e86dd28f38f6
+source-git-commit: 751a315303be3d6435f4064cdd3fb28a0c811155
 workflow-type: tm+mt
-source-wordcount: '3992'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,16 @@ Så här skickar du en ny supportanmälan på startsidan i Adobe Commerce Help C
 1. Fyll i fälten.
 1. Klicka **Skicka**.
 
-Du **måste logga in** till hjälpcentret med ditt Magento-konto för att skicka in en supportanmälan. Tills du är inloggad [den **Skicka en biljett** knappen visas inte](#no-submit-link).
+Du *måste ha* ett konto på både https://account.adobe.com och https://account.magento.com och logga sedan in på Help Center med ditt Adobe Commerce-konto för att skicka in en supportanmälan. Tills du är inloggad [den **Skicka en biljett** knappen visas inte](#no-submit-link).
+
+>[!NOTE]
+>
+>Om du redan har ett konto på https://account.magento.com, men inte kan logga in, kanske du inte har registrerat dig för ett konto på https://account.adobe.com, vilket krävs från och med augusti 2022.
+>
+>Så här löser du det:
+>1. Skapa ett konto på https://account.adobe.com med samma e-postadress på ditt MAG-ID.
+>1. Gå till https://account.magento.com om du vill länka din Adobe ID till ditt MAG-ID.
+
 
 #### Magento-kontosida {#submit-ticket-magento-account-page}
 
@@ -182,7 +191,7 @@ Om du har problem med att logga in på ditt konto eller tror att Delad åtkomst 
 
 >[!NOTE]
 >
->Skicka inte e-post om du kan skicka en biljett, utan i stället har problem med att få åtkomst till ditt molnprojekt. Vänligen skicka in biljetten för det här problemet via de vanliga kanalerna.
+>Om du har problem med att få åtkomst till ditt molnprojekt skickar du biljetten för det här problemet via de vanliga kanalerna. Skicka inte e-post om du kan skicka en biljett.
 
 ### Felmeddelandet &quot;Verifiera din e-postadress&quot; på Magento-kontosidan {#verify-email-address}
 
@@ -192,13 +201,8 @@ Du kan inte skicka in en supportanmälan om du får *Verifiera din e-postadress*
 
 Lösningen är att validera din e-postadress:
 
-1. Klicka på **Validera e-post** knappen under fältet E-post på [Redigera kontoinformation](https://account.magento.com/customer/account/edit/) sida som liknar den nedan.
-
-   ![Validate_Email_Solution](assets/Validate_Email_Solution.png){width="800"}
-
-1. Klicka på **Validera e-post** skickar ett e-postmeddelande till den e-postadress som är registrerad för det här Magento-kontot med en länk för att validera e-postadressen.
-1. Klicka på länken för e-postvalidering för att validera din e-post och lösa problemet.
-1. Om du inte får något e-postmeddelande med en e-postvalideringslänk skickar du ett e-postmeddelande [Hjälpcentrets inloggningsproblem](mailto:grp-magento-helpcenterloginissues@adobe.com) och ange att du inte kan validera din e-postadress.
+1. Logga in på https://account.adobe.com och begär ett lösenord om det behövs.
+1. Verifiera ditt Adobe-konto.
 
 >[!NOTE]
 >
