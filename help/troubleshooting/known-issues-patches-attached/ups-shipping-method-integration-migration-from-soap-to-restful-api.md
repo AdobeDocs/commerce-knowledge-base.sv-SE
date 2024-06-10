@@ -5,14 +5,18 @@ description: Tillämpa en patch för att hantera [!DNL UPS] migrering av leveran
 feature: Shipping/Delivery
 role: Developer
 exl-id: 8ab5d4a8-0155-4b2c-ab67-d0bd2f949a07
-source-git-commit: 7785a37e033bc2bea5b6a1509c337289e7b871cb
+source-git-commit: 6694bb1e041e6285f5bd5a05a1c37b7062521f52
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
 # [!DNL UPS] migrering av leveransmetodintegration från [!DNL SOAP] till [!DNL RESTful API]
+
+>[!NOTE]
+>
+>Om du överförde någon av de tre patcharna från den här artikeln innan **6 juni 2024**: Om du stöter på det här problemet på grund av [!DNL Metric System/SI] mått (kilo och centimeter) som inte används bör du återanvända en av dessa nya, uppdaterade korrigeringsfiler som nu publiceras i den här artikeln för din version av Adobe Commerce/Magento Open Source 2.4.4+/2.4.5+/2.4.6+ en gång till, eftersom du annars inte kan välja [!DNL Metric System/SI] mått på **kilo** och **centimeter** i [!DNL UPS] leveransmetoder i **[!DNL Admin configuration]**. Dessa nya patchar är kompatibla med de tidigare släppta patcharna. Problemet kommer att åtgärdas permanent i den kommande version av Adobe Commerce 2.4.7-p1 som planeras för **11 juni 2024**.
 
 >[!NOTE]
 >
@@ -39,9 +43,11 @@ Adobe Commerce om molninfrastruktur och lokalt, samt Magento Open Source:
 * 2.4.6
 * 2.4.6-pX
 
-## Orsak
+## Orsaker
 
 The [!DNL UPS] släppt en [säkerhetsuppdatering för [!DNL API]](https://developer.ups.com/oauth-developer-guide?loc=en_US&amp;sp_rid=NTA5MzQ1OTE2NjEyS0&amp;sp_mid=72989914).
+
+Om du har EU (andra ursprung kan uppleva samma problem) som Leveransens ursprung kommer detta att orsaka ett fel i [!DNL UPS REST] begäran: &quot;*En leverans kan inte ha KGS/IN, LBS/CM eller OZS/CM som måttenhet.*&quot;
 
 ## Lösning
 
@@ -55,15 +61,15 @@ Använd följande bifogade patchar, beroende på vilken version av Adobe Commerc
 
 ### För version 2.4.4, 2.4.4-pX:
 
-* [AC-9363_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-9646_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
+* [AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
 
 ### För version 2.4.5, 2.4.5-pX:
 
-* [AC-9358_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-9647_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
+* [AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
 
 ### För version 2.4.6, 2.4.6-pX:
 
-* [AC-9345_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-9648_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
+* [AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
 
 ## Så här sätter du på plåstret
 
