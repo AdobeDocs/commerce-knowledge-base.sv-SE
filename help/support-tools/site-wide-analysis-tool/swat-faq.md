@@ -4,9 +4,9 @@ description: Läs mer om [!DNL Site-Wide Analysis Tool], ett proaktivt självbet
 exl-id: 7c843d55-9e2c-4b18-8859-0ebad0ae28cf
 feature: Best Practices, Saas, Support, Tools and External Services
 role: Admin
-source-git-commit: 4e327654279095f6523a7cbec77bd2dca57b2034
+source-git-commit: 580ad148cd4346868cd9892a1ae9a4d85f73edce
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ Alla kunder, oavsett [!DNL Site-Wide Analysis Tool] Hälsoindex, kommer att få 
 ## Hur levereras rapporter?
 
 [!DNL Site-Wide Analysis Tool] rapporter skickas automatiskt via Adobe Commerce supportbiljettssystem varje månad eller kvartal. [!DNL Site-Wide Analysis Tool] kan också genereras manuellt från [!DNL Site-Wide Analysis Tool] Instrumentpanel och sparad på skrivbordet. Dessa [!DNL Site-Wide Analysis Tool] rapporter kan sedan skickas med e-post som bilagor.
+
+>[!NOTE]
+>
+>När du har tillämpat en rekommendation uppdateras inte rekommendationerna när du genererar en rapport manuellt. Det kan ta några dagar innan den tas bort från [!DNL Site-Wide Analysis Tool Dashboard].
