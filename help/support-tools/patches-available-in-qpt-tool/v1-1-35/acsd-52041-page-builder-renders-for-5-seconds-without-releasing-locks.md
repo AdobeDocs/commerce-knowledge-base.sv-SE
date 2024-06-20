@@ -1,19 +1,19 @@
 ---
 title: "ACSD-52041: Page Builder-återgivning frigör inte lås"
-description: Använd patchen ACSD-52041 för att åtgärda Adobe Commerce-problemet där Page Builder renderar i 5 sekunder utan att frigöra lås.
+description: Använd korrigeringsfilen ACSD-52041 för att åtgärda Adobe Commerce-problemet där Page Builder renderar i fem sekunder utan att frigöra lås.
 feature: Page Builder
 role: Admin, Developer
 exl-id: f2a1fd36-2098-46a7-aa42-3a5a0014adc9
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: fc5dc9fcf610cae6f8c0a334b4ef15029c462c66
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # ACSD-52041: Page Builder-återgivning frigör inte lås
 
-Korrigeringen ACSD-52041 åtgärdar ett problem där Page Builder renderar i 5 sekunder utan att frigöra lås. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.35 är installerat. Korrigerings-ID är ACSD-52041. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
+Korrigeringen ACSD-52041 åtgärdar ett problem där Page Builder renderar i fem sekunder utan att frigöra lås. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.48 är installerat. Korrigerings-ID är ACSD-52041-v2. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
 
 ## Berörda produkter och versioner
 
@@ -23,7 +23,7 @@ Korrigeringen ACSD-52041 åtgärdar ett problem där Page Builder renderar i 5 s
 
 **Kompatibel med Adobe Commerce:**
 
-* Adobe Commerce (alla distributionsmetoder) 2.4.4 - 2.4.6-p1
+* Adobe Commerce (alla distributionsmetoder) 2.4.4 - 2.4.4-p8, 2.4.5 - 2.4.5-p7, 2.4.6 - 2.4.6-p6
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Korrigeringen ACSD-52041 åtgärdar ett problem där Page Builder renderar i 5 s
 
 ## Problem
 
-Page Builder återger i 5 sekunder utan att frigöra lås.
+Page Builder återger i fem sekunder utan att frigöra lås.
 
 <u>Steg som ska återskapas</u>:
 
