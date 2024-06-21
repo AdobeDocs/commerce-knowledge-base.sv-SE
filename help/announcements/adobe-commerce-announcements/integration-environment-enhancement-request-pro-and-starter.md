@@ -4,9 +4,9 @@ description: Om du är kund hos Adobe Commerce på en Pro-planarkitektur i molne
 exl-id: c49b049b-efb8-412f-b27d-a89f8a758d85
 feature: Integration
 role: Admin
-source-git-commit: 43be85de953909253900d60488f76a20bac91793
+source-git-commit: fb26b71316e04de31fa6a895b87230bed5c1ca6a
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 # Begäran om förbättrad integreringsmiljö - Pro och Starter
 
 Om du är kund hos Adobe Commerce på en Pro-planarkitektur i molnet och för närvarande använder integreringsmiljöer av standardstorlek, eller om du är kund hos Adobe Commerce på en Starter-planarkitektur i molnet och för närvarande använder den standardiserade mellanlagringsmiljön och vill ha mer kraft, kan du begära en uppgradering till förbättrade integreringsmiljöer, som ger ungefär fyra gånger så höga prestanda. I den här artikeln finns olika instruktioner för Pro-kunder och Starter-kunder.
+
+>[!NOTE]
+>
+> Uppgradering till Förbättrad integrering kanske inte löser alla prestandaproblem eftersom det skulle bero på den totala resurskraven för din installation, inklusive tredjepartsintegreringar eller anpassningar.
+>
+> Ni måste också se till att ni följer de bästa metoderna för bästa prestanda i integreringsmiljön, och även det kanske inte är en totallösning. Se följande dokumentation för vägledning: [Pro-arkitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) och [Startarkitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment) i Commerce on Cloud Infrastructure Guide.
 
 ## Pro
 
