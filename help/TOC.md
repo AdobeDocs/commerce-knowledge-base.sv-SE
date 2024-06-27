@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 449e37e140e7df13be8d59a61a33c6298cb65f53
+source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
 workflow-type: tm+mt
-source-wordcount: '11040'
+source-wordcount: '11052'
 ht-degree: 0%
 
 ---
@@ -1066,7 +1066,7 @@ ht-degree: 0%
       * [Kända fel som påverkar xdebug-installationen](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md)
       * [Det går inte att logga in på Adobe Commerce support eller molnkonto](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
       * [Komponentberoenden i konflikt](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md)
-      * [Adobe Commerce Intelligence Service Policies](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
+      * [Adobe Commerce Intelligence servicepolicyer](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [Nya miljöer som placerats under produktion när de trycks ned från Git](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Fel efter inloggning på Commerce Admin](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [Magento Order Management System (OMS) för Adobe Commerce timeout](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
@@ -1113,6 +1113,7 @@ ht-degree: 0%
       * [Distributionen misslyckades: Det finns inga definierade kommandon i namnområdesfelet &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Distributionen misslyckas med rätt åtkomstnycklar i env:COMPOSER_AUTH eller auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Kända fel {#known-issues-patches-attached}
+      * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-40] Ändrad så att isolerad patch för [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [[!DNL UPS] migrering av leveransmetodintegration från [!DNL SOAP] till [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Stöd för hotfix för leveransmetoden för markförmåner för AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
       * [Adobe Commerce 2.4.3-p2 - 2.4.5 säkerhetsuppdatering för CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
@@ -1224,7 +1225,7 @@ ht-degree: 0%
    * [Loggplatser (kataloger) för Pro-planen: Integration, Förproduktion, Produktion](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
    * [Adobe Commerce i molnet: kontrollera om det krävs en uppstorlek för värdinstanserna](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
    * [Bootstrap Adobe Commerce 2 i ett sandlådeskript](/help/how-to/general/bootstrap-magento-2-in-a-sandbox-script.md)
-   * [Adobe Commerce Intelligence Training Video: Filteruppsättningar](/help/how-to/general/mbi-training-video-filter-sets.md)
+   * [Adobe Commerce Intelligence utbildningsvideo: Filteruppsättningar](/help/how-to/general/mbi-training-video-filter-sets.md)
    * [Profilera databasfrågor i Adobe Commerce om molninfrastruktur](/help/how-to/general/how-to-profile-database-queries-on-cloud.md)
    * [Blockera skadlig trafik för Adobe Commerce på snabbnivå](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
    * [Skapa en patch för Adobe Commerce Composer-installation från en GitHub-implementering](/help/how-to/general/create-a-patch-for-a-magento-2-composer-installation-from-a-github-commit.md)
@@ -1238,7 +1239,7 @@ ht-degree: 0%
    * [MBI: Skapa och redigera avancerade beräknade kolumner](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
    * [Kontrollera diskutrymmesgränsen för Adobe Commerce i molninfrastrukturen](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md)
    * [SSL-certifikat (TLS) för Adobe Commerce i molninfrastruktur](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
-   * [Det går inte att komma åt den senaste betaversionen](/help/how-to/general/cannot-access-the-latest-beta-version.md)
+   * [Kan inte komma åt den senaste Beta-versionen](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [Växla programläge](/help/how-to/general/switch-the-magento-mode.md)
    * [Logga in på Fast-kontot som medföljer Adobe Commerce i molninfrastrukturen](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Visa Adobe Commerce-felrapportnummer i stället för Fastly 503-fel](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
