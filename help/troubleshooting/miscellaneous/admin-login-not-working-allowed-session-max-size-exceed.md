@@ -2,9 +2,9 @@
 title: '''[!DNL Admin] inloggningen fungerar inte - den tillåtna maxstorleken för sessionen har överskridits'
 description: Lös problemet när du försöker logga in på [!DNL Admin] och formuläret uppdateras och du kan inte logga in.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,6 @@ Du kan ange högre än *50000* beroende på den befintliga maxstorleken som rapp
 
 ## Relaterad läsning
 
-* [Sessionsstorlek](/docs/commerce-admin/systems/security/security-session-management.html?lang=en#admin-sessions) i Admin Systems Guide.
-* [Åtgärdsläge](/docs/commerce-operations/configuration-guide/cli/set-mode.html) i konfigurationshandboken.
-* [Säkra anslutningar](/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) i Commerce on Cloud Infrastructure Guide.
+* [Sessionsstorlek](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) i Admin Systems Guide.
+* [Åtgärdsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) i konfigurationshandboken.
+* [Säkra anslutningar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) i Commerce on Cloud Infrastructure Guide.

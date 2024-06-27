@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på problemet när distri
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 54ef4e95cf0e3f5822ff5e5c566129fab331f784
+source-git-commit: 7804e7094fb05d1cce9747c8f96c3cfe6bc6171e
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 
 Adobe Commerce i molninfrastruktur 2.4.x
 
-## Problem  
+## Problem
 
 <u>Steg som ska återskapas</u>:
 
-Försök att distribuera. 
+Försök att distribuera.
 
 <u>Förväntade resultat</u>:
 
@@ -40,7 +40,7 @@ Du har distribuerats.
 >
 >Detta är ett exempelfel. Du kan få ett fel som anger en annan fil (beroende på vilken Adobe Commerce-version du distribuerar).
 
-Distributionen misslyckades. Du ser ett liknande fel *Det gick inte att hämta filen https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip (HTTP/1.1 404 Hittades inte)* i [distributionslogg](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+Distributionen misslyckades. Du ser ett liknande fel *Det gick inte att hämta filen https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip (HTTP/1.1 404 Hittades inte)* i [distributionslogg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 
 ### Orsak
@@ -54,7 +54,7 @@ De angivna åtkomstnycklarna för dispositionen som finns på någon av dessa pl
 
 Uppdatera `env:COMPOSER_AUTH` på projektnivå och se till att den är konfigurerad med nycklar som har åtkomst till koden.
 
-Om du vill se steg går du till [Variabelnivåer](/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) i Commerce om Cloud Infrastructure Guide.
+Om du vill se steg går du till [Variabelnivåer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) i Commerce om Cloud Infrastructure Guide.
 
 ## Relaterad läsning
 

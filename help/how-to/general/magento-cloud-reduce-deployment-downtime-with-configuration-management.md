@@ -3,7 +3,7 @@ title: Minska driftstoppen på Adobe Commerce i molninfrastrukturen
 description: För att dramatiskt minska driftstoppen för underhåll och tillhandahålla effektiv konfigurering av din butik i olika miljöer erbjuder Adobe Commerce i molninfrastrukturen funktionen **Configuration Management**. För implementeringar av Adobe Commerce i molninfrastruktur 2.2.x och senare stöder den här funktionen koncept och alternativ för driftsättning i pipeline med reducerade steg.
 exl-id: fde3571c-d95c-4a9b-a024-3b29f9c491ab
 feature: Build, Cloud, Configuration, Deploy
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 23d957ceac17f9989d14b215582304199d398545
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -20,7 +20,7 @@ De svåra och tidsödande problemen med att distribuera din webbutik är bland a
 
 * **Använder samma konfiguration i alla miljöer.** Normalt anger du konfigurationer manuellt eller via komplicerade databasuppdateringar. Med Configuration Management exporterar du konfigurationer från databasen till en enda fil för att senare överföra den med koden från den lokala utvecklingsmiljön till Integration, Staging och Production.
 
-* **Driftavbrott för webbplatsen vid distribution av statiskt innehåll.** Vanligtvis distribueras statiskt innehåll under [distributionsfas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase). Detta kan ta upp till 30 minuter eller mer, vilket inte är acceptabelt för företag. Configuration Management flyttar statisk innehållsdistribution till [byggfas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?#build-phase), vilket inte kräver driftstopp.
+* **Driftavbrott för webbplatsen vid distribution av statiskt innehåll.** Vanligtvis distribueras statiskt innehåll under [distributionsfas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#deploy-phase-deploy-phase). Detta kan ta upp till 30 minuter eller mer, vilket inte är acceptabelt för företag. Configuration Management flyttar statisk innehållsdistribution till [byggfas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#build-phase-build-phase), vilket inte kräver driftstopp.
 
 ## Teknikversioner
 
@@ -34,7 +34,7 @@ För att göra en lång historia kort extraherar konfigurationsprocessen (även 
 Detta ger följande fördelar:
 
 * **Enhetliga inställningar i alla miljöer:** alla inställningar som exporteras till konfigurationsfilen blir låsta (motsvarande fält i Commerce Admin blir skrivskyddade), vilket ger enhetliga konfigurationer när du flyttar filen över alla miljöer.
-* **Minskade driftstopp:** den statiska fildistributionen ändras från [distributionsfas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) (som kräver att platsen är i underhållsläge) till [byggfas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?#build-phase) (när platsen inte är i underhållsläge och inte kommer att stängas av om fel eller problem uppstår).
+* **Minskade driftstopp:** den statiska fildistributionen ändras från [distributionsfas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#deploy-phase-deploy-phase) (som kräver att platsen är i underhållsläge) till [byggfas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#build-phase-build-phase) (när platsen inte är i underhållsläge och inte kommer att stängas av om fel eller problem uppstår).
 * **Skyddade känsliga data:** med Adobe Commerce i molninfrastruktur 2.2 och senare exporterar processen även känsliga data (till exempel autentiseringsuppgifter för betalningstjänst) till `env.php` -fil. Den här filen bör bara sparas i den miljö som den skapades i och inte skickas med Git-grenarna.
 
 Vi rekommenderar starkt att du tillämpar Configuration Management-metoden i din distribution.
