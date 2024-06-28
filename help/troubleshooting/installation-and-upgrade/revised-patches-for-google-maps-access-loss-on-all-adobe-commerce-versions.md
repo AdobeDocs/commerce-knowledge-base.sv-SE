@@ -3,9 +3,9 @@ title: Uppdaterade korrigeringsfiler för åtkomst till Google Maps för alla Ad
 description: '"Den här artikeln innehåller en korrigering för Adobe Commerce-handlare som inte är kompatibla med någon av de senaste [!DNL Google Maps] versioner från 3.54+.'''
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 49bc0b643c10c6597d6a905935c36251e92b18f9
+source-git-commit: 575fce2f678321ff184779895d43be90828c2ce4
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ I den här artikeln finns en korrigering för Adobe Commerce-handlare som inte �
 
 På *14 juni 2024* [!DNL Google Maps] version *3,53* har nått slutet av livscykeln och har stängts av av av av [!DNL Google].
 
-Mer information finns i [[!DNL Google Maps] Plattform: Maps JavaScript API] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
+[Mer information finns i[!DNL Google Maps Platform: Maps JavaScript API])] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
 Adobe Commerce var inte kompatibelt med någon av de senaste [!DNL  Google Maps] versioner från 3.54+.
 
 Inkompatibiliteten orsakades av äldre `prototype.js script`som lästes in genom `lib/web/legacy-build.min.js` åsidosätter funktionen native Array.from, vilket leder till en direkt konflikt med [!DNL  Google Maps] API.
 
-Se [[!DNL Google Maps: JS Best Practices]] (https://developers.google.com/maps/documentation/javascript/best-practices).
+[Referera till ([!DNL Google Maps: JS Best Practices])] (https://developers.google.com/maps/documentation/javascript/best-practices).
 
 <u>Steg som ska återskapas</u> :
 
-1. Gå till **[!UICONTROL Content]** > **[!UICONTROL Pages]** > och klicka på en **[!UICONTROL New Page]**.
+1. Klicka på **[!UICONTROL Content]** > **[!UICONTROL Pages]** > och markera en **[!UICONTROL New Page]**.
 1. Expandera innehållsblocket och klicka på redigeringen **[!DNL PageBuilder]** -knappen.
 1. Dra kartinnehållsblocket från **[!DNL PageBuilder]** meny till sida.
 
