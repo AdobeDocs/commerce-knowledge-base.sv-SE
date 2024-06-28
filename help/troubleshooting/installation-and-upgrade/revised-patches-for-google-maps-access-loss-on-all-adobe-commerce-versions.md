@@ -3,7 +3,7 @@ title: Uppdaterade korrigeringsfiler för åtkomst till Google Maps för alla Ad
 description: '"Den här artikeln innehåller en korrigering för Adobe Commerce-handlare som inte är kompatibla med någon av de senaste [!DNL Google Maps] versioner från 3.54+.'''
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 575fce2f678321ff184779895d43be90828c2ce4
+source-git-commit: 98581cc9c251976339406f80764715096321126b
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -23,13 +23,13 @@ I den här artikeln finns en korrigering för Adobe Commerce-handlare som inte �
 
 På *14 juni 2024* [!DNL Google Maps] version *3,53* har nått slutet av livscykeln och har stängts av av av av [!DNL Google].
 
-[Mer information finns i[!DNL Google Maps Platform: Maps JavaScript API])] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
+Mer information finns i [[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
 Adobe Commerce var inte kompatibelt med någon av de senaste [!DNL  Google Maps] versioner från 3.54+.
 
 Inkompatibiliteten orsakades av äldre `prototype.js script`som lästes in genom `lib/web/legacy-build.min.js` åsidosätter funktionen native Array.from, vilket leder till en direkt konflikt med [!DNL  Google Maps] API.
 
-[Referera till ([!DNL Google Maps: JS Best Practices])] (https://developers.google.com/maps/documentation/javascript/best-practices).
+Se [[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices).
 
 <u>Steg som ska återskapas</u> :
 
