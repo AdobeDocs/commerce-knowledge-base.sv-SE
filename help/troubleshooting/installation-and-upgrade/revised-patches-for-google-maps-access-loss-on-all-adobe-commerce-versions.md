@@ -3,7 +3,7 @@ title: Uppdaterade korrigeringsfiler för åtkomst till Google Maps för alla Ad
 description: '"Den här artikeln innehåller en korrigering för Adobe Commerce-handlare som inte är kompatibla med någon av de senaste [!DNL Google Maps] versioner från 3.54+.'''
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 98581cc9c251976339406f80764715096321126b
+source-git-commit: cf235c2fdd7a36d7e3b126de35c51e6711cd3845
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -47,7 +47,7 @@ När du släpper kartinnehållsblocket från **[!DNL PageBuilder]** meny till si
 
 ## Lösning
 
-* Alla handlare i någon patchversion av version 2.4.4, 2.4.5, 2.4.6 eller 2.2.7 bör tillämpa dessa patchar på sin version.
+* Alla handlare i någon patchversion av version 2.4.4, 2.4.5, 2.4.6 eller 2.4.7 bör tillämpa dessa patchar på sin version.
 
 ## Lappa
 
