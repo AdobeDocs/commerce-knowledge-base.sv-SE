@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning för att ändra Adobe Com
 exl-id: 5b0f728c-6a8d-446d-9553-5abc3d01e516
 feature: Admin Workspace, Search, Variables
 role: Developer
-source-git-commit: e9f009cf4e072dcd9784693c10a4c16746af3cc5
+source-git-commit: 0ea7bbef7fec556f9a90151be9cf1077f5cfac45
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,14 @@ I den här artikeln:
 
 ## Ändra sökmotor med hjälp av administratören (steg)
 
-1. Logga in på administratören som administratör.
-1. På vänster sida i administratörssidlisten klickar du på **Lager**. Sedan, under **Inställningar**, välja **Konfiguration**.
-1. På panelen till vänster under **Katalog,** välj **Katalog**.
-1. Expandera **Katalogsökning** -avsnitt.    ![catalog_menu.png](assets/catalog_menu.png)
-1. Gå till **Sökmotor** fält och ta bort markering från **Använd systemvärde** kryssrutan.
-1. Klicka på **Sökmotor** och välj ett av de tillgängliga alternativen.    ![search_engine_menu.png](assets/search_engine_menu.png)
-1. Klicka **Spara konfiguration** i sidans övre högra hörn.
+1. Logga in på **[!UICONTROL Admin]** som administratör.
+1. Till vänster på **[!UICONTROL Admin]** sidlist, klicka på **[!UICONTROL Stores]**.
+1. Under **[!UICONTROL Settings]**, välja **[!UICONTROL Configuration]**.
+1. Navigera till panelen till vänster under **[!UICONTROL Catalog],** och välja **[!UICONTROL Catalog]**.
+1. Expandera **[!UICONTROL Catalog Search]** -avsnitt.    ![catalog_menu.png](assets/catalog_menu.png)
+1. Gå till **[!UICONTROL Search Engine]** fält och ta bort markering från **[!UICONTROL Use system value]** kryssrutan.
+1. Klicka på **[!UICONTROL Search Engine]** och välj ett av de tillgängliga alternativen som visas nedan.    ![search_engine_menu.png](assets/search_engine_menu.png)
+1. Klicka på **[!UICONTROL Save Config]** i det övre högra hörnet på sidan.
 
 ## Problem med Adobe Commerce lokalt
 
@@ -65,10 +66,11 @@ Sökmotorn är en global konfigurationsuppsättning på programnivå, inte på S
 
 ### Lösning: Ange standardkonfiguration för butiksvyn
 
-1. Logga in på administratören som administratör.
-1. På vänster sida i administratörssidlisten klickar du på **Lager**. Sedan, under **Inställningar**, välja **Konfiguration**.
-1. Klicka i det övre vänstra hörnet på **Butiksvy** väljare och välj *Standardkonfiguration*.
-1. Klicka **OK** i bekräftelsedialogrutan för att godkänna ändringen av butiksvyn.
+1. Logga in på **[!UICONTROL Admin]** som administratör.
+1. Till vänster på **[!UICONTROL Admin]** sidlist, klicka på **[!UICONTROL Stores]**.
+1. Navigera till **[!UICONTROL Settings]** och välja **[!UICONTROL Configuration]**.
+1. Klicka på i det övre vänstra hörnet **[!UICONTROL Store View]** väljare och välj **[!UICONTROL *Standardkonfiguration *]**.
+1. Klicka på **[!UICONTROL OK]** i bekräftelsedialogrutan för att godkänna ändringar i butiksvyn.
 
 ![change_store_view.png](assets/change_store_view.png)
 
