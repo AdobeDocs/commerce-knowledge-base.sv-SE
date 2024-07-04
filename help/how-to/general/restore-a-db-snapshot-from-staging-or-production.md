@@ -2,9 +2,9 @@
 title: Återställ en DB-ögonblicksbild från mellanlagring eller produktion
 description: I den här artikeln beskrivs hur du återställer en DB-ögonblicksbild från Staging eller Production på Adobe Commerce i molninfrastrukturen.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: ad0ec2e6dc1d3e1023ad4ecda595b5c942716407
+source-git-commit: b99d78845128ca3d995cbbb5df0799449ca954e3
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Välj det alternativ som passar bäst:
 
 Stegen är:
 
-1. Använda [!DNL sFTP]navigerar du till den plats där databasen finns [!DNL snapshot] har placerats, vanligtvis på den första servern/noden i [!DNL cluster] (Till exempel: `/mnt/recovery-<recovery_id>`). Obs! Om ditt projekt är Azure-baserat, dvs. ditt projekt-URL ser ut ungefär som https://us-a1.magento.cloud/projects/&lt;cluster_id>, placeras ögonblicksbilden i `/mnt/shared/<cluster ID>/all-databases.sql.gz` eller `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` i stället.
+1. Använda [!DNL SFTP]navigerar du till den plats där databasen finns [!DNL snapshot] har placerats, vanligtvis på den första servern/noden i [!DNL cluster] (Till exempel: `/mnt/recovery-<recovery_id>`). Obs! Om ditt projekt är Azure-baserat, dvs. ditt projekt-URL ser ut ungefär som https://us-a1.magento.cloud/projects/&lt;cluster_id>, placeras ögonblicksbilden i `/mnt/shared/<cluster ID>/all-databases.sql.gz` eller `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` i stället.
 
    Obs! Formatet på ögonblicksbilden i Azure-projekt kommer att vara annorlunda och innehåller andra databaser som inte kan importeras. Innan du importerar ögonblicksbilden måste du utföra ytterligare åtgärder för att extrahera den aktuella databasen innan du importerar dumpen.
 
@@ -134,6 +134,12 @@ Stegen är:
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
+   ```
+
+   (För import av en säkerhetskopiering av en databas från någon annan miljö)
+
+   ```sql
+   zcat <database-backup-name>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
    (För import av en säkerhetskopiering av en databas från någon annan miljö)
