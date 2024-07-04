@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på problemet när distri
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 7804e7094fb05d1cce9747c8f96c3cfe6bc6171e
+source-git-commit: 9f9dc8374bb681398ed1c295ac15679553cfc74e
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,7 @@ Du har distribuerats.
 >
 >Detta är ett exempelfel. Du kan få ett fel som anger en annan fil (beroende på vilken Adobe Commerce-version du distribuerar).
 
-Distributionen misslyckades. Du ser ett liknande fel *Det gick inte att hämta filen https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip (HTTP/1.1 404 Hittades inte)* i [distributionslogg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
-
+Distributionen misslyckades. Du ser ett liknande fel *Det gick inte att hämta filen https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip (HTTP/1.1 404 Hittades inte)* i [distributionslogg](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 ### Orsak
 
@@ -59,4 +58,4 @@ Om du vill se steg går du till [Variabelnivåer](https://experienceleague.adobe
 ## Relaterad läsning
 
 * [Det gick inte att komma åt Adobe Commerce i molnet: 403 Otillåten eller 404 Inte hittad vid distribution](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)
-* [Distributionsfel: fel 7 vid hämtning ... port 443: Anslutningen nekades](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce)
+* [Distributionsfel: fel 7 vid hämtning ... port 443: Anslutningen nekades](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
