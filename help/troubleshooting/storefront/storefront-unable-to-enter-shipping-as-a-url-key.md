@@ -1,19 +1,19 @@
 ---
-title: Det går inte att spara "leverans" som URL-nyckel
-description: I den här artikeln finns en lösning på problemet när du inte kan spara"leverans" som en URL-nyckel (t.ex."/leverans") för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett-URL.
+title: Leveransen kan inte sparas som en URL-nyckel
+description: I den här artikeln finns en lösning på problemet när du inte kan spara leverans som en URL-nyckel (_t.ex. /shipping_) för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett av en URL.
 exl-id: df19b597-f615-4b19-82c1-59cc179fa720
 feature: Marketing Tools, Shipping/Delivery, Storefront
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 1ce963142a261a17e2b42f79dd567c8484ec5b3e
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
 
-# Det går inte att spara &quot;leverans&quot; som URL-nyckel
+# Kan inte spara _frakt_ som en URL-nyckel
 
-I den här artikeln finns en lösning på problemet när du inte kan spara&quot;leverans&quot; som en URL-nyckel (t.ex.&quot;/leverans&quot;) för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett-URL.
+I den här artikeln finns en lösning på problemet när du inte kan spara leverans som en URL-nyckel (_t.ex., /shipping_) för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett-URL.
 
 ## Berörda produkter och versioner
 
@@ -21,19 +21,20 @@ Adobe Commerce (alla distributionsmetoder) 2.4.x
 
 ## Problem
 
-Du kan inte spara en CMS-sida med termen&quot;leverans&quot; i URL-nyckeln.
+Du kan inte spara en CMS-sida med termen _frakt_ i URL-nyckeln.
 
 <u>Steg som ska återskapas</u>:
 
-Skapa en CMS-sida med URL-nyckeln som&quot;leverans&quot;.
+Skapa en **[!UICONTROL CMS page]** med URL-tangenten som _frakt_.
 
 <u>Förväntat resultat</u>:
 
-Sidan sparas med&quot;leverans&quot; i URL-nyckeln.
+Sidan sparas med _frakt_ som URL-nyckel.
 
 <u>Faktiskt resultat</u>:
 
-Du kan inte spara och ett fel visas: *Värdet som anges i fältet URL-nyckel skulle generera en URL som redan finns.*
+Du kan inte spara eftersom följande fel inträffar:
+*Värdet som anges i fältet URL-nyckel skulle generera en URL som redan finns.*
 
 ## Orsak
 
@@ -49,19 +50,77 @@ Leverans är ett reserverat ord som definieras i `vendor/magento/module-shipping
 
 ## Lösning
 
-Du kan inte använda termen&quot;leverans&quot; i URL-nyckeln, men du kan använda termen&quot;leverans&quot; i kombination med en annan bokstav eller siffra (till exempel&quot;leverans1&quot; och&quot;leverans2&quot;). Även om termen inte behöver vara&quot;leverans&quot;+&lt;another number=&quot;&quot; or=&quot;&quot; letter=&quot;&quot;> - termen kan vara vilken sträng som helst så länge längden inte överstiger 255 tecken.
+Du kan inte använda termen _frakt_ i URL-nyckeln - men du kan använda termen _frakt_ kombinerat med en annan bokstav eller siffra (_Exempel: frakt1 och frakt2_).
 
-Utför följande steg:
+Även om termen inte behöver vara _frakt_+&lt;another number=&quot;&quot; or=&quot;&quot; letter=&quot;&quot;> - termen kan vara vilken sträng som helst så länge längden inte överstiger *255* tecken.
 
-1. Logga in på Commerce Admin.
-1. Gå till **Marknadsföring** > SEO &amp; Search > **URL-omskrivning**.
-1. Klicka **Lägg till URL-omskrivning**.
-1. Välj *Egen* i listrutan Skapa URL-omskrivning.
-   1. Skriv i Request Path &quot;shipping&quot;. Obs! Sökvägen för begäran är den som användaren anger i webbläsaren och målsökvägen är den plats där den ska dirigeras om.
-   1. Skriv den nya URL-nyckeln i målsökvägen (till exempel &quot;shipping1&quot;).
-   1. Välj **Nej** i listrutan Omdirigering.
+## Utför följande steg:
+
+1. Logga in på Adobe Commerce Admin.
+1. Gå till **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
+1. Klicka på **[!UICONTROL Add URL Rewrite]**.
+1. Välj **[!UICONTROL Custom]** i **[!UICONTROL Create URL Rewrite]** nedrullningsbar meny.
+   1. Skriv [!UICONTROL Request Path] as **_frakt_**.
+   1. I **[!UICONTROL Target Path]** skriver du den nya URL-nyckeln (_Exempel: &quot;shipping1&quot;_).
+   1. Välj **[!UICONTROL No]** i **[!UICONTROL Redirect]** nedrullningsbar meny.
+
+
+      (**Anteckning**: Sökvägen för begäran är den som användaren anger i webbläsaren och målsökvägen är den plats där den ska dirigeras om.)
+
+Undvik dessutom att använda dessa nyckelord som är märkta som *reserverad* nyckelord som gör att samma undantag visas. Om du använder något av nyckelorden som listas nedan som ett URL-nyckelvärde visas samma fel.
+
+
+```
+"admin"
+"adminAnalytics"
+"analytics"
+"api"
+"backup"
+"bulk"
+"captcha"
+"catalog"
+"catalogsearch"
+"checkout"
+"cms"
+"contact"
+"cookie"
+"customer"
+"directory"
+"downloadable"
+"giftmessage"
+"groupedProduct"
+"indexer"
+"instantpurchase"
+"loginascustomer"
+"marketplace"
+"mui"
+"multishipping"
+"newsletter"
+"oauth"
+"paypal"
+"persistent"
+"productalert"
+"releaseNotification"
+"reports"
+"review"
+"robots"
+"rss"
+"sales"
+"search"
+"security"
+"sendfriend"
+"shipping"
+"stores"
+"swagger"
+"swatches"
+"tax"
+"theme"
+"translation"
+"vault"
+"wishlist"
+```
 
 ## Relaterad läsning
 
-* [URL-omskrivning](https://docs.magento.com/user-guide/marketing/url-rewrite.html) i vår användarhandbok.
-* [SEO Best Practices](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) i vår användarhandbok.
+* [URL-omskrivning](https://docs.magento.com/user-guide/marketing/url-rewrite.html) i vår Handbok för marknadsföring och marknadsföring.
+* [SEO Best Practices](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) i vår användarhandbok för marknadsföring och marknadsföring.
