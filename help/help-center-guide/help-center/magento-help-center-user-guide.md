@@ -3,7 +3,7 @@ title: Användarhandbok för Adobe Commerce Help Center
 description: Lär dig hur du skickar en supportanmälan till Adobe Commerce Help Center, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: bdef7c26141356727a225c0ea0a1f9a064d213db
+source-git-commit: 3e773131f6f44436fc533f74474efbe8597abb5f
 workflow-type: tm+mt
 source-wordcount: '4988'
 ht-degree: 0%
@@ -112,7 +112,7 @@ När du har loggat in kan du skicka in ett supportärende via Adobe Experience L
 
 Så här skickar du ett nytt supportärende från Adobe Experience League startsida:
 
->
+>[!NOTE]
 >
 >1. Om du tillhör flera organisationer måste du välja lämplig organisation i listrutan.
 >1. Du måste ha rätt till support för att kunna lämna in ett ärende. Om du inte gör det visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen.
@@ -276,6 +276,7 @@ Du *måste ha* ett konto på både https://account.adobe.com och https://account
 >Om du redan har ett konto på https://account.magento.com, men inte kan logga in, kanske du inte har registrerat dig för ett konto på https://account.adobe.com, vilket krävs från och med augusti 2022.
 >
 >Så här löser du det:
+>
 >1. Skapa ett konto på https://account.adobe.com med samma e-postadress på ditt MAG-ID.
 >1. Gå till https://account.magento.com om du vill länka din Adobe ID till ditt MAG-ID.
 
