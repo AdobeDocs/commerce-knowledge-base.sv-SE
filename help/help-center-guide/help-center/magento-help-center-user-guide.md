@@ -3,24 +3,43 @@ title: Användarhandbok för Adobe Commerce Help Center
 description: Lär dig hur du skickar en supportanmälan till Adobe Commerce Help Center, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 751a315303be3d6435f4064cdd3fb28a0c811155
+source-git-commit: bdef7c26141356727a225c0ea0a1f9a064d213db
 workflow-type: tm+mt
-source-wordcount: '3986'
+source-wordcount: '4988'
 ht-degree: 0%
 
 ---
 
 # Användarhandbok för Adobe Commerce Help Center
 
-Läs om hur du skickar en supportanmälan till [Adobe Commerce Help Center](https://support.magento.com/hc/en-us) och ge delad åtkomst till Magento-konton.
+Läs om hur du skickar en supportanmälan till [Adobe Commerce Help Center](https://support.magento.com/hc/en-us) och ge delad åtkomst till Adobe Commerce-konton.
 
 >[!NOTE]
 >
->Kunskapsbasen i Adobe Commerce Help Center har migrerats till Adobe Experience League-portalen. När du skapar en supportanmälan kommer du att få förslag på relaterade artiklar i kunskapsbasen tillsammans med annan relevant Adobe Commerce-dokumentation från Adobe Experience League.
+>Adobe Commerce support går från Adobe Commerce Help Center till Experience League. Om du har fått ett meddelande om att du har åtkomst använder du det Experience League-formulär som beskrivs [här](#what-is-experience-support). Om du inte har fått något meddelande fortsätter du använda [Adobe Commerce Help Center - ärendeflöde](#what-is-adobe-commerce-help-center).
 
-**Huvuduppdatering:** 14 oktober 2022
+>[!NOTE]
+>
+>Kunskapsbasen i Adobe Commerce Help Center har migrerats till Adobe Experience League-portalen. När du skapar en supportanmälan visas tillhörande artiklar i kunskapsbasen tillsammans med annan relevant Adobe Commerce-dokumentation från Adobe Experience League.
 
-**[VAD ÄR ADOBE COMMERCE HELP CENTER?](#what-is)**
+**Huvuduppdatering:** 8 juli 2024
+
+**[VAD STÖDER EXPERIENCE LEAGUE?](#what-is-experience-support)**
+
+**[STÖDFALL](#support-cases)**
+
+* [Logga in på Experience League Support](#sign-in-experience-support)
+* [Skicka ett supportärende](#submit-case)
+
+   * [Adobe Experience League startsida](#experience-league-start-page)
+   * [Adobe Commerce kontosida](#submit-case-adobe-commerce-account-page)
+   * [*Verifiera din e-postadress*](#verify-email-address-error)
+
+* [Spåra era supportärenden](#track-support-cases)
+* [Kommentarer](#comments-in-your-case)
+* [Stäng ärendet](#close-case)
+
+**[VAD ÄR ADOBE COMMERCE HELP CENTER?](#what-is-adobe-commerce-help-center)**
 
 **[STÖDTICKAR](#support-tickets)**
 
@@ -59,7 +78,160 @@ Läs om hur du skickar en supportanmälan till [Adobe Commerce Help Center](http
 
 **[MAGENTO U ÄR NU EN DEL AV ADOBE DIGITALA LÄRNINGSTJÄNSTER](#magento-u)**
 
-## VAD ÄR ADOBE COMMERCE HELP CENTER? {#what-is}
+>[!NOTE]
+>
+>Om du inte har fått ett meddelande fortsätter du använda [Adobe Commerce Help Center - ärendeflöde](#what-is-adobe-commerce-help-center). Om du har fått ett meddelande om att du är i kohorten med åtkomst följer du det Experience League-formulär som beskrivs [nedan](#what-is-experience-league-support).
+
+## VAD STÖDER EXPERIENCE LEAGUE? {#what-is-experience-support}
+
+Experience League Support är en supportportal för Adobe där Adobe Commerce-kunder kan skicka in och hantera supportärenden. Här kan du även läsa felsökningsartiklar.
+
+## STÖDFALL {#support-cases}
+
+Med Adobe Experience League Support Case Management kan man arbeta med support genom olika ärenden för att åtgärda specifika problem som uppstår när man använder Adobe-produkter, inklusive Adobe Commerce, för alla Adobe Commerce-produkter som omfattas av avtal.
+
+## LOGGA IN PÅ STÖD FÖR EXPERIENCE LEAGUE {#sign-in-experience-support}
+
+Om du loggar in kan du skicka, uppdatera och besvara frågor från agenter på supportärenden.
+
+Så här loggar du in på Adobe Experience League Support:
+
+1. Navigera till [experienceleague.adobe.com](https://experienceleague.adobe.com/).
+1. Logga in med inloggningsuppgifterna för Adobe.
+
+![sign-in-experience-leag](assets/experience_league_sign_in.png)
+
+### Skicka ett supportärende {#support-case}
+
+När du har loggat in kan du skicka in ett supportärende via Adobe Experience League hemsida, din Adobe Commerce-kontosida och din kontosida för Adobe Commerce Cloud.
+
+* Om du är kontoägare följer du stegen nedan.
+* Om du är en delad åtkomstanvändare måste du först växla konton. Se [Åtkomst till delat konto (växlingskonton)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts)och sedan kan du gå vidare till stegen nedan.
+
+#### Adobe Experience League startsida {#experience-league-start-page}
+
+Så här skickar du ett nytt supportärende från Adobe Experience League startsida:
+
+>
+>
+>1. Om du tillhör flera organisationer måste du välja lämplig organisation i listrutan.
+>1. Du måste ha rätt till support för att kunna lämna in ett ärende. Om du inte gör det visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen.
+
+1. Klicka på **Support** i sidhuvudet. Då öppnas supportens hemsida.
+
+   ![open-support-page](assets/click_support.png)
+
+1. Klicka på **[!UICONTROL Open Ticket]** till vänster eller klicka **[!UICONTROL Get Started]** in *[!UICONTROL Open a support ticket]* kort.
+
+   ![open-support-case](assets/open_support_case.png)
+
+1. Välj en produkt i listrutan och ange en falltitel och beskrivning.
+
+   ![select_product](assets/support_case_product.png)
+
+1. Adobe Experience League kommer att föreslå artiklar och bästa praxis som kan hjälpa dig att lösa ditt ärende. Om du fortfarande behöver direktsupport måste du ange ytterligare information innan du skickar in ärendet.
+
+   ![direct_support_required](assets/direct_support.png)
+
+1. När du fyllt i all nödvändig information klickar du på **[!UICONTROL Submit case]**.
+
+Du måste ha ett konto på både https://account.adobe.com och https://account.magento.com för att kunna logga in på Experience League och skicka in ett supportärende. Du kan inte skicka in ett supportärende förrän du är inloggad.
+
+>[!NOTE]
+>
+>Om du redan har ett konto på https://account.magento.com, men inte kan logga in, kanske du inte har registrerat dig för ett konto på https://account.adobe.com, vilket krävs från och med augusti 2022.
+>
+>Så här löser du det:
+>1. Skapa ett konto på https://account.adobe.com med samma e-postadress på ditt MAG-ID.
+>1. Gå till https://account.magento.com om du vill länka din Adobe ID till ditt MAG-ID.
+
+#### Adobe Commerce kontosida {#submit-case-adobe-commerce-account-page}
+
+Så här skickar du en ny supportanmälan på din Adobe Commerce-kontosida:
+
+1. Logga in på ditt Adobe Commerce-konto. Se [detaljerade anvisningar](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=en#create-a-commerce-account) i vår användarhandbok.
+1. Klicka på **Support** -fliken.
+
+   ![magento_account_support_tab](assets/magento_account_support_tab.png){width="800"}
+
+1. Adobe Experience League supportsida visas.
+1. Välj **[!UICONTROL Open Ticket]** från den vänstra menyn.
+1. Fyll i fälten.
+1. Klicka **Skicka**.
+
+#### *Verifiera din e-postadress* fel på Adobe Commerce-kontosida {#verify-email-address-error}
+
+Du kommer inte att kunna skicka in en supportanmälan om du får felmeddelandet Kontrollera din e-postadress som liknar den nedan på [Adobe Commerce](https://account.magento.com/) sida.
+
+![Verify_Email_Address_Error](assets/Verify_Email_Address_Error.png)
+
+
+### Spåra era supportärenden {#track-support-case}
+
+Dina supporttillfällen är sådana som du har:
+
+* har lämnat in personuppgifter.
+* har lagts till som en bevakare via en CC (kopia).
+
+#### Visa dina ärenden
+
+Du kan visa dina ärenden genom att klicka **[!UICONTROL My Cases]** till vänster.
+
+![view-support-cases](assets/view_support_cases.png)
+
+#### Sök efter ärenden
+
+Om du vill söka efter ärenden skriver du din sökfråga i *[!UICONTROL Search]* fält och tryck *enter* på tangentbordet.
+
+![sökfall](assets/search_cases.png)
+
+#### Eskalera dina ärenden
+
+Om du känner att ett fall kräver ytterligare uppmärksamhet och att vår initiala svarstid har passerat, kan du eskalera fallet. För att göra det,
+
+1. Klicka på **[!UICONTROL Escalate to management]** längst ned till höger i *[!UICONTROL Case Detail]* till höger på skärmen.
+
+   ![eskalera till hantering](assets/escalate_to_management.png)
+
+1. När du har klickat visas ett popup-formulär. Fyll i formuläret och klicka sedan **[!UICONTROL Escalate]**.
+
+   ![bekräftelseeskalering](assets/confirm_escalation.png)
+
+   *Orsaker till eskalering kan vara*: Agent Communication Skills, Agent Technical Knowledge, i väntan på återanrop/uppdatering, ändring i nödsituation, upplösning uppfyllde inte förväntningarna eller tid till lösning.
+
+#### Lägg till en bevakare i supportärenden
+
+Du kan lägga till bevakare för supportärenden som skickats in av medlemmar i din organisation. Tittarna får e-postmeddelanden när nya ärenden skickas eller när befintliga ärenden uppdateras.
+
+1. Om du vill lägga till en bevakare i ett befintligt ärende öppnar du skiftläget och klickar på pennikonen bredvid &quot;bevakare&quot; på panelen Skiftinformation till höger på skärmen.
+
+   ![add-watchers](assets/add_watchers.png)
+
+1. När du har klickat på pennan kan du lägga till eller ta bort bevakare från listan.
+
+   ![update-watchers](assets/update_watchers.png)
+
+### Kommentarer {#comments-in-your-case}
+
+Kommentarerna i ditt ärende innehåller alla kommentarer som skrivits av dig eller Adobe Commerce supportteam. Kommentarerna visas från den senaste (överst) till den tidigaste (nederst).
+Så här lägger du till en kommentar:
+
+1. Rulla längst ned på biljetten.
+1. Skriv din kommentar i **[!UICONTROL Comments]** fält och klicka **[!UICONTROL Add comments]**.
+
+![add-comments](assets/add_comments.png)
+
+### Stäng ärendet {#close-case}
+
+Klicka för att stänga ärendet **[!UICONTROL Close case]** längst ned till höger i *[!UICONTROL Case Detail]* -panelen.
+
+![närbild](assets/close_case.png)
+
+>[!NOTE]
+>
+>Fortsätt använda formulärflödet i Adobe Commerce Help Center [nedan](#what-is-adobe-commerce-help-center) för anmälan och hantering av biljetter såvida du inte har informerats om att du är i kohorten med tillgång till det formulärflöde som beskrivs i Experience League [här](#what-is-experience-league-support).
+
+## VAD ÄR ADOBE COMMERCE HELP CENTER? {#what-is-adobe-commerce-help-center}
 
 The [Adobe Commerce Help Center](https://support.magento.com/hc/en-us) är en supportportal för Adobe Commerce, där man kan skicka in och hantera supportärenden. Här kan du även läsa felsökningsartiklar.
 
@@ -152,7 +324,7 @@ Orsaken kan vara något av följande:
 
 * Du har inte loggat in på Help Center.
 * Om du använder delad åtkomst för första gången har du inte utfört de steg som krävs för att säkerställa att Adobe Commerce Help Center har konfigurerats korrekt via SSO-anropet från Magento.com.
-* Ditt konto har inte rätt till Adobe Commerce support (du är till exempel inte betalande Commerce-kund eller kund med öppen källkod).
+* Ditt konto har inte rätt till Adobe Commerce support (du är till exempel inte betalande Commerce-kund eller Open Source-kund).
 
 #### Lösning
 
@@ -291,7 +463,7 @@ Så här följer/avanmäler du biljetter till en organisation:
 
 ### Operativmodellen Adobe Commerce Shared Responsibility {#shared-responsibility-operational-model}
 
-**Inloggning krävs** för att komma åt [Operativmodellen Adobe Commerce Shared Responsibility](https://support.magento.com/hc/en-us/articles/4407700678669) artikel som syftar till att klargöra det operativa ansvaret runt Adobe Commerce endast i fråga om vårt infrastrukturerbjudande.
+Läs artikeln om [Operativmodellen Adobe Commerce Shared Responsibility](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary), som syftar till att förtydliga det operativa ansvaret för vår Pro-infrastruktur.
 
 ### Förklaring av supportbiljettfält {#ticket-fields-explained}
 
@@ -393,7 +565,7 @@ Läs mer om Adobe Commerce i molninfrastrukturmiljöer i [Pro-arkitektur](https:
 
 Välj det intervall med order som påverkas.
 
-Det här är en listruta och gäller endast för Orderhanteringsprodukt.
+Det här är en listruta och gäller endast för Order Management-produkter.
 
 #### Organisation
 
@@ -446,7 +618,7 @@ Skriv på enkelt språk, med korta meningar.
 
 #### Ämne
 
-Ta med en kort översikt över ditt problem (till exempel *Fel 404 på alla sidor* ).
+Ta med en kort översikt över ditt problem (till exempel *Fel 404 på alla sidor*).
 
 **Föreslagna artiklar:** När du anger söktermen visas en lista med Adobe Commerce-dokumentationsartiklar som kan vara relaterade till ditt problem. Klicka på en artikel i listan för att öppna den.
 
@@ -454,7 +626,7 @@ Ta med en kort översikt över ditt problem (till exempel *Fel 404 på alla sido
 
 *Rekommendation:* Ta en titt på de föreslagna artiklarna, de kan innehålla den lösning du förväntar dig av Adobe Commerce supportteam.
 
-#### Version (endast Adobe Commerce lokalt, Adobe Commerce om molninfrastruktur och leverans)
+#### Version (Adobe Commerce lokalt, Adobe Commerce i molninfrastruktur och endast leverans)
 
 Välj den Adobe Commerce-version som du vill ha hjälp med. Alla versioner av Adobe Commerce som stöds visas överst. Versioner som inte stöds visas längst ned med parenteser. Om du håller på att migrera bör du välja den senaste versionen för att vara säker på att du stöds.
 
@@ -498,6 +670,7 @@ Gör så här om du vill lägga till en kommentar i konversationen:
    ![hc_add-to-console.png](assets/hc_add-to-conversation.png)
 
 1. Om du vill lägga till en person i kommentaren anger du e-postadressen i **CC** kommentarsfältets fält.
+
    >[!NOTE]
    >
    >Användaren i CC: måste ha ett befintligt konto på https://account.magento.com. Annars måste de först skapa en på https://account.adobe.com och logga in på https://account.magento.com med det kontot.
@@ -518,29 +691,29 @@ Om du vill öppna en uppföljningsbiljett klickar du på&#x200B;*skapa en uppfö
 
 ## DELAD ÅTKOMST: BEVILJA ÅTKOMST TILL DITT KONTO FÖR ANDRA ANVÄNDARE {#shared-access}
 
-Du kan ge andra kontoinnehavare på Magento begränsad åtkomst till ditt konto. I synnerhet använder **delad åtkomst** kan du ge betrodda anställda och tjänsteleverantörer behörighet att använda ditt Help Center-konto så att de kan arbeta med dina supportärenden.
+Du kan ge andra Adobe Commerce-kontoinnehavare begränsad åtkomst till ditt konto. I synnerhet använder **delad åtkomst** kan du ge betrodda anställda och tjänsteleverantörer behörighet att använda ditt Help Center-konto så att de kan arbeta med dina supportärenden.
 
-Du kan ange och hantera delad åtkomst via kontosidan på Magento [https://account.magento.com](https://account.magento.com/).
+Du kan ange och hantera delad åtkomst via din Adobe Commerce-kontosida på [https://account.magento.com](https://account.magento.com/).
 
 ### Vem kan ge delad åtkomst? {#who-can-provide-shared-access}
 
-Det är bara kontoägaren (primär kontoinnehavare) som har behörighet att ge delad åtkomst för andra användare.
+Det är bara kontoägaren (primär kontoinnehavare) som kan ge andra användare delad åtkomst.
 
-Det är kundens ansvar att hantera användare och deras åtkomst, särskilt när det gäller delad åtkomst. Adobe Commerce supportteam kan alltså inte ge delad åtkomst till ett Magento-konto åt en kund. Kunderna uppmuntras att lägga till användare med delad åtkomst själva med hjälp av [Magento-kontosida](https://account.magento.com/).
+Det är kundens ansvar att hantera användare och deras åtkomst, särskilt när det gäller delad åtkomst. Adobe Commerce supportteam kan alltså inte ge delad åtkomst till ett Adobe Commerce-konto åt en kund. Kunderna uppmuntras att lägga till användare med delad åtkomst själva med hjälp av [Adobe Commerce kontosida](https://account.magento.com/).
 
 Användare som har fått delad åtkomst kan inte överföra eller ge sådan åtkomst till andra användare.
 
 ### Ge delad åtkomst {#provide-shared-access}
 
-Se [Dela ditt konto](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) i Adobe Commerce användarhandbok för mer information om hur du skapar ett delat konto.
+Se [Dela ett Commerce-konto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) om du vill ha mer information om hur du konfigurerar ett delat konto i Adobe Commerce Getting Started Guide.
 
-När en ny användare har fått delad åtkomst är den relaterade informationen tillgänglig i **Delad åtkomst** > **Hantera behörigheter** på Magento-kontosidan.
+När en ny användare har fått delad åtkomst är den relaterade informationen tillgänglig i **Delad åtkomst** > **Hantera behörigheter** på din Adobe Commerce-kontosida.
 
-![magento-account-shared-manage-permissions](assets/magento-account-shared-manage-permissions.png){width="800"}
+![magento-account-shared-manage-permissions](assets/magento_account_shared_manage_permissions.png)
 
 ### Återkalla (ta bort) delad åtkomst {#revoke-shared-access}
 
-1. Logga in på ditt Magento-konto på [https://account.magento.com](https://account.magento.com/).
+1. Logga in på ditt Adobe Commerce-konto på [https://account.magento.com](https://account.magento.com/).
 1. Välj under Delad åtkomst på panelen till vänster **Hantera behörigheter.**
 1. Hitta användaren som den delade åtkomsten ska återkallas från och klicka på ![ta bort ikon](assets/remove_icon.png){width="25"} i användarens rad (**Åtgärder** kolumn).
 1. Klicka **Ta bort användare** för att återkalla åtkomst eller X i det övre hörnet för att avbryta återkallandet.
@@ -549,7 +722,7 @@ När en ny användare har fått delad åtkomst är den relaterade informationen 
 
    Du kan också återkalla delad åtkomst med **Redigera** meny:
 
-1. Logga in på ditt Magento-konto på [https://account.magento.com](https://account.magento.com/).
+1. Logga in på ditt Adobe Commerce-konto på [https://account.magento.com](https://account.magento.com/).
 1. Välj under Delad åtkomst på panelen till vänster **Hantera behörigheter.**
 1. Hitta användaren som den delade åtkomsten ska återkallas från och klicka på **Redigera** i användarens rad (**Åtgärder** kolumn).
 1. Klicka **Ta bort den här användaren** längst ned på sidan.
@@ -573,7 +746,7 @@ Det går inte att ta bort listan över användare med delad åtkomst med resursn
 
 När du har återkallat behörigheten för dessa användare med delad åtkomst har de inte längre den åtkomsten.
 
-1. Logga in på ditt Magento-konto på [https://account.magento.com](https://account.magento.com/).
+1. Logga in på ditt Adobe Commerce-konto på [https://account.magento.com](https://account.magento.com/).
 1. På panelen till vänster, under *[!UICONTROL Shared Access]*, välja **[!UICONTROL Manage Permissions]**.
 1. Hitta användaren som den delade åtkomsten ska återkallas från och klicka på **[!UICONTROL Edit]** i användarens rad (*[!UICONTROL Actions]* kolumn).
 1. Avmarkera alla resurser under *[!UICONTROL Grant Account Permissions]*.
@@ -586,10 +759,10 @@ Mer information finns i [Hantera användaråtkomst](https://experienceleague.ado
 
 Följ de här stegen för att använda den delade åtkomst du fått:
 
-1. Logga in på ditt Magento-konto på [https://account.magento.com](https://account.magento.com/).
+1. Logga in på ditt Adobe Commerce-konto på [https://account.magento.com](https://account.magento.com/).
 1. Klicka på **Byt konto** och välj ett konto.
 
-   ![magento-account-shared-switch](assets/magento-account-shared-switch.png){width="800"}
+   ![magento-account-shared-switch](assets/magento_account_shared_switch.png){width="800"}
 
 Om du vill veta vilket konto du använder (ditt eget hemkonto eller delad åtkomst) kan du läsa **Byt konto** meny: den visar det aktiva kontot.
 
@@ -605,4 +778,3 @@ Handlare betalar vanligtvis för våra tjänster via en kreditkortstransaktion (
 
 Magento U har slagits samman med [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/).
 
-Magento U Zendesk kommer att fasas ut.
