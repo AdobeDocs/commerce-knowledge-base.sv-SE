@@ -4,9 +4,9 @@ description: I den här artikeln finns en lösning för komponentberoenden i kon
 exl-id: 782049c4-b6e1-4ead-a00f-80d2aa8475c9
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 8f0f7412e75e07a22e66236b88c095c698dbf23e
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -64,8 +64,8 @@ Komponentberoenden i konflikt kan också orsakas av tredjepartsmoduler som är b
 ## Adobe Commerce {#magento-commerce-magento-commerce-cloud}
 
 1. Kontakta utvecklaren av tillägget så att de kan hjälpa dig. Kontaktinformationen för dem finns på sidan som du köpte tillägget från på Commerce Marketplace. Leta efter **Kontakta återförsäljare** på den högra panelen. Alla Commerce-utvecklare måste tillhandahålla användar- och installationshandböcker när de publicerar ett tillägg på Marketplace. Du hittar båda till höger på landningssidan.
-1. Om du inte får något svar från säljaren inom rimlig tid, vänligen [meddela Commerce Marketplace](https://marketplacesupport.magento.com/hc/en-us) så att vi kan påminna dem om deras kundsupportåtaganden.
+1. Om du inte får något svar från säljaren inom rimlig tid, vänligen [kontakta Marketplace Support](mailto:commercemarketplacesupport@adobe.com) så att vi kan påminna dem om deras kundsupportåtaganden.
 
 ## Magento Open Source {#opensource}
 
-Begär assistans på [vårt huvudforum](https://community.magento.com/) eller [kontakta en Adobe Commerce-partner](https://magento.com/find-a-partner) som är till hjälp vid problem med öppen källkod.
+Begär assistans på [vårt huvudforum](https://community.magento.com/) eller [kontakta en Adobe Commerce-partner](https://magento.com/find-a-partner) som är till hjälp vid Öppna Source-utgåvor.

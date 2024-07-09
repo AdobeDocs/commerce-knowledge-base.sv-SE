@@ -3,9 +3,9 @@ title: Partner-Adobe Commerce om sandlådeförfrågningar om molninfrastruktur
 description: Artikeln med vanliga frågor innehåller länkar till användbara resurser för Adobe Commerce om sandlådebegäranden i molnet.
 exl-id: 3ec1cbc0-1a71-4753-8fc5-51c5f1928f12
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 8f0f7412e75e07a22e66236b88c095c698dbf23e
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ Se [Adobe Commerce Support Knowledge Base](https://support.magento.com/hc/en-us)
 ## Var/hur skickar lösningspartners eller teknikpartners en supportförfrågan? {#wherehow-do-solution-partners-or-tech-partners-submit-a-support-request}
 
 * Partners kan skicka in en biljett för sandlåderelaterade problem genom att skicka ett e-postmeddelande till [SPPHelp@adobe.com](mailto:SPPHelp@adobe.com) och kommer att vidarebefordras till partnerns tekniska support.
-* Tekniska partners kan skicka in en supportförfrågan på [Commerce Marketplace Help Center](https://marketplacesupport.magento.com/hc/en-us/requests) sida.
+* Teknikpartners kan [kontakta Marketplace Support](mailto:commercemarketplacesupport@adobe.com).
