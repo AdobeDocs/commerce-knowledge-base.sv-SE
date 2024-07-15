@@ -21,7 +21,7 @@ Den här artikeln handlar om ett vanligt indexeringsproblem i Adobe Commerce dä
 
 ## Problem
 
-Under en fullständig omindexering i CLI får du ett felmeddelande från Adobe Commerce: *Index är låst av en annan omindexeringsprocess. Hoppar över.&#39;* När processen eller indextypen är låst kan du alltså inte indexera om den låsta indextypen. Indexeringen hoppar alltid över den indextypen.
+Under en fullständig omindexering i CLI får du felmeddelandet: *&#39;Index är låst av en annan omindexeringsprocess. Hoppar över.&#39;* Med andra ord, när processen eller indextypen är låst, kan du inte indexera om just den låsta indextypen. Indexeringen hoppar alltid över den indextypen.
 
 ## Orsak
 
@@ -35,7 +35,7 @@ Det här felet kan inträffa om det tidigare indexet inte slutfördes korrekt. N
 ## Steg som ska återskapas
 
 1. Säg till exempel att    ```bash    cataloginventory_stock ```    indextypen är låst.
-1. När du försöker indexera om alla data genom att köra CLI-kommandot    ```bash    php bin/magento indexer:reindex    ```får du följande resultat:    ```bash    customer_grid index has been rebuilt successfully in 00:00:09    catalog_category_product index has been rebuilt successfully in 00:00:07    catalog_product_category index has been rebuilt successfully in 00:00:00    catalogrule_rule index has been rebuilt successfully in 00:00:05    catalog_product_attribute index has been rebuilt successfully in 00:00:04    cataloginventory_stock index is locked by another reindex process. Skipping.    catalog_product_price index has been rebuilt successfully in 00:00:01    catalogrule_product has been rebuilt successfully in 00:00:00    catalogsearch_fulltext index has been rebuilt successfully in 00:00:01    ```
+1. När du försöker indexera om alla data genom att köra CLI-kommandot    ```bash    php bin/magento indexer:reindex    ``` får du följande utdataresultat:    ```bash    customer_grid index has been rebuilt successfully in 00:00:09    catalog_category_product index has been rebuilt successfully in 00:00:07    catalog_product_category index has been rebuilt successfully in 00:00:00    catalogrule_rule index has been rebuilt successfully in 00:00:05    catalog_product_attribute index has been rebuilt successfully in 00:00:04    cataloginventory_stock index is locked by another reindex process. Skipping.    catalog_product_price index has been rebuilt successfully in 00:00:01    catalogrule_product has been rebuilt successfully in 00:00:00    catalogsearch_fulltext index has been rebuilt successfully in 00:00:01    ```
 1. Som du ser ovan finns    ```bash    cataloginventory_stock```    indexprocessen har hoppats över.
 
 
@@ -84,5 +84,5 @@ I vår utvecklardokumentation:
 * [Indexeringsöversikt](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
 * [Bästa praxis för indexerare](https://devdocs.magento.com/guides/v2.3/performance-best-practices/configuration.html#indexers)
 * [Konfigurera och kör Cron](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html)
-* [Hantera index](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
+* [Hantera indexerare](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
 * [Indexeroptimering](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexer-batch.html)

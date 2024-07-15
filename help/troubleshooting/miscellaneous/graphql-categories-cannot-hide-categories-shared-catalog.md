@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Problem
 
-GraphQL `categoryList` frågor ignorerar kategoribehörigheten för att dölja kategorier i en delad katalog. Detta händer alla handlare på Adobe Commerce 2.4.3 med funktionen för delad katalog i B2B aktiverad.
+GraphQL-kategorier och `categoryList`-frågor ignorerar kategoribehörigheten för att dölja kategorier i en delad katalog. Detta händer alla handlare på Adobe Commerce 2.4.3 med funktionen för delad katalog i B2B aktiverad.
 
 <u>Steg som ska återskapas</u>:
 
@@ -34,8 +34,8 @@ Detta händer alla handlare på Adobe Commerce 2.4.3 med PWA storefront-förbruk
 1. Tilldela några produkter till var och en av dessa kategorier.
 1. Tilldela CAT1 till den anpassade katalogen och ta bort tilldelningen CAT2 från den anpassade privata katalogen. Detta tar bort tilldelningen av alla produkter från CAT2 från den delade katalogen.
 1. Spara den anpassade katalogen.
-1. Ange kategoribehörighet för CAT2 till *Neka* Bläddringskategori och ställ in kundgruppen på ovanstående privata katalog.
-1. Kör `categoryList query` eller kategorifrågan som företagsanvändare från steg tre.
+1. Ange kategoribehörigheten för CAT2 till kategorin *Neka* bläddring och ange kundgruppen till ovanstående privata katalog.
+1. Kör `categoryList query`- eller kategorifrågan som företagsanvändare från steg tre.
 
 <u>Förväntade resultat</u>:
 
@@ -51,8 +51,8 @@ Funktionaliteten implementerades inte.
 
 ## Lösning
 
-Problemet kommer att åtgärdas i version 2.4.4 och handlarna bör [skicka en biljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att få ett anpassat plåster om de behöver en lösning före version 2.4.4.
+Problemet kommer att åtgärdas i version 2.4.4 och handlare bör [skicka in en biljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att få en anpassad korrigering om de behöver en lösning före version 2.4.4.
 
 ## Relaterad läsning
 
-* [Bästa praxis Adobe Commerce antal kategorier begränsningar](https://support.magento.com/hc/en-us/articles/360048176832) i vår kunskapsbas för support.
+* [Bästa praxis Adobe Commerce gränser för antal kategorier](https://support.magento.com/hc/en-us/articles/360048176832) i vår kunskapsbas för support.

@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-43824: Orderannulleringsåtgärden misslyckades med felet&quot;Du har inte avbrutit objektet&quot;
 
-MDVA-43824-korrigeringen löser problemet där åtgärden för att avbryta beställningen misslyckades med felet: *Du har inte annullerat objektet*. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 är installerat. Korrigerings-ID är MDVA-43824. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
+MDVA-43824-korrigeringen löser problemet där åtgärden för att avbryta ordern misslyckades. Felkod: *Du har inte avbrutit objektet*. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 är installerat. Korrigerings-ID är MDVA-43824. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.3-p1
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.3.6 - 2.3.7-p3, 2.4.1 - 2.4.4
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -45,7 +45,7 @@ Zend_Db_Statement_Exception: SQLSTATE[23000]: Integrity constraint violation: 14
 1. Gå till kassan och lägg ordern med valfri betalningsmetod.
 1. Gå till Commerce Admin > **Försäljning** > **Beställningar**.
 1. Öppna beställningen som placerades i steg 4.
-1. Klicka på **Avbryt** -knappen.
+1. Klicka på knappen **Avbryt**.
 
 <u>Förväntade resultat</u>:
 
@@ -53,20 +53,20 @@ Ordern har annullerats utan fel.
 
 <u>Faktiska resultat</u>:
 
-Åtgärden för att avbryta ordern misslyckades med följande fel: *Du har inte annullerat objektet.*
+Åtgärden för att avbryta ordern misslyckades med följande fel: *Du har inte avbrutit objektet.*
 
 ## Tillämpa korrigeringen
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [Patchar tillgängliga i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår dokumentation för utvecklare.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [Patchar i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår utvecklardokumentation.

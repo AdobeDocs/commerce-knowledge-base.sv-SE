@@ -37,9 +37,9 @@ Kör följande kommando i CLI om du vill kontrollera aktuell konfiguration och a
 redis-cli -p REDIS_PORT -h REDIS_HOST info | egrep --color "(role|used_memory_peak|maxmemory|evicted_keys|uptime_in_days)"
 ```
 
-The *REDIS\_PORT* och *REDIS\_HOST* variabler kan hämtas från `app/etc/env.php`.
+Variablerna *REDIS\_PORT* och *REDIS\_HOST* kan hämtas från `app/etc/env.php`.
 
-Om utdata från körning av ovanstående fråga visar att andelen ledigt minne är mindre än 40 %, [skicka en biljett till Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) begära en ökning av `maxmemory` i Redis Server. Om värdet för de borttagna tangenterna inte är &quot;0&quot; eller Redis-uppspelningstiden i dagar är lika med 0 (vilket anger att Redis har kraschat idag) bör du även [skicka en biljett till Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) begära en utredning och en korrigering av problemet.
+Om utdata från körning av ovanstående fråga visar att procentandelen ledigt minne är mindre än 40 %, [skickar du en biljett till Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär en ökning av inställningen `maxmemory` i Redis Server. Om värdet för de borttagna tangenterna inte är &quot;0&quot; eller Redis-uppspelningstiden i dagar är lika med 0 (vilket anger att Redis har kraschat idag), bör du även [skicka en biljett till Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära en utredning och en korrigering av problemet.
 
 ## Relaterad läsning
 

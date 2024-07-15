@@ -22,14 +22,14 @@ I den här artikeln finns en lösning på problem med modulfunktioner efter att 
 
 ## Problem
 
-Har inaktiverat modulutdata i Commerce Admin, under **Lager** > **Inställningar** > **Konfiguration** > AVANCERAT > **Avancerat** kan du kanske börja se problem med modulfunktionen.
+När du har inaktiverat modulutdata i Commerce Admin, under **Lager** > **Inställningar** > **Konfiguration** > ADVANCED > **Avancerat**, kan du börja se problem med modulfunktionen.
 
 ## Orsak
 
-Inaktivera modulutdata under **Lager** > **Inställningar** > **Konfiguration** > AVANCERAT > **Avancerat** inaktiverar bara utdata (HTML, JS), men funktionen i den här modulen inaktiveras inte.
+Om du inaktiverar en modulutdata under **Lagrar** > **Inställningar** > **Konfiguration** > AVANCERAT > **Avancerat** inaktiveras bara utdata (HTML, JS), men funktionen för den här modulen inaktiveras inte.
 
 ## Lösning
 
-Om du behöver inaktivera modulfunktionen inaktiverar du modulen enligt beskrivningen i [Aktivera eller inaktivera moduler](https://devdocs.magento.com/guides/v2.1/install-gde/install/cli/install-cli-subcommands-enable.html) i vår dokumentation för utvecklare.
+Om du behöver inaktivera modulfunktioner inaktiverar du modulen enligt beskrivningen i [Aktivera eller inaktivera moduler](https://devdocs.magento.com/guides/v2.1/install-gde/install/cli/install-cli-subcommands-enable.html) i utvecklardokumentationen.
 
 Funktionen för inaktivering av modulutdata har tagits bort från version 2.2.0.

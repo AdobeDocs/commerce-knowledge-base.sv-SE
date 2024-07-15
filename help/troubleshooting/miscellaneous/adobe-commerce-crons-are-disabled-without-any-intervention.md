@@ -1,6 +1,6 @@
 ---
-title: Adobe Commerce [!DNL crons] inaktiverad utan åtgärd
-description: Använd den här artikeln för att åtgärda problemet där [!DNL crons] inaktiveras utan åtgärd.
+title: Adobe Commerce [!DNL crons] inaktiverat utan åtgärd
+description: Använd den här artikeln om du vill åtgärda problemet där  [!DNL crons]  är inaktiverat utan åtgärd.
 exl-id: 5172d2ae-53ad-4db6-ae00-7b27c96911e9
 source-git-commit: 9cd7cabc37c0f290c41f790b0fb06177c3156d48
 workflow-type: tm+mt
@@ -15,11 +15,11 @@ Den här artikeln innehåller en lösning för när [!DNL crons] inaktiveras uta
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce i molninfrastrukturen, alla [versionerna](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+* Adobe Commerce i molninfrastrukturen, alla [versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 ## Problem
 
-Dina [!DNL crons] inaktiveras efter distributionen.
+[!DNL crons] har inaktiverats efter distributionen.
 
 <u>Steg som ska återskapas</u>:
 
@@ -27,22 +27,22 @@ Driftsätt.
 
 <u>Förväntat resultat</u>:
 
-Dina [!DNL crons] är igång.
+[!DNL crons] körs.
 
 <u>Faktiskt resultat</u>:
 
-Dina [!DNL crons] inaktiveras efter distributionen.
+[!DNL crons] har inaktiverats efter distributionen.
 
 ## Orsak
 
-Ett problem med [!DNL OPcache] inställningar.
+Ett problem med inställningarna för [!DNL OPcache].
 
 ## Lösning
 
-Uppgradera [!DNL ECE Tools] till den senaste versionen [2002.1.13](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html#v2002113).
+Uppgradera [!DNL ECE Tools] till den senaste versionen, [ 2002.1.13](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html#v2002113).
 
 ## Relaterad läsning
 
 * [Långsam prestanda, långsam och långsam [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html) i vår kunskapsbas för support.
-* [[!DNL Cron] uppgifter låsa uppgifter från andra grupper](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en) i vår kunskapsbas för support.
+* [[!DNL Cron] aktiviteter låser aktiviteter från andra grupper](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en) i vår kunskapsbas för support.
 * [[!DNL Cron] jobbet har fastnat i statusen&quot;kör&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) i vår kunskapsbas för support.

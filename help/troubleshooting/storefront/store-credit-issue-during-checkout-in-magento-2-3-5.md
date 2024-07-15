@@ -59,4 +59,4 @@ Artiklar för Adobe Commerce 2.3.5 Kända fel i vår kunskapsbas:
 
 I vår utvecklardokumentation:
 
-* [Adobe Commerce 2.3.5 Kända fel](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* [Kända fel i Adobe Commerce 2.3.5](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

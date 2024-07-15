@@ -21,7 +21,7 @@ E-postmeddelanden med orderbekräftelse skickas från Apache-serverns e-postadre
 
 <u>Steg som ska återskapas</u>:
 
-1. Gör en beställning med **Skicka orderbekräftelse** är markerad.
+1. Placera en order med kryssrutan **Skicka orderbekräftelse** markerad.
 1. Kontrollera e-post.
 
 <u>Förväntat resultat</u>:
@@ -59,6 +59,6 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

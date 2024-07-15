@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Installationskommandot för Composer åsidosätter .gitignore-filen, Adobe Commerce
 
-Den här artikeln innehåller en lösning för när en spårad `.gitignore` filen åsidosätts av dispositionen på Adobe Commerce i molninfrastrukturen 2.4.2-p1 och 2.3.7.
+Den här artikeln innehåller en lösning för när en spårad `.gitignore`-fil åsidosätts av en disposition på Adobe Commerce i molninfrastrukturen 2.4.2-p1 och 2.3.7.
 
 ## Berörda produkter och versioner
 
@@ -21,7 +21,7 @@ Adobe Commerce om molninfrastruktur 2.4.2-p1 och 2.3.7.
 
 ## Problem
 
-`.gitignore` filen skrivs över när du kör installationskommandot för disposition.
+Filen `.gitignore` skrivs över när du kör ett installationskommando för dispositionen.
 
 <u>Steg som ska återskapas</u>:
 
@@ -58,15 +58,15 @@ Adobe Commerce om molninfrastruktur 2.4.2-p1 och 2.3.7.
 
 <u>Förväntat resultat</u>:
 
-`.gitignore` åsidosätts inte av disposition.
+`.gitignore` åsidosätts inte av dispositionen.
 
 <u>Faktiskt resultat</u>:
 
-`.gitignore` åsidosätts av varje installationskörning av en disposition.
+`.gitignore` åsidosätts av varje installationskörning för en disposition.
 
 ## Lösning
 
-Behåll dina egna `.gitignore file` du måste ignorera det i `magento-deploy-ignore` -avsnitt.
+Om du vill behålla din anpassade `.gitignore file` måste du ignorera den i avsnittet `magento-deploy-ignore`.
 
 ```git
 {
@@ -84,4 +84,4 @@ Behåll dina egna `.gitignore file` du måste ignorera det i `magento-deploy-ign
 
 ## Relaterad läsning
 
-* [Den spårade .gitignore-filen åsidosätts av kompositören.](https://github.com/magento/magento2/issues/32888) i Magento2 GitHub.
+* [Den spårade .gitignore-filen åsidosätts av dispositionen!](https://github.com/magento/magento2/issues/32888) i Magento2 GitHub.

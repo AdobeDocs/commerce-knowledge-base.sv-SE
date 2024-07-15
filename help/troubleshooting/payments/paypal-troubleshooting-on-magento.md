@@ -29,9 +29,9 @@ Se till att du har använt samma inställningar och aktiverat samma funktioner i
 
 ### Exempel på inställningsproblem
 
-När du använder lösningen PayPal Express Checkout måste transaktioner som baseras på AVS/CSC-svar avvisas i **PayPal Manager** (Tjänstinställningar > Konfigurera > Säkerhetsalternativ) och i **Commerce Admin** ( **Lager** > Konfiguration > **Försäljning** > **Betalningsmetoder** ...).
+När du använder PayPal Express Checkout-lösningen måste transaktioner som baseras på AVS/CSC-svar avvisas i **PayPal Manager** (Tjänstinställningar > Konfigurera > Säkerhetsalternativ) och i **Commerce Admin** ( **Butiker** > Konfiguration > **Försäljning** > **Betalningsmetoder** ..)...................)...
 ![magento_paypal_settings_2.4.1.png](assets/magento_paypal_settings_2.4.1.png)
-Mer information finns i dokumentationen: [PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm) och [Adobe Commerce](/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html) i vår användarhandbok.
+Mer information finns i dokumentationen: [PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm) och [Adobe Commerce](/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html) i användarhandboken.
 
 ## Tillåt referenstransaktioner
 
@@ -41,14 +41,14 @@ Om betalningsmetoden PayPal innefattar API med faktureringsavtal och referenstra
 
 Se följande artiklar:
 
-* [PayPal-gateway avvisade begäran - dubblettfakturautleverans](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) i vår kunskapsbas för support.
-* [Ändra öknings-ID för ny lagringsenhet](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) i vår kunskapsbas för support.
+* [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) i vår kunskapsbas för support.
+* [Ändra inkrement-ID för ny lagringsenhet](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) i vår kunskapsbas för support.
 
 ## Kontakta supporten för att samla in avancerade betalningsloggar
 
 Om du vill felsöka komplicerade betalningsproblem kan Adobe Commerce supportteam be dig att använda en dedikerad korrigeringsfil för att aktivera avancerad betalningsloggning. I det här fallet bör du göra följande:
 
-[Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) med följande uppgifter:
+[Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) med följande information:
 
 * Ange ditt problem med så många detaljer som möjligt.
 * Visa en lista över de steg du försökte utföra från den här artikeln, kunskapsbasen och andra resurser. Inkludera alla resultat.
@@ -57,5 +57,5 @@ Om du vill felsöka komplicerade betalningsproblem kan Adobe Commerce supporttea
 Om du får korrigeringsfilen för avancerad betalningsloggning:
 
 * Lägg på plåstret.
-* Samla in loggar och bifoga dem till [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+* Samla in loggar och bifoga dem till din [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 * Vänta på ytterligare rekommendationer från Adobe Commerce Support Team.

@@ -26,16 +26,16 @@ Ett ospecifikt fel visas när utcheckning av gäst inaktiveras från serverdelen
 
 <u>Förutsättningar</u>:
 
-1. I Commerce Admin, under **Lager** > **Konfiguration** > **Försäljning** > **Utcheckning**, ange **Tillåt gästutcheckning** = *Nej*.
-1. Aktivera PayPal via Braintree enligt anvisningarna i [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) i vår användarhandbok.
+1. I Commerce Admin ställer du in **Tillåt gästutcheckning** = *Nej **under**Lagrar* > **Konfiguration** > **Försäljning** > **Utcheckning**.
+1. Aktivera PayPal via Braintree enligt beskrivningen i [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) i användarhandboken.
 
 <u>Steg som ska återskapas</u>:
 
 1. Lägg produkten i varukorgen som gäst.
-1. Välj **Mini-cart** och klicka **Betala med PayPal**.
+1. Välj **Mini-cart** och klicka på **Betala med PayPal**.
 1. Slutför utcheckningen av PayPal så hamnar du på sidan för beställningsgranskning.
-1. Välj **Leveranssätt**.
-1. Klicka **Montera beställning**.
+1. Välj **Leveransmetod**.
+1. Klicka på **Montera order**.
 
 <u>Förväntade resultat</u>:
 
@@ -59,6 +59,6 @@ Lösningen på problemet är att kunden kan logga in på en butik (inloggade anv
 
 ## Relaterad läsning
 
-* [Bästa praxis för antalet varukorgar i Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) i vår kunskapsbas för support.
-* [Självstudiekurs om orderbehandling: Steg 1. Lägg artiklar i kundvagnen](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) i vår utvecklardokumentation
-* [GraphQL självstudiekurs: Steg 1. Lägg produkter i kundvagnen](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) i vår utvecklardokumentation
+* [Bästa praxis för antal produkter i kundvagn i Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) i vår kunskapsbas för support.
+* [Beställningsexempel: Steg 1. Lägg till artiklar i kundvagnen ](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) i utvecklardokumentationen
+* [GraphQL självstudiekurs: Steg 1. Lägg till produkter i kundvagnen ](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) i utvecklardokumentationen

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Diagnostisera intäktsavvikelser i Google eCommerce
 
-I den här artikeln beskrivs lösningar för skillnader mellan Google och Magento Business Intelligence (MBI). Google eCommerce tracking ger både ditt Google Analytics-konto och dina MBI-instrumentpaneler kraft, men det leder till att många kunder frågar oss: Bör båda verktygen rapportera samma mängd **order** och **omsättning**?
+I den här artikeln beskrivs lösningar för skillnader mellan Google och Magento Business Intelligence (MBI). Google eCommerce tracking ger både ditt Google Analytics-konto och dina MBI-instrumentpaneler kraft, men det leder till att många kunder frågar oss: Ska båda verktygen rapportera samma belopp för **order** och **intäkter**?
 
 Enligt vår erfarenhet är svaret&quot;nej&quot; i nästan alla fall. Detta beror på att Google eCommerce tracking hämtar orderinformationen under en knappklickningshändelse på din webbplats, som saknar många orderattribut som registreras senare i tiden i din databas - allt från order som inte registreras till att senare annulleras eller återbetalas.
 
@@ -29,13 +29,13 @@ När Google Analytics underrapporterar order och intäkter är det en indikation
 * Databasens tidsstämpel är i en annan tidszon än Google Analytics tidsstämpel.
 * Folk kan besöka din webbplats via inkognitiva fönster eller med cookies inaktiverade.
 
-## Varför rapporterar GA **mer** intäkter än min databas?
+## Varför rapporterar GA **fler** intäkter än min databas?
 
 Vi har funnit att det är vanligare för Google Analytics att överrapportera order och intäkter jämfört med en e-handelsdatabas. Det här är inte alltid dåligt. Din databas är det slutgiltiga antalet transaktioner som har gjorts på din webbplats, och det finns flera skäl till att Google kan rapportera mycket även om du har konfigurerat den perfekt:
 
 * eCommerce tracking samlar in duplicerade knappklickningar som bara registreras som en enda order i databasen.
 * Du har ett stort antal annullerade, återfinansierade eller bedrägliga order, vilket är en statusändring som inträffar när eCommerce spårar data.
-* Dina **Intäkter** och **Beställningar** mätvärden utesluter avsiktligt test- eller internorder, vilket Google inte kan särskilja.
+* Måtten **Inkomster** och **Beställningar** utesluter avsiktligt test- eller interna order, som inte kan differentieras i Google.
 * Det går inte att placera beställningar i databasen under vissa omständigheter.
 * Google eCommerce tracking känner inte till kuponger och rabatter på ordern.
 * Databasens tidsstämpel är i en annan tidszon än Google Analytics tidsstämpel.
@@ -44,6 +44,6 @@ Tänk på att även om Google rapporterar ett högre antal än din databas sakna
 
 ## Felsökning
 
-* Skapa en klon av **Intäkter** mätvärden utan filter som begränsar resultatet. Filtren för beställningar vi räknar eller kunder vi räknar är viktiga, men Google har inget motsvarande filter.
+* Skapa en klon av dina **intäktsmått**-mått utan filter som begränsar resultatet. Filtren för beställningar vi räknar eller kunder vi räknar är viktiga, men Google har inget motsvarande filter.
 * Granska en liten nyligen gjord period, till exempel ett intervall på några timmar tidigare den här veckan.
-* När du har konfigurerat Google e-handelsspårning i MBI kan du använda Filter eller Gruppera efter för att granska en enskild källa, medium eller kampanj. Gör sedan samma sak i Google. En källa med mindre trafik/intäkter blir bättre, eftersom den har mindre felmarginal.
+* När du har konfigurerat Google e-handelsspårning i MBI kan du använda Filter eller Gruppera efter för att granska en enskild Source, Medium eller Campaign. Gör sedan samma sak i Google. En källa med mindre trafik/intäkter blir bättre, eftersom den har mindre felmarginal.

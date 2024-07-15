@@ -21,9 +21,9 @@ Den här artikeln innehåller en korrigering för när distributionen misslyckas
 
 >\[Exception\] Varning: Argument 3 saknas för Fastly\\Cdn\\Plugin\\..., anropas i /app/vendor/magento/framework/Interception/Interceptor.php ... och definieras i /app/vendor/fastly/magento2/Plugin/ExcludeFilesFromMinification.php ...
 
-**Orsak:** bakåtkompatibla ändringar i snabbmodulen v1.2.79.
+**Orsak:** inkompatibla ändringar i snabbmodulen v1.2.79 har gjorts bakåt.
 
-**Lösning (tillfällig):** uppgradera modulen Snabbt till version 1.2.82 eller senare och överför en ny VCL i Commerce Admin. Sedan implementera och push-styr du ändringarna för att få en lyckad distribution.
+**Lösning (tillfällig):** Uppgradera snabbmodulen till version 1.2.82 eller senare och överför en ny VCL i Commerce Admin. Sedan implementera och push-styr du ändringarna för att få en lyckad distribution.
 
 ## Berörda versioner
 
@@ -54,7 +54,7 @@ Distributionen kan misslyckas med följande felmeddelanden:
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-Om du använder Adobe Commerce i molninfrastrukturslösningen visas det här felmeddelandet i [distributionslogg](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html#log-deploy-log). För Adobe Commerce lokalt visas felet på kommandoraden.
+Om du använder Adobe Commerce i molninfrastrukturslösningen visas det här felmeddelandet i [distributionsloggen](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html#log-deploy-log). För Adobe Commerce lokalt visas felet på kommandoraden.
 
 ## Orsak
 
@@ -70,4 +70,4 @@ Gör så här:
    * om Fastly-modulen ingår i magento-cloud-metapackage:    <pre>Composer update magento/magento-cloud-metapackage</pre>
    * om modulen Fastly installerades separat (om du till exempel använder Adobe Commerce lokalt, inte molnutgåvan) <pre>snabbuppdatering/magento2</pre>
 1. Genomför och skicka ändringarna och utlösa distributionsprocessen om det inte görs automatiskt.
-1. I Admin [ladda upp den nya VCL-filen snabbt](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
+1. I Admin [överför du den nya VCL:en till Snabbt](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).

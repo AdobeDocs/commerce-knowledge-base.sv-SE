@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0: &quot;Lägg till markeringar i kundvagnen&quot; fungerar inte
 
-I den här artikeln beskrivs en tillfällig lösning på ett problem med en trasig knapp som är känd i Commerce Admin när du hanterar kundens kundvagn. När du försöker lägga till valda produkter i kundens kundvagn visas **Lägg till markeringar i kundvagnen** som finns längst ned i avsnittet fungerar inte. Det här problemet uppstår på alla sidor på administrationspanelen som innehåller två **Lägg till markeringar i kundvagnen** knappar. En permanent programfix finns i Adobe Commerce 2.4.1.
+I den här artikeln beskrivs en tillfällig lösning på ett problem med en trasig knapp som är känd i Commerce Admin när du hanterar kundens kundvagn. När du försöker lägga till valda produkter i kundens kundvagn fungerar inte knappen **Lägg till val i kundvagnen** som finns längst ned i avsnittet. Problemet inträffar på alla sidor på Admin-panelen som innehåller två **Lägg till markeringar i kundvagnen** . En permanent programfix finns i Adobe Commerce 2.4.1.
 
 ## Berörda produkter och versioner
 
@@ -23,9 +23,9 @@ I den här artikeln beskrivs en tillfällig lösning på ett problem med en tras
 
 <u>Steg som ska återskapas</u>
 
-1. Navigera till en sida på Admin-panelen som innehåller två **Lägg till markeringar i kundvagnen** knappar.
+1. Navigera till en sida på Admin-panelen som innehåller två **Lägg till markeringar i kundvagnen** .
 1. Välj artiklar som ska läggas till i kundvagnen.
-1. Klicka på **Lägg till markeringar i kundvagnen** längst ned i avsnittet.
+1. Klicka på knappen **Lägg till markeringar i kundvagnen** som finns längst ned i avsnittet.
 
 <u>Förväntat resultat</u>
 
@@ -37,11 +37,11 @@ Adobe Commerce lägger inte till dina val i kundvagnen.
 
 ## Lösning
 
-The **Lägg till markeringar i kundvagnen** som finns högst upp på sidan fungerar fortfarande. Problemet förväntas bli åtgärdat i Adobe Commerce version 2.4.1, som är planerad att släppas under tredje kvartalet 1.
+Knappen **Lägg till markeringar i kundvagnen** som finns högst upp på sidan fungerar fortfarande. Problemet förväntas bli åtgärdat i Adobe Commerce version 2.4.1, som är planerad att släppas under tredje kvartalet 1.
 
 ## Relaterad läsning
 
 * [MerchDocs&#39; Managing a Shopping Cart](https://docs.magento.com/user-guide/sales/shopping-assisted-cart-manage.html) i vår användarhandbok.
-* [Adobe Commerce 2.4.0: Raw-meddelandedata visas i butiken](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md) i vår kunskapsbas för support.
-* [Adobe Commerce 2.4.0: Exportavgifter fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) i vår kunskapsbas för support.
-* [Adobe Commerce 2.4.0: Braintree betalningsmetoder visas inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) i vår kunskapsbas för support.
+* [Adobe Commerce 2.4.0-problem: Raw-meddelandedata visas på butiken](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md) i vår kunskapsbas för support.
+* [Problem med Adobe Commerce 2.4.0: Exportskattesatser fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) i vår kunskapsbas för support.
+* [Ett känt fel uppstod i Adobe Commerce 2.4.0: Betalningsmetoder i Braintree visas inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) i vår kunskapsbas för support.

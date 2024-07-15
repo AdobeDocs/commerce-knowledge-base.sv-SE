@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I den här artikeln finns felsökningsanvisningar för Adobe Commerce om molninfrastrukturproblem där du i stället försöker komma åt den nyligen skapade integreringsmiljön.
 
-För att åtgärda detta måste du korrigera bas-\_url-värdet i databasen och se till att `UPDATE_URLS` variabelvärdet ställs in på `true`. Mer information finns i avsnitten nedan.
+För att åtgärda detta måste du korrigera bas-\_url-värdet i databasen och se till att variabelvärdet `UPDATE_URLS` är inställt på `true`. Mer information finns i avsnitten nedan.
 
 Berörda versioner och utgåvor:
 
@@ -38,7 +38,7 @@ Du omdirigeras till miljön i den överordnade grenen.
 
 ## Lösning
 
-För att åtgärda problemet måste du korrigera `base_url` värden (säkra och osäkra) i den anpassade miljödatabasen och ange `UPDATE_URL` i `.magento.env.yaml` -fil.
+För att åtgärda problemet måste du korrigera `base_url`-värdena (säkra och osäkra) i den anpassade miljödatabasen och ange variabeln `UPDATE_URL` i filen `.magento.env.yaml`.
 
 ### Korrigera bas-\_url-värden i databasen
 
@@ -59,7 +59,7 @@ update core_config_data set value = %your_new_environment_secure_url% where path
 
 #### Korrigera databasen med Adobe Commerce CLI (finns för version 2.2.X)
 
-1. Logga in som eller växla till [Ägare av Adobe Commerce filsystem](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html).
+1. Logga in som, eller växla till, ägare av [Adobe Commerce-filsystemet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html).
 1. Kör följande kommandon:
 
 ```bash
@@ -67,9 +67,9 @@ php <your_magento_install_dir>/bin/magento config:set web/unsecure/base_url http
 php <your_magento_install_dir>/bin/magento config:set web/secure/base_url https://example.com
 ```
 
-### Ange `UPDATE_URLS` variabel
+### Ange variabeln `UPDATE_URLS`
 
-I din lokala kodbas finns `.magento.env.yaml` filuppsättning:
+I den lokala kodbasen i filuppsättningen `.magento.env.yaml`:
 
 ```
  stage:

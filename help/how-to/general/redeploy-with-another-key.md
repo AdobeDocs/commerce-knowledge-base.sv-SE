@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Den här artikeln innehåller anvisningar om hur du distribuerar om Adobe Commerce i molninfrastruktur med olika autentiseringsnycklar. Du kan till exempel ha använt nycklarna för ett annat konto eller så har du använt Magento Open Source i stället för Adobe Commerce nycklar.
 
-Om du använde fel nycklar misslyckas distributionen. Om du vill återställa projektet måste du klona projektet, lägga till rätt nycklar i `auth.json`och flytta ändringen till huvudgrenen.
+Om du använde fel nycklar misslyckas distributionen. Om du vill återställa projektet måste du klona projektet, lägga till rätt nycklar till `auth.json` och överföra ändringen till huvudgrenen.
 
-I den här artikeln antar vi att ditt projekt har en `master` endast förgrening (`master` är standardgrenen när du skapar ett projekt).
+I den här artikeln antar vi att ditt projekt bara har en `master`-gren (`master` är standardgren när du skapar ett projekt).
 
 Så här återdistribuerar du med rätt autentiseringsnycklar:
 
@@ -65,4 +65,4 @@ Så här återdistribuerar du med rätt autentiseringsnycklar:
 
 1. Vänta tills distributionen är klar.
 
-Meddelanden anger om distributionen lyckades. Du kan bekräfta att distributionen lyckades genom att gå till någon av **Miljövägar** visas på skärmen.
+Meddelanden anger om distributionen lyckades. Du kan bekräfta att distributionen lyckades genom att gå till någon av de **miljövägar** som visas på skärmen.

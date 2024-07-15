@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: Webbläsaren visar felet&quot;Det går inte att skriva proxy till&quot;
 
-I det här avsnittet beskrivs en lösning när webbläsaren visar en *Det går inte att använda proxy till*&quot; och konsolen visar en
+I det här avsnittet beskrivs en lösning när webbläsaren visar en *Kan inte proxyserver till* och konsolen visar en
 
 ```
 ENOTFOUND
@@ -37,7 +37,7 @@ fel vid användning av Progressive Web App (PWA) Studio för Adobe Commerce.
 
 <u>Faktiskt resultat</u>:
 
-* Din webbläsare visar &quot;*Det går inte att använda proxy till*&quot;fel och konsolen visar ett fel som:
+* Webbläsaren visar felet *Kan inte proxyservern* och konsolen visar ett fel som:
 
 ```
     ENOTFOUND
@@ -51,9 +51,9 @@ NodeJS kan inte matcha värdnamnet för din Adobe Commerce-butik.
 ## Lösning
 
 1. Se till att din Adobe Commerce Store läses in i mer än en webbläsare.
-1. Om du kör en lokal DNS-server eller VPN lägger du till en post i värdfilen (finns i `/etc/hosts`) och mappa den här domänen manuellt ([Allmänna instruktioner för redigering av värdfiler](https://linuxize.com/post/how-to-edit-your-hosts-file/)) så att NodeJS kan lösa det.
+1. Om du kör en lokal DNS-server eller VPN lägger du till en post i värdfilen (som finns i `/etc/hosts`) och mappar den här domänen manuellt ([Allmänna instruktioner för redigering av värdfiler](https://linuxize.com/post/how-to-edit-your-hosts-file/)) så att NodeJS kan lösa det.
 
 ## Relaterad läsning
 
-* [PWA Studio for Adobe Commerce Documentation](https://magento.github.io/pwa-studio/)
+* [PWA Studio för Adobe Commerce-dokumentation](https://magento.github.io/pwa-studio/)
 * [Verktyg och bibliotek](https://magento.github.io/pwa-studio/technologies/tools-libraries/)

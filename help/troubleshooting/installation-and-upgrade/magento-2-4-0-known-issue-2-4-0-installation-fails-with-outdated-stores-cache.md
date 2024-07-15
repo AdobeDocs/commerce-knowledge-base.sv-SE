@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Installationen av Adobe Commerce 2.4.0 misslyckas med inaktuell arkivcache
 
-I den här artikeln finns en lösning på problemet där Adobe Commerce 2.4.0-installationen misslyckas och felmeddelandet: *Standardwebbplatsen är inte definierad. Ange webbplatsen och försök igen.* visas i konsolen.
+I den här artikeln finns en lösning på problemet där din Adobe Commerce 2.4.0-installation misslyckas med felmeddelandet: *Standardwebbplatsen är inte definierad. Ange webbplatsen och försök igen.* visas i konsolen.
 
 ## Berörda produkter och versioner
 
@@ -23,7 +23,7 @@ I den här artikeln finns en lösning på problemet där Adobe Commerce 2.4.0-in
 ## Problem
 
 <u>Förutsättningar:</u>
-Ett tillägg från tredje part med beroenden till API:er för butiksmodulen i CLI-kommandon har konfigurerats enligt kraven i `composer.json`. Detta gör att installationen av Adobe Commerce 2.4.0 misslyckas med ett felmeddelande: *Standardwebbplatsen är inte definierad. Ange webbplatsen och försök igen.* visas i konsolen.
+Ett tillägg från tredje part med beroenden på API:er för butiksmodulen i CLI-kommandon har konfigurerats enligt kraven i `composer.json` . Detta gör att installationen av Adobe Commerce 2.4.0 misslyckas med ett felmeddelande: *Standardwebbplatsen är inte definierad. Ange webbplatsen och försök igen.* visas i konsolen.
 
 ## Orsak
 
@@ -33,7 +33,7 @@ Problemet visas för tredjepartstillägg som är beroende av butiker i sina CLI-
 
 Före installationen av Adobe Commerce 2.4.0 måste handlarna
 
-1. Ta bort dessa tillägg från tredje part från `composer.json`.
+1. Ta bort de här tredjepartstilläggen från `composer.json`.
 1. Installera Adobe Commerce utan tillägg.
 1. Lägg till tilläggen efter installationen.
 

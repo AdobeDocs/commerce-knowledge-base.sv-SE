@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL B2B] 1.4.0-installationen misslyckas på Adobe Commerce 2.4.6-p1 lokal'
-description: I den här artikeln finns en lösning på problemet med lokal användning av Adobe Commerce 2.4.6-p1 där [!DNL B2B] installation av version 1.4.0 misslyckas.
+title: Installationen av [!DNL B2B] 1.4.0 misslyckas i Adobe Commerce 2.4.6-p1 lokalt
+description: I den här artikeln finns en lösning på det lokala problemet i Adobe Commerce 2.4.6-p1 där installationen av  [!DNL B2B] version 1.4.0 misslyckas.
 feature: Install, Upgrade, B2B
 role: Developer
 exl-id: 4a557c13-7ec2-4cfe-b86e-bb0d1a441658
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL B2B] 1.4.0-installationen misslyckas på Adobe Commerce 2.4.6-p1 lokalt
+# Installationen av [!DNL B2B] 1.4.0 misslyckas på Adobe Commerce 2.4.6-p1 lokalt
 
-I den här artikeln finns en lösning på problemet med lokal användning av Adobe Commerce 2.4.6-p1 där [!DNL B2B] installation av version 1.4.0 misslyckas.
+I den här artikeln beskrivs en lösning på problemet med lokal installation av Adobe Commerce 2.4.6-p1 där installationen av [!DNL B2B] version 1.4.0 misslyckas.
 
 ## Berörda produkter och versioner
 
@@ -22,7 +22,7 @@ I den här artikeln finns en lösning på problemet med lokal användning av Ado
 
 >[!NOTE]
 >
->[!DNL B2B] version 1.4.0 har installerats **Adobe Commerce Cloud 2.4.6-p1**.
+>[!DNL B2B] version 1.4.0 har installerats på **Adobe Commerce Cloud 2.4.6-p1**.
 
 ## Problem
 
@@ -61,9 +61,9 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
 
 ## Tillfällig lösning
 
-Installationen eller uppgraderingen av [!DNL B2B] version 1.4.0 på Adobe Commerce 2.4.6-p1 genom att lägga till manuella beroenden för [!DNL B2B] säkerhetspaket med [stabilitetstagg](https://getcomposer.org/doc/04-schema.md#package-links).
+Installationen eller uppgraderingen av [!DNL B2B] version 1.4.0 på Adobe Commerce 2.4.6-p1 slutfördes genom att manuella beroenden för säkerhetspaketet [!DNL B2B] lades till med en [stabilitetstagg](https://getcomposer.org/doc/04-schema.md#package-links).
 
-1. Uppdatera från Adobe Commerce installationskatalog `composer.json` med nödvändiga beroenden:
+1. Uppdatera `composer.json` med nödvändiga beroenden från Adobe Commerce installationskatalog:
 
    ```terminal
    composer require magento/module-re-captcha-company=1.0.3-beta1@beta magento/security-package-b2b=1.0.4-beta1@beta
@@ -92,7 +92,7 @@ Installationen eller uppgraderingen av [!DNL B2B] version 1.4.0 på Adobe Commer
    No security vulnerability advisories found
    ```
 
-1. Uppdatera `composer.json` att lägga till [!DNL B2B] version 1.4.0.
+1. Uppdatera `composer.json` om du vill lägga till [!DNL B2B] version 1.4.0.
 
    ```terminal
    composer require magento/extension-b2b=1.4.0
@@ -114,5 +114,5 @@ Installationen eller uppgraderingen av [!DNL B2B] version 1.4.0 på Adobe Commer
 
 1. Slutför installations- eller uppgraderingsprocessen.
 
-   * [Installera [!DNL B2B] om molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
+   * [Installera [!DNL B2B] i molninfrastrukturen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
    * [Installera lokalt](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html)

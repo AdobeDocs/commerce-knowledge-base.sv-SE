@@ -19,13 +19,13 @@ Beroende på hur komplex din analys är kan det krävas att du känner till ett 
 
 1. Om någon annan i teamet skapade rapporten börjar du med att bekräfta målet och parametrarna för analysen.
 1. Generera förväntade datapunkter att jämföra med MBI-rapporten baserat på en fråga, ett rapportverktyg från tredje part eller en formel.
-1. Granska och bekräfta [mått](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-metrics.html) definitioner, antingen från länken för mätvärden i Report Builder eller genom att besöka [Systemsammanfattning](https://support.magento.com/hc/en-us/articles/360016730971-Understand-View-definitions-of-metrics-filters-columns-and-column-references-in-the-System-Summary) tab:
+1. Granska och bekräfta [metrisk](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-metrics.html)-definitioner, antingen från måttlänken i Report Builder eller genom att gå till fliken [Systemsammanfattning](https://support.magento.com/hc/en-us/articles/360016730971-Understand-View-definitions-of-metrics-filters-columns-and-column-references-in-the-System-Summary):
    * Datatabell
    * Åtgärd
    * Operandkolumn, inklusive dess beräkning om den har härletts (via Systemsammanfattning)
    * Tidsstämpel
    * För prenumerationsvärden: start- och slutdatum
-   * Filter, inklusive sådana som finns i [filteruppsättningar](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) använd
+   * Filter, inklusive de som finns i [filteruppsättningar](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) tillämpade
 1. Granska och bekräfta annan datahantering i rapporten:
    * Beräknade formler
    * [Grupperingar](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/using-visual-report-builder.html#groupby)
@@ -33,8 +33,8 @@ Beroende på hur komplex din analys är kan det krävas att du känner till ett 
    * [Tidsalternativ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/using-visual-report-builder.html)
    * För [kohortanalys](https://support.magento.com/hc/en-us/articles/360016504632-Create-cohort-analysis): Kohortdatum
    * För [kohortanalys](https://support.magento.com/hc/en-us/articles/360016504632-Create-cohort-analysis): Kohortperspektiv
-1. Om diskrepansen innehåller aktuella data bekräftar du den senaste tillgängliga datapunkten genom att kontakta **Uppdateringsinformation** på sidan Anslutningar.
-1. Om ett mätvärde som används i analysen bygger på en tabell från databasen där rader någonsin tas bort från tabellen, bekräftar du med MBI Support Team att tabellen kontrolleras för borttagna rader samt hur ofta kontrollen görs om och [replikeringsmetod](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) för tabellen.
-1. Om kolumner som används i analysen kan ändras efter att en rad har lagts till, måste du bekräfta med stöd för att dessa kolumner används [sök efter ändringar](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html)samt hur ofta kontrollen ska göras.
+1. Om diskrepansen innehåller aktuella data bekräftar du den senaste tillgängliga datapunkten genom att gå till avsnittet **Uppdateringsinformation** på sidan Anslutningar.
+1. Om ett mätvärde som används i analysen bygger på en tabell från din databas där rader någonsin tas bort från den tabellen, bekräftar du med MBI Support Team att tabellen kontrolleras för borttagna rader samt hur ofta kontrollen och [replikeringsmetoden](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) görs för tabellen.
+1. Om kolumner som används i analysen kan ändras efter att en rad har lagts till bekräftar du med stöd för att de här kolumnerna [kontrolleras för ändringar](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html), liksom frekvensen för omkontrollen.
 
-**Fortfarande stumpen?** Oroa dig inte - vi är här för att hjälpa till. Skicka oss en förfrågan med [dessa instruktioner](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md).
+**Fortfarande stumpad?** Oroa dig inte - vi är här för att hjälpa till. Skicka oss en begäran med [dessa instruktioner](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md).

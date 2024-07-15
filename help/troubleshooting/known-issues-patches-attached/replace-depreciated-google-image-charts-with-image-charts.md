@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Ersätt avskrivna Google Image Charts med Image-Charts
 
-De flesta utgåvor och versioner av Adobe Commerce använder för närvarande [Google Image Charts](https://developers.google.com/chart/image/) om du vill återge statiska diagram på Admin Dashboards. Från och med den 14 mars 2019 upphör Google att stödja Google Image Charts. För att lösa problemet tillhandahåller vi en patch som ersätter Google Image Charts med [Bildscheman](https://www.image-charts.com/) kostnadsfri service.
+De flesta utgåvor och versioner av Adobe Commerce använder för närvarande [Google Image Charts](https://developers.google.com/chart/image/) för att återge statiska diagram på Admin-paneler. Från och med den 14 mars 2019 upphör Google att stödja Google Image Charts. För att lösa det här problemet tillhandahåller vi en patch som ersätter Google Image Charts med den kostnadsfria tjänsten [Image-Charts](https://www.image-charts.com/).
 
 ## Berörda versioner
 
@@ -26,7 +26,7 @@ De flesta utgåvor och versioner av Adobe Commerce använder för närvarande [G
 
 ## Problem
 
-Google slutade stödja Google Image Charts den 14 mars 2019. Användare av Adobe Commerce 1.X och Adobe Commerce 2.2.X av alla versioner kan inte visa statiska diagram om de inte laddar ned och installerar patchen och ersätter Google Image Charts med Image-Charts-lösningen. Diagram som visas har samma utformning och funktionalitet som Google Image Charts via kostnadsfria kontotjänsten Image-Charts med en [GDPR](https://www.image-charts.com/data-processing-addendum.html) integritetspolicy. Ytterligare alternativ finns på [Bildscheman](https://www.image-charts.com/).
+Google slutade stödja Google Image Charts den 14 mars 2019. Användare av Adobe Commerce 1.X och Adobe Commerce 2.2.X av alla versioner kan inte visa statiska diagram om de inte laddar ned och installerar patchen och ersätter Google Image Charts med Image-Charts-lösningen. Visade diagram har samma utformning och funktionalitet som Google Image Charts via den kostnadsfria kontotjänsten Image-Charts med en [GDPR](https://www.image-charts.com/data-processing-addendum.html) -integritetspolicy. Mer information finns i [Bildscheman](https://www.image-charts.com/).
 
 ## Lösning
 
@@ -34,7 +34,7 @@ Om du vill kunna visa statiska diagram i Commerce Admin hämtar och installerar 
 
 ### Adobe Commerce lokalt
 
-1. Spara [attached MAGETWO-98833\_Composer\_patch-2019-04-15-04-38-57.patch](assets/MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch.zip) korrigera och överföra den till Adobe Commerce rotkatalog.
+1. Spara patchen [attached MAGETWO-98833\_Composer\_patch-2019-04-15-04-38-57.patch](assets/MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch.zip) och överför den till Adobe Commerce rotkatalog.
 1. Kör följande SSH-kommando när du har ersatt korrigeringsnamnet med det faktiska:
 
    ```git
@@ -43,16 +43,16 @@ Om du vill kunna visa statiska diagram i Commerce Admin hämtar och installerar 
 
    Om ovanstående kommando inte fungerar kan du försöka med att använda `-p2` i stället för `-p1`.)
 
-1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering**.
+1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering** för att ändringarna ska återspeglas.
 
 ### Adobe Commerce i molninfrastruktur
 
 För molnhandlare kommer patchen att ingå i den närmaste uppdateringen av ECE-verktygen.
 
-### Magento 2 - öppen källkod
+### Magento 2 Open Source
 
 1. Gå till [https://magento.com/tech-resources/download\#download2291](https://magento.com/tech-resources/download#download2291).
-1. I **Välj format** nedrullningsbar lista, välj version för dispositionen och klicka på **Ladda ned**.
+1. I listrutan **Välj format** markerar du dispositionsversionen och klickar på **Hämta**.
 1. Överför patchen till Adobe Commerce rotkatalog.
 1. Kör följande SSH-kommando när du har ersatt korrigeringsnamnet med det faktiska:
 
@@ -62,13 +62,13 @@ För molnhandlare kommer patchen att ingå i den närmaste uppdateringen av ECE-
 
    (Om ovanstående kommando inte fungerar kan du försöka med att använda `-p2` i stället för `-p1`.)
 
-1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering**.
+1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering** för att ändringarna ska återspeglas.
 
 ### Lokal Adobe Commerce 1
 
 Följ de här stegen för att hämta och använda korrigeringen:
 
-1. Spara [attached MPERF-10509-EE-2019-03-13-06-32-19.diff](assets/MPERF-10509-EE-2019-03-13-06-32-19.diff.zip) korrigera och överföra den till Adobe Commerce rotkatalog.
+1. Spara patchen [attached MPERF-10509-EE-2019-03-13-06-32-19.diff](assets/MPERF-10509-EE-2019-03-13-06-32-19.diff.zip) och överför den till Adobe Commerce rotkatalog.
 1. Kör följande SSH-kommando:
 
    ```git
@@ -77,20 +77,20 @@ Följ de här stegen för att hämta och använda korrigeringen:
 
    (Om ovanstående kommando inte fungerar kan du försöka med att använda `-p2` i stället för `-p1`.)
 
-1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering**.
+1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering** för att ändringarna ska återspeglas.
 
-### Magento 1 - öppen källkod
+### Magento 1 Open Source
 
 Följ de här stegen för att hämta och använda korrigeringen:
 
-1. Klicka [**den här länken**](https://magento.com/tech-resources/download#download2283) för att hitta Admin Dashboard Charts Patch.
+1. Klicka på [**den här länken**](https://magento.com/tech-resources/download#download2283) för att hitta uppdateringen Admin Dashboard Charts.
 1. Välj
 
    ```git
    MPERF-10509.diff
    ```
 
-   från **Välj format** och klicka på Hämta.
+   från listrutan **Välj format** och klicka på Hämta.
 
 1. Överför filen till Adobe Commerce rotkatalog.
 1. Kör följande SSH-kommando:
@@ -101,7 +101,7 @@ Följ de här stegen för att hämta och använda korrigeringen:
 
    (Om ovanstående kommando inte fungerar kan du försöka med att använda `-p2` i stället för `-p1`.)
 
-1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering**.
+1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering** för att ändringarna ska återspeglas.
 
 ## Bifogade filer
 

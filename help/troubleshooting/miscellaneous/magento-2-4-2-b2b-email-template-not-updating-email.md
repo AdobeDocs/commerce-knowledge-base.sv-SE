@@ -26,8 +26,8 @@ I den här artikeln beskrivs ett känt Adobe Commerce 2.4.2 B2B-problem där upp
 <u>Steg som ska återskapas</u>:
 
 1. Företagsadministratör skapar en inköpsorder i förgrunden.
-1. Kontrollera e-postmeddelandet om automatiskt godkänd. The **kundnamn** / **valutakurs** bör vara förväntade värden.
-1. Ändra valutasymbol (**Stores > Configuration > Currency Setup > Currency Options**) i administratörens och företagets administratörsnamn på kundkontosidan.
+1. Kontrollera e-postmeddelandet om automatiskt godkänd. **Kundnamnet** / **valutakursen** bör vara förväntade värden.
+1. Ändra valutasymbolen (**Lager > Konfiguration > Valutainställningar > Valutaalternativ**) i namnet för administratör och företagsadministratör på sidan Kundkonto.
 1. Kundadministratör skapar en annan inköpsorder i Admin.
 1. Kontrollera e-postmeddelandet om automatiskt godkänd.
 
@@ -45,4 +45,4 @@ Kör cron-jobbet eller konsumenten manuellt för att sprida den nya informatione
 
 ## Relaterad läsning
 
-* [Hantera meddelandeköer](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html) i vår dokumentation för utvecklare.
+* [Hantera meddelandeköer](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html) i utvecklardokumentationen.

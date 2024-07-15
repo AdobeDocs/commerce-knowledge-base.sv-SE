@@ -17,7 +17,7 @@ Adobe Commerce lokalt, Adobe Commerce i molninfrastruktur och Magento Open Sourc
 
 >[!WARNING]
 >
->Om du inte installerar/konfigurerar Elasticsearch 6/7 innan du försöker uppgradera kan det orsaka allvarliga problem med Adobe Commerce. Observera att uppgraderingar av tjänster på Adobe Commerce i molninfrastruktur inte kan skjutas upp till produktionsmiljön utan att vårt infrastrukturteam får ett meddelande om detta inom 48 timmar. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom en önskad tidsram med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när ändringarna måste vara i produktion [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) ange vilken serviceuppgradering du behöver och ange när du vill att uppgraderingen ska starta.
+>Om du inte installerar/konfigurerar Elasticsearch 6/7 innan du försöker uppgradera kan det orsaka allvarliga problem med Adobe Commerce. Observera att uppgraderingar av tjänster på Adobe Commerce i molninfrastruktur inte kan skjutas upp till produktionsmiljön utan att vårt infrastrukturteam får ett meddelande om detta inom 48 timmar. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom en önskad tidsram med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när dina ändringar behöver vara i produktion [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) med information om den nödvändiga uppgraderingen och den tidpunkt då du vill att uppgraderingen ska starta.
 
 Orsaken till att MySQL-sökmotorn har tagits bort är att Elasticsearch har överlägsna sökfunktioner och optimerade kataloginställningar.
 
@@ -36,15 +36,15 @@ Orsaken till att MySQL-sökmotorn har tagits bort är att Elasticsearch har öve
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">MySQL</td>
-<td style="width: 478.2px;">Du måste installera Elasticsearch. Se <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html">Installera och konfigurera Elasticsearch</a> i vår dokumentation för utvecklare.</td>
+<td style="width: 478.2px;">Du måste installera Elasticsearch. Se <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html">Installera och konfigurera Elasticsearch</a> i utvecklardokumentationen.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch (utan version angiven)</td>
-<td style="width: 478.2px;">Du använder Elasticsearch 2 och måste uppdatera till Elasticsearch 7 (rekommenderas) eller 6. Se <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html#es-upgrade6">Uppgraderar Elasticsearch</a> och <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html">Konfigurera Commerce att använda Elasticsearch</a> i vår utvecklardokumentation för mer information.</td>
+<td style="width: 478.2px;">Du använder Elasticsearch 2 och måste uppdatera till Elasticsearch 7 (rekommenderas) eller 6. Mer information finns i <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html#es-upgrade6">Uppgradera Elasticsearch</a> och <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html">Konfigurera Commerce att använda Elasticsearch</a> i utvecklardokumentationen.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">ELASTICSEARCH 5</td>
-<td style="width: 478.2px;">Elasticsearch 5 har nått sin <a href="https://www.elastic.co/support/eol">Slutet av livscykeln</a> och har tagits bort i Adobe Commerce 2.4.0. Uppdatera till Elasticsearch 7 (rekommenderas) eller 6.</td>
+<td style="width: 478.2px;">Elasticsearch 5 har nått sitt <a href="https://www.elastic.co/support/eol">sista användningsdatum</a> och har tagits bort i Adobe Commerce 2.4.0. Uppdatera till Elasticsearch 7 (rekommenderas) eller 6.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch 6 eller 7</td>
@@ -59,9 +59,9 @@ Orsaken till att MySQL-sökmotorn har tagits bort är att Elasticsearch har öve
 
 ## Installation:
 
-När Adobe Commerce lokal och Magento Open Source 2.4.0 släpps är Elasticsearch en nödvändig komponent, så du måste ha en Elasticsearch-värdkonfiguration och konfigurerad innan du installerar version 2.4.0. Se [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) i vår dokumentation för utvecklare.
+När Adobe Commerce lokal och Magento Open Source 2.4.0 släpps är Elasticsearch en nödvändig komponent, så du måste ha en Elasticsearch-värdkonfiguration och konfigurerad innan du installerar version 2.4.0. Se [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) i utvecklardokumentationen.
 
-Som standard används Elasticsearch 7 som sökmotor i Adobe Commerce-sökningen och försök att ansluta till en server på localhost:9200. Elasticsearch 6.x stöds också. Om konfigurationen inte matchar standardinställningarna kan du konfigurera de här inställningarna med argument som skickas till `setup:install`, på ungefär samma sätt som databasanslutningen är konfigurerad.
+Som standard används Elasticsearch 7 som sökmotor i Adobe Commerce-sökningen och försök att ansluta till en server på localhost:9200. Elasticsearch 6.x stöds också. Om konfigurationen inte matchar standardinställningarna kan du konfigurera de här inställningarna med argument som skickas till `setup:install`, på ungefär samma sätt som databasanslutningen konfigureras.
 
 Exempel: `setup:install --elasticsearch-host=es.mystore.com`
 

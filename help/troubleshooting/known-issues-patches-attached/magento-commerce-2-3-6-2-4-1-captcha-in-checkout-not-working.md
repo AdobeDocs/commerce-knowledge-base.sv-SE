@@ -19,13 +19,13 @@ Detta kända problem nämns i vår utvecklardokumentation:
 
 <u>För Adobe Commerce 2.3.6</u>:
 
-* [Adobe Commerce 2.3.6 Versionsinformation: Kända fel](https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html#known-issues)
+* [Versionsinformation om Adobe Commerce 2.3.6: Kända fel](https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html#known-issues)
 * [Versionsinformation om Magento Open Source 2.3.6: Kända fel](https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html#known-issues)
 
 <u>För Adobe Commerce 2.4.1</u>:
 
-* [Adobe Commerce 2.4.1 Versionsinformation: Kända fel](https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html#known-issues)
-* [Versionsinformation om Magento Open Source 2.4.1: Kända fel](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html#known-issues)
+* [Versionsinformation om Adobe Commerce 2.4.1: Kända fel](https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html#known-issues)
+* Versionsinformation om [Magento Open Source 2.4.1: Kända fel](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html#known-issues)
 
 ## Berörda produkter och versioner
 
@@ -37,11 +37,11 @@ Detta kända problem nämns i vår utvecklardokumentation:
 <u>Steg som ska återskapas</u>
 
 1. Ställ in minst en av dessa betalningsmetoder i Commerce: Paypal Express, Payflow Pro eller CyberSource.
-1. Gå till **Admin > Stores > Configuration > Customers > Customer Configuration > CAPTCHA** .
-   * Ange **Aktivera CAPTCHA på Storefront** = *Ja* .
+1. Gå till **Admin > Lager > Konfiguration > Kunder > Kundkonfiguration > CAPTCHA** .
+   * Ange **Aktivera CAPTCHA på Storefront** = *Yes* .
    * Markera i **Forms** : *Utcheckning/placeringsordning* , *Inloggning* och *Glömt lösenord* .
-   * Ange **Visningsläge** = *Efter antal inloggningsförsök* (för att skapa **Antal misslyckade inloggningsförsök** inställning visas).
-   * Ange **Antal misslyckade inloggningsförsök** = *0* (så att captcha fungerar hela tiden).
+   * Ange **Visningsläge** = *Efter antal inloggningsförsök* (om du vill att inställningen **Antal misslyckade inloggningsförsök** ska visas).
+   * Ange **Antal misslyckade försök till inloggning** = *0* (så att captcha fungerar hela tiden).
 1. Lägg till en produkt i kundvagnen och försök checka ut den.
 1. På sidan Betalningsinformation anger du captcha och försöker checka ut med Paypal Express, Payflow Pro eller CyberSource.
 
@@ -59,16 +59,16 @@ Använd någon av patcharna nedan beroende på om du använder Adobe Commerce lo
 
 ## Patchar
 
-Patcharna är kopplade till den här artikeln och tillgängliga för hämtning i båda `.composer` och `.git` format.
+Patcharna är kopplade till den här artikeln och kan hämtas i både `.composer`- och `.git`-format.
 
 Om du vill hämta en patch bläddrar du nedåt till slutet av artikeln och klickar på filnamnet, eller klickar på någon av följande länkar:
 
-<u>För Adobe Commerce lokalt/Adobe Commerce i molninfrastruktur/Magento Open Source 2.3.6</u> :
+<u>För Adobe Commerce lokalt/Adobe Commerce i molninfrastruktur/Magento Open Source 2.3.6</u>:
 
 * [Composer patch MDVA-33093\_\_\_\_2\_3\_x-p1\_\_CAPTCHA\_COMPOSER.patch](assets/MDVA-33093____2_3_x-p1__CAPTCHA_COMPOSER.patch.zip)
 * [Git patch MDVA-33093\_\_\_\_2\_3\_x-p1\_\_CAPTCHA\_GIT.patch](assets/MDVA-33093____2_3_x-p1__CAPTCHA_GIT.patch.zip)
 
-<u>För Adobe Commerce lokalt/Adobe Commerce i molninfrastruktur/Magento Open Source 2.4.1</u> :
+<u>För Adobe Commerce lokalt/Adobe Commerce i molninfrastruktur/Magento Open Source 2.4.1</u>:
 
 * [Composer patch MDVA-33093\_\_\_\_2\_4\_x-p1\_\_CAPTCHA\_COMPOSER.patch](assets/MDVA-33093____2_4_x-p1__CAPTCHA_COMPOSER.patch.zip)
 * [Git patch MDVA-33093\_\_\_\_2\_4\_x-p1\_\_CAPTCHA\_GIT.patch](assets/MDVA-33093____2_4_x-p1__CAPTCHA_GIT.patch.zip)
@@ -77,10 +77,10 @@ Dessa patchar är inte kompatibla med andra versioner och utgåvor av Adobe Comm
 
 ## Så här sätter du på plåstret
 
-<u>Kompositkorrigering</u>
+<u>Kompositionsruta</u>
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår supportkunskapsbas för instruktioner om Composer patch.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår supportkunskapsbas om du vill ha information om hur du använder dispositionskorrigeringsfiler.
 
-<u>Git patch</u>
+<u>Git-korrigering</u>
 
-Se dokumentation för utvecklare [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) för Git-korrigeringsanvisningar för Adobe Commerce/Magento Open Source.
+Mer information om Git-korrigering för Adobe Commerce/Magento Open Source finns i utvecklardokumentationen [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches).

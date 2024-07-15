@@ -1,6 +1,6 @@
 ---
-title: Fel [!DNL opensearch] sökmotorn finns inte. Fallar tillbaka till [!DNL livesearch].
-description: I den här artikeln finns en lösning på problemet där felet uppstod, "Error- [!DNL opensearch] sökmotorn finns inte. Fallar tillbaka till [!DNL livesearch].", i Adobe Commerce om molninfrastruktur.
+title: Fel [!DNL opensearch] sökmotorn finns inte. Återgår till  [!DNL livesearch].
+description: Den här artikeln innehåller en lösning på problemet där felet "Fel- [!DNL opensearch] sökmotorn finns inte. Fallar tillbaka till  [!DNL livesearch].", i Adobe Commerce om molninfrastruktur.
 feature: Deploy, Search
 role: Developer
 exl-id: a6cc981d-b8f0-402d-8771-60d2f21f09f8
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Fel [!DNL opensearch] sökmotorn finns inte. Fallar tillbaka till [!DNL livesearch].
+# Sökmotorn för felet [!DNL opensearch] finns inte. Återgår till [!DNL livesearch].
 
-I den här artikeln finns en lösning på problemet där du ser felet: *Fel: [!DNL opensearch] sökmotorn finns inte. Fallar tillbaka till [!DNL livesearch].* i Adobe Commerce om molninfrastruktur där [!DNL Live Search] används.
+Den här artikeln innehåller en lösning på problemet där felet visas: *Fel: [!DNL opensearch] sökmotorn finns inte. Återgår till [!DNL livesearch].* i Adobe Commerce i molninfrastruktur där [!DNL Live Search] används.
 
 ## Berörda produkter och versioner
 
@@ -22,12 +22,12 @@ I den här artikeln finns en lösning på problemet där du ser felet: *Fel: [!D
 
 ## Problem
 
-Följande meddelande visas i loggarna (och kan ses i [!DNL New Relic]):
-*Fel: [!DNL opensearch] sökmotorn finns inte. Fallar tillbaka till [!DNL livesearch].*
+Följande meddelande visas i loggarna (och kan observeras i [!DNL New Relic]):
+*Fel: [!DNL opensearch] Sökmotorn finns inte. Återgår till [!DNL livesearch].*
 
 ## Lösning
 
-1. Ändra `.magento.env.yaml` -fil.
+1. Ändra filen `.magento.env.yaml`.
 1. Leta reda på följande rader:
 
    ```yaml
@@ -37,8 +37,8 @@ Följande meddelande visas i loggarna (och kan ses i [!DNL New Relic]):
          engine: opensearch
    ```
 
-1. Om du inte har dessa rader lägger du till dem i `.magento.env.yaml` -fil.
-1. Om dessa rader finns, **ändra motorn** från *[!DNL opensearch]* till *[!DNL livesearch]*.
+1. Om du inte har dessa rader lägger du till dem i filen `.magento.env.yaml`.
+1. Om de här raderna finns ändrar **motorn** från *[!DNL opensearch]* till *[!DNL livesearch]*.
 1. Genomför ändringen och distribuera sedan på nytt.
 
 ## Relaterad läsning

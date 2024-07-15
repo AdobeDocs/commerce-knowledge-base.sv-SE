@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Ditt konto är tillfälligt inaktiverat&quot;
 
-I den här artikeln beskrivs möjliga lösningar på inloggningsproblemet för Commerce Admin, där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *&quot;Ditt konto är tillfälligt inaktiverat&quot;*. Den föreslagna lösningen är att kontrollera och korrigera inställningarna för administratörsanvändardatabasen.
+Den här artikeln innehåller möjliga lösningar på inloggningsproblemet för Commerce Admin, där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *&quot;Ditt konto är tillfälligt inaktiverat&quot;*. Den föreslagna lösningen är att kontrollera och korrigera inställningarna för administratörsanvändardatabasen.
 
 ## Berörda versioner:
 
@@ -32,12 +32,12 @@ Du loggas in på Commerce Admin.
 
 <u>Faktiskt resultat</u>:
 
-Du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *&quot;Ditt konto är tillfälligt inaktiverat. Försök igen senare&quot;*.
+Du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *Ditt konto är tillfälligt inaktiverat. Försök igen senare.*.
 
 ## Lösning
 
 1. Skapa en säkerhetskopia av databasen.
-1. Använd ett databasverktyg som [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)eller få åtkomst till databasen manuellt från kommandoraden. I `admin_user` databastabell, för din administratörsanvändarpost, kontrollera om `is_active` är inställd på &quot;`1`&quot; och `lock_expires` är `NULL`. Återställ dessa värden om det behövs.
+1. Använd ett databasverktyg som [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) eller öppna databasen manuellt från kommandoraden. I databastabellen `admin_user` kontrollerar du om `is_active` är inställd på `1` och `lock_expires` är `NULL` för din administratörsanvändarpost. Återställ dessa värden om det behövs.
 
 ## Relaterad läsning i vår kunskapsbas
 

@@ -37,6 +37,6 @@ Koden är viktig för att koppla källan till beställningarna. Detta är ett un
 
 Du kan ta bort en källa från en produkt genom att överföra lagret eller släppa produkten från alla leveranser på en plats.
 
-Om du behöver ta bort en källa från [SSA](https://devdocs.magento.com/guides/v2.3/inventory/source-selection-algorithms.html) beräkningar och Adobe Commerce Inventory-orderbearbetning kan du inaktivera källan. Inaktiverade källor bevarar alla data, tilldelade produkter och lagerkvantiteter och kan återaktiveras när som helst för att börja leverera igen.
+Om du behöver ta bort en källa från [SSA](https://devdocs.magento.com/guides/v2.3/inventory/source-selection-algorithms.html)-beräkningar och Adobe Commerce Inventory-orderbearbetning kan du inaktivera källan. Inaktiverade källor bevarar alla data, tilldelade produkter och lagerkvantiteter och kan återaktiveras när som helst för att börja leverera igen.
 
-Se [Guiden Skapa källor](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources) om du vill ha mer information om hur du inaktiverar en källa.
+Mer information om hur du inaktiverar en källa finns i guiden [Skapa källor](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources).

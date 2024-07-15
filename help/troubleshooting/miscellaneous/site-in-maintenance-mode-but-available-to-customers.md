@@ -21,7 +21,7 @@ Den här artikeln innehåller en fix för när underhållsläge är aktiverat (e
 
 ## Problem
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Aktivera underhållsläget för platsen.
 1. Navigera till butiken.
@@ -41,8 +41,8 @@ Sidorna är fortfarande cachelagrade, så underhållssidan visas inte.
 ## Lösningen på platsen är synlig trots att den är i underhållsläge
 
 1. SSH i din miljö.
-1. Kör `php bin/magento cache:clean` -kommando.
+1. Kör kommandot `php bin/magento cache:clean`.
 
 ## Relaterad läsning
 
-[Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) i vår dokumentation för utvecklare.
+[Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) i utvecklardokumentationen.

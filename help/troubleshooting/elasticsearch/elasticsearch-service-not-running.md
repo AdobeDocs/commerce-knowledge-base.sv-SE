@@ -19,7 +19,7 @@ Den här artikeln innehåller lösningar på fel som kan uppstå när tjänsten 
 
    * v2.2.3+ stödjer ES 5.x
    * v2.2.8+ och v2.3.1+ har stöd för ES 6.x
-   * ES v2.x och v5.x rekommenderas inte eftersom [Slutet av livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du dock [Ändra Elasticsearch php-klienten](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
+   * ES v2.x och v5.x rekommenderas inte på grund av [slutet på livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du [Ändra Elasticsearch PHP-klienten](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
 
 * Magento Open Source v2.3.0+ stöder ES 5.x och 6.x (men 6.x rekommenderas).
 
@@ -37,7 +37,7 @@ Den här artikeln innehåller lösningar på fel som kan uppstå när tjänsten 
 <code>{"0":"{\"error\":{\"root_cause\":[{\"type\":\"illegal_argument_exception\",\"reason\":\"Fielddata is disabled on text fields by default. Set fielddata=true on [%attribute_code%]] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory.\"}]</code>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html">Elasticsearch 5 är konfigurerat, men söksidan läses inte in med felmeddelandet "FieldData is disabled...".</a> i vår kunskapsbas för support.
+<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html">Elasticsearch 5 har konfigurerats, men söksidan läses inte in med felmeddelandet "FieldData is disabled..." </a> i vår kunskapsbas för support.
 </td>
 </tr>
 <tr>
@@ -59,12 +59,12 @@ Elasticsuite-index tas inte bort.  Se <a href="https://experienceleague.adobe.co
 <li><a href="https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk/">8 tips för att lösa problem med hårddisken i Linux och Unix, t.ex. när disken är full eller inte kan skriva till disken</a></li>
 <li><a href="https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not">serverdefault: df says disk is full, but it is not</a></li>
 <li><a href="https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux">unix.stackexchange.com: Spåra var diskutrymmet har pågått i Linux?</a></li>
-<li>Loggfiler arkiveras inte tillräckligt ofta. Se <a href="https://docs.magento.com/m2/ee/user_guide/system/action-log-archive.html#configure-the-log-archive">Konfigurera loggarkivet</a> i vår dokumentation för utvecklare.</li>
-<li>Filsystemkataloger är inte optimerade. Se <a href="https://docs.magento.com/m2/ee/user_guide/system/file-optimization.html">Filoptimering</a> i vår dokumentation för utvecklare.</li>
+<li>Loggfiler arkiveras inte tillräckligt ofta. Se <a href="https://docs.magento.com/m2/ee/user_guide/system/action-log-archive.html#configure-the-log-archive">Konfigurera loggarkivet</a> i utvecklardokumentationen.</li>
+<li>Filsystemkataloger är inte optimerade. Se <a href="https://docs.magento.com/m2/ee/user_guide/system/file-optimization.html">Filoptimering</a> i utvecklardokumentationen.</li>
 <li>Om lösningarna i ovanstående dokumentation inte löser problemet kan du kontakta ditt Adobe-kontoteam för att begära ytterligare lagringsutrymme.</li>
 </ul>
 </li>
-<li>Om disken inte har slut på lagringsutrymme men du fortfarande får felmeddelanden i den vänstra kolumnen, <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">skicka en supportanmälan</a>.</li>
+<li>Om disken inte har slut på lagringsutrymme men du fortfarande får felmeddelanden i den vänstra kolumnen, <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">skickar du en supportanmälan</a>.</li>
 </ul>
 <ul>
 <li>Se <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">Spårningsindex för ElasticSuite orsakar problem med Elasticsearch</a> i vår kunskapsbas för support.
@@ -74,11 +74,12 @@ Elasticsuite-index tas inte bort.  Se <a href="https://experienceleague.adobe.co
 </tr>
 <tr>
 <td><code>Curl</code> fel</td>
-<td>Kör <code>curl</code> för att kontrollera Elasticsearch hälsa:<code>curl -m1 localhost:9200/_cluster/health?pretty</code>(eller<code>curl -m1 elasticsearch.internal:9200/_cluster/health?pretty</code>för startkonton) genererar följande fel: <i>Fel: curl: (7) Det gick inte att ansluta till localhost-port 9200: Anslutningen nekades</i> </td>
+<td>Om du kör kommandot <code>curl</code> för att kontrollera Elasticsearch-hälsa:<code>curl -m1 localhost:9200/_cluster/health?pretty</code>(eller<code>curl -m1 elasticsearch.internal:9200/_cluster/health?pretty</code>för startkonton) uppstår följande fel: <i>Fel: curl: (7) Det gick inte att ansluta till localhost-port 9200: Anslutningen nekades</i> </td>
 </tr>
 <tr>
 <td>Kommandoradsfel</td>
-<td>Körs <code>$ bin/magento indexer:reindex catalogsearch_fulltext</code> skapar det här felet <i>Okänt fel i indexeringsprocessen för katalogsökning: Inga aktiva noder hittades i klustret</i>
+<td>Om <code>$ bin/magento indexer:reindex catalogsearch_fulltext</code> körs uppstår det här felet <i>Katalogsökindexerarprocessen är okänd:
+        Inga aktiva noder hittades i klustret</i>
 </td>
 </tr>
 <tr>

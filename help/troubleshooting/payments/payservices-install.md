@@ -25,14 +25,14 @@ När du installerar tillägget Betalningstjänster kan ett felmeddelande visas o
 
 <u>Steg som ska återskapas</u>:
 
-1. Försök att [installera betaltjänster](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. Försök att [installera betalningstjänsterna](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
 1. Se följande fel:
 
-   *Det gick inte att hitta en matchande version av paketets magento/payment-services. Kontrollera att du har stavat i paketet, att det är version och att paketet är tillgängligt med en stabilitet som matchar din lägsta stabilitet (stabil).*
+   *Det gick inte att hitta en matchande version av paketets magento/payment-services. Kontrollera paketstavningen, versionens begränsning och att paketet är tillgängligt i en stabilitet som matchar minimistabiliteten (stabil).*
 
 <u>Förväntat resultat</u>:
 
-Du kan följa dessa [installationsanvisningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) i vår utvecklardokumentation för att kunna installera Payment Services.
+Du kan följa dessa [installationsanvisningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) i utvecklardokumentationen för att installera betaltjänster.
 
 <u>Faktiskt resultat</u>:
 
@@ -44,7 +44,7 @@ Du använde felaktiga dispositionsnycklar under installationen.
 
 ### Lösning
 
-Verifiera att [dispositionsnycklarna är länkade till Magento-ID:t](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) används under registrering av betaltjänster.
+Kontrollera att [dina dispositionsnycklar är länkade till det Magento-ID](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) som användes vid registreringen av betalningstjänsterna.
 
 ## Problem - Använda samma dataspace i flera instanser
 
@@ -59,7 +59,7 @@ När du skapar ett SaaS-projekt genererar Commerce ett eller flera SaaS-datamall
 * Adobe Commerce - ett produktionsdatautrymme; två testdatautrymme
 * Magento Open Source - Ett produktionsdatautrymme utan testdatautrymme
 
-Följ instruktionerna i [Commerce API-nyckel och privat nyckel](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) för att konfigurera ditt betaltjänsttillägg.
+Följ anvisningarna i [Commerce API-nyckel och privat nyckel](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) för att konfigurera ditt betaltjänsttillägg.
 
 ## Problem - Det finns inte tillräckligt med minne för PHP
 
@@ -67,14 +67,14 @@ När du installerar tillägget Betalningstjänster kan ett felmeddelande visas s
 
 <u>Steg som ska återskapas</u>:
 
-1. Försök att [installera betaltjänster](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. Försök att [installera betalningstjänsterna](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
 1. Se följande fel eller liknande:
 
-   *Allvarligt fel: Minnesstorleken på 2146435072 byte har uttömts (försök gjordes att allokera 4096 byte) i phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php på rad 52*
+   *Allvarligt fel: Den tillåtna minnesstorleken på 2146435072 byte är slut (försök gjordes att allokera 4096 byte) i phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php på rad 52.*
 
 <u>Förväntat resultat</u>:
 
-Du kan följa dessa [installationsanvisningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) i vår utvecklardokumentation för att kunna installera Payment Services.
+Du kan följa dessa [installationsanvisningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) i utvecklardokumentationen för att installera betaltjänster.
 
 <u>Faktiskt resultat</u>:
 

@@ -25,9 +25,9 @@ Katalogdata är inte korrekt synkroniserade eller så har en ny produkt lagts ti
 
 <u>Steg som ska återskapas</u>
 
-1. Konfigurera och ansluta Live Search för din Adobe Commerce-instans enligt beskrivningen i [Installera Live Search > Konfigurera API-nycklar](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) i vår användardokumentation.
-1. Efter 30 minuter kontrollerar du den exporterade kataloginformationen enligt beskrivningen i [Installera Live Search > Verifiera export](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) i vår användardokumentation.
-1. Efter 30 minuter testar du anslutningen enligt beskrivningen i [Installera Live Search > Testa anslutningen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) i vår användardokumentation.
+1. Konfigurera och anslut Live Search för din Adobe Commerce-instans enligt beskrivningen i [Installera Live Search > Konfigurera API-nycklar](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) i användardokumentationen.
+1. Efter 30 minuter kontrollerar du de exporterade katalogdata som beskrivs i [Installera Live Search > Verifiera export](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) i användardokumentationen.
+1. Efter 30 minuter testar du anslutningen enligt beskrivningen i [Installera Live Search > Testa anslutningen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) i användardokumentationen.
 
 eller
 
@@ -56,7 +56,7 @@ När du har konfigurerat och anslutit kan det ta över 30 minuter innan indexet 
 
 Om dina produktdata inte synkroniseras korrekt för en viss SKU gör du följande:
 
-1. Använd följande SQL-fråga och verifiera att du har de data du förväntar dig i `feed_data` kolumn. Anteckna också `modified_at` tidsstämpel.
+1. Använd följande SQL-fråga och verifiera att du har de data du förväntar dig i kolumnen `feed_data`. Notera också tidsstämpeln `modified_at`.
 
    ```sql
    select * from catalog_data_exporter_products where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
@@ -68,11 +68,11 @@ Om dina produktdata inte synkroniseras korrekt för en viss SKU gör du följand
    bin/magento indexer:reindex catalog_data_exporter_products
    ```
 
-1. Om du fortfarande inte ser rätt data, [skapa en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Om du fortfarande inte ser rätt data [skapar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Kontrollera tidsstämpel för senaste produktexport
 
-1. Om du ser rätt data i `catalog_data_exporter_products`använder du följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter `modified_at` tidsstämpel:
+1. Om du ser rätt data i `catalog_data_exporter_products` använder du följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`:
 
    ```sql
    select * from flag where flag_code = 'products-feed-version';
@@ -84,13 +84,13 @@ Om dina produktdata inte synkroniseras korrekt för en viss SKU gör du följand
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. Vänta på `<>` tid (tid för stegvisa uppdateringar). Om du fortfarande inte ser dina data, [skapa en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Vänta i `<>` tid (tid för inkrementella uppdateringar). Om du fortfarande inte ser dina data [skapar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Synkronisera specifik attributkod
 
 Om produktattributdata inte synkroniseras korrekt för en viss attributkod gör du följande:
 
-1. Använd följande SQL-fråga och verifiera att du har de data du förväntar dig i `feed_data` kolumn. Anteckna också `modified_at` tidsstämpel.
+1. Använd följande SQL-fråga och verifiera att du har de data du förväntar dig i kolumnen `feed_data`. Notera också tidsstämpeln `modified_at`.
 
    ```sql
    select * from catalog_data_exporter_product_attributes where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
@@ -102,13 +102,13 @@ Om produktattributdata inte synkroniseras korrekt för en viss attributkod gör 
    bin/magento indexer:reindex catalog_data_exporter_product_attributes
    ```
 
-1. Om du fortfarande inte ser rätt data, [skapa en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Om du fortfarande inte ser rätt data [skapar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Kontrollera tidsstämpel för export av senaste produktattribut
 
 Om du ser rätt data i `catalog_data_exporter_product_attributes`:
 
-1. Använd följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter `modified_at` tidsstämpel.
+1. Använd följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`.
 
    ```sql
    select * from flag where flag_code = 'product-attributes-feed-version';
@@ -120,7 +120,7 @@ Om du ser rätt data i `catalog_data_exporter_product_attributes`:
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. Vänta i 15-20 minuter (tid för stegvisa uppdateringar). Om du fortfarande inte ser dina data, vänligen [skapa en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Vänta i 15-20 minuter (tid för stegvisa uppdateringar). Om du fortfarande inte ser dina data kan du [skapa en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Synkronisera efter ändring av API-konfiguration
 
@@ -133,4 +133,4 @@ bin/magento saas:resync --feed productattributes
 
 ## Relaterad läsning
 
-Se [Inbyggd Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) i vår användardokumentation.
+Se [Inbyggd Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) i användardokumentationen.

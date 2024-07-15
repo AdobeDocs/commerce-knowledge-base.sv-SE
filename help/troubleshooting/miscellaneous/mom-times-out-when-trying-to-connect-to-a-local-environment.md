@@ -23,7 +23,7 @@ I den här artikeln finns en lösning på problemet där det inte går att regis
 
 >[!WARNING]
 >
->Ansvarsfriskrivning: Adobe Commerce rekommenderar eller stöder inte något särskilt verktyg för att upprätta tunnlar. Föregående är endast förslag. Mer information finns i [dokumentation för bildspel](https://ngrok.com/docs).
+>Ansvarsfriskrivning: Adobe Commerce rekommenderar eller stöder inte något särskilt verktyg för att upprätta tunnlar. Föregående är endast förslag. Mer information finns i [ngrok-dokumentationen](https://ngrok.com/docs).
 
 ## Problem
 
@@ -31,7 +31,7 @@ I den här artikeln finns en lösning på problemet där det inte går att regis
 
 1. Installera Adobe Commerce i den lokala miljön.
 1. Skapa en tunnel för att visa den lokala servern.
-1. Prova [ansluta till OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
+1. Försök med att [ansluta till OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
 
 <u>Förväntat resultat</u>
 

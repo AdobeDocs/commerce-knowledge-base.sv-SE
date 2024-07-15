@@ -1,6 +1,6 @@
 ---
-title: Kronstopp på grund av felkonfigurerad eller saknad [!DNL OpCache] inställningar
-description: Den här artikeln innehåller en lösning för när kroner slutar fungera på grund av felkonfigurerade eller saknas [!DNL OpCache] inställningar.
+title: Kron-stopp på grund av felkonfigurerade eller saknade [!DNL OpCache] inställningar
+description: Den här artikeln innehåller en lösning för när kroner slutar fungera på grund av felkonfigurerade eller saknade [!DNL OpCache] inställningar.
 exl-id: 30643ea9-969f-41c8-8e62-b24e56d690cf
 feature: Cache
 role: Developer
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Kron stoppades på grund av felkonfigurerad eller saknad [!DNL OpCache] inställningar
+# Kron stoppades på grund av felkonfigurerade eller saknade [!DNL OpCache]-inställningar
 
-Den här artikeln innehåller en lösning för när kron slutar fungera på grund av att den saknas eller är felkonfigurerad [!DNL OpCache] inställningar.
+Den här artikeln innehåller en lösning för när kron slutar fungera på grund av att [!DNL OpCache]-inställningar saknas eller är felkonfigurerade.
 
 ## Berörda produkter och versioner
 
-Adobe Commerce om molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+Adobe Commerce i molninfrastrukturen, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problem
 
@@ -25,7 +25,7 @@ Kronen slutade fungera.
 
 ## Orsak
 
-The [!DNL OpCache] modulen har uppdaterats till en nyare version som introducerade [!DNL GraphQL] plugin-program som skriver om `env.php` i körningsmiljön och kan åsidosätta kron-inställningen, som kan ha orsakat problemet. The [!DNL OpCache] måste uppdateras för att undvika problem med `env.php file`och det löstes i [version 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) i [!DNL ECE Tools] paket.
+Modulen [!DNL OpCache] uppdaterades till en nyare version som introducerade ett [!DNL GraphQL]-plugin som skriver om `env.php` i körningsmiljön och kan åsidosätta referensinställningen, som kan ha orsakat problemet. Konfigurationen [!DNL OpCache] måste uppdateras för att inga problem med `env.php file` ska uppstå. Den löstes i [ version 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) av paketet [!DNL ECE Tools].
 
 ## Lösning
 
@@ -37,7 +37,7 @@ bin/magento cron:run
 
 Ett meddelande kan visa att kronen är inaktiverad.
 
-Alternativ 2: Öppna `app/etc/env.php` -fil - om du ser exemplet nedan inaktiverades kranen manuellt, återaktiverades inte på grund av en misslyckad distribution eller så var problemet relaterat till [!DNL OpCache] inställningar.
+Alternativ 2: Öppna filen `app/etc/env.php` - om du ser nedan inaktiverades kranen manuellt, återaktiverades inte på grund av en misslyckad distribution eller så var problemet relaterat till inställningarna för [!DNL OpCache].
 
 ```php
   'cron' =>
@@ -47,12 +47,12 @@ Alternativ 2: Öppna `app/etc/env.php` -fil - om du ser exemplet nedan inaktiver
 ```
 
 1. Om kronen är inaktiverad kör du det här kommandot för att aktivera kronen igen: `vendor/bin/ece-tools cron:enable`
-1. Se till att du har den senaste versionen av [!DNL ECE Tools]. Om du inte gör det, uppgradera (eller hoppa till punkt 3). Kör det här kommandot om du vill kontrollera din befintliga version:
+1. Kontrollera att du har den senaste versionen av [!DNL ECE Tools]. Om du inte gör det, uppgradera (eller hoppa till punkt 3). Kör det här kommandot om du vill kontrollera din befintliga version:
    `composer show magento/ece-tools`
-1. Om du redan har den senaste versionen av [!DNL ECE Tools], kontrollerar om det finns `op-exclude.txt` -fil. Gör så här:
+1. Om du redan har den senaste versionen av [!DNL ECE Tools] kontrollerar du om filen `op-exclude.txt` finns. Gör så här:
    `ls op-exclude.txt`.
 Om den här filen inte finns lägger du till https://github.com/magento/magento-cloud/blob/master/op-exclude.txt i svaret och implementerar sedan ändringen och distribuerar om.
-1. Utan att behöva uppgradera [!DNL ECE Tools]kan du även lägga till/ändra https://github.com/magento/magento-cloud/blob/master/op-exclude.txt i din rapport och sedan genomföra ändringen och omdistribuera den.
+1. Om du inte behöver uppgradera [!DNL ECE Tools] kan du även lägga till/ändra https://github.com/magento/magento-cloud/blob/master/op-exclude.txt i ditt svar och sedan genomföra ändringen och omdistribuera den.
 
 ## Relaterad läsning
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # robots.txt ger 404 fel Adobe Commerce i molninfrastrukturen
 
-I den här artikeln finns en korrigering för när `robots.txt` filen genererar ett 404-fel i Adobe Commerce i molninfrastrukturen.
+Den här artikeln innehåller en korrigering för när filen `robots.txt` genererar ett 404-fel i Adobe Commerce i molninfrastrukturen.
 
 ## Berörda produkter och versioner
 
@@ -21,7 +21,7 @@ Adobe Commerce om molninfrastruktur (alla versioner)
 
 ## Problem
 
-The `robots.txt` filen fungerar inte och genererar ett Nginx-undantag. The `robots.txt` filen genereras dynamiskt &quot;i farten&quot;. The `robots.txt` filen inte är tillgänglig för `/robots.txt` URL eftersom Nginx har en omskrivningsregel som tvingar om alla `/robots.txt` till `/media/robots.txt` som inte finns.
+Filen `robots.txt` fungerar inte och genererar ett Nginx-undantag. Filen `robots.txt` genereras dynamiskt &quot;i farten&quot;. `robots.txt`-filen är inte tillgänglig av URL:en `/robots.txt` eftersom Nginx har en omskrivningsregel som tvingar alla `/robots.txt`-begäranden till `/media/robots.txt`-filen som inte finns.
 
 ## Orsak
 
@@ -29,14 +29,14 @@ Detta inträffar vanligtvis när Nginx inte är korrekt konfigurerat.
 
 ## Lösning
 
-Lösningen är att inaktivera Nginx-regeln som omdirigeras `/robots.txt` till `/media/robots.txt` -fil. Handlare med aktiverad självbetjäning kan göra det själva, och handlare utan självbetjäning måste skapa en supportanmälan.
+Lösningen är att inaktivera Nginx-regeln som omdirigerar `/robots.txt`-begäranden till `/media/robots.txt`-filen. Handlare med aktiverad självbetjäning kan göra det själva, och handlare utan självbetjäning måste skapa en supportanmälan.
 
-Om du inte har aktiverat självbetjäning (eller inte vet om det är aktiverat), [skicka en Magento Support-biljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) begära att omdirigeringsregeln Nginx tas bort från `/robots.txt` förfrågningar till `/media/robots.txt`.
+Om du inte har aktiverat självbetjäning (eller inte vet om det är aktiverat) [skickar du en Magento-supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär att Nginx-omdirigeringsregeln ska tas bort från `/robots.txt`-begäranden till `/media/robots.txt`.
 
-Om du har aktiverat självbetjäning kan du uppgradera ECE-Tools till minst 2002.0.12 och ta bort Nginx-omdirigeringsregeln i `.magento.app.yaml` -fil. Du kan referera till [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html) i vår utvecklardokumentation för mer information.
+Om du har aktiverat självbetjäning kan du uppgradera ECE-Tools till minst 2002.0.12 och ta bort Nginx-omdirigeringsregeln i filen `.magento.app.yaml`. Mer information finns i [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
 * [Så här blockerar du skadlig trafik för Magento Commerce Cloud på snabbnivå](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) i vår kunskapsbas för support.
-* [Lägg till webbplatskarta och sökrobotar](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) i vår dokumentation för utvecklare.
-* [Sökmotorrobotar](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) i vår användarhandbok.
+* [Lägg till webbplatskarta och sökrobotar](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) i utvecklardokumentationen.
+* [Sökmotorrobotar](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) i användarhandboken.

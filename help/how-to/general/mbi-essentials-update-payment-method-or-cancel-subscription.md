@@ -1,5 +1,5 @@
 ---
-title: 'Adobe Commerce Intelligence Essentials: uppdatera betalningsmetod eller avbryt prenumeration'
+title: "Adobe Commerce Intelligence Essentials: uppdatera betalningsmetod eller avbryt prenumeration"
 description: I den här artikeln beskrivs hur månadsklienter av Adobe Commerce Intelligence Essentials kan avbryta sina prenumerationer eller uppdatera sina betalningsmetoder för sina befintliga prenumerationer.
 exl-id: 45e95451-6d17-44c7-81d3-87f5876b5758
 feature: Commerce Intelligence
@@ -16,9 +16,9 @@ I den här artikeln beskrivs hur månadsklienter av Adobe Commerce Intelligence 
 
 ## Berörda produkter och versioner
 
-* Commerce Intelligence Essentials - Endast relevant för månadsklienter med grundläggande funktionalitet. Inte för kunder som har tillgång till Essentials som en del av deras handelskontrakt.
+* Commerce Intelligence Essentials - Endast relevant för månadsklienter med grundläggande funktioner. Inte för kunder som har tillgång till Essentials som en del av deras handelskontrakt.
 
-## Commerce Intelligence Essentials: uppdatera/avbryta prenumerationer
+## Commerce Intelligence Essentials: uppdatera/avbryt prenumerationer
 
 För att Commerce Intelligence Essentials-klienter ska kunna säga upp prenumerationen eller uppdatera sina betalningsmetoder måste de vara den primära kontoinnehavaren för Magento-kontot. Stegen är:
 
@@ -28,4 +28,4 @@ För att Commerce Intelligence Essentials-klienter ska kunna säga upp prenumera
 
 ## Relaterad läsning
 
-* [Commerce Intelligence User Guide](/docs/commerce-business-intelligence/mbi/guide-overview.html).
+* [Commerce Intelligence användarhandbok](/docs/commerce-business-intelligence/mbi/guide-overview.html).

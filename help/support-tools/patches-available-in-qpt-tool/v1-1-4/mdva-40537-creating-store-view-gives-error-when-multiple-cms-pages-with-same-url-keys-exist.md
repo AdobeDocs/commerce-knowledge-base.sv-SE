@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-40537: Om du skapar en butiksvy uppstår ett fel när flera CMS-sidor har samma URL-nyckel.
 
-Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.4 är installerat. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
+Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.4 har installerats. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 Adobe Commerce (alla distributionsmetoder) 2.3.5-p2
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 Adobe Commerce (alla distributionsmetoder) 2.3.4 - 2.4.0-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 
 ## Problem
@@ -36,7 +36,7 @@ Användarna får ett fel när de skapar en butiksvy om flera CMS-sidor har samma
 
 <u>Steg som ska återskapas</u>:
 
-1. Gå till **Admin Panel** > **Lager** > **Alla butiker** och skapa två butiksvyer.
+1. Gå till **Admin Panel** > **Stores** > **All Stores** och skapa två butiksvyer.
 
    ```sql
    Name: German
@@ -50,7 +50,7 @@ Användarna får ett fel när de skapar en butiksvy om flera CMS-sidor har samma
    Status: Enabled
    ```
 
-1. Gå till **Admin Panel** > **Innehåll** > **Sidor** och skapa två sidor.
+1. Gå till **administrationspanelen** > **Innehåll** > **Sidor** och skapa två sidor.
 
    ```sql
    Page Title: About Us
@@ -64,7 +64,7 @@ Användarna får ett fel när de skapar en butiksvy om flera CMS-sidor har samma
    Store View: German
    ```
 
-1. Gå till **Admin Panel** > **Lager** > **Alla butiker** och skapa en ny butiksvy.
+1. Gå till **Admin Panel** > **Stores** > **All stores** och skapa en ny butiksvy.
 
    ```sql
    Name: Spanish
@@ -88,14 +88,14 @@ Exception message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplica
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [Patchar tillgängliga i QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) -avsnitt.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i avsnittet [Patchar i QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-).

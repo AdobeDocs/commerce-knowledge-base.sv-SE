@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Paket som nedgraderats efter uppgradering från 2.4.4 till 2.4.4-p1
 
-Den här artikeln innehåller en snabbkorrigering för problemet när handlare i version 2.4.4 kör `composer update` och sedan nedgraderas de paket (moduler) som anges nedan till sina tidigare versioner som inte är kompatibla med version 2.4.4 och som endast ska användas med version 2.4.5 och senare.
+Den här artikeln innehåller en snabbkorrigering för problemet när handlare i version 2.4.4 kör kommandot `composer update`, och sedan nedgraderas paketen (modulerna) som listas nedan till sina tidigare versioner som inte är kompatibla med version 2.4.4 och endast ska användas med version 2.4.5 och senare.
 
 ## Berörda produkter och versioner
 
@@ -82,7 +82,7 @@ Under uppgraderingen från version 2.4.4 till 2.4.4-p1 nedgraderas dessa paketve
 
 <u>Steg som ska återskapas</u>:
 
-När 2.4.4 handlare kör `composer update` och därefter samma paket (moduler) som anges ovan i **Scenario 1** uppgraderas till sina nyare versioner som endast är kompatibla med version 2.4.5 och inte ska användas med version 2.4.4.
+När 2.4.4-handlare kör kommandot `composer update` uppgraderas samma paket (moduler) som listas ovan i **Scenario 1** till sina nyare versioner som bara är kompatibla med version 2.4.5 och som inte ska användas med version 2.4.4.
 
 <u>Förväntade resultat</u>:
 
@@ -110,27 +110,27 @@ Korrigeringen skapades för:
 
 ## Så här använder du patchen
 
-Använd det kopplade basskriptet [ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017-fix.sh.zip) som en tillfällig lösning på problemet.
+Använd det bifogade basskriptet [ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017-fix.sh.zip) som lösning på problemet.
 
-**Exakta anvisningar om hur du använder skriptet:**
+**Exakta instruktioner om hur du använder skriptet:**
 
 ### På Adobe Commerce om molninfrastruktur:
 
-1. Hämta basskriptfilen `ACPLTSRV-2017-fix.sh` till din lokala utcheckning av din molnkodbas.
-1. Kör bash-skriptfilen `ACPLTSRV-2017-fix.sh` om du vill ändra dispositionsfilerna lokalt.
+1. Hämta den grundläggande skriptfilen `ACPLTSRV-2017-fix.sh` till din lokala utcheckning av din molnkodbas.
+1. Kör den grundläggande skriptfilen `ACPLTSRV-2017-fix.sh` för att ändra kompositionsfilerna lokalt.
 1. Lägg till och implementera de ändrade dispositionsfilerna i Git-databasen.
 
 ### På Adobe Commerce eller Magento Open Source, lokalt:
 
-1. Placera det basala skriptet `ACPLTSRV-2017-fix.sh` i `root` mapp för din Adobe Commerce/Magento Open Source 2.4.4-installation (samma mapp som `composer.json`).
-1. Kör det grundläggande skriptet med en `apply` argument för att låsa berörda paket (moduler) till version 2.4.4:
+1. Placera det grundläggande skriptet `ACPLTSRV-2017-fix.sh` i mappen `root` i Adobe Commerce/Magento Open Source 2.4.4-installationen (samma mapp som `composer.json`).
+1. Kör det grundläggande skriptet med ett `apply`-argument för att låsa berörda paket (moduler) till deras 2.4.4-versioner:
 
    ```bash
    sh ACPLTSRV-2017-fix.sh apply
    ```
 
 1. Kör dispositionen uppdaterad för att installera låsta paket (moduler).
-1. När du är redo att uppgradera till 2.4.5 eller 2.4.4-p1 kör du skriptet med en `rollback` argument:
+1. När du är redo att uppgradera till 2.4.5 eller 2.4.4-p1 kör du skriptet med ett `rollback`-argument:
 
    ```bash
    sh ACPLTSRV-2017-fix.sh rollback
@@ -141,4 +141,4 @@ Använd det kopplade basskriptet [ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017
 
 ## Tillfällig lösning 2
 
-Den andra lösningen på problemet är inte att köra `composer update` utan argument.
+Den andra lösningen på problemet är att inte köra kommandot `composer update` utan några argument.

@@ -1,5 +1,5 @@
 ---
-title: '''ACSD-48366: produktbild visas inte på [!UICONTROL Back to Stock] e-postmall'
+title: 'ACSD-48366: produktbilden visas inte i e-postmallen [!UICONTROL Back to Stock]'
 description: Använd patchen ACSD-48366 för att åtgärda problemet med Adobe Commerce där miniatyrbilden av produkten inte visas i produktens varningsmeddelande.
 exl-id: 57b549b0-6e97-4d5f-927e-9585f3257872
 feature: Admin Workspace, Communications, Orders, Products
@@ -11,32 +11,32 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48366: produktbild visas inte på [!UICONTROL Back to Stock] e-postmall
+# ACSD-48366: produktbilden visas inte i e-postmallen [!UICONTROL Back to Stock]
 
-Korrigeringen ACSD-48366 åtgärdar ett problem där produktminiatyrbilden inte visas i produktens varningsmeddelande. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.26 är installerat. Korrigerings-ID är ACSD-48366. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
+Korrigeringen ACSD-48366 åtgärdar ett problem där produktminiatyrbilden inte visas i produktens varningsmeddelande. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.26 har installerats. Korrigerings-ID är ACSD-48366. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.5
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.4 - 2.4.6
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-Produktbilden visas inte på [!UICONTROL Back to Stock] e-postmall.
+Produktbilden visas inte i e-postmallen [!UICONTROL Back to Stock].
 
 <u>Steg som ska återskapas</u>:
 
-1. Aktivera *[!UICONTROL Product Alert]* for *[!UICONTROL Back in Stock]* genom att **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Product Alert]** > **[!UICONTROL Allow Alert When Product Comes Back in Stock]** = *[!UICONTROL Yes]*.
-1. Aktivera *[!UICONTROL Display Out of Stock Products]* genom att **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Display Out of Stock]** = *[!UICONTROL Yes]*.
+1. Aktivera *[!UICONTROL Product Alert]* för *[!UICONTROL Back in Stock]* genom att gå till **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Product Alert]** > **[!UICONTROL Allow Alert When Product Comes Back in Stock]** = *[!UICONTROL Yes]*.
+1. Aktivera *[!UICONTROL Display Out of Stock Products]* genom att gå till **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Display Out of Stock]** = *[!UICONTROL Yes]*.
 1. Skapa en enkel produkt med kvantitet = 0.
 1. Skapa en kund från butiken och prenumerera på produkten ovan för att få produktvarningar när den finns i lager.
 1. Gör produkten i lager.
@@ -66,14 +66,14 @@ Produktbilden är inte tillgänglig i e-postmeddelandet om lagermeddelanden.
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.

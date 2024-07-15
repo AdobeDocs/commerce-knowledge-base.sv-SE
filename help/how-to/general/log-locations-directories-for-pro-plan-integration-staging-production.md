@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Loggplatser (kataloger) för Pro-planen: Integration, Förproduktion, Produktion
 
-Se [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) i *Infrastrukturhandbok för Commerce on Cloud* om du vill veta var du kan hitta logg för bygge och driftsättning, program och tjänster för Adobe Commerce-projekt som körs i molninfrastruktur.
+Se [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) i *Commerce on Cloud Infrastructure Guide* om du vill veta var du kan hitta bygg- och distributionsloggarna, program- och tjänstloggarna för Adobe Commerce-projekt som distribueras i molninfrastrukturen.

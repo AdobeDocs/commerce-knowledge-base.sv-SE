@@ -1,7 +1,7 @@
 ---
-title: '''[!DNL USPS] Stöd för hotfix för leveransmetoden AC-9182 på marken'
+title: '[!DNL USPS] Stöd för snabbkorrigering för leveransmetod för markförmåner för AC-9182'
 promoted: true
-description: Tillämpa en patch för att hantera [!DNL USPS] Markförmåner vid frakt - problem AC-9182 för Adobe Commerce 2.4.4 - 2.4.6-p2.
+description: Använd en patch för att hantera problemet med  [!DNL USPS] markförmåner, leveransmetod AC-9182 för Adobe Commerce 2.4.4 - 2.4.6-p2.
 feature: Shipping/Delivery
 role: Developer
 exl-id: b6871d19-3d02-4026-82e6-3545f4ab7159
@@ -12,21 +12,21 @@ ht-degree: 0%
 
 ---
 
-# [!DNL USPS] Stöd för hotfix för leveransmetoden för markförmåner för AC-9182
+# [!DNL USPS] Stöd för snabbkorrigering för leveransmetod för markförmåner för AC-9182
 
-I den här artikeln finns en patch som löser problemet AC-9182 för nya **[!DNL USPS]Markfördel** leveranssätt i Adobe Commerce 2.4.4 - 2.4.6-p2.
+I den här artikeln finns en patch som löser problemet AC-9182 för den nya leveransmetoden **[!DNL USPS]Ground Advantage** i Adobe Commerce 2.4.4 - 2.4.6-p2.
 
-9 juli 2023, The United States Postal Service ([!DNL USPS]) har släppt en ny leveransmetod, [[!DNL USPS] Markfördel](https://www.usps.com/ship/ground-advantage.htm).
+Den 9 juli 2023 släppte United States Postal Service ([!DNL USPS]) en ny leveransmetod, [[!DNL USPS] Ground Advantage](https://www.usps.com/ship/ground-advantage.htm).
 
 Den nya leveransmetoden ersätter de tre viktigaste leveranssätten:
 
-* [!DNL USPS] Butiksmark
-* [!DNL USPS] Pakettjänst av första klass
+* [!DNL USPS] butiksområde
+* Pakettjänsten [!DNL USPS] i första klass
 * [!DNL USPS] Markering av paket
 
-[[!DNL USPS] presenterad](https://faq.usps.com/s/article/USPS-Ground-Advantage#how_it_works) från och med den 30 september 2023 upphör dessa tre leveransmetoder och alla kunder måste använda den nya **[!DNL USPS]Markfördel** i stället.
+[[!DNL USPS] meddelade](https://faq.usps.com/s/article/USPS-Ground-Advantage#how_it_works) att från och med den 30 september 2023 kommer dessa tre leveransmetoder att upphöra och alla kunder måste använda den nya metoden **[!DNL USPS]Ground Advantage** i stället.
 
-Så efter den 30 september 2023 kommer alla Adobe Commerce-handlare som använder leveransmetoden USPS inte att kunna få fraktpriser från [!DNL USPS] genom att använda dessa tre äldre leveransmetoder längre.
+Efter den 30 september 2023 kommer alla Adobe Commerce-handlare som använder leveransmetoden USPS inte att kunna få frakt från [!DNL USPS] genom att använda dessa tre äldre leveransmetoder längre.
 
 Detta problem kommer att åtgärdas i de kommande säkerhetsutgåvorna i oktober 2023, i version 2.4.6-p3, 2.4.5-p5 och 2.4.4-p6.
 
@@ -51,7 +51,7 @@ Adobe Commerce om molninfrastruktur och lokalt, samt Magento Open Source:
 
 ## Orsak
 
-The [!DNL USPS] gjort [!DNL API] uppdatera.
+[!DNL USPS] har gjort en [!DNL API]-uppdatering.
 
 ## Lösning
 
@@ -71,16 +71,16 @@ Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://exp
 
 Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats kanske du vill kontrollera om korrigeringsfilen för AC-9182 har installerats korrekt.
 
-<u>Du kan göra detta genom att utföra följande steg:</u>:
+<u>Du kan göra detta genom att utföra följande steg</u>:
 
-1. [Installera [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installera  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 1. Kör kommandot:
 
    ```bash
    vendor/bin/magento-patches -n status |grep "9182|Status"
    ```
 
-1. Du bör se utdata som liknar detta, där AC-9182 returnerar *Används* status:
+1. Du bör se utdata som liknar detta, där AC-9182 returnerar statusen *Används*:
 
    ```bash
    ║ Id            │ Title                                                        │ Category        │ Origin                 │ Status      │ Details                                          ║ ║ N/A           │ ../m2-hotfixes/AC-9182_USPS_Ground_Advantage_shipping_method_COMPOSER_patch.patch      │ Other           │ Local                  │ Applied     │ Patch type: Custom                                

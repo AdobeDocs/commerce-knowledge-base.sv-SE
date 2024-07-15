@@ -18,11 +18,11 @@ Ser siffrorna i en viss rapport felaktiga ut? Ser du oväntade NULL-värden? Om 
 * [Checklista för diagnostisk diskrepans](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Använda export för att identifiera dataavvikelser](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Vi rekommenderar även att du ser till att du har rätt [replikeringsmetoder](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) och [omkontroller](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) har angetts för de tabeller och kolumner som ingår i avvikelsen. Observera att du behöver administratörsbehörighet för att komma åt replikeringsmetoden och för att kontrollera information igen.
+Vi rekommenderar även att du kontrollerar att rätt [replikeringsmetoder](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) och [rechecks](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) har angetts för de tabeller och kolumner som är inblandade i avvikelsen. Observera att du behöver administratörsbehörighet för att komma åt replikeringsmetoden och för att kontrollera information igen.
 
 ## Jag behöver fortfarande hjälp!
 
-Om rapporten fortfarande är felaktig, oroa dig inte - vårt supportteam hjälper gärna till! [Kontakta oss](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) med följande information:
+Om rapporten fortfarande är felaktig, oroa dig inte - vårt supportteam hjälper gärna till! [Nå ut till oss](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) med följande information:
 
 * Vad heter rapporten där du ser diskrepansen?
 * Vilka värden i rapporten är felaktiga?

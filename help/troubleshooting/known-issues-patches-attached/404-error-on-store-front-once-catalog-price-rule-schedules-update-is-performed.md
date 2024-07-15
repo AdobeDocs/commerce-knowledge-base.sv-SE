@@ -21,9 +21,9 @@ Det går inte att komma åt butikssidor, vilket returnerar 404-fel. Problemet up
 
 <u>Steg som ska återskapas</u>:
 
-1. Skapa en ny katalogprisregel under Commerce Admin **Marknadsföring** > **Erbjudanden** > **Katalogprisregel**.
-1. I **Katalogprisregel** stödraster, klicka **Redigera,** schemalägg en ny uppdatering och uppsättning **Status** till *Aktiv.*
-1. Navigera till **Innehåll** > **Innehållsmellanlagring** > **Instrumentpanel.**
+1. I Commerce Admin skapar du en ny katalogprisregel under **Marknadsföring** > **Kampanjer** > **Katalogprisregel**.
+1. Klicka på **Redigera** i rutnätet **Katalogens prisregel** och schemalägg en ny uppdatering och ange **Status** till *Aktiv.*
+1. Navigera till **Innehåll** > **Förproduktion av innehåll** > **Kontrollpanel.**
 1. Markera den nyligen skapade uppdateringen och ändra dess starttid.
 1. Spara ändringarna.
 
@@ -41,11 +41,11 @@ Om du vill återställa katalogsidor och kunna använda uppdateringsfunktionen f
 
 Här följer en detaljerad beskrivning av de steg som krävs:
 
-1. [Tillämpa korrigeringen](#patch).
-1. I Commerce Admin tar du bort katalogprisregeln för problemet (där starttiden uppdaterades). Det gör du genom att öppna regelsidan under **Marknadsföring** > **Erbjudanden** > **Katalogprisregel** och klicka **Ta bort regel**.
-1. Ta bort den relaterade posten manuellt från databasen `catalogrule` tabell.
-1. Åtgärda ogiltiga länkar i databasen. Se [relaterat stycke](#fix_links) för mer information.
-1. I Commerce Admin under **Marknadsföring**, gå till **Erbjudanden** > **Katalogprisregel** och skapa den nya regeln med den konfiguration som krävs.
+1. [Använd korrigeringen](#patch).
+1. I Commerce Admin tar du bort katalogprisregeln för problemet (där starttiden uppdaterades). Det gör du genom att öppna regelsidan under **Marknadsföring** > **Kampanjer** > **Katalogprisregel** och klicka på **Ta bort regel**.
+1. Om du öppnar databasen manuellt tas den relaterade posten bort från tabellen `catalogrule`.
+1. Åtgärda ogiltiga länkar i databasen. Mer information finns i det [relaterade stycket](#fix_links).
+1. Gå till **Kampanjer** > **Katalogprisregel** i Commerce Admin under **Markering** och skapa den nya regeln med den konfiguration som krävs.
 1. Rensa webbläsarcachen under **System** > **Cachehantering**.
 1. Kontrollera att cron-jobben är korrekt konfigurerade och kan köras.
 
@@ -68,7 +68,7 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Mer information finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Åtgärda ogiltiga länkar till mellanlagring i DB {#fix_links}
 
@@ -76,16 +76,16 @@ Mer information finns i [Använda en kompositkorrigering från Adobe](/help/how-
 >
 >Vi rekommenderar starkt att du skapar en säkerhetskopia av databasen före eventuella databasändringar. Vi rekommenderar också att du testar frågor om utvecklingsmiljön först.
 
-Följ de här stegen för att korrigera raderna med ogiltiga länkar till `staging_update` tabell.
+Följ de här stegen för att korrigera raderna med ogiltiga länkar till tabellen `staging_update`.
 
-1. Kontrollera om ogiltiga länkar till `staging_update` tabellen finns i `flag` tabell. Dessa skulle vara poster där `flag_code=staging`.
-1. Identifiera den ogiltiga versionen från `flag` tabell med följande fråga:
+1. Kontrollera om de ogiltiga länkarna till tabellen `staging_update` finns i tabellen `flag`. Det här är poster där `flag_code=staging`.
+1. Identifiera den ogiltiga versionen från tabellen `flag` med följande fråga:
 
    ```sql
    SELECT flag_data FROM flag WHERE flag_code = 'staging';
    ```
 
-1. Från `staging_update` markerar du den befintliga versionen som är mindre än den aktuella (ogiltiga) versionen och hämtar det versionsvärde som är två tal tillbaka. Du använder det, inte föregående version, för att undvika situationen när den tidigare versionen är den högsta versionen i `staging_update` tabell som skulle kunna användas och som vi fortfarande måste återanvända.
+1. I tabellen `staging_update` väljer du den befintliga versionen som är mindre än den aktuella (ogiltiga) versionen och hämtar versionsvärdet som är två siffror tillbaka. Du kan använda den, inte den föregående versionen, för att undvika situationen när den tidigare versionen är den högsta versionen i tabellen `staging_update` som kan användas och vi fortfarande måste tillämpa den igen.
 
    ```sql
    SELECT id FROM staging_update WHERE id < %current_id% ORDER BY id DESC LIMIT 1, 1
@@ -93,7 +93,7 @@ Följ de här stegen för att korrigera raderna med ogiltiga länkar till `stagi
 
    Versionen du får som svar är din giltiga version `id`.
 
-1. För rader med ogiltiga länkar i `flag` tabell, ange `flag_data` värden till data som ska innehålla ett giltigt versions-ID. Detta hjälper till att spara prestanda vid omindexering och gör att du kan undvika omindexering av alla enheter.
+1. För rader med ogiltiga länkar i tabellen `flag` anger du `flag_data`-värdena till data som ska innehålla ett giltigt versions-ID. Detta hjälper till att spara prestanda vid omindexering och gör att du kan undvika omindexering av alla enheter.
 
    ```sql
    UPDATE flag SET flag_data=REPLACE(flag_data, '%invalid_id%', '%new_valid_id%') WHERE flag_code='staging';

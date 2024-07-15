@@ -28,10 +28,10 @@ Storleken på MySQL-tabeller påverkar inte platsens prestanda direkt. Om en tab
 
 Tänk på följande alternativ för att undvika prestandaförsämring:
 
-* Skapa CRON-jobb som rensar upp stora tabeller. Se [Söka efter stora MySQL-tabeller](/help/how-to/general/find-large-mysql-tables.md) i vår kunskapsbas för support om rekommendationer om hur du identifierar stora tabeller.
+* Skapa CRON-jobb som rensar upp stora tabeller. Mer information om hur du identifierar stora tabeller finns i [Hitta stora MySQL-tabeller](/help/how-to/general/find-large-mysql-tables.md) i vår kunskapsbas för support.
 * För tabeller som är större än 1 GB använder du en MySQL-motor som är optimerad för att skriva loggar. Exempel: Arkivmotorn.
 * Uppdatera funktionaliteten för att undvika att lagra loggar i DB.
 
 ## Relaterad läsning
 
-[Överdimensionerade ändringsloggtabeller orsakar förseningar i enhetsuppdateringar](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md) i vår kunskapsbas för support.
+[Överdimensionerade ändringsloggtabeller orsakar fördröjningar i entitetsuppdateringar](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md) i vår kunskapsbas för support.

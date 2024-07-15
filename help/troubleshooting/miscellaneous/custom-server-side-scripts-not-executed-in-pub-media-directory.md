@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Anpassade serverskript körs inte i pub-mediekatalogen
 
-I den här artikeln finns en fix för när anpassade serverskript inte körs om de placeras i `./pub/media/` katalogen för ditt Adobe Commerce-program i molninfrastrukturen. Detta är en förväntad säkerhetsbegränsning eftersom `./pub/media/` katalogen är skrivbar. Om du vill göra skript körbara placerar du dem i kataloger som inte är skrivbara, till exempel `./app/code/` eller `./pub/`.
+Den här artikeln innehåller en korrigering för när anpassade serverskript inte körs om de placeras i katalogen `./pub/media/` i ditt Adobe Commerce-program i molninfrastrukturen. Det här är en förväntad säkerhetsbegränsning eftersom katalogen `./pub/media/` är skrivbar. Om du vill göra skript körbara placerar du dem i kataloger som inte är skrivbara, till exempel `./app/code/` eller `./pub/`.
 
 ## Berörda versioner
 
@@ -23,16 +23,16 @@ I den här artikeln finns en fix för när anpassade serverskript inte körs om 
 
 Anpassade skript på serversidan kan inte köras när de initieras.
 
-När slutanvändaren (Adobe Commerce-kund) till exempel klickar på länken som leder till `\*.php` fil med skriptet (som *domain.com/media/directory/script.php* ) laddas skriptet ned i stället för att köras.
+När slutanvändaren (Adobe Commerce shopper) till exempel klickar på länken som leder till filen `\*.php` med skriptet (till exempel *domain.com/media/directory/script.php* ) hämtas skriptet i stället för att köras.
 
 ## Orsak: felaktig plats för skriptfilen
 
-Problemet inträffar när skriptfilerna finns i `./pub/media/` katalog för Adobe Commerce-program i molninfrastruktur. Detta är ett förväntat beteende: på grund av säkerhetsbegränsningar kan filer från skrivbara kataloger (`./pub/media/`) verkställs aldrig.
+Problemet inträffar när skriptfilerna finns i katalogen `./pub/media/` för Adobe Commerce-programmet i molninfrastrukturen. Detta är ett förväntat beteende: på grund av säkerhetsbegränsningar körs aldrig filer från de skrivbara katalogerna (`./pub/media/`).
 
 ## Lösning: placera skript i kataloger som inte är skrivbara
 
-Lagra serverskript i kataloger som inte kan skrivas, t.ex. `./app/code/` eller `./pub/`  &quot;
+Lagra serverskript i kataloger som inte är skrivbara, till exempel `./app/code/` eller `./pub/`
 
 ## Relaterad dokumentation
 
-* [Cloud for Adobe Commerce > Projektstruktur > Skrivbara kataloger](https://devdocs.magento.com/guides/v2.3/cloud/project/project-start.html#write-dir) i vår dokumentation för utvecklare.
+* [Cloud för Adobe Commerce > Projektstruktur > Skrivbara kataloger](https://devdocs.magento.com/guides/v2.3/cloud/project/project-start.html#write-dir) i vår utvecklardokumentation.

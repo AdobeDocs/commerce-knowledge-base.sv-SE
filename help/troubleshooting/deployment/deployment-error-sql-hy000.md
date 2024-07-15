@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Distributionsfel: SQLSTATE[HY000]
 
-Den här artikeln innehåller en lösning på problemet där distributionen misslyckas på grund av SQLSTATE[HY000] fel.
+Den här artikeln innehåller en lösning på problemet där distributionen misslyckas på grund av SQLSTATE[HY000] -felet.
 
 ## Berörda produkter och versioner
 

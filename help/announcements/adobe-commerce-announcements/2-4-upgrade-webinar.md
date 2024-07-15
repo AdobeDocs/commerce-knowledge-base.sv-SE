@@ -25,6 +25,6 @@ Det är viktigt att du uppgraderar Adobe Commerce-plattformen regelbundet för a
 
 Wed, 26 januari 2022, 10:00 - 11:30 CST
 
-[REGISTRERA HÄR](https://register.gotowebinar.com/register/6951278956217776911)
+[REGISTRERA DIG HÄR](https://register.gotowebinar.com/register/6951278956217776911)
 
 Även om du inte kan ansluta rekommenderar vi att du registrerar dig för att få inspelningen efter evenemanget.

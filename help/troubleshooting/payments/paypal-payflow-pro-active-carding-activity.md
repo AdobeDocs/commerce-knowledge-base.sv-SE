@@ -55,7 +55,7 @@ Installationen kräver CLI-kommandon i din Adobe Commerce-instans. Utvecklarhjä
 
 #### Installera Google reCAPTCHA och uppdatera checkout-formulär
 
-The `magento/module-paypal-recaptcha` paketet innehåller integrering med Google reCAPTCHA- och Payflow Pro-betalningsuppdateringar. Även om du har installerat och konfigurerat modulen reCAPTCHA rekommenderar vi att du installerar det här paketet.
+Paketet `magento/module-paypal-recaptcha` innehåller integrering med Google reCAPTCHA och uppdateringar av betalningsformulär för Payflow Pro. Även om du har installerat och konfigurerat modulen reCAPTCHA rekommenderar vi att du installerar det här paketet.
 
 Kör följande kommandon för att installera det.
 
@@ -86,7 +86,7 @@ bin/magento cache:clean
 
 #### Installera uppdateringar av utcheckningsformulär för CAPTCHA
 
-The `magento/module-paypal-captcha` paketet innehåller integration med Adobe Commerce CAPTCHA-modulen.
+Paketet `magento/module-paypal-captcha` innehåller integration med Adobe Commerce CAPTCHA-modulen.
 
 Installera den genom att köra följande kommandon:
 
@@ -129,11 +129,11 @@ Det nya alternativet för utcheckningsformulär är:
 
 ## Stöd och kontakter för PayPal
 
-Kontakta PayPal Payflow Merchant Support om du vill veta mer om bedrägeriskyddstjänster. Du kan begära att PayPal Support-teamet ska aktivera [Grundläggande bedrägeriskyddstjänster](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) filter för att få en så noggrann kontroll som möjligt över betalningar så att du automatiskt kan neka betalningar som sannolikt leder till bedrägliga transaktioner och acceptera betalningar som normalt inte är något problem. Observera att när du väl har aktiverat PayPal-filtren för bedrägeriskydd kan det ta upp till två timmar att kvitta transaktionerna.
+Kontakta PayPal Payflow Merchant Support om du vill veta mer om bedrägeriskyddstjänster. Du kan begära att PayPal-supportteamet aktiverar [filtren för grundläggande bedrägeriskyddstjänster](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) så att du kan ha så stor kontroll som möjligt över betalningar, så att du automatiskt kan neka betalningar som sannolikt leder till bedrägliga transaktioner och acceptera betalningar som vanligtvis inte är något problem. Observera att när du väl har aktiverat PayPal-filtren för bedrägeriskydd kan det ta upp till två timmar att kvitta transaktionerna.
 
 >[!NOTE]
 >
->Mer information finns i PayPals KB [&quot;Adobe har kontaktat mig om integreringen av mitt Payflow Pro. Vad behöver jag göra?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
+>Mer information finns i PayPals kB [&quot;Adobe har kontaktat mig angående min Payflow Pro-integrering. Vad behöver jag göra?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
 
 **Supportinformation för PayPal Payflow Merchant**
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Konfigurera NPM för att kunna använda PWA Studio
 
-[Progressiva webbprogram (PWA) Studio](https://magento.github.io/pwa-studio/) är ett nytt projekt för Adobe Commerce i molninfrastruktur 2.3.x eller senare. För att kunna använda och installera PWA Studio måste du ställa in NPM-pakethanterarversionen på 5.x eller senare för att få stöd för Node.js 8.x. Detta görs i `hooks:build` i `.magento.app.yaml` konfigurationsfil.
+[Progressiva webbprogram (PWA) Studio](https://magento.github.io/pwa-studio/) är ett nytt projekt som är tillgängligt för Adobe Commerce i molninfrastruktur 2.3.x eller senare. För att kunna använda och installera PWA Studio måste du ställa in NPM-pakethanterarversionen på 5.x eller senare för att få stöd för Node.js 8.x. Detta görs i avsnittet `hooks:build` i konfigurationsfilen `.magento.app.yaml`.
 
 ## Miljö och teknik
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Ange NPM-version: steg
 
-Ange önskad NPM-version i dialogrutan `.magento.app.yaml` konfigurationsfil. Följ de här stegen:
+Om du vill ange den NPM-version som behövs anger du den i konfigurationsfilen `.magento.app.yaml`. Följ de här stegen:
 
-1. I din lokala utvecklingsmiljö letar du upp `.magento.app.yaml` konfigurationsfil.
+1. Leta reda på konfigurationsfilen `.magento.app.yaml` i den lokala utvecklingsmiljön.
 1. Öppna filen för redigering med den vanliga textredigeraren eller IDE.
-1. Ange önskad version i dialogrutan `hooks:build` -avsnitt. I följande exempel är konfigurationen inställd på att installera NPM v9.5.0, den högsta tillgängliga för tillfället (4 februari 2019):
+1. Ange den version som krävs i avsnittet `hooks:build`. I följande exempel är konfigurationen inställd på att installera NPM v9.5.0, den högsta tillgängliga för tillfället (4 februari 2019):
 
    ```yaml
    hooks:
@@ -54,4 +54,4 @@ Ange önskad NPM-version i dialogrutan `.magento.app.yaml` konfigurationsfil. F�
 
 ## Relaterad dokumentation
 
-* [Programkonfiguration: krokar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) i vår Adobe Commerce on Cloud Infrastructure Guide.
+* [Programkonfiguration: hookar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) i vår Adobe Commerce on Cloud Infrastructure Guide.

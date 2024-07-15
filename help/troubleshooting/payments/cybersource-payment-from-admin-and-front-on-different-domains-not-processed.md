@@ -17,11 +17,11 @@ I den här artikeln finns en patch för den kända Adobe Commerce 2.3.0-begräns
 
 >[!NOTE]
 >
->Adobe Commerce Cybersource-betalningsintegration har tagits bort sedan 2.3.3 och kommer att tas bort helt i 2.4.0. Använd [officiell förlängning](https://marketplace.magento.com/cybersource-global-payment-management.html) från Marketplace istället.
+>Adobe Commerce Cybersource-betalningsintegration har tagits bort sedan 2.3.3 och kommer att tas bort helt i 2.4.0. Använd det [officiella tillägget](https://marketplace.magento.com/cybersource-global-payment-management.html) från Marketplace i stället.
 
 ## Problem
 
-Den tidigare implementeringen av Cybersource-integreringen tillät endast bearbetning av betalningar från en domän. Om din Adobe Commerce-butik finns på en annan domän än Commerce Admin får du därför följande fel när du försöker göra en beställning med Cybersource i Admin: &quot; *Inläsning nekad av X-Frame-Options: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ tillåter inte bildrutning mellan ursprung.* ...&quot;
+Den tidigare implementeringen av Cybersource-integreringen tillät endast bearbetning av betalningar från en domän. Om din Adobe Commerce-butik finns på en annan domän än Commerce Admin får du därför följande fel när du försöker göra en beställning med Cybersource i Admin: &quot; *Inläsning nekad av X-Frame-Options: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ tillåter inte inramning mellan ursprung.* ..&quot;
 
 <u>Steg som ska återskapas</u>:
 
@@ -35,13 +35,13 @@ Den tidigare implementeringen av Cybersource-integreringen tillät endast bearbe
 1. Välj Cybersource som betalningsmetod.
 1. Skicka beställning.
 
-<u>Förväntat resultat</u>: Beställningen är utan problem.
+<u>Förväntat resultat</u>: Ordern placeras utan problem.
 
 <u>Faktiskt resultat</u>: På sidan Ordning visas en inläsningsikon, men ordningen placeras aldrig. Felet visas i konsolen.
 
 ## Lösning
 
-Den bifogade korrigeringen förbättrar integrationen med Cybersource. När du har implementerat korrigeringen måste du skapa en till profil med Cybersource för att bearbeta betalningar i Admin och lägga till de nödvändiga inloggningsuppgifterna i Cybersource-konfigurationen i Commerce Admin under **Lager** > Inställningar > **Konfiguration** > **Försäljning** > **Betalningsmetoder** > **CyberSource**.
+Den bifogade korrigeringen förbättrar integrationen med Cybersource. När du har tillämpat korrigeringen måste du skapa en till profil med Cybersource för bearbetning av betalningar i Admin och lägga till de nödvändiga autentiseringsuppgifterna i Cybersource-konfigurationen i Commerce Admin under **Lager** > Inställningar > **Konfiguration** > **Försäljning** > **Betalningsmetoder** > **CyberSource**.
 
 >[!NOTE]
 >
@@ -69,6 +69,6 @@ Patcharna är också kompatibla med följande versioner:
 
 ## Så här lägger du på en patch
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

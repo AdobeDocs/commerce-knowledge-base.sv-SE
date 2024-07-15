@@ -13,32 +13,32 @@ ht-degree: 0%
 
 # ACSD-49497: Beställning som fortfarande bearbetas efter leverans och partiell återbetalning
 
-Korrigeringsfilen ACSD-49497 åtgärdar ett problem där orderstatusen kvarstår som behandling efter leverans och en partiell återbetalning tillämpas. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 är installerat. Korrigerings-ID är ACSD-49497. Observera att problemet har åtgärdats i Adobe Commerce 2.4.6.
+Korrigeringsfilen ACSD-49497 åtgärdar ett problem där orderstatusen kvarstår som behandling efter leverans och en partiell återbetalning tillämpas. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 har installerats. Korrigerings-ID är ACSD-49497. Observera att problemet har åtgärdats i Adobe Commerce 2.4.6.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.5-p1
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.3.7 - 2.4.5-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-Status för en ny order finns kvar i *[!UICONTROL Processing]* anges även efter leverans och en partiell återbetalning tillämpas.
+Statusen för en ny order ligger kvar i läget *[!UICONTROL Processing]* även efter leverans och en partiell återbetalning tillämpas.
 
 <u>Steg som ska återskapas</u>:
 
 1. Skapa en order med flera artiklar.
-1. Från **[!UICONTROL Admin]** skapar du en faktura för ordern.
-1. Från **[!UICONTROL Admin]**, skapa en kreditnota och återbetala en artikel endast delvis.
-1. Från **[!UICONTROL Admin]** beställer du frakt för de återstående artiklarna i beställningen.
+1. Skapa en faktura för ordern från **[!UICONTROL Admin]**.
+1. Från **[!UICONTROL Admin]** skapar du en kreditnota och återbetalar endast delvis en artikel.
+1. Från **[!UICONTROL Admin]**, begär frakt för återstående artiklar i ordern.
 1. Observera orderstatus.
 
 <u>Förväntade resultat</u>:
@@ -47,20 +47,20 @@ Orderns status ska vara *[!UICONTROL Complete]*.
 
 <u>Faktiska resultat</u>:
 
-Orderns status kvarstår *[!UICONTROL Processing]*.
+Orderns status är fortfarande *[!UICONTROL Processing]*.
 
 ## Tillämpa korrigeringen
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.

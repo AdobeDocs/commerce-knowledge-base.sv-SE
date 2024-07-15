@@ -25,7 +25,7 @@ Det finns inga strikta gränser för hur många e-postmeddelanden som kan skicka
 
 ## Så här kontrollerar du om dina krediter har överskridits:
 
-Adobe Commerce on cloud infrastructure Pro planarkitektur: se `/var/log/mail.log` - du kanske ser ett meddelande som detta:
+Planarkitekturen för Adobe Commerce i molninfrastruktur Pro: Kontrollera `/var/log/mail.log` - du kan se ett meddelande som det här:
 
 `May 28 21:13:00 <i-node> postfix/error[21335]: BC7941A2BBF: to=<to@email.com>, relay=none, delay=4642, delays=4642/0.56/0/0.03, dsn=4.0.0, status=deferred (delivery temporarily suspended: SASL authentication failed; server smtp.sendgrid.net[ip address] said: 451 Authentication failed: Maximum credits exceeded).`
 
@@ -35,9 +35,9 @@ Det finns begränsningar för hur många e-postmeddelanden som får skickas.
 
 ## Lösning
 
-* Om det här meddelandet visas i produktionsmiljön [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och lämna ovanstående meddelande och begära att krediterna höjs.
-* Om du inte ser det här meddelandet eller om du använder Adobe Commerce för molninfrastruktur kan du även läsa Starter-planens arkitektur [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och att `mail.log` filen anger inte att krediterna har överskridits.
+* Om det här meddelandet visas i produktionsmiljön [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och anger ovanstående meddelande och begär att krediterna ska höjas.
+* Om du inte ser det här meddelandet eller om du är på Adobe Commerce om arkitekturen för Starter-planen för molninfrastruktur kan du även [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och ange att filen `mail.log` inte anger att krediterna har överskridits.
 
 ## Relaterad läsning
 
-* [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html) i vår dokumentation för utvecklare.
+* [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html) i utvecklardokumentationen.

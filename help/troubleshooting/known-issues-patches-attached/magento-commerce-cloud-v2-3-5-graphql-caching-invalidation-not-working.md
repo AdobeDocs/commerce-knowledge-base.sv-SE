@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce on cloud infrastructure v2.3.5 GraphQL caching invalidisation fungerar inte
 
-Den här artikeln innehåller en patch för problemet där GraphQL `GET` begäran returnerar inaktuell information om kunden ändrar produktinformation.
+Den här artikeln innehåller en korrigeringsfil för problemet där GraphQL `GET` begär att få tillbaka föråldrad information om kunden ändrar produktinformationen.
 
 ## Berörda produkter och versioner
 
@@ -33,11 +33,11 @@ GraphQL-begäranden cachelagras av Fastly och den cachelagrade versionen hämtas
 
 <u>Förväntade resultat</u>:
 
-The `X-Cache` header contains `MISS`.
+Rubriken `X-Cache` innehåller `MISS`.
 
 <u>Faktiska resultat</u>:
 
-The `X-Cache` header contains `HIT`, vilket innebär att svaret cachelagras.
+Rubriken `X-Cache` innehåller `HIT`, vilket innebär att svaret cachelagras.
 
 ## Lösning
 
@@ -73,6 +73,6 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner om hur du använder en kompositkorrigering.
+Se [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner om hur du använder en dispositionsruta.
 
 ## Bifogade filer

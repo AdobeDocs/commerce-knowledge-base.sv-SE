@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Öka diskutrymmet för integreringsmiljön i molnet
 
-Se [Hantera diskutrymme](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) i vår guide till Commerce om molninfrastruktur.
+Mer information finns i [Hantera diskutrymme](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) i vår guide för Commerce om molninfrastruktur.

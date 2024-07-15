@@ -39,13 +39,13 @@ Om du har råkat ut för ett driftavbrott som kan ha orsakats av en överlagrad 
 * Skapa dumpar
 
 
-### Analysera frågor med [!DNL Percona Toolkit] (Adobe Commerce Pro: Endast molnarkitektur)
+### Analysera frågor med [!DNL Percona Toolkit] (Adobe Commerce Pro: endast molnarkitekturen)
 
-Om ditt Adobe Commerce-projekt används i Pro-arkitekturen kan du använda [!DNL Percona Toolkit] för att analysera frågor.
+Om ditt Adobe Commerce-projekt har distribuerats på Pro-arkitekturen kan du använda [!DNL Percona Toolkit] för att analysera frågor.
 
-1. Kör `pt-query-digest --type=slowlog` kommandot mot långsamma MySQL-frågeloggar.
-   * Information om var de långsamma frågeloggarna finns i **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** i vår dokumentation för utvecklare.
-   * Se [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) dokumentation.
+1. Kör kommandot `pt-query-digest --type=slowlog` mot långsamma MySQL-frågeloggar.
+   * Information om var de långsamma frågeloggarna finns i **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** i utvecklardokumentationen.
+   * Se dokumentationen för [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. Beroende på vilka problem som hittas kan du åtgärda frågan så att den körs snabbare.
 
 ## Kontrollerar MySQL-processlista
@@ -79,6 +79,6 @@ Detta hjälper till att identifiera om MySQL-servern är aktiv och att det inte 
 ## Relaterad läsning
 
 * [MySQL - visa processlistsyntax](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) i dev.mysql.com.
-* [MySQL Avsluta syntax](https://dev.mysql.com/doc/refman/8.0/en/kill.html) i dev.mysql.com.
-* [Säkerhet, prestanda och datahantering](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) i vår dokumentation för utvecklare.
-* [Hjälp för MySQL](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html) i vår dokumentation för utvecklare.
+* [MySQL Kill Syntax](https://dev.mysql.com/doc/refman/8.0/en/kill.html) i dev.mysql.com.
+* [Säkerhet, prestanda och datahantering](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) i utvecklardokumentationen.
+* [MySQL-hjälp](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html) i utvecklardokumentationen.

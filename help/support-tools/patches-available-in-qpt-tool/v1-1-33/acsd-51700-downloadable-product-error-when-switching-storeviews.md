@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # ACSD-51700: Fel vid växling av butiksvyer på hämtningsbar produktredigeringssida
 
-Korrigeringen ACSD-51700 åtgärdar ett problem där ett fel inträffar när butiksvyer växlas på en hämtningsbar produktredigeringssida i administratören. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.33 är installerat. Korrigerings-ID är ACSD-51700. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
+Korrigeringen ACSD-51700 åtgärdar ett problem där ett fel inträffar när butiksvyer växlas på en hämtningsbar produktredigeringssida i administratören. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.33 har installerats. Korrigerings-ID är ACSD-51700. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.5-p2
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.3.7 - 2.4.6-p1
 
@@ -31,7 +31,7 @@ Ett fel inträffar när butiksvyer växlas på en nedladdningsbar produktrediger
 
 <u>Steg som ska återskapas</u>:
 
-1. Skapa en nedladdningsbar produkt med ett namn [!DNL SKU]och priset. Lägg inte till några länkar och spara produkten.
+1. Skapa en nedladdningsbar produkt med ett namn, [!DNL SKU] och pris. Lägg inte till några länkar och spara produkten.
 1. Växla från alla butiksvyer till standardbutiksvyn.
 1. Skapa en länk för den hämtningsbara produkten och spara den.
 1. Växla från standardbutiksvyn till alla butiksvyer.
@@ -44,20 +44,20 @@ De länkade produkterna visas.
 
 Följande fel visas:
 
-*Föråldrad funktionalitet: number_format(): Om null skickas till parametern #1 ($num) av typen float används inte vendor/magento/module-downloadable/Ui/DataProvider/Product/Form/Modifier/Data/Links.php på rad 228*
+*Föråldrad funktionalitet: number_format(): Att skicka null till parametern #1 ($num) av typen float är föråldrat i vendor/magento/module-downloadable/Ui/DataProvider/Product/Form/Modifier/Data/Links.php på rad 228*
 
 ## Tillämpa korrigeringen
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.

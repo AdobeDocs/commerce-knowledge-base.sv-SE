@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Visa Adobe Commerce-felrapportnummer i stället för Fastly 503-fel
 
-Som standard döljs alla Adobe Commerce-fel bakom **503 Tjänsten är inte tillgänglig** fel. Om du vill visa rapportnumret för Adobe Commerce fellogg (för att kunna hitta det i loggar och se felinformationen) öppnar du webbplatsen utan att använda dessa steg:
+Som standard döljer Fastly alla Adobe Commerce-fel bakom felet **503-tjänsten är inte tillgänglig** . Om du vill visa rapportnumret för Adobe Commerce fellogg (för att kunna hitta det i loggar och se felinformationen) öppnar du webbplatsen utan att använda dessa steg:
 
 1. Lägg till programmets domän och IP-adress i värdfilen på den lokala datorn.
 1. Rensa webbläsarens cache och cookies (eller växla till inkognito-läge).
@@ -20,12 +20,12 @@ Som standard döljs alla Adobe Commerce-fel bakom **503 Tjänsten är inte tillg
 
 När du ser det äkta Adobe Commerce-felet och felrapportnumret kan du få information i felrapportfilen genom att följa dessa steg:
 
-1. SSH till den drabbade miljön. Se [SSH till en miljö](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) i vår dokumentation för utvecklare.
-1. Leta reda på `./var/report/{error_number}` -fil.
+1. SSH till den drabbade miljön. Se [SSH till en miljö](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) i utvecklardokumentationen.
+1. Leta reda på filen `./var/report/{error_number}`.
 
 ## Lägg till programdomän och IP-adress till din värdfil: detaljerade steg
 
-1. Kontrollera butikens server-IP genom att köra `nslookup` kommando på kommandoraden på den lokala datorn:
+1. Kontrollera lagringsplatsens server-IP genom att köra kommandot `nslookup` på kommandoraden på den lokala datorn:
    * Användare av Pro-arkitektur (miljö för staging och produktion):
 
    ```

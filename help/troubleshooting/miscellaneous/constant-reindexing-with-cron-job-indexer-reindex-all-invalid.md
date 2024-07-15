@@ -12,30 +12,30 @@ ht-degree: 0%
 
 ---
 
-# Invaliderade och `indexer_reindex_all_invalid` hela tiden
+# Indexen har gjorts ogiltiga och `indexer_reindex_all_invalid` körs hela tiden
 
-Den här artikeln innehåller en möjlig lösning på problemet när webbplatsen har prestandaproblem som orsakas av konstant omindexering. Detta orsakas av [!DNL cron] jobb `indexer_reindex_all_invalid` oavbruten körning och cacheminnen rengjorda [!DNL reindex].
+Den här artikeln innehåller en möjlig lösning på problemet när webbplatsen har prestandaproblem som orsakas av konstant omindexering. Detta orsakas av att [!DNL cron]-jobbet `indexer_reindex_all_invalid` körs kontinuerligt och cacheminnen rensas på [!DNL reindex].
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce (molnet &amp; lokalt) 2.4.0+ (som **[!UICONTROL Category Permissions]** är en funktion som bara fungerar i Adobe-Commerce, som inte påverkar Magento Open Source.)
+* Adobe Commerce (moln och lokalt) 2.4.0+ (Eftersom **[!UICONTROL Category Permissions]** endast är en funktion för Adobe-Commerce kommer den inte att påverka Magento Open Source.)
 
 ## Problem
 
-I [!DNL New Relic One] felloggar bör visa `indexer_update_all_views` som körs många gånger med en tid på > 1 sekund (d.v.s. bearbetar något).
+I [!DNL New Relic One]-felloggarna ska visa `indexer_update_all_views` som körs många gånger med en tid på > 1 sekund (d.v.s. bearbetar något).
 
 ## Orsak
 
-När den huvudsakliga Adobe Commerce-importfunktionen körs (manuellt eller av [!DNL cron]) körs en uppsättning plugin-program för flera kärnmoduler för att avgöra vilka index som ska ogiltigförklaras.
+När Adobe Commerce-huvudimportprogrammet körs (manuellt eller av [!DNL cron]) utförs en uppsättning plugin-program för flera kärnmoduler för att avgöra vilka index som ska ogiltigförklaras.
 
-Problemet inträffar när **[!UICONTROL Category Permissions]** modulen är aktiverad i [!DNL Commerce Admin]. Om detta är sant, ogiltigförklaras alltid indexen för produkt och kategori (och länkade index) i modulen när en import utförs. Om standardimporttyperna undersöks påverkas alla **[!UICONTROL Category Permissions]**. Invalidering förväntas.
+Problemet inträffar när modulen **[!UICONTROL Category Permissions]** är aktiverad i [!DNL Commerce Admin]. Om detta är sant, ogiltigförklaras alltid indexen för produkt och kategori (och länkade index) i modulen när en import utförs. Om standardimporttyperna undersöks kommer alla att påverka **[!UICONTROL Category Permissions]**. Invalidering förväntas.
 
-När en plats har B2B-moduler aktiverade kan dessutom **[!UICONTROL Shared Catalog]** är aktiverad, den aktiveras och låses **[!UICONTROL Category Permissions]**. Stänger av **[!UICONTROL Shared Catalog]** kommer att låsa upp **[!UICONTROL Category Permissions]**, men stäng inte av den.
+När en plats har B2B-moduler aktiverade aktiveras den dessutom om **[!UICONTROL Shared Catalog]** aktiveras och **[!UICONTROL Category Permissions]** låses. Om du stänger av **[!UICONTROL Shared Catalog]** låses **[!UICONTROL Category Permissions]** upp, men det stängs inte av.
 
-<u>Kontrollerar [!DNL cron] loggar in på [!DNL MySQL] databas</u>:
+<u>Kontrollerar [!DNL cron] loggar i din [!DNL MySQL]-databas</u>:
 
-Om du loggar in på [!DNL MySQL] databas kan de kontrollera `cron` loggar för **[!DNL reindex all indexes]** -processen.
-Detta **bör** många gånger, men den viktiga faktorn är att processen gör något av två möjliga saker.
+Om du loggar in i din [!DNL MySQL]-databas kan de söka efter **[!DNL reindex all indexes]**-processen i din `cron`-logg.
+**ska** visas flera gånger, men den viktiga faktorn är att processen gör en av två möjliga saker.
 
 Processen kan bara göra något av följande:
 
@@ -43,7 +43,7 @@ Processen kan bara göra något av följande:
 1. [!DNL Reindex] allt: Det tar alltid tid - vanligtvis minuter.
 
 Vanligtvis vill du se många förekomster av processen, men med en körningstid på mindre än 1 sekund.
-En handlare kan därför använda detta [!DNL MySQL] fråga för att hitta transaktioner som **mer än en sekund** att köra:
+En handlare kan därför använda den här [!DNL MySQL]-frågan för att hitta transaktioner som tar **mer än 1 sekund** att köra:
 
 ```sql
 SELECT TIMESTAMPDIFF(SECOND, executed_at, finished_at) AS period FROM cron_schedule WHERE job_code = 'indexer_reindex_all_invalid' HAVING period > 1
@@ -55,12 +55,12 @@ Du kan se hur lång tid en period spelas in genom att köra:
 SELECT executed_at FROM cron_schedule WHERE job_code = 'indexer_reindex_all_invalid' AND executed_at IS NOT NULL ORDER BY executed_at ASC LIMIT 1;
 ```
 
-Om detta inte ger er tillräckligt lång tid för att göra en riktig bedömning kan ni öka tiden för ett framgångsrikt `cron` processen sparas i loggen efter detta [[!DNL Cron] (schemalagda aktiviteter)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) och öka **[!DNL Success History Lifetime]** (standardvärdet är bara 60 minuter).
+Om detta inte ger dig tillräckligt lång tid för att göra en korrekt bedömning kan du öka tiden som en lyckad `cron`-process sparas i loggen efter den här [[!DNL Cron] (schemalagda aktiviteter)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)-guiden och öka **[!DNL Success History Lifetime]**-värdet (standardvärdet är bara 60 minuter).
 
 
 ## Lösning
 
-Utöka `Magento\CatalogPermissions\Model\Indexer\Plugin\Import` så att `afterImportSource` -metoden exkluderar den anpassade importeraren.
+Utöka `Magento\CatalogPermissions\Model\Indexer\Plugin\Import` så att metoden `afterImportSource` exkluderar den anpassade importeraren.
 
 ```
     public function afterImportSource(\Magento\ImportExport\Model\Import $subject, $import)
@@ -73,8 +73,8 @@ Utöka `Magento\CatalogPermissions\Model\Indexer\Plugin\Import` så att `afterIm
     }
 ```
 
-Plats `ENTITY_CODE` är värdet som används för enhetsnamnparametern i `import.xml` fil för den anpassade importören.
+Där `ENTITY_CODE` är det värde som används för entitetsnamnparametern i filen `import.xml` för den anpassade importören.
 
 ## Relaterad läsning
 
-[Konfigurera [!DNL cron] jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) i Adobe Commerce Operations Configuration Guide.
+[Konfigurera [!DNL cron] jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) i konfigurationsguiden för Adobe Commerce-åtgärder.

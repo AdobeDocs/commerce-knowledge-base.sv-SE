@@ -29,8 +29,8 @@ Ett fel inträffar när du kommer in i landet och regionen under orderplaceringe
 1. Aktivera PayPal Express-utcheckning.
 1. Lägg produkten i varukorgen som gäst eller när du är inloggad.
 1. Gå till kassan.
-1. Välj leveransadress. Till exempel *Storbritannien* . Ange sedan en inmatning i **Stat/provins** fält. Till exempel: *Nottinghamshire*.
-1. Klicka på **Montera beställning** för att placera order. Du får en ordersida och ett mejl med orderbekräftelse.
+1. Välj leveransadress. Till exempel *UK* . Ange sedan en inmatning i fältet **Delstat/provins**. Till exempel *Nottinghamshire*.
+1. Klicka på knappen **Montera ordning** för att montera beställningen. Du får en ordersida och ett mejl med orderbekräftelse.
 
 <u>Förväntat resultat:</u>
 
@@ -47,14 +47,14 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 ## Lösning
 
-För Adobe Commerce lokala handlare: Använd [snabbkorrigering,](https://magento.com/tech-resources/download#download2353) som finns i nedladdningsavsnittet på [magento.com](https://magento.com) portal i Mitt konto.
+För Adobe Commerce lokala handlare: Använd snabbkorrigeringen [hotfix](https://magento.com/tech-resources/download#download2353) som finns i hämtningsavsnittet på portalen [magento.com](https://magento.com) i Mitt konto.
 
 För Adobe Commerce på återförsäljare av molninfrastruktur: Adobe har tagit med korrigeringen i Cloud Patches for Commerce v1.0.2. Se [Cloud Patches for Commerce release notes](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) i utvecklardokumentationen för att hitta instruktioner om hur du använder det senaste paketet.
 
 ## Så här använder du patchen
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Relaterad läsning
 
-* [Versionsinformation > Adobe Commerce 2.3.4 Versionsinformation > Tillämpa PayPal Express-utcheckningsproblemet med regionkorrigering för Adobe Commerce 2.3.4 för att åtgärda ett kritiskt problem med PayPal Express-utcheckning](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue) i vår dokumentation för utvecklare.
+* [Versionsinformation > Versionsinformation för Adobe Commerce 2.3.4 > Tillämpa PayPal Express Checkout-problemet med regionkorrigering för Adobe Commerce 2.3.4 för att åtgärda ett kritiskt PayPal Express Checkout-problem](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue) i vår utvecklardokumentation.

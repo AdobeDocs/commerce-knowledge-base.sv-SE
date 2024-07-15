@@ -26,11 +26,11 @@ Icke-kritiska läsningar visar felaktig information.
 
 ## Orsak
 
-The `slave_parallel_mode` config i databasen ändrades som standard till *optimism* när värdet ska vara *konservativ* och `synchronous_replication` som standard i Ece-Tools är *true* när värdet ska vara *false*.
+Konfigurationen `slave_parallel_mode` för databasen ändrades som standard till *optimistics* när värdet ska vara *conservative*, och värdet `synchronous_replication` i Ece-Tools är som standard *true* när värdet ska vara *false*.
 
 ## Lösning
 
-1. Kontrollera att `slave_parallel_mode` parametern är inställd på *konservativ* (du måste [göra en supportanmälan](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) om värdet inte visas som *konservativ*). Kör följande kommando för att kontrollera:
+1. Kontrollera att parametern `slave_parallel_mode` är inställd på *konservativ* (du måste [höja upp en supportbiljett](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) om värdet inte visas som *konservativ*). Kör följande kommando för att kontrollera:
 
    ```
     MariaDB [main]> show variables like 'slave_parallel_mode';
@@ -42,7 +42,7 @@ The `slave_parallel_mode` config i databasen ändrades som standard till *optimi
     1 row in set (0.001 sec)
    ```
 
-1. Uppdatera `.magento.env.yaml` databaskonfigurationer till:
+1. Uppdatera databaskonfigurationer för `.magento.env.yaml` till:
 
    ```yaml
        DATABASE_CONFIGURATION:
@@ -59,5 +59,5 @@ Anvisningar om hur du uppdaterar databaskonfigurationen finns i [DATABASE_CONFIG
 
 ## Relaterad läsning
 
-* [Konfigurera miljövariabler för distribution](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) i Commerce on Cloud Infrastructure Guide.
+* [Konfigurera miljövariabler för distribution](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) i Commerce i molninfrastrukturguiden.
 * [Bästa tillvägagångssätt för databaskonfiguration](/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) i implementeringens spelningsbok.

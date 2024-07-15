@@ -41,9 +41,9 @@ Generering av certifikat hanteras av [devcert](https://github.com/davewasmer/dev
 
 Versionen ska vara 1.0 eller högre (eller LibreSSL 2, för OSX High Sierra).
 
-Du kan installera senare versioner av OpenSSL med [Homebreiska](https://brew.sh/) på OSX, [Chocolatey](https://chocolatey.org/) i Windows, eller din Linux-distributions pakethanterare.
+Du kan installera senare versioner av OpenSSL med [Homebrew](https://brew.sh/) i OSX, [Chocolatey](https://chocolatey.org/) i Windows eller med Linux-distributionens pakethanterare.
 
-Om du kör Linux måste du se till att `libnss3-tools` (eller motsvarande) är installerat på datorn. Ytterligare information finns i detta avsnitt i [devcert](https://github.com/davewasmer/devcert#skipcertutil) Viktigt.
+Om du kör Linux kontrollerar du att `libnss3-tools` (eller motsvarande) är installerat på datorn. Ytterligare information finns i det här avsnittet av Viktigt för [devcert](https://github.com/davewasmer/devcert#skipcertutil).
 
 En del användare har föreslagit att devcert-mappen ska tas bort för att utlösa certifikatomgenerering.
 

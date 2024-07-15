@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Den här artikeln innehåller en korrigering av problemet när du loggar in på Commerce Admin eller öppnar utcheckningssidan som orsakar fördröjning eller timeout (mer än 30 sekunder). Problemet inträffar när Redis används för sessionslagring.
 
-**Orsak:**   [Github-utgåva \#12385](https://github.com/magento/magento2/issues/12385).
+**Orsak:**   [Github-utgåva \#12385](https://github.com/magento/magento2/issues/12385) .
 
-**Lösning:** uppdatera till den senaste Adobe Commerce-korrigeringen för att åtgärda dessa problem för alla versioner av Redis och särskilda versioner av Adobe Commerce.
+**Lösning:** Uppdatera till den senaste Adobe Commerce-korrigeringen för att åtgärda problemen för alla versioner av Redis och särskilda versioner av Adobe Commerce.
 
 ## Berörda versioner och tekniker
 
@@ -25,7 +25,7 @@ Den här artikeln innehåller en korrigering av problemet när du loggar in på 
 * Adobe Commerce lokala versioner 2.1.11 - 2.1.13 och 2.2.1
 * Redis, alla versioner
 
-Om du använder Adobe Commerce i molninfrastrukturversionen [2.2.0](#h_64593789291526919876198)finns det en lösning.
+Om du använder Adobe Commerce i molninfrastrukturversionen [2.2.0](#h_64593789291526919876198) finns det en lösning.
 
 ## Problem
 
@@ -35,7 +35,7 @@ Detta inträffar endast när användarsessioner lagras i Redis.
 
 ## Orsak
 
-Adobe Commerce hade problem med sessionslåsmekanismen som lade till en 30-sekunders timeout till vissa åtgärder när Redis användes för sessionslagring. Mer information finns i [Github-utgåva \#12385](https://github.com/magento/magento2/issues/12385).
+Adobe Commerce hade problem med sessionslåsmekanismen som lade till en 30-sekunders timeout till vissa åtgärder när Redis användes för sessionslagring. Mer information finns i [Github-utgåvan \#12385](https://github.com/magento/magento2/issues/12385).
 
 Problemet har åtgärdats i Adobe Commerce 2.1.14 och 2.2.2.
 
@@ -43,7 +43,7 @@ Problemet har åtgärdats i Adobe Commerce 2.1.14 och 2.2.2.
 
 ### Lösning 1: Lägg på patchen med en fix
 
-Om du vill få en patch [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) begär korrigeringen. Ange din Adobe Commerce-version och motsvarande referensnummer för korrigeringen i din biljett:
+[Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär korrigeringen för att få en korrigering. Ange din Adobe Commerce-version och motsvarande referensnummer för korrigeringen i din biljett:
 
 * **2.1.11 och senare:** MDVA-7835
 * **2.2.1:** MDVA-8128
@@ -56,7 +56,7 @@ Om du tidigare har övervägt att uppgradera till Adobe Commerce 2.2.2 eller sen
 
 ## Tillfällig lösning: inaktivera sessionslås
 
-Om du vill inaktivera sessionslås anger du `disable_locking` till `1` i Redis-konfigurationsavsnittet i `env.php` fil:
+Om du vill inaktivera sessionslås anger du `disable_locking` till `1` i Redis-konfigurationsavsnittet i filen `env.php`:
 
 ```php
 'session' =>
@@ -80,6 +80,6 @@ När du har tillämpat korrigeringen med korrigeringen behövs inte lösningen l
 
 ## Adobe Commerce om molninfrastruktur 2.2.0: använd ECE-Tools v2002.0.8 eller senare {#h_64593789291526919876198}
 
-The [ECE-verktyg](https://devdocs.magento.com/cloud/project/ece-tools-update.html) distributionspaketet med version 2002.0.3 - 2002.0.7 [används](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) lösningen automatiskt, ange `disable_locking` till `1`. Detta inaktiverar sessionslåsmekanismen för Adobe Commerce 2.2.0, där det ursprungliga problemet inte uppstår.
+Distributionsskriptpaketet [ECE-Tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html) med version 2002.0.3 - 2002.0.7 [tillämpar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) lösningen automatiskt med inställningen `disable_locking` till `1`. Detta inaktiverar sessionslåsmekanismen för Adobe Commerce 2.2.0, där det ursprungliga problemet inte uppstår.
 
 Om du kör Adobe Commerce i molninfrastruktur 2.2.0 ska du uppgradera ECE-Tools till v2002.0.8 eller senare. Du kan också överväga att uppgradera din Adobe Commerce i molninfrastruktur till 2.2.2 eller senare.

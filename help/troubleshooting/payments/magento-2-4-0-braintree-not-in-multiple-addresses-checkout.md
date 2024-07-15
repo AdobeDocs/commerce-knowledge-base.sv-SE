@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I den här artikeln finns en lösning på ett problem med Adobe Commerce 2.4.0 där betalningsmetoder i Braintree inte ingår i kassan för flera adresser. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
 
-Obs! Adobe Commerce rekommenderar [Commerce Marketplace Braintree utökningen](https://marketplace.magento.com/paypal-module-braintree.html) för version 2.3 och senare för att PSD ska uppfylla kraven. Tillägget har inte funktioner för utcheckning av flera adresser.
+Obs! Adobe Commerce rekommenderar att du använder tillägget [Commerce Marketplace Braintree](https://marketplace.magento.com/paypal-module-braintree.html) för version 2.3 och senare för att behålla kompatibiliteten med PSD. Tillägget har inte funktioner för utcheckning av flera adresser.
 
 ## Berörda produkter och versioner
 
@@ -34,10 +34,10 @@ Integreringen med Braintree används.
 1. Logga in som kund.
 1. Lägg en produkt i kundvagnen.
 1. Öppna kundvagnen.
-1. Tryck **Visa och redigera kundvagn**.
-1. Tryck **Checka ut med flera adresser**.
-1. Tryck **Gå till leveransinformation**.
-1. Tryck **Fortsätt till faktureringsinformation**.
+1. Tryck på **Visa och redigera kundvagn**.
+1. Tryck på **Checka ut med flera adresser**.
+1. Tryck på **Gå till leveransinformation**.
+1. Tryck på **Fortsätt till faktureringsinformation**.
 
 <u>Förväntat resultat</u>:
 

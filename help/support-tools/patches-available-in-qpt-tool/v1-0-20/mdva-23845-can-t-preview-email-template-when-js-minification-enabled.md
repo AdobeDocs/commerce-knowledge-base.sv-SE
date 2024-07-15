@@ -15,31 +15,31 @@ ht-degree: 0%
 
 Korrigeringen MDVA-23845 Magento åtgärdar problemet när det inte går att förhandsgranska e-postmallen i Admin när JS-minification är aktiverat.
 
-Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.20 är installerat. Korrigerings-ID är MDVA-23845. Observera att problemet korrigerades i Magento version 2.3.5.
+Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.20 är installerat. Korrigerings-ID är MDVA-23845. Observera att problemet korrigerades i Magento version 2.3.5.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Magento-versionen:** Magento Commerce Cloud 2.3.3
+**Korrigeringen har skapats för Magento-version:** Magento Commerce Cloud 2.3.3
 
 **Kompatibel med Magento-versioner:** Magento Commerce och Magneto Commerce Cloud 2.3.2-2.3.4-p2
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
 <u>Steg som ska återskapas</u> :
 
-1. Aktivera **JS-miniatyr** in **Admin > Stores > Configuration > JavaScript Settings > Minify JavaScript Files** = *Ja* .
+1. Aktivera **JS-miniatyr** i **Admin > Lager > Konfiguration > JavaScript-inställningar > Minimera JavaScript-filer** = *Ja* .
 1. Byt Magento till produktionsläge.
 1. Gå till **Admin > Marknadsföring > Kommunikation > E-postmallar** .
-1. Klicka **Lägg till ny mall** .
-1. Välj **Ny beställning** mall.
-1. Klicka på **Läs in mall** -knappen.
-1. Fyll uppåt **Mallnamn** med **Ny beställning.**
-1. Klicka på **Spara mall** -knappen.
-1. I stödrastret för e-postmallar klickar du på **Förhandsgranska** i **Åtgärder** kolumn.
+1. Klicka på **Lägg till ny mall** .
+1. Välj mallen **Ny ordning**.
+1. Klicka på knappen **Läs in mall**.
+1. Fyll i **mallnamn** med **Ny ordning.**
+1. Klicka på knappen **Spara mall**.
+1. Klicka på länken **Förhandsgranska** i kolumnen **Åtgärder** i stödrastret för e-postmallar.
 
 <u>Förväntade resultat</u> :
 
@@ -60,7 +60,7 @@ Använd följande länkar beroende på vilken Magento-produkt du använder för 
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) .
-* [Kontrollera korrigering för problem med Magento med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) .
+* [Verktyget Kvalitetspatchar släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) .
+* [Leta efter Magento-problem med verktyget för kvalitetspatchar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-Mer information om andra korrigeringsfiler som finns i QPT-verktyget finns i [Patchar tillgängliga i QPT-verktyget](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) -avsnitt.
+Mer information om andra tillgängliga korrigeringsfiler i QPT-verktyget finns i avsnittet [Patchar i QPT-verktyget](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-).

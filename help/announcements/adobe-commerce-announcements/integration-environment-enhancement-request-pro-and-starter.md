@@ -19,15 +19,15 @@ Om du är kund hos Adobe Commerce på en Pro-planarkitektur i molnet och för n�
 >
 > Uppgradering till Förbättrad integrering kanske inte löser alla prestandaproblem eftersom det skulle bero på den totala resurskraven för din installation, inklusive tredjepartsintegreringar eller anpassningar.
 >
-> Ni måste också se till att ni följer de bästa metoderna för bästa prestanda i integreringsmiljön, och även det kanske inte är en totallösning. Se följande dokumentation för vägledning: [Pro-arkitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) och [Startarkitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment) i Commerce on Cloud Infrastructure Guide.
+> Ni måste också se till att ni följer de bästa metoderna för bästa prestanda i integreringsmiljön, och även det kanske inte är en totallösning. Använd följande dokumentation för vägledning: [Pro-arkitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) och [Starter-arkitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment) i Commerce on Cloud Infrastructure Guide.
 
 ## Pro
 
-1. Om du använder Pro måste du minska antalet integreringsgrenar till två (**huvudgrenen Integration ingår i summan**). **Obs! Räkna inte med den primära grenen i den här summan. Den primära grenen betraktas inte som en integreringsgren.** Följ stegen i [Hantera grenar med molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) i vår dokumentation för utvecklare.
-1. Handlaren måste [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) begära uppgradering till Enhanced Integration Environment, med hjälp av kontaktorsaken &quot;*Begär en molnkonfigurationsändring*&quot;.
+1. Om du använder Pro måste du minska antalet integreringsgrenar till två (**huvudintegreringsgrenen inkluderas i summan**) för att kunna uppgradera. **Obs! Räkna inte med den primära grenen i den här summan. Den primära grenen betraktas inte som en integreringsgren.** Följ stegen i [Hantera grenar med molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) i vår utvecklardokumentation.
+1. Handlaren måste [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära en uppgradering till förbättrade integreringsmiljöer, med hjälp av kontaktorsaken *Begär en ändring av molnkonfigurationen*.
 1. Adobe kundkonstruktionsgrupp bekräftar antalet integreringsmiljöer och påbörjar ändringen.
 1. Handlaren meddelas i biljetten när uppgraderingen är klar.
-1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://devdocs.magento.com/cloud/env/environments-start.html#merge) i vår dokumentation för utvecklare. *Anteckning*: Distributionen sker automatiskt när du kör: <pre>git push-ursprung <branch-name></pre>
+1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://devdocs.magento.com/cloud/env/environments-start.html#merge) i utvecklardokumentationen. *Obs!* Distributionen sker automatiskt när du kör: <pre>git push-ursprung <branch-name></pre>
 
 Förbättrade prestanda innebär en lyckad uppgradering till förbättrade integreringsmiljöer.
 
@@ -39,11 +39,11 @@ Förbättrade prestanda innebär en lyckad uppgradering till förbättrade integ
 
 ## Starter
 
-1. Starter-planer får inte ha några integreringsgrenar: handlarna måste ta bort integreringsmiljöerna och bara lämna mellanlagringsmiljön. Följ stegen i [Hantera grenar med molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) i vår dokumentation för utvecklare. Antalet tillgängliga miljöer minskas så att maximalt en integreringsmiljö tillåts.
-1. Handlaren måste [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) begära en uppgradering till förbättrade integreringsmiljöer, med hjälp av kontaktorsaken *&quot;Begär en ändring av molnkonfigurationen&quot;* -  **din mellanlagringsmiljö är en namngiven integreringsmiljö**.
+1. Starter-planer får inte ha några integreringsgrenar: handlarna måste ta bort integreringsmiljöerna och bara lämna mellanlagringsmiljön. Följ stegen i [Hantera grenar med molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html) i vår utvecklardokumentation. Antalet tillgängliga miljöer minskas så att maximalt en integreringsmiljö tillåts.
+1. Handlaren måste [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära en uppgradering till förbättrade integreringsmiljöer, med hjälp av kontaktorsaken *&quot;Begär en ändring av molnkonfigurationen&quot;* - **din mellanlagringsmiljö är en namngiven integreringsmiljö**.
 1. Adobe kundkonstruktionsgrupp bekräftar antalet integreringsmiljöer och påbörjar ändringen.
 1. Handlaren meddelas i biljetten när uppgraderingen är klar.
-1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://devdocs.magento.com/cloud/env/environments-start.html#merge) i vår dokumentation för utvecklare. *Anteckning*: Distributionen sker automatiskt när du kör: <pre>git push-ursprung <branch-name></pre>
+1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://devdocs.magento.com/cloud/env/environments-start.html#merge) i utvecklardokumentationen. *Obs!* Distributionen sker automatiskt när du kör: <pre>git push-ursprung <branch-name></pre>
 
 Förbättrade prestanda innebär en lyckad uppgradering till förbättrade integreringsmiljöer.
 

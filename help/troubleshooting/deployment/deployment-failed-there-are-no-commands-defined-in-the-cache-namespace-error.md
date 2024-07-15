@@ -42,11 +42,11 @@ Du har distribuerats.
 
 <u>Faktiska resultat</u>:
 
-Distributionen misslyckades. I loggarna visas ett distributionsfel med ett meddelande som liknar följande *Det finns inga kommandon i cache-namnutrymmet*.
+Distributionen misslyckades. I loggarna visas ett distributionsfel med ett meddelande som liknar följande *Det finns inga kommandon i cache-namnområdet*.
 
 ### Orsak
 
-The **core_config_data** tabellen innehåller konfigurationer för ett lagrings-ID eller webbplats-ID som inte längre finns i databasen. Detta inträffar när du har importerat en databassäkerhetskopia från en annan instans/miljö, och konfigurationerna för dessa omfattningar finns kvar i databasen trots att de associerade arkiven/webbplatserna har tagits bort.
+Tabellen **core_config_data** innehåller konfigurationer för ett lagrings-ID eller webbplats-ID som inte längre finns i databasen. Detta inträffar när du har importerat en databassäkerhetskopia från en annan instans/miljö, och konfigurationerna för dessa omfattningar finns kvar i databasen trots att de associerade arkiven/webbplatserna har tagits bort.
 
 ### Lösning
 
@@ -82,7 +82,7 @@ Identifiera de ogiltiga raderna som återstår från konfigurationerna för att 
 
    `bin/magento`
 
-   Om du får ett fel som det nedan som anger att webbplatsen med ID X som begärdes inte kunde hittas har du konfigurationer kvar i databasen från både webbplatser och butiker som har tagits bort.
+   Om du får ett fel som det nedan som anger att webbplatsen med ID X som begärdes inte hittades har du konfigurationer kvar        i databasen från webbplatser och butiker som har tagits bort.
 
    ```
    In WebsiteRepository.php line 110:
@@ -102,7 +102,7 @@ Identifiera de ogiltiga raderna som återstår från konfigurationerna för att 
    delete from core_config_data where scope='websites' and scope_id not in (select website_id from store_website);
    ```
 
-Bekräfta att lösningen fungerade genom att köra `bin/magento` kommando igen. Felen bör inte längre visas och kan distribueras.
+Kör kommandot `bin/magento` igen för att bekräfta att lösningen fungerade. Felen bör inte längre visas och kan distribueras.
 
 ## Relaterad läsning
 

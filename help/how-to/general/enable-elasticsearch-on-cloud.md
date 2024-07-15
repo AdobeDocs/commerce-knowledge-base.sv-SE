@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Aktivera Elasticsearch i molnet
 
-Läs mer i [Konfigurera tjänsten Elasticsearch](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) i vår utvecklardokumentation om du vill ha information om hur du konfigurerar Elasticsearch för Adobe Commerce i molninfrastrukturen.
+Mer information om hur du konfigurerar Elasticsearch för Adobe Commerce för molninfrastruktur finns i artikeln [Konfigurera Elasticsearch-tjänsten](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) i utvecklardokumentationen.

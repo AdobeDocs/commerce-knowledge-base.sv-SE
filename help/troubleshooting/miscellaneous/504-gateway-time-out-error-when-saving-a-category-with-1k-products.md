@@ -23,14 +23,14 @@ I den här artikeln föreslås en lösning på det timeout-problem du kan ha nä
 
 ## Problem
 
-Krav: **Lager** > **Konfiguration** > **KATALOG** > **Katalog** > **Använd kategorisökväg för produkt-URL:er** option is set to *Ja* för butiksvyn.
+Förutsättningar: Alternativet **Lagrar** > **Konfiguration** > **KATALOG** > **Katalog** > **Använd kategorisökväg för produkt-URL:er** är *Ja* för din butiksvy.
 
 <u>Steg som ska återskapas</u>
 
-1. Gå till Commerce Admin **Katalog** > **Kategorier**.
+1. Gå till **Katalog** > **Kategorier** i Commerce Admin.
 1. Öppna en stor kategori, till exempel mer än 1 000 tilldelade produkter.
 1. Lägg till en produkt i kategorin.
-1. Klicka **Spara kategori**.
+1. Klicka på **Spara kategori**.
 
 <u>Förväntat resultat:</u>
 
@@ -46,22 +46,22 @@ Processen tar längre tid än serverns konfigurerade timeout.
 
 ## Lösning
 
-Inaktiverar **Generera URL-omskrivningar för kategori/produkt** tar bort alla omskrivningar av kategori-/produkt-URL:er från databasen och minskar avsevärt tiden som krävs för åtgärder med stora kategorier.
+Om du inaktiverar alternativet **Skapa omskrivningar av kategori/produkt** tas alla återskrivningar av kategori-/produkt-URL bort från databasen, vilket minskar tiden som krävs för åtgärder med stora kategorier avsevärt.
 
 >[!WARNING]
 >
 >Om du avmarkerar det här alternativet tas återskrivningar av kategori-/produkt-URL:er bort permanent, utan möjlighet att återställa dem.
 
-Så här inaktiverar du **Generera URL-omskrivningar för kategori/produkt** alternativ:
+Så här inaktiverar du alternativet **Skapa URL-omskrivningar för kategori/produkt**:
 
-1. I Commerce Admin går du till **Lager** > **Konfiguration** > **KATALOG** > **Katalog**.
-1. I det övre vänstra hörnet på konfigurationssidan, i **Omfång** fält, ange konfigurationsomfånget till *Standardkonfiguration*.
+1. Gå till **Lagrar** > **Konfiguration** > **KATALOG** > **Katalog** i Commerce Admin.
+1. I konfigurationsidans övre vänstra hörn anger du konfigurationsomfånget till *Standardkonfiguration* i fältet **Scope**.
 1. Ange **Generera URL-omskrivningar för kategori/produkt** till *Nej*.
-1. Klicka **Spara konfiguration**.
-1. Rensa cachen genom att köra    ```bash    bin/magento cache:clean    ```    eller i Commerce Admin under **System** > **verktyg** > **Cachehantering**.
+1. Klicka på **Spara konfiguration**.
+1. Rensa cachen genom att köra    ```bash    bin/magento cache:clean    ```    eller i Commerce Admin under **System** > **Verktyg** > **Cachehantering** .
 
 Nu kan du lägga till produkter i kategorier eller flytta kategorier med ett stort antal produkter, och dessa åtgärder tar mycket mindre tid och bör inte orsaka timeout.
 
 ## Relaterad läsning
 
-[Automatiska produktomdirigeringar](https://docs.magento.com/user-guide/v2.3/marketing/url-redirect-product-automatic.html) i vår användarhandbok.
+[Automatiska produktomdirigeringar](https://docs.magento.com/user-guide/v2.3/marketing/url-redirect-product-automatic.html) i användarhandboken.

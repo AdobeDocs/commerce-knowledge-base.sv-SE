@@ -11,32 +11,32 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48694: *Ogiltig tillståndsändring begärdes* fel förhindrar att kunden lägger en order
+# ACSD-48694: *Ogiltig lägesändring begärd* fel förhindrar kunden från att beställa
 
-Korrigeringen ACSD-48694 åtgärdar ett problem där felet *Ogiltig tillståndsändring begärdes* förhindrar att en kund lägger en order. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 är installerat. Korrigerings-ID är ACSD-48694. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
+Korrigeringen ACSD-48694 åtgärdar ett problem där felet *Ogiltig tillståndsändring begärd* förhindrar en kund från att göra en beställning. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 har installerats. Korrigerings-ID är ACSD-48694. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.4
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.3.7 - 2.37-p4, 2.4.1 - 2.4.6
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-Felet *Ogiltig tillståndsändring begärdes* förhindrar att en kund lägger en order.
+Felet *Ogiltig lägesändring begärd* förhindrar en kund från att göra en beställning.
 
 <u>Steg som ska återskapas</u>:
 
-1. Lägg till en fördröjning under `/estimate-shipping-methods` begäran genom att inkludera `sleep()` på `app/code/Magento/Quote/Model/GuestCart/GuestShippingMethodManagement.php::estimateByExtendedAddress()` funktionen, så att `/estimate-shipping-methods` begäran slutförs efter `/shipping-information` när du går från leveranssteg till betalningssteg vid utcheckning.
-1. Konfigurera sessionen som ska användas [!DNL Redis] med *disable_locking: 1* inställning.
+1. Lägg till en fördröjning under begäran `/estimate-shipping-methods` genom att inkludera en `sleep()` at `app/code/Magento/Quote/Model/GuestCart/GuestShippingMethodManagement.php::estimateByExtendedAddress()` -funktion, så `/estimate-shipping-methods`-begäran slutförs efter `/shipping-information` när du går från leveranssteg till betalningssteg under utcheckning.
+1. Konfigurera sessionen att använda [!DNL Redis] med inställningen *disable_locking:*.
 1. Öppna **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** och aktivera *[!UICONTROL Persistent Shopping Cart]*.
 1. Logga in som kund och lägg till en produkt i kundvagnen.
 1. Låt kundsessionen förfalla. Beständig kaka och vagnen finns kvar.
@@ -49,24 +49,24 @@ Felet *Ogiltig tillståndsändring begärdes* förhindrar att en kund lägger en
 <u>Förväntade resultat</u>:
 
 * Det finns inget fel.
-* Ordern har placerats och en *Tack* visas.
+* Beställningen har placerats och en *Tack*-sida visas.
 
 <u>Faktiska resultat</u>:
 
-Felet *Ogiltig tillståndsändring begärdes* visas, men ordningen placeras.
+Felet *En ogiltig tillståndsändring begärd* visas, men ordningen placeras.
 
 ## Tillämpa korrigeringen
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.

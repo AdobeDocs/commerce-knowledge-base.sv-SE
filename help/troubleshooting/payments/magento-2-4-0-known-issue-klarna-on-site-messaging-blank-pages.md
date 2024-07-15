@@ -20,13 +20,13 @@ I den här artikeln beskrivs ett känt problem med betalningsmetoden Adobe Comme
 * Adobe Commerce lokal 2.4.0
 * Adobe Commerce om molninfrastruktur 2.4.0
 
-<u>Förutsättningar:</u> Klarnas betalningsmetod är aktiverad.
+<u>Krav:</u> Klarna-betalningsmetoden har aktiverats.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-1. Gå till Commerce Admin **Lager** > **Konfiguration** > **Försäljning** > **Betalningsmetoder** > **Klarna** > **Klarna On-Site Messaging**.
+1. Gå till **Lager** > **Konfiguration** > **Försäljning** > **Betalningsmetoder** > **Klarna** > **Klarna On-Site Messaging** i Commerce Admin.
 1. Ange **Aktivera** till *Ja*.
-1. Lämna **Designtema** fältet är tomt.
+1. Lämna fältet **Designtema** tomt.
 1. Spara konfigurationen genom att klicka på **Spara konfiguration**.
 1. Gå till butiken och navigera till valfri produktsida.
 
@@ -40,4 +40,4 @@ En tom sida visas.
 
 ## Lösning
 
-Om du aktiverar klarna på plats-meddelanden ska du alltid se till att **Designtema** fältet är inte tomt.
+Om du aktiverar Klarna-meddelandet på plats ska du alltid se till att fältet **Designtema** inte är tomt.

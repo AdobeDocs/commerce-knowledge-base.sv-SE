@@ -28,11 +28,11 @@ Aktivera Venmo-betalning i konfigurationen Braintree.
 <u>Steg som ska återskapas</u> :
 
 1. I butiken lägger du till en artikel i kundvagnen.
-1. Fortsätt till **Utcheckning**.
+1. Gå till **Utcheckning**.
 1. Välj leveranssätt.
 1. Välj **Venmo** som betalningsmetod.
-1. Klicka **Betala med Venmo**.
-1. Klicka **Montera order**.
+1. Klicka på **Betala med Venmo**.
+1. Klicka på **Montera order**.
 
 <u>Faktiska resultat</u>:
 

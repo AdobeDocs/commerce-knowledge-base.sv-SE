@@ -18,4 +18,4 @@ Det finns flera sätt för en handlare (eller någon som är intresserad av webb
 * de allmänna stegen för att identifiera ett problem som kan vara ett driftstopp
 * hur man identifierar om problemet verkligen är ett driftstopp, ett litet driftstopp eller ett tillfälligt hinder
 
-Klicka på om du vill hämta artikeln [Outages_how_to_identify_and_measure_effect_Adobe_Commerce.pdf](assets/Outages_how_to_identify_and_measure_effect_Adobe_Commerce.pdf)
+Om du vill hämta artikeln klickar du på [Outages_how_to_identify_and_measure_effect_Adobe_Commerce.pdf](assets/Outages_how_to_identify_and_measure_effect_Adobe_Commerce.pdf)

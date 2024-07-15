@@ -21,22 +21,22 @@ I den här artikeln beskrivs hur du löser ett problem där konfigurationsfilern
 
 ## Problem
 
-Konfigurationsfiler `config.php` och/eller `env.php` har ändrats felaktigt eller saknas.
+Konfigurationsfilerna `config.php` och/eller `env.php` ändrades felaktigt eller saknas.
 
 ## Lösning
 
 Distributionsprocessen skapar en säkerhetskopieringsfil för varje konfigurationsfil:
 
-* `app/etc/config.php.bak` — innehåller systemspecifika inställningar och genereras automatiskt under bygget om det inte finns
+* `app/etc/config.php.bak` - innehåller systemspecifika inställningar och genereras automatiskt under bygget om det inte finns
 * `app/etc/env.php.bak` - innehåller känsliga konfigurationsdata
 
-Du kan återställa dem med ECE-verktygen `backup:restore` -kommando.
+Du kan återställa dem med ECE-verktygen `backup:restore`.
 
 BAK-filerna är en produkt i distributionsprocessen. Om du ändrar en konfigurationsfil manuellt efter distributionen återspeglas ändringarna inte i de befintliga BAK-filerna.
 
 Så här återställer du konfigurationsfilerna:
 
-1. Logga in på din fjärrdatabas med [SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+1. Logga in på fjärrdatabasen med [SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 1. Visa en lista över tillgängliga säkerhetskopieringsfiler.
 
    ```
@@ -62,7 +62,7 @@ Så här återställer du konfigurationsfilerna:
    app/etc/config.php file exists! If you want to rewrite existed files use --force
    ```
 
-1. Använd `--force` om du vill skriva över alla filer.
+1. Använd alternativet `--force` om du vill skriva över alla filer.
 
    ```
    ./vendor/bin/ece-tools backup:restore --force

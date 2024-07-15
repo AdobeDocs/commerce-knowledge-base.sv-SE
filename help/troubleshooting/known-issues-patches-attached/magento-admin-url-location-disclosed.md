@@ -39,13 +39,13 @@ Adobe rekommenderar starkt att du sätter på plåstret så snart som möjligt, 
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Andra säkerhetsrekommendationer
 
 Adobe rekommenderar också starkt att handlare använder verktyg för att säkra sin administrationspanel, inklusive tvåfaktorsautentisering, VPN, IP-Tillåtelselistning med mera. Mer information finns i följande bloggar och dokumentation:
 
-* [5 Omedelbara åtgärder mot attacker från Protect mot brutala styrkor](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
-* [Protect Installationslösenord för Magento Garanterar en ny uppdatering](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
+* [5 Omedelbara åtgärder mot attacker från Protect mot akutstyrda attacker](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
+* [Protect Ditt installationslösenord för Magento Garanterar en ny uppdatering](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
 * [Bästa praxis för säkerhet](https://magento.com/security/best-practices/security-best-practices)
-* Adding and Configuring Two-Factor Authentication in Adobe Commerce for [2.3.x](https://docs.magento.com/user-guide/v2.3/stores/security-two-factor-authentication.html) och [2.4.x](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html)
+* Lägger till och konfigurerar tvåfaktorsautentisering i Adobe Commerce för [2.3.x](https://docs.magento.com/user-guide/v2.3/stores/security-two-factor-authentication.html) och [2.4.x](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html)

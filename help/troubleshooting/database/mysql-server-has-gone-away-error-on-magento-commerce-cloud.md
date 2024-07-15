@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # MySQL-servern har gått &#x200B; fel på Adobe Commerce i molnet
 
-Den här artikeln handlar om lösningen på problemet där du får ett *SQL-servern har tagits bort* &quot; felmeddelande i `cron.log` -fil. En rad olika symtom, till exempel problem med bildimportering eller misslyckad distribution, kan uppkomma.
+I den här artikeln beskrivs lösningen på problemet där du får felmeddelandet *SQL-servern* i `cron.log`-filen. En rad olika symtom, till exempel problem med bildimportering eller misslyckad distribution, kan uppkomma.
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce i molninfrastrukturen, alla [versionerna](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce i molninfrastrukturen, alla [versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problem
 
-Du får ett *SQL-servern har tagits bort* &quot; felmeddelande i `cron.log` -fil.
+Du får felmeddelandet *SQL-servern har försvunnit* i filen `cron.log`.
 
 <u>Steg som ska återskapas</u>
 
@@ -37,16 +37,16 @@ Felmeddelande i `cron.log` :&quot; *SQLSTATE\[HY000\] \[2006\] MySQL-servern har
 
 ## Orsak
 
-The `default_socket_timeout` värdet är för lågt. Detta orsakas av inställningen `default_socket_timeout` . Om php inte tar emot något från MySQL-databasen inom den här perioden antas det att den är frånkopplad och att felet uppstår.
+Värdet `default_socket_timeout` är för lågt. Detta orsakas av inställningen `default_socket_timeout` . Om php inte tar emot något från MySQL-databasen inom den här perioden antas det att den är frånkopplad och att felet uppstår.
 
 ## Lösning
 
-1. Kontrollera den aktuella tidsgränsen för `default_socket_timeout` genom CLI:    ```    php -i |grep default_socket_timeout    ```
-1. Beroende på hur timeout-inställningen ökar visas `default_socket_timeout` variabel till förväntad längsta möjliga körningstid i `/etc/platform/<project_name>/php.ini` -fil. Du bör ange mellan 10 och 15 minuter.
+1. Kontrollera den aktuella tidsgränsen för `default_socket_timeout` genom att köra i CLI:    ```    php -i |grep default_socket_timeout    ```
+1. Beroende på ökningen av timeout-inställningen har variabeln `default_socket_timeout` förväntat längsta möjliga körningstid i filen `/etc/platform/<project_name>/php.ini`. Du bör ange mellan 10 och 15 minuter.
 1. Verkställ för GIT och omdistribuera.
 
 ## Relaterad läsning
 
 * [Databasöverföringen förlorar anslutningen till MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-* [Bästa databaspraxis för Adobe Commerce om molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
-* [De vanligaste databasproblemen i Adobe Commerce om molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+* [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+* [De vanligaste databasproblemen i Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)

@@ -29,7 +29,7 @@ När du till exempel har tagit emot en lista över poster med duplicerade enhets
 SELECT * FROM $entityTable WHERE $column = <$entityID> ORDER BY created_in;
 ```
 
-Plats `$entityID = ID` av kategori/produkt/kundvagnsprisregel/katalogprisregel/CMS-sida.
+Där `$entityID = ID` av kategori/produkt/kundvagnsprisregel/katalogprisregel/CMS-sida.
 
 | Entitet | $entityTable | $column |
 |------------------|-----------------------------------|------------------|
@@ -41,9 +41,9 @@ Plats `$entityID = ID` av kategori/produkt/kundvagnsprisregel/katalogprisregel/C
 
 Detta är det förväntade beteendet. De flera raderna skapas med funktionen Innehållsmellanlagring:
 
-* Om du anger ett startdatum utan ett slutdatum kommer det att finnas minst två rader med samma enhets-/regel-/sid-ID. En rad visar enhetens ursprungliga tillstånd (den rad i vilken `created_in=1`) och en rad visar *Slut på schemalagd uppdatering*.
+* Om du anger ett startdatum utan ett slutdatum kommer det att finnas minst två rader med samma enhets-/regel-/sid-ID. En rad visar entitetens ursprungliga tillstånd (den rad i vilken `created_in=1`) och en rad anger *slutet på den schemalagda uppdateringen*.
 
-* Om du anger ett startdatum med ett slutdatum kommer det att finnas minst tre rader med samma enhets-/regel-/sid-ID. En rad visar enhetens ursprungliga tillstånd (den rad i vilken `created_in=1`) kommer en rad att finnas för *Start för den schemalagda uppdateringen* och en rad kommer att finnas för *Slut på schemalagd uppdatering*.
+* Om du anger ett startdatum med ett slutdatum kommer det att finnas minst tre rader med samma enhets-/regel-/sid-ID. En rad visar entitetens ursprungliga tillstånd (den rad i vilken `created_in=1`), en rad för *Start av den schemalagda uppdateringen* och en rad för *End of the Scheduled Update*.
 
 I den här frågan:
 
@@ -53,13 +53,13 @@ SELECT row_id, entity_id, created_in, updated_in FROM catalog_product_entity WHE
 
 ![multiple_rows_in_database.png](assets/multiple_rows_in_database.png)
 
-* The `created_in` och `updated_in` värdena ska följa detta mönster: `created_in` värdet för den aktuella raden är lika med `updated_in` värdet i föregående rad. Den första raden ska dessutom innehålla `created_in = 1` och den sista raden ska innehålla `updated_in = 2147483647`. (Om det bara finns en rad måste du se `created_in=1` och `updated_in=2147483647`).
+* Värdena `created_in` och `updated_in` ska följa det här mönstret: Värdet `created_in` för den aktuella raden är lika med värdet `updated_in` i föregående rad. Den första raden ska dessutom innehålla `created_in = 1` och den sista raden ska innehålla `updated_in = 2147483647`. (Om det bara finns en rad måste du se `created_in=1` och `updated_in=2147483647`.)
 
 ### Varför visas den andra DB-posten (och alla de efterföljande) i DB för samma entitet?
 
-* Den andra DB-posten (och, eventuellt, nästa) för den berörda entiteten betyder att det har planerats uppdateringar av innehållsmellanlagring med `Magento_Staging` som skapar en extra post för en enhet i respektive register.
+* Den andra DB-posten (och eventuellt de nästa) för den berörda entiteten betyder att det finns schemalagda uppdateringar för innehållsmellanlagring med modulen `Magento_Staging`, som skapar ytterligare en post för en entitet i respektive register.
 
-Ett problem uppstår bara om posterna har samma värden för `created_in` eller `updated_in` kolumner.
+Ett problem uppstår bara om posterna har samma värden för kolumnerna `created_in` eller `updated_in`.
 
 ## Lösning
 
@@ -67,5 +67,5 @@ Detta är det förväntade beteendet och leder bara till problem om det finns sk
 
 ## Relaterad läsning
 
-* [Ändringar av kategorier sparas inte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) i vår kunskapsbas för support.
-* [Duplicera poster i katalogtabellen efter redigering av slutdatum för en schemauppdatering](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) i vår kunskapsbas för support.
+* [Ändringar i kategorier sparas inte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) i vår kunskapsbas för support.
+* [Duplicera poster i katalogtabellen efter redigering av slutdatumet för en schemauppdatering](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) i vår kunskapsbas för support.

@@ -26,11 +26,11 @@ När katalogprodukterna skapas eller uppdateras via programkod från ett skript 
 
 ## Orsak
 
-Problemet kan uppstå på grund av ACL-begränsningar för Adobe Commerce instansadministratörsroller. Om det är ett startprogram kommer det inte att finnas några initierade administratörssessioner med lämpliga ACL-inställningar. Det skulle få valideringar att misslyckas i `Magento_AdminGws` -modul som ansvarar för behörighetskontroll för sådana åtgärder.
+Problemet kan uppstå på grund av ACL-begränsningar för Adobe Commerce instansadministratörsroller. Om det är ett startprogram kommer det inte att finnas några initierade administratörssessioner med lämpliga ACL-inställningar. Det skulle göra att valideringar misslyckas i modulen `Magento_AdminGws`, som ansvarar för behörighetskontroll av sådana åtgärder.
 
 ## Lösning för felaktig produktstatus
 
-Ange ett dynamiskt ID för `Magento\Framework\Authorization\PolicyInterface`, enligt beskrivningen i [ObjectManager>Programmatiska produktuppdateringar](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) i vår dokumentation för utvecklare.
+Ange en dynamisk ID-inställning för `Magento\Framework\Authorization\PolicyInterface`, enligt beskrivningen i avsnittet [ ObjectManager>Programmatiska produktuppdateringar](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) i utvecklardokumentationen.
 
 ## Relaterad läsning
 

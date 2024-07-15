@@ -49,8 +49,8 @@ Så här undviker du det:
 1. Ändra din version av Composer så att du kan hämta Adobe Commerce-programmet genom att göra något av följande:
 
    * Nedgradera disposition med följande kommando: `composer self-update 1.0.0-alpha11`.
-   * Uppgradera Composer till en version som är senare än 26 november 2015: `composer self-update`.
+   * Uppgradera disposition till en version som är senare än 26 november 2015: `composer self-update`.
 
 1. Ta bort din Adobe Commerce-katalog och underkataloger.
 1. Försök hämta igen med antingen `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` eller `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
-1. Uppdatera Composer när du har laddat ned Adobe Commerce: `composer self-update`.
+1. Uppdatera disposition: `composer self-update` när du har hämtat Adobe Commerce-programmet.

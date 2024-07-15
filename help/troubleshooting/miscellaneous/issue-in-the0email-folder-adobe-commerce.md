@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Behörighetsproblem för var-/exportmappen för Adobe Commerce i molnet
 
-Den här artikeln innehåller en lösning på ett problem där du inte kan exportera produktdata på grund av ett filbehörighetsproblem på servern i `var/export/email` mapp. Symtomen är bland annat att produkt- och katalogexport inte är tillgänglig i användargränssnittet, men visas när SSH används.
+Den här artikeln innehåller en lösning på ett problem där du inte kan exportera produktdata på grund av ett filbehörighetsproblem på servern i mappen `var/export/email`. Symtomen är bland annat att produkt- och katalogexport inte är tillgänglig i användargränssnittet, men visas när SSH används.
 
 ## Berörda produkter och versioner
 
@@ -21,13 +21,13 @@ Adobe Commerce om molninfrastruktur, 2.3.0-2.3.7-p2, 2.4.0-2.4.3-p1
 
 ## Problem
 
-Du kan inte exportera filer i `var/export/email` eller `var/export/archive` mapp.
-Distributionen misslyckades på grund av behörigheter på `var/export/email` eller `var/export/email/archive` därför att arkivmappen skapas via e-post och om jag bara gör exporten/e-postmeddelandet ibland finns det fortfarande ett problem) förutom att lägga till något för undermappen `var/export/email/archive`.
+Du kan inte exportera filer i mappen `var/export/email` eller `var/export/archive`.
+Distributionen misslyckades på grund av behörigheter på `var/export/email` eller `var/export/email/archive` eftersom arkivmappen skapas via e-post och om jag bara gör export/e-post ibland finns det fortfarande ett problem) förutom att något läggs till för kontot för undermappen `var/export/email/archive`.
 
 <u>Steg som ska återskapas</u>:
 
-Gå till Admin **System** > *Dataöverföring* > **Exportera**.
-Välj de CSV-filer som ska sparas i `var/export/` mapp.
+Gå till **System** > *Dataöverföring* > **Exportera** i Admin.
+Markera de CSV-filer som ska sparas i mappen `var/export/`.
 
 <u>Förväntat resultat</u>:
 
@@ -35,15 +35,15 @@ CSV-filer är synliga och kan exporteras.
 
 <u>Faktiskt resultat</u>:
 
-CSV-filer är inte synliga. Du ser även ett meddelande om nekad behörighet: *RecursiveDirectoryIterator::__construct(/app/project id>/var/export/email): failed open dir: Permission deny*
+CSV-filer är inte synliga. Du ser också ett meddelande om nekad behörighet: *RecursiveDirectoryIterator::__construct(/app/project id>/var/export/email): failed open dir: Permission deny*
 
 Du får samma meddelande för alla exporttyper: Avancerade priser, Kundekonomi, Kundens huvudfil och Kundadresser.
 
 ## Orsak
 
-Detta orsakas av en mapp som skapats i `/var` som har felaktiga behörigheter: `d-wxrwsr-T`. T-klisterbiten innebär att användarna bara kan ta bort de filer de äger, men den saknade körbara filen innebär att de inte kan skapa filer i katalogen.
+Detta orsakas av en mapp som skapats inuti `/var` som har felaktiga behörigheter: `d-wxrwsr-T`. T-klisterbiten innebär att användarna bara kan ta bort de filer de äger, men den saknade körbara filen innebär att de inte kan skapa filer i katalogen.
 
-Detta märks ofta när en mapp med namnet `export`som innehåller en mapp med namnet `email`som innehåller en mapp med namnet `archive`.
+Detta märks ofta när systemet skapar en mapp med namnet `export` som innehåller en mapp med namnet `email` som innehåller en mapp med namnet `archive`.
 
 Om du vill kontrollera om katalogen har dessa felkonfigurerade behörigheter kör du följande kommando i CLI/Terminal:
 

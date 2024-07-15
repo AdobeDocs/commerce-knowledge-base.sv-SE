@@ -17,12 +17,12 @@ Den här artikeln innehåller en lösning på problemet, där kunderna loggas ut
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce lokalkontor [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
-* Adobe Commerce om molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce lokalt, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Problem
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Kunden lägger till produkter i varukorgen i butiken och fortsätter till kassan.
 1. Kunden omdirigeras till tredje parts webbplats för betalning/leverans eller annan information/tjänst.
@@ -38,7 +38,7 @@ Kunden omdirigeras till en sida för slutförd betalning (eller annan framgångs
 
 ## Orsak
 
-Samma webbplats-cookie-attributet är inställt på *Lax* eller inte specificerad (som behandlas som inställd på *Lax* ). Med `SameSite` = *Lax* inaktiverar överföring av en cookie till externa URL:er via `POST` förfrågningar.
+SammaSite-cookie-attributet är inställt på *Lax* eller inte angivet (som behandlas som *Lax* ). Om `SameSite` = *Lax* används inaktiveras överföring av en cookie till externa URL:er via `POST`-begäranden.
 
 ## Lösning
 

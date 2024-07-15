@@ -25,16 +25,16 @@ Du kan inte använda MDVA-43395-korrigeringen.
 
 ## Orsak
 
-Molnhandlare behöver inte tillämpa MDVA-43395-korrigeringen separat om de har [magento/magento-cloud-patches 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) som redan innehåller korrigeringen.
+Molnhandlare behöver inte tillämpa MDVA-43395-korrigeringen separat om de har [magento/magento-cloud-patches 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) installerad, som redan innehåller korrigeringen.
 
 ## Lösning
 
-Du löser problemet genom att ta bort MDVA-43395- och MDVA-43443-korrigeringsfilerna från `m2-hotfixes` katalog och omdistribuera.
+Du löser problemet genom att ta bort MDVA-43395- och MDVA-43443-korrigeringsfilerna från katalogen `m2-hotfixes` och sedan distribuera om.
 
-Om du kunde applicera MDVA-43443-korrigeringen via `m2-hotfixes` måste du ändå ta bort den enligt ovan. I framtida versioner av Adobe Commerce finns dessa patchar redan i, så det kan leda till att distributionen misslyckas om du uppgraderar senare.
+Om du kunde tillämpa MDVA-43443-korrigeringen via katalogen `m2-hotfixes` måste du ändå ta bort den enligt ovan. I framtida versioner av Adobe Commerce finns dessa patchar redan i, så det kan leda till att distributionen misslyckas om du uppgraderar senare.
 
-För att bekräfta om patchen har applicerats, kör du `vendor/bin/magento-patches -n status |grep 43443` -kommando.
-Om den visar flera resultat som detta bör du ta bort MDVA-43443-korrigeringen från `m2-hotfixes` mapp:
+Kör kommandot `vendor/bin/magento-patches -n status |grep 43443` om du vill verifiera om korrigeringen har tillämpats.
+Om det visar flera resultat som detta bör du ta bort MDVA-43443-korrigeringen från mappen `m2-hotfixes`:
 
 ```bash
 $ vendor/bin/magento-patches -n status |grep 43443
@@ -44,5 +44,5 @@ $ vendor/bin/magento-patches -n status |grep 43443
 
 ## Relaterad läsning
 
-* [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
-* [Cloud Patches for Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) i vår dokumentation för utvecklare.
+* [Använda en kompositörkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+* [Molnkorrigeringar för Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) i utvecklardokumentationen.

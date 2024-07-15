@@ -29,7 +29,7 @@ Du har en giltig CSV-fil som innehåller paketprodukter.
 
 <u>Steg som ska återskapas</u>:
 
-1. Importera filen med [Importera funktioner](https://docs.magento.com/m2/ee/user_guide/system/data-import.html).
+1. Importera filen med [importfunktionen](https://docs.magento.com/m2/ee/user_guide/system/data-import.html).
 1. Öppna produktsidan för paketet.
 
 <u>Förväntade resultat</u>:
@@ -46,7 +46,7 @@ Alternativpositionen har inte deklarerats explicit.
 
 ## Lösning
 
-1. Deklarera en position explicit för varje alternativ i `position` parametern för `bundle_values` -kolumnen i CSV-filen. Detaljerade anvisningar finns i [Redigera produktdata](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) i vår användarhandbok.
+1. Deklarera en position explicit för varje alternativ i parametern `position` i kolumnen `bundle_values` i CSV-filen. Mer information finns i [Redigera produktdata](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) i vår användarhandbok.
 1. Upprepa importåtgärden.
 
-Allmän information om import finns i [Importerar paketprodukt](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) i vår användarhandbok.
+Allmän information om import finns i [Importera paketprodukt](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) i användarhandboken.

@@ -28,9 +28,9 @@ Alla Adobe Commerce lokala versioner och Adobe Commerce på molninfrastrukturver
 
 ## Problem
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-1. Gå till **Lager** > **Konfiguration** > **Kunder** > **Kundkonfiguration** > **Skapa nya kontoalternativ** och ange **Aktivera automatisk tilldelning** till **Kundgrupp** till *Ja*.
+1. Gå till **Butiker** > **Konfiguration** > **Kunder** > **Kundkonfiguration** > **Skapa nya kontoalternativ** och ange **Aktivera automatisk tilldelning** till **Kundgrupp** till *Ja*.
 1. Gå till **Allmänt** > **Butiksinformation** > och ange ett giltigt lands- och momsregistreringsnummer.
 1. Klicka på **Validera momsregistreringsnummer**.
 
@@ -40,11 +40,11 @@ Verifieringen är klar.
 
 <u>Faktiskt resultat:</u>
 
-Följande fel visas: &quot;*Fel vid verifiering av momsregistreringsnummer.*&quot;
+Följande fel visas: *Fel vid verifiering av momsregistreringsnummer.*
 
 ## Lösning
 
-Använd [patch](assets/MDVA-27623_EE_2.3.2-p2_COMPOSER_v1.patch.zip) enligt denna artikel.
+Använd den [korrigering](assets/MDVA-27623_EE_2.3.2-p2_COMPOSER_v1.patch.zip) som anges i den här artikeln.
 
 ## Lappa
 
@@ -54,6 +54,6 @@ Korrigeringen är kopplad till den här artikeln. Om du vill hämta den bläddra
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Bifogade filer

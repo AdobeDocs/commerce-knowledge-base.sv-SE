@@ -10,7 +10,7 @@ ht-degree: 0%
 Det här dokumentet innehåller riktlinjer för hur du lägger till etiketter i artiklar i Adobe Commerce Support Knowledge Base.
 Etiketter (kallas även taggar) förbättrar sökningen i [Adobe Commerce Support Knowledge Base](https://support.magento.com/hc/en-us).
 Etiketter läggs till i fältet&quot;Etiketter&quot; i metadataavsnittet i en artikelfil, avgränsade med kommatecken, utan mellanrum mellan kommatecken och nästa etikett.
-Se [../../.github/CONTRIBUTING.md#metadata] för mer information.
+Mer information finns i [./../.github/CONTRIBUTING.md#metadata].
 
 ## Allmänna bestämmelser
 
@@ -84,7 +84,8 @@ Se avsnitten nedan för detaljerade rekommendationer om hur du definierar etiket
 
 * Lägg till en separat etikett för varje version av Adobe Commerce. Exempel: &quot;2.3.7&quot;
 * Lägg inte till etiketter för intervall.
-Det vill säga, om 2.3.0-2.3.5 påverkas, lägg till: &quot;2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2&quot; INTE &quot;2.2.2.2.3 3.0-2.3.5&quot;
+Det vill säga, om 2.3.0-2.3.5 påverkas, lägg till: &quot;2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2&quot;
+NOT &quot;2.3.0-2.3.5&quot;
 * Lägg inte till etiketter med .x. Exempel: &quot;2.3.x&quot;
 
 ## Etiketter för innehållstyp (baserat på kategori)

@@ -1,6 +1,6 @@
 ---
-title: '''ACSD-56842: Uppskjutna proxies och proxyfabriker saknas efter körning av ''setup'':di:compile`'
-description: Använd patchen ACSD-56842 för att åtgärda Adobe Commerce-problemet där de fördröjda proxyfabrikerna och proxyfabrikerna saknas efter att ha kört installationen:di:kompilera".
+title: '"ACSD-56842: Uppskjutna proxies och proxyfabriker saknas efter körning av "setup:di:compile"'
+description: Använd korrigeringsfilen ACSD-56842 för att åtgärda Adobe Commerce-problemet där de fördröjda proxieserna och proxyfabrikerna saknas efter att ha kört "setup:di:compile".
 feature: Deploy, Catalog Management
 role: Admin, Developer
 exl-id: 2d12e36c-d8b7-4253-91d8-28b50477ccd9
@@ -11,32 +11,32 @@ ht-degree: 0%
 
 ---
 
-# ACSD-56842: Uppskjutna proxies och proxyfabriker saknas efter körning `setup:di:compile`
+# ACSD-56842: Uppskjutna proxy- och proxyfabriker saknas efter att `setup:di:compile` har körts
 
-Korrigeringen ACSD-56842 åtgärdar ett problem där fördröjda proxy- och proxyfabriker saknas efter körning `setup:di:compile`. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 är installerat. Korrigerings-ID är ACSD-56842. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
+Korrigeringen ACSD-56842 åtgärdar ett problem där fördröjda proxy- och proxyfabriker saknas efter att `setup:di:compile` har körts. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 har installerats. Korrigerings-ID är ACSD-56842. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.4-p6
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.2 - 2.4.6-p3
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-De fördröjda proxies- och proxyfabrikerna saknas efter körning `setup:di:compile`.
+De fördröjda proxies och proxyfabriker saknas efter att `setup:di:compile` har körts.
 
 <u>Steg som ska återskapas</u>:
 
 1. Skapa en anpassad modul med namnet *Magento_CustomModule*.
-1. I *[!UICONTROL etc]* modulens mapp, skapa en `di.xml` med det här innehållet:
+1. Skapa en `di.xml` med det här innehållet i mappen *[!UICONTROL etc]* i modulen:
 
    ```xml
     <?xml version="1.0"?>
@@ -65,7 +65,7 @@ De fördröjda proxies- och proxyfabrikerna saknas efter körning `setup:di:comp
      </config>
    ```
 
-1. Ange [!UICONTROL Production] läge: `bin/magento deploy:mode:set production`.
+1. Ange [!UICONTROL Production]-läge: `bin/magento deploy:mode:set production`.
 1. Ta bort den genererade mappen från magentaroten.
 1. Kör kommandot `bin/magento setup:di:compile`.
 1. Kontrollera den genererade mappen.
@@ -83,14 +83,14 @@ I den genererade mappen genereras proxyfilen för proxyargument som ges utan rad
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.

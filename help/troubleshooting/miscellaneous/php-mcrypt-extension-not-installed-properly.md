@@ -51,13 +51,13 @@ Därför kan inte Adobe Commerce installationsprogram hitta tillägget och insta
 
 Kontrollera om krypteringstillägget har lästs in på något av följande sätt:
 
-* Konfigurera en [phpinfo.php](http://kb.mediatemple.net/questions/764/How+can+I+create+a+phpinfo.php+page%3F#gs) i webbserverns rotkatalog och granska utdata i en webbläsare.
+* Konfigurera en [phpinfo.php](http://kb.mediatemple.net/questions/764/How+can+I+create+a+phpinfo.php+page%3F#gs)-fil i webbserverns rotkatalog och granska utdata i en webbläsare.
 * Kör följande kommando:    `$ php -r "phpinfo();" | grep mcrypt`
 
-Om mcrypt är *not* installerade, meddelanden som liknar följande:
+Om mcrypt är *inte* installerat visas meddelanden som liknar följande:
 
 ```php
 PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php5/20121212/mcrypt.so' - /usr/lib/php5/20121212/mcrypt.so: cannot open shared object file: No such file or directory in Unknown on line 0
 ```
 
-I vissa fall kan du behöva installera Adobe Commerce från [kommandorad](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli.html) och ange den fullständiga sökvägen till den LAMP-stack som har kryptering installerad.
+I vissa fall kanske du måste installera Adobe Commerce-programvaran från [kommandoraden](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli.html) och ange den fullständiga sökvägen till den LAMP-stack som har kryptering installerad.

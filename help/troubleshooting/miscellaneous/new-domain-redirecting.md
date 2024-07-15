@@ -25,16 +25,16 @@ Den nya domänen dirigeras om till standarddomänen i den aktuella miljön eller
 
 ## Orsak
 
-Det händer när Variabler inte uppdateras efter att en ny domän har lagts till eller fel [!DNL Fastly] tjänsten har konfigurerats i miljön.
+Det inträffar när variablerna inte uppdateras efter att en ny domän har lagts till eller när fel [!DNL Fastly]-tjänst har konfigurerats i miljön.
 
 ## Lösning
 
-1. Om domänen omdirigeras inom samma miljö måste du kontrollera att du har konfigurerat [Variabel](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#modify-variables).
-1. Om domänen omdirigeras till en annan miljö kontrollerar du om du har konfigurerat rätt [!DNL Fastly] genom att köra följande kommando: `bin/magento fastly:conf:get -s`
+1. Om domänen omdirigeras inom samma miljö kontrollerar du att du har konfigurerat [Variabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#modify-variables).
+1. Om domänen omdirigeras till en annan miljö kontrollerar du om du har konfigurerat rätt [!DNL Fastly]-tjänst genom att köra följande kommando: `bin/magento fastly:conf:get -s`
 
 >[!NOTE]
 >
->Du hittar [!DNL Fastly] API-autentiseringsuppgifter genom att logga in i varje miljö (mellanlagring/produktion) och kontrollera `/mnt/shared/fastly_tokens.txt` -fil. Mer information finns i [konfigurera [!DNL Fastly] tjänster](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i Commerce on Cloud Infrastructure Guide.
+>Du kan hitta API-autentiseringsuppgifterna för [!DNL Fastly] genom att logga in i varje miljö (mellanlagring/produktion) och kontrollera filen `/mnt/shared/fastly_tokens.txt`. Mer information finns i [Konfigurera [!DNL Fastly] tjänster](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i Commerce on Cloud Infrastructure Guide.
 
 Om båda konfigurationerna ovan är korrekta skickar du in en supportanmälan.
 

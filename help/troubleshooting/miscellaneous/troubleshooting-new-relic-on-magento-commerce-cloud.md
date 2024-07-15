@@ -43,7 +43,7 @@ I den här artikeln finns resurser för att felsöka New Relic i Adobe Commerce 
 <tr>
 <td>
 <p><u>Data saknas efter installationen.</u></p>
-<p>Använd <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">Verktyget New Relic Diagnostics</a> för att försöka identifiera orsaken. Om detta inte hjälper kan du titta närmare på agentspecifika lösningar. Länkar till artiklar som innehåller dessa lösningar finns i den högra kolumnen.</p>
+<p>Använd verktyget <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">New Relic Diagnostics</a> för att försöka identifiera orsaken. Om detta inte hjälper kan du titta närmare på agentspecifika lösningar. Länkar till artiklar som innehåller dessa lösningar finns i den högra kolumnen.</p>
 </td>
 <td>
 <p>Saknade data kan ha olika orsaker. Du kan behöva:</p>
@@ -66,7 +66,7 @@ I den här artikeln finns resurser för att felsöka New Relic i Adobe Commerce 
 </tr>
 <tr>
 <td>
-<p><u>Tidsstämpelavstämning för transaktioner.</u> Det kan vara svårt att hitta långa transaktioner (mer än 5 minuter) med New Relic användargränssnitt. Du kan också hitta transaktioner som visas utanför den förväntade tidsramen.</p>
+<p><u>Tidsstämpelfel för transaktioner.</u> Det kan vara svårt att hitta långa transaktioner (mer än fem minuter) med New Relic-gränssnittet. Du kan också hitta transaktioner som visas utanför den förväntade tidsramen.</p>
 </td>
 <td>
 <p>I New Relic-gränssnittet visas tidpunkten för transaktionens slut, inte tidpunkten då transaktionen påbörjades.</p>
@@ -77,7 +77,7 @@ I den här artikeln finns resurser för att felsöka New Relic i Adobe Commerce 
 </tr>
 <tr>
 <td>
-<p><u>NerdGraph GraphQL <code>curl</code> frågor med specialtecken som <code>|</code> och <code>%</code> fungerar inte</u>.</p>
+<p><u>NerdGraph GraphQL <code>curl</code> -frågor som använder specialtecken som <code>|</code> och <code>%</code> fungerar inte</u>.</p>
 </td>
 <td>
 <p>New Relic funktion "copy to curl" i NerdGraph har för närvarande inget sätt att hantera specialtecken som <code>|</code> och <code>%</code>.</p>

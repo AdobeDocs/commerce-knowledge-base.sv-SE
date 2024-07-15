@@ -28,7 +28,8 @@ Adobe Commerce 2.4.5, som planeras släppas i augusti 2022, kommer att innehåll
 
 ## Lappa
 
-Patch-ID:t är AC-3022 som finns i Quality Patches Tool version 1.1.16. Se [QPT (Quality Patches Tool) > Användning](https://devdocs.magento.com/quality-patches/usage.html) i vår utvecklardokumentation för information om hur du använder QPT och installerar korrigeringsfiler.
+Patch-ID:t är AC-3022 som finns i Quality Patches Tool version 1.1.16.
+Mer information om hur du använder QPT och installerar korrigeringsfiler finns i artikeln [Quality Patches Tool (QPT) > Usage](https://devdocs.magento.com/quality-patches/usage.html) i utvecklardokumentationen.
 
 Patchen gäller för följande Adobe Commerce-versioner:
 
@@ -37,5 +38,5 @@ Patchen gäller för följande Adobe Commerce-versioner:
 
 ## Relaterad läsning
 
-* [Transportföretag > DHL](https://docs.magento.com/user-guide/shipping/dhl.html) i vår användarhandbok
-* [Leveransmetoder](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html) i vår användarhandbok
+* [Transportföretag > DHL](https://docs.magento.com/user-guide/shipping/dhl.html) i användarhandboken
+* [Leveransmetoder](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html) i användarhandboken

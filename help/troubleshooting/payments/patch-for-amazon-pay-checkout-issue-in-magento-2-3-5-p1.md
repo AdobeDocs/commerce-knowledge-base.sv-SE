@@ -24,7 +24,7 @@ Den här korrigeringen åtgärdar problemet med att det inte går att ändra en 
 
 När en kund checkar ut med Amazon Pay, loggar in, fortsätter till betalningssteget och försöker ändra sitt betalkort från betalningswidgeten visas ett felmeddelande. Utcheckningen kan inte slutföras om kunden ignorerar felet och fortsätter till utcheckningen.
 
-För att lösa problemet och ta bort felet har vi skapat ett [patch](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip).
+För att lösa problemet och ta bort felet har vi skapat en [patch](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip).
 
 <u>Steg som ska återskapas</u>:
 
@@ -33,13 +33,13 @@ För att lösa problemet och ta bort felet har vi skapat ett [patch](assets/BUND
 1. Välj leveranssätt och fortsätt till betalningssteget.
 1. Försök att byta kreditkort till ett annat.
 
-<u>Förväntat resultat</u>: Ett annat kreditkort väljs som betalningsmetod utan fel.
+<u>Förväntat resultat</u>: Ett annat kreditkort har valts som betalningsmetod utan fel.
 
 <u>Faktiskt resultat</u>: Felmeddelandet visas: *&quot;Kontakta återförsäljaren för att få hjälp med att slutföra din beställning.&quot;*
 
 ## Lösning
 
-[Tillämpa korrigeringen](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip) nedan.
+[Använd korrigeringen](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip) nedan.
 
 ## Lappa
 
@@ -61,6 +61,6 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

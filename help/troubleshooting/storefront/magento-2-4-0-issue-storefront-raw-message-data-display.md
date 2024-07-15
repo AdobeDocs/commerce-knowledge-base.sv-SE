@@ -22,9 +22,9 @@ Den här artikeln innehåller en lösning på problemet när alla felmeddelanden
 
 ## Problem
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-1. Gå till **Skapa nytt konto** på butiken.
+1. Gå till sidan **Skapa nytt konto** i butiken.
 1. Skapa ett nytt konto med en registrerad e-postadress. Följande meddelande visas:
 
 `There+is+already+an+account+with+this+email+address.+If+you+are+sure+that+it+is+your+email+address,+click+here+to+get+your+password+and+access+your+account.`

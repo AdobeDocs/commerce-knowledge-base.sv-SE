@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Hur många kuponger kan en kund använda i Adobe Commerce?
 
-För Adobe Commerce-versioner under 2.4.7 kan du konfigurera flera kupongkoder men använda **endast en kupongkod i vagnen**.
+För Adobe Commerce-versioner under 2.4.7 kan du konfigurera flera kupongkoder, men bara använda **en kupongkod i kundvagnen**.
 
 Om du vill använda mer än en kupongkod i kundvagnen samtidigt kan du använda ett motsvarande tillägg i [Commerce Marketplace](https://marketplace.magento.com/).
 
-Från Adobe Commerce version 2.4.7 får du dock konfigurera och använda **mer än en kupongkod i kundvagnen samtidigt**. Om du vill aktivera den går du till [Inställningar för flera](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales#multicoupon-settings).
+Från och med Adobe Commerce version 2.4.7 får du dock konfigurera och använda **mer än en kupongkod i kundvagnen samtidigt**. Om du vill aktivera den läser du [Multicoupon-inställningar](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales#multicoupon-settings).
 
 ## Mer information
 

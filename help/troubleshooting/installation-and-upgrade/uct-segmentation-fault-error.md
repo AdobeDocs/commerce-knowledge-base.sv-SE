@@ -17,7 +17,7 @@ I den här artikeln beskrivs fel som kan uppstå när du använder verktyget fö
 
 ## Berörda produkter och versioner
 
-* [Kompatibilitetsverktyg för uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) är kompatibelt med Adobe Commerce från och med 2.3.0.
+* [Kompatibilitetsverktyget för uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) är kompatibelt med Adobe Commerce-versioner från och med 2.3.0.
 
 ## Segmenteringsfel
 
@@ -47,7 +47,7 @@ bin/uct upgrade:check --current-version=2.4.4 path/to/the/module
    bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
    ```
 
-1. Det enda resultatet är `Upgrade compatibility tool`:
+1. Den enda utdata är `Upgrade compatibility tool`:
 
    ```terminal
    bin/uct upgrade:check /var/www/project/magento/ -c 2.4.1
@@ -70,11 +70,11 @@ php -d memory_limit=-1 /bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
 
 >[!NOTE]
 >
-> The `M2_VERSION` är den målversion av Adobe Commerce som du vill jämföra med din Adobe Commerce-instans.
+> `M2_VERSION` är den Adobe Commerce-målversion som du vill jämföra med din Adobe Commerce-instans.
 
 <u>Lösning 2</u>:
 
-Lägga till `-m` Med alternativet kan verktyget för kompatibilitet för uppgradering analysera varje specifik modul separat för att undvika att stöta på två moduler med samma namn i din Adobe Commerce-instans.
+Om du lägger till alternativet `-m` kan verktyget Kompatibilitet för uppgradering analysera varje enskild modul för att undvika att stöta på två moduler med samma namn i din Adobe Commerce-instans.
 
 Med det här kommandoalternativet kan du även analysera en mapp som innehåller flera moduler med verktyget Kompatibilitet för uppgradering:
 
@@ -82,4 +82,4 @@ Med det här kommandoalternativet kan du även analysera en mapp som innehåller
 bin/uct upgrade:check /<dir>/<instance-name> -m /vendor/<vendor-name>/
 ```
 
-Se [Kör verktyget i ett kommandoradsgränssnitt](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) om du vill ha mer information om gränssnittsalternativ för kommandoraden.
+Mer information om gränssnittsalternativ för kommandorad finns på sidan [Kör verktyget i ett kommandoradsgränssnitt](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) .

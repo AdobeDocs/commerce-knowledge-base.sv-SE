@@ -25,10 +25,10 @@ Konverteringsdata spårades inte av Google Analytics på grund av ett fel i Goog
 
 <u>Steg som ska återskapas</u>:
 
-1. Aktivera och konfigurera funktionaliteten Google Analytics i Commerce Admin under **Lager** > **Inställningar** > **Konfiguration** > **Försäljning** > **GOOGLE API** > **Google Analytics**.
-1. Klicka **Spara konfiguration**.
+1. Aktivera och konfigurera funktionaliteten Google Analytics i Commerce Admin under **Lagrar** > **Inställningar** > **Konfiguration** > **Försäljning** > **Google API** > **Google Analytics**.
+1. Klicka på **Spara konfiguration**.
 1. Lägg en order i butiken.
-1. Gå till **Google Analytics Dashboard** > **Konverteringar** > **Ökning**.
+1. Gå till **Google Analytics Dashboard** > **Konverteringar** > **Översikt**.
 1. Ange datumintervallet till aktuellt datum.
 
 <u>Förväntat resultat</u>:
@@ -62,6 +62,6 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Bifogade filer

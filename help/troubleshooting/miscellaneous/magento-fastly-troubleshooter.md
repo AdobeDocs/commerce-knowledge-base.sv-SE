@@ -17,10 +17,10 @@ Den här snabbfelsökaren för Adobe Commerce-användare vägleder dig till lös
 
 ## Steg 1 - Bekräfta snabb service {#step-1}
 
-+++**Kunden rapporterar ett problem med Fastly. Är tjänsten nere?**
++++**Kunden rapporterar ett problem med Fastly. Är snabbtjänsten avstängd?**
 
-a. JA - Kontrollera [Snabbt servicestatus](https://status.fastly.com/)och [skicka en Adobe Commerce supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NEJ - Fortsätt till [Steg 2](#step-2).
+a. JA - Kontrollera [Snabb servicestatus](https://status.fastly.com/) och [skicka en Adobe Commerce-supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+b. NEJ - Fortsätt till [steg 2](#step-2).
 
 +++
 
@@ -28,9 +28,9 @@ b. NEJ - Fortsätt till [Steg 2](#step-2).
 
 +++**Har du några fel när du kör backend Tester?**
 
-Kör projekt-URL:en via [Backend Tester - snabbt](https://magento-tester.global.ssl.fastly.net/magento-tester/). Den visar versionen av VCL-konfigurationsfilen, om sidan är tillgänglig, versionen av modulen Snabbt och annan användbar felsökningsinformation. Har du några fel?
+Kör ditt projekt-URL via [backend Tester - snabbt](https://magento-tester.global.ssl.fastly.net/magento-tester/). Den visar versionen av VCL-konfigurationsfilen, om sidan är tillgänglig, versionen av modulen Snabbt och annan användbar felsökningsinformation. Har du några fel?
 
-a. JA - Du har fått meddelandet _Plugin VCL-versionen är inaktuell. Ladda upp igen._ Lösningen på det här felet finns i [Snabbt fel: Plugin VCL-versionen är inaktuell. Ladda upp igen](/help/troubleshooting/miscellaneous/fastly-error-plugin-vcl-version-is-outdated-please-re-upload.md).\
+a. JA - Meddelandet _Plugin VCL-versionen är inaktuell! Ladda upp igen._ Information om lösningen på det här felet finns i [Snabbt fel: Plugin VCL-versionen är inaktuell! Ladda upp](/help/troubleshooting/miscellaneous/fastly-error-plugin-vcl-version-is-outdated-please-re-upload.md) igen.\
 b. NEJ - [Steg 3](#step-3).
 
 +++
@@ -48,7 +48,7 @@ b. NO - Kontrollera DNS genom att köra i CLI/terminal: `dig [your website.com] 
 
 +++**Vad händer när du kör `dig`?**
 
-När du sprang `dig` returnerade det en post som pekar på prod.magentocloud.map.fastly.net eller någon av följande IP-adresser (se [Uppdatera DNS-konfiguration med produktionsinställning](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns) i vår utvecklardokumentation):
+När du körde `dig` returnerade det en post som pekar på prod.magentocloud.map.fastly.net eller någon av följande IP-adresser (se [Uppdatera DNS-konfiguration med produktionsinställning](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns) i utvecklardokumentationen):
 
 * 151.101.1.124
 * 151.101.65.124
@@ -56,16 +56,16 @@ När du sprang `dig` returnerade det en post som pekar på prod.magentocloud.map
 * 151.101.193.124
 
 a. JA - Problemet är inte DNS-relaterat. Fortsätt till [Steg 5](#step-5).\
-b. NEJ - Problemet är sannolikt DNS-relaterat. Kunden bör [kontrollera DNS-konfiguration](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns "https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns") eller kontakta sin DNS-leverantör för mer information.
+b. NEJ - Problemet är sannolikt DNS-relaterat. Kunden bör [kontrollera DNS-konfigurationen](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns "https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns") eller kontakta sin DNS-leverantör för mer information.
 
 +++
 
 ## Steg 5 - Bekräfta anslutning {#step-5}
 
-+++**Får du ett meddelande om att anslutningen är osäker eller inte säker vid körning? `curl -svo /dev/null "https://website.com"` i CLI/terminal?**
++++**Får du ett meddelande om att anslutningen är osäker eller inte säker när du kör `curl -svo /dev/null "https://website.com"` i CLI/Terminal?**
 
 a. JA - Detta är troligen ett certifikatproblem. Besök webbplatsen i en webbläsare och välj låsikonen och leta efter certifikatets förfallodatum. Fortsätt till [Steg 6](#step-6).\
-b. NEJ - Besök [http://fastly-debug.com](https://www.fastly-debug.com/) och dela informationen i [Adobe Commerce supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+b. NEJ - Besök [http://fastly-debug.com](https://www.fastly-debug.com/) och dela den här informationen i en [Adobe Commerce supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
 
@@ -74,7 +74,7 @@ b. NEJ - Besök [http://fastly-debug.com](https://www.fastly-debug.com/) och del
 +++**Har certifikatet gått ut?**
 
 a. JA - Du måste förnya ditt TLS-certifikat med certifikatutfärdaren.\
-b. NEJ - Du kanske inte har något certifikat alls. Om du har Adobe Commerce rekommenderar vi att du köper ett TLS-certifikat. Om du använder Adobe Commerce i en molninfrastruktur kan du ha ett domänvaliderat Låt oss kryptera SSL-/TLS-certifikat för säker HTTPS-trafik från Fast. Se [tillhandahålla SSL-/TLS-certifikat](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates) i vår dokumentation för utvecklare.
+b. NEJ - Du kanske inte har något certifikat alls. Om du har Adobe Commerce rekommenderar vi att du köper ett TLS-certifikat. Om du använder Adobe Commerce i en molninfrastruktur kan du ha ett domänvaliderat Låt oss kryptera SSL-/TLS-certifikat för säker HTTPS-trafik från Fast. Se [etablera SSL-/TLS-certifikat](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates) i utvecklardokumentationen.
 
 +++
 

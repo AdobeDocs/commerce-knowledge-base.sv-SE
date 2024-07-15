@@ -28,7 +28,7 @@ När du uppgraderar din Adobe Commerce (alla distributionsmetoder) och Magento O
 Magento_Wishlist
 ```
 
-Uppgradera från Adobe Commerce (alla distributionsmetoder)/Magneto Open Source version 2.3.4-p1 **till version 2.3.4-p2** eller från Adobe Commerce (alla distributionsmetoder)/Magneto Open Source version 2.3.5 **till version 2.3.5-p1** åtgärdar felet.
+Om du uppgraderar från Adobe Commerce (alla distributionsmetoder)/Magneto Open Source version 2.3.4-p1 **till version 2.3.4-p2** eller från Adobe Commerce (alla distributionsmetoder)/Magneto Open Source version 2.3.5 **till version 2.3.5-p1** åtgärdas felet.
 
 <u>Steg som ska återskapas</u>:
 
@@ -50,15 +50,15 @@ Unable to apply data patch Magento\Wishlist\Setup\Patch\Data\CleanUpData for mod
 
 ## Lösningar
 
-* Om du uppgraderade till Adobe Commerce (alla distributionsmetoder)/Magneto Open Source version 2.3.5, **uppgradera till version 2.3.5-p1**. Adobe Commerce (alla distributionsmetoder)/Magento Open Source version 2.3.5-p1 ersätter 2.3.5.
-* Om du uppgraderade till Adobe Commerce (alla distributionsmetoder)/Magento Open Source version 2.3.4-p1, **uppgradera till version 2.3.4-p2**. Adobe Commerce (alla distributionsmetoder)/Magneto Open Source version 2.3.4-p2 ersätter version 2.3.4-p1.
+* Om du uppgraderade till Adobe Commerce (alla distributionsmetoder)/Magneto Open Source version 2.3.5 **uppgraderar du till version 2.3.5-p1**. Adobe Commerce (alla distributionsmetoder)/Magento Open Source version 2.3.5-p1 ersätter 2.3.5.
+* Om du uppgraderade till Adobe Commerce (alla distributionsmetoder)/Magento Open Source version 2.3.4-p1, **uppgradera till version 2.3.4-p2**. Adobe Commerce (all deployment methods)/Magneto Open Source version 2.3.4-p2 ersätter version 2.3.4-p1.
 
 ## Relaterad läsning
 
 I vår utvecklardokumentation:
 
-* [Adobe Commerce i molninfrastrukturguide](https://devdocs.magento.com/cloud/bk-cloud.html)
+* [Adobe Commerce i molninfrastrukturguiden](https://devdocs.magento.com/cloud/bk-cloud.html)
 * [Adobe Commerce i molninfrastruktur - uppgradera Adobe Commerce version](https://devdocs.magento.com/cloud/project/project-upgrade.html)
-* [Adobe Commerce lokal och Magento Open Source - uppgradera Adobe Commerce program och moduler](https://devdocs.magento.com/guides/v2.3/comp-mgr/bk-compman-upgrade-guide.html)
-* [Sida för konfiguration av önskelisteobjekt](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/product-layouts.html#wishlist-item-configure-page)
-* [Moduler som ger avancerad rapportering](https://devdocs.magento.com/guides/v2.3/advanced-reporting/modules.html)
+* [Adobe Commerce lokalt och Magento Open Source - Uppgradera Adobe Commerce-programmet och -modulerna](https://devdocs.magento.com/guides/v2.3/comp-mgr/bk-compman-upgrade-guide.html)
+* [Konfiguration av önskelisteobjekt, sida](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/product-layouts.html#wishlist-item-configure-page)
+* [Moduler som tillhandahåller avancerad rapportering](https://devdocs.magento.com/guides/v2.3/advanced-reporting/modules.html)

@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Felsökning av delad åtkomst
 
-## Jag ser inte [!UICONTROL Shared Access] på min Commerce-kontosida (kontoägare)
+## Jag kan inte se fliken [!UICONTROL Shared Access] på min Commerce-kontosida (kontoägare)
 
-**Problem:** Du vill ge din betrodda kollega delad åtkomst, men du kan inte hitta **[!UICONTROL Shared Access]** på din Commerce-kontosida.
+**Problem:** Du vill ge delad åtkomst till din betrodda kollega, men du kan inte hitta fliken **[!UICONTROL Shared Access]** på Commerce-kontosidan.
 
 **Möjlig orsak:** Behörigheter som krävs för att bevilja delad åtkomst har inte kopplats till ditt Commerce-konto.
 
-**Lösning:** Om du är kontoägare (primär kontoinnehavare) kontaktar du kontoteamet eller [skapa en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Ange ditt namn och den e-postadress som är kopplad till ditt konto.
+**Lösning:** Om du är kontoägare (primär kontoinnehavare) kontaktar du ditt Adobe-kontoteam eller [skapar en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Ange ditt namn och den e-postadress som är kopplad till ditt konto.
 
 >[!NOTE]
 >
->Även en icke-kontoägare kan ha **[!UICONTROL Shared Access]** fliken på deras konto. Det är dock bara kontoägaren (primär kontoinnehavare) som har behörighet att ge delad åtkomst till andra användare. Mer information om delad åtkomst finns i [DELAD ÅTKOMST: BEVILJA ÅTKOMST TILL DITT KONTO FÖR ANDRA ANVÄNDARE](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#shared-access) i Adobe Commerce Help Center User Guide.
+>Det är möjligt även för en annan ägare än kontoägaren att ha fliken **[!UICONTROL Shared Access]** på sitt konto. Det är dock bara kontoägaren (primär kontoinnehavare) som har behörighet att ge delad åtkomst till andra användare. Mer information om delad åtkomst finns i [DELAD ÅTKOMST: BEHÖRIGHET FÖR ANDRA ANVÄNDARE ATT FÅ ÅTKOMST TILL DITT KONTO](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#shared-access) i användarhandboken för Adobe Commerce Help Center.
 
 ## Jag har använt delad åtkomst men kan inte få åtkomst till en viss resurs
 
@@ -34,13 +34,13 @@ ht-degree: 0%
 **Lösning:**
 
 1. Växla tillbaka till **[!UICONTROL My Account]**.
-1. Klicka sedan på **[!UICONTROL Shared with me]** -fliken.
-1. Klicka på **[!UICONTROL Shared Access]** som du har problem med och undersöker vilka resurser du har fått åtkomst till.
+1. Klicka sedan på fliken **[!UICONTROL Shared with me]**.
+1. Klicka på kontot **[!UICONTROL Shared Access]** som du har problem med och kontrollera vilka resurser du har fått åtkomst till.
 1. Om den specifika resursen saknas kan du kontakta kontoägaren (primär kontoinnehavare).
 
 Om du fortfarande har problem kontaktar du kontoteamet på Adobe eller skickar ett e-postmeddelande till grp-Magento-HelpCenterLoginIssues@adobe.com. Ange ditt namn och den e-postadress som är kopplad till ditt konto.
 
-## Jag använde delad åtkomst och klickade på [!UICONTROL Support], men när jag öppnade en ny biljett [!UICONTROL Organization] listrutan visas inte
+## Jag använde delad åtkomst och klickade på [!UICONTROL Support], men när jag öppnade en ny biljett visas inte listrutan [!UICONTROL Organization]
 
 **Problem:** Jag har växlat till kontot för delad åtkomst men kan inte komma åt **[!UICONTROL Support tab]** (till exempel).
 
@@ -49,13 +49,13 @@ Om du fortfarande har problem kontaktar du kontoteamet på Adobe eller skickar e
 **Lösning:**
 
 1. Växla tillbaka till **[!UICONTROL My Account]**.
-1. Om bara en lista visas **[!UICONTROL Shared Name]**, det är *standardorganisation* att era biljetter öppnas under.
+1. Om den bara visar en **[!UICONTROL Shared Name]** är det den *standardorganisation* som dina biljetter kommer att öppnas under.
 
 Om du fortfarande har problem kontaktar du ditt Adobe-kontoteam eller skickar ett e-postmeddelande till grp-Magento-HelpCenterLoginIssues@adobe.com. Ange ditt namn och den e-postadress som är kopplad till ditt konto.
 
 ## Jag använde delad åtkomst men ser fortfarande mina biljetter istället för de delade
 
-**Problem:** Jag går till Help Center med delad åtkomst men ser fortfarande bara de biljetter som tillhör mitt eget konto (organisation). På Commerce-kontosidan visas att jag använder kontot för den organisation som har gett mig delad åtkomst, men organisationsbiljetterna visas fortfarande inte.
+**Problem:** Jag kommer åt Help Center via delad åtkomst men ser fortfarande bara biljetterna som tillhör mitt eget konto (organisation). På Commerce-kontosidan visas att jag använder kontot för den organisation som har gett mig delad åtkomst, men organisationsbiljetterna visas fortfarande inte.
 
 **Möjlig orsak:** Webbläsaren använder det cachelagrade innehållet från Help Center.
 
@@ -63,4 +63,4 @@ Om du fortfarande har problem kontaktar du ditt Adobe-kontoteam eller skickar et
 
 ## Relaterad läsning
 
-[Formulär för att skicka biljetter: handlaren visas inte i den nedrullningsbara listan Organisation](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed) i vår kunskapsbas för support.
+[Formulär för anmälan av biljett: handlaren visas inte i listrutan Organisation](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed) i vår kunskapsbas för support.

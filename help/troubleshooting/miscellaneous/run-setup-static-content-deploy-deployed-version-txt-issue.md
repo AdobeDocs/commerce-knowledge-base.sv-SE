@@ -1,6 +1,6 @@
 ---
-title: kör`setup:static-content:distribuera` distribuerad_version.txt-problem
-description: I den här artikeln finns en korrigering för "deploy_version.txt" som inte är skrivbar när "setup" körs:static-content:distribuera`-kommando manuellt.
+title: kör "setup:static-content:deploy" distribuerad_version.txt problem
+description: Den här artikeln innehåller en korrigering för "deploy_version.txt" är inte skrivbart när kommandot "setup:static-content:deploy" körs manuellt.
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# run `setup:static-content:deploy` distributions_version.txt issue
+# kör `setup:static-content:deploy` distribuerad_version.txt-problem
 
-Den här artikeln innehåller en korrigering för `deployed_version.txt` är inte skrivbart fel när `setup:static-content:deploy` manuellt.
+Den här artikeln innehåller en korrigering för `deployed_version.txt` som inte är skrivbart när kommandot `setup:static-content:deploy` körs manuellt.
 
 ## Problem
 
-Om du följer Adobe Commerce rekommendationer för molninfrastruktur ska du använda [Konfigurationshantering](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) (och flytta genereringen av statiskt material till byggfasen för att minska driftsättningen av webbplatsen) kan följande fel uppstå när du kör `setup:static-content:deploy` manuellt:
+Om du följer Adobe Commerce rekommendationer för molninfrastruktur för att använda [Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) (och flyttar genereringen av statiska resurser till byggfasen för att minska webbplatsens driftstopp under distributionen) kan du råka ut för följande fel när du kör kommandot `setup:static-content:deploy` manuellt:
 
 ```
 {{cloud-project-id}}_stg@i:~$ php bin/magento setup:static-content:deploy
@@ -36,7 +36,7 @@ Vi rekommenderar starkt att du inte kör statiskt innehåll manuellt eftersom al
 
 ## Lösning
 
-Om du fortfarande vill köra statisk innehållsdistribution tar du bort symboler i `pub/static` och kör `setup:static-content:deploy` kommando igen:
+Om du fortfarande vill köra en statisk innehållsdistribution tar du bort symboler i katalogen `pub/static` och kör kommandot `setup:static-content:deploy` igen:
 
 ```
 find pub/static/ -maxdepth 1 -type l -delete

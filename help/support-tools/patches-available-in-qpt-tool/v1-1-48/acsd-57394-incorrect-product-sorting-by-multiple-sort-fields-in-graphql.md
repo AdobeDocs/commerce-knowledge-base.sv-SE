@@ -1,6 +1,6 @@
 ---
-title: '"ACSD-57394: Felaktig sortering efter flera sorteringsattribut i [!DNL GraphQL]'''
-description: Använd korrigeringsfilen ACSD-57394 för att åtgärda Adobe Commerce-problemet där produkter sorteras felaktigt när flera sorteringsattribut används i [!DNL GraphQL].
+title: 'ACSD-57394: Felaktig produktsortering efter flera sorteringsattribut i  [!DNL GraphQL]'
+description: Använd korrigeringen ACSD-57394 för att åtgärda Adobe Commerce-problemet där produkter sorteras felaktigt när flera sorteringsattribut används i  [!DNL GraphQL].
 feature: GraphQL, Products
 role: Admin, Developer
 exl-id: f2e24daa-43a0-46b2-80b2-4e0ee116b776
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# ACSD-57394: Felaktig produktsortering efter flera sorteringsattribut i [!DNL GraphQL]
+# ACSD-57394: Ogiltig produktsortering efter flera sorteringsattribut i [!DNL GraphQL]
 
-Korrigeringen ACSD-57394 åtgärdar ett problem där produkter sorteras felaktigt när flera sorteringsattribut används i [!DNL GraphQL]. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 är installerat. Korrigerings-ID är ACSD-57394. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.5.0.
+Korrigeringen ACSD-57394 åtgärdar ett problem där produkter sorteras felaktigt när flera sorteringsattribut används i [!DNL GraphQL]. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 har installerats. Korrigerings-ID är ACSD-57394. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.5.0.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.6-p3
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.4 - 2.4.6-p4
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -37,7 +37,7 @@ Produkter sorteras felaktigt när flera sorteringsattribut används i [!DNL Grap
 
 1. Skapa några produkter med olika priser och namn.
 1. Skapa en kategori och tilldela den skapade produkten till den.
-1. Skicka en [!DNL GraphQL] produktfråga för den skapade kategorin med några få *sortera* attribut. Exempel:
+1. Skicka en [!DNL GraphQL]-produktfråga för den skapade kategorin med några *sort*-attribut. Exempel:
 
    ```
    {
@@ -78,7 +78,7 @@ Produkter sorteras felaktigt när flera sorteringsattribut används i [!DNL Grap
     }
    ```
 
-1. Kontrollera svaret när du har skapat *sortera* attribut.
+1. Kontrollera svaret när du har skapat *sort*-attribut.
 
 <u>Förväntade resultat</u>:
 
@@ -92,15 +92,15 @@ Produkterna returneras inte i rätt ordning. Det går inte att sortera produkter
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.
 

@@ -15,4 +15,4 @@ ht-degree: 0%
 
 Det här felsökningsdiagrammet från Adobe Commerce:s webbplats kan användas för att identifiera och åtgärda orsaker till att en webbplats inte fungerar.
 
-![felsökningsbild för webbplatsens nedladdning](assets/updated_site_down_1.jpeg)
+![felsökningsbilden för felsökningsdiagram](assets/updated_site_down_1.jpeg)

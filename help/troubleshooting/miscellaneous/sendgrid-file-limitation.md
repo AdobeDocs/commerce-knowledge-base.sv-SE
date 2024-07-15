@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL SendGrid] filbegränsning för Adobe Commerce Cloud'
-description: I den här artikeln beskrivs  [!DNL SendGrid] begränsningar för Adobe Commerce vad gäller molninfrastruktur.
+title: Filbegränsning [!DNL SendGrid] för Adobe Commerce Cloud
+description: I den här artikeln finns en tillfällig lösning på begränsningen  [!DNL SendGrid] för Adobe Commerce i molninfrastrukturen.
 feature: Deploy, Marketing Tools
 role: Developer, Admin
 exl-id: 48629f48-8100-4128-9211-53d947aecd49
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# [!DNL SendGrid] begränsning för Adobe Commerce Cloud
+# [!DNL SendGrid]-begränsning för Adobe Commerce Cloud
 
-Den här artikeln innehåller tillfälliga lösningar för [!DNL SendGrid] begränsningar för Adobe Commerce i molninfrastrukturen.
+I den här artikeln beskrivs några tillfälliga lösningar för begränsningen [!DNL SendGrid] för Adobe Commerce i molninfrastrukturen.
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce om molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 
 ## Problem
@@ -47,12 +47,12 @@ Mellanlagring2:
 
 ## Orsak
 
-[!DNL SendGrid] har en systembegränsning på 30 MB för e-post. Vi rekommenderar att du inte använder bilagor som överstiger 10 MB. Se [Skickar bifogade filer](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) i dokumentationen för SendGrid om du vill ha mer information.
+[!DNL SendGrid] har en systembegränsning på 30 MB för e-post. Vi rekommenderar att du inte använder bilagor som överstiger 10 MB. Mer information finns i [Skicka bifogade filer](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) i dokumentationen för SendGrid.
 
 ## Tillfällig lösning
 
 * Använd inte bifogade filer som är större än 6 MB eller 10 MB.
-* Överväg att använda en SMTP-fjärrserver på din Adobe Commerce-instans. Om du vill se steg går du till [Konfigurera e-postkommunikation](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) i vår Admin Systems Guide.
+* Överväg att använda en SMTP-fjärrserver på din Adobe Commerce-instans. Anvisningar finns i [Konfigurera e-postkommunikation](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) i handboken för Admin Systems.
 * Konfigurera om servern så att filer kan sparas i modulen och bifoga sedan länken till filerna i e-postmeddelandena.
 
 ## Relaterad läsning

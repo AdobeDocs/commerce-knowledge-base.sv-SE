@@ -21,8 +21,9 @@ Om du kör Adobe Commerce-processer samtidigt kan det uppstå problem när insta
 
 ## Orsak
 
-Installation-fails-cannot-create-install.log Kontrollera inställningen för `open_basedir` in `php.ini`. Installationsguiden använder [sys\_get\_temp\_dir ( void )](https://php.net/manual/en/function.sys-get-temp-dir.php) PHP-anrop för att hämta värdet för den tillfälliga katalogen. If [open\_basedier](http://php.net/manual/en/ini.core.php#ini.open-basedir) är inställt på att neka anslutningar till en katalog som anges av `sys_get_temp_dir`, misslyckas installationen.
-Granska inställningarna för `open_basedir` in `php.ini`. Installationsguiden använder [sys\_get\_temp\_dir ( void )](https://php.net/manual/en/function.sys-get-temp-dir.php) PHP-anrop för att hämta värdet för den tillfälliga katalogen. If [open\_basedier](https://php.net/manual/en/ini.core.php#ini.open-basedir) är inställt på att neka anslutningar till en katalog som anges av `sys_get_temp_dir`, misslyckas installationen.
+Installation-fails-cannot-create-install.log
+Granska din inställning för `open_basedir` i `php.ini`. Installationsguiden använder PHP-anropet [sys\_get\_temp\_dir ( void )](https://php.net/manual/en/function.sys-get-temp-dir.php) för att hämta värdet för den tillfälliga katalogen. Om [open\_basedir](http://php.net/manual/en/ini.core.php#ini.open-basedir) är inställd på att neka anslutningar till en katalog som anges av `sys_get_temp_dir` misslyckas installationen.
+Granska din inställning för `open_basedir` i `php.ini`. Installationsguiden använder PHP-anropet [sys\_get\_temp\_dir ( void )](https://php.net/manual/en/function.sys-get-temp-dir.php) för att hämta värdet för den tillfälliga katalogen. Om [open\_basedir](https://php.net/manual/en/ini.core.php#ini.open-basedir) är inställd på att neka anslutningar till en katalog som anges av `sys_get_temp_dir` misslyckas installationen.
 
 
 ## Lösning
@@ -33,8 +34,8 @@ Om du är osäker på hur du ska ändra det här värdet gör du så här:
 
 1. Om du inte redan har gjort det skapar du [phpinfo.php](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo).
 1. Ange följande URL i webbläsarens adress- eller platsfält: `https://<your web server IP or hostname>/<path to docroot>/phpinfo.php`
-1. Sök efter platsen för `php.ini`.     `php.ini` anges vanligtvis som **Inläst konfigurationsfil** i de resultat som visas.
-1. Öppna som en användare med rotbehörighet `php.ini` i en textredigerare.
+1. Leta efter platsen för `php.ini`.     `php.ini` anges vanligtvis som **Inläst konfigurationsfil** i det resultat som visas.
+1. Som användare med rotbehörighet öppnar du `php.ini` i en textredigerare.
 1. Leta reda på värdet för `open_basedir` och ändra det.
 1. Spara ändringarna i `php.ini`.
 1. Starta om webbservern.

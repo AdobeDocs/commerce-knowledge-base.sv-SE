@@ -17,33 +17,33 @@ I den här artikeln listas några vanliga snabba PHP Fatal Error-exempel som du 
 
 ## Exempel
 
-*&#39;Allvarligt PHP-fel: Den maximala körningstiden på 60 sekunder har överskridits i...&#39;*
+Allvarligt fel i PHP för *: Maximal körningstid på 60 sekunder har överskridits i...*
 
 ## Lösning
 
-Du kan uppdatera den maximala körningstiden genom att ange en anpassad `max_execution_time` på din `php.ini` och omdistribuera.
+Du kan uppdatera den maximala körningstiden genom att ange ett anpassat `max_execution_time`-värde i `php.ini`-filen och omdistribuera den.
 
 Exempel:
 
 `max_execution_time = 120`
 
-Läs [Anpassa inställningar för php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) artikel.
+Läs artikeln [Anpassa inställningar för php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html).
 
 ## Exempel
 
-*&quot;Allvarligt PHP-fel: Tillåten minnesstorlek på 792723456 byte har uttömts&quot;* (Det är bara en exempelbytestorlek.)
+Allvarligt fel i PHP för *: Tillåten minnesstorlek på 792723456 byte är slut* (det är bara en exempelbytestorlek.)
 
 ## Lösning
 
-Anpassa `php.ini` inställningar. Läs detta [Anpassa inställningar för php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) artikel.
+Anpassa dina `php.ini`-inställningar. Läs den här [Anpassa php.ini-inställningsartikeln](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html).
 
 ## Exempel
 
-*&#39;PHP-varning: Okänd: det gick inte att öppna strömmen: Det finns ingen sådan fil eller katalog&#39;*
+PHP-varning för *: Okänd: det gick inte att öppna dataströmmen: Det finns ingen sådan fil eller katalog*
 
 ## Lösning
 
-Se till att du inte tar bort Windows-formatets ändar i dialogrutan `php.ini` -fil. I Windows avslutas radslut med en kombination av vagnretur (ASCII 0x0d eller \r) och en radmatning (\n), som även kallas CR/LF.
+Se till att du inte tar bort Windows-formatets slut i filen `php.ini`. I Windows avslutas radslut med en kombination av vagnretur (ASCII 0x0d eller \r) och en radmatning (\n), som även kallas CR/LF.
 
 ## Exempel
 
@@ -55,17 +55,17 @@ MySQL-miljön har slut på diskutrymme. Ange mer diskutrymme för MySQL-miljön.
 
 ## Exempel
 
-*Allvarligt PHP-fel: Ohanterat TypeError: Returvärdet för Magento&#39;*
+Allvarligt fel i PHP för *: Ohanterad TypeError: Returvärdet för Magento*
 
 ## Lösning
 
-Kontrollera `<root>/tmp` eftersom katalogen förmodligen är full. Om den är full anger du mer utrymme i katalogen. Detta kan innebära att du helt enkelt flyttar filer till en annan katalog eller tar bort dem.
+Kontrollera katalogen `<root>/tmp` eftersom den förmodligen är full. Om den är full anger du mer utrymme i katalogen. Detta kan innebära att du helt enkelt flyttar filer till en annan katalog eller tar bort dem.
 
 ## Relaterad läsning
 
 I vår utvecklardokumentation:
 
-* [Fel i PHP-inställningar](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html)
+* [PHP-inställningsfel](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html)
 * [Nödvändiga PHP-inställningar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html)
 * [Redis-verifiering](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify)
 * [Konfigurera Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)

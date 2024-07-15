@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Vertex Address Cleansing: olika adresser tillåts inte
 
-Den här artikeln handlar om lösningen på problemet där användaren försöker ange en **olika** fakturerings- och leveransadress, med vertex-adressvalidering aktiverad, kan användaren inte ange den i butiken.
+I den här artikeln beskrivs lösningen på problemet där användaren inte kan ange en fakturerings- eller leveransadress som är **annorlunda** när Vertex-adressverifiering är aktiverat.
 
 ## Berörda produkter och versioner
 
@@ -24,14 +24,14 @@ Den här artikeln handlar om lösningen på problemet där användaren försöke
 <u>Steg som ska återskapas</u>:
 
 1. Gå till Admin > **Lager** > **Konfiguration** > **Försäljning** > **Adressrensning**.
-1. Välj *Aktiverad* från **Använd vertex Address Cleansing** nedrullningsbara menyer och **Spara konfiguration**.
+1. Välj *Aktiverad* i listrutan **Använd vertex Address Cleansing** och **Save Config**.
 1. Gå till fronten som gäst och lägg till en produkt i kundvagnen.
-1. Klicka på ikonen Cart och **Gå till kassan**.
+1. Klicka på kundvagnsikonen och **Fortsätt till kassan**.
 1. Fyll i adressfälten.
-1. Markera önskat **Leveranssätt** och klicka **Nästa**.
-1. Klicka på **Nästa** igen.
-1. Avmarkera **Min fakturerings- och leveransadress** **är samma** och ange en ny faktureringsadress (som inte är Adress).
-1. Klicka på **Uppdatera** knapp och sedan klicka **Uppdatera adress**.
+1. Välj önskad **leveransmetod** och klicka på **Nästa**.
+1. Klicka på knappen **Nästa** igen.
+1. Avmarkera **Min fakturerings- och leveransadress** **är densamma** och ange en ny faktureringsadress (som inte är Adress).
+1. Klicka på knappen **Uppdatera** och sedan på **Uppdatera adress**.
 
 <u>Förväntade resultat</u>:
 

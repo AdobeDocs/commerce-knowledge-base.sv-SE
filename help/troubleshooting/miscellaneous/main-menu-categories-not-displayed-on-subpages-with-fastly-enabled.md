@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Huvudmeny (kategorier) visas inte på undersidor med snabbaktiverad
 
-I den här artikeln finns en fix för när huvudmenyn (eller [Navigeringsmeny för övre kategori](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) i vår användarhandbok) inte visas i butiken för undersidor (till exempel *blogg/sida*) när Fastly eller Varnish är aktiverat.
+I den här artikeln finns en korrigering för när huvudmenyn (eller menyn [Övre kategorinavigering](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) i användarhandboken) inte visas på butiken för undersidor (till exempel *blogg/sida*) när Snabbt eller Slutför är aktiverat.
 
-**Orsak:** det ej tillåtna `/` tecken (snedstreck) i *URL-nyckel* sidans parameter (Inställningar för sökmotoroptimering). Tecknet läggs vanligtvis till när *URL-sökväg* (med hela sidplatsen) anges av misstag i stället för *URL-nyckel*: till exempel *blogg/page\_name* i stället för bara *page\_name*.
+**Orsak:** det otillåtna `/`-tecknet (snedstreck) i parametern *URL-nyckel* på sidan (inställningar för sökmotoroptimering). Tecknet läggs vanligtvis till när *URL-sökvägen* (med hela sidplatsen) av misstag anges i stället för *URL-nyckeln*: till exempel *blog/page\_name* i stället för bara *page\_name*.
 
-**Lösning:** ta bort `/` tecken (snedstreck); för *URL-nyckel* anger du bara sidnamnet.
+**Lösning:** ta bort tecknet `/` (snedstreck); för parametern *URL-nyckel* anger du bara sidnamnet.
 
 ## Berörda versioner
 
@@ -27,35 +27,35 @@ I den här artikeln finns en fix för när huvudmenyn (eller [Navigeringsmeny f�
 
 ## Problem
 
-Huvudmenyn (kallas även [Navigeringsmeny för övre kategori](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) i vår användarhandbok) visas inte i butiken för undersidor när snabbast eller andra lack-baserade tjänster är aktiverade.
+Huvudmenyn (kallas även [Övre navigeringsmeny för kategori](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) i användarhandboken) visas inte i butiken för undersidor när Fastly eller andra Varnish-baserade tjänster är aktiverade.
 
 ## Orsak
 
-Problemet orsakas av det otillåtna `/` tecken (snedstreck), lägga till i *URL-nyckel* parameter (inställningar för sökmotoroptimering).
+Problemet orsakas av det otillåtna `/`-tecknet (snedstreck) som läggs till i parametern *URL-nyckel* (inställningar för sökmotoroptimering).
 
-Tecknet läggs vanligtvis till när *URL-sökväg* (med hela sidplatsen, inklusive den överordnade resursen/katalogen för sidan) anges av misstag i stället för *URL-nyckel*: till exempel *blogg/page\_name* i stället för bara *page\_name*.
+Tecknet läggs vanligtvis till när *URL-sökvägen* (med hela sidplatsen, inklusive sidans överordnade resurs/katalog) felaktigt anges i stället för *URL-nyckeln*: till exempel *blogg/sida\_name* i stället för bara *sida\_name*.
 
 ![URL-nyckelparameter för SEO-inställningar](assets/seo_url_key.png)
 
 ## Lösning
 
-Ta bort `/` tecken (snedstreck) från *URL-nyckel* parameter för alla sidor i din butik.
+Ta bort tecknet `/` (snedstreck) från parametern *URL-nyckel* för alla sidor i din butik.
 
 Använd med andra ord *URL-nyckel* i stället för *URL-sökväg*: ange bara sidnamnet utan överordnad resurs/katalog.
 
 ### Recommendations i sidhierarki och SEO
 
-Om du vill ange sidhierarkin använder du **Hierarki** på menyn Redigera sida.
+Om du vill ange sidhierarkin använder du avsnittet **Hierarki** på menyn Redigera sida.
 
-![Inställningar för hierarki](assets/hierarchy_hr.png)
+![Hierarkiinställningar](assets/hierarchy_hr.png)
 
-Du kan också använda **Innehåll** > **Element** > **Hierarki** -för mer komplexa hierarkilösningar.
+Du kan också använda menyn **Innehåll** > **Element** > **Hierarki** för mer komplexa hierarkilösningar.
 
-För SEO-syften på produktsidor använder du URL-omskrivningar (**Marknadsföring** > **SEO &amp; Search** > **URL-omskrivning**).
+Använd URL-omskrivningar för SEO-syften på produktsidor (**Marknadsföring** > **SEO &amp; sökning** > **URL-omskrivningar**).
 
 ## Mer information i vår användarhandbok
 
-The *URL-nyckel* parameter för SEO:
+Parametern *URL-nyckel* för SEO:
 
 * [Sökmotoroptimering](/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html)
 * [Lägga till en ny sida](/docs/commerce-admin/content-design/elements/pages/page-add.html)

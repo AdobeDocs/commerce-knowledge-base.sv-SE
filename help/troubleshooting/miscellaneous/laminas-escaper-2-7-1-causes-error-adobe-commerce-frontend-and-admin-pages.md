@@ -33,7 +33,7 @@ Inget fel.
 
 <u>Faktiskt resultat</u>:
 
-Efter uppdatering till laminas/laminas-escape:2.7.1 visas ett felmeddelande på en sida för produktredigering (eller produkthantering): *TypeError: rawurlencode() förväntar att parameter 1 ska vara en sträng, int anges i /var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246*
+Efter uppdatering till laminas/laminas-escape:2.7.1 visas ett felmeddelande på en produktredigeringssida (eller produkthanteringssida): *TypeError: rawurlencode() förväntar att parameter 1 ska vara en sträng, int anges i /var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246*
 Det här felet inträffar på förgrunds- och administratörssidorna och gör att sidans innehåll förvrängs.
 
 ## Orsak
@@ -46,4 +46,4 @@ Kör `composer require laminas/laminas-escaper:2.7.0` i rotkatalogen för varje 
 
 ## Relaterad läsning
 
-laminas Documentation: [laminas-escape](https://docs.laminas.dev/laminas-escaper/)
+laminas-dokumentation: [laminas-escape](https://docs.laminas.dev/laminas-escaper/)

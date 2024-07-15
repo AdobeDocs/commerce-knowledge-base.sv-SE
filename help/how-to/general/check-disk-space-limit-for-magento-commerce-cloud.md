@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Så här ser du hur mycket utrymme du har för varje Adobe Commerce i molninfrastrukturmiljö:
 
-1. Logga in på [Cloud Console](https://console.adobecommerce.com).
-1. På **[!UICONTROL All projects]** väljer du relevant projekt. Se Tillgänglighet för diskutrymme i det nedre hörnet.
+1. Logga in på [molnkonsolen](https://console.adobecommerce.com).
+1. Välj det relevanta projektet på kontrollpanelen **[!UICONTROL All projects]**. Se Tillgänglighet för diskutrymme i det nedre hörnet.
 
    ![project_space.png](/help/how-to/general/assets/project_space.png)
 
 ## Relaterad läsning
 
-[Hantera diskutrymme](https://devdocs.magento.com/cloud/project/manage-disk-space.html) i vår dokumentation för utvecklare.
+[Hantera diskutrymme](https://devdocs.magento.com/cloud/project/manage-disk-space.html) i utvecklardokumentationen.

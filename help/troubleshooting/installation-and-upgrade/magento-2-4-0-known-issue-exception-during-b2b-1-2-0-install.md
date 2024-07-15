@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0: undantag under installationen av B2B 1.2.0
 
-I den här artikeln finns en korrigering av ett känt Adobe Commerce-problem för ett undantag som inträffar under `setup:upgrade` vid installation av B2B 1.2.0.
+I den här artikeln finns en korrigering för ett känt Adobe Commerce-problem för ett undantag som inträffar under `setup:upgrade` vid installation av B2B 1.2.0.
 
 ## Berörda produkter och versioner
 
@@ -39,7 +39,7 @@ Installation av B2B 1.2.0.
 
 <u>Faktiskt resultat</u>
 
-När `setup:upgrade` kör för att installera B2B 1.2.0 visas det här felet på `PurchaseOrder` modul:
+När `setup:upgrade` kör installationen av B2B 1.2.0 visas det här felet i modulen `PurchaseOrder`:
 
 ```php
 Module 'Magento_PurchaseOrder':
@@ -54,7 +54,7 @@ Använd den patch som finns i den här artikeln.
 
 ## Lappa
 
-Korrigeringen är kopplad till den här artikeln och kan hämtas i båda `.composer` och `.git` format (när du har packat upp filerna).
+Korrigeringen är kopplad till den här artikeln och kan hämtas i både `.composer`- och `.git`-format (när du har packat upp filerna).
 
 Om du vill hämta den bläddrar du nedåt till slutet av artikeln och klickar på filnamnet, eller klickar på någon av följande länkar:
 
@@ -63,14 +63,14 @@ Om du vill hämta den bläddrar du nedåt till slutet av artikeln och klickar p�
 
 ## Så här lägger du på en patch
 
-<u>Kompositkorrigering </u>
+<u>Kompositionsruta </u>
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för korrigeringsanvisningar för dispositionsverktyget.
+Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för mer information om kompositkorrigering.
 
-<u>Git patch </u>
+<u>Git-korrigering </u>
 
-* Se [Tillämpa patchar](https://devdocs.magento.com/cloud/project/project-patch.html) i utvecklardokumentationen för Git patch-instruktioner för Adobe Commerce om molninfrastruktur.
-* Se [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) i utvecklardokumentationen för Git patch-instruktioner för Adobe Commerce.
+* Se [Tillämpa korrigeringsfiler](https://devdocs.magento.com/cloud/project/project-patch.html) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce i molninfrastrukturen.
+* Se [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce.
 
 ## Relaterad läsning
 

@@ -16,7 +16,7 @@ I den här artikeln finns snabba svar på frågor om hur du får SSL-certifikat 
 
 ## Vilket SSL/TLS-certifikat tillhandahåller Adobe?
 
-Adobe tillhandahåller en domänverifierad [Låt oss kryptera SSL-/TLS-certifikat](https://letsencrypt.org/) för säker HTTPS-trafik från [!DNL Fastly]. Adobe tillhandahåller ett certifikat för varje Adobe Commerce för molninfrastruktur Pro-planens arkitektur, mellanlagring och Adobe Commerce för arkitekturmiljön för Starter-planer i molninfrastrukturen för att skydda alla domäner i den miljön.
+Adobe tillhandahåller ett domänverifierat [Låt oss kryptera SSL-/TLS-certifikat](https://letsencrypt.org/) för att tillhandahålla säker HTTPS-trafik från [!DNL Fastly]. Adobe tillhandahåller ett certifikat för varje Adobe Commerce för molninfrastruktur Pro-planens arkitektur, mellanlagring och Adobe Commerce för arkitekturmiljön för Starter-planer i molninfrastrukturen för att skydda alla domäner i den miljön.
 
 ## Vad omfattar ett certifikat?
 
@@ -26,10 +26,10 @@ För startplanens arkitektur och PaaS-integreringsmiljöer finns det en standard
 
 ## Hur lägger jag till en ny domän för det befintliga certifikatet?
 
-Lägga till domänen i tjänsten i [!DNL Fastly]:
+Så här lägger du till domänen till tjänsten i [!DNL Fastly]:
 
 1. Peka din domän i DNS på prod.magentocloud.map.fastly.net och vänta i upp till 6 timmar.
-1. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) begär att få lägga till den här domänen i Nginx-konfigurationen (om du inte har gjort det tidigare).
+1. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) som begär att få lägga till den här domänen i Nginx-konfigurationen (om du inte har gjort det tidigare).
 
 ## Hur begär jag ett certifikat?
 
@@ -39,18 +39,18 @@ Om du inte har startat någon webbplats ännu kan du ha fått ACME Challenge CNA
 
 Fall 2
 
-Om din webbplats redan är aktiv och/eller du kan peka URL:er som ska användas för din aktiva webbplats direkt, behöver du inte begära en ACME CNAME. När du har lagt till de URL:er som behövs på din Adobe Commerce-webbplats för molninfrastruktur och pekar din DNS på [!DNL Fastly]fungerar HTTP-verifieringen och skapar antingen SSL-certifikatet för första gången eller uppdaterar certifikatet med ytterligare URL:er.
+Om din webbplats redan är aktiv och/eller du kan peka URL:er som ska användas för din aktiva webbplats direkt, behöver du inte begära en ACME CNAME. När du har lagt till URL:er till din Adobe Commerce på molninfrastrukturwebbplats och pekar din DNS på [!DNL Fastly], fungerar HTTP-verifieringen och skapar antingen ditt SSL-certifikat för första gången eller uppdaterar certifikatet med ytterligare URL:er.
 
 ## Kan jag använda mitt eget SSL-/TLS-certifikat?
 
-Du kan ange ett eget SSL-/TLS-certifikat i stället för att använda [Låt oss kryptera certifikatet](https://letsencrypt.org/) tillhandahålls av Adobe.
+Du kan ange ett eget SSL-/TLS-certifikat i stället för att använda [Låt oss kryptera certifikatet](https://letsencrypt.org/) som tillhandahålls av Adobe.
 
 Den här processen kräver dock ytterligare arbete för att kunna konfigurera och underhålla. Du måste först generera en CSR (Certificate Signing Request) för webbplatsens domännamn (eller vanliga namn) och ange den till din SSL-leverantör för att kunna tillhandahålla ett SSL-certifikat.
 
-När du har ett SSL-certifikat skickar du en [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) eller arbeta med din CTA för att lägga till anpassade certifikat i dina molnmiljöer.
+När du har SSL-certifikatet skickar du en [Adobe Commerce-supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) eller arbetar med din CTA för att lägga till anpassade värdcertifikat i dina molnmiljöer.
 
 * Om domänerna inte längre används rensas de automatiskt från vårt system och inga ytterligare åtgärder krävs.
-* Om du redan äger ett certifikat kan du överföra det med en SFTP-klient (SSH File Transfer Protocol) till en plats på servern som inte är tillgänglig på webben. [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) meddela dem filens sökväg.
+* Om du redan äger ett certifikat kan du överföra det med en SFTP-klient (SSH File Transfer Protocol) till en plats på servern som inte är tillgänglig på webben och [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) som meddelar filsökvägen.
 
 >[!WARNING]
 >
@@ -63,16 +63,16 @@ Namnet på SSL-certifikatet gäller bara för den primära URL:en, och det är d
 
 ## Vilken domän visas i fältet Gemensamt namn för certifikatet?
 
-Domänen som visas på certifikatet är bara den första domänen som läggs till i TLS-certifikatet, den fyller i **Namn** (**CN**) och webbläsarna visar det här namnet först. The **Alternativt namn på ämne** (**SAN**) innehåller alla DNS-namn för TLS-certifikatet. Det finns inget sätt att ändra eller begära det gemensamma namnet som visas.
+Domänen som visas på certifikatet är bara den första domänen som läggs till i TLS-certifikatet, fyller i fältet **Gemensamt namn** (**CN**) och webbläsarna visar det här namnet först. Fältet **Alternativt ämnesnamn** (**SAN**) innehåller alla DNS-namn för TLS-certifikatet. Det finns inget sätt att ändra eller begära det gemensamma namnet som visas.
 
 ## Kan jag använda TLS-certifikat med jokertecken?
 
-TLS-certifikat med jokertecken kan bara användas med ditt anpassade certifikat och inte med Adobe Commerce Let&#39;s Encrypt-certifikat. Som en del av vår TLS-optimering upphör Adobe stödet för TLS-certifikat med jokertecken. Vi identifierar och kontaktar handlare som använder ett jokertecken med Adobe krypteringscertifikat och som är konfigurerade i [!DNL Fastly] Adobe Commerce. Vi ber att dessa jokertecken ersätts med exakta domäner för att säkerställa TLS-täckning. Om du vill ersätta ett TLS-jokertecken går du till [domänavsnitt](https://devdocs.magento.com/cloud/cdn/configure-fastly-customize-cache.html#manage-domains) i [!DNL Fastly] plugin-program. Här kan du lägga till exakta domäner och ta bort jokertecknet. Observera att DNS måste peka på [!DNL Fastly] för dessa nya domäner att dirigera genom CDN. När domänerna har lagts till och DNS har uppdaterats, matchar [Låt oss kryptera](https://letsencrypt.org/) certifikat kommer att etableras. Om du inte tar bort en domän som pekar på [!DNL Fastly] om du använder ett jokertecken tar Adobe bort det delade certifikatet. Detta kan leda till ett webbplatsutbrott om du inte har konfigurerat URL:ens FQDN och samma URL FQDN konfigurerad i din DNS. Du bör därför bekräfta att de konfigurerade URL-adresserna också har en-till-en-matchning i sina DNS-referenser som pekar på [!DNL Fastly].
+TLS-certifikat med jokertecken kan bara användas med ditt anpassade certifikat och inte med Adobe Commerce Let&#39;s Encrypt-certifikat. Som en del av vår TLS-optimering upphör Adobe stödet för TLS-certifikat med jokertecken. Vi identifierar och kontaktar handlare som använder ett jokertecken med krypteringscertifikat från AdobeLet och som har konfigurerats i konsolen [!DNL Fastly] för Adobe Commerce. Vi ber att dessa jokertecken ersätts med exakta domäner för att säkerställa TLS-täckning. Om du vill ersätta ett TLS-certifikat med jokertecken går du till [domänavsnittet](https://devdocs.magento.com/cloud/cdn/configure-fastly-customize-cache.html#manage-domains) i plugin-programmet [!DNL Fastly]. Här kan du lägga till exakta domäner och ta bort jokertecknet. Observera att DNS måste peka på [!DNL Fastly] för dessa nya domäner för att kunna dirigera via CDN. När domänerna har lagts till och DNS har uppdaterats kommer ett matchande [Låt oss kryptera](https://letsencrypt.org/)-certifikat att etableras. Om du inte tar bort en domän som pekar på [!DNL Fastly] med hjälp av ett jokertecken tar Adobe bort det delade certifikatet. Detta kan leda till ett webbplatsutbrott om du inte har konfigurerat URL:ens FQDN och samma URL FQDN konfigurerad i din DNS. Du bör därför bekräfta att de konfigurerade URL:erna också har en-till-en-matchning i sin DNS som pekar på [!DNL Fastly].
 
 ## Vad ska jag göra om min domän inte längre pekar på Adobe Commerce?
 
-Om din domän inte längre pekar på Adobe Commerce ska du ta bort den från [!DNL Fastly]/Adobe Commerce. Se [!DNL Fastly] [Ta bort en domän](https://docs.fastly.com/en/guides/working-with-domains#deleting-a-domain) om du vill veta mer. Du behöver inte peka din domän mot Adobe Commerce, men du måste kontrollera om det krävs ett TLS-certifikat för den högsta domänen. Om en domän på den högsta nivån krävs måste du uppdatera din DNS så att den pekar på Adobe Commerce. Om det redan pekar på Adobe Commerce ska du uppdatera CAA-posten till att inkludera [lets-encrypt](https://letsencrypt.org/). Om du utför de här stegen visas LE Cert uppdaterad med de sekundära URL:er som certifikatet täcker. &#x200B;
+Om din domän inte längre pekar på Adobe Commerce tar du bort den från [!DNL Fastly]/Adobe Commerce-systemet. Mer information finns i [!DNL Fastly] [Ta bort en domän](https://docs.fastly.com/en/guides/working-with-domains#deleting-a-domain). Du behöver inte peka din domän mot Adobe Commerce, men du måste kontrollera om det krävs ett TLS-certifikat för den högsta domänen. Om en domän på den högsta nivån krävs måste du uppdatera din DNS så att den pekar på Adobe Commerce. Om den redan pekar på Adobe Commerce ska du uppdatera CAA-posten så att den innehåller [lets-encrypt](https://letsencrypt.org/). Om du utför de här stegen visas LE Cert uppdaterad med de sekundära URL:er som certifikatet täcker. &#x200B;
 
 ## Relaterad läsning
 
-[Tillhandahåll SSL-/TLS-certifikat](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates) i vår utvecklardokumentation
+[Tillhandahåller SSL-/TLS-certifikat](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates) i utvecklardokumentationen

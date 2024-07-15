@@ -30,8 +30,8 @@ Vi rekommenderar inte att handlare använder Baler-modulen i en produktionsmilj�
 
 <u>Steg som ska återskapas</u>:
 
-1. Handlaren försöker infoga **SCD\_USE\_BALER** variabeln i byggfasen av `.magento.env.yaml` som aktiverar Baler Javascript-paketeringen.
-1. Handlaren lägger även till beroendet för Baler Composer: `"magento/module-baler": "1.0.0-alpha"` till `require` avsnitt i `composer.json`.
+1. Handlaren försöker infoga variabeln **SCD\_USE\_BALER** i byggfasen av filen `.magento.env.yaml` som aktiverar Baler Javascript-paketeringen.
+1. Handlaren lägger även till beroendet för Baler Composer: `"magento/module-baler": "1.0.0-alpha"` i `require`-avsnittet i `composer.json`.
 
 <u>Förväntat resultat</u>:
 
@@ -39,7 +39,7 @@ Distributionen lyckades.
 
 <u>Faktiskt resultat</u>:
 
-Handlaren ser följande felmeddelande i distributionsloggarna i molnet: `<project home>/var/log/cloud.log`, när det statiska innehållet distribueras:
+Handlaren ser följande felmeddelande i distributionsloggarna i molnet, som är `<project home>/var/log/cloud.log`, på den statiska innehållsdistributionsfasen:
 
 ```
 [2020-08-19 12:06:12] WARNING: [1007] Baler JS bundling cannot be used because of the following issues:
@@ -52,9 +52,9 @@ Modulen Baler är för närvarande i det tidiga alfaversionssteget och installat
 
 ## Lösning
 
-Du kan läsa den befintliga dokumentationen för Baler Alpha på [Github/Magento/Baler/Getting started with the alpha](https://github.com/magento/baler/blob/master/docs/ALPHA.md). Den är dock inte redo för produktion och används på egen risk. Vi rekommenderar istället att du sammanfogar eller paketerar JavaScript-filer (JS) med Adobe Commerce inbyggda paketering (grundläggande paketering) för filoptimering.
+Du kan läsa dokumentationen för Baler Alpha på [Github/Magento/Baler/Getting started with the alpha](https://github.com/magento/baler/blob/master/docs/ALPHA.md). Den är dock inte redo för produktion och används på egen risk. Vi rekommenderar istället att du sammanfogar eller paketerar JavaScript-filer (JS) med Adobe Commerce inbyggda paketering (grundläggande paketering) för filoptimering.
 
-* Du kan aktivera sammanfogning eller paketering i Admin (sammanfogning och paketering kan inte aktiveras samtidigt): **Lager** > **Inställningar** > **Konfiguration** > **Avancerat** > **Utvecklare** > **JavaScript-inställningar**.
-* Du kan även aktivera Adobe Commerce inbyggda paketering (grundläggande paketering) via kommandoraden: `php -f bin/magento config:set dev/js/enable_js_bundling 1`
+* Du kan aktivera sammanslagning eller paketering i administratören (sammanslagning och paketering kan inte aktiveras samtidigt): **Lagrar** > **Inställningar** > **Konfiguration** > **Avancerat** > **Utvecklare** > **JavaScript-inställningar**.
+* Du kan även aktivera Adobe Commerce inbyggda paketering (grundläggande paketering) från kommandoraden: `php -f bin/magento config:set dev/js/enable_js_bundling 1`
 
-Mer information finns i [Optimering av CSS- och Javascript-filer på Adobe Commerce i molninfrastrukturen och på Adobe Commerce lokala](https://support.magento.com/hc/en-us/articles/360044482152).
+Mer information finns i [Optimering av CSS- och Javascript-filer på Adobe Commerce i molninfrastrukturen och Adobe Commerce lokalt](https://support.magento.com/hc/en-us/articles/360044482152).

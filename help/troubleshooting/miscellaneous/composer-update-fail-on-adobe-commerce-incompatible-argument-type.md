@@ -43,7 +43,7 @@ Problemet beror på att Adobe Commerce kärnkod inte är kompatibel med det sena
 
 Problemet kommer att lösas automatiskt när en ny symfoni/konsolversion 4.2.29 släpps (förväntas i augusti 2021).
 
-**Så här åtgärdar du på plats i Adobe Commerce:**
+**Så här korrigerar du på en plats i Adobe Commerce:**
 
 Adobe Commerce lokal 2.4.x
 
@@ -55,12 +55,12 @@ Alla 2.3.5+ Adobe Commerce lokala handlare ska köra följande CLI-kommando:
 
 ``composer require symfony/console:"~4.1.0||~4.2.0||~4.3.0||>=4.4.0 <4.4.27 || ~4.4.29"``
 
-**Så här åtgärdar du Adobe Commerce i molninfrastrukturen:**
+**Så här korrigerar du Adobe Commerce i molninfrastrukturen:**
 
-Kör ovanstående kommandon eller uppgradera till den senaste versionen av ECE-verktygen (ece-tools: 2002.1.7), som kommer att vara tillgänglig torsdagen den 29 juli. Om du vill se steg går du till [Cloud för Adobe Commerce > Uppdatera skolverktygets version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) i vår dokumentation för utvecklare.
+Kör ovanstående kommandon eller uppgradera till den senaste versionen av ECE-verktygen (ece-tools: 2002.1.7), som kommer att vara tillgänglig torsdagen den 29 juli. Anvisningar om hur du gör detta finns i [Cloud för Adobe Commerce > Uppdatera versionen för verktygen](https://devdocs.magento.com/cloud/project/ece-tools-update.html) i utvecklardokumentationen.
 
 Den fullständiga korrigeringen släpps i Adobe Commerce (alla distributionsmetoder) 2.4.4.
 
 ## Relaterad läsning
 
-* Github: [2021-07-27 Kompositionsuppdatering Inkompatibel argumenttyp: Obligatorisk typ: int. Faktisk typ: sträng](https://github.com/magento/magento2/issues/33595)
+* Github: [2021-07-27 Dispositionsuppdatering Inkompatibel argumenttyp: Obligatorisk typ: int. Faktisk typ: sträng ](https://github.com/magento/magento2/issues/33595)

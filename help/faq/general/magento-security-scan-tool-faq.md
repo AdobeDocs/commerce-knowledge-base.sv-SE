@@ -40,14 +40,14 @@ Verktyget för säkerhetsgenomsökning är kostnadsfritt. Handlarna måste godk�
 
 ## Hur fungerar verktyget för säkerhetsgenomsökning? {#how-does-the-magento-security-scan-tool-work}
 
-Verktyget för säkerhetsgenomsökning är webbaserat och nås från handlarens Adobe Commerce-konto online ([account.magento.com](https://account.magento.com/)). Säkerhetssökningen utförs över både HTTP och HTTPS. Den söker efter kända säkerhetsproblem och identifierar saknade Adobe Commerce-patchar och uppdateringar.
+Verktyget för säkerhetsgenomsökning är webbaserat och nås från handlarens Adobe Commerce-onlinekonto ([account.magento.com](https://account.magento.com/)). Säkerhetssökningen utförs över både HTTP och HTTPS. Den söker efter kända säkerhetsproblem och identifierar saknade Adobe Commerce-patchar och uppdateringar.
 
 ## Hur registrerar jag mig för att använda verktyget för säkerhetsgenomsökning? {#how-do-i-sign-up-to-use-the-magento-security-scan-tool}
 
-Handlare kan registrera sig för att använda verktyget för säkerhetsgenomsökning för att skanna sina webbutiker från sitt Adobe Commerce-konto ([account.magento.com](https://account.magento.com)). Följ länken för att registrera dig för verktyget för säkerhetsgenomsökning [här](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
+Handlare kan registrera sig för att använda verktyget för säkerhetsgenomsökning för att skanna sina webbutiker från sina Adobe Commerce-konton ([account.magento.com](https://account.magento.com)). Följ länken för att registrera dig för säkerhetssökningsverktyget [här](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
 
 ## Vad gör jag om jag stöter på ett falskt positivt resultat i skanningsrapporten? {#what-do-i-do-if-i-come-across-a-false-positive-in-the-scan-report}
 
 Vi rekommenderar våra handlare att undersöka alla misslyckade sökningar och vidta lämpliga åtgärder för att lösa sådana problem. Om handlarna efter en utredning får ett inskannat resultat som verkar vara falskt positivt ber vi handlaren att meddela Adobe om att vidta lämpliga åtgärder.
 
-Om du vill skicka in en falskt positiv rapport anger du en biljett med Adobe Commerce handlarsupport så att vi kan utvärdera det falska positiva meddelandet, göra nödvändiga ändringar och/eller lämna rekommendationer för att undvika att få sådana meddelanden i framtiden. Merchants kan också rapportera en falsk positiv bild genom att skicka e-post till oss på [securityscan@magento.com](mailto:securityscan@magento.com).
+Om du vill skicka in en falskt positiv rapport anger du en biljett med Adobe Commerce handlarsupport så att vi kan utvärdera det falska positiva meddelandet, göra nödvändiga ändringar och/eller lämna rekommendationer för att undvika att få sådana meddelanden i framtiden. Merchants kan även rapportera ett falskt positivt resultat genom att skicka ett e-postmeddelande till oss på [securityscan@magento.com](mailto:securityscan@magento.com).

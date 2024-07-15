@@ -27,10 +27,10 @@ När du först installerat eller uppgraderat för att ha Inventory management i 
 
 ## Orsak
 
-När du först installerar/uppgraderar tilldelas alla produkter standardkällan och alla kvantiteter kopplas till den källan. Standardkällan tilldelas standardStock, med webbplatsen Standard associerad.
+När du först installerar/uppgraderar tilldelas alla produkter standardkällan och alla kvantiteter kopplas till den källan. Standardwebbplatsen för Source tilldelas standardversionen av Stock, där standardwebbplatsen är associerad.
 
 ## Lösning
 
 Om du har fler än en webbplats måste du lägga till dessa webbplatser som Sales Channeler i standardlagret eller andra anpassade resurser.
 
-Se [Stock-delen av wiki-/användarhandboken](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) i vår användarhandbok för mer information om hur du gör detta.
+Se avsnittet [Stock i wiki-/användarhandboken](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) i vår användarhandbok för mer information om hur du gör detta.

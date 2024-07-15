@@ -41,8 +41,8 @@ PHP 8.1 har redan stöd för JSON och kräver inte att tillägget installeras se
 
 ## Lösning
 
-Ta bort JSON från **Körning** > **Tillägg** avsnitt i `.magento.app.yaml` och omdistribuera.
+Ta bort JSON från avsnittet **Runtime** > **Extensions** i `.magento.app.yaml` och distribuera om.
 
 ## Relaterad läsning
 
-[PHP-program](https://devdocs.magento.com/cloud/project/magento-app-php-application.html) i vår dokumentation för utvecklare.
+[PHP-programmet](https://devdocs.magento.com/cloud/project/magento-app-php-application.html) i utvecklardokumentationen.

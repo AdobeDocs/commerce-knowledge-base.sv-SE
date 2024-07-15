@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-30599: customer_is_gäst är felaktigt inställd
 
-MDVA-30599-korrigeringen åtgärdar ett problem där gästcitat som skapats med API felaktigt markeras som citattecken för inloggade kunder. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6 är installerat. Problemet har åtgärdats i Adobe Commerce 2.4.2.
+MDVA-30599-korrigeringen åtgärdar ett problem där gästcitat som skapats med API felaktigt markeras som citattecken för inloggade kunder. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6 är installerat. Problemet har åtgärdats i Adobe Commerce 2.4.2.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 Adobe Commerce om molninfrastruktur 2.3.5-p2
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 Adobe Commerce (alla distributionsmetoder) 2.3.4 - 2.4.0
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -37,7 +37,7 @@ Gästcitattecken som skapats med API markeras felaktigt som citattecken för inl
 
 1. Lägg en produkt i kundvagnen som gästanvändare i Adobe Commerce Store.
 1. I din Adobe Commerce DB hittar du motsvarande `quote_id_mask`.
-1. Skicka en API-begäran till `quoteGuestCartRepositoryV1` Cart Repository-gränssnitt för gästvagnar. Det kan göras via Swagger- eller cURL-begäran.
+1. Skicka en API-begäran till `quoteGuestCartRepositoryV1` Cart Repository-gränssnittet för gästvagnar. Det kan göras via Swagger- eller cURL-begäran.
 
 ```curl
 curl -X GET "http://web2-73.sparta.corp.magento.com/dev/support/ee24dev/rest/all/V1/guest-carts/ToOwPtSBxkorkCLq6ztwupPd99y8zhky" -H "accept: application/json"
@@ -55,12 +55,12 @@ Som svar får du `"customer_is_guest": false`
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Ytterligare steg krävs efter installationen av korrigeringsfilen
 
-Korrigeringen gäller för alla nya gästvagnar. Om du behöver korrigera befintliga gästvagnar anger du `quote.customer_is_guest = 1` för de register där `quote.customer_id` är NULL. Du kan köra en fråga som ser ut ungefär så här:
+Korrigeringen gäller för alla nya gästvagnar. Om du behöver åtgärda befintliga gästvagnar anger du `quote.customer_is_guest = 1` för de poster där `quote.customer_id` är NULL. Du kan köra en fråga som ser ut ungefär så här:
 
 ```sql
 UPDATE quote SET customer_is_guest = 1 WHERE customer_id IS NULL;
@@ -74,7 +74,7 @@ UPDATE quote SET customer_is_guest = 1 WHERE customer_id IS NULL;
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [Patchar tillgängliga i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår dokumentation för utvecklare.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [Patchar i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår utvecklardokumentation.

@@ -25,11 +25,11 @@ Om du använder SSH för varje nod och ansluter till den lokala MySQL-instansen 
 
 ![auto_increment](assets/auto_increment_id.png)
 
-Om den valda huvudnoden är nod 1 där `auto_increment_offset = 1`skulle ID:t ökas med 1. Om en ny huvudnod markeras vid ett senare tillfälle, t.ex. nod 3 där `auto_increment_offset = 3`, ökas det med 3 i stället.
+Om den valda huvudsidan är nod 1 där `auto_increment_offset = 1`, ökas ID:t med 1. Om en ny huvudnod markeras vid ett senare tillfälle, t.ex. nod 3 där `auto_increment_offset = 3`, ökas den med 3 i stället.
 
 ## Användbara länkar
 
 Läs mer i vår utvecklardokumentation:
 
-* [Cloud for Adobe Commerce > Pro-arkitektur > Säkerhetskopiering och katastrofåterställning](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
-* [Cloud for Adobe Commerce > Installationskrav: databas](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#database)
+* [Cloud för Adobe Commerce > Pro-arkitektur > Säkerhetskopiering och katastrofåterställning](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
+* [Cloud för Adobe Commerce > Installationskrav: databas](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#database)

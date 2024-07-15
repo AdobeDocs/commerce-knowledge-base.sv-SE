@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Ange cache-TTL för bilder och annat statiskt innehåll
 
-Läs mer i [Ange cache för statiska filer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html) i vår användarhandbok.
+Se [Ange cache för statiska filer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html) i användarhandboken.

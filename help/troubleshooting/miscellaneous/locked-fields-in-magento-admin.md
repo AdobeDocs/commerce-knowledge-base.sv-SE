@@ -22,13 +22,13 @@ Den här artikeln innehåller en lösning för när du inte kan ändra fält i C
 
 ## Problem
 
-När du har sparat en ändring i konfigurationen till `app/etc/env.php` eller `app/etc/config.php`kan du inte ändra inställningen i Admin.
+När du har sparat en ändring i konfigurationen till `app/etc/env.php` eller `app/etc/config.php` kan du inte ändra inställningen i Admin.
 
 <u>Steg som ska återskapas</u>:
 
 Obs! Detta är ett exempel - problemet kan påverka alla konfigurationer som har sparats.
 
-1. Handlaren sparar sina autentiseringsuppgifter för leveransmetoder med följande kommando i terminalen: `./vendor/bin/ece-tools config:dump`. Då sparas inloggningsuppgifterna i `app/etc/env.php` -fil.
+1. Handlaren sparar sina autentiseringsuppgifter för leveransmetoder med följande kommando i terminalen: `./vendor/bin/ece-tools config:dump`. Detta sparar autentiseringsuppgifterna i filen `app/etc/env.php`.
 1. Handlaren försöker sedan ändra inloggningsuppgifterna senare.
 
 <u>Förväntade resultat</u>:
@@ -41,17 +41,17 @@ Fälten i Admin är låsta eller så kan värdena ändras men de sparas inte i A
 
 ## Orsak
 
-När konfigurationen sparas i `env.php` eller `config.php`kan du inte ändra inställningen i Admin. Om du vill tillåta redigering av inställningen måste du ta bort konfigurationen från `env.php` eller `config.php`.
+När konfigurationen sparas i `env.php` eller `config.php` kan du inte ändra inställningen i Admin. Om du vill tillåta redigering av inställningen måste du ta bort konfigurationen från `env.php` eller `config.php`.
 
 ## Lösning
 
 Kontrollera att konfigurationen inte har sparats i `app/etc/env.php` eller `app/etc/config.php`. Om den har sparats gör du så här:
 
-* `config.php` - Ta bort inställningen och återdistribuera den.
+* `config.php` - Ta bort inställningen och distribuera den sedan igen.
 * `env.php` - Ändra detta direkt på servern och ta bort inställningen. Kör sedan `bin/magento app:config:import`.
 
 ## Relaterad läsning
 
-* [Exportera konfigurationen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-export.html#sensitive-or-system-specific-settings) i vår dokumentation för utvecklare.
-* [Ange konfigurationsvärden](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-set.html#config-cli-config-set) i vår dokumentation för utvecklare.
+* [Exportera konfigurationen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-export.html#sensitive-or-system-specific-settings) i utvecklardokumentationen.
+* [Ange konfigurationsvärden](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-set.html#config-cli-config-set) i utvecklardokumentationen.
 * [Adobe Commerce i molninfrastruktur: minska driftsättningsdriftsavbrott med Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) i vår kunskapsbas för support.

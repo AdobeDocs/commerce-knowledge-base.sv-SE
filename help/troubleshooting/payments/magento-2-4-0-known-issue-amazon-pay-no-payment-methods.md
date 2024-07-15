@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0: Amazon lönevillkor, inga betalningsmetoder
 
-Den här artikeln innehåller en lösning på ett känt problem i Adobe Commerce 2.4.0 där betalningsmetoder saknas när kunderna använder **Återgå till standardutcheckning** efter att de gjort det möjligt för Amazon att betala.
+Den här artikeln innehåller en lösning på ett känt problem i Adobe Commerce 2.4.0 där betalningsmetoder saknas när kunder använder **Återgå till standardutcheckning**, efter att de aktiverat Amazon-betalning.
 
 ## Berörda produkter och versioner
 
 Adobe Commerce lokalt och Adobe Commerce på molninfrastrukturen v2.3.5.p1 och v2.4.0
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Navigera till butiken.
 1. Lägg alla artiklar i kundvagnen och fortsätt till kassan.
 1. Logga in på ditt Amazon Pay-konto.
 1. Välj en adress och fortsätt till utcheckningen.
-1. Klicka **Återgå till standardutcheckning**.
+1. Klicka på **Återgå till standardutcheckningen**.
 1. Gå till kassan.
 
 <u>Förväntade resultat:</u>

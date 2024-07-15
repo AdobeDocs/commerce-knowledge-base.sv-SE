@@ -15,23 +15,23 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->En ny patch som heter MDVA-33975 åtgärdar GraphQL problem med prisberäkning. MDVA-32714 är avskriven och vi rekommenderar att du använder MDVA-33975-patchen. Om du vill komma åt den här korrigeringen läser du [MDVA-33975-korrigering: GraphQL prisberäkningar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/mdva-33975-magento-patch-graphql-price-calculations.html) i vår kunskapsbas för support.
+>En ny patch som heter MDVA-33975 åtgärdar GraphQL problem med prisberäkning. MDVA-32714 är avskriven och vi rekommenderar att du använder MDVA-33975-patchen. Information om hur du får åtkomst till den här korrigeringen finns i [MDVA-33975-korrigeringen: GraphQL prisberäkningar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/mdva-33975-magento-patch-graphql-price-calculations.html) i vår kunskapsbas för support.
 
-MDVA-32714-korrigeringen åtgärdar ett problem där с kundgruppspris inte läggs till i svaret på GraphQL produktfråga. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.13 är installerat. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.3.
+MDVA-32714-korrigeringen åtgärdar ett problem där с kundgruppspris inte läggs till i svaret på GraphQL produktfråga. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.13 är installerat. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.3.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 Adobe Commerce om molninfrastruktur 2.4.0
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 Adobe Commerce on cloud infrastructure and Adobe Commerce on-local 2.3.4 - 2.4.0-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -40,7 +40,7 @@ Kundgruppspris för den allmänna kunden läggs inte till i GraphQL produktfråg
 <u>Steg som ska återskapas</u>:
 
 1. Aktivera och ange specialpris för alla produkter för alla kundgrupper.
-1. Använd produktfrågan i GraphQL för att höja priserna för den här produkten enligt beskrivningen i: [Frågor för produkter > Exempelfråga](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html#sample-queries) i vår dokumentation för utvecklare.
+1. Använd produktfrågan i GraphQL för att ta ut priser för den här produkten, enligt beskrivningen i: [Produktfråga > Exempelfråga](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html#sample-queries) i vår utvecklardokumentation.
 
 <u>Förväntade resultat</u>:
 
@@ -62,14 +62,14 @@ visar inte det rabatterade priset för allmänna kunder.
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [Patchar tillgängliga i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår dokumentation för utvecklare.
+Mer information om andra korrigeringsfiler som är tillgängliga i QPT finns i [korrigeringsfilerna i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår utvecklardokumentation.

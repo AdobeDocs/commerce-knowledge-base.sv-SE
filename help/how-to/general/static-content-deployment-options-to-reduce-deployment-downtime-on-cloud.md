@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Statiska alternativ för innehållsdistribution för att minska driftsättningsdriftsavbrott i molnet
 
-Läs mer i [Strategier för distribution av statiskt innehåll](https://devdocs.magento.com/guides/v2.3/cloud/deploy/static-content-deployment.html) i vår dokumentation för utvecklare finns mer information om alternativen för statisk innehållsdistribution (SCD) som hjälper till att snabba upp driftsättningsprocessen och minska driftstoppen för underhåll på Adobe Commerce i molninfrastrukturen.
+Se [Statisk innehållsdistributionsstrategier](https://devdocs.magento.com/guides/v2.3/cloud/deploy/static-content-deployment.html) i utvecklardokumentationen för mer information om alternativen för statisk innehållsdistribution (SCD) som hjälper till att snabba upp distributionsprocessen och minska driftstoppen för underhåll på Adobe Commerce i molninfrastrukturen.

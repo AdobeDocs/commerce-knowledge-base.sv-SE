@@ -19,12 +19,12 @@ Upgrade Compatibility Tool 1.1.0 är ett kommandoradsverktyg som kontrollerar en
 
 Med uppgraderingskompatibilitetsverktyget 1.1.0 får du avsevärda förbättringar, bland annat:
 
-* **Validera ändringar av kärnfiler**: Adobe rekommenderar starkt att man inte anpassar kärnproduktkoden. I den här versionen har vi lagt till en kontrollpunkt där kunder och partners kan identifiera eventuella ändringar i kärnkoden för att förstå ändringarnas påverkan snabbt och tidigt. Genom att lägga till det här verktyget i utvecklingsprocessen kan partners och handlare identifiera problem proaktivt, förebygga problem under framtida uppgraderingar och minska den totala ägandekostnaden.
+* **Verifiera ändringar av kärnfiler**: Adobe rekommenderar starkt att du inte anpassar kärnproduktkoden. I den här versionen har vi lagt till en kontrollpunkt där kunder och partners kan identifiera eventuella ändringar i kärnkoden för att förstå ändringarnas påverkan snabbt och tidigt. Genom att lägga till det här verktyget i utvecklingsprocessen kan partners och handlare identifiera problem proaktivt, förebygga problem under framtida uppgraderingar och minska den totala ägandekostnaden.
 * **Exportera rapporten till en JSON-fil**: Den här förbättringen implementerades efter feedback från communityn. När du kör verktyget exporteras nu information om alla identifierade problem till en JSON-fil så att användarna kan läsa, dela och hantera resultaten utan att behöva köra verktyget igen.
-* **Förbättrade VBE-valideringar**: VBE (Vendor Bundled Extensions) ingår inte i Adobe Commerce kärnkod utan testas och stöds av Adobe. Med den här uppdateringen validerar vi nu VBE:er på samma sätt som vi använder för kärnkod. Denna förbättring hjälper användarna att förstå frågor som rör anpassningar och kärnkod/VBE:er tydligt.
+* **Förbättrade VBE-valideringar**: VBE (Vendor Bundled Extensions) är inte en del av Adobe Commerce kärnkod utan testas och stöds av Adobe. Med den här uppdateringen validerar vi nu VBE:er på samma sätt som vi använder för kärnkod. Denna förbättring hjälper användarna att förstå frågor som rör anpassningar och kärnkod/VBE:er tydligt.
 * **Ange felkoder**: Vi introducerade felkoder som hjälper användare att identifiera, förstå och lösa problem under en uppgradering. Fel- och varningsmeddelanden ger en tydlig beskrivning och föreslagen lösning.
-* **Möjlighet att endast lista kritiska problem**: Med detta kan användarna bara fokusera på de problem som är kritiska och som genererar problem under uppgraderingen.
-* **Delta problem mellan två versioner**: Med den här förbättringen som föreslagits av våra communitymedlemmar kan UCT-användare få en del av problemen mellan två versioner, vilket gör att de kan fokusera på de nya utgåvorna för den målversion de ska uppgradera.
+* **Möjlighet att endast lista kritiska problem**: Med detta kan användare bara fokusera på de problem som är kritiska och som genererar problem under uppgraderingen.
+* **Delta-problem mellan två versioner**: med den här förbättringen som föreslagits av våra communitymedlemmar kan UCT-användare få en del av problemen mellan två versioner, vilket gör att de kan fokusera på de nya problemen som introducerats för den målversion de ska uppgradera.
 
 ## Vilka versioner kan verktyget jämföra?
 
@@ -36,7 +36,7 @@ Adobe Commerce-kunder.
 
 ## Installera uppgraderingskompatibilitetsverktyget 1.1.0
 
-Installationsanvisningar finns i Adobe Commerce: [Uppgraderingskompatibilitet > Installera](https://devdocs.magento.com/upgrade-compatibility-tool/install.html) i vår dokumentation för utvecklare. Information om krav för att använda verktyget finns i Adobe Commerce: [Kompatibilitetsverktyg för uppgradering](https://devdocs.magento.com/upgrade-compatibility-tool/prerequisites.html) i vår dokumentation för utvecklare.
+Installationsanvisningar finns i Adobe Commerce: [Upgrade Compatibility Tool > Install](https://devdocs.magento.com/upgrade-compatibility-tool/install.html) i utvecklardokumentationen. Information om krav för att använda verktyget finns i Adobe Commerce: [Upgrade Compatibility Tool](https://devdocs.magento.com/upgrade-compatibility-tool/prerequisites.html) i utvecklardokumentationen.
 
 ## Vilket nummer har varje nummer?
 
@@ -47,13 +47,13 @@ Felmeddelandena för verktyget Kompatibilitet för uppgradering är indelade eft
 * Felkod: Felmeddelandets Adobe Commerce-tilldelade identifierare.
 * Felbeskrivning: En beskrivning som sammanfattar orsaken till felet.
 * Föreslagen felåtgärd: Om det är tillämpligt ger det vägledning om hur du felsöker och löser felet.
-* Koderna listas och beskrivs på [Referenssida för felmeddelande](https://devdocs.magento.com/upgrade-compatibility-tool/errors.html).
+* Koderna listas och beskrivs på [referenssidan för felmeddelanden](https://devdocs.magento.com/upgrade-compatibility-tool/errors.html).
 
 ## Var kan jag få feedback om verktyget?
 
-Du kan kontakta UCT-teamet på vår [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F) slackkanal. Vi ser fram emot att få dina synpunkter och förslag för att förbättra verktyget.
+Du kan kontakta UCT-teamet på vår [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F) slack channel. Vi ser fram emot att få dina synpunkter och förslag för att förbättra verktyget.
 
 ## Relaterad läsning
 
-* Adobe Commerce Blog: [Nu kommer uppgraderingskompatibilitetsverktyget (Alpha)](https://magento.com/blog/magento-news/introducing-upgrade-compatibility-tool)
-* Adobe Commerce: [Kompatibilitetsverktyg för uppgradering](https://devdocs.magento.com/upgrade-compatibility-tool/introduction.html) i vår dokumentation för utvecklare.
+* Adobe Commerce-blogg: [Introduktion till uppgraderingskompatibilitetsverktyget (Alpha)](https://magento.com/blog/magento-news/introducing-upgrade-compatibility-tool)
+* Adobe Commerce: [Kompatibilitetsverktyg för uppgradering](https://devdocs.magento.com/upgrade-compatibility-tool/introduction.html) i utvecklardokumentationen.

@@ -23,16 +23,16 @@ Den här artikeln innehåller en lösning för när din Adobe Commerce på molni
 
 /mydomain.com.c.&lt;projectid>.magento.cloud/ är inte längre tillgänglig.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Logga in på ditt projekt.
-1. Klicka **Åtkomstprojekt** för en lista över URL:er och SSH.
+1. Klicka på **Access Project** om du vill se en lista över URL:er och SSH.
 
 <u>Faktiska resultat:</u>
 
 Sidan läses inte in med följande fel:
 
-*NET::ERR\_CERT\_INVALID*  *TLS-varning, felaktigt certifikat (554):*
+*NET::ERR\_CERT\_INVALID* *TLS-varning, felaktigt certifikat (554):*
 
 <u>Förväntade resultat:</u>
 
@@ -47,8 +47,8 @@ Insvepning är en säkerhetsfunktion som gör det möjligt för Adobe Commerce a
 ## Lösning
 
 * Om din molnsajt är aktiv växlar du till https://mydomain.com/.
-* Om du har en aktiv plats (ej molnet), använder du domänen https://mydomain.com/, konfigurerar du en underdomän `mcprod.mydomain.com` och uppdatera **Bas-URL** till *https://mcprod.mydomain.com* i stället, [peka DNS snabbt](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+* Om du har en aktiv plats (ej molnet), som använder domänen https://mydomain.com/, konfigurerar du en underdomän `mcprod.mydomain.com` och uppdaterar **bas-URL** till *https://mcprod.mydomain.com* i stället, pekar [DNS på Fast](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
 
 ## Relaterad läsning
 
-[Vanliga frågor och svar om insvepning med snabb ursprung](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) i vår kunskapsbas för support.
+[Vanliga frågor och svar om insvepning av snabbursprung](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) i vår kunskapsbas för support.

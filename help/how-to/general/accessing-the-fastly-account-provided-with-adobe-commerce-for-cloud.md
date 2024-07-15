@@ -16,12 +16,12 @@ I den här artikeln beskrivs hur du loggar in på ditt Fastly-konto som ingår i
 
 ## Så här visar du dina inloggningsuppgifter snabbt
 
-Läs mer i [Få snabbt inloggningsuppgifter](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) i vår utvecklardokumentation.
+Mer information finns i avsnittet [Hämta snabbautentiseringsuppgifter](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) i utvecklardokumentationen.
 
 ## Så här testar du snabbt inloggningsuppgifterna
 
-Läs mer i [Testa autentiseringsuppgifterna snabbt](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) i vår utvecklardokumentation.
+Se avsnittet [Testa snabbinloggningsuppgifter](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-[Ändra kontoägare (få åtkomst till autentiseringsuppgifter via API-tokens) för Fast i molnet](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md) i vår kunskapsbas för support.
+[Ändra kontoägare (använd autentiseringsuppgifter via API-token) för Fast i molnet](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md) i vår kunskapsbas för support.

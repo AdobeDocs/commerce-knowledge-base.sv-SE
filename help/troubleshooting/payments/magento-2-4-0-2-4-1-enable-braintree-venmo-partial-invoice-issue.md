@@ -24,9 +24,9 @@ I den här artikeln beskrivs en känd utgåva av Adobe Commerce 2.4.0 och 2.4.1,
 
 <u>Förutsättningar:</u>
 
-Ange i konfigurationen för betalningsmetoden Braintree **Aktivera Venmo via Braintree** = *Ja* med **Betalningsåtgärd** = *Behörighet*; **Aktivera valv för kortbetalningar** = *Nej*.
+I konfigurationen för betalningsmetoden Braintree anger du **Aktivera Venmo via Braintree** = *Ja* med **Betalningsåtgärd** = *Auktorisering*; **Aktivera valv för kortbetalningar** = *Nej*.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Skapa en beställning för två eller flera produkter med Venmo (Braintree) som betalningsmetod.
 1. Öppna beställningen i Commerce Admin.
@@ -39,7 +39,7 @@ Fakturan har skapats.
 
 <u>Faktiskt resultat:</u>
 
-Följande felmeddelande visas: *Kommandot vault\_capture finns inte. Kontrollera kommandot och försök igen.*
+Följande felmeddelande visas: *Kommandot &quot;vault\_capture&quot; finns inte. Verifiera kommandot och försök igen.*
 
 ## Tillfällig lösning
 

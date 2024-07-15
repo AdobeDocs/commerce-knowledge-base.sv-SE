@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # ACSD-50858: Förbättrade prestanda för inläsning av banners-innehåll
 
-Korrigeringsfilen ACSD-50858 åtgärdar ett problem med bannerprestanda på kundvagns-/utcheckningssidan: *överflödiga DB-frågor och längre sidinläsningstid*. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.31 är installerat. Korrigerings-ID är ACSD-50858. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
+ACSD-50858-korrigeringen åtgärdar ett bannerprestandaproblem på kundvagn-/utcheckningssidan: *överflödiga databasfrågor och ökad sidinläsningstid*. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.31 har installerats. Korrigerings-ID är ACSD-50858. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.5-p1
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.4 - 2.4.6
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-Banderollens prestanda påverkas på korgs-/utcheckningssidan på grund av *överflödiga DB-frågor och längre sidinläsningstid*.
+Banderollens prestanda påverkas på korgs-/utcheckningssidan på grund av *för stora databasfrågor och ökad sidinläsningstid*.
 
 Detta korrigerades genom omfaktorisering av hur banners innehåll läses in, vilket minskade antalet DB-frågor med 99,99 % och sidinläsningstiden med cirka 99 %.
 
@@ -39,12 +39,12 @@ Detta korrigerades genom omfaktorisering av hur banners innehåll läses in, vil
 
 1. Logga in på Admin och skapa en enkel produkt.
 1. Skapa en kund, antingen från Admin eller från frontend, och lägg till en leveransadress för den.
-1. Flytta banners.php till `magento_root/pub/` mapp.
-1. Generera banners med  `php pub/banners.php` -kommando. Det kommer att generera 10 000 enkla banners och 1 000 banners med försäljningsregler.
+1. Flytta banners.php till mappen `magento_root/pub/`.
+1. Generera banners med kommandot `php pub/banners.php`. Det kommer att generera 10 000 enkla banners och 1 000 banners med försäljningsregler.
 1. Logga in på kunden som skapats tidigare i klientorganisationen.
 1. Lägg den produkt som skapats tidigare i kundvagnen.
 1. Gå till kassan (kassan/kundvagnen).
-1. Övervaka `banner/ajax/load` inläsningstid:
+1. Övervaka inläsningstiden för `banner/ajax/load`-begäran:
 
    * Utan `bin/magento dev:query-log:enable`
    * Med `bin/magento dev:query-log:enable`
@@ -55,18 +55,18 @@ Detta korrigerades genom omfaktorisering av hur banners innehåll läses in, vil
 
 <u>Förväntade resultat</u>:
 
-Minska antalet DB-frågor för `magento_banner_content` och inläsningstid för kundvagn/utcheckning.
+Minska antalet databasfrågor för `magento_banner_content` och tiden för inläsning av korgs-/utcheckningssida.
 
 <u>Faktiska resultat</u>:
 
-Öka antalet DB-frågor för `magento_banner_content` och inläsningstid för kundvagn/utcheckning.
+Öka antalet databasfrågor för `magento_banner_content` och tiden för inläsning av korgs-/utcheckningssida.
 
 ## Tillämpa korrigeringen
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Ytterligare information
 
@@ -132,9 +132,9 @@ for ($i = 0; $i < 1000; $i++) {
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.

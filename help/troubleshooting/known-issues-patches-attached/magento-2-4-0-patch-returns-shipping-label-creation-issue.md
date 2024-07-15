@@ -22,24 +22,24 @@ Den här artikeln innehåller en patch för det kända problemet med Adobe Comme
 
 ## Problem
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Gör en beställning med någon av följande metoder: FedEx, DHL, UPS och USPS.
 1. Skapa och auktorisera returer för den här ordern.
-1. Öppna en behörig **Returinformation** och klickar på **Skapa leveransetikett** -knappen.
+1. Öppna en auktoriserad sida för **returinformation** och klicka på knappen **Skapa leveransetikett** .
 1. Välj leveranssätt, lägg till en produkt i ett paket och klicka på Spara.
 
 <u>Förväntat resultat:</u>
 
-En leveransetikett har skapats och du ser ett meddelande: *Du skapade en leveransetikett.*
+En leveransetikett har skapats och du ser ett meddelande: *Du har skapat en leveransetikett.*
 
 <u>Faktiskt resultat:</u>
 
-The **Returinformation** sidan är skadad och ett felmeddelande visas på sidan Returinformation: *Allmän information Ändringar har gjorts i det här avsnittet som inte har sparats. Fliken innehåller ogiltiga data*.
+Sidan **Returinformation** är skadad och ett felmeddelande visas på sidan Returinformation: *Allmänna informationsändringar har gjorts i det här avsnittet som inte har sparats. Fliken innehåller ogiltiga data*.
 
 ## Lösning
 
-Använd [patch](assets/MC-35984-2.4.0-CE-composer.patch.zip) enligt denna artikel.
+Använd [patch](assets/MC-35984-2.4.0-CE-composer.patch.zip) som anges i den här artikeln.
 
 ## Lappa
 
@@ -47,11 +47,11 @@ Korrigeringen är kopplad till den här artikeln. Om du vill hämta den bläddra
 
 [MC-35984-2.4.0-CE-Composer.patch](assets/MC-35984-2.4.0-CE-composer.patch.zip)
 
-Programfixen kan också laddas ned i `.git` och `.composer`, format på [Adobe Commerce Downloads](https://magento.com/tech-resources/download) sida, under **Patchar** i den vänstra kolumnnavigeringen. Sök efter patchen MC-35984.
+Korrigeringen kan också laddas ned både `.git` och `.composer` på sidan [Adobe Commerce Downloads](https://magento.com/tech-resources/download) under **Patchar** i den vänstra kolumnnavigeringen. Sök efter patchen MC-35984.
 
 ## Så här sätter du på plåstret
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) på vår kunskapssida med supportfrågor.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) på vår kunskapssida med supportfrågor.
 
 ## Relaterade läsningar i vår kunskapsbas:
 

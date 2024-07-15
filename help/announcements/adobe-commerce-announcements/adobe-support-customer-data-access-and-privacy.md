@@ -22,11 +22,11 @@ Adobe tekniska support kan kräva tillgång till dina Adobe Commerce-relaterade 
 Så här auktoriserar du åtkomst:
 
 1. [Logga in](https://account.magento.com/customer/account/login) som supportberättigad primär användare.
-1. På **[!UICONTROL My Account]** sida > **[!UICONTROL Account Settings]** kontrollerar du att du har fyllt i [kontoprofil](https://account.magento.com/customer/account/edit) och klicka **[!UICONTROL Save]**.
-1. På **[!UICONTROL My Account]** sida > **[!UICONTROL Account Settings]** > **[!UICONTROL Privacy Settings]**. Du kommer att se ett medgivande för att ge Adobe teknisk support tillgång till dina data.
-1. När du har granskat informationen om sekretessinställningar väljer du om du vill markera kryssrutan intill **Jag ger behörighet att få tillgång till mina data under följande tid:**.
+1. Kontrollera att du har slutfört din [kontoprofil](https://account.magento.com/customer/account/edit) på sidan **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]** och klicka på **[!UICONTROL Save]**.
+1. På sidan **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]** > **[!UICONTROL Privacy Settings]**. Du kommer att se ett medgivande för att ge Adobe teknisk support tillgång till dina data.
+1. Efter att ha granskat informationen om sekretessinställningar kan du välja om du vill markera kryssrutan intill **Jag godkänner åtkomst av mina data under följande tid:**.
 1. I listrutan anger du den tidsperiod under vilken du vill att Adobe supporttekniker ska ha tillgång till dina kunddata. Du kan välja 7 dagar, 30 dagar, ett år eller obegränsat.
-1. Klicka på **[!UICONTROL Save]**. Detta uppdaterar start- och slutdatumet längst ned på sidan under **Du har gett ditt samtycke under följande tid** (skärmdump). När samtycke har beviljats kommer den behöriga primära användaren att se möjligheten att återkalla samtycke längst ned på skärmen.
+1. Klicka på **[!UICONTROL Save]**. Detta uppdaterar start- och slutdatumet längst ned på sidan under **Du har gett ditt medgivande för följande varaktighet** (skärmbild). När samtycke har beviljats kommer den behöriga primära användaren att se möjligheten att återkalla samtycke längst ned på skärmen.
    ![magento-account-privacy-settings.png](assets/magento-account-privacy-settings.png)
 
-Klicka **Återkalla samtycke** när som helst för att dra tillbaka ditt medgivande för att Adobe supporttekniker ska få tillgång till dina data.
+Du kan när som helst klicka på **Återkalla samtycke** om du vill återkalla ditt medgivande för att Adobe supportpersonal ska få tillgång till dina data.

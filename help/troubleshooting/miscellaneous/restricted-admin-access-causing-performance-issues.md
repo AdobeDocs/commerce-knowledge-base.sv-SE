@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Begränsad administratörsåtkomst som orsakar prestandaproblem
 
-Den här artikeln innehåller lösningar för när prestanda påverkas negativt av att använda [Administratörsroller med rollomfång begränsat av webbplats](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) i vår användarhandbok.
+Den här artikeln innehåller lösningar för när prestanda påverkas negativt av att du använder [administratörsroller med rollomfång som begränsas av webbplatsen](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) i användarhandboken.
 
 ## Berörda produkter och versioner
 
@@ -30,9 +30,9 @@ Problemet har åtgärdats i Adobe Commerce 2.2.10 och 2.3.3.
 
 Följande alternativ är för att undvika problemet:
 
-* Uppgradera Adobe Commerce till 2.2.10 eller 2.3.3. (för instruktioner, se [Uppgradera Adobe Commerce på molninfrastruktursversionen](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade.html) i vår dokumentation för utvecklare).
+* Uppgradera Adobe Commerce till 2.2.10 eller 2.3.3. (Mer information finns i [Uppgradera Adobe Commerce för molninfrastruktur](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade.html) i utvecklardokumentationen).
 * Undvik, om möjligt, att begränsa användarrollens omfång per webbplats.
-* [Skicka en supportanmälan till Magento](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), för att begära en korrigering, om den är tillgänglig.
+* [Skicka en Magento-supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att begära en korrigering, om en sådan finns tillgänglig.
 
 ## Relaterad läsning
 

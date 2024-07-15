@@ -19,13 +19,13 @@ Den 11 april 2020 kommer kostnadsfri åtkomst till prestandaövervakning i Black
 
 1. Du måste köpa en licens hos Blackfire direkt.
 1. Konfigurera sedan Blackfire med dessa [steg](https://blackfire.io/docs/integrations/paas/magentocloud).
-1. Om du får problem med installationen kan du [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att begära hjälp. Specifika frågor om Blackfire kan du kontakta Blackfire support direkt på [support@blackfire.io](mailto:support@blackfire.io).
+1. Om du får problem med installationen kan du [skicka in en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att få hjälp. Om du har Blackfire kan du kontakta supporten för Blackfire direkt på [support@blackfire.io](mailto:support@blackfire.io).
 
 ## Om du får fel när du kör en distribution:
 
 Om du får fel relaterade till Blackfire när du kör en distribution gör du följande:
 
-1. Ta bort Blackfire från konfigurationen. Redigera `.magento.app.yaml` och ta bort Blackfire från körningsavsnittet:
+1. Ta bort Blackfire från konfigurationen. Redigera filen `.magento.app.yaml` och ta bort Blackfire från körningsavsnittet:
 
    ```YAML
    ...
@@ -42,12 +42,12 @@ Om du får fel relaterade till Blackfire när du kör en distribution gör du f�
 
 1. Slutför detta i den lokala utvecklingsmiljön och gå vidare till molnet.
 
-Endast [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om följande fel visas när du har kört en distribution:
+[Skicka bara en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om följande fel uppstår när du har kört en distribution:
 
-*PHP-varning: PHP-start: Det gick inte att läsa in det dynamiska biblioteket &quot;Blackfire.so&quot; (försökte: /usr/lib/php/20180731-zts/blackfire.so (/usr/lib/php/20180731-zts/blackfire.so: cannot open shared object file: No such file or directory), /usr/lib/php/20180731-zts/blackfire.so.so (/usr/lib/php/20180731-zts/blackfire.so.so: cannot open shared object file: No such file or directory) i Okänd på rad 0*
+*PHP-varning: PHP-start: Det gick inte att läsa in det dynamiska biblioteket &quot;Blackfire.so&quot; (försökte: /usr/lib/php/20180731-zts/blackfire.so (/usr/lib/php/20180731-zts/blackfire.so: cannot open shared object file: No such file or directory), /usr/lib/php/20180731-zts/blackfire.so.so (/usr/lib/php/20180731-zts/blackfire.so.so: cannot open shared object file: No such file or directory) i Unknown on line 0*
 
 Detta fel innebär att plugin-programmet Blackfire måste uppdateras och inte kan läsas in.
 
 **Om du vill använda New Relic Infrastructure**:
 
-Mer information om hur du får åtkomst till New Relic infrastruktur finns i [Använd New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html) i vår kunskapsbas för support.
+Mer information om hur du får åtkomst till New Relic Infrastructure finns i [Åtkomst till New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html) i vår kunskapsbas för support.

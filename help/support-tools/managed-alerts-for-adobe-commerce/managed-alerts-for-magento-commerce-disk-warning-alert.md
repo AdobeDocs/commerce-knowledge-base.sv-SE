@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I den här artikeln beskrivs felsökningssteg när du får en varning för Adobe Commerce i New Relic. Det krävs omedelbara åtgärder för att åtgärda problemet. Varningen ser ut ungefär så här, beroende på vilken meddelandekanal du valt.
 
-![diskvarningsmeddelande](assets/disk-warning-magento-managed.png){width="500"}
+![diskvarning](assets/disk-warning-magento-managed.png){width="500"}
 
 ## Berörda produkter och versioner
 
@@ -23,14 +23,14 @@ I den här artikeln beskrivs felsökningssteg när du får en varning för Adobe
 
 ## Problem
 
-Du får ett varningsmeddelande i New Relic om du har registrerat dig för [Hanterade aviseringar för Adobe Commerce](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) och ett eller flera av tröskelvärdena för larm har överskridits. Dessa varningar utvecklades av Adobe för att ge kunderna en standarduppsättning med hjälp av insikter från support och konstruktion.
+Du får en avisering i New Relic om du har registrerat upp till [Hanterade aviseringar för Adobe Commerce](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) och ett eller flera av aviseringströskelvärdena har överskridits. Dessa varningar utvecklades av Adobe för att ge kunderna en standarduppsättning med hjälp av insikter från support och konstruktion.
 
 <u> **Gör!** </u>
 
 * Avbryt all schemalagd distribution tills den här aviseringen har rensats.
-* Placera platsen i underhållsläge omedelbart om platsen inte svarar eller inte svarar alls. För steg se [Installationsguide > Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) i vår dokumentation för utvecklare. Se till att du lägger till din IP-adress i listan över undantagna IP-adresser för att vara säker på att du fortfarande kan komma åt din webbplats för felsökning. Om du vill se steg går du till [Underhåll listan över undantagna IP-adresser](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten#instgde-cli-maint-exempt) i vår dokumentation för utvecklare.
+* Placera platsen i underhållsläge omedelbart om platsen inte svarar eller inte svarar alls. Anvisningar om hur du gör detta finns i [Installationshandbok > Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) i utvecklardokumentationen. Se till att du lägger till din IP-adress i listan över undantagna IP-adresser för att vara säker på att du fortfarande kan komma åt din webbplats för felsökning. Anvisningar finns i [Underhåll listan över undantagna IP-adresser](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten#instgde-cli-maint-exempt) i utvecklardokumentationen.
 
-<u> **Gör det inte!** </u>
+<u> **Gör inte!** </u>
 
 * lansera fler marknadsföringskampanjer som kan ge er plats fler sidvisningar.
 * Kör indexerare eller ytterligare kroner som kan orsaka ytterligare belastning på processorn eller disken.
@@ -41,12 +41,12 @@ Du får ett varningsmeddelande i New Relic om du har registrerat dig för [Hante
 
 Följ de här stegen för att identifiera och felsöka orsaken:
 
-1. Granska skivorna i New Relic för användning i toppklass. Stegen finns på fliken Lagring i New Relic [sidan Värdar för infrastrukturövervakning](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/):
+1. Granska skivorna i New Relic för användning i toppklass. Anvisningar om hur du gör detta finns på fliken Lagring på New Relic [värdsida för infrastrukturövervakning](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/):
    * Om diskanvändningen ökar långsamt i New Relic kan du prova följande alternativ:
-   * Optimera diskutrymmet genom att justera utrymmesallokeringen. Om du vill se steg går du till [Hantera diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) i vår dokumentation för utvecklare. Du kan också behöva begära mer diskutrymme (kontakta kontoteamet på Adobe).
-   * Frigör diskutrymme för MySQL. Se [Det är ont om diskutrymme i MySQL](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) för steg.
+   * Optimera diskutrymmet genom att justera utrymmesallokeringen. Anvisningar finns i [Hantera diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) i utvecklardokumentationen. Du kan också behöva begära mer diskutrymme (kontakta kontoteamet på Adobe).
+   * Frigör diskutrymme för MySQL. Gå till [MySQL-diskutrymmet är lågt](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) för steg.
    * Om diskanvändningen snabbt ökar i New Relic kan det tyda på att det finns ett problem som har fått en fil att öka mycket snabbt i en katalog. Gör följande kontroller:
 1. Kontrollera det totala diskutrymmet för att identifiera problemet genom att köra följande kommando i CLI/Terminal: `df -h`
-1. När du har identifierat en katalog med oväntat stor och ökande diskanvändning måste du kontrollera det berörda filsystemet. I följande exempel visas hur du kontrollerar filkatalogen `pub/media/`. Det här är den katalog som Adobe Commerce använder för att lagra loggar och stora mediefiler. Du bör emellertid köra det här kommandot för alla kataloger som visar oväntad diskanvändning: `du -sch ~/pub/media/*`.
+1. När du har identifierat en katalog med oväntat stor och ökande diskanvändning måste du kontrollera det berörda filsystemet. I följande exempel visas hur du kontrollerar filkatalogen `pub/media/`. Det här är den katalog som Adobe Commerce använder för att lagra loggar och stora mediefiler. Du bör dock köra det här kommandot för alla kataloger som visar oväntad diskanvändning: `du -sch ~/pub/media/*`.
 
-Om utdata från terminalen visar en fil i någon av dessa kataloger som snabbt ökar diskanvändningen och du vet att filens innehåll inte behövs, bör du ta bort filen. Om du inte känner dig säker på att du ska utföra den här åtgärden [skicka en Adobe Commerce supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Om utdata från terminalen visar en fil i någon av dessa kataloger som snabbt ökar diskanvändningen och du vet att filens innehåll inte behövs, bör du ta bort filen. Om du inte är säker på att du kan utföra den här åtgärden [skickar du en Adobe Commerce-supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Uppdatera priser för delad katalog med hjälp av REST API
 
-Om du vill lägga till eller uppdatera priser i delade kataloger med API rekommenderar vi att du använder `TierPriceStorageInterface` tjänst, som beskrivs i [Hantera nivåpriser](http://devdocs.magento.com/guides/v2.2/rest/modules/catalog-pricing.html#manage-tier-prices) REST API Reference in our developer documentation. För priser för delade kataloger använder vi Tier Price och Customer Group.
+Om du vill lägga till eller uppdatera priser i delade kataloger med API rekommenderar vi att du använder tjänsten `TierPriceStorageInterface`, som beskrivs i REST API-referens för [Hantera nivåpriser](http://devdocs.magento.com/guides/v2.2/rest/modules/catalog-pricing.html#manage-tier-prices) i utvecklardokumentationen. För priser för delade kataloger använder vi Tier Price och Customer Group.

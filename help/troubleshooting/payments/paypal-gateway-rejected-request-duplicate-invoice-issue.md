@@ -54,12 +54,12 @@ Som standard tillåter PayPal inte bearbetning för samma faktura två gånger.
 Ändra din PayPal-profil så att du kan använda flera betalningar per faktura-ID. Du måste göra dessa ändringar via PayPal.
 
 1. Logga in på ditt konto på [https://www.paypal.com](https://www.paypal.com/).
-1. Klicka **Profil** > **Profil och inställningar** (övre högra hörnet).
+1. Klicka på **Profil** > **Profil och inställningar** (övre högra hörnet).
 1. Gå till **Mina säljverktyg**.
-1. Navigera till **Få betalt och hantera mina risker** > **Blockera betalningar** och klicka **Uppdatera**.
-1. **Försäljningsinställningar**, klicka **Inställningar för betalningsmottagning**.
-1. Under **Blockera olycksfallsbetalningar**, välja **Nej, tillåt flera betalningar per faktura-ID**.    ![paypal_allow_multiple_payments_per_invoice_id.png](assets/paypal_allow_multiple_payments_per_invoice_id.png)
-1. Rulla längst ned och klicka **Spara**.
+1. Navigera till **Få betalt och hantera min risk** > **Blockera betalningar** och klicka på **Uppdatera**.
+1. **Försäljningsinställningar**, klicka på **Inställningar för betalningsmottagning**.
+1. Välj **Nej, tillåt flera betalningar per faktura-ID** under **Blockera olycksbetalningar**.    ![paypal_allow_multiple_payments_per_invoice_id.png](assets/paypal_allow_multiple_payments_per_invoice_id.png)
+1. Rulla längst ned och klicka på **Spara**.
 
 ## Mer information
 
@@ -69,4 +69,4 @@ Som standard tillåter PayPal inte bearbetning för samma faktura två gånger.
    * [Andra PayPal-lösningar](/docs/commerce-admin/stores-sales/payments/paypal/paypal.html)
 * I vår utvecklardokumentation:
    * [Ställ in PayPal-betalningsmetoder för Adobe Commerce i molninfrastruktur](/docs/commerce-cloud-service/user-guide/configure-store/paypal.html)
-   * [Betalningsintegrering](https://developer.adobe.com/commerce/php/development/payments-integrations/)
+   * [Betalningsintegreringar](https://developer.adobe.com/commerce/php/development/payments-integrations/)

@@ -64,30 +64,30 @@ Följ de här stegen:
 
    ![Lägg till butiksinformation](/help/troubleshooting/miscellaneous/assets/add_store_info_mbi.png)
 
-   Det finns viss information som du måste samla in innan du kan ansluta databasen för det tredje steget i startflödet. Du fyller i *[!UICONTROL Connect your database]* sida i steg 9.
+   Det finns viss information som du måste samla in innan du kan ansluta databasen för det tredje steget i startflödet. Du fyller i sidan *[!UICONTROL Connect your database]* i steg 9.
 
 1. Skapa en dedikerad Commerce Intelligence-användare.
 
    * Skapa en ny användare på [account.adobe.com](https://account.adobe.com/).
    * Gå till [https://accounts.magento.com/customer/account/](https://accounts.magento.com/customer/account/) för att skapa ditt Adobe Commerce-konto.
-   * Varför en ny användare? Adobe Commerce Intelligence behöver en användare som läggs till i projektet för att kontinuerligt hämta nya data som ska överföras till kontots Commerce Intelligence-datalager. Den här användaren fungerar som den anslutningen. Om du lägger till den här användaren i projektet kommer du till steg 4.
-   * Orsaken till att du har en dedikerad Commerce Intelligence-användare är att den tillagda användaren inte oavsiktligt inaktiveras eller tas bort och att Commerce Intelligence-anslutningen stoppas.
+   * Varför en ny användare? Adobe Commerce Intelligence behöver en användare som läggs till i projektet för att kontinuerligt hämta nya data som ska överföras till kontots Commerce Intelligence datalager. Den här användaren fungerar som den anslutningen. Om du lägger till den här användaren i projektet kommer du till steg 4.
+   * Orsaken till att du har en dedikerad Commerce Intelligence-användare är att den tillagda användaren inte oavsiktligt inaktiveras eller tas bort och att Commerce Intelligence-anslutningen avbryts.
 
-1. Lägg till den nyskapade användaren i projektets primära miljö som en *Medarbetare*.
+1. Lägg till den nyskapade användaren i projektets primära miljö som *Contributor*.
 
-   ![Lägga till användare som deltagare](/help/troubleshooting/miscellaneous/assets/contributor_user_mbi.png)
+   ![Lägg till användare som Contributor](/help/troubleshooting/miscellaneous/assets/contributor_user_mbi.png)
 
 1. Hämta dina Commerce Intelligence SSH-nycklar.
 
-   * Gå till **[!UICONTROL Connect your database]** sidan med Commerce Intelligence som konfigurerar användargränssnittet och rullar ned till **[!UICONTROL Encryption settings]**.
-   * För fältet **[!UICONTROL Encryption Type]**, välja **[!UICONTROL SSH Tunnel]**.
+   * Gå till sidan **[!UICONTROL Connect your database]** i Commerce Intelligence inställningsgränssnitt och bläddra nedåt till **[!UICONTROL Encryption settings]**.
+   * Välj **[!UICONTROL SSH Tunnel]** för fältet **[!UICONTROL Encryption Type]**.
    * I listrutan kan du kopiera och klistra in den angivna offentliga nyckeln för Magento BI Essentials.
 
    ![Krypteringsinställningar](/help/troubleshooting/miscellaneous/assets/encryption_type_mbi.png)
 
 1. Lägg till din nya offentliga nyckel för Magento BI Essentials till den Commerce Intelligence-användare som skapades i steg 5.
 
-   * Gå till [accounts.magento.com/customer/account/login](https://account.magento.com/customer/account/login). Logga in med din kontoinloggningsinformation för den nya Commerce Intelligence-användaren som har skapats. Gå sedan till **[!UICONTROL Account Settings]** -fliken.
+   * Gå till [accounts.magento.com/customer/account/login](https://account.magento.com/customer/account/login). Logga in med din kontoinloggningsinformation för den nya Commerce Intelligence-användare som har skapats. Gå sedan till fliken **[!UICONTROL Account Settings]**.
    * Bläddra nedåt på sidan och expandera listrutan för SSH-tangenter. Klicka sedan på **[!UICONTROL Add a public key]**.
 
    ![Lägg till en offentlig nyckel](/help/troubleshooting/miscellaneous/assets/add_public_key_mbi.png)
@@ -98,7 +98,7 @@ Följ de här stegen:
 
 1. Ange Business Intelligence Essentials MySQL-autentiseringsuppgifter.
 
-   * Uppdatera dina `.magento/services.yaml`.
+   * Uppdatera din `.magento/services.yaml`.
 
    ```
    mysql:
@@ -118,7 +118,7 @@ Följ de här stegen:
                     main: ro
    ```
 
-   * Uppdatera dina `.magento.app.yaml`.
+   * Uppdatera din `.magento.app.yaml`.
 
    ```
    relationships:
@@ -129,7 +129,7 @@ Följ de här stegen:
 
 1. Hämta information om hur du ansluter databasen till Commerce Intelligence.
 
-   Kör `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 --decode | json_pp` för att få information om hur du ansluter databasen.
+   Kör `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 --decode | json_pp` om du vill ha information om hur du ansluter databasen.
 
    Du bör få information som liknar utdata nedan:
 
@@ -156,7 +156,7 @@ Följ de här stegen:
 
 1. Anslut Adobe Commerce-databasen.
 
-   ![Anslut Adobe Commerce-databasen](/help/troubleshooting/miscellaneous/assets/connect_magento_database_mbi.png)
+   ![Anslut din Adobe Commerce-databas](/help/troubleshooting/miscellaneous/assets/connect_magento_database_mbi.png)
 
    *Indata*:
 
@@ -164,11 +164,11 @@ Följ de här stegen:
    * Värd: `mbi.internal`
    * Port: 3306
    * Användarnamn: mbi
-   * Lösenord: [indatatösenordet som anges i steg 8.]
+   * Lösenord: [indatalösenord angavs i utdata från steg 8.]
    * Databasnamn: huvud
    * Tabellprefix: [lämna tomt om det inte finns några tabellprefix]
 
-1. Ställ in [!UICONTROL Timezone Settings].
+1. Ange [!UICONTROL Timezone Settings].
 
    ![Tidszonsinställningar](/help/troubleshooting/miscellaneous/assets/timezone_settings_mbi.png)
 
@@ -179,11 +179,11 @@ Följ de här stegen:
 
 1. Hämta information om dina krypteringsinställningar.
 
-   * Projektgränssnittet tillhandahåller en SSH-åtkomststräng. Strängen kan användas för att samla in den information som behövs för fjärradressen och användarnamnet när du konfigurerar **[!UICONTROL Encryption settings]**. Välj **[!UICONTROL SSH]** för att visa ditt användarnamn och din fjärradress. Textsträngen före *@* är ditt användarnamn och textsträngen efter *@* är din fjärradress.
+   * Projektgränssnittet tillhandahåller en SSH-åtkomststräng. Strängen kan användas för att samla in den information som behövs för fjärradressen och användarnamnet när du konfigurerar **[!UICONTROL Encryption settings]**. Välj **[!UICONTROL SSH]** om du vill visa ditt användarnamn och din fjärradress. Textsträngen före *@* är ditt användarnamn och textsträngen efter *@* är din fjärradress.
 
    ![Åtkomst till webbplatshuvud](/help/troubleshooting/miscellaneous/assets/access_site_mbi.png)
 
-1. Indatainformation för [!UICONTROL Encryption Settings].
+1. Indatainformation för din [!UICONTROL Encryption Settings].
 
    ![Krypteringsinställningar](/help/troubleshooting/miscellaneous/assets/encryption_type_mbi.png)
 

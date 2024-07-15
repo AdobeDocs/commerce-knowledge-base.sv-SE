@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Det går inte att spara enheten Adobe Commerce backend
 
-Den här artikeln innehåller en lösning för när du inte kan spara en enhet i Adobe Commerce serverdel. Om du till exempel inte kan redigera och spara en viss `cart_price` regel.
+Den här artikeln innehåller en lösning för när du inte kan spara en enhet i Adobe Commerce serverdel. Om du till exempel inte kan redigera och spara en viss `cart_price`-regel.
 
 ## Berörda produkter och versioner
 
@@ -24,14 +24,14 @@ Problemet kan påverka alla Adobe Commerce-versioner som har konfigurerat maxima
 
 När du försöker konfigurera om din butik läses sidan in igen och ändringarna sparas inte. Ett meddelande visas i `var/log/system.log`:
 
-*[2021-11-27 00:30:52] report.WARNING: Sessionsstorleken 418056 överskrider den tillåtna sessionsstorleken på 256000. [][]*
+*[2021-11-27 00:30:52] rapport.VARNING! Sessionsstorleken 418056 överskrider den tillåtna sessionsstorleken på 256000. [][]*
 
 <u>Steg som ska återskapas</u>:
 
 Ett exempel på lagringskonfigurationen sparas inte:
 
 1. Välj en regel i Adobe Commerce Store i Produktion > **Marknadsföring** > **Kundprisregler**.
-1. Välj en regel och ange att *Inaktiv* och spara ändringen.
+1. Välj en regel och ange den till *Inaktiv* och spara ändringen.
 
 <u>Förväntat resultat</u>:
 
@@ -44,11 +44,11 @@ Regeln är inställd på inaktiv.
 
 ## Orsak
 
-Det här problemet har att göra med nya funktioner som nyligen introducerades och som har påverkat den maximala sessionsstorleken. Se [Sessionshantering](https://docs.magento.com/user-guide/stores/security-session-management.html) i vår dokumentation för utvecklare.
+Det här problemet har att göra med nya funktioner som nyligen introducerades och som har påverkat den maximala sessionsstorleken. Se [Sessionshantering](https://docs.magento.com/user-guide/stores/security-session-management.html) i utvecklardokumentationen.
 
 ## Lösning
 
-Öka värdet för Maximal sessionsstorlek i (**Lager** > **Konfiguration** > **Avancerat** > **System** > **Säkerhet** > Maximal sessionsstorlek).
+Öka värdet för Maximal sessionsstorlek i (**Lagrar** > **Konfiguration** > **Avancerat** > **System** > **Säkerhet** > Maximal sessionsstorlek).
 
 ## Relaterad läsning
 

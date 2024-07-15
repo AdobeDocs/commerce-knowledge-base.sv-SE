@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1 Känt fel: dotdigital inloggning
 
-I den här artikeln beskrivs ett känt fel i Adobe Commerce 2.3.6, 2.4.0-p1 och 2.4.1 där det är omöjligt att logga in på [dotdigital](https://dotdigital.com/) via panelen Admin när det digitala kontot är aktiverat.
+I den här artikeln beskrivs ett känt fel i Adobe Commerce 2.3.6, 2.4.0-p1 och 2.4.1 där det är omöjligt att logga in på [dotdigital](https://dotdigital.com/) via Admin Panel när det digitala kontot är aktiverat.
 
 ## Berörda produkter och versioner
 
@@ -30,8 +30,8 @@ I den här artikeln beskrivs ett känt fel i Adobe Commerce 2.3.6, 2.4.0-p1 och 
 
 <u>Steg som ska återskapas</u>:
 
-1. Gå till **Lager** > **Konfiguration** > **DOTDIGITAL** > **Chattinställningar** > **Aktiverad** är inställd på *Ja.*
-1. Klicka på **Konfigurera** in **Konfigurera chattwidget** eller **Konfigurera chattteam**.
+1. Gå till **Lager** > **Konfiguration** > **DOTDIGITAL** > **Chattinställningar** > **Aktiverad** är inställt på *Ja.*
+1. Klicka på **Konfigurera** i **Konfigurera chattwidget** eller **Konfigurera chattteam**.
 
 <u>Förväntade resultat</u>:
 
@@ -47,4 +47,4 @@ Tillfällig lösning: använd en annan webbläsare än Safari för just den här
 
 ## Relaterad läsning
 
-[Adobe Commerce 2.4.1 Känt fel - Vertex-adressen kan inte valideras med olika leverans-/faktureringsadresser](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) i vår kunskapsbas för support.
+[Adobe Commerce 2.4.1 Känt fel - Vertex-adressen valideras inte med olika leverans-/faktureringsadresser](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) i vår kunskapsbas för support.

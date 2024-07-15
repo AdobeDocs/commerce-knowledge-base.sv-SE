@@ -25,7 +25,7 @@ Vi föreslår att du provar följande lösningar i den ordning som visas:
 
 ### Beroenden i konflikt {#trouble-depend-conflict}
 
-Meddelandet *Komponentberoenden i konflikt hittades* visas om Composer inte kan avgöra vilka komponenter som ska installeras eller uppdateras. För att lösa komponentberoendeproblem bör du vara en teknisk person som är väl insatt i hur Composer fungerar.
+Meddelandet *Komponentberoenden som står i konflikt* visas om Composer inte kan avgöra vilka komponenter som ska installeras eller uppdateras. För att lösa komponentberoendeproblem bör du vara en teknisk person som är väl insatt i hur Composer fungerar.
 
 Följande är ett exempel på felmeddelande:
 
@@ -51,10 +51,10 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Se till att du anger filsystembehörigheter enligt artikeln [Översikt över ägarskap och behörigheter](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) i vår dokumentation för utvecklare.
+Se till att du anger filsystembehörigheter enligt beskrivningen i artikeln [Översikt över ägarskap och behörigheter](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) i utvecklardokumentationen.
 
 ## Status för komponentberoendekontroll ändras aldrig {#trouble-depend-state}
 
-I vissa fall ändras inte statusen för komponentberoendekontrollen, även om du försöker åtgärda problemen. I så fall kan du antingen ta bort eller byta namn på filer med namn `<magento_root>/var/.update_cronjob_status` och `<magento_root>/var/.setup_cronjob_status` och försök köra komponenthanteraren igen.
+I vissa fall ändras inte statusen för komponentberoendekontrollen, även om du försöker åtgärda problemen. I så fall kan du antingen ta bort eller byta namn på filer med namnen `<magento_root>/var/.update_cronjob_status` och `<magento_root>/var/.setup_cronjob_status` och försöka köra komponenthanteraren igen.
 
 Om du byter namn på eller tar bort dessa filer måste komponenthanteraren köra kontrollerna igen.

@@ -1,6 +1,6 @@
 ---
-title: '''[!UICONTROL Recommendations] [!DNL JS] fel efter uppgradering till Adobe Commerce version 2.4.5'
-description: I den här artikeln finns en fix för när det efter uppgraderingen till Adobe Commerce (alla distributionsmetoder) finns [!DNL JS] fel i konsolen relaterade till produkten [!UICONTROL Recommendations] moduler.
+title: '[!UICONTROL Recommendations] [!DNL JS] fel efter uppgradering till Adobe Commerce version 2.4.5'
+description: I den här artikeln finns en korrigering för när det efter uppgraderingen till Adobe Commerce (alla distributionsmetoder) finns  [!DNL JS] fel i konsolen som rör produktmodulerna [!UICONTROL Recommendations].
 feature: Install, Upgrade
 role: Developer
 exl-id: 51d899eb-48f7-48c5-8bda-bd72a4d28945
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!UICONTROL Recommendations] [!DNL JS] fel efter uppgradering till Adobe Commerce version 2.4.5
 
-I den här artikeln finns en fix för när det efter uppgraderingen till Adobe Commerce (alla distributionsmetoder) finns [!DNL JS] fel i konsolen relaterade till produkten [!UICONTROL Recommendations] moduler/enheter.
+I den här artikeln finns en korrigering för när det efter uppgraderingen till Adobe Commerce (alla distributionsmetoder) finns [!DNL JS] fel i konsolen för produktmodulerna/enheterna i [!UICONTROL Recommendations].
 
 Det finns för närvarande inga planer på att åtgärda detta problem i framtida versioner.
 
@@ -23,24 +23,24 @@ Det finns för närvarande inga planer på att åtgärda detta problem i framtid
 
 ## Problem
 
-Problemet orsakas av att webbplatsen storefront fortfarande refererar till en borttagen produkt [!UICONTROL Recommendations] moduler/enheter (block och/eller widgetar) på startsidan [!DNL CMS].
+Problemet orsakas av att butikens webbsida fortfarande refererar till några borttagna produktmoduler/enheter (block och/eller widgetar) på dess hemsida [!DNL CMS].[!UICONTROL Recommendations]
 
 <u>Steg som ska återskapas</u>:
 
 1. Uppgradera till Adobe Commerce 2.4.5.
 1. Gå till butikens webbsida.
-1. Högerklicka med musen och välj **Inspect** för att öppna webbinspektören i webbläsaren.
-1. Klicka på **[!UICONTROL Console]** -fliken.
-1. Granska [!DNL JS] fel.
+1. Högerklicka med musen och välj **Inspect** för att öppna webbkontrollen i webbläsaren.
+1. Klicka på fliken **[!UICONTROL Console]**.
+1. Granska [!DNL JS]-felen.
 
 <u>Förväntade resultat</u>:
 
-Lyckad uppgradering utan [!DNL JS] fel.
+Uppgraderingen slutfördes utan [!DNL JS] fel.
 
 <u>Faktiska resultat</u>:
 
-Flera olika typer av [!DNL JS] fel visas i webbläsarkonsolen.
+Flera olika typer av [!DNL JS]-fel visas i webbläsarkonsolen.
 
 ## Tillfällig lösning
 
-Du kan komma runt problemet genom att granska alla [!UICONTROL Recommendations] enheter som du har använt på sidan och tagit bort borttagna enheter.
+Som en tillfällig lösning kan du granska alla [!UICONTROL Recommendations] enheter som du har använt på sidan och ta bort borttagna enheter.

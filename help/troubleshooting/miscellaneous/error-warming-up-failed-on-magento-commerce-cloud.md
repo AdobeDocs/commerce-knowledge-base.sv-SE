@@ -19,7 +19,7 @@ Den här artikeln innehåller en lösning för när sidcachen värms upp och mis
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce i molninfrastrukturen, alla [versionerna](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce i molninfrastrukturen, alla [versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Problem
 
@@ -43,9 +43,9 @@ Cachevärmen fungerar inte med HTTP-åtkomstkontroll aktiverad.
 
 ## Lösning
 
-Kontrollera att du inte har åtkomstkontroll aktiverad: gå till den specifika grenen/miljön och klicka på **Inställningar** och kontrollera **HTTP-åtkomstkontroll** inställning - cacheuppvärmning kan inte inträffa i det här scenariot och åtkomstkontroll måste inaktiveras.
+Kontrollera att du inte har åtkomstkontroll aktiverad: gå till den specifika grenen/miljön och klicka på ikonen **Inställningar** och kontrollera inställningen **HTTP-åtkomstkontroll** - det går inte att värma cachen i det här scenariot och åtkomstkontrollen måste inaktiveras.
 
 ## Relaterad läsning
 
-* [Adobe Commerce User Guide > Full Page Cache](https://docs.magento.com/user-guide/system/cache-full-page.html) i vår användarhandbok.
-* [Cacheuppvärmning och webbplatsen är inte tillgänglig i Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) i vår kunskapsbas för support.
+* [Adobe Commerce Användarhandbok > Helsidescache](https://docs.magento.com/user-guide/system/cache-full-page.html) i vår användarhandbok.
+* [Cacheuppvärmning och webbplatsen är inte tillgänglig på Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) i vår kunskapsbas för support.

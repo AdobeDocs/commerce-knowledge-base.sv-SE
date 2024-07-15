@@ -18,7 +18,7 @@ Följande frågor och svar är avsedda att hjälpa handlare, utvecklare och part
 
 ### Var hittar jag supportdatum för alla versioner av Adobe Commerce?
 
-Du hittar Adobe Commerce livscykelpolicy och datum för programsupport i [Adobe Commerce Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Vi publicerar också slutdatum (EOS) på vår [dokumentationssida för utvecklare](https://devdocs.magento.com/release/released-versions.html).
+Du hittar Adobe Commerce livscykelpolicy och datum för programvarusupport i [Adobe Commerce Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Vi publicerar också slutdatum för support (EOS) på [utvecklardokumentationssidan](https://devdocs.magento.com/release/released-versions.html).
 
 ### Vad innebär det när Adobe slutar stödja en version av Adobe Commerce?
 
@@ -35,20 +35,20 @@ Vi rekommenderar starkt att du bara använder programvara som stöds.
 
 Om du bestämmer dig för att fortsätta använda programvara som har fått support kommer du inte längre att få viktiga produktuppdateringar eller teknisk support, som ofta innehåller de senaste säkerhetsuppdateringarna. Om du använder program som inte stöds kan det påverka följande områden:
 
-**Säkra shoppingupplevelser:**
+**Erbjuda säkra shoppingupplevelser:**
 
 * Ni måste spendera resurser på att utvärdera och anlita tredjepartsleverantörer för att kunna erbjuda säkerhetssupport, korrigeringar och uppdateringar.
 * När en version av Adobe Commerce inte längre stöds är den versionen inte längre [PCI-kompatibel](https://www.pcisecuritystandards.org/pci_security/maintaining_payment_security). När detta inträffar kan du bli föremål för böter, indragna kreditkortsmöjligheter eller andra påföljder.
 * Eftersom de flesta installationer tenderar att vara inriktade på installationer som inte är uppdaterade med de senaste säkerhetsuppdateringarna rekommenderar vi alltid att handlarna håller sin programvara uppdaterad och installerar säkerhetsuppdateringar så snart de blir tillgängliga. Det är upp till handlaren att skydda sin onlinebutik med lämpliga skyddsåtgärder och säkerhetskontroller för att skydda sin webbplats och sina kunders personuppgifter. Ett av de bästa sätten att göra detta är att ha de senaste korrigeringarna, programuppdateringarna och programuppdateringarna installerade samt att kontinuerligt övervaka platsen och Admin Console för ovanlig aktivitet.
 
-**Effektivt och effektivt**
+**Arbeta effektivt och effektivt**
 
 * Eftersom Adobe Commerce programversioner inte stöds finns det en minskande grupp av utvecklare och partners som kan ge support för gamla versioner när de orienterar sin verksamhet efter nyare tekniker. I allmänhet innebär det att mängden och kvaliteten på talangen för programvaruunderhåll minskar, samtidigt som kostnaden för att underhålla programvaran ökar.
 * För Adobe Commerce-program som inte stöds kan kringutrustning och beroenden också nå sin egen livscykel (t.ex. PHP, MYSQL, REDIS, SOLR). Detta gör det allt svårare att hantera och underhålla en säker och kompatibel webbplats.
 * Extension-utvecklare fokuserar också allt mer på den senaste tekniken och kompatibla plattformar. Det innebär att de kanske inte kan fortsätta att underhålla tillägg för versioner av Adobe Commerce som inte stöds.
 * Användning av versioner av Adobe Commerce som inte stöds leder ofta till att man spenderar mer pengar och resurser på att underhålla en gammal plattform istället för att använda dessa resurser för att fortsätta med innovationer och tillväxt.
 
-**Grovt aggressiv**
+**Växer aggressivt**
 
 * Adobe fortsätter att investera i nya tekniker och funktioner. Genom att hålla programvaran uppdaterad kan ni dra nytta av nyare tekniker och funktioner som kan hjälpa ert företag att arbeta mer strategiskt och växa ännu snabbare.
 
@@ -68,7 +68,7 @@ Det finns flera sätt att hålla dig à jour med dina Adobe Commerce-program:
 
 Er handelsplattform är ett viktigt affärssystem för ert företag och att hålla er uppdaterade och aktuella är en viktig pågående investering i företaget. De senaste teknologierna och säkerhetsuppdateringarna för er digitala butik är viktiga på många nivåer och kan bidra till att förbättra innovationer och tillväxt.
 
-Att gå över till den senaste versionen av Adobe Commerce kan ta tid och resurser att bli bra. Det är bäst att ni planerar så långt före supportdagens slut som möjligt för att försäkra er om att ni har den tid och de resurser som behövs för att uppnå era strategiska mål i tid och inom budgeten. Adobe har publicerat [2.4 Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) som innehåller bästa praxis och tekniska steg att följa, samt verktyg och resurser som du kan använda när du uppgraderar.
+Att gå över till den senaste versionen av Adobe Commerce kan ta tid och resurser att bli bra. Det är bäst att ni planerar så långt före supportdagens slut som möjligt för att försäkra er om att ni har den tid och de resurser som behövs för att uppnå era strategiska mål i tid och inom budgeten. För att hjälpa dig med nästa uppgradering har Adobe publicerat [2.4 Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) som innehåller bästa praxis och tekniska steg samt verktyg och resurser som du kan använda när du uppgraderar.
 
 En annan viktig faktor är att förbehålla utvecklare och partners resurser så tidigt som möjligt. Partnertid och resurser bokas ofta långt före supportdatumet, vilket resulterar i betydligt färre resurser för att hjälpa till med migreringsprojekt. Vi rekommenderar att du har en treårig löpande plan som du diskuterar årligen med minimum och ser till att nästa år planeras och budgeteras för. Använd [Adobe&#39;s release calendar](https://devdocs.magento.com/release/) för att hålla reda på releasedatum.
 
@@ -102,7 +102,7 @@ Nej, Adobe prioriterar inte om supportärenden baserat på slutdatumet för dess
 
 ### Finns det en varning som påminner säljarna om att supporten upphör att gälla innan supportdatumet är slut?
 
-Nej, det finns inga påminnelser som meddelar supportanvändare om att supportdatumet kommer att upphöra. Det åligger den som öppnar biljetten att få veta när supportdatumen för den Adobe Commerce-version de är installerade har löpt ut, vilket finns på vår [Adobe Commerce Software Lifecycle Policy](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+Nej, det finns inga påminnelser som meddelar supportanvändare om att supportdatumet kommer att upphöra. Det åligger den som öppnar biljetten att veta när supportdatumen för den version av Adobe Commerce som de är aktiverade har löpt ut, vilket finns i vår [Adobe Commerce-policy för livscykeln för programvara](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ### Om en supportanmälan för en programversion öppnas EFTER supportdagens slut för den versionen, kommer den fortfarande att åtgärdas?
 

@@ -17,7 +17,7 @@ I den här artikeln finns en patch för det kända Adobe Commerce 2.2.4 B2B-prob
 
 ## Problem
 
-Kunder (företag) kan skapa ett företagskonto på webbplatsen, men få *&quot;Ingen sådan enhet med customerId = &quot;* och *&quot;Du har inget företagskonto än&quot;* felmeddelanden. De kan också få *&quot;500 internt serverfel&quot;* när du försöker komma åt sidan Företagsprofil.
+Kunder (företag) kan skapa ett företagskonto på webbplatsen, men få felmeddelandena *&quot;Ingen sådan entitet med customerId =&quot;* och *&quot;Du har inget företagskonto än&quot;*. De kan även få det interna serverfelet **&quot;500&quot; när de försöker komma åt företagsprofilsidan.
 
 ## Lappa
 
@@ -38,4 +38,4 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).

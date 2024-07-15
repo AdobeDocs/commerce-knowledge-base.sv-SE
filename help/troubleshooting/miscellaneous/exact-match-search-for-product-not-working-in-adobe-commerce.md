@@ -24,21 +24,21 @@ Den här artikeln innehåller ett förtydligande av problemet där sökresultat 
 
 <u>Förutsättningar:</u>
 
-Du har produkter med attributvärden `Saga 1` och `Saga 16` i både Adobe Commerce 2.3- och Adobe Commerce 2.4-butiker.
+Du har produkter med attributvärdena `Saga 1` och `Saga 16` i både Adobe Commerce 2.3- och Adobe Commerce 2.4-butiker.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-1. På framsidan av en Adobe Commerce 2.3-butik anger du *Saga 1* i sökfältet och klicka på **Sök**.
-1. Observera att du bara får produkterna med attributvärdet i sökresultaten `Saga 1`.
-1. På framsidan av en Adobe Commerce 2.4-butik anger du *Saga 1* i sökfältet och klicka på **Sök**.
+1. Ange *Saga 1* i sökfältet i butiken framför en Adobe Commerce 2.3-butik och klicka på **Sök**.
+1. Observera att du bara får produkter med attributvärdet `Saga 1` i sökresultaten.
+1. Ange *Saga 1* i sökfältet i butiken framför en Adobe Commerce 2.4-butik och klicka på **Sök**.
 
 <u>Faktiskt resultat:</u>
 
-Sökresultat i 2.4 innehåller produkter med attributvärden `Saga 1` och `Saga 16`.
+Sökresultat i 2.4 innehåller produkter med attributvärdena `Saga 1` och `Saga 16`.
 
 <u>Förväntat resultat:</u>
 
-Sökresultaten i 2.4 liknar 2.3 och inkluderar endast produkter med attributvärde `Saga 1`.
+Sökresultaten i 2.4 liknar 2.3 och inkluderar endast produkter med attributvärdet `Saga 1`.
 
 ## Orsak
 
@@ -48,4 +48,4 @@ Adobe Commerce inbyggda sökfunktion som används i 2.3.x ger exakt matchande s�
 
 [Installera Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) i vår användarhandbok.
 
-[Live Search](https://devdocs.magento.com/live-search/overview.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=Live%20Search) i vår dokumentation för utvecklare.
+[Livesökning](https://devdocs.magento.com/live-search/overview.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=Live%20Search) i utvecklardokumentationen.

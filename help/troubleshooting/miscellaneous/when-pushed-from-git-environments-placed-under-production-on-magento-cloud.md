@@ -17,7 +17,7 @@ Den här artikeln innehåller en lösning på problemet med att nya miljöer pla
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce om molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce i molninfrastrukturen, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problem
 
@@ -47,9 +47,9 @@ Det här är inte något fel. För att ställa in en överordnad gren för en an
 
 ## Lösning
 
-En överordnad gren kan bara anges efter att handlaren har aktiverat en nyligen skapad gren. Se [Adobe Commerce om molninfrastruktur > Bitbucket-integrering](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) i vår dokumentation för utvecklare.
+En överordnad gren kan bara anges efter att handlaren har aktiverat en nyligen skapad gren. Mer information finns i [Adobe Commerce om molninfrastruktur > Bitbucket-integrering](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) i utvecklardokumentationen.
 
-Om du vill uppdatera en överordnad för den befintliga grenen på servern använder du `magento-cloud environment:info` i magento-cloud CLI.
+Om du vill uppdatera en överordnad för den befintliga grenen på servern använder du kommandot `magento-cloud environment:info` i magento-cloud CLI.
 
 Exempel på användning:
 
@@ -59,4 +59,4 @@ Detta ställer in den överordnade grenen till &quot;Förproduktion&quot; för d
 
 ## Relaterad läsning
 
-* [Adobe Commerce on cloud infrastructure > magento-cloud CLI](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) i vår dokumentation för utvecklare.
+* [Adobe Commerce i molninfrastruktur > magento-cloud CLI](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) i vår utvecklardokumentation.

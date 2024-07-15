@@ -21,7 +21,7 @@ Den här artikeln innehåller en lösning som tillåter handlare att fortsätta 
 
 ## Problem
 
-I augusti 2022 publicerade vi [uppgradering av DHL schema version 6.2 tillsammans med en patch](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html) för handlare att fortsätta erbjuda DHL-leverans. DHL introducerar återigen ett nyare schema - version 10.0 - i oktober 2022, och den tidigare versionen (6.2-schema) kommer att bli inaktuell i slutet av december 2022. Adobe Commerce 2.4.5 och tidigare DHL-integrering stöder endast version 6.2.
+I augusti 2022 släppte vi [uppgraderingen av DHL-schemaversion 6.2. tillsammans med en korrigeringsfil](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html) så att handlarna kan fortsätta erbjuda DHL-leverans. DHL introducerar återigen ett nyare schema - version 10.0 - i oktober 2022, och den tidigare versionen (6.2-schema) kommer att bli inaktuell i slutet av december 2022. Adobe Commerce 2.4.5 och tidigare DHL-integrering stöder endast version 6.2.
 
 ## Lösning
 
@@ -31,12 +31,12 @@ Handlare som inte vill uppgradera till 2.4.5-p1 och 2.4.4-p2 måste installera e
 
 ## Lappa
 
-Korrigerings-ID:t är AC-3023 och det finns i [!DNL Quality Patches Tool] version 1.1.21.
+Korrigerings-ID:t är AC-3023 och det är tillgängligt i [!DNL Quality Patches Tool] version 1.1.21.
 
-Se följande länkar om hur du använder [!DNL Quality Patches Tool] och installera korrigeringsfiler beroende på distributionsmetoder:
+Använd följande länkar om hur du använder [!DNL Quality Patches Tool] och installera korrigeringsfiler beroende på distributionsmetoder:
 
-* Adobe Commerce lokalt och Magento Open Source: [Verktyg för kvalitetspatchar > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i Adobe Experience League.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Adobe Commerce lokalt och Magento Open Source: [Kvalitetskorrigeringsverktyg > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i Adobe Experience League.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 **Korrigeringen gäller för följande Adobe Commerce-versioner (alla distributionsmetoder):**
 
@@ -46,11 +46,11 @@ Se följande länkar om hur du använder [!DNL Quality Patches Tool] och install
 
 * [[!DNL Quality Patches Tool] > Versionsinformation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) i Adobe Experience League.
 
-* [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i Adobe Experience League.
+* [[!DNL Quality Patches Tool]: Sök efter patchar ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i Adobe Experience League.
 
 ## Relaterad läsning
 
 * [Använd en patch för att fortsätta erbjuda DHL som fraktfirma](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html) i vår kunskapsbas för support.
 
-* [Transportföretag > DHL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl.html) i vår användarhandbok.
-* [Konfigurationsreferens > Försäljning > Leveransmetoder](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/delivery-methods.html) i vår användarhandbok.
+* [Fraktfirmor > DHL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl.html) i användarhandboken.
+* [Konfigurationsreferens > Försäljning > Leveransmetoder](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/delivery-methods.html) i användarhandboken.

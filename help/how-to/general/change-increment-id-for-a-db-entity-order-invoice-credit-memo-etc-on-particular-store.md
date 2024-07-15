@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Ändra öknings-ID för en databasenhet (order, faktura, kreditnota osv.) på en viss butik
 
-I den här artikeln beskrivs hur du ändrar inkrement-ID för en enhet i en Adobe Commerce-databas (DB) (order, faktura, kreditnota osv.) på en viss Adobe Commerce-butik med `ALTER TABLE` SQL-sats.
+I den här artikeln beskrivs hur du ändrar inkrement-ID för en enhet i en Adobe Commerce-databas (DB) (order, faktura, kreditnota osv.) på en viss Adobe Commerce-butik med SQL-satsen `ALTER TABLE`.
 
 ## Berörda versioner
 
 * Lokal Adobe Commerce: 2.x.x
 * Adobe Commerce i molninfrastruktur: 2.x.x
-* MySQL: any [version som stöds](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements-tech.html#database)
+* MySQL: any [supported version](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements-tech.html#database)
 
 ## När behöver du ändra ID för ökning (fall)
 
@@ -29,12 +29,12 @@ Du kan behöva ändra ID:t för ökning för nya DB-entiteter i följande fall:
 
 >[!NOTE]
 >
->Du kan också åtgärda problemet med betalningsgateway för PayPal genom att tillåta flera betalningar per faktura-ID i PayPals Inställningar för betalningsmottagning. Se [PayPal-gateway avvisade begäran - dubblettfakturautleverans](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) i vår kunskapsbas för support.
+>Du kan också åtgärda problemet med betalningsgateway för PayPal genom att tillåta flera betalningar per faktura-ID i PayPals Inställningar för betalningsmottagning. Se [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) i vår kunskapsbas för support.
 
 ## Krav på steg
 
 1. Sök efter butiker och enheter som det nya tilläggs-ID:t ska ändras för.
-1. [Anslut](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) till din MySQL-databas. För Adobe Commerce i molninfrastruktur måste du först [SSH i din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [Anslut](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) till din MySQL-databas. För Adobe Commerce i molninfrastruktur måste du först [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Kontrollera det aktuella auto\_increment-värdet för entitetssekvenstabellen med följande fråga:
 
 ```sql
@@ -49,11 +49,11 @@ Om du kontrollerar en automatisk ökning för en order i butiken med *ID=1* blir
 'sequence_order_1'
 ```
 
-Om värdet för `auto_increment` kolumnen är *1234*, nästa order som läggs i butiken med *ID=1* kommer att ha *ID \#100001234*.
+Om värdet för kolumnen `auto_increment` är *1234* får nästa ordning som placeras i butiken med *ID=1* *ID \#100001234*.
 
 ### Relaterad dokumentation
 
-* [Konfigurera en MySQL-fjärrdatabasanslutning](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) i vår dokumentation för utvecklare.
+* [Konfigurera en MySQL-fjärrdatabasanslutning](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) i utvecklardokumentationen.
 
 ## Uppdatera enhet för att ändra öknings-ID
 
@@ -75,16 +75,16 @@ När följande fråga har körts:
 ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 ```
 
-nästa order som läggs i butiken med *ID=1* kommer att ha *ID \#100002000*.
+nästa order som placeras i butiken med *ID=1* får *ID \#100002000*.
 
 ## Ytterligare rekommenderade steg i produktionsmiljön (Cloud)
 
-Innan du kör `ALTER TABLE` fråga om Adobe Commerce produktionsmiljö i molninfrastrukturen rekommenderar vi att du utför följande steg:
+Innan vi kör `ALTER TABLE`-frågan i Adobe Commerce produktionsmiljö i molninfrastrukturen rekommenderar vi att du utför följande steg:
 
 * Testa hela proceduren för att ändra tilläggs-ID i mellanlagringsmiljön
-* [Skapa](/help/how-to/general/create-database-dump-on-cloud.md) en DB-säkerhetskopia som återställer din produktionsdatabas om fel uppstår
+* [Skapa](/help/how-to/general/create-database-dump-on-cloud.md) en DB-säkerhetskopia som återställer din Production DB om fel uppstår
 
 ## Relaterad dokumentation
 
-* [Skapa databasdump i molnet](/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas för support.
-* [SSH i din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) i vår dokumentation för utvecklare.
+* [Skapa databasdump i Cloud](/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas för support.
+* [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) i utvecklardokumentationen.

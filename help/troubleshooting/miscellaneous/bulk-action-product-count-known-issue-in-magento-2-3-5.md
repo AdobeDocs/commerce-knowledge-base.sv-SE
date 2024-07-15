@@ -36,4 +36,4 @@ En programfix kommer att finnas i Adobe Commerce 2.3.6, som kommer att släppas 
    * [Problem med betalningsmetod i Adobe Commerce för molninfrastruktur och Adobe Commerce lokal 2.3.5 och 2.3.5-p1](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
    * [Adobe Commerce uppmanar sina kunder att logga in, men erbjuder en ogiltig länk](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
    * [Patch for Amazon Pay checkout issue in Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
-   * [Adobe Commerce 2.3.5 Kända fel i vår utvecklardokumentation](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+   * [Kända fel i Adobe Commerce 2.3.5 i utvecklardokumentationen](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

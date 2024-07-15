@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Innan lösningen implementeras i den här artikeln (`INT` till `BIGINT` schemauppdatering) måste alltid kontrollera att fältet som de ska ändra INTE har några relationer med främmande nycklar till en annan tabell. Om fältet har sekundärnyckelrelationer till en annan tabell uppstår problem eftersom det relaterade fältet fortfarande är `INT`. De kan använda följande fråga för att verifiera detta. Den här frågan visar vilka sekundärnyckelrelationer som är tillgängliga i databasen för det angivna tabellfältet:
+>Innan marknadsförare implementerar lösningen i den här artikeln (`INT` till `BIGINT` schemauppdatering) måste de alltid kontrollera att fältet som de ska ändra inte har några relationer med främmande nycklar till en annan tabell. Om fältet har sekundärnyckelrelationer till en annan tabell uppstår problem eftersom det relaterade fältet fortfarande är `INT`. De kan använda följande fråga för att verifiera detta. Den här frågan visar vilka sekundärnyckelrelationer som är tillgängliga i databasen för det angivna tabellfältet:
 >
 ```mysql
 >SELECT 
@@ -30,10 +30,10 @@ ht-degree: 0%
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce (alla distributionsmetoder) alla [versionerna](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce (alla distributionsmetoder) alla [versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 I den här artikeln finns lösningar för när du inte kan spara en produktuppdatering, som en prisändring, eller ta bort eller duplicera en produkt.
-Felmeddelandet kan visas *Det gick inte att spara arkivobjektet. Försök igen.* Du kanske inte kan distribuera efter en produktuppdatering. Du kan även se följande felmeddelande i MySQL när du kör `php bin/magento setup:upgrade` (i Adobe Commerce om molninfrastruktur visas det här felet i distributionsloggarna):
+Felmeddelandet *Det gick inte att spara arkivobjektet. Försök igen.* Du kanske inte kan distribuera efter en produktuppdatering. Du kan även se följande felmeddelande för MySQL när du kör `php bin/magento setup:upgrade` (i Adobe Commerce i molninfrastruktur visas det här felet i distributionsloggarna):
 
 ```mysql
 SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column 'value_id' at row 1, query was: INSERT INTO `catalog_product_entity_decimal` (`attribute_id`,`store_id`,`row_id`,`value`) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `attribute_id` = VALUES(`attribute_id`), `store_id` = VALUES(`store_id`), `row_id` = VALUES(`row_id`), `value` = VALUES(`value`)
@@ -50,7 +50,7 @@ Vilken lösning du använder beror på vad som har orsakat problemet. Se stegen 
 
 Kontrollera det högsta värdet för primärnyckeln genom att köra följande kommando i terminalen: `SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]`och `[ AUTO_INCREMENT ]` har ett värde större än eller lika med `max int(11) [ 4294967296 ]`och sedan överväga [uppdatera `[ AUTO_INCREMENT ]` till nästa värde från tabellen](#update-the-auto-increment-to-the-next-value-from-the-table). I annat fall bör du överväga en [`INT` till `BIGINT` schemauppdatering](#int_to_bigint_schema_update).
+Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]` och `[ AUTO_INCREMENT ]` har ett värde som är större än eller lika med `max int(11) [ 4294967296 ]`, kan du överväga att [uppdatera `[ AUTO_INCREMENT ]` till nästa värde från tabellen](#update-the-auto-increment-to-the-next-value-from-the-table). Annars bör du överväga en [`INT` till `BIGINT` schemauppdatering ](#int_to_bigint_schema_update).
 
 ## Uppdatera `AUTO_INCREMENT` till nästa värde från tabellen {#update-the-auto-increment-to-the-next-value-from-the-table}
 
@@ -62,7 +62,7 @@ Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]`och `[ AUTO_INCREM
 >
 >Platsen ska vara i underhållsläge när optimeringskommandot körs på specifika tabeller. Detta innebär att tabeller byggs om helt och hållet och att det frigörs utrymme när data har tagits bort från tabeller.
 
-Om det visade värdet är lägre än `max int(11) [ 4294967296 ]` som visas i exemplet nedan, terminalutdata, än en tabell `[ AUTO_INCREMENT ]` har ändrats till ett tal som är större eller lika med `max [ int(11) ]` värde.
+Om värdet som visas är lägre än `max int(11) [ 4294967296 ]`, vilket visas i nedanstående exempel på terminalutdata, har tabellen `[ AUTO_INCREMENT ]` ändrats till ett tal som är större eller lika med värdet `max [ int(11) ]`.
 
 ```mariadb
 MariaDB [xxx]> SELECT MAX(value_id) FROM catalog_product_entity_int;
@@ -82,7 +82,7 @@ MariaDB [xxx]> show create table catalog_product_entity_int;
 ) ENGINE=InnoDB AUTO_INCREMENT=4294967297 DEFAULT CHARSET=utf8 COMMENT='Catalog Product Integer Attribute Backend Table';
 ```
 
-Som du kan se i exemplet ovan genereras tabellen `[ AUTO_INCREMENT ]` har ändrats till ett större tal än `max int(11) [ 4294967296 ]`. Lösningen är att uppdatera `[ AUTO_INCREMENT]` till nästa värde från tabellen:
+Som du kan se i exemplet ovan har tabellen `[ AUTO_INCREMENT ]` ändrats till ett större tal än `max int(11) [ 4294967296 ]`. Lösningen är att uppdatera `[ AUTO_INCREMENT]` till nästa värde från tabellen:
 
 ```
 ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
@@ -90,13 +90,13 @@ ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 
 ## `INT` till `BIGINT` schemauppdatering {#int_to_bigint_schema_update}
 
-Om följande fråga körs `SELECT MAX(value_id) FROM catalog_product_entity_int;` värdet som visas är högre än `max int(11) [ 4294967296 ]`  överväga att `INT` till `BIGINT` schemauppdatering. Datatypen `BIGINT` har ett större värdeintervall.
+Om värdet som visas är högre än `max int(11) [ 4294967296 ]` när du kör följande fråga `SELECT MAX(value_id) FROM catalog_product_entity_int;` kan du överväga att göra en `INT` till `BIGINT`-schemauppdatering. Datatypen `BIGINT` har ett större värdeintervall.
 
 Så här gör du:
 
-1. Skapa en anpassad modul i *app/kod/* katalog.
-1. Skapa en *db_schema.xml*. I *db_schema.xml* du ställer in datatypen på `BIGINT`.
-1. Lägg till följande innehåll och kör sedan `bin/magento setup:upgrade` om du vill tillämpa ändringarna ovan på motsvarande tabell.
+1. Skapa en anpassad modul i katalogen *app/code/*.
+1. Skapa en *db_schema.xml* i den anpassade modulen. I *db_schema.xml* anger du datatypen till `BIGINT`.
+1. Lägg till följande innehåll och kör sedan `bin/magento setup:upgrade` för att tillämpa ändringarna ovan på motsvarande tabell.
 
 ```
 <?xml version="1.0"?>
@@ -111,7 +111,7 @@ Så här gör du:
 
 ## Relaterad läsning
 
-* [Allmänna riktlinjer för MySQL](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html) i Commerce installationshandbok.
+* [Allmänna MySQL-riktlinjer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html) i Commerce installationshandbok.
 * [Databasöverföringen förlorar anslutningen till MySQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html) i vår kunskapsbas för support.
-* [Bästa databaspraxis för Adobe Commerce om molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) i vår kunskapsbas för support.
-* [De vanligaste databasproblemen i Adobe Commerce om molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) i vår kunskapsbas för support.
+* [Databasera bästa praxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) i vår kunskapsbas för support.
+* [De vanligaste databasproblemen i Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) i vår kunskapsbas för support.

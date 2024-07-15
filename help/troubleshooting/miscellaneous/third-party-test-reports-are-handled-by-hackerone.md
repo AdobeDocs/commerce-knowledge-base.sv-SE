@@ -1,5 +1,5 @@
 ---
-title: Säkerhetsluckor som tredjepartssäkerhetsinskannade personer kan råka ut för [!DNL HackerOne]
+title: Sårbarheter som hittas av säkerhetssökningar från tredje part bör gå till  [!DNL HackerOne]
 description: Den här artikeln innehåller en lösning för att åtgärda säkerhetsluckor som upptäcks av tredjepartssäkerhetssökningar.
 feature: Security
 role: Developer, Admin
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Säkerhetsluckor som tredjepartssäkerhetsinskannade personer kan råka ut för [!DNL HackerOne]
+# Sårbarheter som hittas av säkerhetssökningar från tredje part ska gå till [!DNL HackerOne]
 
 Den här artikeln innehåller en lösning för att åtgärda säkerhetsluckor som upptäcks av tredjepartssäkerhetssökningar.
 
@@ -25,4 +25,4 @@ Merchant utförde ett PEN-test via en oberoende säkerhetsbyrå, och en säkerhe
 
 ## Lösningar
 
-Säkerhetsluckor som upptäcks av tredjepartssäkerhetssökningar ska skickas till [!DNL HackerOne] webbplats. Adobe Commerce har ingen direktkontakt på [!DNL HackerOne]så att du kan kontakta [!DNL HackerOne]. Adobe hanterar endast MST-rapporten (Magento Security Scan tool).
+Säkerhetsluckor som upptäcks av tredjepartssäkerhetssökningar ska skickas till webbplatsen [!DNL HackerOne]. Adobe Commerce har ingen direktkontakt på [!DNL HackerOne], så du bör kontakta [!DNL HackerOne] direkt. Adobe hanterar endast MST-rapporten (Magento Security Scan tool).

@@ -20,7 +20,7 @@ Se [Återställ miljö i molnet](/help/how-to/general/reset-environment-on-cloud
 
 ## Vad gör jag med en fast driftsättning? {#what-do-i-do-with-a-stuck-deployment}
 
-Se [Felsökare för distribution](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md) i vår kunskapsbas för support.
+Se [Felsökaren för distribution](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md) i vår kunskapsbas för support.
 
 ## Var/hur får jag hjälp när det behövs? {#wherehow-do-i-get-help-when-needed}
 
@@ -28,5 +28,5 @@ Se [Adobe Commerce Support Knowledge Base](https://support.magento.com/hc/en-us)
 
 ## Var/hur skickar lösningspartners eller teknikpartners en supportförfrågan? {#wherehow-do-solution-partners-or-tech-partners-submit-a-support-request}
 
-* Partners kan skicka in en biljett för sandlåderelaterade problem genom att skicka ett e-postmeddelande till [SPPHelp@adobe.com](mailto:SPPHelp@adobe.com) och kommer att vidarebefordras till partnerns tekniska support.
-* Teknikpartners kan [kontakta Marketplace Support](mailto:commercemarketplacesupport@adobe.com).
+* Partners kan skicka in en biljett för sandlåderelaterade problem genom att skicka ett e-postmeddelande till [SPPHelp@adobe.com](mailto:SPPHelp@adobe.com) och den vidarebefordras till partnerns tekniska support.
+* Tekniska partners kan [kontakta Marketplace Support](mailto:commercemarketplacesupport@adobe.com).

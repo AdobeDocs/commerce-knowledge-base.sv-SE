@@ -41,21 +41,21 @@ Det finns två typer av cacheminne i Adobe Commerce:
 
 ### Kontrollera om cacheminnet är ogiltigt
 
-Information om ogiltiga cachetyper finns i `<install_directory>/var/log/debug.log` -fil.
+Du kan hitta information om ogiltiga cachetyper i filen `<install_directory>/var/log/debug.log`.
 
 Så här gör du:
 
 1. Öppna `<install_directory>/var/log/debug.log`
-1. Sök efter &quot; *cache\_invalidate* &quot;.
+1. Sök efter meddelandet *cache\_invalidate*.
 1. Kontrollera sedan den angivna taggen. Det visar vilken cache som tömdes. Du kan ha problem på grund av den ogiltiga cachen om du ser en tagg utan något särskilt enhets-ID angivet, till exempel:
-   * `cat_p` - står för katalogproduktcachen.
+   * `cat_p` - står för katalogproduktcache.
    * `cat_c` - katalogkategoricache.
    * `FPC` - helsidescache.
    * `CONFIG` - konfigurationscache.
 
    Att ens en av dem skulle bli flytande skulle göra webbplatsens respons långsammare. Om taggen innehåller ett enhets-ID, till exempel `category_product_1258`, skulle detta visa cachen för en viss produkt eller kategori och så vidare. Tömning av cacheminnet för en viss produkt eller kategori gör inte att svarstiden minskar avsevärt.
 
-Här följer ett exempel på en `debug.log` innehåller poster om `cat_p` och `category_product_15044` cache har tömts:
+Följande är ett exempel på en `debug.log` som innehåller poster om att cachen `cat_p` och `category_product_15044` har tömts:
 
 ![exempel på debug.log-innehåll](assets/debug_log_sample.png)
 
@@ -67,4 +67,4 @@ Vanligtvis blir cachen ogiltig på grund av följande:
 ## Rekommendation
 
 1. Undvik att tömma cacheminnet från Commerce CLI.
-1. Konfigurera indexerare för **Uppdatera enligt schema** i stället för **Uppdatera i sparläge** eftersom den senare utlöser fullständig omindexering. Mer information finns i [Hantera indexerare > Konfigurera indexerare](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) i vår dokumentation för utvecklare.
+1. Konfigurera indexerare till **Uppdatera enligt schema** i stället för **Uppdatera vid sparläge** eftersom det senare utlöser fullständig omindexering. Mer information finns i [Hantera indexerare > Konfigurera indexerare](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) i utvecklardokumentationen.

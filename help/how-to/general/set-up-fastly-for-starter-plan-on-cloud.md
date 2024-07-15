@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Konfigurera Fast för Starter-planen i molnet
 
-Se [Konfigurera snabbt](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html) i vår dokumentation för utvecklare.
+Se [Konfigurera snabbt](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html) i utvecklardokumentationen.

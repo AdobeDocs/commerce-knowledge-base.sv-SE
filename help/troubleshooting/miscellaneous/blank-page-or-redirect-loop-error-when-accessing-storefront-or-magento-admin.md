@@ -33,7 +33,7 @@ Sidan öppnas.
 
 <u>Faktiskt resultat</u>
 
-Sidan är tom eller visar *&quot;Den här webbsidan har en omdirigeringsslinga&quot;* felmeddelande.
+Sidan är tom eller visar felmeddelandet *&quot;Den här webbsidan har en omdirigeringsslinga&quot;*.
 
 ## Orsak
 
@@ -45,15 +45,16 @@ För att åtgärda problemet måste du korrigera värdet på den säkra länken.
 
 Så här ser du till att det är orsaken till problemet:
 
-1. Kontrollera `web/secure/enable_upgrade_insecure` , `web/secure/use_in_adminhtml` (om du har problem med omdirigering av blank/loop i Admin) eller `web/secure/use_in_frontend` (om du har omdirigeringsutgåvan blank/loop på butikens framsida) i `'core_config_data'` Databastabell.
-   * If `web/secure/enable_upgrade_insecure` är inställd på &quot;1&quot;, ställs Adobe Commerce in för att lägga till svarshuvudet `Content-Security-Policy: upgrade-insecure-requests`, vilket innebär att webbläsare instrueras att använda HTTPS och att omdirigera alla frågor som kommer över HTTP till HTTPS, både för Admin och för storefront.
-   * If `web/secure/use_in_adminhtml` är inställd på &quot;1&quot;, returnerar Adobe Commerce HTTPS-omdirigeringar för alla HTTP-begäranden för administratörssidorna.
-   * If `web/secure/use_in_frontend` är inställd på &quot;1&quot;, returnerar Adobe Commerce HTTPS-omdirigeringar för alla HTTP-begäranden för butikens frontsidor.
-1. Kontrollera `web/secure/base_url` och `web/unsecure/base_url` värden i `'core_config_data'` tabell. Om båda börjar med    `http`måste du korrigera det säkra värdet.
+1. Kontrollera värdet `web/secure/enable_upgrade_insecure`, `web/secure/use_in_adminhtml` (om du har omdirigeringsutgåvan blank/loop i Admin) eller `web/secure/use_in_frontend` (om du har omdirigeringsutgåvan blank/loop på butikens framsida) i databastabellen `'core_config_data'`.
+   * Om `web/secure/enable_upgrade_insecure` är inställt på 1, är Adobe Commerce inställt på att lägga till svarshuvudet `Content-Security-Policy: upgrade-insecure-requests`, vilket instruerar webbläsare att använda HTTPS och omdirigerar alla frågor som kommer via HTTP
+till HTTPS, både för Admin och storefront.
+   * Om `web/secure/use_in_adminhtml` är inställt på 1 returnerar Adobe Commerce HTTPS-omdirigeringar för alla HTTP-begäranden för administratörssidorna.
+   * Om `web/secure/use_in_frontend` är inställt på 1 returnerar Adobe Commerce HTTPS-omdirigeringar för alla HTTP-begäranden för butikens frontsidor.
+1. Kontrollera värdena `web/secure/base_url` och `web/unsecure/base_url` i tabellen `'core_config_data'`. Om båda börjar med    `http`, måste du korrigera det säkra värdet.
 
 Åtgärda problemet:
 
-1. Ange värdet som börjar med `https` for `web/secure/base_url.`
+1. Ange värdet från `https` för `web/secure/base_url.`
 1. Rensa konfigurationscachen genom att köra följande kommando för att ändringarna ska tillämpas:
 
    ```bash

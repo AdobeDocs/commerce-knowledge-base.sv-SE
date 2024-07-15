@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Tomt kundvagnsproblem när du klickar flera gånger på kassan från mini cart
 
-Den här artikeln innehåller en patch för ett känt problem med Adobe Commerce 2.2.3 som rör en kundvagn som är tom efter att kunderna har klickat **Gå till kassan** flera gånger i minishoppingvagnen.
+I den här artikeln finns en korrigeringsfil för ett känt Adobe Commerce 2.2.3-problem som rör en kundvagn som är tom efter att kunderna har klickat på **Gå till kassan** flera gånger i minikundvagnen.
 
 ## Problem
 
-Kunder lägger till produkter i kundvagnen, försöker beställa genom att klicka på **Gå till kassan** flera gånger, men när de går till kundvagnen är vagnen tom. Minivagnen kan fortfarande visa produkter.
+Kunder lägger till produkter i kundvagnen, försöker checka ut genom att klicka på knappen **Gå till kassan** flera gånger, men när de går till kundvagnen är kundvagnen tom. Minivagnen kan fortfarande visa produkter.
 
 <u>Steg som ska återskapas</u> :
 
 1. Öppna en produktsida i butiken.
 1. Lägg produkter i kundvagnen.
-1. Klicka på **Gå till kassan** flera gånger.
+1. Klicka **Gå till kassan** flera gånger i den lilla kundvagnen.
 
 <u>Förväntat resultat</u> :
 
@@ -45,20 +45,20 @@ Patcherna är kopplade till den här artikeln. Om du vill hämta en patch rullar
 
 Patcharna skapades för:
 
-* Adobe Commerce lokal 2.2.3 ( `MDVA-10441_EE_2.2.3_v3.composer.patch` fil)
-* Adobe Commerce om molninfrastruktur 2.2.5 (`MDVA-17078_EE_2.2.5_COMPOSER_v1.patch` fil)
+* Adobe Commerce lokal 2.2.3 (filen `MDVA-10441_EE_2.2.3_v3.composer.patch`)
+* Adobe Commerce i molninfrastruktur 2.2.5 (`MDVA-17078_EE_2.2.5_COMPOSER_v1.patch` fil)
 
-The `MDVA-10441_EE_2.2.3_v3.composer.patch` patch är också kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
+Korrigeringen `MDVA-10441_EE_2.2.3_v3.composer.patch` är även kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
 
 * Adobe Commerce på molninfrastrukturversioner från 2.2.1 till 2.2.5
 * Adobe Commerce lokala versioner från 2.2.1 till 2.2.5
 
-The `MDVA-17078_EE_2.2.5_COMPOSER_v1.patch` patch är också kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
+Korrigeringen `MDVA-17078_EE_2.2.5_COMPOSER_v1.patch` är även kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
 
 * Adobe Commerce 2.2.5
 
 ## Så här lägger du på en patch
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

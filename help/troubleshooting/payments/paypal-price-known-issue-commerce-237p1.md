@@ -25,16 +25,16 @@ Du kan hämta korrigeringen från den här artikeln och den är även tillgängl
 
 När du gör en beställning med betalningsmetoden PayPal Express Checkout läggs den tidigare beställda köpta produkten till i beställningen i stället för den faktiska.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. I butiken lägger du till valfri produkt i kundvagnen (produkt A, pris $50).
 1. Klicka på vagnslänken för att öppna vagnen.
-1. Klicka på **PayPal-utcheckning** -knappen.
+1. Klicka på knappen **PayPal-utcheckning**.
 1. Använd dina PayPal-inloggningsuppgifter för att logga in på PayPal och skicka betalningen.
 1. Slutför orderplaceringen på butikssidan.
 1. Gå tillbaka till katalogen och lägg till en annan produkt (produkt B, pris $100) i kundvagnen.
 1. Klicka på vagnslänken för att öppna vagnen.
-1. Klicka på **PayPal-utcheckning** -knappen.
+1. Klicka på knappen **PayPal-utcheckning**.
 
 <u>Faktiskt resultat:</u>
 
@@ -51,7 +51,7 @@ Använd den patch som finns i den här artikeln.
 
 ## Lappa
 
-Använd följande länk för att ladda ned en ZIP-fil som innehåller patchen: [MC42674-composer.patch.zip](assets/MC42674-composer.patch.zip).
+Använd följande länk om du vill hämta en ZIP-fil som innehåller korrigeringen: [MC42674-Composer.patch.zip](assets/MC42674-composer.patch.zip).
 
 ### Kompatibla Adobe Commerce-versioner
 
@@ -60,4 +60,4 @@ Använd följande länk för att ladda ned en ZIP-fil som innehåller patchen: [
 ## Tillämpa patcharna
 
 1. Zippa upp den hämtade ZIP-filen.
-1. Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för ytterligare instruktioner.
+1. Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [Sökmotorn för MySQL-kataloger kommer att tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Elasticsearch-värden måste vara konfigurerad och konfigurerad innan du kan installera version 2.4.0. Se [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) i vår dokumentation för utvecklare.
+> [MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Elasticsearch-värden måste vara konfigurerad och konfigurerad innan du kan installera version 2.4.0. Mer information finns i [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) i utvecklardokumentationen.
 
 I den här artikeln finns en patch för det kända problemet med Adobe Commerce i molninfrastruktur 2.2.3 som rör hämtning av olika sökresultat för samma sökfråga med MySQL och Elasticsearch.
 
@@ -26,13 +26,15 @@ Vilka katalogsökresultat som har samma filteruppsättning skiljer sig åt beroe
 1. Installera och konfigurera Elasticsearch.
 1. Välj ett av filtren i butiken.
 1. Notera antalet matchande produkter.
-1. Konfigurera standardinställningen [MySQL-sökning](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md).
+1. Konfigurera [MySQL-standardsökningen](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md).
 1. Välj ett av filtren i butiken.
 1. Notera antalet matchande produkter.
 
-<u>Förväntat resultat</u>: Antalet matchande produkter är detsamma.
+<u>Förväntat resultat</u>:
+Antalet matchande produkter är detsamma.
 
-<u>Faktiskt resultat</u>: Antalet matchande produkter är annorlunda.
+<u>Faktiskt resultat</u>:
+Antalet matchande produkter är annorlunda.
 
 ## Lappa
 
@@ -46,10 +48,10 @@ Patcherna är kopplade till den här artikeln. Om du vill hämta en patch rullar
 
 Patcharna skapades för:
 
-* Adobe Commerce om molninfrastruktur 2.2.3 ( `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch` fil)
-* Adobe Commerce om molninfrastruktur 2.2.6 ( `MDVA-14172_EE_2.2.6_COMPOSER_v1.patch` fil)
+* Adobe Commerce om molninfrastruktur 2.2.3 (filen `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch`)
+* Adobe Commerce om molninfrastruktur 2.2.6 (filen `MDVA-14172_EE_2.2.6_COMPOSER_v1.patch`)
 
-The `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch` patch är också kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
+Korrigeringen `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch` är även kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
 
 * Adobe Commerce i molninfrastruktur 2.2.4
 * Adobe Commerce om molninfrastruktur 2.2.5
@@ -57,12 +59,12 @@ The `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch` patch är också kompatibel (men lö
 * Adobe Commerce lokal 2.2.4
 * Adobe Commerce lokal 2.2.5
 
-The `MDVA-14172_EE_2.2.6_COMPOSER_v1.patch` patch är också kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
+Korrigeringen `MDVA-14172_EE_2.2.6_COMPOSER_v1.patch` är även kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
 
 * Adobe Commerce lokal 2.2.6
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

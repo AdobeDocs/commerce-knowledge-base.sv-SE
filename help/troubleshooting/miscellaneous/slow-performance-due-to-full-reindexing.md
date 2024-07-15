@@ -36,7 +36,7 @@ Konstant tömning och indexåterskapande är några av orsakerna till prestandaf
 >
 >Dessa åtgärder bör köras utanför kontorstid för att säkerställa att dessa åtgärder inte påverkar prestanda under kontorstid.
 
-[Tredjepartstillägg](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) kan också leda till att indexeringen görs om fullständigt. Fullständig omindexering kan också köras manuellt från CLI. Så här tar du reda på om du har index som omindexeras och som kan ge sämre prestanda:
+[Tredjepartstillägg](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) kan också orsaka fullständig omindexering. Fullständig omindexering kan också köras manuellt från CLI. Så här tar du reda på om du har index som omindexeras och som kan ge sämre prestanda:
 
 1. Utför den här frågan för att hitta indexerare som har indexerats om helt under de senaste 15 minuterna:
 
@@ -53,9 +53,9 @@ Konstant tömning och indexåterskapande är några av orsakerna till prestandaf
 
 ### Lösning
 
-Kör bara omindexering när det behövs. Om du vill se steg går du igenom [Konfigurera indexerare](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) i vår dokumentation för utvecklare. En allmän rekommendation och bästa praxis är att tillåta den partiella omindexeringsmekanismen att hantera omindexering av data utan manuell åtgärd från en handlare. All omindexering ska göras med den inbyggda Adobe Commerce-funktionen (Mview). Mview utför partiell omindexering, vilket är det mest effektiva sättet att indexera om data. Mer information om Mview finns i [Indexeringsöversikt: Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) i vår dokumentation för utvecklare.
+Kör bara omindexering när det behövs. Om du vill veta mer går du till [Konfigurera indexerare](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) i utvecklardokumentationen. En allmän rekommendation och bästa praxis är att tillåta den partiella omindexeringsmekanismen att hantera omindexering av data utan manuell åtgärd från en handlare. All omindexering ska göras med den inbyggda Adobe Commerce-funktionen (Mview). Mview utför partiell omindexering, vilket är det mest effektiva sättet att indexera om data. Mer information om Mview finns i [Indexeringsöversikt: Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-* [Indexeringsöversikt: Indexera om](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#how-to-reindex) i vår dokumentation för utvecklare.
-* [Okänd cache orsakar försämrad svarstid](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) i vår kunskapsbas för support.
+* [Indexeringsöversikt: Så här indexerar du om ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#how-to-reindex) i utvecklardokumentationen.
+* [Ovaliderat cacheminne orsakar en försämring av svarstiden](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) i vår kunskapsbas för support.

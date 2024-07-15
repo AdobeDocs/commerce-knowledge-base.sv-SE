@@ -17,7 +17,7 @@ Den här artikeln innehåller lösningar på problem med misslyckade distributio
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce om molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 * Composer version 1.10.20 och tidigare
 
 >[!NOTE]
@@ -28,7 +28,7 @@ Den här artikeln innehåller lösningar på problem med misslyckade distributio
 
 Distributioner misslyckas och distributionsloggarna innehåller information som liknar följande:
 
-*Allvarligt fel: Uncaught UnexpectedValueException: Din github-auth-token för github.com innehåller ogiltiga tecken: &quot;ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot; i /app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129*
+*Allvarligt fel: Uncaught UnexpectedValueException: Din github-auth-token för github.com innehåller ogiltiga tecken: &quot;ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot; i /app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129*
 
 ## Orsak
 
@@ -38,13 +38,13 @@ Inaktuella dispositionsnycklar orsakar fel på Github-token som resulterar i mis
 
 Du löser problemet genom att uppdatera din Composer-version till 1.10.22:
 
-1. I din lokala miljö kan du köra `composer require “composer/composer”:”>1.10.21`.
-1. Detta lägger till kravet för den versionen av Composer-paketet. Kontrollera låsfilen - `composer/composer` version måste vara 1.0.22 eller senare.
-1. Verkställ `composer.json` och `composer.lock` och driva en driftsättning.
+1. Kör `composer require “composer/composer”:”>1.10.21` i din lokala miljö.
+1. Detta lägger till kravet för den versionen av Composer-paketet. Kontrollera låsfilen - `composer/composer`-versionen måste vara 1.0.22 eller senare.
+1. Bekräfta `composer.json` och `composer.lock` och skicka en distribution.
 
-Om den här metoden inte fungerar, [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Om den här metoden inte fungerar [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Relaterad läsning
 
-* [Github Blog: Bakom GitHub:s nya autentiseringstokenformat](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
-* [InfoQ.com: GitHub Changes Token Format to Improved Identifiability, Secret Scanning, and Entropy](https://www.infoq.com/news/2021/04/github-new-token-format/)
+* [Github-blogg: Bakom GitHubs nya autentiseringstokenformat](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
+* [InfoQ.com: GitHub Changes Token Format to Imimprove Identifiability, Secret Scanning, and Entropy](https://www.infoq.com/news/2021/04/github-new-token-format/)

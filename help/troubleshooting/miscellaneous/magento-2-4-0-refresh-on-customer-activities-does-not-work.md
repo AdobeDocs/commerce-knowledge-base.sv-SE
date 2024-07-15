@@ -24,33 +24,33 @@ Den här artikeln innehåller en lösning på ett problem som är känt i Adobe 
 
 <u>Steg som ska återskapas</u>:
 
-1. Gå till **Admin Panel** > **Försäljning** > **Beställningar**.
-1. Klicka på **Skapa ny order** -knappen.
+1. Gå till **administrationspanelen** > **Försäljning** > **Beställningar**.
+1. Klicka på knappen **Skapa ny ordning** .
 1. Välj den skapade kunden.
 1. Gå till butiken som kund.
-1. Gå till **Produkt** sida. Klicka på **Uppdatera** på **Nyligen visade produkter** avsnitt i **Kundens aktiviteter**.
+1. Gå till sidan **Produkt**. Klicka på knappen **Uppdatera** i avsnittet **Senast visade produkter** i **Kundens aktiviteter**.
 1. Gå tillbaka till butiken.
 1. Placera en order med de produkter du har skapat.
-1. Gå tillbaka till **Admin Panel** och klicka på **Uppdatera** knappen på **Senast beställda objekt** avsnitt i **Kundens aktiviteter**.
-1. Gå tillbaka till butiken. Lägg till den skapade produkten i **Jämförelselista**.
-1. Gå tillbaka till **Admin Panel**. Klicka på **Uppdatera** knappen på **Produkter i jämförelselista** avsnitt i **Kundens aktiviteter**.
+1. Gå tillbaka till **administrationspanelen** och klicka på knappen **Uppdatera** i avsnittet **Senast beställda objekt** i **Kundens aktiviteter**.
+1. Gå tillbaka till butiken. Lägg till den skapade produkten i **jämförelselistan**.
+1. Gå tillbaka till **Admin Panel**. Klicka på knappen **Uppdatera** i avsnittet **Produkter i jämförelselista** i **Kundens aktiviteter**.
 1. Gå tillbaka till butiken.
-1. Ta bort den skapade produkten från **Jämförelselista**.
+1. Ta bort den skapade produkten från **jämförelselistan**.
 1. Gå tillbaka till **Admin Panel**.
-1. Klicka på **Uppdatera** knappen på **Nyligen jämförda produkter** avsnitt i **Kundens aktiviteter**.
+1. Klicka på knappen **Uppdatera** i avsnittet **Nyligen jämförda produkter** i **Kundens aktiviteter**.
 1. Gå tillbaka till butiken.
 
 <u>Förväntade resultat</u>:
 
-Namnet på produkten ska finnas i **Nyligen visade produkter**, **Senast beställda objekt**, **Produkter i jämförelselista** och **Nyligen jämförda produkter** -avsnitt.
+Namnet på produkten ska visas i avsnittet **Senast visade produkter**, **Senast beställda objekt**, **Produkter i jämförelselista** och **Nyligen jämförda produkter**.
 
 <u>Faktiska resultat</u>:
 
-Sidan rullas upp varje gång **Uppdatera** klickas på knappen. Namnet på produkten visas inte i rätt avsnitt.
+Sidan rullas upp varje gång någon klickar på knappen **Uppdatera**. Namnet på produkten visas inte i rätt avsnitt.
 
 ## Lösning
 
-En tillfällig lösning är att administratören kan uppdatera **Kundens aktiviteter** genom att klicka på **Uppdatera ändringar** längst ned i sidlisten. Problemet är planerat att åtgärdas i Adobe Commerce 2.4.1-patchen.
+En tillfällig lösning är att administratörsanvändaren kan uppdatera **kundens aktiviteter** genom att klicka på knappen **Uppdatera ändringar** längst ned i sidlisten. Problemet är planerat att åtgärdas i Adobe Commerce 2.4.1-patchen.
 
 ![mceclip0.png](assets/mceclip0.png)
 

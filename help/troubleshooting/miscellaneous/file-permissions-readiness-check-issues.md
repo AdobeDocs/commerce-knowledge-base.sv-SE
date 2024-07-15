@@ -20,7 +20,7 @@ I den här artikeln finns en korrigering för problem med kontroll av filbehöri
 Hur du löser problemet beror på om du har en eller två användare:
 
 * *En användare* innebär att du loggar in på Adobe Commerce-servern som samma användare som kör webbservern. Den här typen av konfiguration är vanlig i delade värdmiljöer.
-* *Två användare* betyder att du *inte* loggar in som, eller växlar till, webbserveranvändaren. Du loggar vanligtvis in som en användare och kör webbservern som en annan användare. Detta är typiskt för privata värdtjänster eller om du har en egen server.
+* *Två användare* betyder att du vanligtvis *inte kan* logga in som, eller växla till, webbserveranvändaren. Du loggar vanligtvis in som en användare och kör webbservern som en annan användare. Detta är typiskt för privata värdtjänster eller om du har en egen server.
 
 ## Enanvändarupplösning
 
@@ -40,7 +40,7 @@ Om du vill ange alla kommandon på en rad anger du följande under förutsättni
 $ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
-Om filsystembehörigheterna inte har angetts korrekt och inte kan ändras av Adobe Commerce filsystemägare, kan du ange kommandot som en användare med `root` behörighet:
+Om filsystembehörigheterna inte har angetts korrekt och inte kan ändras av Adobe Commerce-filsystemets ägare, kan du ange kommandot som en användare med `root`-behörighet:
 
 ```bash
 $ cd /var/www/html/magento2 && sudo find var vendor

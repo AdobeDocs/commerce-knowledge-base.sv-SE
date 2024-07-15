@@ -16,7 +16,7 @@ Den här artikeln innehåller lösningar för att återauktorisera en integrerin
 
 ## Integreringar mellan databaser och SaaS
 
-En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med en integrering](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) i vår dokumentation för utvecklare. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
+En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med hjälp av en integrering](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) i utvecklardokumentationen. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
 
 ## Har du anslutningsproblem?
 
@@ -35,4 +35,4 @@ Status för alla integreringar finns på integreringssidan ( **Hantera data > In
 
 Om du vill återautentisera måste du kanske ange dina kontouppgifter igen. I vissa fall kanske du måste generera nya API-nycklar för problemintegreringen. Klicka på namnet på den problemintegration som du vill starta omauktoriseringsprocessen.
 
-Om problemet kvarstår kan du [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+[Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om problemet kvarstår.

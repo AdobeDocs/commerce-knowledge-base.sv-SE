@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Beskrivningar av orsaker till supportärende
 
-I den här artikeln visas supportanmälan **Kontaktorsak** fältalternativ och mer detaljerade beskrivningar av var och en av dem.
+I den här artikeln listas alternativen för supportbiljetten **Kontaktorsak** och mer detaljerade beskrivningar av varje alternativ.
 
 ## Kontaktorsaker
 
@@ -52,7 +52,7 @@ I den här artikeln visas supportanmälan **Kontaktorsak** fältalternativ och m
 
 ## Orsaker till Adobe Commerce
 
-Det här är alternativen som visas om **Adobe Commerce** är markerat som **Kontaktorsak**:
+Det här är de alternativ som visas om **Adobe Commerce-programmet** väljs som **kontaktorsak**:
 
 <table class="tg">
 <thead>
@@ -95,7 +95,7 @@ Det här är alternativen som visas om **Adobe Commerce** är markerat som **Kon
 
 ## Orsaker till Adobe Commerce Cloud infrastruktur
 
-Det här är alternativen som visas om **Adobe Commerce Cloud Infrastructure** är markerat som **Kontaktorsak**:
+Det här är de alternativ som visas om **Adobe Commerce Cloud Infrastructure** väljs som **kontaktorsak**:
 
 <table class="tg">
 <thead>
@@ -150,4 +150,4 @@ Det här är alternativen som visas om **Adobe Commerce Cloud Infrastructure** �
 
 ## Relaterad läsning
 
-Se [Help Center Guide > Support tickets fields](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) om du vill ha information om andra formulärfält för biljettintag.
+Mer information om andra formulärfält för biljettinmatning finns i [Help Center Guide > Support tickets fields.](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets).

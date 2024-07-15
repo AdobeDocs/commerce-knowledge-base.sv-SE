@@ -23,13 +23,13 @@ Den här artikeln innehåller en patch för det kända Adobe Commerce 2.2.3-prob
 
 När du tar bort en aktiv schemauppdatering mellan dess start- och slutdatum tas även den relaterade entiteten (kategori, underkategori, CMS-sida) bort.
 
-<u>Steg som ska återges (med kategorier)</u>:
+<u>Steg som ska återskapas (med kategorier)</u>:
 
 1. Logga in på Commerce Admin.
 1. Skapa en ny underkategori under **Katalog** > **Kategorier**.
 1. Skapa en ny mellanlagringsuppdatering med start- och sluttiden.
 1. Vänta tills uppdateringen har installerats. Det är starttiden.
-1. Ta bort uppdateringen med **Visa/redigera** länk.
+1. Ta bort uppdateringen med länken **Visa/redigera**.
 
 <u>Förväntade resultat</u>:
 
@@ -80,6 +80,6 @@ Patchen MDVA-23505\_EE\_2.2.5\_COMPOSER\_v1.patch är även kompatibel (men lös
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Bifogade filer

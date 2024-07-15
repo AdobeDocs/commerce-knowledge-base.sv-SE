@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-52613: Cachen och index uppdateras utan uppdateringar'
-description: Använd korrigeringsfilen ACSD-52613 för att åtgärda Adobe Commerce-problemet där cachen och index uppdateras när inga uppdateringar görs av "Inventory_source"-objekt efter [!DNL REST API].
+description: Använd patchen ACSD-52613 för att åtgärda Adobe Commerce-problemet där cache och index uppdateras när inga uppdateringar görs av Inventory_source-objekt senast  [!DNL REST API].
 feature: REST
 role: Admin
 exl-id: 78f23fee-a48e-4ee2-bc75-e98e3dd1ac44
@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # ACSD-52613: Cache och index uppdateras även utan uppdateringar
 
-Korrigeringen ACSD-52613 åtgärdar ett problem där Adobe Commerce-problemet där cache och index uppdateras när inga uppdateringar görs av `Inventory_source` objekt efter [!DNL REST API]. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.37 är installerat. Korrigerings-ID är ACSD-52613. Observera att problemet har åtgärdats i Adobe Commerce 2.4.7.
+Korrigeringen ACSD-52613 åtgärdar ett problem där Adobe Commerce-problemet där cache och index uppdateras när [!DNL REST API] inte gör några uppdateringar av `Inventory_source` objekt. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.37 har installerats. Korrigerings-ID är ACSD-52613. Observera att problemet har åtgärdats i Adobe Commerce 2.4.7.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.6
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.6 - 2.4.7
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-Cachen och index uppdateras när inga uppdateringar görs av `Inventory_source` objekt efter [!DNL REST API].
+Cachen och index uppdateras när inga uppdateringar görs av `Inventory_source` objekt av [!DNL REST API].
 
 <u>Förutsättningar</u>:
 
@@ -51,12 +51,12 @@ Installerade lagermoduler
    ```
 
 1. Importera produkter från `import.csv`
-1. Skapa nytt lager och ny källa anropad **test_stock** och **test_source**.
+1. Skapa ett nytt lager och en ny källa med namnen **test_stock** och **test_source**.
 1. Tilldela nytt arkiv till webbplatsen och tilldela Stock källan.
 1. Skapa en ny integrering med åtkomst till alla, aktivera den och kopiera och klistra in åtkomsttoken.
-1. Gå till **Lager** > **Konfiguration** > **Tjänster** > **Oauth** > **Konsumentinställningar** och aktivera **Tillåt att OAuth Access-token används som fristående Bearer-tokens**.
+1. Gå till **Lagrar** > **Konfiguration** > **Tjänster** > **OAuth** > **Konsumentinställningar** och aktivera **Tillåt att OAuth Access-token används som fristående Bearer-token**.
 1. Töm cacheminnet.
-1. Ange indexerare som **Uppdaterat enligt schema**
+1. Ange indexerare som **Uppdaterad av schema**
 1. Kör API-begäran
 
    `POST ../rest/V1/inventory/source-items`
@@ -671,7 +671,7 @@ Installerade lagermoduler
    ```
 
 1. Ta bort alla loggar från `var/log`
-1. Kör [!DNL REST API] begär igen.
+1. Kör [!DNL REST API]-begäran igen.
 1. Kontrollera `var/log/debug.log`.
 
 <u>Förväntade resultat</u>:
@@ -680,20 +680,20 @@ Cachen bör inte rensas och indexen bör inte köras efter den andra körningen 
 
 <u>Faktiska resultat</u>:
 
-The `var/log/debug.log` innehåller den post som är relaterad till rensningen av cachen.
+`var/log/debug.log` innehåller den post som är relaterad till rensningen av cachen.
 
 ## Tillämpa korrigeringen
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.

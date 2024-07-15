@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce *post-deploy hoppas över eftersom distributionen misslyckades*-fel
-description: 'I den här artikeln beskrivs hur du undersöker ett distributionsfel: *Efter distributionen hoppas över eftersom distributionen misslyckades*'
+description: 'I den här artikeln beskrivs hur du undersöker ett distributionsfel: *Post-deploy ignoreras eftersom distributionen misslyckades*'
 exl-id: cd0a3015-b7b9-442e-8ac1-89447ef12cd7
 feature: Deploy
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce *efter distribution hoppas över eftersom distributionen misslyckades* fel
+# Adobe Commerce *efter distributionen hoppas över eftersom distributionen misslyckades*-fel
 
-I den här artikeln beskrivs hur du undersöker ett distributionsfel: *Efterdistributionen hoppas över eftersom distributionen misslyckades* som inträffar under distributionen till olika miljöer, till exempel uppgradering.
+I den här artikeln beskrivs hur du undersöker ett distributionsfel: *Post-distribution ignoreras eftersom distributionen misslyckades*, vilket inträffar under distributionen till olika miljöer, till exempel uppgradering.
 
 ## Berörda produkter och versioner
 
-Adobe Commerce i molninfrastruktur [alla versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce i molninfrastrukturen [alla versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
@@ -46,4 +46,4 @@ Odefinierad - vad som orsakar det här felmeddelandet beror på koden och databa
     W:
 ```
 
-Om du vill få felspårning för att fastställa den faktiska orsaken, skickar du SSH till servern och kontrollerar loggfilen `var/log/install_upgrade.log`.
+Om du vill få felspårningen för att fastställa den faktiska orsaken, skickar du SSH till servern och kontrollerar loggfilen `var/log/install_upgrade.log`.

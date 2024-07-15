@@ -13,7 +13,7 @@ ht-degree: 0%
 
 I Adobe Commerce kundsupportguide beskrivs kundsupporterbjudanden och hur man utnyttjar dem. Detta inkluderar bästa praxis för supportrelationen, insamling av information som behövs för diagnos, kundsupport, inlämning av en supportförfrågan och länkar till resurser. Den här guiden finns tillgänglig i hämtningsavsnittet på din kontosida för Magento. Så här öppnar du:
 
-1. Gå till Magento [inloggningssida för konto.](https://account.magento.com/customer/account/login)
+1. Gå till inloggningssidan för Magento [konto.](https://account.magento.com/customer/account/login)
 1. Logga in med ditt användarnamn och lösenord för Magento.
-1. Klicka på i det vänstra navigeringsfältet **Nedladdningar**.
-1. Klicka på i den högra rutan **Merchants - Resources for Getting Started**.  ![access_magento_commerce_customer_support_guide.png](assets/access_magento_commerce_customer_support_guide.png)
+1. Klicka på **Hämtningar** i det vänstra navigeringsfältet.
+1. Klicka på **Merchants - Resources for Getting Started** i den högra rutan.  ![access_magento_commerce_customer_support_guide.png](assets/access_magento_commerce_customer_support_guide.png)

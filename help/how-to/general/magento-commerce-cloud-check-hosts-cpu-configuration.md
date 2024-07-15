@@ -21,4 +21,4 @@ Adobe Commerce om molninfrastruktur 2.3.x, 2.4.x
 
 ## Ladda ned artikeln
 
-Klicka [Check_host_s_CPU_Configuration_-_Application_to_host_resizes.pdf](assets/Check_host_s_CPU_Configuration_-_Application_to_host_resizes.pdf) för att hämta artikeln.
+Klicka på [Check_host_s_CPU_Configuration_-_Application_to_host_resizes.pdf](assets/Check_host_s_CPU_Configuration_-_Application_to_host_resizes.pdf) för att hämta artikeln.

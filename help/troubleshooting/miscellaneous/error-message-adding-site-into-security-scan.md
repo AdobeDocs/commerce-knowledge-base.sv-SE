@@ -22,7 +22,7 @@ Den här artikeln innehåller möjliga lösningar på problemet när en använda
 
 ## Problem
 
-Användaren kan inte lägga till webbplatser i [Commerce Security Scan](https://account.magento.com/scanner/dashboard/). Följande felmeddelande visas när du försöker lägga till en plats: *Det gick inte att skicka webbplatsen för skanning.*
+Användaren kan inte lägga till webbplatser i [Commerce Security Scan](https://account.magento.com/scanner/dashboard/). Följande felmeddelande visas när du försöker lägga till en plats: *Det går inte att skicka webbplatsen för skanning.*
 
 ## Lösning
 
@@ -31,10 +31,10 @@ Användaren kan inte lägga till webbplatser i [Commerce Security Scan](https://
    * 34.196.167.176
    * 3.218.25.102
 
-1. Bekräftelsekoden är tidskänslig. Om mer än 30 minuter har gått efter **Lägg till webbplats** klickades på länken, koden har förmodligen gått ut.
+1. Bekräftelsekoden är tidskänslig. Om mer än 30 minuter har gått sedan länken **Lägg till plats** klickades har koden förmodligen gått ut.
 1. Glöm inte att rensa cacheminnet och kontrollera att valideringskoden visas i källtexten för startsidan. Bekräftelsekoden ska injiceras enligt HTML markup specs: HTML-kommentaren kan injiceras i sidbrödtexten (vi föreslår att den placeras i sidfotsavsnittet); META-taggen ska endast finnas i head-avsnittet.
-1. Innan du klickar **Bekräfta bekräftelsekod**&#x200B;öppnar du webbläsarens utvecklarkonsol och klickar på **Nätverk** och kontrollera svaret från magento.com. Det ska vara HTTP 200 (OK) och svarstexten ska innehålla ett JSON-objekt.
-1. Om svarskoden är HTTP 200 och svarstexten är ett JSON-objekt och `verified` egenskapsvärdet är `false`betyder det att koden inte finns på sidan. The `details` egenskapsvärdet ska innehålla förklaringen. Om arkivet till exempel använder ett självsignerat SSL-certifikat kommer det antagligen att finnas ett anslutningsfel.
+1. Innan du klickar på **Verifiera bekräftelsekod** öppnar du webbläsarens utvecklarkonsol, klickar på fliken **Nätverk** och kontrollerar svaret från magento.com. Det ska vara HTTP 200 (OK) och svarstexten ska innehålla ett JSON-objekt.
+1. Om svarskoden är HTTP 200 och svarstexten är ett JSON-objekt och egenskapsvärdet `verified` är `false` betyder det att koden inte hittas på sidan. Egenskapsvärdet `details` ska innehålla förklaringen. Om arkivet till exempel använder ett självsignerat SSL-certifikat kommer det antagligen att finnas ett anslutningsfel.
 
 Om du fortfarande inte kan lägga till webbplatser utför du följande steg:
 

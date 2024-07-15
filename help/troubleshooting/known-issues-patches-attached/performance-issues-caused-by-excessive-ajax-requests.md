@@ -17,7 +17,7 @@ Den här artikeln innehåller en patch för de kända prestandaproblemen i Adobe
 
 ## Problem
 
-Adobe Commerce kan skicka redundanta [Ajax-begäranden](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md) från butiken till servern för att få bannerinformation och kundinformation. Dessa Ajax-förfrågningar har en inverkan på prestandan, särskilt vid stora volymer och hög trafik. Om du inte använder banderollfunktionen rekommenderar vi att du [inaktivera utdata från Adobe Commerce Banner-modulen](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) och implementera patchen för att få bättre kundinformation.
+Adobe Commerce kanske skickar överflödiga [Ajax-begäranden](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md) från butiken till servern för att få bannerinformation och kundinformation. Dessa Ajax-förfrågningar har en inverkan på prestandan, särskilt vid stora volymer och hög trafik. Om du inte använder banderollfunktionen bör du [inaktivera Adobe Commerce Banner-modulens utdata](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) fullständigt och använda korrigeringen för att förbättra hämtningen av kundinformation.
 
 ## Lappa
 
@@ -32,10 +32,10 @@ Patchen gäller följande produkter och versioner:
 * Adobe Commerce om molninfrastruktur 2.2.9
 * Adobe Commerce lokal 2.2.9
 
-Om du har en annan version av Adobe Commerce bör du uppdatera till den senaste 2.3.x-versionen. Om detta inte är ett alternativ för närvarande, [kontakta Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär en patch till din version.
+Om du har en annan version av Adobe Commerce bör du uppdatera till den senaste 2.3.x-versionen. Om detta inte är ett alternativ för närvarande [kontaktar du Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär en patch för din version.
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Bifogade filer

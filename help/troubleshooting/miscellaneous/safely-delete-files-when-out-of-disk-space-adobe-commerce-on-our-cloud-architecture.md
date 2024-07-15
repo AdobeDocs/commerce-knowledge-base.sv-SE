@@ -16,7 +16,7 @@ ht-degree: 0%
 ## Berörda produkter och versioner
 
 * Adobe Commerce om molninfrastruktur 2.4.2 - 2.4.7
-* Detta gäller specifikt för dedikerade Pro-kluster. Start- och integreringsmiljöer är en nod och har inte `/data/exports` katalog.
+* Detta gäller specifikt för dedikerade Pro-kluster. Start- och integreringsmiljöer är en nod och har inte katalogen `/data/exports`.
 
 ## Tecken på otillräckligt diskutrymme
 
@@ -28,7 +28,7 @@ Om du vill se hur mycket diskutrymme som används i filsystemet kör du följand
 
 ## Hur man tar bort filer på ett säkert sätt för att öka diskutrymmet
 
-Du kan ta bort filer från programmets fästpunkter från `/app` bana eller genom `/mnt/shared`. Det finns två olika sätt att få åtkomst till samma filer.
+Du kan ta bort filer från programmets monteringspunkter, från sökvägen `/app` eller till `/mnt/shared`. Det finns två olika sätt att få åtkomst till samma filer.
 
 >[!WARNING]
 >

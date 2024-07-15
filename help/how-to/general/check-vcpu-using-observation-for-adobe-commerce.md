@@ -22,18 +22,18 @@ Adobe Commerce om molninfrastruktur 2.4.3 - 2.4.6
 
 Så här kommer du åt och loggar in på New Relic Observation for Adobe Commerce ndlet:
 
-1. På New Relic hemsida klickar du på **Appar**.
-1. Klicka **Observation för Adobe Commerce**.
+1. Klicka på **Appar** på startsidan för New Relic.
+1. Klicka på **Observation för Adobe Commerce**.
 1. Observationen för Adobe Commerce nördlet öppnas.
-1. Klicka på **Välj ett konto** och välj ett konto.
+1. Klicka på listrutan **Välj ett konto** och välj ett konto.
 1. Du kan fylla i projekt-ID:t, New Relic-kontonumret eller kontonamnet eller bläddra igenom listan med konton.
 1. Klicka på den ljusblå listrutemenyn med klockikonen (mot den övre högra delen av nördletsfönstret).
-1. Om du försöker identifiera orsaken till en händelse/ett fel ska du välja en tid före biljettdatumet och -tiden för att se om det fanns några föregående händelser/data. Du kan använda de förinställda tidsbildrutorna eller ange en anpassad tidsram genom att markera **Ange anpassad**.
-1. Klicka på **Infra**. Det finns tre vCPU-skiktdiagram:
-   * Det första diagrammet visar **Vy över CPU-nivå över tidslinjen GREATER 2 veckor (Du måste välja en tidslinje GREATER mer än 2 veckor). Obs! Samplingsfrekvensen kommer att vara per dag. Om klustret får upp-/nedstorlekar per dag visas den sista nivåstorleken följande dag**.
-   * Det andra diagrammet visar **Vyn vCPU-nivå över tidslinjen (måste välja tidslinjen GREATER mer än 24 timmar men inte större än 2 veckor)**.
-   * I det tredje diagrammet visas **Vyn över CPU-nivå över tidslinjen VIA NODE, ska titta på tidslinjen mindre än 24 timmar**.
+1. Om du försöker identifiera orsaken till en händelse/ett fel ska du välja en tid före biljettdatumet och -tiden för att se om det fanns några föregående händelser/data. Du kan använda de förinställda tidsbildrutorna eller ange en anpassad tidsbildruta genom att välja **Ange anpassad**.
+1. Klicka på **Information** på flikarna. Det finns tre vCPU-skiktdiagram:
+   * I det första diagrammet visas **vCPU-nivåvy över tidslinjen GREATER 2 veckor (du måste välja en tidslinje GREATER mer än 2 veckor). Obs! Samplingsfrekvensen kommer att vara per dag. Om kluster har upp- och nedstorlekar på en dag visas slutskiktsstorleken följande dag:**.
+   * I det andra diagrammet visas **vCPU-nivåvy över tidslinjen (du måste välja en tidslinje som är större än 24 timmar men inte större än 2 veckor)**.
+   * I det tredje diagrammet visas **vCPU-nivåvyn över tidslinjen BY NODE, som ska titta på tidslinjen mindre än 24 timmar**.
 
 ## Relaterad läsning
 
-* [Obs för Adobe Commerce - översikt](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) i vår kunskapsbas för support.
+* [Observation för Adobe Commerce - översikt](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) i vår kunskapsbas för support.

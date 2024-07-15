@@ -17,39 +17,39 @@ ht-degree: 0%
 >
 >Om du har det här problemet kan du åtgärda det genom att uppgradera till ece-tools 2002.1.5. 2002.1.5 har funktioner för att återställa opcache för varje distribution så att du aldrig behöver ändra inställningen `opcache.enable_cli=1`. Om du inte vill uppgradera måste du utföra de tillfälliga åtgärder som beskrivs nedan i lösningen.
 
-Den här artikeln innehåller en lösning på problemet med att ändringar i `.magento.env.yaml` filen återspeglas inte i `app/etc/env.php` efter driftsättningen.
+Den här artikeln innehåller en lösning på problemet där ändringar i filen `.magento.env.yaml` inte återspeglas i `app/etc/env.php` efter distributionen.
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce i molninfrastruktur (alla [versionerna](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)).
+* Adobe Commerce i molninfrastruktur (alla [versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)).
 
 ## Problem
 
-Ändringar i `.magento.env.yaml` filen inte påverkar `app/etc/env.php` genereras.
+Ändringar som görs i filen `.magento.env.yaml` påverkar inte `app/etc/env.php` som genereras.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-Ändra valfritt värde i `.magento.env.yaml` och skickas till servern där den ska definiera konfigurationen (och distributionsinställningarna) för den utcheckade miljön. Om du vill se steg går du till [Miljövariabler > Distribuera variabler](https://devdocs.magento.com/cloud/env/variables-deploy.html) i vår dokumentation för utvecklare.
+Ändra ett värde i `.magento.env.yaml` och skicka till servern, där konfigurationen (och distributionsinställningarna) för den utcheckade miljön ska definieras. Stegen finns i [Miljövariabler > Distribuera variabler](https://devdocs.magento.com/cloud/env/variables-deploy.html) i utvecklardokumentationen.
 
 <u>Förväntat resultat:</u>
 
-Ändringar i `.magento.env.yaml` filen påverkar `app/etc/env.php` genereras.
+Ändringar som görs i filen `.magento.env.yaml` påverkar `app/etc/env.php` som genereras.
 
 <u>Faktiskt resultat:</u>
 
-Ändringarna påverkar inte `app/etc/env.php` variabler efter distributionen.
+Ändringarna påverkar inte `app/etc/env.php`-variablerna efter distributionen.
 
 ## Orsak
 
-Problemet kan bero på att värdet på `opcache.enable_cli` -parametern i `php.ini` -fil.
+Problemet kan bero på det felaktiga värdet för parametern `opcache.enable_cli` i filen `php.ini`.
 
 ## Lösning
 
-1. Kontrollera att systemet är konfigurerat enligt [Adobe Commerce Performance Best Practices > Programvarurekommendationer](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html).
-1. Kontrollera om `opcache.enable_cli` direktiv in `php.ini` är inställd på `0` genom att köra: `php -i | grep opcache.enable_cli`
-1. Om utdata ser ut som `opcache.enable_cli=1` , redigera `php.ini` i projektets rotkatalog och ändra `opcache.enable_cli=1` till `opcache.enable_cli=0`
+1. Kontrollera att systemet är konfigurerat enligt [Adobe Commerce Performance Best Practices > Software recommendations](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html).
+1. Kontrollera om direktivet `opcache.enable_cli` i `php.ini` är inställt på `0` genom att köra: `php -i | grep opcache.enable_cli`
+1. Om utdata ser ut som `opcache.enable_cli=1` redigerar du filen `php.ini` i projektets rotkatalog och ändrar `opcache.enable_cli=1` till `opcache.enable_cli=0`
 1. Distribuera om projektet.
 
 ## Relaterad läsning
 
-* [Cloud för Adobe Commerce > Bygg och driftsätt](https://devdocs.magento.com/cloud/project/magento-env-yaml.html).
+* [Cloud för Adobe Commerce > Skapa och distribuera](https://devdocs.magento.com/cloud/project/magento-env-yaml.html).

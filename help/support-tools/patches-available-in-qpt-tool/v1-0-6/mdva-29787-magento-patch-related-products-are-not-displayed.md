@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # MDVA-29787: relaterade produkter visas inte
 
-MDVA-29787-korrigeringen löser problemet där **Samhörande produkter** visas inte på en Adobe Commerce Store-klientsida. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6 är installerat. Korrigerings-ID är MDVA-29787.
+MDVA-29787-korrigeringen löser problemet där **Relaterade produkter** inte visas på en Adobe Commerce-butik. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6 är installerat. Korrigerings-ID är MDVA-29787.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce om molninfrastruktur 2.3.3.
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.3.0 - 2.4.0.
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-Målregel för **Samhörande produkter** fungerar inte när &quot;*är en av*&quot; används för **Produkter som ska visas** i handelsadministratören.
+Målregeln för **relaterade produkter** fungerar inte när *är ett av*-villkor används för **Produkter att visa** i Commerce Admin.
 
 >[!NOTE]
 >
@@ -39,21 +39,21 @@ Målregel för **Samhörande produkter** fungerar inte när &quot;*är en av*&qu
 
 <u>Steg som ska återskapas</u>:
 
-1. Skapa **Nytt attribut** (Exempel: test\_Attr).
-   * Ange **Katalogindatatyp för butiksägare** = *Text.*
-   * I **Egenskaper för Storefront**, ange **Använd för villkor för kampanjregel** = *Ja*.
-1. Skapa **Ny attributuppsättning** (Exempel: test\_set).
-1. Lägg till **Nytt attribut** till **Ny attributuppsättning** (Exempel: Lägg till attributet &quot;Test\_Attr&quot; i attributuppsättningen &quot;Test\_Set&quot;).
+1. Skapa **nytt attribut** (Exempel: test\_Attr).
+   * Ange **katalogindatatyp för butiksägare** = *Text.*
+   * Ange **Använd för kampanjregelvillkor** = *Ja* i **Egenskaper för Storefront**.
+1. Skapa **ny attributuppsättning** (Exempel: test\_set).
+1. Lägg till det **nya attributet** i den **nya attributuppsättningen** (Exempel: Lägg till attributet &quot;Test\_Attr&quot; i attributuppsättningen &quot;Test\_Set&quot;).
 1. Skapa tre produkter. De är till exempel inställda så här:
    * Produkt1, Test\_Attr = MAGT2NA\_Test3
    * Produkt2, Test\_Attr = 24 MB02
    * Product3, Test\_Attr = 701644329389M
-1. Skapa mål **Regel** (**Marknadsföring**   > **Relaterade produktregler** och klicka på **Lägg till regel** .) med inställningar:
-   * **Använd på** = *Samhörande produkter*
+1. Skapa mål **Regel** (**Marknadsföring**)   > **Relaterade produktregler** och klicka på knappen **Lägg till regel** .) med inställningar:
+   * **Gäller för** = *Relaterade produkter*
    * **Produkter som ska matchas**
-   * Ange det nya attributet som du skapade **in** **Steg 1 ovan** vara Product1-attributet (Exempel: Test\_Attr = MAGT2NA\_Test3).
-   * **Produkter som ska visas** = De övriga två produkternas attribut (Exempel: attributen 24-MB02 och 701644329389M).
-1. Spara **Regel**.
+   * Ange det nya attribut du skapade **i** **Steg 1 ovan** som Product1-attributet (Exempel: Test\_Attr = MAGT2NA\_Test3).
+   * **Produkter som ska visas** = attributen för de två andra produkterna (Exempel: attributen 24-MB02 och 701644329389M).
+1. Spara **regeln**.
 1. Kör en omindexering om det behövs.
 1. Rensa cache.
 1. Öppna Product1 i förgrunden.
@@ -70,14 +70,14 @@ De relaterade produkterna saknas.
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [Patchar tillgängliga i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår dokumentation för utvecklare.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [Patchar i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår utvecklardokumentation.

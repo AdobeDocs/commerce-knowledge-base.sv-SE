@@ -12,23 +12,23 @@ ht-degree: 0%
 
 # Länka Magento.com och konton.magento.cloud-kontoinloggningar
 
-Från och med den 1 april 2020 kräver Adobe Commerce att användare som har ett konto på [accounts.magento.cloud](https://accounts.magento.cloud/) för att länka det här kontot till deras [Magento.com](https://account.magento.com/customer/account/login/) konto. Det här kommer att göra [Magento.com](https://account.magento.com/customer/account/login/) kontoinloggning är den primära inloggningsmetoden för båda kontona och förbättrar säkerheten för användarna.
+Från och med den 1 april 2020 kräver Adobe Commerce att användare som har ett konto på [accounts.magento.cloud](https://accounts.magento.cloud/) länkar det här kontot till sitt [Magento.com](https://account.magento.com/customer/account/login/)-konto. Detta gör att inloggningen på [Magento.com](https://account.magento.com/customer/account/login/)-kontot blir den primära inloggningsmetoden för båda kontona och förbättrar säkerheten för användare.
 
 Användare på [accounts.magento.cloud](https://accounts.magento.cloud/) kan ansluta dessa konton på något av två sätt:
 
 ## Metod 1
 
 1. Gå till **Kontoinställningar** på [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) efter inloggning med den metod du föredrar.
-1. Öppna **Enkel inloggning** på sidan.
-1. Om **Leverantör: Magento.com** rapporterar &quot;Status Not Connected&quot; (Status ej ansluten) väljer du **Anslut till Magento.com** -knappen.
+1. Öppna avsnittet **Enkel inloggning** på sidan.
+1. Om **Provider: Magento.com** rapporterar &quot;Status Not Connected&quot; väljer du knappen **Connect with Magento.com** .
 1. Du omdirigeras till [https://account.magento.com/applications/customer/login/](https://account.magento.com/applications/customer/login/).
 1. Därifrån kan du antingen skapa ett Adobe Commerce-konto eller logga in på ett befintligt.
 
 ## Metod 2
 
 1. Logga in på [https://account.magento.com](https://account.magento.com/).
-1. Navigera till en separat flik för att [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user).
-1. Klicka på&quot;Anslut till [Magento.com](https://account.magento.com/customer/account/login/)&quot;.
+1. Navigera till en separat flik till [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user).
+1. Klicka på Anslut med [Magento.com](https://account.magento.com/customer/account/login/).
 
 ## Relaterad läsning
 

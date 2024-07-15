@@ -27,4 +27,4 @@ fatal: The remote end hung up unexpectedly
 
 ## Lösning {#solution}
 
-Överför din SSH-nyckel till GitHub enligt beskrivningen i [hjälpsidan för GitHub](https://help.github.com/articles/generating-ssh-keys) .
+Överför din SSH-nyckel till GitHub enligt beskrivningen på [hjälpsidan för GitHub](https://help.github.com/articles/generating-ssh-keys) .

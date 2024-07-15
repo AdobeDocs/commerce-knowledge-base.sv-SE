@@ -43,9 +43,9 @@ Webbinstallationsguiden har inaktiverats för alla Adobe Commerce i molninfrastr
 
 Den här funktionen är inaktiverad på Adobe Commerce i molninfrastruktur.
 
-Se [Installera, hantera och uppgradera tillägg](https://devdocs.magento.com/cloud/howtos/install-components.html) i vår utvecklardokumentation om du vill ha information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce i vår molninfrastruktur.
-Se [Snabbstart](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) i vår utvecklardokumentation om du vill ha information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce lokalt.
+Se [Installera, hantera och uppgradera tillägg](https://devdocs.magento.com/cloud/howtos/install-components.html) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce i vår molninfrastruktur.
+Se [Snabbstartsinstallation](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce lokalt.
 
 ## Relaterad läsning
 
-* Se [Installera ett tillägg](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) i vår dokumentation för utvecklare.
+* Se [Installera ett tillägg](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) i utvecklardokumentationen.

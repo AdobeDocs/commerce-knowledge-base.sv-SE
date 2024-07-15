@@ -23,7 +23,7 @@ Adobe Commerce om molninfrastruktur 2.4.1 och senare.
 
 Du får ett 403-fel när du försöker komma åt analysverktyget för hela webbplatsen.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 Logga in på Commerce Admin-panelen och klicka på **Rapporter** > *Systeminsikter* > **Site-Wide Analysis Tool**.
 
@@ -38,7 +38,7 @@ Du ser: *Fel 403.*
 
 ## Lösning
 
-Kontrollera att Site-Wide Analysis Tool har rätt åtkomst till ditt program genom att köra följande kommando i CLI. Ersätt `<store URL>` med din webblänk:
+Kontrollera att Site-Wide Analysis Tool har rätt åtkomst till ditt program genom att köra följande kommando i CLI. Ersätt `<store URL>` med din butiks-URL:
 
 ```cURL
 curl -sIL -X GET <store URL>/swat/key/index | grep HTTP
@@ -57,26 +57,26 @@ Om svarskoden är 403 kan du ha ett skydd för Cloudflare-roboten som blockerar 
 
 ### Korrigera 200 svarskoder och JSON-utdata
 
-Om svaret är rätt 200-kod och JSON-utdata, [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att eskalera problemet med åtkomsten till verktyget för webbplatsövergripande analys.
+Om svaret är rätt 200-kod och JSON-utdata [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att eskalera problemet med åtkomsten till analysverktyget för hela webbplatsen.
 
 
 ### 500-svarskod (allvarligt fel)
 
 Om en svarskod är 500 (allvarligt fel) installerar du MDVA-38526-korrigeringen. Använd någon av följande länkar för att hämta korrigeringen, beroende på vilken typ av korrigering du vill ha:
 
-* Adobe Commerce i molninfrastruktur: [MDVA-38526_EE_2.4.1-p1_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_v3.patch.zip)
-* Adobe Commerce i molninfrastrukturshanteraren: [MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip)
+* Adobe Commerce på molninfrastrukturkorrigering: [MDVA-38526_EE_2.4.1-p1_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_v3.patch.zip)
+* Korrigering för Adobe Commerce i molninfrastrukturshanteraren: [MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip)
 
 Korrigeringen gäller för Adobe Commerce i molninfrastrukturversionerna 2.4.1 och senare.
 
 ### Svaret är inte JSON
 
-Om svarsutdata inte är JSON, kan det bero på implementeringen av PWA/Headless. Om du använder Headless-implementering ska du uppdatera UPWARD-konfigurationen så att den kringgår begäranden till Adobe Commerce Origin. I Adobe Commerce Admin, under **Lager** > **Konfiguration** > **Allmänt** > **Webb** > **Konfiguration av UPWARD PWA** > **Namn på framsida, Tillåtelselista**, lägga till *swat*.
+Om svarsutdata inte är JSON, kan det bero på implementeringen av PWA/Headless. Om du använder Headless-implementering ska du uppdatera UPWARD-konfigurationen så att den kringgår begäranden till Adobe Commerce Origin. I Adobe Commerce Admin, under **Lagrar** > **Konfiguration** > **Allmänt** > **Webb** > **UPWARD PWA Configuration** > **Front Name Tillåtelselista**, lägger du till *swat*.
 
-![Uppåt_konfiguration](assets/upward_pwa.png)
+![Upward_configuration](assets/upward_pwa.png)
 
-Om du fortfarande inte har tillgång till analysverktyget för hela webbplatsen loggar du in nästa gång på administrationspanelen i Commerce och navigerar till **Rapporter** > *Systeminsikter* > **Site-Wide Analysis Tool**, [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Om du fortfarande inte har tillgång till analysverktyget för hela webbplatsen kan du [skicka in en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) nästa gång du loggar in på administrationspanelen i Commerce och navigerar till **Rapporter** > *Systeminsikter* > **Analysis Tool för hela webbplatsen**.
 
 ## Relaterad läsning
 
-* [Handbok för Site-Wide Analysis Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)
+* [Handbok för analysverktyget för hela webbplatsen](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)

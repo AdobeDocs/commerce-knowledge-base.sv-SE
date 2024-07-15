@@ -20,4 +20,4 @@ Adobe Commerce om molninfrastruktur 2.3.x, 2.4.x
 
 ## Ladda ned artikeln
 
-Klicka [Check_whether_an_upsize_is_needed.pdf](assets/Check_whether_an_upsize_is_needed.pdf) för att hämta artikeln.
+Klicka på [Check_whether_an_upsize_is_needed.pdf](assets/Check_whether_an_upsize_is_needed.pdf) för att hämta artikeln.

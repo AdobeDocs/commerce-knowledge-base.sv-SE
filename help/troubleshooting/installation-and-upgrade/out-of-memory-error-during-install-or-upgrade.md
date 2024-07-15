@@ -40,24 +40,24 @@ kan även visas på kommandoraden.
 
 ## Lösning {#solution}
 
-Vi rekommenderar dig [tilldela PHP 2 GB minne](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) i utvecklardokumentationen för att säkerställa att installationen eller uppgraderingen lyckas.
+Vi rekommenderar att du [tilldelar 2 GB minne till PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) i vår utvecklardokumentation för att vara säker på att installationen eller uppgraderingen lyckas.
 
-Om du redan har gjort det skapar du en växlingsfil på datorn. En Linux-dator använder *växlingsutrymme* om det behöver mer minnesresurser och RAM-minnet är fullt. Växlingsutrymmet används för inaktiva sidor i minnet.
+Om du redan har gjort det skapar du en växlingsfil på datorn. En Linux-dator använder *växlingsutrymme* om den behöver mer minnesresurser och RAM-minnet är fullt. Växlingsutrymmet används för inaktiva sidor i minnet.
 
-Följande är endast förslag, andra alternativ kan vara tillgängliga. Kontakta en nätverksadministratör eller en annan kunskapsbar resurs innan du fortsätter. Du måste köra kommandona för att skapa en utbytesfil som en användare med `root` behörighet.
+Följande är endast förslag, andra alternativ kan vara tillgängliga. Kontakta en nätverksadministratör eller en annan kunskapsbar resurs innan du fortsätter. Du måste köra kommandona för att skapa en utbytesfil som en användare med `root`-behörighet.
 
 ### Växla fil på Ubuntu {#swap-file-on-ubuntu}
 
-Använd `fallocate` som beskrivs i dessa referenser:
+Använd kommandot `fallocate` enligt följande referenser:
 
-* [How To Add Swap on Ubuntu 14.04 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
+* [Så här lägger du till växel i Ubuntu 14.04 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
 * [Så här lägger du till växlingsutrymme i Ubuntu 16.04 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
 * [SwapFAQ (help.ubuntu.com)](https://help.ubuntu.com/community/SwapFaq)
 
 ### Växla fil på CentOS {#swap-file-on-centos}
 
-Använd `mkswap` som beskrivs i dessa referenser:
+Använd kommandot `mkswap` enligt följande referenser:
 
-* [Så här lägger du till växel i CentOS 6 (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
-* [Så här lägger du till växel i CentOS 7 (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)
-* [Swap Space (kundportalen RedHat)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)
+* [Så här lägger du till växel i CentOS 6 (digitalt hav)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
+* [Så här lägger du till växel i CentOS 7 (digitalt hav)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)
+* [Växlingsutrymme (kundportalen RedHat)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)

@@ -27,11 +27,11 @@ Adobe Commerce på plats lägger till stöd för Elasticsearch 7.16 och OpenSear
 
 OpenSearch är en gaffel från Elasticsearch och Kibana. Den underhålls av AWS i stället för Elastic.co. Mer information finns i GitHub [opensearch-project/OpenSearch](https://github.com/opensearch-project/OpenSearch).
 
-**Kompatibilitet mellan olika versioner:**
+**Kompatibilitet mellan versioner:**
 
-**Kommer Adobe Commerce i molninfrastruktur att stödja Elasticsearch 7.10?**
+**Kommer Adobe Commerce i molninfrastrukturen att stödja Elasticsearch 7.10?**
 
-**Ja** - Från och med mitten av januari 2022 har Adobe Commerce i molninfrastrukturversionerna 2.4.3-p1, 2.4.3-p2 och 2.3.7-p3 stöd för Elasticsearch 7.10.
+**Ja** - från mitten av januari 2022 har Adobe Commerce i molninfrastrukturversionerna 2.4.3-p1, 2.4.3-p2 och 2.3.7-p3 stöd för Elasticsearch 7.10.
 
 För Adobe Commerce lokalt rekommenderar vi den senaste 7.16.x-versionen för att minska risken för Log4j.
 
@@ -47,10 +47,10 @@ Innan uppgraderingsprocessen till Adobe Commerce 2.4.4 påbörjas måste dock ha
 
 Om Adobe Commerce grundversion har stöd för Elasticsearch 7.10 kan de använda det.
 
-Granska [Systemkrav](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) i vår dokumentation för utvecklare om versionskompatibilitet.
+Granska [systemkraven](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) i utvecklardokumentationen för versionskompatibilitet.
 
 >[!NOTE]
 >
 >Vi rekommenderar att du uppgraderar till Adobe Commerce 2.4.4 så snart som möjligt eftersom Elasticsearch 7.10 kommer att vara EOL i maj 2022.
 
-Adobe partners kan registrera sig för vårt betatestprogram [här](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html) för att få tillgång till vår senaste beta4-kod som har testats mot Elasticsearch 7.16.1 och OpenSearch 1.1.
+Adobe partners kan registrera sig för vårt betaprogram [här](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html) för att få tillgång till vår senaste beta4-kod som har testats mot Elasticsearch 7.16.1 och OpenSearch 1.1.

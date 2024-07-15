@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0: 404 error removing rewards points on multi-shipping checkout
 
-I den här artikeln beskrivs en lösning på ett känt problem i Adobe Commerce 2.4.0 för en *404 Hittades inte*&quot; webbsidesfel vid borttagning av belöningspunkter på en utcheckningssida för flera leveranser. För närvarande, på kassan för flera leveranser, en &quot;*404 Hittades inte* &quot; visas i stället för att belöningspoäng annulleras. Problemet åtgärdas i en patchversion av Adobe Commerce 2.4.1.
+I den här artikeln beskrivs en lösning på ett känt fel i Adobe Commerce 2.4.0 för ett *404 Hittades inte*-webbsidesfel när belöningspunkter tas bort från en utcheckningssida för flera leveranser. För närvarande visas sidan *404 Hittades inte* på den utcheckade sidan för flera leveranser i stället för att belöningspoäng annulleras om du försöker ta bort belöningspoäng som användes för att betala för en order. Problemet åtgärdas i en patchversion av Adobe Commerce 2.4.1.
 
 ## Berörda produkter och versioner
 
@@ -24,30 +24,30 @@ I den här artikeln beskrivs en lösning på ett känt problem i Adobe Commerce 
 <u>Steg som ska återskapas</u>
 
 1. Navigera till butiken och logga in som kund.
-1. Lägg till minst två produkter i **Kundvagn**.
+1. Lägg till minst två produkter i **kundvagnen**.
 1. Öppna **Mini-Cart**.
-1. Klicka på **Visa och redigera kundvagn** länk.
-1. Klicka på **Checka ut med flera adresser** länk.
-1. Välj leveransadresser på **Leverera till flera adresser** sida.
-1. Klicka på **Gå till leveransinformation** -knappen.
-1. Välj **Schablonbelopp - fast leveranssätt** för varje adress.
-1. Klicka på **Fortsätt till faktureringsinformation** -knappen.
-1. Kontrollera **Använd dina belöningspoäng** kryssrutan på **Faktureringsinformation** sida.
-1. Klicka på **Gå till Granska din beställning** -knappen.
-1. Klicka på **Ta bort** länk för en adress för att ta bort belöningspoängen.
+1. Klicka på länken **Visa och redigera kundvagn**.
+1. Klicka på länken **Checka ut med flera adresser**.
+1. Välj leveransadresser på sidan **Leverera till flera adresser**.
+1. Klicka på knappen **Gå till leveransinformation**.
+1. Välj **platt hastighet - fast leveransmetod** för varje adress.
+1. Klicka på knappen **Fortsätt till faktureringsinformation**.
+1. Markera kryssrutan **Använd dina belöningspunkter** på sidan **Faktureringsinformation**.
+1. Klicka på knappen **Gå till Granska din beställning**.
+1. Klicka på länken **Ta bort** för en adress om du vill ta bort belöningspunkter.
 
 <u>Förväntade resultat</u>
 
-* The **Kundvagn** sidan ska visas.
-* The &quot;*Du har tagit bort belöningspoängen från den här ordern.* &quot; ska visas.
+* Sidan **Kundvagn** ska visas.
+* *Du har tagit bort belöningspoängen från den här ordern.Meddelandet* ska visas.
 
 <u>Faktiskt resultat</u>
 
-A &quot;*404 Hittades inte* &quot; visas.
+Felsidan *404 Hittades inte* visas.
 
 ## Tillfällig lösning
 
-Den tillfälliga lösningen är att få köparen att gå tillbaka till **Kundvagn** och ta bort belöningspoängen från **Kundvagn** webbsida. Problemet förväntas bli åtgärdat i Adobe Commerce version 2.4.1, som ska släppas 4:e kvartalet 2020.
+Du kan lösa problemet genom att låta köparen navigera tillbaka till **kundvagnen** och ta bort belöningspoängen från webbsidan **Kundvagn**. Problemet förväntas bli åtgärdat i Adobe Commerce version 2.4.1, som ska släppas 4:e kvartalet 2020.
 
 ## Relaterad läsning
 

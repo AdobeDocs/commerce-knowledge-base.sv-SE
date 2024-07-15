@@ -17,11 +17,11 @@ Den här artikeln innehåller en lösning när du har svårt att logga in på Ad
 
 ## Berörda produkter och versioner
 
-Adobe Commerce (alla distributionsmetoder) alla [versionerna](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce (alla distributionsmetoder) alla [versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
-När du går till [https://account.magento.com/customer/account/login/](https://account.magento.com/customer/account/login/) eller [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) kan du lägga märke till att det nu finns ett enhetligt inloggningsformulär och att du inte längre kan ange dina inloggningsuppgifter som du har gjort tidigare.
+När du går till [https://account.magento.com/customer/account/login/](https://account.magento.com/customer/account/login/) eller [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) kanske du märker att det nu finns ett enhetligt inloggningsformulär och att du inte längre kan ange dina inloggningsuppgifter som du har gjort tidigare.
 
 <u>Steg som ska återskapas</u>:
 
@@ -51,7 +51,7 @@ Du kan logga in på kontot med:
 - Ett befintligt företagskonto/personkonto för Adobe.
 - Om du inte har något Adobe-konto skapar du ett med samma e-postadress.
 
-För steg se [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) i Adobe Experience League.
+Anvisningar finns i [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) i Adobe Experience League.
 
 ## Relaterad läsning
 

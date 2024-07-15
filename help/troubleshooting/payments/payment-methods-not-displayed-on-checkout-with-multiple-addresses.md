@@ -22,7 +22,7 @@ I den här artikeln förklaras att de flesta betalningsmetoder inte visas vid ut
 
 >[!NOTE]
 >
->Adobe Commerce Cybersource-betalningsintegration har tagits bort sedan 2.3.3 och kommer att tas bort helt i 2.4.0. Använd [officiell förlängning](https://marketplace.magento.com/cybersource-global-payment-management.html) från Marketplace istället.
+>Adobe Commerce Cybersource-betalningsintegration har tagits bort sedan 2.3.3 och kommer att tas bort helt i 2.4.0. Använd det [officiella tillägget](https://marketplace.magento.com/cybersource-global-payment-management.html) från Marketplace i stället.
 
 ## Problem
 
@@ -32,12 +32,12 @@ I den här artikeln förklaras att de flesta betalningsmetoder inte visas vid ut
 
 1. Lägg flera produkter i kundvagnen i butiken.
 1. Gå till kundvagnssidan.
-1. Klicka **Checka ut med flera adresser**.
+1. Klicka på **Checka ut med flera adresser**.
 1. Logga in eller skapa konto.
 1. Dela upp produkter mellan adresserna på sidan Leverera till flera adresser.
-1. Klicka **Gå till leveransinformation**.
+1. Klicka på **Gå till leveransinformation**.
 1. Välj leveransmetoder för varje leverans.
-1. Klicka **Fortsätt till faktureringsinformation**.
+1. Klicka på **Fortsätt till faktureringsinformation**.
 
 <u>Förväntat resultat</u>: PayPal och Cybersource är tillgängliga som betalningsalternativ.
 

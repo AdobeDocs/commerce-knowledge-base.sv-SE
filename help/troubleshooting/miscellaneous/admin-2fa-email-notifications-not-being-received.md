@@ -40,7 +40,7 @@ Om du inte har konfigurerat avsändarens e-post korrekt, eller om din domän int
    * Om det returnerar ett resultat fortsätter du till **Steg 2**.
 
 1. Om e-postmeddelandet visades i din skräppostmapp klickar du på länken i e-postmeddelandet. Om länken sedan har upphört att gälla kan du försöka logga in igen för att upprepa processen.
-1. När du har fått tillgång till tjänsten går du till **Lager** > **Konfiguration** > **Allmänt** > **E-postadresser för butik** och konfigurera e-postadresserna.
+1. När du har fått åtkomst går du till **Store** > **Konfiguration** > **Allmänt** > **Lagra e-postadresser** och konfigurerar e-postadresserna.
 
 ### Steg 2: Om/när e-postadresserna har konfigurerats på rätt sätt kommer SSH in i miljön och kör det här kommandot:
 
@@ -48,8 +48,8 @@ Om du inte har konfigurerat avsändarens e-post korrekt, eller om din domän int
 php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 ```
 
-Kontrollera din skräppostmapp för e-postmeddelandet. Om e-postmeddelandet visades där, [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) för att begära att domänen ska vara vit-märkt i SendGrid.
+Kontrollera din skräppostmapp för e-postmeddelandet. Om e-postmeddelandet visades där [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) för att begära att domänen får en vit etikett i SendGrid.
 
 ## Relaterad läsning
 
-* [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html) i vår dokumentation för utvecklare.
+* [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html) i utvecklardokumentationen.

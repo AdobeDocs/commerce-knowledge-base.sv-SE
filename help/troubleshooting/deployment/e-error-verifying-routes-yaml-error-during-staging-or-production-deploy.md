@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # E: Fel vid verifiering av vägar.yaml-fel under mellanlagrings- eller produktionsdistributionen
 
-Den här artikeln innehåller en lösning på Adobe Commerce problem med molninfrastruktur, där du får *&quot;E: Fel vid verifiering av route.yaml&quot;* felmeddelande när projektet ska distribueras till förproduktionsmiljön.
+I den här artikeln finns en lösning på problemet med molninfrastruktur, där du får felmeddelandet *&quot;E: Error while verification route.yaml&quot;* när du försöker distribuera projektet till mellanlagrings- eller produktionsmiljön.
 
 ## Berörda versioner
 
@@ -34,32 +34,40 @@ Distributionen har slutförts.
 Distributionen är blockerad och följande felmeddelande visas i loggen:
 
 <pre>Distribuerar program Verifierar konfiguration E: Fel vid verifiering av route.yaml.
-Följande domäner är konfigurerade för ditt kluster, men har inga definierade vägar i dina vägar.yaml-fil: - store1.example.com - store2.example.com - test-store.example.com Med dina aktuella vägar.yaml-konfiguration kommer dessa domäner INTE att hanteras!
+Följande domäner har konfigurerats för ditt kluster, men inga vägar har definierats i filen route.yaml:
 
-För att fortsätta, se här för instruktioner om felsökning: /help/troubleshooting/deployment/e-error-verifying-routes-yaml-error-during-staging-or-production-deploy.md</pre>
+- store1.example.com
+- store2.example.com
+- test-store.example.com
+
+Med din nuvarande konfiguration route.yaml
+  dessa domäner skulle INTE betjänas!
+
+Om du vill fortsätta kan du läsa här för instruktioner om hur du felsöker:
+ /help/troubleshooting/deployment/e-error-verifying-routes-yaml-error-during-staging-or-production-deploy.md</pre>
 
 ## Orsak
 
-Det här felet inträffar om flödeskonfigurationen för eventuella ytterligare domäner som har lagts till i ditt projekt saknas i `routes.yaml` -fil.
+Det här felet inträffar om flödeskonfigurationen för eventuella ytterligare domäner som har lagts till i ditt projekt saknas i filen `routes.yaml`.
 
-Som en del av uppgraderingen av Adobe Commerce självbetjäningsaktivering för konfiguration av självbetjäningsvägar har vi lagt till en kontroll före driftsättningen för att säkerställa att alla domäner i ditt projekt har konfigurerade vägar i `routes.yaml` -fil. Om någon domän saknar vägkonfiguration blockeras distributionen.
+Som en del av uppgraderingen av Adobe Commerce självbetjäningsaktivering för konfiguration av självbetjäningsväg har vi lagt till en kontroll före distributionen för att säkerställa att alla domäner i ditt projekt har konfigurerade vägar i filen `routes.yaml`. Om någon domän saknar vägkonfiguration blockeras distributionen.
 
 ## Lösning
 
-Du kan åtgärda den blockerade distributionen genom att uppdatera `routes.yaml` fil för att konfigurera vägar för domänerna som anges i felmeddelandet med någon av följande metoder:
+Du löser den blockerade distributionen genom att uppdatera filen `routes.yaml` och konfigurera vägar för domänerna som anges i felmeddelandet på något av följande sätt:
 
 * Använd den patch som Adobe Commerce tillhandahåller under uppgraderingsprocessen.
-* Lägg till den saknade vägkonfigurationen manuellt i `routes.yaml` -fil.
+* Lägg till den saknade vägkonfigurationen manuellt i filen `routes.yaml`.
 
 ### Metod 1: Använd patchen som tillhandahålls av Adobe Commerce
 
-1. Leta efter en Adobe Commerce-supportbiljett med titeln *Aktivera självbetjäningsfunktioner för &lt;project _id=&quot;&quot;>&quot;.*
+1. Leta efter en senaste Adobe Commerce-supportanmälan med titeln *Aktivera självbetjäningsfunktioner för &lt;project\_ID>.*
 1. Följ instruktionerna i biljetten för att tillämpa korrigeringen, som uppdaterar vägkonfigurationen för din molnmiljö.
 1. С implementera och push-implementera ändringarna för att omdistribuera projektet.
 
 ### Metod 2: Lägg till den saknade flödeskonfigurationen manuellt
 
-1. Om du vill betjäna alla domäner i projektet med samma vägkonfiguration uppdaterar du `routes.yaml` fil som lägger till flödesmallar för standarddomänen och alla andra domäner i ditt projekt enligt följande exempel:
+1. Om du vill betjäna alla domäner i ditt projekt med samma flödeskonfiguration uppdaterar du filen `routes.yaml` och lägger till flödesmallar för standarddomänen och alla andra domäner i ditt projekt enligt följande exempel:
 
    ```yaml
    "http://{default}/":
@@ -72,8 +80,8 @@ Du kan åtgärda den blockerade distributionen genom att uppdatera `routes.yaml`
 
 1. С implementera och implementera ändringarna för att omdistribuera projektet.
 
-Detaljerade instruktioner om hur du uppdaterar flödeskonfigurationen finns i [Cloud for Adobe Commerce > Konfigurera vägar](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_routes.html) i vår dokumentation för utvecklare.
+Detaljerade instruktioner om hur du uppdaterar vägkonfigurationen finns i [Cloud for Adobe Commerce > Konfigurera vägar](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_routes.html) i utvecklardokumentationen.
 
 >[!NOTE]
 >
->Om projektkonfigurationen anger domäner som inte längre används följer du de här stegen för att ta bort dem från projektet så snart som möjligt: 1. Skicka en supportanmälan med en lista över domäner som ska tas bort från dina projektmiljöer. 2. När supportteamet tagit bort domänerna uppdaterar du `routes.yaml` om du vill ta bort alla referenser till de föråldrade domänerna.
+>Om projektkonfigurationen anger domäner som inte längre används följer du de här stegen för att ta bort dem från projektet så snart som möjligt: 1. Skicka en supportanmälan med en lista över domäner som ska tas bort från dina projektmiljöer. 2. När supportteamet har tagit bort domänerna uppdaterar du filen `routes.yaml` så att alla referenser till de föråldrade domänerna tas bort.

@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # ACSD-43887: Felaktig information visas på betalningssidan för utcheckning
 
-Korrigeringen ACSD-43887 åtgärdar ett problem där felaktiga detaljer visas på betalningssidan för utcheckning när inköpsorder för företag är aktiverade. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 är installerat. Korrigerings-ID är ACSD-43887. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
+Korrigeringen ACSD-43887 åtgärdar ett problem där felaktiga detaljer visas på betalningssidan för utcheckning när inköpsorder för företag är aktiverade. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 är installerat. Korrigerings-ID är ACSD-43887. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.3
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.2 - 2.4.4
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -36,7 +36,7 @@ Felaktiga detaljer visas på betalningssidan i kassan när inköpsorder för fö
 <u>Förutsättningar</u>:
 
 1. B2B-moduler är installerade.
-1. Aktivera företag är inställt på _Ja_. Gå till **Lager** > **Konfigurationer** > **Allmänt** > **B2B-funktioner** > **Aktivera företag** > **Ja**.
+1. Aktivera företag är _Ja_. Gå till **Lagrar** > **Konfigurationer** > **Allmänt** > **B2B-funktioner** > **Aktivera företag** > **Ja**.
 1. Aktivera inköpsorder är inställt på _Ja_. Gå till **Konfiguration för ordergodkännande** > **Aktivera inköpsorder** > **Ja**.
 1. PayPal Express är konfigurerad som betalningsmetod.
 
@@ -44,7 +44,7 @@ Felaktiga detaljer visas på betalningssidan i kassan när inköpsorder för fö
 
 1. Skapa en virtuell produkt.
 1. Registrera ett företagskonto från frontend med en företagsadministratör.
-1. Godkänn företagskontot från serverdelen och ange **Aktivera inköpsorder** as _Ja_ när företaget godkändes.
+1. Godkänn företagskontot från serverdelen och ställ in **Aktivera inköpsorder** som _Ja_ när du godkänner företaget.
 1. Gå till förgrunden och logga in med det företagsadministratörskonto som skapades i steg två.
 1. Skapa en standardanvändare för företaget. Gå till **Företagsanvändare** > **Lägg till ny användare**.
 1. Skapa en godkännanderegel för företaget. Gå till **Godkännanderegler** > **Lägg till ny regel**.
@@ -55,13 +55,13 @@ Felaktiga detaljer visas på betalningssidan i kassan när inköpsorder för fö
 
 1. Logga ut och logga in med standardanvändarkontot.
 1. Lägg den virtuella produkt som skapats i steg ett i kundvagnen och fortsätt till kassan.
-1. Välj PayPal Express som betalningsmetod och klicka på **Beställ**.
+1. Välj PayPal Express som betalningsmetod och klicka på **Placera inköpsorder**.
 1. Logga ut och logga in med företagets administratörskonto.
-1. Gå till **Mina inköpsorder** och från **Företagsinköpsorder**, klicka på **Visa** för den order som skapas i steg 9.
+1. Gå till **Mina inköpsorder** och från **Företagsinköpsorder** klickar du på **Visa** för den order som skapats i steg 9.
 1. Godkänn inköpsordern. Inköpsorderstatusen ska vara&quot;Godkänd: Väntande betalning&quot;.
 1. Logga ut och logga in med företagets standardanvändarkonto.
-1. Gå till **Mina inköpsorder** > **Visa** > **Montera beställning**.
-1. Kontrollera **Ordersammanfattning**.
+1. Gå till **Mina inköpsorder** > **Visa** > **Montera order**.
+1. Kontrollera **ordersammanfattningen**.
 
 <u>Förväntade resultat</u>:
 
@@ -75,14 +75,14 @@ Ordersammanfattningens totalvärde är noll.
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [Patchar tillgängliga i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår dokumentation för utvecklare.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [Patchar i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår utvecklardokumentation.

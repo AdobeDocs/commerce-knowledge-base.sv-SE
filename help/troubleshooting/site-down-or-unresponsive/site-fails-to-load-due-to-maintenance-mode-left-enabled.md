@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Platsen kan inte läsas in på grund av att underhållsläge är aktiverat
 
-Den här artikeln innehåller en korrigering för när platsen inte läses in på grund av att underhållsläget inte är aktiverat eller inte har inaktiverats automatiskt. Du kan få ett felmeddelande: *Tjänsten är inte tillgänglig för tillfället Servern kan inte hantera din begäran på grund av driftavbrott eller kapacitetsproblem.*
+Den här artikeln innehåller en korrigering för när platsen inte läses in på grund av att underhållsläget inte är aktiverat eller inte har inaktiverats automatiskt. Du kan få ett felmeddelande: *Tjänsten är tillfälligt otillgänglig Servern kan för tillfället inte hantera din begäran på grund av avbrott i underhållet eller kapacitetsproblem.*
 
 ## Berörda versioner och produkter
 
@@ -44,4 +44,4 @@ bin/magento maintenance:disable
 
 ## Relaterad läsning
 
-Mer information om när underhållsläget ska användas finns i [Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) i vår dokumentation för utvecklare.
+Mer information om när underhållsläge ska användas finns i [Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) i utvecklardokumentationen.

@@ -1,7 +1,7 @@
 ---
-title: '[!DNL FedEx] migrering av leveransmetodintegration från SOAP till RESTful API'
+title: Migrering av integrering av leveransmetod för [!DNL FedEx] från SOAP till RESTful API
 promoted: true
-description: Tillämpa en patch för att hantera [!DNL FedEx] migrering av leveransmetodintegration från SOAP till RESTful API för Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
+description: Använd en patch för att hantera migrering av  [!DNL FedEx] leveransmetodintegrering från SOAP till RESTful API för Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
 feature: Shipping/Delivery
 role: Developer
 exl-id: 7e11a171-6924-41d0-a5c7-7b794d0da84c
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 ---
 
-# [!DNL FedEx] migrering av leveransmetodintegration från SOAP till RESTful API
+# Migrering av integrering av [!DNL FedEx]-leveransmetod från SOAP till RESTful API
 
-I den här artikeln finns en patch som löser problem med [!DNL FedEx] migrering av leveransmetodintegration från SOAP till RESTful API för Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
+I den här artikeln finns en patch som löser problem med migrering av [!DNL FedEx]-leveransmetodintegration från SOAP till RESTful API för Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
 
-[!DNL FedEx Web Services] spårning, adressvalidering och validering av WSDLS (Postal Codes Web Services Definition Languages) kommer att upphöra den 15 maj 2024. SOAP-baserad [!DNL FedEx Web Services] är i utvecklingsbegränsning och har ersatts med [!DNL FedEx] RESTFUL-API:er. Mer information finns i [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
+Spårning av [!DNL FedEx Web Services], adressvalidering och validering av WSDLS (Postal Codes Web Services Definition Languages) upphör 15 maj 2024. Den SOAP baserade [!DNL FedEx Web Services] är i utvecklingsbegränsning och har ersatts med [!DNL FedEx] RESTFUL-API:er. Mer information finns i [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
 
-Den här förändringen påverkar vår nuvarande [!DNL FedEx] implementering av leveransmetoder i Adobe Commerce och kräver att vi åtgärdar den aktuella implementeringen och migrerar från inaktuella SOAP API:er till den senaste [!DNL FedEx] RESTFUL-API:er.
+Den här ändringen påverkar vår nuvarande implementering av [!DNL FedEx]-leveransmetoder i Adobe Commerce och kräver att vi korrigerar vår nuvarande implementering och migrerar från inaktuella SOAP-API:er till de senaste [!DNL FedEx] RESTFUL-API:erna.
 
-Från och med 15 maj 2024 kommer Adobe Commerce-kunder inte att kunna använda våra nuvarande [!DNL FedEx] integrering av fraktmetoder, så Adobe släpper denna programfix som gör att kunder med Adobe Commerce 2.4.4+ kan använda den senaste [!DNL FedEx] RESTFUL-API:er i stället för de inaktuella SOAP-API:erna.
+Från och med 15 maj 2024 kommer Adobe Commerce-kunder inte att kunna använda vår nuvarande [!DNL FedEx]-integration med leveransmetoden, så Adobe släpper den här snabbkorrigeringen som gör att Adobe Commerce 2.4.4+-kunder kan använda de senaste [!DNL FedEx] RESTFUL-API:erna istället för de borttagna SOAP.
 
 
 ## Berörda produkter och versioner
@@ -35,7 +35,7 @@ Adobe Commerce om molninfrastruktur och lokalt, samt Magento Open Source:
 
 ## Orsak
 
-The [!DNL FedEx] ersätter sina SOAP-baserade API:er och ersätter dem med RESTful i stället. Se [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
+[!DNL FedEx] har ersatt sina SOAP-baserade API:er och ersatt dem med RESTful i stället. Se [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
 
 ## Lösning
 
@@ -70,16 +70,16 @@ Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://exp
 
 Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats kanske du vill kontrollera om korrigeringen har installerats korrekt. Detta använder (exempel: *AC-9363*) som den korrigering som ska kontrolleras.
 
-<u>Du kan göra detta genom att utföra följande steg:</u>:
+<u>Du kan göra detta genom att utföra följande steg</u>:
 
-1. [Installera [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installera  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 1. Kör kommandot:
 
    ```bash
    vendor/bin/magento-patches -n status |grep "9363|Status"
    ```
 
-1. Du bör se utdata som liknar detta, där AC-9363 returnerar *Används* status:
+1. Du bör se utdata som liknar detta, där AC-9363 returnerar statusen *Används*:
 
    ```bash
    ║ Id            │ Title                                                        │ Category        │ Origin                 │ Status      │ Details                                          ║ ║ N/A           │ ../m2-hotfixes/AC-9363_USPS_Ground_Advantage_shipping_method_COMPOSER_patch.patch      │ Other           │ Local                  │ Applied     │ Patch type: Custom                                

@@ -17,7 +17,7 @@ I det här avsnittet ges förslag på en lösning på ett typiskt prestandaprobl
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce om molninfrastruktur (alla versioner) `Master/Production/Staging` miljöer som utnyttjar snabbt
+* Adobe Commerce i molninfrastrukturen (alla versioner) `Master/Production/Staging`-miljöer utnyttjar snabbt
 
 ## Problem
 
@@ -25,9 +25,9 @@ I Adobe Commerce i molninfrastruktur kan ett stort antal omdirigeringar/omskrivn
 
 ## Orsak
 
-The `routes.yaml` i `.magento/routes.yaml` katalog definierar vägar för din Adobe Commerce i molninfrastruktur.
+Filen `routes.yaml` i katalogen `.magento/routes.yaml` definierar vägar för din Adobe Commerce i molninfrastruktur.
 
-Om storleken på `routes.yaml` filen är 32 kB eller större, du bör avlasta icke-regex-omdirigeringar/omskrivningar till Fastly.
+Om storleken på din `routes.yaml`-fil är 32 kB eller större bör du avlasta icke-regex-omdirigeringar/omskrivningar till Fast.
 
 Det här Nginx-lagret kan inte hantera ett stort antal omdirigeringar/omskrivningar som inte är regex, eftersom prestandaproblem då uppstår.
 
@@ -37,13 +37,13 @@ Lösningen är att avlasta de icke-regex-omdirigeringar till Fastly istället. S
 
 I följande steg beskrivs hur du placerar omdirigeringar på Snabb i stället för Nginx.
 
-1. Skapa en Edge Dictionary.
+1. Skapa en Edge-ordlista.
 
    Först kan du använda [VCL-fragment i Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) för att definiera en kantordlista. Detta kommer att innehålla omdirigeringarna.
 
    Några kavaater till detta:
 
-   * Regex kan inte användas i ordlisteposter. Det är bara en exakt träff. Mer information om dessa begränsningar finns på [Fastly&#39;s docs on edge dictionary limits](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
+   * Regex kan inte användas i ordlisteposter. Det är bara en exakt träff. Mer information om de här begränsningarna finns i [Fastly&#39;s docs on edge dictionary limits](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
    * Har en gräns på 1 000 poster i ett och samma lexikon. Du kan snabbt utöka den här gränsen, men det leder till den tredje kavatten.
    * Varje gång du uppdaterar posterna och distribuerar den uppdaterade VCL-listan till alla noder ökar den geometriska belastningstiden med expanderande ordlistor, vilket innebär att en 2 000-postordlista läses in 3x-4x långsammare än en 1 000-postordlista. Men det är bara ett problem när du distribuerar VCL (uppdaterar ordlistan eller ändrar VCL-funktionskoden).
 
@@ -59,7 +59,7 @@ I följande steg beskrivs hur du placerar omdirigeringar på Snabb i stället f�
 
    När URL-sökningen görs görs jämförelsen för att tillämpa den anpassade felkoden om en matchning hittas.
 
-   Använd ett annat VCL-fragment för att lägga till något som följande: `vcl_recv`:
+   Använd ett annat VCL-fragment för att lägga till något som följande i `vcl_recv`:
 
    ```
         declare local var.redir-path STRING;
@@ -74,9 +74,9 @@ I följande steg beskrivs hur du placerar omdirigeringar på Snabb i stället f�
 
 1. Hantera omdirigeringen.
 
-   När en matchning hittas utförs den åtgärd som definierats för den `obj.status`, i det här fallet en 301 permanent flyttomdirigering.
+   När en matchning hittas utförs åtgärden som är definierad för `obj.status`, i det här fallet en permanent flyttomdirigering om 301.
 
-   Använda det sista utdraget i `vcl_error` för att skicka tillbaka 301-felkoder till klienten:
+   Använd ett sista utdrag i `vcl_error` för att skicka tillbaka 301-felkoder till klienten:
 
    ```
      if (obj.status == 912) {
@@ -87,7 +87,7 @@ I följande steg beskrivs hur du placerar omdirigeringar på Snabb i stället f�
           }
    ```
 
-   Med det här blocket kontrollerar vi om felkoden har skickats från `vcl_recv` matchar, och om så är fallet anger vi platsen till det felmeddelande som skickas, ändrar sedan statuskoden till 301 och meddelandet till&quot;Flyttad permanent&quot;. Då bör svaret vara klart att skickas tillbaka till klienten.
+   Med det här blocket kontrollerar vi om felkoden som skickas från `vcl_recv` matchar, och i så fall anger vi platsen till det felmeddelande som skickas, ändrar statuskoden till 301 och meddelandet till&quot;Flyttad permanent&quot;. Då bör svaret vara klart att skickas tillbaka till klienten.
 
 ### Stage Service
 
@@ -99,7 +99,7 @@ Om du inte vill köra en mellanlagringsmiljö från Adobe Commerce, men vill se 
 
 ## Relaterad läsning
 
-* [Snabb VCL-referens](https://docs.fastly.com/vcl/)
-* [Konfigurera flöden](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) i vår dokumentation för utvecklare.
-* [Konfigurera snabbt](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i vår dokumentation för utvecklare.
-* [Lathund för VCL med reguljära uttryck](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) i vår dokumentation för utvecklare.
+* [Snabbt VCL-referens](https://docs.fastly.com/vcl/)
+* [Konfigurera vägar](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) i utvecklardokumentationen.
+* [Konfigurera snabbt](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i utvecklardokumentationen.
+* [VCL-informationsblad för reguljära uttryck](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) i vår utvecklardokumentation.

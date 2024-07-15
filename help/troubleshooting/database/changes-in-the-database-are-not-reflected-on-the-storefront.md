@@ -26,13 +26,13 @@ Berörda produkter och versioner:
 
 ## Orsak
 
-Om indexerarna [konfigurerad att uppdatera enligt schema](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers)kan problemet bero på en eller flera tabeller där ändringsloggarna är för stora eller där MySQL-utlösare inte har konfigurerats.
+Om indexerarna är [konfigurerade att uppdateras av schema](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) kan problemet bero på en eller flera tabeller där ändringsloggarna är för stora eller att MySQL-utlösare inte har konfigurerats.
 
 ### Stora ändringsloggtabeller
 
-Ändringsloggtabellerna blir så stora om `indexer_update_all_views` cron-jobbet har inte slutförts flera gånger.
+Registren för ändringsloggar blir så stora om cron-jobbet `indexer_update_all_views` inte slutförs flera gånger.
 
-Ändringsloggtabeller är de databastabeller där ändringar av enheter spåras. En post lagras i en ändringsloggtabell så länge ändringen inte tillämpas, vilket utförs av `indexer_update_all_views` cron-jobb. Det finns flera ändringsloggtabeller i en Adobe Commerce-databas, de namnges enligt följande mönster: INDEXER\_TABLE\_NAME + ‘\_cl’, till exempel `catalog_category_product_cl`, `catalog_product_category_cl`. Du hittar mer information om hur ändringar spåras i databasen i [Indexeringsöversikt > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) artikel i vår dokumentation för utvecklare.
+Ändringsloggtabeller är de databastabeller där ändringar av enheter spåras. En post lagras i en ändringsloggtabell så länge ändringen inte tillämpas, vilket utförs av kron-jobbet `indexer_update_all_views`. Det finns flera ändringsloggtabeller i en Adobe Commerce-databas, de namnges enligt följande mönster: INDEXER\_TABLE\_NAME + ‘\_cl’, till exempel `catalog_category_product_cl`, `catalog_product_category_cl`. Mer information om hur ändringar spåras i databasen finns i artikeln [Indexeringsöversikt > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) i utvecklardokumentationen.
 
 ### Utlösare för MySQL-databas har inte konfigurerats
 
@@ -46,16 +46,16 @@ Du misstänker att databasutlösare inte konfigureras om inga poster läggs till
 
 ### Undvik att ändra loggtabeller som är stora
 
-Se till att `indexer_update_all_views` cron-jobbet har alltid slutförts.
+Kontrollera att seriejobbet `indexer_update_all_views` alltid har slutförts.
 
-Du kan använda följande SQL-fråga för att hämta alla misslyckade instanser av `indexer_update_all_views` cron-jobb:
+Du kan använda följande SQL-fråga för att hämta alla misslyckade instanser av cron-jobbet `indexer_update_all_views`:
 
 ```sql
 select * from cron_schedule where job_code = "indexer_update_all_views" and status
   <> "success" and status <> "pending";
 ```
 
-Du kan också kontrollera dess status i loggarna genom att söka efter `indexer_update_all_views` poster:
+Du kan också kontrollera dess status i loggarna genom att söka efter `indexer_update_all_views`-posterna:
 
 * `<install_directory>/var/log/cron.log` - för version 2.3.1+ och 2.2.8+
 * `<install_directory>/var/log/system.log` - för tidigare versioner
@@ -71,7 +71,7 @@ Använd följande kommando för att utföra den här åtgärden.
 
 >[!WARNING]
 >
->Innan du byter indexeringsläge rekommenderar vi att du använder [underhåll](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) läge och [inaktivera cron-jobb](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) för att undvika databaslås.
+>Innan du byter indexeringsläge rekommenderar vi att du sätter din webbplats i [underhållsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) och [inaktiverar cron-jobb](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) för att undvika databaslås.
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
@@ -84,4 +84,4 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 ## Relaterad läsning
 
 <ul><li title="MySQL-tabeller är för stora"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">MySQL-tabeller är för stora</a> i vår kunskapsbas för support.</li>
-<li title="MySQL-tabeller är för stora"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Översikt över indexeraren &gt; Mview</a> i vår dokumentation för utvecklare.</li></ul>
+<li title="MySQL-tabeller är för stora"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Översikt över indexeraren &gt; Mview</a> i utvecklardokumentationen.</li></ul>

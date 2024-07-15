@@ -42,7 +42,7 @@ För att få en lista över pågående aktiviteter kör du följande kommando me
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-Information om en befintlig distributionsaktivitet finns i [Kontrollerar distributionsloggen om molnanvändargränssnittet har fel av typen&quot;loggutdragen&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html)
+Om du vill hitta information om en befintlig distributionsaktivitet (se [Kontrollera distributionsloggen om molngränssnittet har felet&quot;loggad&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html))
 om du vill ha mer information) kan du köra det här kommandot för att få en logg över aktiviteten:
 
 ```bash
@@ -58,7 +58,7 @@ b. NEJ - Felsök den aktuella miljön. Fortsätt till [Steg 3](#step-3).
 
 ## Steg 3 - Verifiera SSH på alla noder {#step-3}
 
-+++**SSH lyckades på alla noder?**
++++**SSH lyckades för alla noder?**
 
 a. JA - Fortsätt till [Steg 4](#step-4).\
 b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
@@ -67,9 +67,9 @@ b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento
 
 ## Steg 4 - Verifiera alla tjänster som körs {#step-4}
 
-+++**Alla tjänster som körs?**
++++**Alla tjänster körs?**
 
-a. JA - Fortsätt till [Steg 5](#step-5).\
+a. JA - Fortsätt till [steg 5](#step-5).\
 b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
@@ -79,106 +79,106 @@ b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento
 +++**Använder du Bitbucket?**
 
 a. JA - Kontrollera [status.bitbucket.com](https://bitbucket.status.atlassian.com/).\
-b. NO - Kontrollera distributionsloggfel i [Skapa och distribuera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html). Fortsätt till [Steg 6](#step-6).
+b. NO - Kontrollera distributionsloggfel i [Build and Deploy logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html). Fortsätt till [Steg 6](#step-6).
 
 +++
 
 ## Steg 6 - Kontrollera felkoder {#step-6}
 
-+++**Felkod rapporterad?**
++++**Felkoden har rapporterats?**
 
 a. JA - Fortsätt till [Steg 7](#step-7).\
-b. NEJ - Fortsätt till [Steg 8](#step-8).
+b. NEJ - Fortsätt till [steg 8](#step-8).
 
 +++
 
 ## Steg 7 - 403 Ej tillåtet fel {#step-7}
 
-+++**403 Förbjuden?**
++++**403 Ej tillåtet?**
 
-a. JA - Fortsätt till [Steg 16](#step-16).
-b. NEJ - Fortsätt till [Steg 9](#step-9).
+a. JA - Fortsätt till [steg 16](#step-16).
+b. NEJ - Fortsätt till [steg 9](#step-9).
 
 +++
 
 ## Steg 8 - Verifiera att cron-jobb körs {#step-8}
 
-+++**Körs cron-jobb just nu?** Logga in med ssh på grenen och kör `ps aufxx |grep cron`.
++++**Kör seriejobb just nu?** Logga in med ssh i förgreningen och kör `ps aufxx |grep cron`.
 
 a. JA - Logga in med ssh på den berörda grenen (t.ex. primär). Dödar och låser upp cron-jobb. Detta kommer att avsluta cron-jobb och återställa statusen. Kör `php vendor/bin/ece-tools cron:kill` och sedan `php vendor/bin/ece-tools cron:unlock`. Om du håller på att sammanfoga en miljö till en annan bör du kontrollera om båda miljöerna har kroner som körs.\
-b. NEJ - Fortsätt till [Steg 17](#step-17).
+b. NEJ - Fortsätt till [steg 17](#step-17).
 
 +++
 
 ## Steg 9 - Program som kan distribueras till fjärrkluster-fel {#step-9}
 
-+++**Kan du inte överföra programmet till fjärrklusterfelet?**
++++**Kan inte överföra program till fjärrklustret?**
 
-a. JA - Fortsätt till [Steg 10](#step-10).\
-b. NEJ - Fortsätt till [Steg 11](#step-11).
+a. JA - Fortsätt till [steg 10](#step-10).\
+b. NEJ - Fortsätt till [steg 11](#step-11).
 
 +++
 
 ## Steg 10 - Kontrollera att lagringsutrymmet är tillräckligt {#step-10}
 
-+++**Tillgänglig lagring är okej?**
++++**Tillgänglig lagring fungerar?**
 
-a. JA - Fortsätt med [Steg 11](#step-11).\
+a. JA - Fortsätt med [steg 11](#step-11).\
 b. NEJ - Granska [Hantera diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html).
 
 +++
 
 ## Steg 11 - Verifiera diskutrymme {#step-11}
 
-+++**_filen kunde inte skrivas Varning _?**
++++**_filen kunde inte skrivas med varning _?**
 
-a. JA - Vänligen [öka diskvärdet i .magento.app.yaml](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) och omdistribuera. Om det inte fungerar [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NEJ - Fortsätt med [Steg 12](#step-12).
+a. JA - Öka diskvärdet i .magento.app.yaml](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) och återdistribuera. [ Om detta inte fungerar skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+b. NEJ - Fortsätt med [steg 12](#step-12).
 
 +++
 
 ## Steg 12 - Fel vid miljöomdistribution {#step-12}
 
-+++**Fel vid miljöomdistribution?**
++++**Omdistributionen av miljön misslyckades?**
 
-a. JA - Fortsätt med [Steg 13](#step-13).\
-b. NEJ - Fortsätt med [Steg 8](#step-8).
+a. JA - Fortsätt med [steg 13](#step-13).\
+b. NEJ - Fortsätt med [steg 8](#step-8).
 
 +++
 
 ## Steg 13 - Kontrollera om Elasticsearch-uppgradering misslyckades {#step-13}
 
-+++**Elasticsearch håller på att uppgraderas eller driftsättas?**
++++**Elasticsearch uppgraderas eller distribueras?**
 
-a. JA - Elasticsearch misslyckades med uppgraderingsstegen. Se [Kompatibilitet med Elasticsearch-program](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html). Om uppgraderingen av Elasticsearch fortfarande inte fungerar, [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). **Anteckning**: På Adobe Commerce i molninfrastruktur bör du vara medveten om att serviceuppgraderingar inte kan föras över till produktionsmiljön utan att vårt infrastrukturteam får ett meddelande om detta inom 48 timmar. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom den önskade tidsramen med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när ändringarna ska vara i produktion, [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) ange vilken serviceuppgradering du behöver och ange när du vill att uppgraderingen ska starta.\
-b. NEJ - Fortsätt till [Steg 14](#step-14).
+a. JA - Elasticsearch misslyckades med uppgraderingsstegen. Mer information finns i [Elasticsearch-programkompatibilitet](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html). Om Elasticsearch-uppgraderingen fortfarande inte fungerar skickar [du in en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). **Obs!** På Adobe Commerce i molninfrastruktur bör du vara medveten om att serviceuppgraderingar inte kan skickas till produktionsmiljön utan att meddela vårt infrastrukturteam om 48 arbetstimmar. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom den önskade tidsramen med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när dina ändringar behöver vara i produktion skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) med information om den serviceuppgradering du behöver och när du vill att uppgraderingsprocessen ska börja.\
+b. NEJ - Fortsätt till [steg 14](#step-14).
 
 +++
 
 ## Steg 14 - Kontrollera utrymmesbegränsningar {#step-14}
 
-+++**Har filsystemet slut på noder eller utrymme?**
++++**Filsystemet har slut på noder eller utrymme?**
 
 a. JA - Se [Hantera diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space).\
-b. NEJ - Fortsätt till [Steg 15](#step-15).
+b. NEJ - Fortsätt till [steg 15](#step-15).
 
 +++
 
 ## Steg 15 - Elasticsearch-versionsfel {#step-15}
 
-+++**Fel med Elasticesach-versioner?**
++++**Fel i Elasticesach-versioner?**
 
-a. JA - Fortsätt till [Steg 16](#step-16).\
-b. NEJ - Fortsätt till [Steg 21](#step-21).
+a. JA - Fortsätt till [steg 16](#step-16).\
+b. NEJ - Fortsätt till [steg 21](#step-21).
 
 +++
 
 ## Steg 16 - Verifiera konfiguration för disposition {#step-16}
 
-+++**Konfigurationen av dispositionen är korrekt?**
++++**Konfigurationen för disposition är korrekt?**
 
-a. JA - Fortsätt till [Steg 10](#step-10).\
-b. NEJ - Granska [Webbsida för felsökare för disposition](https://getcomposer.org/doc/articles/troubleshooting.md).
+a. JA - Fortsätt till [steg 10](#step-10).\
+b. NEJ - Granska [webbsidan Felsökning för disposition](https://getcomposer.org/doc/articles/troubleshooting.md).
 
 +++
 
@@ -193,16 +193,16 @@ a. JA - Identifiera långvariga processer och avsluta sedan processerna:
 
 Övervaka distributioner för återkomst.
 
-b. NEJ - Fortsätt till [Steg 18](#step-18).
+b. NEJ - Fortsätt till [steg 18](#step-18).
 
 +++
 
 ## Steg 18 - Kontrollera om det inte gick att utföra en postkrok {#step-18}
 
-+++**Har du inte fastnat?**
++++**Post-krokfel/hängande?**
 
 a. JA - Databas: [Ledigt diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space), skadade, ofullständiga/skadade tabeller.\
-b. NEJ - Fortsätt till [Steg 19](#step-19).
+b. NEJ - Fortsätt till [steg 19](#step-19).
 
 +++
 
@@ -210,8 +210,8 @@ b. NEJ - Fortsätt till [Steg 19](#step-19).
 
 +++**Använda tillägg från tredje part?**
 
-a. JA - Prova [Inaktivera tillägg från tredje part](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html) och köra distributionen (för att se om det är orsaken till problemet), särskilt om det finns tilläggsnamn i några fel.\
-b. NEJ - Fortsätt till [Steg 20](#step-20).
+a. JA - Prova [Inaktivera tillägg från tredje part](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html) och kör distributionen (för att se om de är orsaken till problemet), särskilt om det finns tilläggsnamn i några fel.\
+b. NEJ - Fortsätt till [steg 20](#step-20).
 
 +++
 
@@ -219,16 +219,16 @@ b. NEJ - Fortsätt till [Steg 20](#step-20).
 
 +++**Långa frågor?**
 
-[Kontrollera långsam frågelogg och MinSQL-visningsprocesslista](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md).
+[Kontrollera långsam frågelogg och MySQL-visningsprocesslista](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md).
 
-a. JA - Avsluta alla långvariga frågor. Granska [MySQL Kill Syntax.](https://dev.mysql.com/doc/refman/8.0/en/kill.html)\
+a. JA - Avsluta alla långvariga frågor. Granska [MySQL-avslutningssyntax.](https://dev.mysql.com/doc/refman/8.0/en/kill.html)\
 b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
 
 ## Steg 21 - nedgradera Elasticsearch {#step-21}
 
-+++**Vill du nedgradera Elasticsearch versioner?**
++++**Vill du nedgradera Elasticsearch-versioner?**
 
 a. JA - Kan inte göras via konfigurationen. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

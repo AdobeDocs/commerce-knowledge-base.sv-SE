@@ -34,7 +34,7 @@ Vanligtvis fungerar inte konfigurationer, felaktiga autentiseringsuppgifter elle
 
 ### Testa med kommandot Utfall
 
-Kontrollera först om det finns rubriker med ett digeringskommando till URL:en. I ett terminalprogram anger du digering `<url>` för att verifiera visningen av snabbfunktioner i sidhuvudena. Mer information finns i Fastly&#39;s [Testar innan DNS ändras](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains).
+Kontrollera först om det finns rubriker med ett digeringskommando till URL:en. I ett terminalprogram anger du digering `<url>` för att verifiera visningen av snabbtjänster i rubrikerna. Mer information om ytterligare felsökningstester finns i Fastly&#39;s [Testing innan du ändrar DNS](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains).
 
 Exempel:
 
@@ -46,12 +46,12 @@ Exempel:
 
 Använd sedan ett bol-kommando för att kontrollera att det finns X-Magento-taggar och ytterligare rubrikinformation. Kommandoformatet skiljer sig åt för Förproduktion och Förproduktion.
 
-Om du vill ha mer information om dessa kommandon går du snabbt förbi när du injicerar `-H "host:URL"`, ersätt med ursprung till anslutningspunkten (CNAME-information från ditt OneDrive-kalkylblad), `-k` ignorerar SSL, och `-v` ger utförliga svar. Om rubrikerna visas korrekt kontrollerar du den publicerade webbplatsen och verifierar rubrikerna igen.
+Om du vill ha mer information om de här kommandona går du snabbt förbi när du injicerar `-H "host:URL"`, ersätter med ursprung till anslutningspunkten (CNAME-information från ditt OneDrive-kalkylblad), `-k` ignorerar SSL och `-v` ger utförliga svar. Om rubrikerna visas korrekt kontrollerar du den publicerade webbplatsen och verifierar rubrikerna igen.
 
 * Om det uppstår rubrikproblem när du stöter direkt på de ursprungliga servrarna utan att passera snabbt, kan du få problem med koden, tilläggen eller infrastrukturen.
 * Om du inte råkar ut för några fel direkt på de ursprungliga servrarna, men det saknas rubriker som fastnar i den aktiva domänen, kan du få snabba fel.
 
-Kontrollera först **aktiv webbplats** för att verifiera svarsrubrikerna. Kommandot går igenom tillägget Snabb för att ta emot svar. Om du inte får rätt rubriker bör du testa de ursprungliga servrarna direkt. Det här kommandot returnerar värdena för `Fastly-Magento-VCL-Uploaded` och `X-Cache` sidhuvuden.
+Kontrollera först din **aktiva webbplats** för att verifiera svarsrubrikerna. Kommandot går igenom tillägget Snabb för att ta emot svar. Om du inte får rätt rubriker bör du testa de ursprungliga servrarna direkt. Det här kommandot returnerar värdena för rubrikerna `Fastly-Magento-VCL-Uploaded` och `X-Cache`.
 
 1. Ange följande kommando i en terminal för att testa URL:en för den aktiva webbplatsen:
 
@@ -59,7 +59,7 @@ Kontrollera först **aktiv webbplats** för att verifiera svarsrubrikerna. Komma
    curl http://<live URL> -vo /dev/null -HFastly-Debug:1 [--resolve]
    ```
 
-   Använd `--resolve` bara om din live-URL inte har konfigurerats med DNS och du inte har någon statisk rutt angiven. Exempel:
+   Använd bara `--resolve` om din live-URL inte har konfigurerats med DNS och du inte har någon statisk rutt angiven. Exempel:
 
    ```
    curl http://www.mymagento.biz -vo /dev/null -HFastly-Debug:1
@@ -71,19 +71,19 @@ Kontrollera först **aktiv webbplats** för att verifiera svarsrubrikerna. Komma
    < Fastly-Magento-VCL-Uploaded: yes    < X-Cache: HIT, MISS
    ```
 
-Testa **Mellanlagring** :
+Så här testar du **Förproduktion**:
 
 ```
 curl http[s]://staging.<your domain>.c.<instanceid>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
 ```
 
-Testa **Produktionsbelastningsutjämnare** :
+Så här testar du **produktionsbelastningsutjämnaren**:
 
 ```
 curl http[s]://<your domain>.c.<project ID>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
 ```
 
-Testa **Produktionsursprunod** :
+Så här testar du **produktionsstartnod** :
 
 ```
 curl http[s]://<your domain>.{1|2|3}.<project ID>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
@@ -163,20 +163,20 @@ Kontrollera konfigurationen i Commerce Admin för varje miljö om du vill kontro
 1. Klicka på Snabb konfiguration. Kontrollera att du har angett snabb service-ID och snabb API-token (dina snabbinloggningsuppgifter). Kontrollera att du har angett rätt autentiseringsuppgifter för mellanlagrings- och produktionsmiljön. Klicka på Testa autentiseringsuppgifter om du vill ha hjälp.
 1. Redigera din Composer.json och kontrollera att Fasty-modulen ingår i versionen. Den här filen innehåller alla moduler listade med versioner.
 
-   * Under &quot;require&quot; (Kräv) ska du ha &quot;fastly/magento2&quot;: `<version number>`
+   * I avsnittet &quot;Kräv&quot; ska du ha &quot;fastly/magento2&quot;: `<version number>`
    * Under Databaser bör du ha:
 
    ```
    "fastly-magento2": {    "type": "vcs",    "url": "https://github.com/fastly/fastly-magento2.git"    }
    ```
 
-1. Om du använder Configuration Management bör du ha en konfigurationsfil. Redigera filen app/etc/config.app.php (2.0, 2.1) eller app/etc/config.php (2.2) och kontrollera inställningen `'Fastly_Cdn' => 1` är korrekt. Inställningen ska inte vara `'Fastly_Cdn' => 0` (d.v.s. inaktiverat).Om du aktiverat snabbt tar du bort konfigurationsfilen och kör kommandot bin/magento magento-cloud:scd-dump för att uppdatera. En genomgång av den här filen finns på [Exempel på hantering av systemspecifika inställningar](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) i konfigurationshandboken.
+1. Om du använder Configuration Management bör du ha en konfigurationsfil. Redigera filen app/etc/config.app.php (2.0, 2.1) eller app/etc/config.php (2.2) och kontrollera att inställningen `'Fastly_Cdn' => 1` är korrekt. Inställningen ska inte vara `'Fastly_Cdn' => 0` (d.v.s. inaktiverad).Om du aktiverade snabbt tar du bort konfigurationsfilen och kör kommandot bin/magento magento-cloud:scd-dump för att uppdatera. En genomgång av den här filen finns i [Exempel på hantering av systemspecifika inställningar](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) i konfigurationshandboken.
 
-Om modulen inte är installerad måste du installera i en [Integreringsmiljö](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) filial och distribueras till förproduktion och produktion. Se [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) för instruktioner i Commerce om Cloud Infrastructure Guide.
+Om modulen inte är installerad måste du installera i en [integreringsmiljö](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) -gren och distribuera den till Förproduktion och produktion. Se [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) för instruktioner i Commerce om Cloud Infrastructure Guide.
 
 ### Fast-Magento-VCL-Uploaded finns inte
 
-Under installation och konfiguration bör du ha laddat upp Snabbt VCL. Det här är de grundläggande VCL-kodfragmenten från snabbmodulen, inte anpassade VCL-kodfragment som du skapar. Instruktioner finns i [Ladda upp VCL-fragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upload-vcl-to-fastly) i Commerce on Cloud Infrastructure Guide.
+Under installation och konfiguration bör du ha laddat upp Snabbt VCL. Det här är de grundläggande VCL-kodfragmenten från snabbmodulen, inte anpassade VCL-kodfragment som du skapar. Instruktioner finns i [Överför snabbt VCL-kodfragment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upload-vcl-to-fastly) i Commerce on Cloud Infrastructure Guide.
 
 ### X-Cache innehåller MISS
 
@@ -190,7 +190,7 @@ Om du får samma resultat kan du använda rullningskommandona och verifiera svar
 
 Om problemet kvarstår är det troligt att ett annat tillägg återställer dessa rubriker. Upprepa följande procedur i Förproduktion för att inaktivera tillägg för att hitta vilket som orsakar problemet. När du har hittat de tillägg som orsakar problemet måste du inaktivera tilläggen i produktionen.
 
-1. Följ stegen i för att inaktivera tilläggen [Hantera tillägg](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) i Commerce om Cloud Infrastructure Guide.
+1. Följ stegen i avsnittet [Hantera tillägg](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) i guiden för molninfrastruktur för att inaktivera tilläggen.
 1. När du har inaktiverat tilläggen går du till **[!UICONTROL System]** > **[!UICONTROL Tools]** > **[!UICONTROL Cache Management]**.
 1. Klicka på **[!UICONTROL Flush Magento Cache]**.
 1. Aktivera nu ett tillägg i taget, spara konfigurationen och tömma cachen.
@@ -203,4 +203,4 @@ När du isolerar det tillägg som återställer snabbrubriker kontaktar du till�
 
 * [Om snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
 * [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [Anpassade VCL-fragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [Anpassade VCL-kodfragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)

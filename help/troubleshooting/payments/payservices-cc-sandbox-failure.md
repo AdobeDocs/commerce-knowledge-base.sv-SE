@@ -18,11 +18,11 @@ I den här artikeln förklaras varför ett testkreditkort inte fungerar i en san
 ## Berörda produkter och versioner
 
 
-* Adobe Commerce 2.4.0 - 2.4.4, alla driftsättningsalternativ, med [Betalningstjänster](https://marketplace.magento.com/magento-payment-services.html)
+* Adobe Commerce 2.4.0 - 2.4.4, alla distributionsalternativ, med [Betalningstjänster](https://marketplace.magento.com/magento-payment-services.html)
 
 ## Problem
 
-När du använder ett test-kreditkort för Visa `4111 1111 1111 1111` från PayPal, ibland misslyckas det på grund av PayPal-principer med följande fel:
+När du använder ett Visa-kreditkort `4111 1111 1111 1111` från PayPal misslyckas det ibland på grund av PayPal-bedrägeripolicyer med följande fel:
 
 ```terminal
 Error happened when processing the request. Please try again later.
@@ -36,6 +36,6 @@ Det här felet visas när PayPal flaggar ett specifikt testkreditkortsnummer fö
 
 Använd ett annat testkreditkort. Om du vill generera ett modellkreditkort kan du använda för att testa:
 
-1. Gå till PayPal Developer Portal [Kreditkortsgenerator](https://developer.paypal.com/developer/creditCardGenerator/) sida.
+1. Gå till sidan [Kreditkortsgenerator](https://developer.paypal.com/developer/creditCardGenerator/) på PayPal Developer Portal.
 1. Logga in på PayPal Developer Portal Dashboard.
 1. Generera ett testkreditkort.

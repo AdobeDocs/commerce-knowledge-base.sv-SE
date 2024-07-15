@@ -21,7 +21,7 @@ Kunderna går igenom gästutcheckningen och fyller i alla formulär inklusive le
 
 <u>Steg som ska återskapas</u> :
 
-**Förutsättningar**: Den beständiga kundvagnsfunktionen är aktiverad. Kontrollera om det är aktiverat i Admin, under **Lager** > **Konfiguration** > **Kunder** eller **Lager** > **Konfiguration** > **Försäljning** beroende på vilken version av Adobe Commerce du har.
+**Förutsättningar**: Den beständiga kundvagnsfunktionen är aktiverad. Kontrollera om det är aktiverat i Admin, under **Lagrar** > **Konfiguration** > **Kunder** eller **Lager** > **Konfiguration** > **Försäljning** beroende på vilken version av Adobe Commerce du har.
 
 1. Gå till butiken.
 1. Lägg produkter i kundvagnen.
@@ -51,7 +51,7 @@ Korrigeringen är kopplad till den här artikeln. Om du vill hämta den bläddra
 
 * Adobe Commerce 2.2.3
 
-**Patchen är även kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:**
+**Korrigeringen är även kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:**
 
 * Adobe Commerce om molninfrastruktur 2.1.13 - 2.1.18
 * Adobe Commerce om molninfrastruktur 2.2.0 - 2.2.5
@@ -61,6 +61,6 @@ Korrigeringen är kopplad till den här artikeln. Om du vill hämta den bläddra
 
 ## Så här sätter du på plåstret
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

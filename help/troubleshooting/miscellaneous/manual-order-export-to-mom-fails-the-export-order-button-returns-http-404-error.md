@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Manuell orderexport till MOM misslyckas. Knappen Exportera ordning returnerar HTTP 404-fel
 
-I den här artikeln beskrivs hur du åtgärdar ett problem, där du försöker exportera en order till Magento Order Management genom att klicka på **Exportordning** i ordervyn i Commerce Admin returnerar en *404 Sidan hittades inte* &quot;-fel.
+I den här artikeln beskrivs hur du åtgärdar ett problem, där ett försök att exportera en order till Magento Order Management (MOM) genom att klicka på knappen **Exportera ordning** i ordervyn i Commerce Admin returnerar felet *404 Sidan hittades inte* .
 
 ## Berörda produkter och versioner
 
@@ -24,10 +24,10 @@ I den här artikeln beskrivs hur du åtgärdar ett problem, där du försöker e
 
 <u>Steg som ska återskapas:</u>:
 
-1. Klicka på Commerce Admin **Försäljning > Beställningar**.
-1. Klicka på **Skapa ny order** -knappen.
-1. Välj en användare, lägg till ett eller flera objekt, välj betalnings- och leveransmetoder och klicka sedan på knappen **Skicka beställning** -knappen.
-1. Klicka på **Exportordning** och sedan **OK**.
+1. Klicka på **Försäljning > Beställningar** i Commerce Admin.
+1. Klicka på knappen **Skapa ny ordning** .
+1. Välj en användare, lägg till ett eller flera objekt, välj betalnings- och leveransmetoder och klicka sedan på knappen **Skicka beställning** .
+1. Klicka på knappen **Exportordning** och sedan på **OK**.
 
 <u>Förväntat resultat</u>:
 
@@ -35,7 +35,7 @@ Ordern skickas till MOM.
 
 <u>Faktiskt resultat</u>:
 
-A &quot; *404 Fel: Sidan hittades inte* visas.
+Sidan *404 Fel: Sidan hittades inte* visas.
 
 ## Lösning
 
@@ -48,4 +48,4 @@ $bin/magento oms:orders:sync
 
 ## Relaterad läsning
 
-[Teknisk dokumentation för Magento Order Management](https://omsdocs.magento.com/en/)
+[Teknisk Magento Order Management](https://omsdocs.magento.com/en/)

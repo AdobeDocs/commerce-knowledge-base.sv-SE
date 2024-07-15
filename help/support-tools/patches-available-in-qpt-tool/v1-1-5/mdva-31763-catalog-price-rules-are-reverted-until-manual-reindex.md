@@ -13,32 +13,32 @@ ht-degree: 0%
 
 # MDVA-31763: Katalogens prisregler återställs tills manuell omindexering utförs
 
-MDVA-31763-korrigeringen löser problemet där katalogprisreglerna återställs tills manuell omindexering. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 är installerat. Patch-ID:t är MDVA-31763. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
+MDVA-31763-korrigeringen löser problemet där katalogprisreglerna återställs tills manuell omindexering. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 har installerats. Patch-ID:t är MDVA-31763. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.3.5-p1
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.3.0 - 2.4.3-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-När `catalogrule_product` partiell indexerare körs på konfigurerbara produkter, katalogregler försvinner.
+När `catalogrule_product` partiell indexerare körs på konfigurerbara produkter försvinner katalogreglerna.
 
 <u>Steg som ska återskapas</u>:
 
 1. Logga in på Admin Backend.
-1. Gå till **Lager** > **Attribut** > **Produkt** och söker efter attributet &quot;manufacturer&quot;.
-   * Lägg till några alternativ och ställ in &quot;Använd för villkor för kampanjregel&quot; på *Ja*.
-1. Gå till **Lager** > **Attribut** > **Attributuppsättningar**.
+1. Gå till **Lagrar** > **Attribut** > **Produkt** och sök efter attributet &quot;tillverkare&quot;.
+   * Lägg till några alternativ och ange *Ja* som Använd för kampanjregelvillkor.
+1. Gå till **Lagrar** > **Attribut** > **Attributuppsättningar**.
    * Välj standardattributuppsättningen och lägg till attributet &quot;manufacturer&quot; i den.
 1. Skapa en konfigurerbar produkt med några varianter.
 1. Ange attributvärdet &quot;manufacturer&quot; för en tidigare skapad konfigurerbar produkt.
@@ -46,7 +46,7 @@ När `catalogrule_product` partiell indexerare körs på konfigurerbara produkte
    * Aktiv = Ja
    * Webbplatser = huvudwebbplats
    * Kundgrupper = INTE INLOGGAD
-   * Villkor: tillverkare = \&lt;selected value=&quot;&quot; for=&quot;&quot; configurable=&quot;&quot; product=&quot;&quot;>
+   * Villkor: tillverkare = \&lt;valt värde för konfigurerbar produkt>
    * Åtgärder: Alla rabatter
 1. Gör ett fullständigt index.
 1. Kontrollera produktpriset på PDP och se till att priset är korrekt.
@@ -65,14 +65,14 @@ Katalogens prisregler för konfigurerbara produkter försvinner vid partiell omi
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [Patchar tillgängliga i QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) -avsnitt.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i avsnittet [Patchar i QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

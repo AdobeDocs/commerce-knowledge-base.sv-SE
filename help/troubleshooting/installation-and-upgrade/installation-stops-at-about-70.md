@@ -32,10 +32,10 @@ Ställ in följande på lämpligt sätt.
 
 ### Alla webbservrar och lack {#all-web-servers-and-varnish}
 
-1. Hitta `php.ini` med [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) -fil.
-1. Som användare med `root` behörighet, öppna `php.ini` i en textredigerare.
-1. Leta reda på `max_execution_time` inställning.
-1. Ändra värdet till `18000` .
+1. Leta upp `php.ini` med hjälp av en [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo)-fil.
+1. Som användare med `root`-behörighet öppnar du `php.ini` i en textredigerare.
+1. Leta reda på inställningen `max_execution_time`.
+1. Ändra värdet till `18000`.
 1. Spara ändringarna i `php.ini` och avsluta textredigeraren.
 1. Starta om Apache:
 
@@ -46,7 +46,7 @@ Ställ in följande på lämpligt sätt.
 
 ### Endast nginx {#nginx-only}
 
-Om du använder nginx ska du använda våra medföljande `nginx.conf.sample` eller lägg till en timeout-inställning i konfigurationsfilen för den nya värddatorn i `location ~ ^/setup/index.php` enligt följande:
+Om du använder nginx använder du våra `nginx.conf.sample` eller lägger till timeout-inställningar i konfigurationsfilen för nginx-värden i avsnittet `location ~ ^/setup/index.php` enligt följande:
 
 ```php
 location ~ ^/setup/index.php {
@@ -60,7 +60,7 @@ Starta om nginx: `service nginx restart`
 
 ### Endast varniska {#varnish-only}
 
-Om du använder lack redigerar du `default.vcl` och lägga till ett tidsgränsvärde i `backend` stanza enligt följande:
+Om du använder lack redigerar du `default.vcl` och lägger till ett timeout-gränsvärde i `backend`-stanza enligt följande:
 
 ```php
 backend default {

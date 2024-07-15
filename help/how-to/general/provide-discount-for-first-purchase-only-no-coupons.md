@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Erbjud rabatt endast för första köpet (inga kuponger)
 
-Läs mer i [Rabatt vid första köpet](https://docs.magento.com/m2/ee/user_guide/marketing/price-rule-discount-first-purchase.html) i vår användarhandbok.
+Läs artikeln [Rabatt med första köpet](https://docs.magento.com/m2/ee/user_guide/marketing/price-rule-discount-first-purchase.html) i användarhandboken.

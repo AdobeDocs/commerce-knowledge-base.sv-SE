@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ECE-verktyg och korrigeringsuppdateringsfel Adobe Commerce cloud infrastructure 2.2.x, 2.3.x
 
-I den här artikeln finns en lösning på problemet där felmeddelanden, som &quot;*det gick inte att öppna dataströmmen:*&quot; eller &quot;*Ingen sådan fil eller katalog*&quot; när man försöker driftsätta uppdateringar av ECE-verktyg, patchar eller andra ändringar.
+Den här artikeln innehåller en lösning på problemet där felmeddelanden visas, t.ex. *inte kunde öppna dataström:* eller *ingen sådan fil eller katalog* när du försökte distribuera uppdateringar till ECE-verktyg, korrigeringsfiler eller andra ändringar.
 
 ## Berörda produkter och versioner
 
@@ -65,11 +65,11 @@ on line 63 in /app/vendor/magento/framework/App/ErrorHandler.php:61
 
 ## Orsak
 
-Felkonfigurering av `composer.json` -fil.
+Felkonfiguration av din `composer.json`-fil.
 
 ## Lösning
 
-Om en inställning saknas i `composer.json` -fil kommer vissa kataloger inte att kopiera från Adobe Commerce Code Base. Paketet och uppdateringen/korrigeringen kan inte tillämpas eftersom filer inte hittas.
+Om en inställning saknas i din `composer.json`-fil kopieras inte vissa kataloger från Adobe Commerce Code Base. Paketet och uppdateringen/korrigeringen kan inte tillämpas eftersom filer inte hittas.
 
 Ändra det extra avsnittet så att det matchar det som anges nedan och försök sedan distribuera igen.
 
@@ -82,4 +82,4 @@ Om en inställning saknas i `composer.json` -fil kommer vissa kataloger inte att
 
 ## Relaterad läsning
 
-* [Uppgraderingar och patchar](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade-parent.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=update%20ece%20tools) i vår dokumentation för utvecklare.
+* [Uppgraderingar och korrigeringar](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade-parent.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=update%20ece%20tools) i utvecklardokumentationen.

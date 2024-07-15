@@ -15,9 +15,9 @@ ht-degree: 0%
 
 I den här artikeln finns en korrigering för när produktbilder inte visas i din butik, trots att bildroller har angetts på sidan för produktredigering.
 
-**Orsak:** på Adobe Commerce-instanser med mer än en butik kan en del produktbilder ha `no_selection` värden för bildrollsattribut `image`, `small_image`, `thumbnail`, `swatch`. sådan `no_selection` värden uppstår när produktavbildningsrollen anges i det globala omfånget för alla butiker i stället för i en viss butiks omfång (med andra ord på **Alla butiksvyer** i stället för en viss **Butiksvy**). Om du vill veta om det är ditt fall kör du SQL-skriptet från **Orsak** nedan.
+**Orsak:** på Adobe Commerce-instanser med mer än en butik kan vissa produktbilder ha `no_selection`-värden för bildrollsattribut `image`, `small_image`, `thumbnail`, `swatch`. Sådana `no_selection`-värden uppstår när produktavbildningsrollen anges i det globala, helt lagrade omfånget i stället för i en viss butiks omfång (d.v.s. i **alla butiksvyer** i stället för i en viss **butiksvy**). Om du vill veta om det är ditt fall kör du SQL-skriptet från avsnittet **Orsak** nedan.
 
-**Lösning:** ta bort rader med `no_selection` värden för sådana bilder med hjälp av SQL-skriptet från lösningsavsnittet nedan.
+**Lösning:** Ta bort rader med värdena `no_selection` för sådana bilder med hjälp av SQL-skriptet i lösningsavsnittet nedan.
 
 ## Berörda versioner
 
@@ -28,21 +28,21 @@ I den här artikeln finns en korrigering för när produktbilder inte visas i di
 
 Produktbilder kanske inte visas i din butik, även om bildrollerna (Bas, Liten, Miniatyrbild, Färgruta) har angetts korrekt på sidan Produkt på panelen Admin.
 
-När du kontrollerar produktsidan med **Butiksvy** ange till **Alla butiksvyer** har bilden de roller som är inställda på **Bilddetaljer** skärm.
+När du kontrollerar produktsidan med **butiksvyn** inställd på **Alla butiksvyer** har bilden rollerna inställda på skärmen **Bildinformation**.
 
 ![all_store_views.png](assets/all_store_views.png)
 
 ![image_roles.png](assets/image_roles.png)
 
-I butiken visas dock inte bilden. När du kontrollerar produktsidan på den aktuella butiksnivån (byter du **Butiksvy**) finns bilden där men rollerna är inte angivna.
+I butiken visas dock inte bilden. När du kontrollerar produktsidan på den aktuella butiksnivån (växlar **butiksvyn**) finns bilden där men rollerna är inte angivna.
 
 ![image_roles_not_set.png](assets/image_roles_not_set.png)
 
 ## Orsak
 
-I Adobe Commerce-instanser för flera butiker (med fler än en butik) kan vissa produktbilder ha `no_selection` värden för attribut `image`, `small_image`, `thumbnail`, `swatch` (dessa attribut motsvarar bildroller). sådan `no_selection` värden uppstår när produktavbildningsrollen anges i det globala omfånget för alla butiker i stället för i en viss butiks omfång (med andra ord på **Alla butiksvyer** i stället för en viss **Butiksvy**).
+På Adobe Commerce-instanser för flera butiker (med fler än en butik) kan vissa produktbilder ha `no_selection`-värden för attributen `image`, `small_image`, `thumbnail`, `swatch` (dessa attribut motsvarar bildroller). Sådana `no_selection`-värden uppstår när produktavbildningsrollen anges i det globala, helt lagrade omfånget i stället för i en viss butiks omfång (d.v.s. i **alla butiksvyer** i stället för i en viss **butiksvy**).
 
-Tekniskt sett: på `store_id=0` (som innehåller globala inställningar för alla butiker på din Adobe Commerce-instans), kan produktavbildningsrollerna anges: det innebär att attributen `image`, `small_image`, `thumbnail`, `swatch` har giltiga värden (sökväg till bilder). Samtidigt är `store_id=1` (som är en viss butiksrepresentation) är värdena för dessa attribut `no_selection`.
+Tekniskt sett: på `store_id=0` (som innehåller globala inställningar för alla butiker på din Adobe Commerce-instans) kan produktavbildningsrollerna anges: det innebär att attributen `image`, `small_image`, `thumbnail`, `swatch` har giltiga värden (sökväg till bilder). På `store_id=1` (som är en särskild butiksrepresentation) är värdena för dessa attribut samtidigt `no_selection`.
 
 ### Så här kontrollerar du att det är ditt problem
 
@@ -75,11 +75,11 @@ Om frågan returnerar ett resultat som det nedan, hanterar du problemet som besk
 
 Om Adobe Commerce-programmet har mer än en butik kanske det inte synkroniserar data mellan en viss butik och den globala lagringsinställningarna.
 
-Värden på `store_id=1` har högre prioritet än standardarkivet (global) (`store_id=0`). Programmet kan därför ignorera de globala bildinställningarna och använda lagringsomfångskonfigurationen (`no_selection` för bildrollsattribut) när en bild visas.
+Värden på `store_id=1` har högre prioritet än standardlagret (globalt) (`store_id=0`). Programmet kan därför ignorera de globala bildinställningarna och använda lagringsomfångskonfigurationen (`no_selection` för bildrollsattribut) när en bild visas.
 
 ## Lösning {#solution}
 
-Ta bort attribut med `no_selection` värden som använder detta SQL-skript:
+Ta bort attribut med `no_selection`-värdena med det här SQL-skriptet:
 
 ```
 DELETE `cpev_s`.* FROM `catalog_product_entity_varchar` `cpev_s` JOIN `eav_attribute` `ea` ON `cpev_s`.`attribute_id` = `ea`.`attribute_id` LEFT JOIN `catalog_product_entity_varchar` `cpev_0` ON `cpev_0`.`row_id` = `cpev_s`.`row_id` AND `cpev_0`.`attribute_id` = `cpev_s`.`attribute_id` AND `cpev_0`.`store_id` = 0 WHERE `cpev_s`.`value` = 'no_selection' AND `ea`.`attribute_code` IN ('image', 'small_image', 'thumbnail') AND `cpev_s`.`store_id` > 0 AND `cpev_s`.`value` != `cpev_0`.`value` AND `cpev_s`.`value` = 'no_selection';
@@ -91,7 +91,7 @@ När attributen har tagits bort ställs rollerna för vissa butiker in och bilde
 
 Du kommer inte att kunna se korrigeringsresultaten direkt om helsidescache är aktiverat i din Adobe Commerce-instans.
 
-Uppdatera sidcachen med **Cachehantering** -menyn på din Admin-panel.
+Uppdatera sidcachen med hjälp av menyn **Cachehantering** på Admin-panelen för att se vilka ändringar som ska visas.
 
 ## Mer information
 
@@ -106,4 +106,4 @@ Uppdatera sidcachen med **Cachehantering** -menyn på din Admin-panel.
 ### Cache
 
 * [Cachehantering](/docs/commerce-admin/systems/tools/cache-management.html) i vår användarhandbok för Admin System.
-* [Hantera cachen](/docs/commerce-operations/configuration-guide/cli/manage-cache.html) i vår utvecklardokumentation
+* [Hantera cachen](/docs/commerce-operations/configuration-guide/cli/manage-cache.html) i utvecklardokumentationen

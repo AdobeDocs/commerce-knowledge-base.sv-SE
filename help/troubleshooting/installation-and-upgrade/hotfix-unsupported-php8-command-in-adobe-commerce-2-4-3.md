@@ -26,7 +26,7 @@ Problemet kommer att åtgärdas i version 2.4.4, 2.4.3-p1 och 2.3.7-p2.
 
 ## Problem
 
-Problemet orsakas av de nya versionerna av Adobe Commerce 2.4.3 och 2.3.7-p1 som endast använder funktionen PHP 8 `str_contains`. Adobe Commerce 2.4.3 och 2.3.7-p1 är bara kompatibla med PHP 7.4, så den här funktionen kan inte användas.
+Problemet orsakas av de nya versionerna av Adobe Commerce 2.4.3 och 2.3.7-p1 som endast använder funktionen `str_contains` i PHP 8. Adobe Commerce 2.4.3 och 2.3.7-p1 är bara kompatibla med PHP 7.4, så den här funktionen kan inte användas.
 
 <u>Steg som ska återskapas</u> :
 
@@ -42,7 +42,7 @@ Allvarligt PHP-fel.
 
 ## Lösning
 
-Du kan lösa det genom att köra följande kommando i CLI/Terminal: `composer require symfony/polyfill-php80` från rotmappen i Magento eller installera en kompositörkorrigering.
+Som en tillfällig lösning kör du följande kommando i CLI/Terminal: `composer require symfony/polyfill-php80` från rotmappen i Magento eller installerar en kompositkorrigering.
 
 För att åtgärda problemet i 2.4.3 bör Adobe Commerce (alla distributionsmetoder) och Magento Open Source handlare tillämpa en patch:
 
@@ -54,7 +54,7 @@ För att åtgärda problemet med 2.3.7-p1 bör Adobe Commerce (alla distribution
 
 ## Så här använder du patchen
 
-Se [Använda en kompositkorrigering från Magento](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Magento](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Relaterad läsning
 

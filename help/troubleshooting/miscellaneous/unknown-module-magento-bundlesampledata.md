@@ -27,9 +27,9 @@ Under installationen visas ett meddelande som liknar följande:
 
 Prova något av följande i taget och försök sedan installera igen.
 
-1. Kör webbinstallationsguiden. Modulerna listas i  **Konfigurationer av avancerade moduler**. Så här inaktiverar du **Magento\_BundleSampleData** modul, rensa **Magento\_BundleSampleData** som bilden nedan visar.
+1. Kör webbinstallationsguiden. Moduler visas i **Konfigurationer av avancerade moduler**. Om du vill inaktivera modulen **Magento\_BundleSampleData** avmarkerar du kryssrutan **Magento\_BundleSampleData** enligt bilden nedan.
 
    ![tshot_bundlesampledata.png](assets/tshoot_bundlesampledata.png)
 
 1. Rensa all webbläsarhistorik och alla data från webbläsaren.
-1. Om du har Chrome tar du bort alla webbläsardata som är relaterade till din plats.  Gå till **Inställningar** > **Avancerade alternativ** > **Integritet** > **Innehållsinställningar** > **Alla cookies och webbplatsdata**. Klicka på adressen till Adobe Commerce-servern i kolumnen Plats och klicka sedan på **Ta bort alla**.
+1. Om du har Chrome bör du rensa alla webbläsardata som är relaterade till din webbplats.  Gå till **Inställningar** > **Avancerade alternativ** > **Sekretess** > **Innehållsinställningar** > **Alla cookies och webbplatsdata**. Klicka på Adobe Commerce-serverns adress i kolumnen Plats och klicka på **Ta bort alla**.

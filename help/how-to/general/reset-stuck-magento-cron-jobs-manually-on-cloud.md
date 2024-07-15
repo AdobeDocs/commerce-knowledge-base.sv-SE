@@ -14,20 +14,20 @@ ht-degree: 0%
 
 Adobe Commerce på molninfrastrukturcron-jobb slutför inte körningen, fastnar och förhindrar att andra kronijobb körs. I den här artikeln visas hur du återställer de fastnade kron-jobben manuellt.
 
-Använd det här kommandot med försiktighet! Vi rekommenderar att du läser [Återställ cron-jobb](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) artikel i vår kunskapsbas för support för mer information.
+Använd det här kommandot med försiktighet! Vi rekommenderar att du läser artikeln [Återställ cron-jobb](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) i vår kunskapsbas för support för mer information.
 
 ## Steg
 
 >[!INFO]
 >
->Från [ECE-verktyg v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html#v2002.0.4) kan du manuellt återställa fastnade cron-jobb med ett CLI-kommando via SSH-åtkomst.
+>Från [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html#v2002.0.4) kan du manuellt återställa fastnade cron-jobb med ett CLI-kommando via SSH-åtkomst.
 
-1. [SSH i din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Kör det här kommandot: `./vendor/bin/ece-tools cron:unlock`
 
 ## Varningar
 
-* Kommandot återställs **alla** cron-jobb, även sådana som för närvarande är igång, **endast i undantagsfall**.
+* Kommandot återställer **alla** cron-jobb, inklusive de som körs för närvarande. **Använd det bara i undantagsfall**.
 * Undvik att använda den här lösningen när indexerare körs.
 
 ## Läs det i vår kunskapsbas:

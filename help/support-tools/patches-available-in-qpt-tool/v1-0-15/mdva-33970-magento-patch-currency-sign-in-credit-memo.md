@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # MDVA-33970-korrigering: valutasymbol i kreditnota
 
-MDVA-33970-korrigeringen löser problemet där ett dollartecken ($) visades i stället för den lokaliserade valutan i en kreditnota. Detta inträffar när en **Webbplats** omfånget används för **Pris** -attribut.
+MDVA-33970-korrigeringen löser problemet där ett dollartecken ($) visades i stället för den lokaliserade valutan i en kreditnota. Detta inträffar när en **webbplats**-omfattning används för ett **Price** -attribut.
 
-Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.15 är installerat. Observera att problemet schemaläggs att åtgärdas i Adobe Commerce version 2.4.3.
+Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.15 är installerat. Observera att problemet schemaläggs att åtgärdas i Adobe Commerce version 2.4.3.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:** Adobe Commerce om molninfrastruktur 2.3.4-p2
+**Korrigeringen skapas för Adobe Commerce-version:** Adobe Commerce i molninfrastruktur 2.3.4-p2
 
-**Kompatibel med Adobe Commerce:** Adobe Commerce on cloud infrastructure and Adobe Commerce on-local 2.3.4 - 2.4.1-p1
+**Kompatibel med Adobe Commerce-versioner:** Adobe Commerce i molninfrastruktur och Adobe Commerce lokalt 2.3.4 - 2.4.1-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -33,35 +33,35 @@ Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](https:
 
 I det här exemplet används följande inställningar:
 
-* Det finns två webbplatser - var och en har en **Butik** och **Butiksvy**.
-* The **Standardkonfiguration** har Singapore-dollar som **Valuta** (**Stores > Configuration > General > Currency Setup**):
-   * **Basvaluta** = *Singaporedollar*
-   * **Standardvisningsvaluta** = *Singaporedollar*
-   * **Tillåtna valutor** = *Singaporedollar*
-* **Webbplats 1** har en **Standardkonfiguration**.
-* **Webbplats 2** har malaysiska ringgit som **Valuta**:
-   * **Basvaluta** = *Malaysiska ringgit*
-   * **Standardvisningsvaluta** = *Malaysiska ringgit*
-   * **Tillåtna valutor** = *Malaysiska ringgit*
-* Gå till **Lager > Valutasymboler** och Ange:
-   * **MYR (malaysiska ringgit)** = *RM*
+* Det finns två webbplatser - var och en har en **Store** och en **Store**.
+* **Standardkonfigurationen** har Singapore-dollar som **Valuta** (**Lager > Konfiguration > Allmänt > Valutainställningar**):
+   * **Basvaluta** = *Singapore-dollar*
+   * **Standardvisningsvaluta** = *Singapore-dollar*
+   * **Tillåtna valutor** = *Singapore-dollar*
+* **Webbplats 1** har en **standardkonfiguration**.
+* **På webbplatsen 2** finns malaysisk ringgit som **Valuta**:
+   * **Basvaluta** = *malaysisk ringgit*
+   * **Standardvisningsvaluta** = *malaysisk ringgit*
+   * **Tillåtna valutor** = *Malaysian Ringgit*
+* Gå till **Lager > Valutasymboler** och ange:
+   * **MYR (malaysisk ringgit)** = *RM*
    * **SGD (Singapore-dollar)** = *SGD* (**Använd standard** = *Markerad*)
-* Några **Produkt** finns.
+* En del **produkt** finns.
 
 <u>Steg som ska återskapas</u>:
 
-1. Gör en **Beställning** från **Webbplats 2** (du kan konfigurera det som standard för att undvika ytterligare inställningar).
-1. Logga in på **Administratör**.
+1. Gör en **beställning** från **webbplatsen** (du kan konfigurera den som Standard för att undvika ytterligare inställningar).
+1. Logga in på **Admin**.
 1. Öppna den nyligen skapade ordern.
-1. Kontrollera att **Valutasymbol** = *RM*.
-1. Skapa en **Faktura**.
-1. Kontrollera att **Valutasymbol** = *RM* i fakturan.
-1. Skapa en **Kreditnota**.
-1. Kontrollera att **Valutasymbol**  ** ** = *RM* i **Kreditnota**.
-1. Öppna **Kreditnotor** tabba in **Beställning**.
-1. Kontrollera **Valutasymbol** i rutnätet.
+1. Kontrollera att **valutasymbolen** = *RM*.
+1. Skapa en **faktura**.
+1. Kontrollera att **valutasymbolen** = *RM* finns på fakturan.
+1. Skapa en **kreditnota**.
+1. Kontrollera att **valutasymbolen** ** ** = *RM* i **kreditnotan**.
+1. Öppna fliken **Kreditnotor** i **Beställning**.
+1. Kontrollera **valutasymbolen** i rutnätet.
 1. Öppna **Försäljning > Kreditnotor**.
-1. Kontrollera **Valutasymbol** i rutnätet.
+1. Kontrollera **valutasymbolen** i rutnätet.
 
 <u>Förväntade resultat</u>:
 
@@ -75,14 +75,14 @@ Dollar-tecknet ($) används, även om det inte har konfigurerats i administratö
 
 Använd följande länkar, beroende på vilken Adobe Commerce-produkt du använder, för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra korrigeringsfiler som finns i QPT-verktyget finns i [Patchar tillgängliga i QPT-verktyget](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) -avsnitt.
+Mer information om andra tillgängliga korrigeringsfiler i QPT-verktyget finns i avsnittet [Patchar i QPT-verktyget](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-).

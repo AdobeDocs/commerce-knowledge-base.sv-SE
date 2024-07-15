@@ -26,9 +26,9 @@ Användarna kan inte lägga till produkter i kundvagnen om alternativet Tillåt 
 <u>Steg som ska återskapas</u>:
 
 1. Logga in på Commerce Admin.
-1. Gå till **Butik** > **Konfiguration** > **Allmänt** > **Alternativ för land**
-1. Avmarkera alla alternativ i **Tillåt länder** fält.
-1. Klicka **Spara konfiguration** för att spara konfigurationen.
+1. Gå till **Store** > **Configuration** > **General** > **Country options**
+1. Avmarkera alla alternativ i fältet **Tillåt länder**.
+1. Klicka på **Spara konfiguration** för att spara konfigurationen.
 1. Gå till butiken och prova att lägga till en produkt i kundvagnen.
 
 <u>Förväntat resultat:</u>
@@ -51,7 +51,7 @@ customer-data.js:87 Uncaught Error: [object Object]
 
 ## Orsak
 
-Adobe Commerce-konfigurationen hämtar `null` om en flervalskonfiguration inte har några valda objekt. Den här konfigurationen kan bearbetas ytterligare i PHP-versioner tidigare än 8.1. I PHP 8.1 fungerar det dock inte korrekt på grund av de fel som orsakas av &quot;[Föråldrat överföring av null till argument som inte kan ha värdet null för interna funktioner i PHP 8.1](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg)&quot;.
+Adobe Commerce-konfigurationen hämtar `null` om en flervalskonfiguration inte har några markerade objekt. Den här konfigurationen kan bearbetas ytterligare i PHP-versioner tidigare än 8.1. I PHP 8.1 fungerar den dock inte korrekt på grund av de fel som orsakas av att [Deprecate skickar null till argument som inte kan ha värdet null för interna funktioner i PHP 8.1](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg).
 
 ## Lösningar
 
@@ -61,8 +61,8 @@ Adobe Commerce-konfigurationen hämtar `null` om en flervalskonfiguration inte h
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Användbara länkar
 
-[Använd anpassade korrigeringsfiler för Adobe Commerce i molninfrastruktur](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+[Använd anpassade korrigeringar för Adobe Commerce i molninfrastrukturen](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) i vår utvecklardokumentation.

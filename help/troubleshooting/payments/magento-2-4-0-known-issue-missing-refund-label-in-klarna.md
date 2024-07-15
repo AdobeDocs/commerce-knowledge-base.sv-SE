@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0 Känt fel: etiketten&quot;Refund&quot; saknas i Klarna
 
-I den här artikeln beskrivs en lösning på ett känt problem i Admin för ett saknat **Återbetalning** label in Klarna VBE (Vendor Bundled Extension). När i Klarna-portalen som utför en återbetalning **Återbetalning** Etiketten visas inte bredvid den paketerade produkten som har återbetalats.
+I den här artikeln beskrivs en tillfällig lösning för ett känt fel i Admin för etiketten **Återbetalning** som saknas i Klarna VBE (leverantörspaketerat tillägg). När det är i Klarna-portalen som utför en återbetalning visas inte etiketten **Återbetalning** bredvid den paketerade produkt som har återbetalats.
 
 ## Berörda produkter och versioner
 
@@ -29,29 +29,29 @@ I den här artikeln beskrivs en lösning på ett känt problem i Admin för ett 
 
 <u>Steg som ska återskapas</u>
 
-1. Gå till Adobe Commerce frontend och lägg till en paketerad produkt i **kundvagn**.
+1. Gå till Adobe Commerce klientdel och lägg till en paketerad produkt i **kundvagnen**.
 1. Navigera till kassan.
-1. Ange konsumentinformation i kassan och klicka **Nästa**.
-1. Välj **KP-alternativ** och klicka **Montera beställning**.
-1. Gå till **Administratör** > **Försäljning** > **Beställningar**.
+1. Ange konsumentinformation i kassan och klicka på **Nästa**.
+1. Välj **KP-alternativ** och klicka på **Montera ordning**.
+1. Gå till **Admin** > **Försäljning** > **Beställningar**.
 1. Öppna ordern.
 1. Skapa faktura för produkt.
-1. Gå till **Fakturor** > **Välj faktura** > Klicka **Kreditnota** > Klicka **Återbetalning** (Inte **Återbetalning offline**).
+1. Gå till **Fakturor** > **Välj faktura** > Klicka på **Kreditnota** > Klicka på **Återbetalning** (inte **Återbetalning offline**).
 1. Gå till Klarna portal.
 1. Öppna ordern.
-1. The **Återbetalning** etiketten finns.
+1. Etiketten **Återbetalning** finns.
 
 <u>Förväntat resultat</u>
 
-På Klarna portal **Återbetalning** etiketten visas bredvid produkten som har återbetalats.
+På Klarna-portalen visas etiketten **Återbetalning** bredvid den produkt som återbetalades.
 
 <u>Faktiskt resultat</u>
 
-På Klarna portal **Återbetalning** Etiketten visas inte bredvid produkten som har återbetalats.
+På Klarna-portalen visas inte etiketten **Återbetalning** bredvid den produkt som återbetalades.
 
 ## Tillfällig lösning
 
-Problemet kan undvikas genom att man ignorerar de saknade **Återbetalning** Etikett i Klarna-portalen för återbetalda paketerade produkter. Återbetalningen har gjorts, trots att **Återbetalning** etiketten visades inte. Problemet förväntas bli åtgärdat i Adobe Commerce 2.4.1, som kommer att släppas tredje kvartalet 2020.
+Du kan lösa problemet genom att ignorera etiketten **Återbetalning** som saknas i Klarna-portalen för återfinansierade paketerade produkter. Återbetalningen har gjorts, även om etiketten **Återbetalning** inte visades. Problemet förväntas bli åtgärdat i Adobe Commerce 2.4.1, som kommer att släppas tredje kvartalet 2020.
 
 ## Relaterade läsningar i vår kunskapsbas:
 

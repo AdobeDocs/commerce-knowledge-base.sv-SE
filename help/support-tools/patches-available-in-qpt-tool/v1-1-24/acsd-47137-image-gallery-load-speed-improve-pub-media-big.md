@@ -11,56 +11,56 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47137: Förbättra inläsningshastigheten för bildgalleriet när `pub/media` stor mapp
+# ACSD-47137: Förbättra inläsningshastigheten för bildgalleriet när mappen `pub/media` är stor
 
-Korrigeringen ACSD-47137 förbättrar inläsningshastigheten för bildgalleriet när `pub/media` mappen är väldigt stor. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 är installerat. Korrigerings-ID är ACSD-47137. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
+Korrigeringen ACSD-47137 förbättrar inläsningshastigheten för bildgalleriet när mappen `pub/media` är mycket stor. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 har installerats. Korrigerings-ID är ACSD-47137. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 * Adobe Commerce (alla distributionsmetoder) 2.4.4
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 * Adobe Commerce (alla distributionsmetoder) 2.4.4 - 2.4.5-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-Inläsningshastigheten i bildgalleriet är långsam när `pub/media` mappen är väldigt stor.
+Inläsningshastigheten för bildgalleriet är långsam när mappen `pub/media` är mycket stor.
 
 <u>Steg som ska återskapas</u>:
 
 1. Gå till Adobe Commerce Admin > **[!UICONTROL STORES]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Media Gallery]** > **[!UICONTROL Enable Old Media Gallery]** till _Nej_.
 1. Rensa konfigurationscachen.
 1. Logga ut och logga in som administratör igen.
-1. Gå till sidlisten Admin **[!UICONTROL Catalog]** > **[!UICONTROL Categories]** och välj rotkategori.
-1. Expandera **[!UICONTROL Content]** och klicka på **[!UICONTROL Select from Gallery]**.
+1. Gå till **[!UICONTROL Catalog]** > **[!UICONTROL Categories]** på sidlisten Admin och välj rotkategorin.
+1. Expandera avsnittet **[!UICONTROL Content]** och klicka på **[!UICONTROL Select from Gallery]**.
 
-När sidan läses in skickar Adobe Commerce `media_gallery/directories/gettree` begäran att läsa in mediemappsträdet.
+När du läser in sidan skickar Adobe Commerce `media_gallery/directories/gettree`-begäran för att läsa in mediemappsträdet.
 
 <u>Förväntade resultat</u>:
 
-The `media_gallery/directories/gettree` begäran ska bara läsa in innehåll från de nödvändiga katalogerna, förutom att slinga hela sökvägslistan från `pub/media/` mapp.
+`media_gallery/directories/gettree`-begäran bör bara läsa in innehåll från de nödvändiga katalogerna, förutom att hela sökvägslistan upprepas från mappen `pub/media/`.
 
 <u>Faktiska resultat</u>:
 
-The `media_gallery/directories/gettree` begäran tar lång tid att läsa in när `pub/media/` mappen har mycket innehåll.
+`media_gallery/directories/gettree`-begäran tar lång tid att läsa in när mappen `pub/media/` har mycket innehåll.
 
 ## Tillämpa korrigeringen
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.

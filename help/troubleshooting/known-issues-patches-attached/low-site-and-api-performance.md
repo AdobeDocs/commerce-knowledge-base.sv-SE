@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Låga prestanda för webbplats och API
 
-I den här artikeln finns en patch för det kända problemet med Adobe Commerce i molninfrastruktur 2.2.1 som handlar om att ha låg plats och API-prestanda på grund av att man måste skriva mycket länge `debug.log`.
+I den här artikeln finns en patch för det kända problemet med Adobe Commerce i molninfrastruktur 2.2.1 som rör låg prestanda för webbplatser och API som orsakats av en lång tid som krävs för att skriva `debug.log`.
 
 ## Problem
 
-Webbplatsens prestanda är långsam. API-åtgärder går långsamt, till exempel att uppdatera produkter med `PUT` -metod. När du tar en närmare titt på åtgärderna som använder New Relic förbrukas de flesta minnen och processorn av att skriva till `/var/log/debug.log`.
+Webbplatsens prestanda är långsam. API-åtgärder körs långsamt, till exempel när produkter uppdateras med metoden `PUT`. När du tittar närmare på de åtgärder som använder New Relic förbrukas de flesta minnen och processorn genom att skriva till `/var/log/debug.log`.
 
 ## Lösning
 
@@ -42,6 +42,6 @@ Patchen är också kompatibel (men löser kanske inte problemet) med följande v
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-28202-korrigering: Produkterna i lager filtreras inte korrekt
 
-MDVA-28202-korrigeringen åtgärdar ett problem där Stock-produkter inte filtreras korrekt med **Pris** filtret på en Adobe Commerce store front. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.6 är installerat.
+MDVA-28202-korrigeringen åtgärdar ett problem där produkter i lager inte har filtrerats korrekt med filtret **Price** på en Adobe Commerce-butik. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.6 är installerat.
 
 ## Berörda produkter och versioner
 
@@ -22,27 +22,27 @@ MDVA-28202-korrigeringen åtgärdar ett problem där Stock-produkter inte filtre
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-Produkterna i lager filtreras inte korrekt med **Pris** i Commerce Admin.
+Slut på stockprodukter filtreras inte korrekt med filtret **Price** i Commerce Admin.
 
-<u>Krav:</u>
+<u>Förutsättning:</u>
 
-* Ange **Visa ej lagrade produkter** = &quot;*Ja*&quot; under **Stock > Configuration > CATALOG > Inventory > Stock Options**.
+* Ange **Visa utanför Stock-produkter** = *Ja* under **Lager > Konfiguration > KATALOG > Lager > Stock-alternativ**.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-1. Skapa en konfigurerbar produkt med två enkla produkter (Exempel: set **Pris** = *1 500 dollar*).
+1. Skapa en konfigurerbar produkt med två enkla produkter (Exempel: set **Price** = *$1500*).
 1. Båda enkla produkter ska&quot;vara ur lager&quot; när den konfigurerbara produkten skapas.
 1. Tilldela den här konfigurerbara produkten till en kategori.
-1. Indexera om och kontrollera `catalog_product_index_price` register med enhets-ID för ovanstående konfigurerbara produkt.
+1. Indexera om och kontrollera tabellen `catalog_product_index_price` med enhets-ID för ovanstående konfigurerbara produkt.
 1. Spara alla produktpriser = *$0*.
 1. Läs in kategorin och bekräfta att produkten är tillgänglig.
-1. Öppna **Pris** filtrera från lagerstyrd navigering.
-1. Observera att **Pris** filtret har alternativet &quot; *0,00-9,99 USD* &quot;.
-1. Klicka på ovanstående **Pris** filteralternativ och ange **Pris** = *1 500 dollar* och du får den konfigurerbara produkt vi skapade ovan.
+1. Öppna filtret **Pris** från lagernavigering.
+1. Observera att filtret **Price** har alternativet *$0.00 - $9.99*.
+1. Klicka på det här ovan nämnda filteralternativet **Price** och ange filteralternativet **Price** = *$1500* så får du den konfigurerbara produkt vi skapade ovan.
 
 <u>Förväntat resultat:</u>
 
@@ -56,16 +56,16 @@ Produkten hamnar under fel prisintervallfilter.
 
 Om du vill använda enskilda korrigeringsfiler använder du följande länkar beroende på distributionsmetod:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Tillämpa korrigeringar med verktyget Korrigera kvalitet](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Använd korrigeringsfiler med verktyget för kvalitetskorrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
-* [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-Mer information om andra korrigeringsfiler som finns i QPT-verktyget finns i [Patchar tillgängliga i QPT-verktyget](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) -avsnitt.
+Mer information om andra tillgängliga korrigeringsfiler i QPT-verktyget finns i avsnittet [Patchar i QPT-verktyget](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-).
 
-Mer information om konfigurerbara produkter finns i den här artikeln i utvecklardokumentationen: [Skapa en konfigurerbar produktsjälvstudiekurs](https://devdocs.magento.com/guides/v2.4/rest/tutorials/configurable-product/config-product-intro.html) i vår dokumentation för utvecklare.
+Mer information om konfigurerbara produkter finns i den här artikeln i utvecklardokumentationen: [Skapa en konfigurerbar produktsjälvstudiekurs](https://devdocs.magento.com/guides/v2.4/rest/tutorials/configurable-product/config-product-intro.html) i utvecklardokumentationen.

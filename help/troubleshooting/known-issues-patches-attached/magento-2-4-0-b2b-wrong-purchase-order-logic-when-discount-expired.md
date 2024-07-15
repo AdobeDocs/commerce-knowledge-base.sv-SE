@@ -22,9 +22,9 @@ I den här artikeln finns en patch för den kända utgåvan av en inköpsorderra
 
 ## Problem
 
-<u>Förutsättningar</u>: en rabattkupong skapas och godkännanderegler som förhindrar att inköpsordrar bearbetas automatiskt finns.
+<u>Förutsättningar</u>: en rabattkupong skapas och godkännanderegler förhindrar att inköpsordrar bearbetas automatiskt.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Placera en inköpsorder med rabatt.
 1. Inaktivera rabattkupongen.
@@ -49,8 +49,8 @@ Korrigeringen är kopplad till den här artikeln. Om du vill hämta den bläddra
 
 [B2B-709-composer.patch](assets/B2B-709-composer.patch.zip)
 
-Programfixen kan också laddas ned i `.git` och `.composer` , format på [Adobe Commerce Downloads](https://magento.com/tech-resources/download) sida, under **Patchar** i den vänstra kolumnnavigeringen. Sök efter XXX korrigeringsfiler.
+Korrigeringen kan också laddas ned både `.git` och `.composer` på sidan [Adobe Commerce Downloads](https://magento.com/tech-resources/download) under **Patchar** i den vänstra kolumnnavigeringen. Sök efter XXX korrigeringsfiler.
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.

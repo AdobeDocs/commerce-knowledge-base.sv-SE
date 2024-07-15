@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Installera de senaste patcharna för att åtgärda Adobe Commerce Redis-problem
 
-I den här artikeln finns information om de senaste Redis-relaterade korrigeringsfilerna som finns i [Adobe Commerce on cloud infrastructure Patches](https://devdocs.magento.com/cloud/project/project-patch.html) paket.
+I den här artikeln finns information om de senaste Redis-relaterade korrigeringsfilerna som finns i [Adobe Commerce för molninfrastrukturkorrigeringsfiler](https://devdocs.magento.com/cloud/project/project-patch.html) .
 
 ## Berörda produkter och versioner
 
@@ -25,7 +25,7 @@ Extra processor- och minnesanvändning av Redis kan minska Adobe Commerce presta
 
 ## Lösning
 
-Använd de senaste patcharna från Adobe Commerce i molninfrastrukturspaketet. Detaljerade instruktioner finns i [Tillämpa patchar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+Använd de senaste patcharna från Adobe Commerce i molninfrastrukturspaketet. Mer information finns i [Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i utvecklardokumentationen.
 
 De senaste Redis-korrigeringsfilerna som levereras av Adobe Commerce om molninfrastrukturkorrigeringspaketet bidrar till följande:
 

@@ -18,15 +18,15 @@ Du behöver bara använda en variant (alternativ) för att dumpa din databas. De
 
 ## Krav: SSH i din miljö
 
-Om du vill dumpa din databas på Adobe Commerce i molninfrastrukturen med någon av de varianter som beskrivs i den här artikeln måste du först [SSH i din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+Om du vill dumpa din databas på Adobe Commerce i molninfrastruktur med någon variant som beskrivs i den här artikeln måste du först [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 
 >[!WARNING]
 >
 >Oavsett om du väljer Alternativ 1 eller Alternativ 2 ska du köra kommandot under tider med låg belastning mot en sekundär databasnod.
 
-## Alternativ 1: db-dump (**e-postverktyg; rekommenderas**)
+## Alternativ 1: db-dump (**ece-tools; rekommenderas**)
 
-Du kan dumpa din databas med [ECE-verktyg](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) kommando:
+Du kan dumpa din databas med kommandot [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html):
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +34,7 @@ vendor/bin/ece-tools db-dump
 
 Detta är det rekommenderade och säkraste alternativet.
 
-Se [Dumpa databasen (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) i vår Commerce on Cloud Infrastructure Guide.
+Se [Dumpa din databas (ECE-verktyg)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) i vår Commerce on Cloud Infrastructure Guide.
 
 ## Alternativ 2: mysqldump
 
@@ -42,7 +42,7 @@ Se [Dumpa databasen (ECE-Tools)](https://experienceleague.adobe.com/docs/commerc
 >
 >Kör inte det här kommandot mot databaskluster. Klustret skiljer inte åt om det körs mot den primära databasen eller mot en sekundär. Om klustret kör det här kommandot mot det primära, kommer databasen inte att kunna köra skrivningar förrän dumpningen är klar och kan påverka prestanda och webbplatsens stabilitet.
 
-Du kan dumpa din databas med hjälp av den inbyggda MySQL `mysqldump` -kommando.
+Du kan dumpa din databas med hjälp av det inbyggda MySQL `mysqldump`-kommandot.
 
 Hela kommandot kan se ut så här:
 
@@ -50,9 +50,9 @@ Hela kommandot kan se ut så här:
 mysqldump -h <host> -u <username> -p <password> --single-transaction <db_name> | gzip > /tmp/<dump_name>.sql.gz
 ```
 
-Databassäkerhetskopieringen som skapades genom att köra `mysqldump` kommando och sparad i `\tmp`, ska flyttas från den här platsen. Det ska inte ta upp lagringsutrymme i `\tmp` (vilket kan leda till problem).
+Säkerhetskopian av databasen som skapades genom att köra kommandot `mysqldump` och sparades i `\tmp` bör flyttas från den här platsen. Det ska inte ta upp lagringsutrymme i `\tmp` (vilket kan leda till problem).
 
-Om du vill ha dina DB-autentiseringsuppgifter (värd, användarnamn och lösenord) kan du ringa `MAGENTO_CLOUD_RELATIONSHIPS` miljövariabel:
+Du kan anropa miljövariabeln `MAGENTO_CLOUD_RELATIONSHIPS` för att få dina DB-autentiseringsuppgifter (värd, användarnamn och lösenord):
 
 ```
 echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp

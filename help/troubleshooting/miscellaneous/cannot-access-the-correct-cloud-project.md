@@ -27,36 +27,36 @@ Du har inte åtkomst till rätt Adobe Commerce-projekt i molnet när ägarskap e
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce om molninfrastruktur, [alla versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Orsak
 
 Det här problemet inträffar vanligtvis när den tidigare projektägarens enkel inloggning (SSO) fortfarande är integrerad med Adobe.com efter:
 
-1. Ägarskapet för molnprojektet har överförts till dig (användaren) och du ser det ursprungliga projektägarens konto. Klicka här för [lösning](#solution-for-cause-one-and-two).
+1. Ägarskapet för molnprojektet har överförts till dig (användaren) och du ser det ursprungliga projektägarens konto. Klicka här för [lösningen](#solution-for-cause-one-and-two).
 
    ELLER
 
-1. Du (användaren) har flyttat till ett annat företag, följt av en ändring av e-postadressen och de projekt du har åtkomst till. Du ser de projekt som du har beviljats åtkomst till i din tidigare roll/företag. Klicka här för [lösning](#solution-for-cause-one-and-two).
+1. Du (användaren) har flyttat till ett annat företag, följt av en ändring av e-postadressen och de projekt du har åtkomst till. Du ser de projekt som du har beviljats åtkomst till i din tidigare roll/företag. Klicka här för [lösningen](#solution-for-cause-one-and-two).
 
    ELLER
 
-1. Du har ändrat din e-postadress på https://account.adobe.com till en annan e-postadress som för närvarande inte är kopplad till ett molnprojekt. Klicka här för [lösning](#solution-for-cause-three).
+1. Du har ändrat din e-postadress på https://account.adobe.com till en annan e-postadress som för närvarande inte är kopplad till ett molnprojekt. Klicka här för [lösningen](#solution-for-cause-three).
 
 ## Lösning för orsak ett och två {#solution-for-cause-one-and-two}
 
 Lösningen för när problemet orsakas av ett och två är att koppla från integreringen med enkel inloggning med Adobe.com. Följ stegen nedan för att koppla från:
 
-1. Från https://accounts.magento.cloud/user utökar du **[!UICONTROL Single Sign-On]** -avsnitt. Klicka **[!UICONTROL Disconnect from Adobe.com]**, för att koppla från.
+1. Från https://accounts.magento.cloud/user expanderar du avsnittet **[!UICONTROL Single Sign-On]**. Klicka på **[!UICONTROL Disconnect from Adobe.com]** för att koppla från.
 
-   ![single sign-on-adobe-connect](assets/sso-adobe-disconnect.png)
+   ![single-sign-on-adobe-connect](assets/sso-adobe-disconnect.png)
 
 1. Klicka på **[!UICONTROL Disconnect]**.
 
    ![adobe-disconnect](assets/adobe-disconnect.png)
 
 1. Logga ut.
-1. Klicka på **[!UICONTROL Adobe.com]** -knappen.
+1. Klicka på knappen **[!UICONTROL Adobe.com]**.
 
    ![Magento.com](assets/adobe-welcome-login.png)
 

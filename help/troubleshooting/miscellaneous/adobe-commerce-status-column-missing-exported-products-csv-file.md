@@ -13,42 +13,42 @@ ht-degree: 0%
 
 # Adobe Commerce statuskolumn saknar exporterad produkt, CSV-fil
 
-Den här artikeln innehåller en lösning på problemet när du inte kan hitta statuskolumnen (d.v.s. ange om produkten är aktiverad eller inaktiverad) i CSV-filen som innehåller exporterade produkter. Produktens status anges av [!UICONTROL product_online] kolumn.
+Den här artikeln innehåller en lösning på problemet när du inte kan hitta statuskolumnen (d.v.s. ange om produkten är aktiverad eller inaktiverad) i CSV-filen som innehåller exporterade produkter. Produktens status anges av kolumnen [!UICONTROL product_online].
 
 ## Berörda produkter och versioner
 
-Adobe Commerce (alla distributionsmetoder) alla [versionerna](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce (alla distributionsmetoder) alla [versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
-Du kan inte hitta [!UICONTROL status] i CSV-filen som innehåller exporterade produkter. Du kan till exempel exportera en CSV-fil med alla SKU:er, med status, men tabellen verkar sakna [!UICONTROL status] kolumn.
+Du kan inte hitta kolumnen [!UICONTROL status] i CSV-filen som innehåller exporterade produkter. Du kan till exempel exportera en CSV-fil med alla SKU:er, med status, men tabellen verkar sakna kolumnen [!UICONTROL status].
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-1. I Adobe Commerce Admin väljer du **[!UICONTROL System]**, under **[!UICONTROL Data Transfer]** välj **[!UICONTROL Export]**.
-1. I **[!UICONTROL Export Settings]** väljer du **[!UICONTROL Entity Type]** listruta **[!UICONTROL Products]**.
-1. Sök efter **[!UICONTROL status]**, listas under **[!UICONTROL Attribute Code]**. Attributkoden visas i listan med tillgängliga attribut (**[!UICONTROL Enable Product]**).
+1. I Adobe Commerce Admin väljer du **[!UICONTROL System]** under **[!UICONTROL Data Transfer]** select **[!UICONTROL Export]**.
+1. I avsnittet **[!UICONTROL Export Settings]** väljer du i listrutan **[!UICONTROL Entity Type]** **[!UICONTROL Products]**.
+1. Sök efter **[!UICONTROL status]**, visas under **[!UICONTROL Attribute Code]**. Attributkoden visas i listan med tillgängliga attribut (**[!UICONTROL Enable Product]**).
 1. Klicka på **[!UICONTROL Export]**.
 
 <u>Förväntat resultat:</u>
 
-I CSV-filen som du just exporterade visas en kolumn med etiketten [!UICONTROL status].
+I CSV-filen som du just exporterade visas en kolumn med namnet [!UICONTROL status].
 
 <u>Faktiskt resultat:</u>
 
-Du ser ingen kolumn med etiketter [!UICONTROL status] i den exporterade csv-filen.
+Du ser ingen kolumn med namnet [!UICONTROL status] i den exporterade CSV-filen.
 
 ## Orsak
 
-Produktens statusattribut har bytt namn i CSV-filen. Det är nu [!UICONTROL product_online] kolumn.
+Produktens statusattribut har bytt namn i CSV-filen. Det är nu kolumnen [!UICONTROL product_online].
 
 ## Lösning
 
-1. Välj **[!UICONTROL System]**, under **[!UICONTROL Data Transfer]** välj **[!UICONTROL Import]**.
+1. Välj **[!UICONTROL System]**, under **[!UICONTROL Data Transfer]** select **[!UICONTROL Import]**.
 1. Klicka på **[!UICONTROL Download Sample File]**.
-1. Du kan se [!UICONTROL product_online] -kolumnen i CSV-filen.
+1. Du kan se kolumnen [!UICONTROL product_online] i CSV-filen.
 
 ## Relaterad läsning
 
 * [Arbeta med CSV-filer](https://docs.magento.com/user-guide/system/data-csv.html) i vår användarhandbok.
-* [Referens för produktexportattribut](https://docs.magento.com/user-guide/system/data-attributes-product.html) i vår användarhandbok.
+* [Referens för produktexportattribut](https://docs.magento.com/user-guide/system/data-attributes-product.html) i användarhandboken.

@@ -24,7 +24,7 @@ Den här artikeln handlar om dödlägen i MySQL för att hjälpa till att identi
 
 Deadlocks i MySQL inträffar när två eller flera transaktioner håller ihop och begär lås. Deadlocks som finns tyder inte alltid på ett problem, utan är ofta ett symtom på något annat MySQL- eller Adobe Commerce-problem som har inträffat.
 
-Programmet, distributionen eller MySQL-loggarna anger ofta en *&quot;deadlock&quot;* fel eller fel *&quot;Det gick inte att låsa vid försök att låsa. Försök starta om transaktionen.&quot;*
+I programmet, distributionen eller MySQL-loggarna anges ofta ett *&quot;deadlock&quot;* -fel eller felet *&quot;Deadlock hittades vid försök att låsa. Försök starta om transaktionen.&quot;*
 
 ## Orsak
 
@@ -36,16 +36,16 @@ Det är till exempel en bra rutin att undvika en fastsatt import av MySQL-databa
 
 1. Kontrollera programmet, distributionen eller MySQL-loggarna för att se om det finns några dödlåsningsfel:
    * [Loggplatser för Adobe Commerce och Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html)
-   * [Adobe Commerce på platser för molninfrastrukturloggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
-1. Kontrollera din MySQL-processlista för att köra processer med kommandot `mysql -e 'show full processlist';`
+   * [Adobe Commerce i molninfrastrukturloggar platser](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+1. Kontrollera din MySQL-processlista för att se om processer körs med kommandot `mysql -e 'show full processlist';`
 1. Om du använder Adobe Commerce i molninfrastruktur kontrollerar du att MySQL-slav är aktiverat. Läs den här artikeln: [Distribuera variabler (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection).
-1. Beroende på vilka fel som har uppstått kan lösningen vara egen eller så måste du inkludera din användbara logginformation om du behöver öppna en [Supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Beroende på vilka fel som har uppstått kan det bero på att lösningen finns på sig själv eller på att du måste inkludera din användbara logginformation om du behöver öppna en [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Relaterad läsning
 
-* [Minimera och hantera lås](https://dev.mysql.com/doc/refman/5.7/en/innodb-deadlocks-handling.html)
+* [Så här minimerar och hanterar du lås ](https://dev.mysql.com/doc/refman/5.7/en/innodb-deadlocks-handling.html)
 * [Indexeraroptimering - indexerartabellväxling](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
-* [Massåtgärder - konsumera meddelanden](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+* [Massåtgärder - Förbruka meddelanden](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
 >[!NOTE]
 >

@@ -21,7 +21,7 @@ I det här avsnittet beskrivs en lösning på ett typiskt problem som du kan upp
 
 ## Problem
 
-När du distribuerar kod i olika miljöer verifierar skripten att `master/production/staging` gren distribueras för att Google Analytics ska vara aktiverat. När du distribuerar utvecklargrenar (eller underordnade) av master- till utvecklarmiljöer (Integration) inaktiveras Google Analytics av distributionsskriptet.
+När du distribuerar din kod mellan miljöer verifieras grenen `master/production/staging` av skript som skapas och distribueras, så att Google Analytics är aktiverat. När du distribuerar utvecklargrenar (eller underordnade) av master- till utvecklarmiljöer (Integration) inaktiveras Google Analytics av distributionsskriptet.
 
 ## Orsak
 
@@ -29,7 +29,7 @@ Detta är en funktion som ska säkerställa att utvecklardata och interaktioner 
 
 ## Lösning
 
-Om du alltid vill att Google Analytics ska vara aktiverat anger du variabeln för distribution `ENABLE_GOOGLE_ANALYTICS = true`, enligt beskrivningen i [Distribuera variabler](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) i vår dokumentation för utvecklare.
+Om du alltid vill att Google Analytics ska vara aktiverat anger du distributionsvariabeln `ENABLE_GOOGLE_ANALYTICS = true` enligt beskrivningen i [Distribuera variabler](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) i utvecklardokumentationen.
 
 >[!NOTE]
 >

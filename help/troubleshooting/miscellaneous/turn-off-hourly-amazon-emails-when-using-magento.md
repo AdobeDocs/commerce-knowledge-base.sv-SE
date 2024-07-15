@@ -23,4 +23,4 @@ Ja, för att systemen ska kunna synkroniseras kontinuerligt, hämtar Adobe Comme
 
 ## Så här avanmäler du dig från dessa e-postmeddelanden:
 
-Följ dessa instruktioner för att [Uppdaterar meddelandeinställningar på Amazon webbplats](https://sellercentral.amazon.com/gp/help/external/G871).
+Följ dessa anvisningar för [Uppdaterar meddelandeinställningar på Amazon webbplats](https://sellercentral.amazon.com/gp/help/external/G871).

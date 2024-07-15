@@ -21,7 +21,7 @@ I den här artikeln finns information om det insticksprogram som släpps för at
 
 ## Problem
 
-Ett potentiellt fall av en aktiv beroendekonfusion upptäcks genom minst ett av de direkta eller indirekta beroenden som definieras i `composer.json` efter plugin-programmet för disposition `magento/composer-dependency-version-audit-plugin` under installation/uppdatering av disposition.
+Ett möjligt fall av en aktiv beroendekonfusion upptäcks genom minst ett av de direkta eller indirekta beroenden som definieras i `composer.json` av dispositionsplugin-programmet `magento/composer-dependency-version-audit-plugin` under installationen/uppdateringen av dispositionen.
 
 <u>Steg som ska återskapas</u>:
 
@@ -47,5 +47,5 @@ Angriparna kan utnyttja säkerhetsluckan om ett paket bara är tillgängligt via
 
 ### Förväntningar från tilläggsutvecklare
 
-* Det finns inget sätt att veta om ett plugin-program, om det kommer från en offentlig repo, har komprometterats eller inte. Plugin-programmet identifierar när en offentlig version av ett paket på packagist.org har en senare version än den som finns i en privat rapport som [repo.magento.com](https://repo.magento.com). Vi rekommenderar starkt att utvecklare undviker sådana situationer och inte publicerar nyare versioner offentligt än de som är tillgängliga via [repo.magento.com](https://repo.magento.com).
+* Det finns inget sätt att veta om ett plugin-program, om det kommer från en offentlig repo, har komprometterats eller inte. Plugin-programmet identifierar när en offentlig version av ett paket på packagist.org har en senare version än den som finns i ett privat svar som [repo.magento.com](https://repo.magento.com). Vi rekommenderar att utvecklare av tillägg undviker sådana situationer och inte publicerar nyare versioner offentligt än de som är tillgängliga via [repo.magento.com](https://repo.magento.com).
 * Adobe Commerce inser att granskningsprocessen på Marketplace kan fördröja tillgängligheten till tillägg, men processen är till för att skydda handlarna och hjälpa utvecklare att hitta misstag de kan ha missat.

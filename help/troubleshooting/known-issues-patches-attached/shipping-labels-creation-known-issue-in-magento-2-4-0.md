@@ -22,40 +22,40 @@ I den här artikeln finns en patch för ett känt Adobe Commerce 2.4.0-problem d
 
 ## Problem
 
-<u>Förutsättningar</u>: skapa en beställning med leveransmetoden FedEx, DHL, UPS eller USPS.
+<u>Förutsättningar</u>: skapa en order med leveransmetoden FedEx, DHL, UPS eller USPS.
 
 ### Scenario 1: Skapa en etikett när du lägger till en leverans
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Öppna den placerade ordern i Admin, under **Försäljning** > **Beställningar**.
-1. Klicka på **Ship** -knappen. The **Ny utleverans** sidan öppnas.
+1. Klicka på knappen **Leverera**. Sidan **Ny leverans** öppnas.
 
 <u>Förväntat resultat:</u>
 
-The **Skapa leveransetikett** kryssrutan visas längst ned på sidan.
+Kryssrutan **Skapa leveransetikett** visas längst ned på sidan.
 
 <u>Faktiskt resultat:</u>
 
-The **Skapa leveransetikett** kryssrutan visas inte.
+Kryssrutan **Skapa leveransetikett** visas inte.
 
 ### Scenario 2: Skapa en etikett för befintlig leverans
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Öppna den placerade ordern i Admin, under **Försäljning** > **Beställningar**.
-1. Klicka på **Ship** -knappen. The **Ny utleverans** sidan öppnas.
-1. Klicka på **Skicka utleverans** -knappen. En leverans skapas.
+1. Klicka på knappen **Leverera**. Sidan **Ny leverans** öppnas.
+1. Klicka på knappen **Skicka leverans**. En leverans skapas.
 1. Öppna den nyligen skapade leveransen.
-1. Klicka på **Skapa leveransetikett** -knappen. The **Skapa paket** öppnas.
+1. Klicka på knappen **Skapa leveransetikett** . Dialogrutan **Skapa paket** öppnas.
 
 <u>Förväntat resultat:</u>
 
-The **Lägg till produkter i paketet** på **Skapa paket** modalt fönster visar fält med orderobjekt.
+Knappen **Lägg till produkter i paket** i det modala fönstret **Skapa paket** visar fält med orderobjekt.
 
 <u>Faktiskt resultat:</u>
 
-The **Skapa paket** modalt fönster visas inte korrekt. Det går inte att lägga till orderartiklar i leveransen.
+Det modala fönstret **Skapa paket** visas inte korrekt. Det går inte att lägga till orderobjekt i leveransen.
 
 ## Lösning
 
@@ -67,7 +67,7 @@ Korrigeringen är kopplad till den här artikeln. Om du vill hämta den bläddra
 
 [MC-35514-2.4.0-CE-composiser-2.patch](assets/MC-35514-2.4.0-CE-composer-2.patch.zip)
 
-Programfixen kan också laddas ned i `.git` och `.composer`, format på [Adobe Commerce Downloads](https://magento.com/tech-resources/download) sida, under **Patchar** i den vänstra kolumnnavigeringen. Sök efter MC-35514-korrigering.
+Korrigeringen kan också laddas ned både `.git` och `.composer` på sidan [Adobe Commerce Downloads](https://magento.com/tech-resources/download) under **Patchar** i den vänstra kolumnnavigeringen. Sök efter MC-35514-korrigering.
 
 ### Kompatibla Adobe Commerce-versioner:
 
@@ -78,6 +78,6 @@ Korrigeringen skapades för:
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Bifogade filer

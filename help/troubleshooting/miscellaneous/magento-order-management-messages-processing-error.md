@@ -1,6 +1,6 @@
 ---
 title: Bearbetningsfel i Magento Order Management System (OMS) för Adobe Commerce
-description: Den här artikeln innehåller en lösning på problemet när du får ett "getMode()"-fel i CLI som körs "bin/magento oms:messages:i Magento Order Management System (OMS) för Adobe Commerce.
+description: Den här artikeln innehåller en lösning på problemet när du får ett "getMode()"-fel i CLI som kör "bin/magento oms:messages:process" i OMS (Magento Order Management System) för Adobe Commerce.
 exl-id: 83089465-f810-4a3b-bdb6-4720b44f0b49
 feature: System
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bearbetningsfel i Magento Order Management System (OMS) för Adobe Commerce
 
-Den här artikeln innehåller en lösning på problemet när du får en `getMode()` fel i CLI som körs `bin/magento oms:messages:process` i Magento Order Management System (OMS) för Adobe Commerce.
+Den här artikeln innehåller en lösning på problemet när du får ett `getMode()`-fel i CLI som kör `bin/magento oms:messages:process` i OMS (Magento Order Management System) för Adobe Commerce.
 
 ## Berörda produkter och versioner
 
@@ -56,14 +56,15 @@ Stack trace:
 
 ## Orsak
 
-Â Detta inträffar när anslutningsprogrammet försöker bearbeta `magento.inventory.source_management` meddelanden. Anslutaren försöker att bearbeta dessa meddelanden som om de var en `magento.inventory.source_stock_management.update` meddelande som kräver ett lägesvärde. Det finns inget läge i `magento.inventory.source_mangement` -meddelanden inträffar felet.
+Â
+Detta inträffar när anslutningsprogrammet försöker bearbeta `magento.inventory.source_management` meddelanden. Anslutaren försöker bearbeta dessa meddelanden som om de vore ett `magento.inventory.source_stock_management.update`-meddelande som kräver ett lägesvärde. Eftersom det inte finns något läge i `magento.inventory.source_mangement`-meddelandena inträffar felet.
 
 ## Lösning
 
-För att lösa problemet kör du följande SQL-sats i CLI som tar bort alla poster i `mcom_api_messages` tabell:
+Du löser problemet genom att köra följande SQL-sats i CLI som tar bort alla poster i tabellen `mcom_api_messages`:
 
 `delete from mcom_api_messages;`
 
 ## Relaterad läsning
 
-Se OMS Docs [Självstudiekurs om konfiguration av OMS Connector](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
+Se självstudiekursen [OMS Docs ](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/) för konfiguration av OMS Connector.

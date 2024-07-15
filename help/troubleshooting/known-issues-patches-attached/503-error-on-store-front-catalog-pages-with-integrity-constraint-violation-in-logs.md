@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Den här artikeln innehåller en patch som en tillfällig lösning, men problemet har åtgärdats permanent i Adobe Commerce i molninfrastrukturversionen v2.3.3 och du bör uppgradera till v2.3.3. Följ stegen i [Uppgradera Adobe Commerce](https://devdocs.magento.com/cloud/project/project-upgrade.html) i vår dokumentation för utvecklare.
+>Den här artikeln innehåller en patch som en tillfällig lösning, men problemet har åtgärdats permanent i Adobe Commerce i molninfrastrukturversionen v2.3.3 och du bör uppgradera till v2.3.3. Följ stegen i [Uppgradera Adobe Commerce version](https://devdocs.magento.com/cloud/project/project-upgrade.html) i utvecklardokumentationen.
 
-I den här artikeln finns en patch för det kända problemet med Adobe Commerce i molninfrastruktur 2.2.0 som handlar om att lagra katalogsidor som inte är tillgängliga. Felmeddelandet liknar följande i loggen: *Överträdelse av integritetsbegränsning: 1062 Dubblettposten %entry% för nyckeln PRIMARY, frågan var: INSERT INTO \`search\_tmp\_%number%*.
+I den här artikeln finns en korrigering för det kända Adobe Commerce-problemet i molninfrastruktur 2.2.0 som rör lagring av katalogsidor i frontkatalogen som inte är tillgängliga. Felmeddelandet liknar följande i loggen: *Överträdelse av integritetsbegränsning: 1062 Dubblettpost &#39;%entry%&#39; för nyckeln &#39;PRIMARY&#39;. Frågan var: INSERT INTO \`search\_tmp\_%number%*.
 
 ## Problem
 
-Butikens katalogsidor blir oväntat oåtkomliga. Felloggen innehåller en felbeskrivning som liknar följande: *Överträdelse av integritetsbegränsning: 1062 Dubblettposten %entry% för nyckeln PRIMARY, frågan var: INSERT INTO \`search\_tmp\_%number%*.
+Butikens katalogsidor blir oväntat oåtkomliga. Felloggen innehåller en felbeskrivning som liknar följande: *Överträdelse av integritetsbegränsning: 1062 Dubblettpost &#39;%entry%&#39; för nyckeln &#39;PRIMARY&#39;. Frågan var: INSERT INTO \`search\_tmp\_%number%*.
 
 Problemet är relaterat till sökning och orsakas av att det finns ett inaktuellt index tillsammans med det nya efter omindexering.
 
@@ -57,27 +57,27 @@ Patcherna är kopplade till den här artikeln. Om du vill hämta en patch rullar
 
 Patcharna skapades för följande utgåvor och versioner:
 
-* Adobe Commerce om molninfrastruktur 2.2.0 (`MDVA-9590_EE_2.2.0_COMPOSER_v2.patch`)
-* Adobe Commerce om molninfrastruktur 2.2.4 (`MDVA-13203_EE_2.2.4_V1_COMPOSER.patch`)
+* Adobe Commerce i molninfrastruktur 2.2.0 (`MDVA-9590_EE_2.2.0_COMPOSER_v2.patch`)
+* Adobe Commerce i molninfrastruktur 2.2.4 (`MDVA-13203_EE_2.2.4_V1_COMPOSER.patch`)
 
-The `MDVA-9590_EE_2.2.0_COMPOSER_v2` patch är också kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
+Korrigeringen `MDVA-9590_EE_2.2.0_COMPOSER_v2` är även kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
 
 * Adobe Commerce om molninfrastruktur 2.0.X, 2.1.X, 2.2.X och 2.3.0 - 2.3.3
 * Adobe Commerce lokalt 2.0.X, 2.1.X, 2.2.X och 2.3.0 - 2.3.3
 
-The `MDVA-13203_EE_2.2.4_V1_COMPOSER` patch är också kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
+Korrigeringen `MDVA-13203_EE_2.2.4_V1_COMPOSER` är även kompatibel (men löser kanske inte problemet) med följande versioner och utgåvor av Adobe Commerce:
 
 * Adobe Commerce om molninfrastruktur 2.0.X, 2.1.X, 2.2.X och 2.3.0 - 2.3.3
 * Adobe Commerce lokalt 2.0.X, 2.1.X, 2.2.X och 2.3.0 - 2.3.3
 
 ## Så här sätter du på plåstret
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Användbara länkar
 
-* [Loggfilsplats för Adobe Commerce på arkitekturen för molninfrastrukturen Starter-planen](/help/how-to/general/log-locations-directories-for-starter-plan.md) i vår kunskapsbas för support.
-* [Loggfilsplats för Adobe Commerce på Cloud Infrastructure Pros planarkitektur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) i vår kunskapsbas för support.
-* [Loggfilsplats för Adobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) i vår dokumentation för utvecklare.
+* [Logga filplatser för Adobe Commerce i arkitekturen för Starter-planen för molninfrastruktur](/help/how-to/general/log-locations-directories-for-starter-plan.md) i vår kunskapsbas för support.
+* [Logga filplatser för Adobe Commerce i Pro-planarkitekturen för molninfrastruktur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) i vår kunskapsbas för support.
+* [Logga filplatser för Adobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) i utvecklardokumentationen.
 
 ## Bifogade filer

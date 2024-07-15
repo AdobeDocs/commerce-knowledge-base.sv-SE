@@ -20,8 +20,8 @@ I den här artikeln beskrivs hur du använder en kompositkorrigering för Adobe 
 
 ## Så här använder du en kompositkorrigering för Adobe Commerce i molninfrastrukturen {#cloud}
 
-1. Om du inte har någon katalog med namnet `m2-hotfixes` i projektets rot skapar du en.
-1. Kopiera `%patch_name%.composer.patch` filer till `m2-hotfixes` katalog.
+1. Om du inte har någon katalog med namnet `m2-hotfixes` i projektroten skapar du en.
+1. Kopiera `%patch_name%.composer.patch` fil(er) till katalogen `m2-hotfixes`.
 1. Lägg till, implementera och skicka dina kodändringar:
 
    ```git
@@ -36,7 +36,7 @@ I den här artikeln beskrivs hur du använder en kompositkorrigering för Adobe 
    git push origin
    ```
 
-Mer information om hur du använder korrigeringsfiler i molnprojekt finns i [Tillämpa patchar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+Mer information om hur du använder korrigeringsfiler i molnprojekt finns i [Tillämpa korrigeringsfiler](https://devdocs.magento.com/cloud/project/project-patch.html) i utvecklardokumentationen.
 
 ### Använda en kompositkorrigering för Adobe Commerce lokalt och Magento Open Source {#commerce}
 
@@ -49,4 +49,4 @@ Mer information om hur du använder korrigeringsfiler i molnprojekt finns i [Til
 
    (Om ovanstående kommando inte fungerar kan du försöka med att använda `-p2` i stället för `-p1` )
 
-1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering**.
+1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering** för att ändringarna ska återspeglas.

@@ -25,11 +25,11 @@ W:    refused
 
 ## Berörda versioner
 
-Adobe Commerce om molninfrastruktur, [alla versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
-Distributionen misslyckas med en **krullningsfel 7** meddelande.
+Distributionen misslyckas med ett **krullningsfel 7**-meddelande.
 
 <u>Steg som ska återskapas</u>:
 
@@ -55,10 +55,10 @@ Be en superanvändare i projektet att köra det här kommandot:
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-Om du vill kontrollera vem som har en superanvändare i projektet går du till [Visa en användares projektroll](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) i Commerce on Cloud Infrastructure Guide.
+Om du vill kontrollera vem som har en superanvändare i projektet kan du läsa [Visa en användares projektroll](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) i Commerce on Cloud Infrastructure Guide.
 
 ## Rekommenderad läsning
 
-* [Adobe Commerce felsökare vid driftsättning](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
-* [Det gick inte att komma åt Adobe Commerce i molnet: 403 Otillåten eller 404 Inte hittad vid distribution](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
-* [Distributionen misslyckas med felet&quot;Error building project: The build krok failed with status code 1&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
+* [Adobe Commerce felsökare för distribution](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+* [Det gick inte att komma åt Adobe Commerce i molnet: 403 Otillåten eller 404 Det gick inte att hitta felet vid distributionen](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
+* [Distributionen misslyckas med felet&quot;Det gick inte att skapa projektet: Byggkopplingen misslyckades med statuskoden 1&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).

@@ -32,7 +32,7 @@ Du loggas in på Commerce Admin.
 
 <u>Faktiskt resultat</u>:
 
-Du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *&quot;Din nuvarande session har gått ut&quot;*.
+Du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *&quot;Din aktuella session har gått ut&quot;*.
 
 ## Orsak
 
@@ -47,13 +47,13 @@ Sök efter lösningar i följande avsnitt.
 
 ### Kontrollera om det finns problem med servertidsinställningar
 
-Kontrollera sessionsposten som skapats i `admin_user_session` tabell. Om värdena för `created_at` och/eller `updated_at` är felaktiga kan det bero på ett problem med servertidsinställningarna. Be serversystemadministratören kontrollera detta. Observera att tiden i DB är inställd på UTC som standard.
+Kontrollera sessionsposten som skapats i tabellen `admin_user_session`. Om värdena för `created_at` och/eller `updated_at` är felaktiga kan det bero på ett problem med servertidsinställningarna. Be serversystemadministratören kontrollera detta. Observera att tiden i DB är inställd på UTC som standard.
 
 ### Ändra sessionslagring
 
-Försök att ändra sessionslagringen. Använd informationen från [Hitta dina sessionsfiler](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) artikel i vår utvecklardokumentation för att ta reda på var din session är lagrad och ändra den genom att redigera `app/etc/env.php` -fil.
+Försök att ändra sessionslagringen. Använd informationen från artikeln [Hitta dina sessionsfiler](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) i vår utvecklardokumentation för att ta reda på var din session är lagrad och ändra den genom att redigera filen `app/etc/env.php`.
 
-Om du till exempel vill börja lagra sessionen i filsystemet ändrar du `'session'` enligt följande:
+Om du till exempel vill börja lagra sessionen i filsystemet ändrar du avsnittet `'session'` så här:
 
 ```php
 ....
@@ -64,12 +64,12 @@ Om du till exempel vill börja lagra sessionen i filsystemet ändrar du `'sessio
 ....
 ```
 
-Kör `bin/magento app:config:import` för att importera konfigurationsdata.
+Kör kommandot `bin/magento app:config:import` om du vill importera konfigurationsdata.
 
 
 ## Relaterad läsning
 
-* [Importera data från konfigurationsfiler](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) i vår utvecklardokumentation
-* [Konfigurera Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) i vår utvecklardokumentation
-* [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Ditt konto är tillfälligt inaktiverat&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) i vår kunskapsbas
-* [Omdirigera tillbaka till inloggningsformuläret utan fel när du försöker logga in på Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md) i vår kunskapsbas
+* [Importera data från konfigurationsfiler](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) i utvecklardokumentationen
+* [Konfigurera Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) i utvecklardokumentationen
+* [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felet&quot;Ditt konto är tillfälligt inaktiverat&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) i vår kunskapsbas för support
+* [Omdirigera tillbaka till inloggningsformuläret utan fel när du försöker logga in på Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md) i vår kunskapsbas för support

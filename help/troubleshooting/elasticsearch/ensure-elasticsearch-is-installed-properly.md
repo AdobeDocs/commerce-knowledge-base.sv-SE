@@ -16,21 +16,21 @@ I den här artikeln beskrivs lösningar på problem som orsakas av felaktig inst
 
 >[!WARNING]
 >
->Observera att uppgraderingar av tjänster inte kan implementeras i produktionsmiljön utan att vårt infrastrukturteam får 48 arbetstimmar varsel om detta på Adobe Commerce molninfrastruktur. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom en önskad tidsram med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när ändringarna ska vara i produktion, [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) ange vilken serviceuppgradering du behöver och ange när du vill att uppgraderingen ska starta.
+>Observera att uppgraderingar av tjänster inte kan implementeras i produktionsmiljön utan att vårt infrastrukturteam får 48 arbetstimmar varsel om detta på Adobe Commerce molninfrastruktur. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom en önskad tidsram med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när dina ändringar behöver vara i produktion skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) med information om den serviceuppgradering du behöver och när du vill att uppgraderingsprocessen ska börja.
 
 ## Versionskompatibilitet för Elasticsearch med Adobe Commerce
 
 * Adobe Commerce lokalt och Adobe Commerce i molninfrastruktur:
    * v2.2.3+ stödjer ES 5.x
    * v2.2.8+ och v2.3.1+ har stöd för ES 6.x
-   * ES v2.x och v5.x rekommenderas inte eftersom [Slutet av livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du dock [Ändra Elasticsearch php-klienten](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
+   * ES v2.x och v5.x rekommenderas inte på grund av [slutet på livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du [Ändra Elasticsearch PHP-klienten](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
 * Magento Open Source v2.3.0+ stöder ES 5.x och 6.x (men 6.x rekommenderas).
 
 ## Problem
 
 Följande symtom tyder på att Elasticsearch inte är korrekt konfigurerat:
 
-* `Error: No alive nodes in your cluster` - det här felet kan uppstå i Adobe Commerce loggar:
+* `Error: No alive nodes in your cluster` - det här felet kan visas i Adobe Commerce-loggar:
    * `var/log/system.log`
    * `var/log/support_report.log`
    * `var/log/cron.log`
@@ -42,7 +42,7 @@ Följande symtom tyder på att Elasticsearch inte är korrekt konfigurerat:
   [YYYY-MM-DD HH:MM:SS] CRITICAL: Fix configuration with given suggestions:    - Elasticsearch version #<version> is not compatible with current version of magento    Upgrade elasticsearch version to ~5.0
   ```
 
-Plats *version* är Elasticsearch-tjänsten som körs i molnmiljön.
+Där *version* är Elasticsearch-tjänsten som körs i molnmiljön.
 
 ## Orsak
 
@@ -56,16 +56,16 @@ Elasticsearch är inte korrekt installerat. Detta kan bero på:
 
 Så här konfigurerar du Elasticsearch:
 
-* Handlare på Adobe Commerce om molninfrastruktur kan följa stegen i vår utvecklardokumentation: [Konfigurera tjänsten Elasticsearch](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html).
-* Handlare på Adobe Commerce kan följa stegen i vår utvecklardokumentation: [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
+* Handlare på Adobe Commerce i molninfrastruktur kan följa stegen i vår utvecklardokumentation: [Konfigurera tjänsten Elasticsearch](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html).
+* Handlare på Adobe Commerce lokalt och Magento Open Source kan följa stegen i vår utvecklardokumentation: [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
 
 När du har konfigurerat Elasticsearch kontrollerar du att det är korrekt konfigurerat:
 
 1. Logga in på servern.
-1. Kontrollera versionsnumret för Elasticsearch (2.x, 5.x eller 6.x) när kommandot körs: `curl -XGET <Elasticsearch hostname>:<Elasticsearch server port>` I Adobe Commerce om molninfrastruktur: `curl -XGET localhost:9200`
+1. Kontrollera versionsnumret för Elasticsearch (2.x, 5.x eller 6.x) i utdata om att kommandot körs: `curl -XGET <Elasticsearch hostname>:<Elasticsearch server port>` I Adobe Commerce om molninfrastruktur: `curl -XGET localhost:9200`
 1. Kontrollera vad som har konfigurerats i Adobe Commerce för konfiguration av molninfrastruktur genom att köra kommandot: `php bin/magento config:show catalog/search`
 1. Kontrollera `catalog/search/engine` och se till att den matchar versionsnumret för Elasticsearch. I Adobe Commerce om molninfrastruktur:
    * Elasticsearch 5.X - elasticsearch5
    * Elasticsearch 6.X - elasticsearch6
    * Elasticsearch 2.X - elasticsearch
-1. Kontrollera `index_prefix`. Om du har flera miljöer måste du se till att du har olika `index_prefix` värden för dem.
+1. Kontrollera `index_prefix`. Om du har flera miljöer måste du se till att du har olika `index_prefix`-värden för dem.

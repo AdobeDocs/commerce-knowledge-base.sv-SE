@@ -17,7 +17,7 @@ I den här artikeln finns en patch för det kända problemet med Adobe Commerce 
 
 ## Problem
 
-Om Google Analytics är aktiverat för butiken och en kund med ett installerat blocket eller annan annonsblockerare fortsätter till kassan, `trackingCode.js` filen är blockerad från att läsas in och RequireJS bryter JS-körningsflödet. Detta orsakar problem vid inläsning av utcheckningssidan.
+Om Google Analytics är aktiverat för butiken blockeras filen `trackingCode.js` från att läsas in och RequireJS bryter JS-körningsflödet när en kund med installerat uBlock eller annan annonsblockerare går vidare till kassan. Detta orsakar problem vid inläsning av utcheckningssidan.
 
 <u>Steg som ska återskapas</u> :
 
@@ -26,7 +26,7 @@ Krav: En annonsblockerare måste vara installerad och aktiv i webbläsaren.
 1. Aktivera och konfigurera Google Analytics-funktionen i Commerce Admin.
 1. Öppna en produktsida i butiken.
 1. Lägg produkter i kundvagnen.
-1. Klicka på **Gå till kassan** länk.
+1. Klicka på länken **Gå till kassan**.
 
 <u>Förväntat resultat</u>: Utcheckningssidan läses in och kunden kan slutföra utcheckningen.
 
@@ -53,10 +53,10 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Användbara länkar
 
-* [Frågan som diskuterades om GitHub](https://github.com/magento/magento2/pull/13061)
+* [Problemet diskuterades på GitHub](https://github.com/magento/magento2/pull/13061)
 
 ## Bifogade filer

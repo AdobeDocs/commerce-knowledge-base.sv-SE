@@ -30,8 +30,8 @@ Om ElasticSuite-pluginprogrammet från en annan leverantör är installerat kan 
 * Elasticsearch kraschar utan minnesfel.
 * När du kör ett hälsokommando `curl -m1 localhost:9200/_cluster/health?pretty` eller `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` (för startkonton) finns det hundratals eller tusentals `unassigned_shards`
 * Elasticsearch eller webbplatsens prestanda försämras avsevärt.
-* *&quot;Inga aktiva noder hittades i ditt kluster&quot;* i Elasticsearch, driftsättnings- eller loggfel.
-* *&quot;Avvisar mappningsuppdatering till [&lt;\*>_ tracking_log_event _&lt;\*>]&quot;* vid distribution eller loggfel.
+* *&quot;Inga aktiva noder hittades i klustret&quot;* i Elasticsearch-distributionen eller loggfel.
+* *&quot;Avvisar mappningsuppdatering till [&lt;\*>_ tracking_log_event _&lt;\*>]&quot;* i distributions- eller loggfel.
 
 ## Orsak
 
@@ -43,7 +43,7 @@ ElasticSuite har en ny funktion som skapar spårningsindex. Dessa spårningsinde
 
 När du har uppgraderat ElasticSuite-pluginen till version högre än 2.8.0 kan du konfigurera en regelbunden rensning av index.
 
-Gå till **Lager** > **Konfiguration** > **Spårning** > **Global konfiguration** > **Kvarhållningsfördröjning**
+Gå till **Lagrar** > **Konfiguration** > **Spårning** > **Global konfiguration** > **Kvarhållningsfördröjning**
 
 Standardkvarhållningsperioden är 365 dagar. Du kan minska den till 30 eller 15 dagar.
 
@@ -53,7 +53,7 @@ När du har uppgraderat ElasticSuite-pluginen till version > 2.9.8/2.10.7, komme
 
 Du kan fortfarande minska kvarhållningsperioden:
 
-Gå till **Lager** > **Konfiguration** > **Spårning** > **Global konfiguration** > **Kvarhållningsfördröjning**
+Gå till **Lagrar** > **Konfiguration** > **Spårning** > **Global konfiguration** > **Kvarhållningsfördröjning**
 
 Standardkvarhållningsperioden är 12 månader (genererar 12 index). Du kan minska den till 3 eller 6 månader.
 
@@ -69,4 +69,4 @@ Skapa ett cron-jobb för att ta bort spårningsindex. Med det här kommandot tas
 Om du vill ta bort index med en viss tidsfrekvens skapar du ett cron-jobb genom att läsa följande artiklar i vår utvecklardokumentation:
 
 * [Konfigurera ett anpassat cron-jobb och en cron-grupp (självstudiekurs)](https://devdocs.magento.com/guides/v2.3/config-guide/cron/custom-cron-tut.html)
-* [Ställ in cron-jobb](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)
+* [Konfigurera cron-jobb](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)

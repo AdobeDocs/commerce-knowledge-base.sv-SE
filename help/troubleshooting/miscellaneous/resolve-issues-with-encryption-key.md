@@ -21,7 +21,7 @@ I den här artikeln beskrivs hur du åtgärdar problem som orsakas av att krypte
 
 ## Problem
 
-Efter import av en [databasdump](/help/how-to/general/create-database-dump-on-cloud.md) från produktionsmiljö till mellanlagrings-/integreringsmiljö, där sparade kreditkortsnummer verkar vara fel och/eller betalningar misslyckas för betalningsintegreringar som kräver användning av handlarens autentiseringsuppgifter.
+När du har importerat en [databassump](/help/how-to/general/create-database-dump-on-cloud.md) från produktionsmiljöer till mellanlagrings-/integreringsmiljöer visas sparade kreditkortsnummer som felaktiga och/eller betalningar misslyckas för betalningsintegreringar som kräver användning av handlarens autentiseringsuppgifter.
 
 ## Orsak
 
@@ -33,9 +33,9 @@ Du måste kopiera krypteringsnyckeln från källmiljön och lägga till den i m�
 
 Så här kopierar du krypteringsnyckeln:
 
-1. SSH till ditt projekt som var källa för databasdumpen, enligt beskrivningen i [SSH till miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) i vår dokumentation för utvecklare.
+1. SSH till ditt projekt som var källa för databasdumpen, vilket beskrivs i [SSH till miljön](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) i vår utvecklardokumentation.
 1. Öppna `app/etc/env.php` i en textredigerare.
-1. Kopiera värdet för `key` for `crypt`.
+1. Kopiera värdet för `key` för `crypt`.
 
 ```php
 return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
@@ -43,13 +43,13 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 
 Så här anger du nyckelvärdet för målprojektet:
 
-1. Öppna [Cloud Console](https://console.adobecommerce.com) och hitta ditt projekt.
-1. Ange värdet för [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (i vår utvecklardokumentation), enligt beskrivningen i [Konfigurera ditt projekt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) i vår dokumentation för utvecklare. Detta kommer att starta distributionsprocessen och `CRYPT_KEY` åsidosätts i `app/etc/env.php` på alla distributioner.
+1. Öppna [molnkonsolen](https://console.adobecommerce.com) och leta upp ditt projekt.
+1. Ange värdet för variabeln [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (i vår utvecklardokumentation) enligt beskrivningen i [Konfigurera ditt projekt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) i vår utvecklardokumentation. Detta utlöser distributionsprocessen och `CRYPT_KEY` åsidosätts i `app/etc/env.php`-filen för varje distribution.
 
-Om du vill kan du manuellt åsidosätta krypteringsnyckeln i `app/etc/env.php` fil:
+Om du vill kan du manuellt åsidosätta krypteringsnyckeln i filen `app/etc/env.php`:
 
 1. SSH till målmiljön.
 1. Öppna `app/etc/env.php` i en textredigerare.
-1. Klistra in kopierade data som `key` värde för `crypt`.
-1. Spara de redigerade `env.php`.
-1. Rensa cacheminnet i målmiljön genom att köra `bin/magento cache:clean` eller i Commerce Admin under **System** > **verktyg** > **Cachehantering**.
+1. Klistra in kopierade data som `key`-värde för `crypt`.
+1. Spara den redigerade `env.php`.
+1. Rensa cacheminnet i målmiljön genom att köra `bin/magento cache:clean` eller Commerce Admin under **System** > **Verktyg** > **Cachehantering**.

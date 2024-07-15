@@ -26,7 +26,7 @@ När kunderna lägger order visas de i rutnätet för arkiverade order istället
 <u>Steg som ska återskapas</u>:
 
 1. Lägg valfri produkt i kundvagnen, gå vidare till kassan och lägg ordern.
-1. I Commerce Admin går du till **Försäljning** > **Operationer** > **Beställning**. Se ordningen i rutnätet.
+1. Gå till **Försäljning** > **Åtgärder** > **Beställning** i Commerce Admin. Se ordningen i rutnätet.
 1. Navigera till **Försäljning** > **Arkiv** > **Beställningar**. Se den nya ordningen i rutnätet.
 
 <u>Förväntade resultat</u>:
@@ -59,7 +59,7 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta som tillhandahålls av Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Användbara länkar i vår användarhandbok
 

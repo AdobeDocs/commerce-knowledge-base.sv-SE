@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Profilera databasfrågor i Adobe Commerce om molninfrastruktur
 
-Läs mer i [Profildatabasfrågor](https://devdocs.magento.com/guides/v2.3/cloud/project/profile-database-queries.html) i vår dokumentation för utvecklare.
+Se [profildatabasfrågorna](https://devdocs.magento.com/guides/v2.3/cloud/project/profile-database-queries.html) i utvecklardokumentationen.

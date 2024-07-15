@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Söka efter stora MySQL-tabeller
 
-Identifiera de stora tabellerna genom att ansluta till databasen enligt beskrivningen i [Anslut till databasen](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) och kör följande kommando, där `project_id` är ditt projekt-ID i molnet:
+Om du vill identifiera de stora tabellerna ansluter du till databasen enligt beskrivningen i artikeln [Anslut till databasen](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) och kör följande kommando, där `project_id` är ditt projekt-ID i molnet:
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

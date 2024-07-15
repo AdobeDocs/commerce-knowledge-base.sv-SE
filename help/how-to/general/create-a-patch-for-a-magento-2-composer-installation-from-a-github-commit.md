@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Skapa en patch för Adobe Commerce Composer-installation från en GitHub-implementering
 
-Se [Avsnittet Anpassade korrigeringar i Använda korrigeringar](https://devdocs.magento.com/guides/v2.3/comp-mgr/patching.html#custom-patches) i vår dokumentation för utvecklare.
+Se avsnittet [Egna korrigeringsfiler i Applying Patches](https://devdocs.magento.com/guides/v2.3/comp-mgr/patching.html#custom-patches) i vår utvecklardokumentation.

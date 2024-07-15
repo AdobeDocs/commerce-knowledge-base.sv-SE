@@ -37,7 +37,7 @@ labels: patch: 2041.1,article,labels,tags
 ---
 ```
 
-För att undvika det här felet kapslar du in rubriken eller etiketterna (eller båda om båda har kolon) i **enkla citattecken**.
+För att undvika det här felet kapslar du in titeln eller etiketterna (eller båda om båda har kolon) i **enkla citattecken**.
 
 **Exempel:**
 
@@ -61,7 +61,7 @@ labels: patch: 2041.1,'article',labels,tags
 ---
 ```
 
-Det här felet åtgärdas genom att rubriken eller etiketterna (eller båda) kapslas in i **citattecken**.
+Det här felet åtgärdas genom att titeln eller etiketterna (eller båda) kapslas in i **citattecken**.
 
 **Exempel:**
 
@@ -83,7 +83,7 @@ labels: patch: 2041.1,'article',"labels",can't,tags
 ---
 ```
 
-När det inträffar omsluter du titeln eller etiketterna (eller båda) i **citattecken** och använda **omvänt snedstreck** om du vill undvika alla citattecken i titeln och etiketterna.
+När det inträffar omsluter du titeln eller etiketterna (eller båda) med **dubbla citattecken** och använder ett **omvänt snedstreck** för att undvika alla dubbla citattecken i titeln och etiketterna.
 
 **Exempel:**
 

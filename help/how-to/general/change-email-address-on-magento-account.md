@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Hur ändrar man e-postadress på magento.com när fältet är nedtonat?
 
-I den här artikeln beskrivs hur du ändrar e-postadressen på [Magento.com](https://account.magento.com) när fältet är nedtonat.
+I den här artikeln beskrivs hur du ändrar e-postadressen på ditt [Magento.com](https://account.magento.com) -konto när fältet är nedtonat.
 
 ## Berörda produkter och versioner
 
@@ -20,7 +20,7 @@ I den här artikeln beskrivs hur du ändrar e-postadressen på [Magento.com](htt
 
 ## Orsak
 
-E-postadressen på din [Magento.com](https://account.magento.com) kontot är länkat till ditt Adobe-konto på <https://account.adobe.com> och måste uppdateras där.
+E-postadressen på ditt [Magento.com](https://account.magento.com)-konto är länkad till ditt Adobe-konto på <https://account.adobe.com> och måste uppdateras där.
 
 ## Steg för att ändra e-postadressen
 
@@ -44,16 +44,16 @@ E-postadressen på din [Magento.com](https://account.magento.com) kontot är lä
 
 <u>Lösning</u>
 
-Om du har åtkomst till postlådan i [aktuell ägare-postadress], återställ lösenordet för den aktuella ägarens e-postadress efter [Återställ eller ändra ditt Adobe-lösenord](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) i användarhandboken för Creative Cloud.
+Om du har åtkomst till postlådan för den [aktuella ägarens e-postadress] kan du återställa lösenordet för den aktuella ägarens e-postadress enligt guiden [Återställ eller ändra ditt Adobe-lösenord](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) i användarhandboken för Creative Cloud.
 
 1. Leta upp länken för återställning av lösenord som skickas till den aktuella ägarens postlåda med instruktioner.
-1. Ange ett nytt lösenord och ändra e-postadressen till [e-postadress till ny ägare].
-1. Navigera till [IMS-konto](https://account.adobe.com/) för att logga in med det nya e-postmeddelandet och ändra lösenordet.
-1. När du har ändrat e-postadress och lösenord går du till [Magento.com](https://account.magento.com) för att logga in med [e-postadress till ny ägare].
+1. Ange ett nytt lösenord och ändra e-postadressen till [ny e-postadress för ägare].
+1. Navigera till [IMS-kontot](https://account.adobe.com/) om du vill logga in med den nya e-postadressen och ändra lösenordet.
+1. När du har ändrat e-postadressen och lösenordet går du till [Magento.com](https://account.magento.com) och loggar in med hjälp av den [nya ägarens e-postadress].
 
-Om du inte har tillgång till e-post som skickas till [aktuell ägare-postadress]gör du så här:
+Om du inte har tillgång till e-postmeddelanden som skickas till den [aktuella ägarens e-postadress] gör du så här:
 
-1. Konfigurera vidarebefordran av e-post från [aktuell ägare-postadress] till ett nytt e-postmeddelande med företagets e-postserverkonfiguration.
+1. Konfigurera vidarebefordran av e-post från den [aktuella ägarens e-postadress] till ett nytt e-postmeddelande med företagets e-postserverkonfiguration.
 1. Fortsätt nu med föregående steg.
 
 ## Relaterad läsning

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 I den här artikeln beskrivs hur du lägger till ett land som inte finns i Adobe Commerce och Zend Locale Library. Detta kräver kod- och databasändringar som utgör kundanpassningar enligt dina tillämpliga avtalsvillkor. Observera att exempelmaterialet i den här artikeln tillhandahålls i befintligt skick utan någon garanti av något slag. Varken Adobe eller någon anknuten enhet är skyldig att underhålla, korrigera, uppdatera, ändra, modifiera eller på annat sätt stödja dessa material. Här kommer vi att beskriva de grundläggande principerna för vad som behöver göras för att uppnå detta.
 
-I det här exemplet skapar vi en ny Adobe Commerce-modul med en datakorrigering som tillämpas vid installation eller uppgradering av Adobe Commerce och lägger till ett abstrakt land med landskoden XX i Adobe Commerce. The [Adobe Commerce Directory](https://developer.adobe.com/commerce/php/module-reference/module-directory/) skapar en inledande landslista och sedan använder den Konfigurera korrigeringar för att lägga till områden i listan. I den här artikeln beskrivs hur du skapar en ny modul som lägger till ett nytt land i listan. Du kan läsa koden för den befintliga Adobe Commerce Directory-modulen för referens. Detta beror på att följande exempelmodul fortsätter med katalogmodulens jobb att skapa en lista över länder och regioner och återanvänder delar av koden i Adobe Commerce Directory Module Setup Patches.
+I det här exemplet skapar vi en ny Adobe Commerce-modul med en datakorrigering som tillämpas vid installation eller uppgradering av Adobe Commerce och lägger till ett abstrakt land med landskoden XX i Adobe Commerce. [Adobe Commerce-katalogen](https://developer.adobe.com/commerce/php/module-reference/module-directory/) skapar en lista med inledande länder och använder sedan konfigurationspatchar för att lägga till områden i listan. I den här artikeln beskrivs hur du skapar en ny modul som lägger till ett nytt land i listan. Du kan läsa koden för den befintliga Adobe Commerce Directory-modulen för referens. Detta beror på att följande exempelmodul fortsätter med katalogmodulens jobb att skapa en lista över länder och regioner och återanvänder delar av koden i Adobe Commerce Directory Module Setup Patches.
 
 ## Rekommenderad dokumentation
 
@@ -35,20 +35,34 @@ Ett nytt land måste ha ett unikt namn, lands-ID, ISO2- och ISO3-koder i hela Ad
 
 I det här exemplet ska vi skapa en ny modul med namnet \`Extracountries\` med följande katalogstruktur:
 
-(Mer information om modulstrukturen finns i [Modulöversikt](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html) i vår dokumentation för utvecklare).
+(Mer information om modulstrukturen finns i [Modulöversikt](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html) i utvecklardokumentationen).
 
 <pre><ExtraCountries>
  |
  <etc>
- | | | config.xml | di.xml | module.xml |
+ | |
+ | config.xml
+ | di.xml
+ | module.xml
+ |
  <Plugin>
- | | | <Framework>
- | | |   <Locale>
- | | | TranslatedListsPlugin.php |
+ | |
+ | <Framework>
+ |   |
+ |   <Locale>
+ |     |
+ |     TranslatedListsPlugin.php
+ |
  <Setup>
- | | | <Patch>
- | | |   <Data>
- | | | AddDataForAbstractCountry.php | Composer.json registration.php</pre>
+ | |
+ | <Patch>
+ |   |
+ |   <Data>
+ |     |
+ |     AddDataForAbstractCountry.php
+ |
+ disposition.json
+ registration.php</pre>
 
 >[!NOTE]
 >
@@ -58,10 +72,10 @@ I det här exemplet ska vi skapa en ny modul med namnet \`Extracountries\` med f
 
 En ny modulkonfiguration definieras i XML-filen. Följande konfigurationer och taggar kan redigeras för att justera de nya standardinställningarna för länder.
 
-* `allow` - Om du vill lägga till det nyligen tillagda landet i listan&quot;Tillåt länder&quot; som standard lägger du till den nya landskoden i slutet av `allow` tagginnehåll. Landskoder avgränsas med kommatecken. Observera att den här taggen skriver över data från `Directory` modulkonfigurationsfil *(Directory/etc/config.xml)* `allow` -taggen, det är därför vi upprepar alla koder här plus lägger till den nya.
-* `optional_zip_countries` - Om postnumret för det nya landet ska vara valfritt lägger du till landskoden i slutet av innehållet i `optional_zip_countries` -tagg. Landskoder avgränsas med kommatecken. Observera att den här taggen skriver över data från `Directory` modulkonfigurationsfil *(Directory/etc/config.xml)* `optional_zip_countries` -taggen, det är därför vi upprepar alla koder här plus lägger till den nya.
-* `eu_countries` - Om det nyligen tillagda landet måste vara en del av listan över EU-länder som standard, ska landskoden läggas till i slutet av innehållet i `eu_countries` -tagg. Landskoder avgränsas med kommatecken. Observera att den här taggen skriver över data från `Store` modulkonfigurationsfil *(\_Store/etc/config.xml\_)* `eu_countries` -taggen, det är därför vi upprepar alla koder här plus lägger till den nya.
-* `config.xml` filexempel
+* `allow` - Om du vill lägga till det nyligen tillagda landet i listan&quot;Tillåt länder&quot; som standard, lägger du till den nya landskoden i slutet av tagginnehållet `allow` . Landskoder avgränsas med kommatecken. Observera att den här taggen skriver över data från `Directory`-modulens konfigurationsfil *(Directory/etc/config.xml)* `allow` -taggen. Därför upprepar vi alla koder här och lägger till den nya.
+* `optional_zip_countries` - Om postnumret för det nyligen tillagda landet ska vara valfritt lägger du till landskoden i slutet av innehållet i `optional_zip_countries` -taggen. Landskoder avgränsas med kommatecken. Observera att den här taggen skriver över data från `Directory`-modulens konfigurationsfil *(Directory/etc/config.xml)* `optional_zip_countries` -taggen. Därför upprepar vi alla koder här och lägger till den nya.
+* `eu_countries` - Om det nyligen tillagda landet måste vara en del av listan över EU-länder som standard lägger du till landskoden i slutet av innehållet i taggen `eu_countries` . Landskoder avgränsas med kommatecken. Observera att den här taggen skriver över data från `Store`-modulens konfigurationsfil *(\_Store/etc/config.xml\_)* `eu_countries` , vilket är orsaken till att alla koder här upprepas, plus att den nya koden läggs till.
+* Exempel på filen `config.xml`
 
 ```xml
 <?xml version="1.0"?>
@@ -83,17 +97,17 @@ En ny modulkonfiguration definieras i XML-filen. Följande konfigurationer och t
 </config>
 ```
 
-Mer information om modulkonfigurationsfilerna finns i [Utvecklarhandbok för PHP > Definiera konfigurationsfiler](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/required-configuration-files.html) i vår dokumentation för utvecklare.
+Mer information om modulkonfigurationsfilerna finns i [PHP-utvecklarhandboken > Definiera konfigurationsfiler](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/required-configuration-files.html) i utvecklardokumentationen.
 
-Observera att dessa ändringar är valfria och endast kommer att påverka standardinställningen i det nya landet i listorna&quot;Tillåt länder&quot;,&quot;Postnummer är valfritt&quot; och&quot;EU-länder&quot;. Om den här filen hoppas över från modulstrukturen läggs ett nytt land till, men det måste konfigureras manuellt på panelen **Administratör** > **Lager** > *Inställningar* > **Konfiguration** > **Allmänt** > **Alternativ för land** inställningssida.
+Observera att dessa ändringar är valfria och endast kommer att påverka standardinställningen i det nya landet i listorna&quot;Tillåt länder&quot;,&quot;Postnummer är valfritt&quot; och&quot;EU-länder&quot;. Om den här filen hoppas över från modulstrukturen kommer ett nytt land fortfarande att läggas till, men det måste konfigureras manuellt på sidan **Admin** > **Lagrar** > *Inställningar* > **Konfiguration** > **Allmänt** > **Inställningar för landsalternativ** .
 
 ### ExtraCountries/etc/di.xml
 
-The `di.xml` filen konfigurerar vilka beroenden som matas in av objekthanteraren. Se <a>PHP Developer Guide > The di.xml</a> i vår utvecklardokumentation för mer information om `di.xml`.
+Filen `di.xml` konfigurerar vilka beroenden som matas in av objekthanteraren. Mer information om `di.xml` finns i <a>PHP Developer Guide > The di.xml</a> i vår utvecklardokumentation.
 
-I vårt exempel måste vi registrera en `_TranslatedListsPlugin_` som översätter nyligen införda landskoder till fullständiga landsnamn, om koder inte finns i Zend Locale Library-lokaliseringsdata.
+I vårt exempel måste vi registrera en `_TranslatedListsPlugin_` som översätter nyligen införda landskoder till fullständiga landsnamn, om det inte finns några koder i lokaliseringsdata för Zend Locale-biblioteket.
 
-`di.xml` exempel
+`di.xml`-exempel
 
 ```xml
 <?xml version="1.0"?>
@@ -109,9 +123,9 @@ I vårt exempel måste vi registrera en `_TranslatedListsPlugin_` som översätt
 
 I modulregistreringsfilen måste vi ange beroendet för modulen&quot;Adobe Commerce-katalog&quot; så att modulen&quot;Extra countries&quot; registreras och körs efter modulen Katalog.
 
-Se [Hantera modulberoenden](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html#managing-module-dependencies) i vår utvecklardokumentation för mer information om modulberoenden.
+Mer information om modulberoenden finns i [Hantera modulberoenden](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html#managing-module-dependencies) i utvecklardokumentationen.
 
-`module.xml` exempel
+`module.xml`-exempel
 
 ```xml
 <?xml version="1.0"?>
@@ -126,7 +140,7 @@ Se [Hantera modulberoenden](https://devdocs.magento.com/guides/v2.4/architecture
 
 ### ExtraCountries/Plugin/Framework/Locale/TranslatedListsPlugin.php
 
-I `aroundGetCountryTranslation()` plugin-metoden måste vi översätta en landskod till ett fullständigt landsnamn. Detta är ett obligatoriskt steg för länder som inte har ett fullständigt namn kopplat till en ny landskod i Zend Locale Library.
+I plugin-metoden `aroundGetCountryTranslation()` måste vi översätta en landskod till ett fullständigt landsnamn. Detta är ett obligatoriskt steg för länder som inte har ett fullständigt namn kopplat till en ny landskod i Zend Locale Library.
 
 ```php
 <?php
@@ -171,9 +185,9 @@ class TranslatedListsPlugin
 
 Den här datakorrigeringen utförs under Adobe Commerce installations-/uppgraderingsprocess och en ny landspost läggs till i databasen.
 
-Se [Utveckla data och schemapatchar](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/data-patches.html) i vår utvecklardokumentation för mer information om patchar.
+Mer information om datapatchar finns i [Utveckla data och schemapatchar](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/data-patches.html) i utvecklardokumentationen.
 
-I exemplet nedan ser du att `$data` array med metoden `apply()` innehåller lands-ID, ISO2- och ISO3-koder för det nya landet, och dessa data infogas i databasen.
+I exemplet nedan kan du se att arrayen `$data` för metoden `apply()` innehåller lands-ID, ISO2- och ISO3-koder för det nya landet, och dessa data infogas i databasen.
 
 ```php
 <?php
@@ -252,7 +266,7 @@ class AddDataForAbstractCountry implements DataPatchInterface, PatchVersionInter
 
 ### ExtraCountries/registration.php
 
-Detta är ett exempel på filen registration.php. Mer information om modulregistrering finns i [PHP Developer Guide > Register your component](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html) i vår dokumentation för utvecklare.
+Detta är ett exempel på filen registration.php. Mer information om modulregistrering finns i [PHP Developer Guide > Registrera din komponent](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html) i utvecklardokumentationen.
 
 ```php
 <?php
@@ -265,7 +279,7 @@ ComponentRegistrar::register(ComponentRegistrar::MODULE, 'VendorName_ExtraCountr
 
 Det här är ett exempel på filen Composer.json.
 
-Mer information om Composer.json finns i [PHP Developer Guide > The Composer.json file](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html) i vår dokumentation för utvecklare.
+Mer information om Composer.json finns i [PHP Developer Guide > Filen Composer.json ](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html) i utvecklardokumentationen.
 
 ```json
 {
@@ -296,8 +310,8 @@ Mer information om Composer.json finns i [PHP Developer Guide > The Composer.jso
 
 ## Modulinstallation
 
-Information om hur du installerar modulen finns i [Modulplatser](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html#module-locations) i vår dokumentation för utvecklare.
+Mer information om hur du installerar modulen finns i [Modulplatser](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html#module-locations) i utvecklardokumentationen.
 
-Kör när modulkatalogen har placerats på rätt plats `bin/magento setup:upgrade` om du vill använda datakorrigeringarna och registrera översättnings-plugin-programmet.
+När modulkatalogen har placerats på rätt plats kör du `bin/magento setup:upgrade` för att tillämpa datapatcharna och registrera översättnings-plugin-programmet.
 
 Du kan behöva rensa webbläsarens cache för att de nya ändringarna ska fungera.

@@ -21,20 +21,20 @@ Om du upptäcker ett problem med funktionerna i din anpassade modul och du inte 
 
 ## Lösning
 
-Kontrollera loggarna för att se om det finns poster med namnet på den anpassade modulen i felet.  Beroende på vilka fel det rör sig om kan lösningen vara egen eller så måste du inkludera dina användbara Adobe Commerce-logguppgifter om du vill öppna en [Supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). I följande stycken finns information om loggarnas plats och möjliga lösningar.
+Kontrollera loggarna för att se om det finns poster med namnet på den anpassade modulen i felet.  Beroende på vilka fel som har uppstått kan det bero på att lösningen finns på sig själv eller på att du måste inkludera din användbara Adobe Commerce-logginformation om du vill öppna en [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). I följande stycken finns information om loggarnas plats och möjliga lösningar.
 
 ### Adobe Commerce (alla distributionsmetoder), Magento Open Source, alla 2.X-versioner
 
 1. Loggplatser:
-   * [Adobe Commerce om molninfrastruktur - arkitekturloggar för Starter-plan](/help/how-to/general/log-locations-directories-for-starter-plan.md) i vår kunskapsbas för support.
-   * [Adobe Commerce på Cloud Infrastructure Pros planarkitekturloggar](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) i vår kunskapsbas för support.
+   * [Adobe Commerce på molninfrastruktur Starter-planens arkitektur loggar](/help/how-to/general/log-locations-directories-for-starter-plan.md) i vår kunskapsbas för support.
+   * [Adobe Commerce på Cloud Infrastructure Pro, loggar för planarkitektur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) i vår kunskapsbas för support.
 1. Beroende på vilka fel du hittar, om du vill aktivera, inaktivera eller avinstallera en anpassad modul, innehåller de här artiklarna information om dessa åtgärder:
-   * [Aktivera eller inaktivera moduler](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-enable.html) i vår dokumentation för utvecklare.
-   * [Avinstallera moduler](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall-mods.html) i vår dokumentation för utvecklare.
+   * [Aktivera eller inaktivera moduler](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-enable.html) i utvecklardokumentationen.
+   * [Avinstallera moduler](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall-mods.html) i utvecklardokumentationen.
 
 ### Adobe Commerce om molninfrastruktur, alla versioner
 
-1. Loggplatser: [Adobe Commerce i molninfrastrukturloggar](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) i vår dokumentation för utvecklare.
+1. Loggar platser: [Adobe Commerce i molninfrastrukturloggar](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) i utvecklardokumentationen.
 1. Beroende på vilka fel du hittar, om du vill aktivera, inaktivera eller avinstallera en anpassad modul, innehåller dessa artiklar i vår dokumentation för utvecklare dessa åtgärder:
    * [Installera, hantera och uppgradera tillägg](https://devdocs.magento.com/guides/v2.3/cloud/howtos/install-components.html).
    * [Komponentdistributionsfel](https://devdocs.magento.com/guides/v2.3/cloud/trouble/trouble_comp-deploy-fail.html).

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Nya kunder visas inte i kundrutnätet efter CSV-import
 
-Den här artikeln innehåller en korrigering av problemet när du inte kan se nya kunder under **Kunder** > **Alla kunder** efter import från `.csv` -fil. Lösningen är att ställa in `customer_grid` indexerare till&quot;Update on Save&quot; och manuellt indexera om kundrutnätet.
+Den här artikeln innehåller en korrigering av problemet när du inte kan se nya kunder under **Kunder** > **Alla kunder** efter en import från en `.csv`-fil. Lösningen är att ställa in indexeraren `customer_grid` på läget&quot;Uppdatera vid spara&quot; och manuellt indexera om kundstödrastret.
 
 ## Berörda versioner
 
@@ -22,23 +22,23 @@ Den här artikeln innehåller en korrigering av problemet när du inte kan se ny
 
 ## Problem
 
-Efter import av nya kunder från en `.csv` med hjälp av den inbyggda importfunktionen i Adobe Commerce kanske du inte kan se de nya kundposterna under **Kunder** > **Alla kunder** i Admin tills du indexerar om `customer_grid` indexerare.
+När du har importerat nya kunder från en `.csv`-fil med den inbyggda Adobe Commerce-importfunktionen kanske du inte kan se de nya kundposterna under **Kunder** > **Alla kunder** i Admin förrän du indexerar om `customer_grid`-indexeraren manuellt.
 
 ## Orsak
 
-Indexeringsläget Uppdatera enligt schema i Adobe Commerce 2.2.0 och senare stöder inte `customer_grid` indexerare på grund av prestandaproblem.
+Indexeringsläget Uppdatera vid schema i Adobe Commerce 2.2.0 och senare stöder inte indexeraren `customer_grid` på grund av prestandaproblem.
 
 ## Lösning
 
-Konfigurera `customer_grid` indexerare som ska indexeras om med läget &quot;Uppdatera vid spara&quot;. Gör så här:
+Konfigurera `customer_grid`-indexeraren så att den indexeras om med läget Uppdatera vid spara. Gör så här:
 
 1. Logga in på Commerce Admin.
-1. Klicka **System** > **verktyg** > **Indexhantering**.
+1. Klicka på **System** > **Verktyg** > **Indexhantering**.
 1. Markera kryssrutan bredvid indexeraren för kundstödraster.
-1. I **Åtgärder** nedrullningsbar lista, välja *Uppdatera vid Spara*.
-1. Klicka **Skicka**.
+1. Välj *Uppdatera vid Spara* i listrutan **Åtgärder**.
+1. Klicka på **Skicka**.
 
-Vi rekommenderar även att du indexerar om `customer_grid` indexeraren efter att indexeringsläget har konfigurerats för att säkerställa att indexet är uppdaterat och kan fungera med cron. Använd följande kommando om du vill indexera om manuellt:
+Vi rekommenderar även att du indexerar om indexeraren `customer_grid` manuellt efter att du har konfigurerat indexeringsläget för att se till att indexet är uppdaterat och kan fungera med cron. Använd följande kommando om du vill indexera om manuellt:
 
 `bin/magento indexer:reindex customer_grid`
 
@@ -46,5 +46,5 @@ Vi rekommenderar även att du indexerar om `customer_grid` indexeraren efter att
 
 Länkar till relaterade ämnen i vår utvecklardokumentation:
 
-* [Översikt över indexering](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
+* [Indexeringsöversikt](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
 * [Hantera indexerare](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)

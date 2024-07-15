@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]* anges till Ja utan *[!UICONTROL Use in Search]* option'
-description: Använd korrigeringsfilen ACSD-50887 för att åtgärda Adobe Commerce-problemet där produktattributsegenskapen *[!UICONTROL Use in Search Results Layered Navigation]* kan anges till *Ja* utan *[!UICONTROL Use in Search]* alternativet anges också till *Ja*.
+title: 'ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]* inställt på Ja utan alternativet *[!UICONTROL Use in Search]*'
+description: Använd patchen ACSD-50887 för att åtgärda Adobe Commerce-problemet där produktattributegenskapen *[!UICONTROL Use in Search Results Layered Navigation]* kan anges till *Ja* utan att alternativet *[!UICONTROL Use in Search]* också anges till *Ja*.
 feature: Attributes, Products, Search, Storefront
 role: Admin, Developer
 exl-id: b597709b-7489-41a0-b1ff-d68d0def0b46
@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# ACSD-5087: *[!UICONTROL Use in Search Results Layered Navigation]* ange till *Ja* utan *[!UICONTROL Use in Search]* option
+# ACSD-50887: *[!UICONTROL Use in Search Results Layered Navigation]* har angetts till *Yes* utan alternativet *[!UICONTROL Use in Search]*
 
-Korrigeringen ACSD-50887 åtgärdar ett problem där egenskapen för produktattribut åtgärdas *[!UICONTROL Use in Search Results Layered Navigation]* kan anges till *Ja* utan *[!UICONTROL Use in Search]* kan också ställas in på *Ja*. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.36 är installerat. Korrigerings-ID är ACSD-50887. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
+Korrigeringen ACSD-50887 åtgärdar ett problem där produktattributegenskapen *[!UICONTROL Use in Search Results Layered Navigation]* kan ställas in på *Yes* utan att alternativet *[!UICONTROL Use in Search]* också ställs in på *Yes*. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.36 har installerats. Korrigerings-ID är ACSD-50887. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.5-p1
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.0 - 2.4.6-p2
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
-Egenskapen för produktattribut *[!UICONTROL Use in Search Results Layered Navigation]* kan anges till *Ja* utan *[!UICONTROL Use in Search]* kan också ställas in på *Ja*.
+Produktattributegenskapen *[!UICONTROL Use in Search Results Layered Navigation]* kan anges till *Yes* utan att alternativet *[!UICONTROL Use in Search]* också anges till *Yes*.
 
-De här inställningarna har utformats för att användas tillsammans. När plåstret appliceras, när *[!UICONTROL Use in Search]* option is set to *Nej*, *[!UICONTROL Use in Search Results Layered Navigation]* alternativet är dolt för att fungera som om det även var inställt på *Nej*.
+De här inställningarna har utformats för att användas tillsammans. När korrigeringen används och alternativet *[!UICONTROL Use in Search]* är inställt på *Nej*, är alternativet *[!UICONTROL Use in Search Results Layered Navigation]* dolt så att det fungerar som om det även vore inställt på *Nej*.
 
 <u>Steg som ska återskapas</u>:
 
-1. Gå till Admin **[!UICONTROL Stores]** > **[!UICONTROL Attribute]** > **[!UICONTROL Product]** och skapa ett attribut med flervalstypen och ange följande:
+1. Gå till **[!UICONTROL Stores]** > **[!UICONTROL Attribute]** > **[!UICONTROL Product]** i Admin och skapa ett attribut med flervalstypen och ange följande:
 
    * *[!UICONTROL Use in Search]= Nej*
    * *[!UICONTROL Use in Layered Navigation]= (Valfritt alternativ)*
@@ -53,22 +53,22 @@ De här inställningarna har utformats för att användas tillsammans. När plå
    1. Första produkten:
       * Namn = Sticker
       * Ange pris, ANTAL, vikt till 1
-      * Test_attribute = välj alternativ *Sticker*
+      * Test_attribute = välj alternativet *Sticker*
 
    1. Andra produkten:
       * Namn = Väljare
       * Ange pris, ANTAL, vikt till 1
       * Test_attribute = välj båda alternativen
 
-1. Kör `catalogsearch_fulltext` omindexera:
+1. Kör omindexering för `catalogsearch_fulltext`:
 
    `bin/magento indexer:reindex catalogsearch_fulltext`
 
-1. Sök efter ordet *klistermärke* på butiken.
+1. Sök efter ordet *sticker* på butiken.
 
 <u>Förväntade resultat</u>:
 
-Bara produkten *Sticker* returneras eftersom [!DNL Elasticsearch] indexerar inte Test_attribute när *[!UICONTROL Use in Search]* har angetts till *Nej*.
+Endast produkten *Sticker* returneras, eftersom [!DNL Elasticsearch] inte indexerar Test_attribute när *[!UICONTROL Use in Search]* har angetts till *No*.
 
 <u>Faktiska resultat</u>:
 
@@ -78,14 +78,14 @@ Båda produkterna returneras.
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i [!DNL Quality Patches Tool] guide.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i guiden Commerce om molninfrastruktur.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tool] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden [!DNL Quality Patches Tool].
+* Adobe Commerce om molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i Commerce om molninfrastruktur.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [[!DNL Quality Patches Tool]: Sök efter patchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool] guide.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.

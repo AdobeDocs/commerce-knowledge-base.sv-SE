@@ -53,5 +53,5 @@ i rotkatalogen för att generera filen som innehåller variablerna för den loka
 
 ## Relaterad läsning
 
-* [PWA Studio for Adobe Commerce Documentation](https://magento.github.io/pwa-studio/)
+* [PWA Studio för Adobe Commerce-dokumentation](https://magento.github.io/pwa-studio/)
 * [Venia Storefront (Concept)](https://magento.github.io/pwa-studio/venia-pwa-concept/)

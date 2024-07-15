@@ -1,6 +1,6 @@
 ---
-title: '"Magento-cloud" [!DNL CLI] visar ingen aktiv miljö'
-description: I den här artikeln beskrivs ett känt Adobe Commerce-problem där "Magento-cloud" [!DNL CLI] (kommandoradsverktyget) visar inte någon aktiv miljö.
+title: En aktiv miljö visas inte i "Magento-cloud" [!DNL CLI]
+description: I den här artikeln beskrivs ett känt Adobe Commerce-problem där "Magento-cloud" [!DNL CLI] (kommandoradsverktyget) inte visar någon aktiv miljö.
 feature: Cloud, Integration, Configuration
 role: Developer
 exl-id: 3c1b5de2-8888-4531-9dc1-cd478e3c96fc
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# The `Magento-cloud` [!DNL CLI] visar ingen aktiv miljö
+# `Magento-cloud` [!DNL CLI] visar ingen aktiv miljö
 
 ## Problem
 
-Det finns flera aktiva miljöer, och du försöker interagera med en miljö genom att köra en `Magento-cloud` [!DNL CLI] (kommandoradsverktyg). (Till exempel: `ssh`, `db:size`, `db:sql`, osv.)
+Det finns flera aktiva miljöer och du försöker interagera med en miljö genom att köra ett kommandoradsverktyg för `Magento-cloud` [!DNL CLI]. (Exempel: `ssh`, `db:size`, `db:sql` osv.)
 Uppmaningen att välja önskad miljö listar dock inte den här miljön. (Exempel: integreringsmiljön)
 
 ```
@@ -34,7 +34,7 @@ Miljön kanske inte är tillgänglig på grund av en pågående, fastsatt eller 
 
 ## Lösning
 
-Du måste ange miljön manuellt med `e|-environment` flagga.
+Du måste ange miljön manuellt med flaggan `e|-environment`.
 
 1. Hitta en lista över aktiva miljöer och notera miljönamnen:
 

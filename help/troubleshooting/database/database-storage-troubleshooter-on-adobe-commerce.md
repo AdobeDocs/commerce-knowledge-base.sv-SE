@@ -17,32 +17,32 @@ Den här artikeln är ett felsökningsverktyg för kunder som har problem med da
 
 ## Steg 1 - Identifiera katalogen med ett utrymmesproblem {#step-1}
 
-+++**Har du en `/tmp` på grund av brist på utrymme?**
++++**Har du ett `/tmp`-problem som orsakas av otillräckligt utrymme?**
 
-Detta kan indikeras av en rad olika symtom, bland annat `/tmp` som är full, plats ned eller som inte kan SSH till en nod. Du kan också råka ut för fel som _Inget utrymme kvar på enheten (28)_. För en lista över fel som uppstått `/tmp` är full, granska [/tmp full](/help/troubleshooting/miscellaneous/tmp-mount-full.md).
+Detta kan indikeras av en rad symtom som att `/tmp`-monteringen är full, att platsen är nere eller att SSH inte kan placeras i en nod. Det kan också uppstå fel som _Inget utrymme kvar på enheten (28)_. En lista med fel som beror på att `/tmp` är full finns i [/tmp-monteringen full](/help/troubleshooting/miscellaneous/tmp-mount-full.md).
 
-Eller har du en `/data/mysql` på grund av brist på utrymme? Detta kan också indikeras av en mängd olika symtom, bland annat ett driftstopp, kunder som inte kan lägga till produkter i kundvagnen, fel i anslutningen till databasen och Galeriafel som _SQLSTATE\[08S01\]: Kommunikationslänksfel: 1047 WSREP_. En lista över fel som beror på brist på MySQL-diskutrymme finns på [Det är ont om diskutrymme på Adobe Commerce i molninfrastrukturen](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md).
+Eller har du ett `/data/mysql`-problem på grund av otillräckligt utrymme? Detta kan också indikeras av en mängd olika symtom, bland annat ett webbplatsavbrott, kunder som inte kan lägga till produkter i kundvagnen, anslutningsfel i databasen och Galeriafel som _SQLSTATE\[08S01\]: Kommunikationslänksfel: 1047 WSREP_. En lista över fel som beror på brist på MySQL-diskutrymme finns i [MySQL-diskutrymmet är lågt på Adobe Commerce i molninfrastrukturen](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md).
 
-Om du är osäker på om du har ett problem med diskutrymme och har ett New Relic-konto går du till [New Relic Infrastructure Monitoring Hosts page](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/). Därifrån klickar du på **Lagring** -fliken, ändra **Diagramvisning** från 5 till 20 resultat och se i tabellen hur du kan använda disken i tabellen Använda diskar i %. Mer detaljerad information finns i [New Relic Infrastructure Monitoring > fliken Storage]https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage).
+Om du är osäker på om du har ett problem med diskutrymme och har ett New Relic-konto går du till [sidan New Relic Infrastructure Monitoring Hosts](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/). Därifrån klickar du på fliken **Lagring**, ändrar listrutan **Diagramvisning** från 5 till 20 resultat och letar i tabellen efter hög diskanvändning i tabellen eller tabellen Diskanvändning. Mer detaljerad information finns i [New Relic Infrastructure Monitoring (Infrastrukturövervakning) > fliken Storage (Lagring)]https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage).
 
 Om du har något av de symtom som beskrivs ovan bör du kontrollera status på dina noder för att kontrollera att det inte beror på problem med filnummer. Om du vill göra det kör du följande kommando i CLI/Terminal:\
 `df -ih`
 
 Är IUse% > 90%?
 
-a. JA - Detta beror på att det finns för många filer. Granska stegen för att ta bort filer säkert i [Radera filer på ett säkert sätt när det inte finns tillräckligt med diskutrymme, Adobe Commerce i molninfrastrukturen](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md). Fortsätt till [Steg 2](#step-2) när du har utfört dessa steg. Om du vill ha mer utrymme [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NEJ - Kontrollera utrymmet. Kör `df -h | grep mysql` och sedan `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i `/tmp` och `/data/mysql` kataloger. Fortsätt till [Steg 3](#step-3).
+a. JA - Detta beror på att det finns för många filer. Granska stegen för att ta bort filer på ett säkert sätt i [Ta bort filer när det inte finns tillräckligt med diskutrymme, Adobe Commerce i molninfrastrukturen](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md). Fortsätt till [Steg 2](#step-2) när du har slutfört de här stegen. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill begära mer utrymme.\
+b. NEJ - Kontrollera utrymmet. Kör `df -h | grep mysql` och sedan `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i katalogerna `/tmp` och `/data/mysql`. Fortsätt till [Steg 3](#step-3).
 
 +++
 
 ## Steg 2 - Kontrollera diskutrymme {#step-2}
 
-+++**Vill du kontrollera hur mycket diskutrymme som används?**
++++**Kontrollera användning av diskutrymme?**
 
-När du har minskat antalet filer kör du `df -h | grep mysql` och sedan `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i `/tmp` och `/data/mysql`. Är större än 70 % används för `/tmp` eller `/data/mysql`?
+När du har minskat antalet filer kör du `df -h | grep mysql` och sedan `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i `/tmp` och `/data/mysql`. Används mer än 70 % för `/tmp` eller `/data/mysql`?
 
-a. JA - Fortsätt till [Steg 3](#step-3).
-b. NEJ - Frågor kan ta slut på det tillgängliga lagringsutrymmet. Detta kan krascha noden, ta bort frågan och ta bort `tmp` filer. Granska utdata från `SHOW PROCESSLIST;` i MySQL CLI för frågor som kan vara orsaken till problemet. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), begär mer utrymme.
+a. JA - Fortsätt till [steg 3](#step-3).
+b. NEJ - Frågor kan ta slut på det tillgängliga lagringsutrymmet. Detta kan krascha noden, ta bort frågan och ta bort `tmp`-filerna. Granska utdata för `SHOW PROCESSLIST;` i MySQL CLI för frågor som kan vara orsaken till problemet. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär mer utrymme.
 
 +++
 
@@ -54,26 +54,26 @@ Vilken katalog används till mer än 70 %? `/tmp` eller `/data/mysql`?
 
 >[!NOTE]
 >
->Standard är att tmpdir skriver till `/tmp`. Kör följande kommando i MySQL CLI om du vill kontrollera att databaskonfigurationen fortfarande är på denna standard: `SHOW VARIABLES LIKE "TMPDIR";` Om databasens tmpdir fortfarande skriver till `/tmp`kommer du att se `/tmp` i kolumnen Värde.
+>Som standard skriver tmpdir till `/tmp`. Om du vill kontrollera att din databaskonfiguration fortfarande är på den här standardinställningen kör du följande kommando i MySQL CLI: `SHOW VARIABLES LIKE "TMPDIR";` Om databasens tmpdir fortfarande skriver till `/tmp` visas `/tmp` i värdekolumnen.
 
-a. `/tmp` - Fortsätt till [Steg 4](#step-4). \
-b. `/data/mysql` - Fortsätt till [Steg 5](#step-5).
+a. `/tmp` - Fortsätt till [Steg 4](#step-4). \
+b. `/data/mysql` - Fortsätt till [Steg 5](#step-5).
 
 +++
 
 ## Steg 4 - felsökning/tmp-montering full {#step-4}
 
-+++**Felsökning av fullständig /tmp-montering**
++++**Felsök /tmp-montering full**
 
-[Felsök fullständigt /tmp-paket för Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md)bläddrar du nedåt i artikeln och provar lösningar och bästa praxis. Kör sedan `df -h | grep mysql` och sedan `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i `/tmp` och `/data/mysql` kataloger\
+[Felsök/tmp-monteringen fullt för Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md), bläddra nedåt i artikeln och prova lösningarna och bästa praxis. Kör sedan `df -h | grep mysql` och `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i `/tmp`- och `/data/mysql`-kataloger\
   &lt; 70 % används?
 
 >[!NOTE]
 >
->Lösningarna i [Felsök fullständigt /tmp-paket för Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md) är utformade för handlare som inte har ändrat variablerna för database tmpdir, som som standard skriver till `/tmp`. Om du har ändrat tmpdir-värdet finns instruktionerna i [Felsök fullständigt /tmp-paket för Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md) kommer inte att hjälpa.
+>Lösningarna i [Felsök/tmp-paketet fullt för Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md) är utformade för handlare som inte har ändrat variablerna för databas-tmpdir, som som standard skriver till `/tmp`. Om du har ändrat tmpdir-värdet är instruktionerna i [Felsök/tmp-paketet fullt för Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md) inte till någon hjälp.
 
 a. JA - Du har löst problemet. \
-b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), begär mer utrymme.
+b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär mer utrymme.
 
 +++
 
@@ -81,11 +81,11 @@ b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento
 
 +++**Kontrollera standard**
 
-Databaskonfigurationen kanske inte längre är den ursprungliga standardinställningen. Hitta tmpdir-konfigurationen för databasen genom att köra i MySQL CLI: `SELECT @@DATADIR;`. If `/data/mysql/` skrivs nu databasens tmpdir till `/data/mysql/`. Försök att öka utrymmet i den här katalogen genom att följa stegen i [Utrymmet för MySQL-disken är lågt på Adobe Commerce i vår molninfrastruktur](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md). Kör sedan `df -h | grep mysql` och sedan `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i `/data/mysql` och `/tmp`.\
+Databaskonfigurationen kanske inte längre är den ursprungliga standardinställningen. Hitta tmpdir-konfigurationen för databasen genom att köra i MySQL CLI: `SELECT @@DATADIR;`. Om `/data/mysql/` är utdata skrivs databasens tmpdir nu till `/data/mysql/`. Försök att öka utrymmet i den här katalogen genom att följa stegen i [MySQL-diskutrymmet börjar ta slut på Adobe Commerce i vår molninfrastruktur](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md). Kör sedan `df -h | grep mysql` och `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i `/data/mysql` och `/tmp`.\
   &lt; 70 % används?
 
 a. JA - Du har löst problemet. \
-b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), begär mer utrymme.
+b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär mer utrymme.
 
 +++
 

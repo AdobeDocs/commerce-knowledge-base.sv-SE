@@ -18,7 +18,7 @@ Nej. Det är inte tillåtet att installera program från tredje part (som WordPr
 
 ### Villkor för serviceavtal
 
-Adobe Commerce on cloud Infrastructure Edition [Villkor för serviceavtal](https://magento.com/legal/terms/cloud-terms) i artikel 18 anges följande:
+Adobe Commerce on cloud Infrastructure Edition [Terms of Service Agreement](https://magento.com/legal/terms/cloud-terms) innehåller följande i artikel 18:
 
 > Kunden godkänner att Adobe Commerce och tjänsten inte kommer att användas som värd för andra tredjepartsprogram som inte är direkt beroende av Programvaran.
 
@@ -29,10 +29,10 @@ Adobe är en molnlösning och har fullt ansvar för serversäkerheten. För att 
 Som PCI-certifierad nivå 1-lösningsleverantör måste Adobe Commerce i molninfrastruktur följa PCI Data Security Standard och se till att:
 
 >... utveckla och underhålla säkra system och tillämpningar
-> ([Adobe metod för PCI-överensstämmelse](https://magento.com/pci-compliance) Krav 6, underhåll ett program för hantering av sårbarhet)
+> ([Adobe inflygning till PCI-kompatibilitet](https://magento.com/pci-compliance) Krav 6, behåll ett Vulnerability Management Program)
 
 Eftersom Adobe inte kan garantera PCI-kompatibiliteten för tredjepartsprogram är det inte tillåtet att installera sådana program på molnservrar.
 
 ## Tips: Använd Commerce Marketplace-tillägg för bättre integrering
 
-För att förbättra integreringen av ditt Adobe Commerce i molninfrastruktursprogram med tredjepartslösningar på externa servrar rekommenderar vi att du använder [Commerce Marketplace](https://marketplace.magento.com) tillägg som kan passa ditt syfte.
+För att förbättra integreringen av ditt Adobe Commerce i molninfrastruktursprogram med tredjepartslösningar som finns på externa servrar rekommenderar vi att du använder [Commerce Marketplace](https://marketplace.magento.com)-tillägg som passar ditt syfte.

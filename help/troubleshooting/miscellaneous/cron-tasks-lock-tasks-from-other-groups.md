@@ -24,20 +24,20 @@ Den här artikeln innehåller en lösning för Adobe Commerce om molninfrastrukt
 
 När du har komplexa kron-uppgifter (långkörda uppgifter) i Adobe Commerce för molnet kan de låsa andra uppgifter för körning. Indexerarens uppgift indexerar till exempel om ogiltiga indexerare. Det kan ta några timmar att slutföra och låser andra standardcron-jobb som att skicka e-post, generera webbplatskartor, kundmeddelanden och andra anpassade uppgifter.
 
-<u>Symtom</u>:
+<u>Symtomen</u>:
 
 Processerna som utförs av cron-jobb utförs inte. Produktuppdateringar gäller t.ex. inte timmar eller så rapporterar kunderna att de inte får några e-postmeddelanden.
 
-När du öppnar `cron_schedule` databastabell, du ser jobben med `missed` status.
+När du öppnar databastabellen `cron_schedule` ser du jobben med statusen `missed`.
 
 ## Orsak
 
-Tidigare användes Jenkins-servern i vår molnmiljö för att köra cron-jobb. Jenkins kör bara en instans i taget och det blir därför bara en i taget `bin/magento cron:run` processer som körs i taget.
+Tidigare användes Jenkins-servern i vår molnmiljö för att köra cron-jobb. Jenkins kör bara en instans av ett jobb åt gången. Därför körs bara en `bin/magento cron:run`-process åt gången.
 
 ## Lösning
 
-1. Kontakt [Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) att ha självhanterade kroner aktiverade.
-1. Redigera `.magento.app.yaml` i rotkatalogen för koden för Adobe Commerce i Git-grenen. Lägg till följande:
+1. Kontakta [Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill att självhanterade kroner ska vara aktiverade.
+1. Redigera filen `.magento.app.yaml` i rotkatalogen för Adobe Commerce i Git-grenen. Lägg till följande:
 
    ```yaml
      crons:
@@ -50,11 +50,11 @@ Tidigare användes Jenkins-servern i vår molnmiljö för att köra cron-jobb. J
 
 >[!NOTE]
 >
->Du behöver inte överföra gamla cron-konfigurationer där flera `cron:run` är närvarande i det nya kronschemat; den `cron:run` uppgiften som lagts till enligt ovan räcker. Men du måste överföra dina anpassade jobb om du hade några.
+>Det finns ingen anledning att överföra gamla cron-konfigurationer där det finns flera `cron:run` till det nya cron-schemat. Den vanliga `cron:run`-aktiviteten, som lagts till enligt ovan, räcker. Men du måste överföra dina anpassade jobb om du hade några.
 
 ### Kontrollera om du har självhanterade kron aktiverat (endast för Cloud Pro Staging and Production)
 
-Kör `crontab -l` och observera resultatet:
+Om du vill kontrollera om den självhanterade kronen är aktiverad kör du kommandot `crontab -l` och observerar resultatet:
 
 * Självhanterade kroner är aktiverade om du kan se åtgärderna, som följande:
 
@@ -63,7 +63,7 @@ Kör `crontab -l` och observera resultatet:
   SHELL=/etc/platform/username/cron-run    MAILTO=""    # m h dom mon dow job_name    * * * * * cronrun
   ```
 
-* Den självhanterade kron är inte aktiverad om du inte kan se aktiviteterna och få *&quot;du får inte använda det här programmet&quot;* felmeddelande.
+* Den självhanterade kron är inte aktiverad om du inte kan se aktiviteterna och få felmeddelandet *&quot;du får inte använda det här programmet&quot;*.
 
 >[!NOTE]
 >
@@ -71,4 +71,4 @@ Kör `crontab -l` och observera resultatet:
 
 ## Relaterad läsning
 
-* [Ställ in cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) i vår dokumentation för utvecklare.
+* [Konfigurera cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) i utvecklardokumentationen.

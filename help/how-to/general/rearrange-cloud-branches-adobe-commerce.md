@@ -29,17 +29,17 @@ Rätt hierarkiorganisation för dina grenar är:
 
 Så här ordnar du om molngrenar:
 
-1. Du måste ha [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) roll.
+1. Du måste ha rollen [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
 1. Installera magento-cloud [!DNL CLI] (om du inte har gjort det).
 1. Kör följande kommando för grenarna som behöver flyttas:
    `magento-cloud environment:info -e <branch to move> parent <target parent>`
 
-Obs! Du kan ange den överordnade grenen när du skapar en ny gren. Om du vill se steg går du till [Komma igång med att skapa grenar](https://devdocs.magento.com/cloud/env/environments-start.html#getstarted) i vår dokumentation för utvecklare.
+Obs! Du kan ange den överordnade grenen när du skapar en ny gren. Anvisningar finns i [Komma igång med att skapa grenar](https://devdocs.magento.com/cloud/env/environments-start.html#getstarted) i utvecklardokumentationen.
 
-Du kan skapa en ny miljögren med `branch <environment-name> <parent-environment-ID>` magento-cloud environment command.
+Du kan skapa en ny miljögren med miljökommandot `branch <environment-name> <parent-environment-ID>` magento-cloud.
 
 Det kan ta ytterligare tid att skapa och aktivera en ny miljögren.
 
 ## Relaterad läsning
 
-[Hantera grenar med [!DNL CLI]](https://devdocs.magento.com/cloud/env/environments-start.html) i vår dokumentation för utvecklare.
+[Hantera grenar med  [!DNL CLI]](https://devdocs.magento.com/cloud/env/environments-start.html) i utvecklardokumentationen.

@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Felet &#39;Riktkod har inte angetts&#39; vid körning `setup:upgrade`
+# Felet &#39;Riktnummer har inte angetts&#39; när `setup:upgrade` körs
 
-Den här artikeln innehåller en patch för det kända problemet med Adobe Commerce i molninfrastruktur 2.2.3 som gäller hämtning av *&quot;Riktnummer har inte angetts&quot;* fel vid körning av följande kommando:
+I den här artikeln finns en patch för det kända Adobe Commerce-felet i molninfrastruktur 2.2.3 som rör hämtning av felet *&quot;Riktkoden är inte inställd&quot;* när följande kommando körs:
 
 ```bash
 setup:upgrade
@@ -31,7 +31,7 @@ När du kör
 bin/magento setup:upgrade
 ```
 
-får du följande felmeddelande: *&quot;Modul &#39;Magento\_AdvancedSalesRule&#39;: Installerar data...Riktkoden har inte angetts: Riktkoden måste anges innan en session startas&quot;* och kommandokörningen avbryts. Problemet visas eftersom områdeskonfigurationen begärs innan den ställs in. Korrigeringen gör det möjligt att fånga upp felet och inte avbryta uppgraderingsprocessen.
+får du följande felmeddelande: *&quot;Module &#39;Magento\_AdvancedSalesRule&#39;: Installing data...Area code not set: Area code must be set before starting a session&quot;* and the command execution is broken. Problemet visas eftersom områdeskonfigurationen begärs innan den ställs in. Korrigeringen gör det möjligt att fånga upp felet och inte avbryta uppgraderingsprocessen.
 
 ## Lappa
 
@@ -51,6 +51,6 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

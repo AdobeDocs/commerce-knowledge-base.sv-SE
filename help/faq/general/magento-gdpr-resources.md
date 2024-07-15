@@ -16,7 +16,7 @@ I den här artikeln anges de officiella dokumentationsresurser som diskuterar hu
 
 ## Adobe Commerce är redo för GDPR
 
-The [officiell hemsida](https://business.adobe.com/privacy/general-data-protection-regulation.html) för alla Adobe Commerce GDPR-resurser.
+Den [officiella hemsidan](https://business.adobe.com/privacy/general-data-protection-regulation.html) för alla Adobe Commerce GDPR-resurser.
 
 ## Adobe Commerce officiella programsatser
 

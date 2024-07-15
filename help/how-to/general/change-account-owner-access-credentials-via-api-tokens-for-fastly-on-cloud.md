@@ -12,5 +12,5 @@ ht-degree: 0%
 
 # Ändra kontoägare (få åtkomst till autentiseringsuppgifter via API-tokens) för Fast i molnet
 
-Läs mer i [Snabb service av konto och autentiseringsuppgifter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=en#test-fastly-credentials) i vår Commerce on Cloud Infrastructure Guide.
+Se [Snabbt tjänstkonto och autentiseringsuppgifter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=en#test-fastly-credentials) i vår Commerce on Cloud Infrastructure Guide.
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Advanced Reporting 404 error on split database solution
 
-Den här artikeln innehåller en patch för användare av Adobe Commerce 2.3.x med [delad databaslösning](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) som får ett 404-fel när de försöker använda avancerad rapportering.
+Den här artikeln innehåller en patch för Adobe Commerce 2.3.x-användare med den [delade databaslösningen](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) som får ett 404-fel när de försöker använda Advanced Reporting.
 
 ## Berörda produkter och versioner
 
@@ -25,7 +25,7 @@ Korrigeringen åtgärdar ett problem där fel anslutningsnamn används för att 
 
 ## Lösning
 
-Använd [patch](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) enligt denna artikel.
+Använd den [korrigering](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) som anges i den här artikeln.
 
 ## Lappa
 

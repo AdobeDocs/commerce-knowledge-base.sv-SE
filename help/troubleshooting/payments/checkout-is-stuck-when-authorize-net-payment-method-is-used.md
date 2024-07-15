@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Utcheckningen fastnar när Authorize.net betalningsmetod används
 
-I den här artikeln ges en förklaring och en korrigering för Adobe Commerce 2.3.X-problemet där utcheckningen fastnar om Authorize.net används med *Det går inte att läsa egenskapen length för null* felmeddelande i webbläsarkonsolloggen.
+Den här artikeln innehåller en förklaring och en korrigering av Adobe Commerce 2.3.X-problemet där utcheckningen fastnar om Authorize.net används, med felmeddelandet *&#39;Det går inte att läsa egenskapen &#39;length&#39; på null&#39;* i webbläsarkonsolloggen.
 
 ## Berörda produkter och versioner
 
@@ -31,7 +31,7 @@ I den här artikeln ges en förklaring och en korrigering för Adobe Commerce 2.
 1. Gå till butiken.
 1. Lägg en produkt i kundvagnen och fortsätt till kassan.
 1. Välj Authorize.net som betalningsmetod.
-1. Klicka **Montera beställning**.
+1. Klicka på **Montera order**.
 
 <u>Förväntat resultat</u>
 
@@ -39,7 +39,7 @@ Authorize.net iframe läses in.
 
 <u>Faktiskt resultat</u>
 
-Ajax-rotationsrutan visas och sidan läses aldrig in. Följande JS-fel visas i webbläsarkonsolloggen: *&#39;Uncaught TypeError: Cannot read property &#39;length&#39; of null at b (jstest.authorize.net/v1/AcceptCore.js:1)&#39;*
+Ajax-rotationsrutan visas och sidan läses aldrig in. Följande JS-fel visas i webbläsarkonsolloggen: *&#39;Uncaught TypeError: Cannot read property &#39;length&#39; of null at b (jstest.authorize.net/v1/AcceptCore.js:1)&#39;*)
 
 ## Orsak
 
@@ -47,7 +47,7 @@ En av de vanligaste orsakerna till problemet är att den offentliga klientnyckel
 
 ## Lösning
 
-Under **Lager** > **Inställningar** > **Konfiguration** > **Försäljning** > **Betalningsmetoder**, i **Authorize.net** kontrollerar du om värdet anges i **Offentlig klientnyckel** fält. Om det är tomt anger du nyckelvärdet från ditt Authorize.Net-handelskonto.
+Under **Lagrar** > **Inställningar** > **Konfiguration** > **Försäljning** > **Betalningsmetoder** kontrollerar du om värdet har angetts i fältet **Offentlig klientnyckel** i avsnittet **Authorize.net**. Om det är tomt anger du nyckelvärdet från ditt Authorize.Net-handelskonto.
 
 Rensa cacheminnet genom att köra ändringarna
 

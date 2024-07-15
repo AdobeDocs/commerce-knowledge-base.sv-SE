@@ -17,4 +17,4 @@ Observation for Adobe Commerce är en New Relic-nördlet för att se hur din Ado
 
 Fliken Sammanfattning av observationer för Adobe Commerce är avsedd att snabbt se några av de problem som webbplatser upplever för att hjälpa dig att automatiskt lösa eller identifiera potentiella orsaker till platsproblem. De extra flikarna ger mer detaljerad information om komponenttjänster, databaser, infrastruktur och processlägen.
 
-Om du vill se en komplett guide om hur du använder observationer för Adobe Commerce om molninfrastruktur går du till [Observation för Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) i Experience League.
+Om du vill se den fullständiga guiden om hur du använder observationer för Adobe Commerce i molninfrastruktur går du till guiden [Observation för Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) i Experience League.

@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Distributionen misslyckas: Elasticsearch och Adobe Commerce versioner är inte kompatibla
 
-Läs mer i [Konfigurera programvarukompatibiliteten Elasticsearch Service > Elasticsearch](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) i vår dokumentation för utvecklare.
+Mer information finns i [Konfigurera Elasticsearch-tjänsten > Elasticsearch-programkompatibilitet](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) i utvecklardokumentationen.

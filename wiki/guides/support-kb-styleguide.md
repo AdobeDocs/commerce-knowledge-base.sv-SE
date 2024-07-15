@@ -49,16 +49,16 @@ Använd inte versaler när du är osäker. Använd inledande versal i mening i r
 
 ## Gränssnittselement
 
-* Allt som användaren klickar på **fet**. Till exempel&quot;Klicka **Fortsätt**.&quot; Alternativvärden och felmeddelanden formateras med _kursiv_.
-* Undvik, där det är möjligt, att nämna UI-elementtypen i instruktionerna. (Klicka **Nästa**. vs Klicka på **Nästa** .)
+* Allt som användaren klickar på placeras i **fet**. Exempel:&quot;Klicka på **Fortsätt**.&quot; Alternativvärden och felmeddelanden formateras med _kursiv_.
+* Undvik, där det är möjligt, att nämna UI-elementtypen i instruktionerna. (Klicka på **Nästa**. vs Klicka på knappen **Nästa**.)
 * Använd&quot;Välj&quot; och&quot;>&quot; i kommandosekvenser. (Välj **Redigera** > **Inställningar**. vs Klicka på Redigera | Inställningar.)
 * Preposition: &quot;in&quot; för dialogruta, fönster, är a, panel, view, wizard, list, folder, node.
 * Förposition: &quot;på&quot; för skärm, sida, verktygsfält, menyrad, flik, ruta, menyflik.
-* Förposition: Klicka (klicka) **Nästa** vs Klicka på **Nästa**).
+* Förposition: Klicka (klicka på **Nästa** eller klicka på **Nästa**).
 
 ## Filnamn
 
-Filnamn och mappar formateras som kod. Exempel: `/var/log` systemkatalogen innehåller loggar för alla miljöer.
+Filnamn och mappar formateras som kod. Exempel: Systemkatalogen `/var/log` innehåller loggar för alla miljöer.
 
 
 ## Nummer
@@ -200,13 +200,13 @@ Ingen orsak till versaler.
 
 <td colspan="1">
 
-Felmeddelande: _&quot;Något gick fel.&quot;_
+Felmeddelande: _._
 
 Felmeddelande: __Något gick fel.__
 
 </td>
 
-<td colspan="1"> Felmeddelande:  <i>Något gick fel.</i> </td>
+<td colspan="1"> Felmeddelande: <i>Något gick fel.</i> </td>
 
 <td colspan="1">
 </td>
@@ -221,7 +221,7 @@ Felmeddelande: __Något gick fel.__
 
 * Alla element som inte är text eller grafiska har textmotsvarigheter eller Alt-text. Exempel: ![example_image](/url "alt_text_for_this_image").
 
-* Alla länkar beskriver länkens mål. Exempel [link](/uri "destination_of_the_link").
+* Alla länkar beskriver länkens mål. Exempel: [link](/uri "destination_of_the_link").
 
 
 <!--
@@ -253,14 +253,14 @@ En specialiserad länklista, som kallas en lista med även visningar, visas enda
 
 ### Länkar till externa webbplatser
 
-Använd vanliga URL:er i stället för goURL:er för att länka till sidor utanför  [Adobe.com](http://Adobe.com).
+Använd vanliga URL:er i stället för goURL:er för att länka till sidor utanför [Adobe.com](http://Adobe.com).
 
 
 ## Kommatecken
 
 I allmänhet följer du rekommendationerna i Chicago Manual of Style för interpunktion med öppen stil, där interpunktion bara behövs för att förhindra felläsning. Du kan t.ex. utelämna kommatecken före en kombination i en sammansatt mening om det finns liten risk för felläsning eller ingen risk för detta. Använd kommatecken där det behövs för klargörandet.
 
-* Använd alltid det seriella kommat (ett komma före) _och_ eller _eller_ i en lista med tre eller fler objekt): x, y och z
+* Använd alltid det seriella kommatecknet (ett komma före _och_ eller _eller_ i en lista med tre eller fler objekt): x, y och z
 
 * Placera ett kommatecken före en kombination som introducerar en oberoende sats:&quot;Ange en plats och ange ett namn för fillistan.&quot;
 
@@ -276,4 +276,4 @@ I allmänhet följer du rekommendationerna i Chicago Manual of Style för interp
 
 ## Varumärke
 
-* Magento Commerce är nu Adobe Commerce. Läs mer i [Omvarumärkesvillkor](https://github.com/magento/knowledge-base/wiki) wiki om du vill ha mer information om hur du använder det aktuella varumärket.
+* Magento Commerce är nu Adobe Commerce. Mer information om hur du använder det aktuella varumärkesspråket finns i [omprofileringsvillkoren](https://github.com/magento/knowledge-base/wiki)-wiki.

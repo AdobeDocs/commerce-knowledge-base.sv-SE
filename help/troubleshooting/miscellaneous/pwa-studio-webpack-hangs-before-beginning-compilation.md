@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: Webpack låser sig innan kompileringen påbörjas
 
-Den här artikeln handlar om en föreslagen lösning för när en javascript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) hänger sig länge innan kompileringen börjar i Progressive Web App Studio (PWA Studio).
+I den här artikeln beskrivs en föreslagen lösning för när ett javascript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) låser sig länge innan kompileringen i Progressive Web App Studio (PWA Studio) börjar.
 
 ## Berörda produkter och versioner
 
@@ -21,13 +21,13 @@ Den här artikeln handlar om en föreslagen lösning för när en javascript [We
 
 ## Problem
 
-[Kontrollera vad den senaste versionen av pwa-buildpack är](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)och
+[Kontrollera vilken senaste version av pwa-buildpack som är ](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack) och
 
 ```yaml
 pwa-buildpack
 ```
 
-versionsnumret står bredvid `package.json` filnamnslista. Om du har en gammal version av
+versionsnumret står bredvid `package.json`-filnamnslistan. Om du har en gammal version av
 
 ```yaml
 pwa-buildpack
@@ -37,7 +37,7 @@ pwa-buildpack
 
 <u>Steg som ska återskapas</u>:
 
-<u>Förutsättningar</u>: Konfigurera en PWA Studio storefront, till exempel Venia, med en lokal Adobe Commerce-instans och kör en
+<u>Förutsättningar</u>: Konfigurera en PWA Studio-butik, till exempel Venia, med en lokal Adobe Commerce-instans och kör en
 
 ```yaml
 build
@@ -88,11 +88,11 @@ openssl version
 
 Versionen ska vara 1.0 eller högre (eller LibreSSL 2, i fallet OSX High Sierra.).
 
-Du kan installera senare versioner av OpenSSL med [Homebreiska](https://brew.sh/) på OSX, [Chocolatey](https://chocolatey.org/) i Windows, eller din Linux-distributions pakethanterare.
+Du kan installera senare versioner av OpenSSL med [Homebrew](https://brew.sh/) i OSX, [Chocolatey](https://chocolatey.org/) i Windows eller med Linux-distributionens pakethanterare.
 
 ## Relaterad läsning
 
-* [Javascript-webbpaket: begrepp](https://webpack.js.org/concepts/)
+* [JavaScript-webbpaket: begrepp](https://webpack.js.org/concepts/)
 * [Inställningar för Venedig storefront](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
 * [PWA Buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/)
 * [kommandoradsgränssnitt för buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)

@@ -17,7 +17,7 @@ Den här artikeln innehåller en patch för den kända Adobe-С om molninfrastru
 
 ## Problem
 
-Om du väljer att ta bort kund- eller klientposter filtrerar du rutnätet och väljer sedan **Ta bort** -åtgärd tas alla poster bort.
+Om du markerar kund- eller klientposter som ska tas bort i Admin, filtrerar rutnätet och sedan väljer åtgärden **Ta bort** tas alla poster bort.
 
 <u>Steg som ska återskapas</u>:
 
@@ -52,4 +52,4 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).

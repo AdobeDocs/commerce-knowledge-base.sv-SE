@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problem med Adobe Commerce 2.4.0 - Export Tax Rates fungerar inte
 
-Den här artikeln innehåller en lösning på ett Adobe Commerce 2.4.0-problem där **Exportskattesatser** fungerar inte.
+Den här artikeln innehåller en lösning på ett känt problem i Adobe Commerce 2.4.0 där knappen **Exportera momssatser** inte fungerar.
 
 ## Berörda produkter och versioner
 
@@ -22,17 +22,17 @@ Den här artikeln innehåller en lösning på ett Adobe Commerce 2.4.0-problem d
 
 ## Problem
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-1. Gå till Commerce Admin Panel > **Lager** > **Skatteregler**.
-1. Klicka på **Lägg till ny momsregel** -knappen.
-1. Klicka på texten i **Exportskattesatser** -knappen.
+1. Gå till Commerce Admin Panel > **Stores** > **Tax Rules**.
+1. Klicka på knappen **Lägg till ny momsregel**.
+1. Klicka på texten för knappen **Exportera momssatser**.
 
    ![magento_export_tax_rates.png](assets/mceclip0.png)
 
 <u>Förväntat resultat</u>:
 
-A `tax_rates.csv` nedladdningar med momssatser.
+En `tax_rates.csv`-fil laddas ned med momssatser.
 
 <u>Faktiskt resultat</u>:
 
@@ -42,7 +42,7 @@ Ingen CSV-fil hämtas.
 
 Lösning:
 
-Klicka på den nedre vänstra kanten av **Exportskattesatser** för att exportera `tax_rates.csv` -fil.
+Klicka på den nedre vänstra kanten av knappen **Exportera momssatser** för att exportera filen `tax_rates.csv`.
 
 ![magento_export_tax_rates.png](assets/mceclip1.png)
 
@@ -52,8 +52,8 @@ Vi planerar att åtgärda problemet i en 2.4.1- patch.
 
 I vår kunskapsbas:
 
-* [Adobe Commerce 2.4.0: Braintree betalningsmetoder visas inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md).
-* [Problem med att skapa etiketter i Adobe Commerce 2.4.0](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md).
-* [Problem med Adobe Commerce 2.4.0 - uppdateringen av kundens aktiviteter fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md).
-* [Adobe Commerce 2.4.0: Raw-meddelandedata visas i butiken](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md).
-* [Adobe Commerce 2.4.0: Knappen &quot;Lägg till markeringar i kundvagnen&quot; fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md).
+* [Ett känt fel uppstod i Adobe Commerce 2.4.0: Braintree betalningsmetoder visas inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md).
+* [Problem med att skapa leveransetiketter i Adobe Commerce 2.4.0](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md).
+* [Problem med Adobe Commerce 2.4.0 - Uppdatering av kundens aktiviteter fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md).
+* [Ett känt fel uppstod i Adobe Commerce 2.4.0: visning av råmeddelandedata i store](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md).
+* [Problem med Adobe Commerce 2.4.0: Knappen Lägg till markeringar i kundvagnen fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md).

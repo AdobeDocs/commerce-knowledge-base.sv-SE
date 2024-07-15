@@ -39,7 +39,7 @@ Vid sökbegäran genereras följande undantag i loggar:
 
 ## Orsak
 
-Som standard kan endast vissa typer av produktattribut användas i Navigering i lager. De är Ja/Nej, Listruta, MultiplerSelect och Price. Därför kan du inte ange attribut av någon annan typ som **Använd i navigering i lager** = *Filterbar* eller **Använd vid navigering i lager i sökresultat** = *Ja*. Men det finns en teknisk möjlighet att kringgå denna begränsning genom att direkt ändra `is_filterable` och `is_filterable_in_search` värden i databasen. Om detta inträffar och någon annan attributtyp, t.ex. Datum, Text o.s.v., är inställd att användas i Navigering i lager, genereras ett undantag i Elasticsearch 5.
+Som standard kan endast vissa typer av produktattribut användas i Navigering i lager. De är Ja/Nej, Listruta, MultiplerSelect och Price. Det är därför du inte kan ange ett attribut av någon annan typ i Commerce Admin som **Använd i lagernavigering** = *Filterable* eller **Använd i lagernavigering i sökresultat** = *Yes* . Men det finns en teknisk möjlighet att kringgå den här begränsningen genom att ändra värdena `is_filterable` och `is_filterable_in_search` i databasen direkt. Om detta inträffar och någon annan attributtyp, t.ex. Datum, Text o.s.v., är inställd att användas i Navigering i lager, genereras ett undantag i Elasticsearch 5.
 
 Om du vill vara säker på att så är fallet måste du ta reda på om det finns andra attribut än listruta, MultiplerSelect och Price som är inställda att användas i Navigering i lager. Sök efter attributen genom att köra följande fråga:
 
@@ -53,10 +53,10 @@ Resultatet innehåller en lista med attribut som används för Navigering i lage
 
 ## Lösning
 
-För att åtgärda problemet måste du ange `is_filterable` (d.v.s. används i Navigering i lager) och `filterable_in_search` (d.v.s. används i sökresultat Navigering i lager) till &quot;0&quot; (används inte). Gör så här:
+För att åtgärda problemet måste du ange `is_filterable` (d.v.s. används i navigering i lager) och `filterable_in_search` (d.v.s. används i sökresultat med navigering i lager) till &quot;0&quot; (används inte). Gör så här:
 
 1. Skapa en säkerhetskopia av databasen.
-1. Använd ett databasverktyg som [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
+1. Använd ett databasverktyg som [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
 
    ```sql
    UPDATE catalog_eav_attribute AS cea
@@ -79,6 +79,6 @@ För att åtgärda problemet måste du ange `is_filterable` (d.v.s. används i N
    bin/magento cache:clean
    ```
 
-eller i Commerce Admin under **System** > **verktyg** > **Cachehantering**.
+eller i Commerce Admin under **System** > **Verktyg** > **Cachehantering**.
 
 Nu bör du kunna utföra katalogsökningar utan problem.

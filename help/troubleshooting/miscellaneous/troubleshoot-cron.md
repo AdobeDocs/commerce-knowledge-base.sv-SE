@@ -24,8 +24,8 @@ I den här artikeln finns felsökningslösningar för problem med kron i Adobe C
 
 ## Följande är symtom på kronproblem:
 
-* Din uppdatering eller uppgradering går aldrig att köra; den ligger kvar i `pending` tillstånd.
-* Ett felmeddelande om [PHP](https://glossary.magento.com/php) inställning `$HTTP_RAW_POST_DATA` visas trots att den är korrekt inställd.
+* Uppdateringen eller uppgraderingen körs aldrig. Den är fortfarande i läget `pending`.
+* Ett felmeddelande om [PHP](https://glossary.magento.com/php)-inställningen `$HTTP_RAW_POST_DATA` visas även om den är korrekt inställd.
 * Kronberedskapskontrollen misslyckas. Möjliga fel kan vara icke-skrivbara sökvägar och cron inte konfigurerade. Ett exempel följer:
 
   ![upgr-tshot-no-cron2.png](assets/upgr-tshoot-no-cron2.png)
@@ -38,7 +38,7 @@ I den här artikeln finns felsökningslösningar för problem med kron i Adobe C
 
   ![compman-cron-not-running.png](assets/compman-cron-not-running.png)
 
-Du kan behöva klicka på **Systemmeddelanden** högst upp i fönstret enligt följande:
+Om du vill se felet kan du behöva klicka på **Systemmeddelanden** högst upp i fönstret enligt följande:
 
 ![compman_sys-messages.png](assets/compman_sys-messages.png)
 
@@ -48,9 +48,9 @@ I det här avsnittet beskrivs hur du ser om cron körs och hur du kontrollerar o
 
 Så här kontrollerar du om din crontab är inställd:
 
-1. Logga in på Magento-servern som eller växla till [Magento filsystemägare](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html).
-1. Kontrollera om följande fil finns:    `bash    ls -al <magento_root>/var/.setup_cronjob_status`. Om filen finns har cron körts tidigare. Om filen *inte* finns, antingen har du inte installerat Magento än eller så körs inte cron. I båda fallen fortsätter du med nästa steg.
-1. Mer information om cron. Som användare med `root` behörigheter, ange följande kommando:    `bash    crontab -u <Magento file system owner name> -l`. Exempel: i CentOS `bash    crontab -u magento_user -l`.  Om ingen crontab har konfigurerats för användaren visas följande meddelande:    `terminal    no crontab for magento_user`. På din crontab ser du följande:
+1. Logga in på Magento-servern som, eller växla till, ägare av [Magento-filsystemet](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html).
+1. Kontrollera om följande fil finns:    `bash    ls -al <magento_root>/var/.setup_cronjob_status`. Om filen finns har cron körts tidigare. Om filen *inte* finns, har du inte installerat Magento än eller så körs inte cron. I båda fallen fortsätter du med nästa steg.
+1. Mer information om cron. Som användare med `root`-behörighet anger du följande kommando:    `bash    crontab -u <Magento file system owner name> -l`. Exempel: i CentOS `bash    crontab -u magento_user -l`.  Om ingen crontab har konfigurerats för användaren visas följande meddelande:    `terminal    no crontab for magento_user`. På din crontab ser du följande:
 
    * Vilken PHP-binär du använder (i vissa fall har du fler än en)
    * Vilka Magento-baserade skript du kör (särskilt sökvägarna till dessa skript)
@@ -62,18 +62,18 @@ Se något av följande avsnitt för en lösning på ditt problem.
 
 ### Lösning för crontab konfigureras inte {#solution-crontab-not-set-up}
 
-Information om hur du kontrollerar att dina cron-jobb är korrekt konfigurerade finns i [Ställ in cron-jobb](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron).
+Se [Konfigurera cron-jobb](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron) för att kontrollera att dina cron-jobb är korrekt konfigurerade.
 
 ### Lösning för cron som körs från felaktig PHP-binär {#solution-cron-running-from-incorrect-php-binary}
 
 Om ditt cron-jobb använder en annan PHP-binärfil än webbserverplugin-programmet kan PHP-inställningsfel visas. Du löser problemet genom att ange identiska PHP-inställningar för både PHP-kommandoraden och PHP-webbserverns plugin-program.
 
-Mer information om PHP-inställningar finns i [Nödvändiga PHP-inställningar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) i vår dokumentation för utvecklare.
+Mer information om PHP-inställningar finns i [Nödvändiga PHP-inställningar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) i utvecklardokumentationen.
 
 ### Lösning för cron som körs med fel {#solution-cron-running-with-errors}
 
-Prova att köra varje kommando manuellt eftersom kommandot kan visa praktiska felmeddelanden. Se [Ställ in cron-jobb](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron).
+Prova att köra varje kommando manuellt eftersom kommandot kan visa praktiska felmeddelanden. Se [Konfigurera cron-jobb](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron).
 
 >[!NOTE]
 >
->Du måste köra cron åtminstone *två* för att jobbet ska köras. Första gången du ställer jobben i kö är det andra gången du kör jobben.
+>Du måste köra minst *två gånger* för att jobbet ska kunna köras. Första gången du ställer jobben i kö är det andra gången som jobben ska köras.

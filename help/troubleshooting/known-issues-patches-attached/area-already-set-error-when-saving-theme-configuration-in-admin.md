@@ -13,23 +13,23 @@ ht-degree: 0%
 
 # Felet &quot;Område har redan angetts&quot; när konfigurationen av temat sparades i Admin
 
-Den här artikeln innehåller en patch för det kända problemet med Adobe Commerce i molninfrastruktur 2.2.4 som gäller hämtning av *&quot;Område har redan angetts&quot;* felmeddelande när du försöker ange ett tema för standardbutiksvyn i Commerce Admin.
+I den här artikeln finns en patch för det kända Adobe Commerce-problemet i molninfrastruktur 2.2.4 som rör hämtning av felmeddelandet *&quot;Area is already set&quot;* när du försöker ange ett tema för standardbutiksvyn i Commerce Admin.
 
 ## Problem
 
-Du får *Ett fel uppstod när konfigurationen sparades: Området har redan angetts* &quot; när du försöker ange ett tema för standardbutiksvyn.
+Du får felmeddelandet *Något gick fel när den här konfigurationen sparades: Området är redan inställt* när du försökte ange ett tema för standardbutiksvyn.
 
 <u>Steg som ska återskapas</u>:
 
 1. Logga in på Commerce Admin.
 1. Navigera till **Innehåll** > **Design** > **Konfiguration**.
-1. Ställ in konfigurationsomfånget på *Standardbutiksvy*.
-1. Ändra temat i **Tillämpat tema** nedrullningsbar meny. Från *Luma* till *Tom.*
-1. Klicka **Spara konfiguration**.
+1. Ange konfigurationsomfånget till *Standardbutiksvy*.
+1. Ändra temat i listrutan **Använt tema**. Exempel: från *Luma* till *Tom.*
+1. Klicka på **Spara konfiguration**.
 
 <u>Förväntat resultat</u>: Det valda temat används för standardbutiksvyn.
 
-<u>Faktiskt resultat</u> : Temat används inte, *&quot;Något gick fel när den här konfigurationen sparades: Området har redan angetts&quot;* felmeddelande visas.
+<u>Faktiskt resultat</u> : Temat används inte, *Något gick fel när konfigurationen sparades: Området är redan inställt* visas.
 
 ## Lappa
 
@@ -54,6 +54,6 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

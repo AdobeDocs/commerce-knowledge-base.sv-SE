@@ -21,7 +21,7 @@ När du gör en beställning från Admin-panelen fastnar du i valet av butik.
 
 <u>Steg som ska återskapas</u>
 
-1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Orders]** och välja en kund för att skapa en order.
+1. Gå till **[!UICONTROL Sales]** > **[!UICONTROL Orders]** och välj en kund för att skapa en order.
 2. Välj butik för att placera beställningen från butiksväljaren.
 
 <u>Förväntat resultat</u>
@@ -44,5 +44,5 @@ Korrigeringen skapades för och är kompatibel med Adobe Commerce i molninfrastr
 
 ## Så här sätter du på plåstret
 
-* Instruktioner om hur du använder korrigeringsfiler för Adobe Commerce i molninfrastrukturen finns i [Tillämpa patchar](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i vår Commerce on Cloud Infrastructure Guide.
-* Anvisningar om hur du använder korrigeringsfiler för Adobe Commerce lokalt finns i [Tillämpa patchar](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) i Commerce Upgrade Guide.
+* Instruktioner om hur du använder korrigeringsfiler för Adobe Commerce i molninfrastrukturen finns i [Tillämpa korrigeringsfiler](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) i vår Commerce om molninfrastrukturguide.
+* Anvisningar om hur du tillämpar korrigeringsfiler för Adobe Commerce lokalt finns i [Tillämpa korrigeringsfiler](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) i Commerce uppgraderingshandbok.

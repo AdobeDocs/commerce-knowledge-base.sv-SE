@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Beroende på vilka problem du kan råka ut för när du anpassar dina teman och utvecklar din butik kanske du inte har åtkomst via Commerce Admin. Du kan rensa och återställa till temats standardinställning utan att använda Admin. När du har rensat temat används Luma-standardtemat.
 
-Medan du utvecklar Adobe Commerce-komponenter (alla distributioner) och Magento Open Source-komponenter (moduler, teman och språkpaket), kräver den snabbt föränderliga miljön att du regelbundet rensar vissa kataloger och cacheminnen. Annars körs koden med undantag och fungerar inte som den ska. Mer information finns i [Rensa kataloger under utveckling](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html) i vår dokumentation för utvecklare.
+Medan du utvecklar Adobe Commerce-komponenter (alla distributioner) och Magento Open Source-komponenter (moduler, teman och språkpaket), kräver den snabbt föränderliga miljön att du regelbundet rensar vissa kataloger och cacheminnen. Annars körs koden med undantag och fungerar inte som den ska. Mer information finns i [Rensa kataloger under utveckling](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html) i utvecklardokumentationen.
 
 ## Miljö och teknik
 
@@ -41,4 +41,4 @@ På så sätt kommer inget tema att sättas in på visningsnivån för butiken, 
 
 ## Ytterligare information
 
-* [Rensa kataloger under utveckling](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html) i vår utvecklardokumentation
+* [Rensa kataloger under utveckling](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html) i utvecklardokumentationen

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Den här artikeln innehåller lösningar på fel som kan uppstå när du kör datamigreringsverktyget.
 
-## Källdokument/fält är inte mappade {#source-documents-fields-not-mapped}
+## Source-dokument/fält är inte mappade {#source-documents-fields-not-mapped}
 
 ### Felmeddelanden
 
@@ -40,15 +40,15 @@ i stället för källfiler.
 
 Vissa Adobe Commerce version 1-enheter (som i de flesta fall kommer från tillägg) finns inte i Adobe Commerce version 2-databasen.
 
-Det här meddelandet visas eftersom datamigreringsverktyget kör interna tester för att verifiera att tabeller och fält är konsekventa mellan *källa* (Adobe Commerce 1) och *mål* (Adobe Commerce 2) databaser.
+Det här meddelandet visas eftersom datamigreringsverktyget kör interna tester för att verifiera att tabeller och fält är konsekventa mellan databaserna *source* (Adobe Commerce 1) och *destination* (Adobe Commerce 2).
 
 ### Möjliga lösningar
 
 * Installera motsvarande Adobe Commerce 2-tillägg från [Commerce Marketplace](https://marketplace.magento.com/).     Om data som är i konflikt härstammar från ett tillägg som lägger till egna databasstrukturelement, kan Adobe Commerce 2-versionen av samma tillägg lägga till sådana element i måldatabasen (Adobe Commerce 2) och på så sätt åtgärda problemet.
-* Använd `-a` -argument när verktyget körs för att automatiskt lösa fel och förhindra att migreringen stoppas.
+* Använd argumentet `-a` när du kör verktyget för att lösa fel automatiskt och förhindra att migreringen stoppas.
 * Konfigurera verktyget för att ignorera problematiska data.
 
-Om du vill ignorera databasenheter lägger du till `<ignore>` tagga till en enhet i `map.xml` så här:
+Om du vill ignorera databasentiteter lägger du till taggen `<ignore>` i en entitet i filen `map.xml` enligt följande:
 
 ```xml
 ...
@@ -71,7 +71,7 @@ Om du vill ignorera databasenheter lägger du till `<ignore>` tagga till en enhe
 
 >[!WARNING]
 >
->Innan du ignorerar enheter med hjälp av mappningsfilen eller `-a` måste du se till att du inte behöver data som påverkas i din Adobe Commerce 2 Store.
+>Innan du ignorerar entiteter efter mappningsfil eller använder alternativet `-a` måste du se till att du inte behöver de data som påverkas i Adobe Commerce 2 Store.
 
 ## Klassen har inte mappats i posten {#class-does-not-exist-but-mentioned}
 
@@ -83,13 +83,13 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Orsak
 
-Det gick inte att hitta en klass från Adobe Commerce 1 i Adobe Commerce 2-kodbasen under [EAV-migreringssteg](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) i vår dokumentation för utvecklare. I de flesta fall tillhör den klass som saknas en [extension](https://glossary.magento.com/extension).
+Det gick inte att hitta en klass från Adobe Commerce 1-kodbasen i Adobe Commerce 2 under migreringssteget [EAV](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) i utvecklardokumentationen. I de flesta fall tillhör den klass som saknas ett [tillägg](https://glossary.magento.com/extension).
 
 ### Möjliga lösningar
 
 * Installera motsvarande Adobe Commerce 2-tillägg.
-* Ignorera attributet som orsakar problemet.    Lägg till attributet i `ignore` grupp i `eav-attribute-groups.xml.dist` -fil.
-* Lägg till klassmappning med `class-map.xml.dist` -fil.
+* Ignorera attributet som orsakar problemet.    För detta lägger du till attributet i gruppen `ignore` i filen `eav-attribute-groups.xml.dist`.
+* Lägg till klassmappning med filen `class-map.xml.dist`.
 
 ## Sekundärnyckelbegränsningen misslyckades
 
@@ -101,13 +101,13 @@ Foreign key <KEY_NAME> constraint fails on source database. Orphan records id: <
 
 ### Orsak
 
-Det saknas databasposter i `parent_table` till vilken `field_id` i `child_table` pekar på.
+Det saknas databasposter i `parent_table` som `field_id` av `child_table` pekar på.
 
 ### Möjlig lösning
 
-Ta bort posterna från `child_table` , om du inte behöver dem.
+Ta bort posterna från `child_table` om du inte behöver dem.
 
-Om du vill behålla posterna inaktiverar du `Data Integrity Step` genom att ändra datamigreringsverktygets `config.xml` .
+Om du vill behålla posterna inaktiverar du `Data Integrity Step` genom att ändra `config.xml` för datamigreringsverktyget.
 
 ## Dupliceringar i URL-omskrivningar
 
@@ -119,13 +119,13 @@ Request path: towel.html Store ID: 2 Target path: catalog/product/view/id/12
 
 ### Orsak
 
-The `Target path` i en URL-omskrivning måste anges med ett unikt par av `Request path` + `Store ID` . Det här felet rapporterar två poster som använder samma `Request path` + `Store ID` par med två olika `Target path` värden.
+`Target path` i en URL-omskrivning måste anges med ett unikt par av `Request path` + `Store ID` . Det här felet rapporterar två poster som använder samma `Request path` + `Store ID`-par med två olika `Target path`-värden.
 
 ### Möjlig lösning
 
-Aktivera `auto_resolve_urlrewrite_duplicates` i `config.xml` -fil.
+Aktivera alternativet `auto_resolve_urlrewrite_duplicates` i din `config.xml`-fil.
 
-Den här konfigurationen lägger till en hash-sträng i de poster i [URL](https://glossary.magento.com/url) skriver om och visar upplösningsresultatet i kommandoradsgränssnittet.
+Den här konfigurationen lägger till en hash-sträng i poster som står i konflikt med [URL](https://glossary.magento.com/url) skriver om och visar upplösningsresultatet i kommandoradsgränssnittet.
 
 ## Enheter som inte matchar {#mismatch-of-entities}
 
@@ -143,7 +143,7 @@ Saknade poster inträffar när en kund gör en beställning under migreringen.
 
 ### Möjlig lösning
 
-Kör datamigreringsverktyget i `Delta` läge för överföring av inkrementella ändringar.
+Kör datamigreringsverktyget i `Delta`-läge om du vill överföra inkrementella ändringar.
 
 ## Delalog har inte installerats {#deltalog-is-not-installed}
 
@@ -155,9 +155,9 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Orsak
 
-Detta fel inträffar under [stegvis migrering](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) (i vår utvecklardokumentation) om dataändringar. Det betyder deltabulationer (med prefix) `m2_cl_*`) hittades inte i Adobe Commerce 1-databasen. Verktyget installerar tabellerna under [datamigrering](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) (i vår dokumentation för utvecklare) liksom databasutlösare som spårar ändringar och fyller i tabeller för beskrivningar.
+Det här felet inträffar under [inkrementell migrering](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) (i vår utvecklardokumentation) av dataändringar. Det betyder att deltabulatorer (med prefix `m2_cl_*`) inte hittades i Adobe Commerce 1-databasen. Verktyget installerar dessa tabeller under [datamigrering](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) (i vår utvecklardokumentation) samt databasutlösare som spårar ändringar och fyller i deltabeller.
 
-En orsak till felet kan vara att du försöker migrera från en *copy* i Adobe Commerce 1-butiken, inte i själva butiken. När du gör en kopia från en Adobe Commerce 1-butik som aldrig har migrerats innehåller kopian inte de utlösare och ytterligare delatabeller som behövs för att slutföra en deltamigrering, så migreringen misslyckas. Datamigreringsverktyget gör INTE jämförelser mellan databasen för AC1 och AC2 för att migrera skillnaderna. Verktyget använder i stället de utlösare och delatogtabeller som installerats under den första migreringen för att utföra efterföljande deltmigreringar. I så fall kommer ditt exemplar av Adobe Commerce 1 DB inte att innehålla de utlösare och delatabeller som datamigreringsverktyget använder för att utföra en migrering.
+En orsak till felet kan vara att du försöker migrera från en *kopia* av din Adobe Commerce 1-butik, inte från själva livebutiken. När du gör en kopia från en Adobe Commerce 1-butik som aldrig har migrerats innehåller kopian inte de utlösare och ytterligare delatabeller som behövs för att slutföra en deltamigrering, så migreringen misslyckas. Datamigreringsverktyget gör INTE jämförelser mellan databasen för AC1 och AC2 för att migrera skillnaderna. Verktyget använder i stället de utlösare och delatogtabeller som installerats under den första migreringen för att utföra efterföljande deltmigreringar. I så fall kommer ditt exemplar av Adobe Commerce 1 DB inte att innehålla de utlösare och delatabeller som datamigreringsverktyget använder för att utföra en migrering.
 
 ### Möjlig lösning
 

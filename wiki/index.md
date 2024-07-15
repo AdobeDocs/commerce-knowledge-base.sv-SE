@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Välkommen till startsidan för Adobe Commerce Support Knowledge Base-rapportdokumentationen.
 Här hittar du dokument som hjälper dig att göra de bästa passningsbidragen och mallarna för samma ändamål.
-Om du vill veta mer om det allmänna bidragsflödet går du till [Contributor&#39;s Guide](../.github/CONTRIBUTING.md).
+Om du behöver lära dig mer om det allmänna bidragsflödet går du till [Contributor&#39;s Guide](../.github/CONTRIBUTING.md).
 
 ## Stödlinjer
 

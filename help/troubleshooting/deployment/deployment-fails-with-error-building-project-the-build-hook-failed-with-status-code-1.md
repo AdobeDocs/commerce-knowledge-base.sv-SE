@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Distributionen misslyckas med felet&quot;Error building project: The build krok failed with status code 1&quot;
 
-I den här artikeln beskrivs orsakerna till och lösningarna för Adobe Commerce när det gäller molninfrastrukturproblem, där installationsfasen misslyckas och felmeddelandet sammanfattas: *&quot;Fel när projekt skapades: Byggkroken misslyckades med statuskod 1&quot;*.
+I den här artikeln beskrivs orsaker och lösningar till Adobe Commerce-problemet med molninfrastruktur, där distributionsprocessens byggfas misslyckas, och felmeddelandet sammanfattas med: *&quot;Fel när projekt byggs: Bygget misslyckades med statuskod 1&quot;*.
 
 ## Berörda produkter och versioner
 
@@ -32,11 +32,11 @@ Distributionen har slutförts.
 <u>Faktiskt resultat</u>:
 
 1. Byggfasen misslyckas och hela installationsprocessen fastnar.
-1. I distributionsfelloggen avslutas felmeddelandet med: *&quot;Fel när projekt skapades: Byggkroken misslyckades med statuskod 1. Avbruten generering&quot;.*
+1. I distributionsfelloggen avslutas felmeddelandet med: *&quot;Fel när projektet skapades: Bygge-kroken misslyckades med statuskod 1. Avbruten generering.*
 
 ## Orsak
 
-Det finns många orsaker till varför det inte går att bygga upp miljön. Vanligtvis visas ett långt felmeddelande i distributionsloggen, där den första delen är mer specifik vad gäller orsaken och slutsatsen blir *&quot;Fel när projekt skapades: Byggkroken misslyckades med statuskod 1. Avbruten generering&quot;.*
+Det finns många orsaker till varför det inte går att bygga upp miljön. Vanligtvis visas ett långt felmeddelande i distributionsloggen, där den första delen skulle vara mer specifik med avseende på orsaken och slutsatsen skulle vara *&quot;Fel när projektet byggdes: Byggkopplingen misslyckades med statuskod 1. Avbruten generering.*
 
 Om du tittar närmare på den första problemspecifika delen kan du identifiera problemet. Här är de vanligaste och i nästa avsnitt finns lösningar:
 
@@ -47,9 +47,9 @@ Om du tittar närmare på den första problemspecifika delen kan du identifiera 
 
 ## Lösning
 
-* Kontrollera att det finns tillräckligt med lagringsutrymme. Information om hur du kontrollerar tillgängligt utrymme finns i [Kontrollera diskutrymme i molnmiljö med CLI](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md) artikel. Du kan överväga att rensa loggkatalogerna och/eller öka diskutrymmet.
+* Kontrollera att det finns tillräckligt med lagringsutrymme. Mer information om hur du kontrollerar tillgängligt utrymme finns i artikeln [Kontrollera diskutrymme i molnmiljö med CLI](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md) . Du kan överväga att rensa loggkatalogerna och/eller öka diskutrymmet.
 * Kontrollera att ECE-verktygen är korrekt konfigurerade.
-* Kontrollera om det är korrigeringen som orsakar problemet. Lös konflikten eller kontakten [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Mer information finns nedan.
+* Kontrollera om det är korrigeringen som orsakar problemet. Lös konflikten eller kontakta [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Mer information finns nedan.
 * Kontrollera om det är det anpassade tillägg som orsakar problemet. Lös konflikten eller kontakta tilläggsutvecklarna för lösningen.
 
 I följande stycken finns mer information.
@@ -63,11 +63,11 @@ Kataloger som ska beaktas för rensning:
 * `var/debug/`
 * `var`
 
-Mer information om hur du kan öka diskutrymmet om du har en Adobe Commerce-arkitektur för molninfrastrukturplanen Starter finns i [Öka diskutrymmet för integreringsmiljön i molnet](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md). Samma instruktioner kan användas för att öka utrymmet för Adobe Commerce i molninfrastrukturen Pro-planens integreringsmiljö. För Pro Production/Staging måste du skicka in en biljett till [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)och begär mer diskutrymme. Men det övervakas av Platform. I vanliga fall behöver du inte hantera detta när Adobe Commerce övervakar parametrarna och meddelar dig och/eller vidtar åtgärder enligt avtalet.
+Mer information om hur du kan öka diskutrymmet om du använder Adobe Commerce för startplanens arkitektur för molninfrastruktur finns i [Öka diskutrymmet för integreringsmiljön i molnet](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md). Samma instruktioner kan användas för att öka utrymmet för Adobe Commerce i molninfrastrukturen Pro-planens integreringsmiljö. För Pro Production/Staging måste du registrera en biljett till [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära utökat diskutrymme. Men det övervakas av Platform. I vanliga fall behöver du inte hantera detta när Adobe Commerce övervakar parametrarna och meddelar dig och/eller vidtar åtgärder enligt avtalet.
 
 ### Kontrollera att ECE-verktygen är korrekt konfigurerade
 
-1. Kontrollera att byggarhakarna är korrekt definierade i `magento.app.yaml` -fil. Om du använder Adobe Commerce 2.2.X ska du definiera byggkrokar enligt följande:
+1. Kontrollera att build-hooks har definierats korrekt i filen `magento.app.yaml`. Om du använder Adobe Commerce 2.2.X ska du definiera byggkrokar enligt följande:
 
    ```yaml
    # We run build hooks before your application has been packaged.
@@ -78,11 +78,11 @@ Mer information om hur du kan öka diskutrymmet om du har en Adobe Commerce-arki
        php ./vendor/bin/ece-tools deploy
    ```
 
-   Använd [Uppgradera till skolverktygen](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) artikel för referens.
+   Använd artikeln [Uppgradera till ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) som referens.
 
-1. Kontrollera att ECE-verktygspaketet finns i `composer.lock` genom att köra följande kommando:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; disposition.lock</code></pre>    Om de anges ser svaret ut som i följande exempel:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
+1. Kontrollera att ECE-verktygspaketet finns i filen `composer.lock` genom att köra följande kommando:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; disposition.lock</code></pre>    Om de anges ser svaret ut som i följande exempel:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
 
-Se [Uppgradera till skolverktygen](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) artikel för referens.
+Referens finns i artikeln [Uppgradera till delade verktyg](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html).
 
 ### Orsakar korrigeringen problemet?
 

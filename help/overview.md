@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # Adobe Commerce Support Knowledge Base
 
-![Knowledge Base - startsida](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
+![Knowledge Base-startsida](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
-Informationen i denna kunskapsbas kompletterar [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)och [Adobe Commerce Merchant Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)och andra Adobe Commerce-publikationer. Här beskrivs felsökning och bästa praxis, vardagsmeddelanden, svar på vanliga frågor och svar samt specifika scenarier som inte har omnämnts (av någon anledning) i den officiella dokumentationen.
+Informationen i den här kunskapsbasen kompletterar [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs), [Adobe Commerce Merchant Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) och andra Adobe Commerce-publikationer. Här beskrivs felsökning och bästa praxis, vardagsmeddelanden, svar på vanliga frågor och svar samt specifika scenarier som inte har omnämnts (av någon anledning) i den officiella dokumentationen.
 
 ## Vad finns i kunskapsbasen?
 
@@ -30,9 +30,9 @@ Informationen i denna kunskapsbas kompletterar [Adobe Commerce Developer Documen
 
 >[!NOTE]
 >
->Logga in på [Adobe Commerce Help Center](https://support.magento.com/) och följ stegen som beskrivs nedan [Skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+>Om du vill registrera en ny biljett loggar du in på [Adobe Commerce Help Center](https://support.magento.com/) och följer de steg som beskrivs under [Skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 >
->Om du inte ser alternativet att skicka in en biljett kan du läsa *[Skicka en biljettlänk visas inte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)* i vår [Användarhandbok för Help Center](/help/help-center-guide/help-center/magento-help-center-user-guide.md).
+>Om du inte ser alternativet att skicka en biljett läser du avsnittet *[Skicka en biljettlänk som inte visas](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)* i [användarhandboken för hjälpcentret](/help/help-center-guide/help-center/magento-help-center-user-guide.md).
 
 ## Nyheter
 
@@ -52,7 +52,7 @@ Informationen i denna kunskapsbas kompletterar [Adobe Commerce Developer Documen
   </tr>
 
 <td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/admin-create-order-page-in-csp-restricted-mode">Felsök hur du skapar en ordersida i begränsat läge för CSP:</a> Den här artikeln innehåller förklaringar och korrigeringar för Adobe Commerce 2.4.7-problem när en order skapas på adminsidan när begränsat CSP-läge är <em>Aktiverad</em>.  
+    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/admin-create-order-page-in-csp-restricted-mode">Felsök Skapa beställningssida i begränsat CSP-läge:</a> I den här artikeln finns förklaringar och korrigeringar för Adobe Commerce 2.4.7-problem när du skapar en order på administratörssidan när begränsat CSP-läge är <em>aktiverat</em>.  
     </td>
     <td>Ny artikel</td>
     <td>22 april 2024</td>
@@ -60,7 +60,7 @@ Informationen i denna kunskapsbas kompletterar [Adobe Commerce Developer Documen
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/storefront-checkout-page-in-csp-restricted-mode">Felsöka utcheckningssidan för butiker i begränsat läge för CSP:</a> Den här artikeln innehåller förklaringar och korrigeringar för Adobe Commerce 2.4.7-problem när du visar utcheckningssidan i begränsat CSP-läge med <em>"Körning av textbundet skript nekades eftersom det bryter mot följande direktiv om säkerhetsprincip för innehåll: "script-src ..."</em> felmeddelande i webbläsarkonsolloggen. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/storefront-checkout-page-in-csp-restricted-mode">Felsök utcheckningssidan för butiker i begränsat läge för CSP:</a> Den här artikeln innehåller förklaringar och korrigeringar för Adobe Commerce 2.4.7-problem när du visar utcheckningssidan i begränsat läge för CSP, med felmeddelandet <em>"Avvisat att köra infogat skript eftersom det bryter mot följande direktiv för innehållets säkerhetsprincip: "script-src ..."</em> i webbläsarkonsolloggen. 
     </td>
     <td>Ny artikel </td>
     <td>22 april 2024</td>
@@ -68,7 +68,7 @@ Informationen i denna kunskapsbas kompletterar [Adobe Commerce Developer Documen
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-54656-invisible-recaptcha-fails-during-checkout-preventing-order-placement">ACSD-54656: Osynlig reCAPTCHA fungerar inte under utcheckning för att förhindra orderplacering:</a> Korrigeringen ACSD-54656 åtgärdar ett problem där den osynliga reCAPTCHA inte fungerar som den ska vid utcheckning, vilket förhindrar att en order läggs. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.46 är installerat. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-54656-invisible-recaptcha-fails-during-checkout-preventing-order-placement">ACSD-54656: Osynlig reCAPTCHA fungerar inte under utcheckning och förhindrar därför att beställningen placeras:</a> Korrigeringsfilen ACSD-54656 åtgärdar ett fel där osynlig reCAPTCHA inte fungerar korrekt under utcheckning, vilket förhindrar att en beställning placeras. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.46 har installerats. 
     </td>
     <td>Ny artikel </td>
     <td>22 april 2024</td>
@@ -76,7 +76,7 @@ Informationen i denna kunskapsbas kompletterar [Adobe Commerce Developer Documen
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-46767-category-page-caches-invalidate-when-the-stock-quantity-changes">ACSD-46767: Kategorisidans cachning blir ogiltig när lagerkvantiteten ändras:</a> Korrigeringen ACSD-46767 åtgärdar ett problem där kategorisidan cachar blir ogiltig när lagerkvantiteten ändras, även om produkten fortfarande finns i lager. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.46 är installerat.  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-46767-category-page-caches-invalidate-when-the-stock-quantity-changes">ACSD-46767: Kategorisidans cachning blir ogiltig när lagerkvantiteten ändras:</a> Korrigeringsfilen ACSD-46767 åtgärdar ett problem där kategorisidan cachar blir ogiltig när lagerkvantiteten ändras, även om produkten fortfarande finns i lager. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.46 har installerats.  
     </td>
     <td>Ny artikel </td>
     <td>22 april 2024</td>
@@ -84,7 +84,7 @@ Informationen i denna kunskapsbas kompletterar [Adobe Commerce Developer Documen
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-45/acsd-56415-performance-of-partial-price-indexing-is-slowed-down-due-to-a-delete-query">ACSD-56415: Prestanda för partiell prisindexering är långsammare på grund av DELETE-fråga:</a> Korrigeringen ACSD-56415 åtgärdar ett problem där prestandan för partiell prisindexering försämras på grund av en DELETE-fråga när databasen har många partiella prisdataindex. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.45 är installerat.  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-45/acsd-56415-performance-of-partial-price-indexing-is-slowed-down-due-to-a-delete-query">ACSD-56415: Prestanda för partiell prisindexering har blivit långsammare på grund av DELETE-fråga:</a> Korrigeringen ACSD-56415 åtgärdar ett problem där prestandan för partiell prisindexering har blivit långsammare på grund av en DELETE-fråga när databasen har många partiella prisdataindex. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.45 har installerats.  
     </td>
     <td>Ny artikel </td>
     <td>22 april 2024</td>
@@ -92,7 +92,7 @@ Informationen i denna kunskapsbas kompletterar [Adobe Commerce Developer Documen
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel">ACSD-56858: Skillnad i rollbehörigheter i B2B-företagsadministratör:</a> Korrigeringen ACSD-56858 åtgärdar ett problem där rollbehörigheter felaktigt visas för en företagsadministratör med begränsat tillstånd i B2B-miljön. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 är installerat. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel">ACSD-56858: Skillnad i rollbehörigheter i B2B-företagsadministratör:</a> Korrigeringen för ACSD-56858 åtgärdar ett problem där rollbehörigheter felaktigt visas för en företagsadministratör med begränsat ansvar i B2B-miljön. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 har installerats. 
     </td>
     <td>Ny artikel </td>
     <td>22 april 2024</td>

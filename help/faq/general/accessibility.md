@@ -16,11 +16,11 @@ Vi förstår vikten av tillgänglighet på Adobe. Även om det är partnern/hand
 
 Adobe Commerce är mycket anpassningsbart och våra kunder kan utöka Luma-temat, skapa sina hjälpmedelsmoduler och besöka Commerce Marketplace för att hitta tillägg som uppfyller deras tillgänglighetskrav.
 
-Många av våra kunder använder [W3C Accessibility Standards](https://www.w3.org/WAI/standards-guidelines/) och använder [Adobe tillgänglighetsrapport för Adobe Commerce](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html).
+Många av våra kunder använder [W3C Accessibility Standards](https://www.w3.org/WAI/standards-guidelines/) och använder [Adobe Accessibility Conformance Report för Adobe Commerce](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html).
 
 Med hjälp av utvecklingsverktygen som är branschstandard kan du arbeta med en viktig hjälpmedelspartner eller implementera tillägg från Commerce Marketplace baserat på specifika kundkrav eller/eller Adobe:s överensstämmelserapport.
 
-Lösningar finns i [Commerce Marketplace](https://marketplace.magento.com/).
+Det finns lösningar i [Commerce Marketplace](https://marketplace.magento.com/).
 
 ## Relaterad läsning
 

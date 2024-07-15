@@ -23,7 +23,7 @@ Adobe Commerce 2.3.x
 
 <u>Steg som ska återskapas</u>
 
-(Krav: kontrollera att arkivet inte finns i [underhållsläge](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html#config-mode-show)).
+(Krav: kontrollera att arkivet inte är i [underhållsläge](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html#config-mode-show).)
 
 Navigera till Commerce Admin eller Store i en webbläsare.
 
@@ -39,11 +39,11 @@ HTTP 503-felet (tjänsten är inte tillgänglig) visas. Apache `error.log` inneh
 
 ## Orsak {#details}
 
-Kompatibilitetsmodulen Apache 2.4 `mod_access_compat` är inaktiverat, vilket resulterar i att Adobe Commerce URL-omskrivningar inte fungerar som de ska.
+Kompatibilitetsmodulen `mod_access_compat` för Apache 2.4 är inaktiverad, vilket gör att Adobe Commerce URL-skrivningar inte fungerar som de ska.
 
 ## Lösning {#suggested-solution}
 
-Aktivera `mod_access_compat` Apache-modulen och starta om Apache genom att köra följande som en användare med behörigheten &#39;root&#39;:
+Aktivera Apache-modulen `mod_access_compat` och starta om Apache genom att köra följande som en användare med behörighet för root:
 
 ```bash
 a2enmod access_compat
@@ -80,5 +80,5 @@ apache2
 
 * [Apache-dokumentation om mod\_access\_compat](https://httpd.apache.org/docs/current/mod/mod_access_compat.html)
 * [Apache-dokumentation om mod\_authz\_host](https://httpd.apache.org/docs/current/mod/mod_authz_host.html)
-* [Beställ, Tillåt, Neka från den slutliga Apache-guiden](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
+* [Beställa, tillåt, neka från den slutgiltiga Apache-guiden](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
 * [askubuntu.com](https://askubuntu.com/questions/335228/changes-in-apache-config-between-12-04-2-and-12-04-3-lts)

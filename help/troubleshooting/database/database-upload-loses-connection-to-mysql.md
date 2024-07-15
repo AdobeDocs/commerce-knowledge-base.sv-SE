@@ -35,14 +35,14 @@ Detta beror vanligtvis på att det inte finns tillräckligt med diskutrymme för
 
 ## Lösning
 
-Kontrollera om det inte finns tillräckligt med diskutrymme. Om du vill göra det kör du `netcat` i CLI mot databasporten 3306; ett meddelande visas om det är fullt:
+Kontrollera om det inte finns tillräckligt med diskutrymme. Om du vill göra det kör du kommandot `netcat` i CLI mot databasporten 3306. Det visas ett meddelande om disken är full:
 
 ```
 web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Du måste tilldela mer utrymme för databasen i `services.yaml` och distribuera om det finns utrymme som inte används. Om du vill se steg går du till [Diskutrymme för tjänst](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
+Du måste tilldela mer utrymme för databasen i `services.yaml` och distribuera om det finns utrymme som inte används. Mer information finns i [Service Disk Space](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
 
 Obs! I Pro-arkitekturplanen kan du kontrollera det tilldelade utrymmet på din partition genom att köra följande kommando: `df -h`
 
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## Relaterad läsning
 
-[Hantera diskutrymme](https://devdocs.magento.com/cloud/project/manage-disk-space.html) i vår utvecklardokumentation
+[Hantera diskutrymme](https://devdocs.magento.com/cloud/project/manage-disk-space.html) i utvecklardokumentationen

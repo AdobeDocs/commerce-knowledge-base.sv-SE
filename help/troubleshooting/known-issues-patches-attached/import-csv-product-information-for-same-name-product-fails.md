@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # Det gick inte att importera CSV-produktinformation för samma namnprodukt
 
-I den här artikeln finns en patch för det kända Adobe Commerce 2.2.3-problemet som rör hämtning av fel vid import av en `.csv` fil med produktinformation om det finns produkter med samma namn.
+I den här artikeln finns en korrigering för det kända Adobe Commerce 2.2.3-problemet som rör fel vid import av en `.csv`-fil med produktinformation om det finns produkter med samma namn.
 
 ## Problem
 
-När en `.csv` fil med produktinformation importeras, och det finns produkter med samma namn, visas följande fel i steget Kontrollera data: *&quot;`URL Key XYZ was already generated for an item with the SKU %sku%"`*. Problemet orsakas av att produkternas URL-adresser skrivs om under importen, även när det inte finns någon kolumn för produkternas URL-adresser i de importerade `.csv` -fil.
+När en `.csv`-fil med produktinformation importeras och det finns produkter med samma namn visas följande fel i steget Kontrollera data: *`URL Key XYZ was already generated for an item with the SKU %sku%"`*. Problemet orsakas av att produkternas URL-adresser skrivs om under importen, även när det inte finns någon kolumn för produkternas URL-adresser i den importerade `.csv`-filen.
 
 <u>Steg som ska återskapas</u>:
 
 1. Skapa två konfigurerbara produkter med samma namn i Commerce Admin.
-1. Skapa en `.csv` -fil för import av data för dessa produkter, som till exempel innehåller följande kolumner: `sku` | `product_type` | `name` | `product_websites` | `store_view_code`
-1. Gå till **System** > **Dataöverföring** > **Importera** och väljer `.csv` -fil.
-1. Klicka **Kontrollera data**.
+1. Skapa en `.csv`-fil för att importera data för dessa produkter, som till exempel har följande kolumner: `sku` | `product_type` | `name` | `product_websites` | `store_view_code`
+1. Gå till **System** > **Dataöverföring** > **Importera** och markera filen `.csv`.
+1. Klicka på **Kontrollera data**.
 
 <u>Förväntat resultat</u>:
 
-Inga problem hittades. Du kan importera `.csv` filen har slutförts.
+Inga problem hittades. Du kan importera filen `.csv`.
 
 <u>Faktiskt resultat</u>:
 
-Följande felmeddelande visas: *&quot;URL-nyckel XYZ har redan genererats för ett objekt med SKU %sku%&quot;* går det inte att importera filen.
+Följande felmeddelande visas: *&quot;XYZ för URL-nyckel har redan genererats för ett objekt med SKU %sku%&quot;*, det går inte att importera filen.
 
 ## Lappa
 
@@ -53,10 +53,10 @@ Korrigeringen är även kompatibel (men löser kanske inte problemet) med följa
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Användbara länkar
 
-[Använd anpassade korrigeringsfiler för Adobe Commerce i molninfrastruktur](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html)
+[Använd anpassade korrigeringsfiler för Adobe Commerce i molninfrastrukturen](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html)
 
 ## Bifogade filer

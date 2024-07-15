@@ -25,9 +25,9 @@ Den här artikeln innehåller en patch för Adobe Commerce 2.4.5-utgåvan där e
 
 <u>Steg som ska återskapas</u>:
 
-1. Integreringen av Braintree används (**Lager** > **Konfigurationer** > **Försäljning** > **Betalningssätt** > **Braintree**).
+1. Integreringen av Braintree används (**Lagrar** > **Konfigurationer** > **Försäljning** > **Betalningsmetod** > **Braintree**).
 1. Gör en beställning med Luma Storefront.
-1. Gå till administratörsgränssnittet > **Försäljning**.
+1. Gå till Admin UI > **Sales**.
 1. Försök antingen att skapa en ny order för en kund eller gå till en tidigare placerad order och klicka på **Ändra ordning**.
 
 <u>Förväntat resultat</u>:
@@ -74,4 +74,4 @@ Korrigeringen skapades för:
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.

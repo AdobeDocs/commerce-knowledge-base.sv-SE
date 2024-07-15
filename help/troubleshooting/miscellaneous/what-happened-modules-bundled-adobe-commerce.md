@@ -17,7 +17,7 @@ Den här artikeln innehåller en lösning för när moduler som ingår i tidigar
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce (alla distributionsmetoder) alla  [versionerna](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce (alla distributionsmetoder) alla [versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
@@ -35,4 +35,4 @@ Installera/köp de officiella tilläggen separat. Dessa finns på [Commerce Mark
 
 ## Relaterad läsning
 
-[Leverantörsprogramtillägg](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) i Adobe Commerce Documentation > Release Information > Versionsinformation för Adobe Commerce 2.4.4.
+[Leverantörspaketerade tillägg](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) i Adobe Commerce Documentation > Release Information > Versionsinformation för Adobe Commerce 2.4.4.

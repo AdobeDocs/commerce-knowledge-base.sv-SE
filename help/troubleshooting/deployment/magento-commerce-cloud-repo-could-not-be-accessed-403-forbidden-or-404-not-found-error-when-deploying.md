@@ -6,7 +6,7 @@ feature: Cloud, Deploy, Paas, Variables
 role: Developer
 source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I den här artikeln beskrivs hur du löser problemet med misslyckade distribueringsfel i Adobe Commerce om molninfrastruktur på ungefär följande sätt:
 
-&quot;*Det gick inte att komma åt https://repo.magento.com/archives/magento/magento-cloud-configuration/magento-magento-cloud-configuration-x.x.x.x.zip&#39; URL: HTTP/1.1 403 - Ej tillåtet* &quot;. Eller &quot;*https://repo.magento.com/archives/magento/module-customer-segment/magento-module-customer-segment-102.0.5.0-patch2.zip&quot; kunde inte laddas ned (HTTP/1.1 404 Hittades inte)*&quot;.
+&quot;*Det gick inte att komma åt https://repo.magento.com/archives/magento/magento-cloud-configuration/magento-magento-cloud-configuration-x.x.x.x.zip&#39; URL: HTTP/1.1 403 Forbidden* &quot;. Eller så gick det inte att hämta filen *https://repo.magento.com/archives/magento/module-customer-segment/magento-module-customer-segment-102.0.5.0-patch2.zip (HTTP/1.1 404 Hittades inte)*.
 
 ## Berörda produkter och versioner
 
@@ -59,18 +59,18 @@ Några orsaker till att nycklarna inte är giltiga är:
 Gör så här för att lösa problemet med auktoriseringsnycklarna (se avsnitten nedan för mer information om varje steg):
 
 1. Hämta giltiga auktoriseringsnycklar (hoppa över detta om du är helt säker på att din nyckel är giltig).
-1. Lägg till nyckelvärdet i `env:COMPOSER_AUTH` variabeln (eller kontrollera att rätt värde finns) och kontrollera om nycklarna anges konsekvent i variabeln på projektnivå och miljönivå samt i `auth.json` filen (om den finns) i projektets rot.
-1. Uppdatera eller ta bort `auth.json`, till att ha en plats där nyckeln är konfigurerad, om värdena för auktoriseringsnycklar inte har angetts eller har ett annat värde.
+1. Lägg till nyckelvärdet i variabeln `env:COMPOSER_AUTH` (eller se till att rätt värde finns) och kontrollera om nycklarna anges konsekvent i variabeln på projektnivå och miljönivå samt i filen `auth.json` (om den finns) i projektroten.
+1. Uppdatera eller ta bort `auth.json`, så att det finns en plats där nyckeln är konfigurerad, om värdena för auktoriseringsnycklar inte har angetts eller har ett annat värde.
 
 ### 1. Skaffa giltiga auktoriseringsnycklar
 
 Om du använder nycklarna som skapats med det delade kontot måste du kontakta den Adobe Commerce-licensägare som ger dig åtkomst och begära att de genererar nycklarna åt dig.
 
-Om din licens har återkallats tidigare på grund av betalningsproblem, och du har löst dessa problem och din licens har förnyats, måste du [generera nya autentiseringsnycklar](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html).
+Om din licens har återkallats tidigare på grund av betalningsproblem och du har löst problemen och din licens har förnyats, måste du [generera de nya autentiseringsnycklarna](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html).
 
 ### 2. Lägg till nyckelvärdet i variabeln env:COMPOSER\_AUTH och kontrollera om samma nycklar anges i auth.json
 
-Se instruktionerna och relaterad information i [Förbered ditt befintliga system](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#auth-json) och [Lägg till autentiseringsnycklar](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#add-authentication-keys) i vår dokumentation för utvecklare.
+Se instruktionerna och relaterad information i [Förbered ditt befintliga system](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#auth-json) och [Lägg till autentiseringsnycklar](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#add-authentication-keys) i utvecklardokumentationen.
 
 ### 3. Uppdatera eller ta bort auth.json
 
@@ -78,9 +78,9 @@ Här följer en stegvis beskrivning av hur du uppdaterar dina auktoriseringsnyck
 
 1. Logga in på den dator som har din Adobe Commerce på SSH-nycklar för molninfrastruktur.
 1. Logga in på ditt projekt: `magento-cloud login`
-1. Skapa en gren för att uppdatera koden (i följande exempel är grennamnet `auth` skapas från den primära grenen):     `magento-cloud environment:branch auth master`
+1. Skapa en gren för att uppdatera koden (i följande exempel skapas grennamnet `auth` från den primära grenen):     `magento-cloud environment:branch auth master`
 1. Byt till projektets rotkatalog.
-1. Valfritt: Ta bort `auth.json` om du vill och fortsätter [steg 9](#step9).
+1. Valfritt: Ta bort `auth.json` om du vill och fortsätt till [steg 9](#step9).
 1. Öppna `auth.json` i en textredigerare.
 
    ```json

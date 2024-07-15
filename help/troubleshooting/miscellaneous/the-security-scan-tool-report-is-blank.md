@@ -23,8 +23,8 @@ I den här artikeln finns en korrigering av problemet där verktyget för säker
 
 <u>Steg som ska återskapas</u>:
 
-1. Konfigurera säkerhetssökningsverktyget för att kontrollera din webbplats, enligt beskrivningen i [Säkerhetsgenomsökning](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) i vår användarhandbok.
-1. I åtgärdskolumnen väljer du **Kör genomsökning**.
+1. Konfigurera verktyget för säkerhetsgenomsökning för att kontrollera din webbplats, enligt beskrivningen i [Säkerhetsgenomsökning](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) i användarhandboken.
+1. Välj **Kör skanning** i åtgärdskolumnen.
 
 <u>Förväntade resultat</u>:
 
@@ -43,9 +43,9 @@ Det här problemet kan uppstå eftersom verktyget för säkerhetsgenomsökning i
 Försök att öppna din webbplats.
 
 * Om sidan läses in som den ska kan du behöva lägga till de IP-adresser som används av verktyget för säkerhetsgenomsökning i Tillåtelselista i brandväggen. Följande IP-adresser används: 52.87.98.44, 34.196.167.176, 3.218.25.102 vid portarna 80 och 443.
-* Om webbplatsen inte läses in och returnerar *&quot;Det uppstod ett fel när din begäran bearbetades&quot;* kan du söka efter eventuella fel på webbplatsen.
+* Om webbplatsen inte läses in och returnerar meddelandet *&quot;Det uppstod ett fel när din begäran skulle bearbetas&quot;* kontrollerar du om det finns eventuella fel på webbplatsen.
 
 ## Relaterad läsning
 
-* [Publicera och starta](https://devdocs.magento.com/guides/v2.3/cloud/live/live.html?_ga=2.73579601.273749082.1559572284-888339099.1547722854#security-scan) i vår dokumentation för utvecklare.
+* [Publicera och starta](https://devdocs.magento.com/guides/v2.3/cloud/live/live.html?_ga=2.73579601.273749082.1559572284-888339099.1547722854#security-scan) i utvecklardokumentationen.
 * [Säkerhetsgenomsökning](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) i vår användarhandbok.

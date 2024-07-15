@@ -29,4 +29,4 @@ Följande meddelande visas i beredskapskontrollen:
 
 ## Lösning
 
-För att lösa det här problemet, se om det finns en `<magento_root>/update` katalog som innehåller filer och underkataloger. I annat fall, se [Konfigurera uppdateraren](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) i vår dokumentation för utvecklare.
+Du kan lösa det här problemet genom att kontrollera om det finns en `<magento_root>/update`-katalog som innehåller filer och underkataloger. Annars kan du läsa [Konfigurera uppdateraren](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) i utvecklardokumentationen.

@@ -21,7 +21,7 @@ I den här artikeln finns en lösning på problemet när Snabbildsoptimering (IO
 
 ## Problem
 
-På sidan Snabbkonfiguration, bredvid IO-kodfragmentet Fast, ser du läget Aktuell: \_disabled \_med följande meddelande under: Kontakta din säljare eller skicka ett e-postmeddelande till `support@fastly.com` för att begära aktivering av bildoptimering för tjänsten Snabbt.
+På sidan Snabbkonfiguration, bredvid IO-kodfragmentet Fast, ser du läget Aktuell: \_disabled \_med följande meddelande under: Kontakta din säljare eller skicka ett e-postmeddelande till `support@fastly.com` för att begära aktivering av bildoptimering för din snabbtjänst.
 
 ## Orsak
 
@@ -29,4 +29,4 @@ Webbplatsen kanske inte är publicerad än. Det finns processer för att förhan
 
 ## Lösning
 
-Skapa en [Supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär optimering av bilder.
+Skapa en [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär bildoptimering.

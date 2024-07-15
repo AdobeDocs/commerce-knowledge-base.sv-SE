@@ -21,13 +21,13 @@ Adobe Commerce (alla distributionsmetoder) 2.4.4
 
 ## Problem
 
-När man använder Apple Pay eller Google Pay som betalningsmetod får man felmeddelandet &quot;*Kommandot vault_capture finns inte. Kontrollera kommandot och försök igen.*&quot; när partiella fakturor skapades.
+När du använder Apple Pay eller Google Pay som betalningsmetod visas felet *Kommandot vault_capture finns inte. Kontrollera kommandot och försök igen.* när partiella fakturor skapades.
 
 <u>Steg som ska återskapas</u>:
 
 1. Öppna Adobe Commerce webbplats.
 1. Lägg en enkel produkt i kundvagnen (kvantitet 2).
-1. Välj **Apple Pay** eller **Google Pay** som betalningsmetod från kundvagnen.
+1. Välj **Apple Pay** eller **Google Pay** som betalningsmetod i kundvagnen.
 1. Beställ.
 1. Öppna orderinformation från back end.
 1. Skapa en delfaktura.
@@ -39,7 +39,7 @@ Partiella fakturor skapas.
 
 <u>Faktiska resultat</u>:
 
-Den första partiella fakturan skapas. När användaren skapar den andra delfakturan visas följande fel: *Kommandot vault_capture finns inte. Verifiera kommandot och försök igen*.
+Den första partiella fakturan skapas. När användaren skapar den andra partiella fakturan visas följande fel: *Kommandot vault_capture finns inte. Verifiera kommandot och försök igen*.
 
 ## Orsak
 
@@ -53,4 +53,4 @@ Adobe Commerce sparar kreditkortsinformation i valvet för att skapa partiella f
 
 ## Så här använder du patchen
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).

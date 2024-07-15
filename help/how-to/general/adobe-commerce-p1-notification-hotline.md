@@ -16,12 +16,12 @@ I den här artikeln finns snabbradsnummer för P1-meddelanden för Adobe Commerc
 
 ## P1-incidentdefinition
 
-Enligt definition i [Adobe Commerce Support Services - villkor](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf):&quot;En P1-incident är en katastrofal produktionsincident inom tjänsten som allvarligt påverkar kundens webbplats och som gör att platsen inte längre kan hantera eller ta emot beställningar, eller på grund av att kundens webbplats är helt ur funktion eller inte fungerar, eller som leder till en förlust av produktionsdata och ingen lösning finns. P1-incidenter måste rapporteras på Adobe avgiftsfria P1-telefonnummer för att underlätta upplösningen. Adobe kommer att fortsätta att arbeta, med lämplig eskalering till den högsta ledningen, för att tillhandahålla en lösning för ett P1-ärende så snart det är kommersiellt rimligt.&quot;
+Så som definieras i [Adobe Commerce Support Services-villkor](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf):&quot;En P1-incident är en katastrofal produktionsincident i tjänsten som allvarligt påverkar kundens webbplats, som får webbplatsen att sluta hantera eller acceptera beställningar, eller på grund av vilken kundens webbplats är helt ur funktion eller inte fungerar, eller som leder till en förlust av produktionsdata och ingen lösning finns. P1-incidenter måste rapporteras på Adobe avgiftsfria P1-telefonnummer för att underlätta upplösningen. Adobe kommer att fortsätta att arbeta, med lämplig eskalering till den högsta ledningen, för att tillhandahålla en lösning för ett P1-ärende så snart det är kommersiellt rimligt.&quot;
 
 ## P1-meddelande - telefonprinciper för hotline
 
 * P1-meddelandetjänsten är tillgänglig för att rapportera P1-nivåproblem. (se definitionen av P1-incidenten i föregående avsnitt).
-* [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) innan Adobe Commerce P1-meddelandet anropas.
+* [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) innan du anropar snabbraden för Adobe Commerce P1-meddelanden.
 * Utredning, felsökning och kommunikation sker uteslutande inom supportbiljetten.
 * Lägg till all ytterligare information som du kan ha angående problemet direkt till biljetten, innan du ringer.
 * Se till att du har biljettnumret när du ringer.

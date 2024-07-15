@@ -1,6 +1,6 @@
 ---
-title: Google Tag Manager fungerar inte på [!DNL Live Search] widget
-description: Den här artikeln innehåller en lösning för [!DNL Live Search Product Listing Widget] orsakar [!DNL Google Tag Manager] för att sluta fungera.
+title: Google Tag Manager har brutits av  [!DNL Live Search] widgeten
+description: I den här artikeln finns en lösning för  [!DNL Live Search Product Listing Widget] som får [!DNL Google Tag Manager] att sluta fungera.
 feature: Install, Search, Best Practices
 role: Admin, Developer
 exl-id: 485f8ccb-cba2-4785-a8e1-a1e98c88b21e
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Google Tag Manager] bryts av [!DNL Live Search] widget
+# [!DNL Google Tag Manager] har brutits av widgeten [!DNL Live Search]
 
-Den här artikeln innehåller en lösning för [!DNL Live Search Product Listing Widget] orsakar [!DNL Google Tag Manager] för att sluta fungera.
+Den här artikeln erbjuder en lösning till [!DNL Live Search Product Listing Widget] som får [!DNL Google Tag Manager] att sluta fungera.
 
 ## Berörda produkter och versioner
 
@@ -21,16 +21,16 @@ Den här artikeln innehåller en lösning för [!DNL Live Search Product Listing
 
 ## Problem
 
-The [!DNL Live Search Product Listing Widget] orsaker [!DNL Google Tag Manager] för att sluta fungera.
+[!DNL Live Search Product Listing Widget] gör att [!DNL Google Tag Manager] slutar fungera.
 
 ## Lösning
 
-Se till att [!DNL Google Tag Manager] fungerar med [!DNL Live Search], använder du *Sökadapter*.
+Använd *Sökadaptern* för att se till att [!DNL Google Tag Manager] fungerar med [!DNL Live Search].
 
-Om du vill göra det inaktiverar du widgeten i Admin. [!DNL Live Search] används som standard *Sökadapter*.
+Om du vill göra det inaktiverar du widgeten i Admin. [!DNL Live Search] använder som standard *sökkortet*.
 
 ## Relaterad läsning
 
-* [[!DNL Live Search] Stödlinjeöversikt](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) i vår Adobe Commerce Live Search-dokumentation
+* [[!DNL Live Search] Översikt över guiden](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) i vår Adobe Commerce Live Search-dokumentation
 
 * [Installerar [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) i vår Adobe Commerce Live Search-dokumentation

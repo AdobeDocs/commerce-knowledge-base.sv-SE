@@ -50,18 +50,18 @@ Om en distribution misslyckas efter att en ändring har gjorts i den primära ko
 
 ### Inaktivera åtkomstnyckeln
 
-Om du inte har tillgång till [Commerce Marketplace](https://marketplace.magento.com/) konto som är associerat med den gamla nyckeln, [kontakta Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill inaktivera nyckeln.
+Om du inte har åtkomst till det [Commerce Marketplace](https://marketplace.magento.com/)-konto som är kopplat till den gamla nyckeln, [kontaktar du Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att inaktivera nyckeln.
 
 Om du har tillgång till det Marketplace-konto som är kopplat till den gamla nyckeln utför du följande steg för att inaktivera nyckeln:
 
 1. Logga in på [Commerce Marketplace](https://marketplace.magento.com/) med inloggningsuppgifterna från det gamla kontot.
 1. Klicka på kontonamnet längst upp till höger på sidan och välj **Min profil**.
-1. Klicka **Åtkomsttangenter** på Marketplace-fliken.
+1. Klicka på **Åtkomstnycklar** på fliken Marketplace.
 
    ![magento_products_access_keys_2.4.1.png](/help/troubleshooting/miscellaneous/assets/magento_products_access_keys_2.4.1.png)
 
-1. Klicka **Inaktivera** bredvid åtkomstnyckeln.
+1. Klicka på **Inaktivera** bredvid åtkomstnyckeln.
 
 ## Relaterad läsning
 
-* [Hämta dina autentiseringsnycklar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html) i vår dokumentation för utvecklare.
+* [Hämta dina autentiseringsnycklar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html) i utvecklardokumentationen.

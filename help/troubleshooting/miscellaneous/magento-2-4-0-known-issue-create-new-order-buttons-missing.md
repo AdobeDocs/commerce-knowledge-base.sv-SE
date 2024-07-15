@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0: Knapparna Skapa ny order saknas
 
-I den här artikeln finns en lösning på ett känt problem i Commerce Admin för två saknade knappar på sidan för att skapa order. När du skapar en ny beställning för en ny eller befintlig kund går det inte att lägga till produkter i beställningen från katalogen sedan **Lägg till produkter efter SKU** och **Lägg till produkter** knappar saknas. Detta orsakas av att JS-paketering har aktiverats. En fix kommer att finnas i Adobe Commerce 2.4.1.
+I den här artikeln finns en lösning på ett känt problem i Commerce Admin för två saknade knappar på sidan för att skapa order. När du skapar en ny beställning för en ny eller befintlig kund går det inte att lägga till produkter i beställningen från katalogen eftersom knapparna **Lägg till produkter efter SKU** och **Lägg till produkter** saknas. Detta orsakas av att JS-paketering har aktiverats. En fix kommer att finnas i Adobe Commerce 2.4.1.
 
 ## Berörda produkter och versioner
 
@@ -25,16 +25,16 @@ I den här artikeln finns en lösning på ett känt problem i Commerce Admin fö
 <u>Steg som ska återskapas</u>
 
 1. Gå till **Kunder > Alla kunder**.
-1. Klicka på **Redigera** länk till en kund.
-1. Klicka på **Skapa order** -knappen.
+1. Klicka på länken **Redigera** för en kund.
+1. Klicka på knappen **Skapa ordning** .
 
 <u>Förväntat resultat</u>
 
-The **Lägg till produkter efter SKU** och **Lägg till produkter** knapparna visas på **Skapa ny order** sida.
+Knapparna **Lägg till produkter efter SKU** och **Lägg till produkter** visas på sidan **Skapa ny ordning**.
 
 <u>Faktiskt resultat</u>
 
-The **Lägg till produkter efter SKU** och **Lägg till produkter** knappar saknas på **Skapa ny order** sida.
+Knapparna **Lägg till produkter efter SKU** och **Lägg till produkter** saknas på sidan **Skapa ny ordning**.
 
 ## Tillfällig lösning
 

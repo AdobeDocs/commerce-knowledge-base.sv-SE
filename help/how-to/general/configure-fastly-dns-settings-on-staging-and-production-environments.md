@@ -11,4 +11,4 @@ ht-degree: 0%
 
 # Konfigurera snabbt DNS-inställningar i mellanlagrings- och produktionsmiljöer
 
-Läs mer i [Konfigurera snabbt](https://devdocs.magento.com/cloud/cdn/configure-fastly.html) i vår utvecklardokumentation för den senaste informationen.
+Läs artikeln [Setup Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html) i utvecklardokumentationen om du vill ha den senaste informationen.

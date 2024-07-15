@@ -24,9 +24,9 @@ I den här artikeln finns en fix för Adobe Commerce lokalt och Adobe Commerce o
 
 >[!NOTE]
 >
->Den här artikeln gäller inte den situation där du får ett 404-fel när du försöker [förhandsgranska mellanlagringsuppdateringen](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change). Om du stöter på ett sådant problem, öppna ett [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+>Den här artikeln gäller inte den situation där du får ett 404-fel när du försöker [förhandsgranska mellanlagringsuppdateringen](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change). Öppna en [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du stöter på det problemet.
 
-Om du får åtkomst till en butikssida eller Admin genereras felet 404 (sidan&quot;Hopp, vår dåliga...&quot;) efter att du har utfört åtgärder med schemalagda uppdateringar för att lagra innehåll med hjälp av [Innehållsmellanlagring](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) (uppdateringar av butiksinnehållsresurser som schemaläggs med [Magento\_Mellanlagringsmodul](https://developer.adobe.com/commerce/php/module-reference/)). Du kan till exempel ha tagit bort en produkt med en schemalagd uppdatering eller tagit bort slutdatumet för den schemalagda uppdateringen.
+Om du får åtkomst till en butikssida eller Admin genereras felet 404 (sidan&quot;Hoppsan, vår dåliga..&quot;) efter att du har utfört åtgärder med schemalagda uppdateringar för att lagra innehållsresurser med [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) (uppdateringar för att lagra innehållsresurser som schemalagts med modulen [Magento\_Staging](https://developer.adobe.com/commerce/php/module-reference/)). Du kan till exempel ha tagit bort en produkt med en schemalagd uppdatering eller tagit bort slutdatumet för den schemalagda uppdateringen.
 
 En resurs för butiksinnehåll innehåller:
 
@@ -42,11 +42,11 @@ Vissa scenarier beskrivs i avsnittet Orsak nedan.
 
 ## Orsak
 
-The `flag` tabellen i databasen (DB) innehåller ogiltiga länkar till `staging_update` tabell.
+Tabellen `flag` i databasen (DB) innehåller ogiltiga länkar till tabellen `staging_update`.
 
 Problemet är relaterat till innehållsindelning. Nedan visas två olika scenarier. Observera att det kan finnas fler situationer som utlöser problemet.
 
-**Scenario 1** Tar bort en resurs för butiksinnehåll som:
+**Scenario 1:** Tar bort en resurs för butiksinnehåll som:
 
 * har en uppdatering schemalagd med Content Staging
 * uppdateringen har ett slutdatum (vilket innebär det förfallodatum efter vilket den uppdaterade tillgången återgår till sin tidigare version)
@@ -54,7 +54,7 @@ Problemet är relaterat till innehållsindelning. Nedan visas två olika scenari
 
 Samtidigt kan problemet bero på att en borttagen tillgång inte har något slutdatum för den schemalagda uppdateringen.
 
-**Scenario 2** Tar bort slutdatumet/sluttiden för en schemalagd uppdatering.
+**Scenario 2:** Tar bort slutdatum/tid för en schemalagd uppdatering.
 
 ### Identifiera om ditt problem är relaterat
 
@@ -68,19 +68,19 @@ Kör följande DB-fråga för att identifiera om problemet som du har drabbats a
    -> WHERE flag_code = 'staging';
 ```
 
-Om frågan returnerar en tabell där `update_exists` värdet är &quot;0&quot;, så en ogiltig länk till `staging_update` tabellen finns i databasen och stegen som beskrivs i [Lösningsavsnitt](#solution) hjälper till att lösa problemet. Följande är ett exempel på frågeresultatet med `update_exists` värdet är lika med &quot;0&quot;:
+Om frågan returnerar en tabell där värdet `update_exists` är 0, finns det en ogiltig länk till tabellen `staging_update` i databasen, och de steg som beskrivs i avsnittet [Lösning](#solution) hjälper dig att lösa problemet. Följande är ett exempel på frågeresultatet med värdet `update_exists` som är lika med &quot;0&quot;:
 
 ![update_exists_0.png](assets/update_exists_0.png)
 
-Om frågan returnerar en tabell där `update_exists` värdet är &quot;1&quot; eller ett tomt resultat, vilket betyder att ditt problem inte är relaterat till mellanlagringsuppdateringar. Följande är ett exempel på frågeresultatet med `update_exists` värde lika med &quot;1&quot;:
+Om frågan returnerar en tabell där värdet `update_exists` är 1 eller ett tomt resultat betyder det att ditt problem inte är relaterat till mellanlagringsuppdateringar. Följande är ett exempel på frågeresultatet med värdet `update_exists` som är lika med &quot;1&quot;:
 
 ![updates_exist_1.png](assets/updates_exist_1.png)
 
-I det här fallet kan du hänvisa till [Felsökare för nedtryckt webbplats](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) för felsökning av idéer.
+I det här fallet kan du läsa [Felsökning för plats](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) för felsökning av idéer.
 
 ## Lösning
 
-1. Kör följande fråga för att ta bort den ogiltiga länken till `staging_update` tabell:
+1. Kör följande fråga för att ta bort den ogiltiga länken till tabellen `staging_update`:
 
    ```sql
    DELETE FROM flag WHERE flag_code = 'staging';
@@ -88,4 +88,4 @@ I det här fallet kan du hänvisa till [Felsökare för nedtryckt webbplats](/he
 
 1. Vänta tills cron-jobbet körs (körs på upp till fem minuter om konfigurationen är korrekt) eller kör det manuellt om du inte har ställt in cron.
 
-Problemet bör lösas direkt efter att den ogiltiga länken har åtgärdats. Om problemet kvarstår [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Problemet bör lösas direkt efter att den ogiltiga länken har åtgärdats. Om problemet kvarstår [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

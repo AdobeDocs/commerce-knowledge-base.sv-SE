@@ -1,6 +1,6 @@
 ---
-title: Avserialiseringsfel för avinstallation:static-content:distribuera`
-description: I den här artikeln finns en korrigering för Redis-avserialiseringsfel vid körning av "magento setup:static-content:distribuera".
+title: Avserialisera avserialiseringsfel "setup:static-content:deploy"
+description: I den här artikeln finns en korrigering för Redis-avserialiseringsfel när du kör "magento setup:static-content:deploy".
 exl-id: 4bc88933-3bf9-4742-b864-b82d3c1b07a9
 feature: Cache, Deploy, Page Content, SCD, Services, Variables
 role: Developer
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Avserialiseringsfel `setup:static-content:deploy`
+# Avserialiseringsfelet `setup:static-content:deploy` återställs
 
-I den här artikeln finns en korrigering för Redis-avserialiseringsfel vid körning `magento setup:static-content:deploy`.
+Den här artikeln innehåller en korrigering för Redis-avserialiseringsfelet när `magento setup:static-content:deploy` körs.
 
-Körs `magento setup:static-content:deploy` orsakar Redis-felet:
+Om `magento setup:static-content:deploy` körs uppstår Redis-felet:
 
 ```
 [Exception]
@@ -25,13 +25,13 @@ Notice: unserialize(): Error at offset 0 of 1 bytes in
 
 Problemet orsakas av parallella interfereringsprocesser i Redis-anslutningen.
 
-För att lösa `setup:static-content:deploy` i entrådsläge genom att ställa in följande miljövariabel:
+Lös problemet genom att köra `setup:static-content:deploy` i entrådsläge genom att ange följande miljövariabel:
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-eller, kör `setup:static-content:deploy` följt av kommandot `-j 1` (eller `--jobs=1` ).
+eller kör du kommandot `setup:static-content:deploy` följt av argumentet `-j 1` (eller `--jobs=1` ).
 
 Observera att om du inaktiverar flertrådning blir det långsammare att distribuera statiska resurser.
 
@@ -43,7 +43,7 @@ Observera att om du inaktiverar flertrådning blir det långsammare att distribu
 
 ## Problem
 
-Kör `setup:static-content:deploy` orsakar Redis-felet:
+Om du kör kommandot `setup:static-content:deploy` uppstår Redis-felet:
 
 ```php
 )
@@ -79,17 +79,17 @@ Command php ./bin/magento setup:static-content:deploy --jobs=3  en_US  returned 
 
 Problemet orsakas av parallella interfereringsprocesser i Redis-anslutningen.
 
-Här finns en process i `App/Config/Type/System.php` förväntade sig ett svar för `system_defaultweb`, men fick ett svar på `system_cache_exists` som gjorts i en annan process. Se den detaljerade förklaringen i [Jason Woods&#39; post](https://github.com/magento/magento2/issues/9287#issuecomment-302362283).
+En process i `App/Config/Type/System.php` förväntade sig ett svar för `system_defaultweb`, men fick ett svar för `system_cache_exists` som gjordes av en annan process. Se den detaljerade förklaringen i [Jason Woods&#39; inlägg](https://github.com/magento/magento2/issues/9287#issuecomment-302362283).
 
 ## Lösning
 
-Inaktivera parallellisering och körning `setup:static-content:deploy` i entrådsläge genom att ställa in följande miljövariabel:
+Inaktivera parallelism och kör `setup:static-content:deploy` i ett entrådsläge genom att ange följande miljövariabel:
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-Du kan också köra `setup:static-content:deploy` följt av kommandot `-j 1` (eller `--jobs=1`).
+Du kan också köra kommandot `setup:static-content:deploy` följt av argumentet `-j 1` (eller `--jobs=1`).
 
 >[!NOTE]
 >

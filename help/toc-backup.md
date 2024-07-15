@@ -18,7 +18,7 @@ ht-degree: 0%
       * [Site-Wide Analysis Tool by Adobe: översikt](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
    * Observation för Adobe Commerce {#observation}
       * [Obs för Adobe Commerce - översikt](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md)
-   * Hanterade aviseringar om Adobe Commerce {#managed-alerts}
+   * Hanterade aviseringar på Adobe Commerce {#managed-alerts}
       * [Hanterade varningar på Adobe Commerce: Redis-minneskritisk varning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
       * [Hanterade varningar för Adobe Commerce: diskvarning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
       * [Hanterade aviseringar för Adobe Commerce](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
@@ -313,7 +313,7 @@ ht-degree: 0%
       * [MDVA-34886: inga sökresultat när attributet Weight används](/help/support-tools/patches-available-in-qpt-tool/mdva-34886-magento-patch-no-search-results-when-weight-attribute-used.md)
 * Meddelanden {#announcements}
    * [Översikt över meddelanden](/help/announcements/overview.md)
-   * Adobe Commerce Announcements {#commerce-announcements}
+   * Adobe Commerce-meddelanden {#commerce-announcements}
       * [Begäran om förbättrad integreringsmiljö - Pro och Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md)
       * [Förfrågningar om överkapacitet på heldag för Adobe Commerce i vår molninfrastruktur](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
       * [Upgrade Compatibility Tool 1.1.0 for Adobe Commerce](/help/announcements/adobe-commerce-announcements/upgrade-compatibility-tool-for-magento.md)
@@ -338,11 +338,11 @@ ht-degree: 0%
       * [Bästa tillvägagångssätt för cachestorlek för Realpath](/help/best-practices/configuration/realpath-cache-size-best-practice.md)
       * [Optimera CSS- och JS-filer i Adobe Commerce](/help/best-practices/configuration/optimize-css-and-js-files-in-magento-commerce.md)
    * Databas {#database}
-      * [Uppgradering av Adobe Commerce 2.3.5: kompakt till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+      * [Uppgradering av Adobe Commerce 2.3.5: komprimera till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
       * [Bästa praxis för användning av utlösare](/help/best-practices/database/best-practice-for-triggers-usage.md)
-      * [De vanligaste databasproblemen i Adobe Commerce om molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+      * [De vanligaste databasproblemen i Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
       * [Bästa praxis för Adobe Commerce i molninfrastruktur för MySQL-slavanslutning](/help/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.md)
-      * [Bästa databaspraxis för Adobe Commerce om molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+      * [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
    * Allmänt {#general}
       * [_isScopePrivate i privata innehållsblock saktar ned Adobe Commerce prestanda](/help/best-practices/general/isscopeprivate-in-private-content-blocks-slows-magento-performance.md)
       * [Felsökning av bästa praxis för Adobe Commerce i molninfrastruktur](/help/best-practices/general/troubleshooting-best-practices-for-magento-commerce-cloud.md)
@@ -370,14 +370,14 @@ ht-degree: 0%
       * [Bästa tillvägagångssätt för bilder i Adobe Commerce på molninfrastruktur](/help/best-practices/performance/best-practice-for-images-in-magento-commerce-cloud.md)
       * [Adobe Commerce bästa praxis: utföra viktiga åtgärder i Admin](/help/best-practices/performance/magento-best-practice-conducting-critical-actions-in-admin.md)
       * [Adobe Commerce bästa praxis: inaktivera rapporter om de inte använder](/help/best-practices/performance/magento-best-practice-disable-reports-if-not-using.md)
-      * [Indexerare&quot;Update On Schedule&quot; optimerar Adobe Commerce prestanda](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
+      * [Indexerare &quot;Update On Schedule&quot; optimerar Adobe Commerce prestanda](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
       * [Bästa praxis för Adobe Commerce produktvariationer](/help/best-practices/performance/best-practice-magento-product-variations.md)
       * [Bästa praxis Adobe Commerce orderplacering](/help/best-practices/performance/best-practice-magento-order-placement-performance.md)
       * [Adobe Commerce bästa praxis: aktivera asynkron orderbehandling](/help/best-practices/performance/magento-best-practice-enable-asynchronous-orders-processing.md)
       * [Bästa tillvägagångssätt för återgivningsblockerande resurser i Adobe Commerce](/help/best-practices/performance/best-practices-for-render-blocking-resources-in-magento.md)
       * [Bästa praxis för antalet varukorgar i Adobe Commerce](/help/best-practices/performance/best-practice-for-number-of-products-in-cart-in-magento.md)
       * [Metodtips för Adobe Commerce produktattributsalternativ](/help/best-practices/performance/best-practices-for-magento-product-attribute-options.md)
-* Felsökning {#troubleshooting}
+* Felsökning av {#troubleshooting}
    * [Ökning](/help/troubleshooting/overview.md)
    * Allmän felsökning {#general}
       * [Felsöka produktmodulen Recommendations i Adobe Commerce](/help/troubleshooting/general/troubleshoot-product-recommendations-module-in-magento-commerce.md)
@@ -480,7 +480,7 @@ ht-degree: 0%
       * [Diagnostisera en datadiskrepans](/help/troubleshooting/general/diagnosing-a-data-discrepancy.md)
       * [Distributionsfel: SQLSTATE[HY000]](/help/troubleshooting/general/deployment-error-sql-hy000.md)
       * [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Din nuvarande session har gått ut&quot;](/help/troubleshooting/general/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-      * [Avserialisera felinställningar igen:static-content:driftsätta](/help/troubleshooting/general/redis-unserialize-error-setup-static-content-deploy.md)
+      * [Avserialisera felinstallation:static-content:distribuera igen](/help/troubleshooting/general/redis-unserialize-error-setup-static-content-deploy.md)
       * [Installationen misslyckades; det går inte att skapa install.log](/help/troubleshooting/general/installation-fails-cannot-create-install-log.md)
       * [Webbplatsen är i underhållsläge men tillgänglig för kunder](/help/troubleshooting/general/site-in-maintenance-mode-but-available-to-customers.md)
       * [Store credit issue in checkout in Adobe Commerce 2.3.5](/help/troubleshooting/general/store-credit-issue-during-checkout-in-magento-2-3-5.md)
@@ -598,7 +598,7 @@ ht-degree: 0%
       * [Hög genomströmning AJAX begäranden orsakar dålig prestanda](/help/troubleshooting/general/high-throughput-ajax-requests-cause-poor-performance.md)
       * [PWA Studio: Felet &quot;Kan inte proxyvisa&quot; visas i webbläsaren](/help/troubleshooting/general/pwa-studio-browser-displays-cannot-proxy-to-error.md)
       * [Adobe Commerce 2.4.0: Klarna On-Site Messaging - tomma sidor](/help/troubleshooting/general/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
-      * [körningskonfiguration:static-content:distribuerat_version.txt-problem](/help/troubleshooting/general/run-setup-static-content-deploy-deployed-version-txt-issue.md)
+      * [kör installationsproblem:static-content:distribuerat_version.txt](/help/troubleshooting/general/run-setup-static-content-deploy-deployed-version-txt-issue.md)
       * [Kupong för engångsbruk används flera gånger, Adobe Commerce](/help/troubleshooting/general/coupon-code-used-more-than-once-adobe-commerce.md)
       * [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Ditt konto är tillfälligt inaktiverat&quot;](/help/troubleshooting/general/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
       * [Google Analytics inaktiveras efter distributionen](/help/troubleshooting/general/google-analytics-gets-disabled-after-deployment.md)
@@ -669,10 +669,10 @@ ht-degree: 0%
       * [Adobe Commerce uppmanar sina kunder att logga in med ogiltig länk](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
       * [Problem med att skapa etiketter i Adobe Commerce 2.4.0](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md)
       * [B2B: Företag kan inte komma åt profilsidor på butiksfront](/help/troubleshooting/known-issues-patches-attached/b2b-companies-cannot-access-profile-pages-on-store-front.md)
-* Help Center Guide {#help-center-guide}
+* Hjälpcenterhandbok {#help-center-guide}
    * [Användarhandbok för Adobe Commerce Help Center](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
    * [Uppdatering av livscykelpolicy för Adobe Commerce Support-biljetter](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
-* Instruktioner {#how-to}
+* Använda {#how-to}
    * [Ökning](/help/how-to/overview.md)
    * [MBI Essentials: uppdatera betalningsmetod eller avbryt prenumeration](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [MBI Training Video: SQL Report Builder](/help/how-to/general/mbi-training-video-sql-report-builder.md)
@@ -731,7 +731,7 @@ ht-degree: 0%
    * [MBI: Skapa och redigera avancerade beräknade kolumner](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
    * [Kontrollera diskutrymmesgränsen för Adobe Commerce i molninfrastrukturen](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md)
    * [SSL-certifikat (TLS) för Adobe Commerce i molninfrastruktur](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
-   * [Det går inte att komma åt den senaste betaversionen](/help/how-to/general/cannot-access-the-latest-beta-version.md)
+   * [Kan inte komma åt den senaste Beta-versionen](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [Växla programläge](/help/how-to/general/switch-the-magento-mode.md)
    * [Logga in på Fast-kontot som medföljer Adobe Commerce i molninfrastrukturen](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Visa Adobe Commerce-felrapportnummer i stället för Fastly 503-fel](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
@@ -1058,7 +1058,7 @@ ht-degree: 0%
    * [ACSD-45488: Konfigurerbar produkt med flera källor som inte returneras till i lager automatiskt](/help/support-tools/patches-available-in-qpt-tool/acsd-45488-configurable-product-with-multiple-sources-not-returned-to-in-stock.md)
    * [ACSD-46146: Två e-postmeddelanden med orderbekräftelse skickas efter beställning från administratör](/help/support-tools/patches-available-in-qpt-tool/acsd-46146-two-order-confirmation-emails-are-sent-after-placing-order-from-admin.md)
    * [MDVA-43824: Orderannulleringsåtgärden misslyckades med felet&quot;Du har inte avbrutit objektet&quot;](/help/support-tools/patches-available-in-qpt-tool/mdva-43824-order-cancellation-action-failed-with-error.md)
-   * [MDVA-39605: TTL för Redis-cache (förfallodatum) har fel värde](/help/support-tools/patches-available-in-qpt-tool/mdva-39605-redis-cache-ttl-expiration date-has-error-value.md)
+   * [MDVA-39605: TTL för Redis-cache (förfallodatum) har fel värde ](/help/support-tools/patches-available-in-qpt-tool/mdva-39605-redis-cache-ttl-expiration date-has-fel-value.md)
    * [MDVA-30599: customer_is_gäst är felaktigt inställd](/help/support-tools/patches-available-in-qpt-tool/mdva-30599-magento-patch-customer_is_guest-is-set-incorrectly.md)
    * [MDVA-44100: Alla bildrutefrekvenser tilldelas den sista produkten i kundvagnen](/help/support-tools/patches-available-in-qpt-tool/mdva-44100-all-fpts-are-assigned-to-the-last-product-in-the-shopping-cart-and-reset-for-other-product.md)
    * [MDVA-21095: INSERT INTO &quot;search_tmp...&quot; upphör aldrig efter uppdatering av massattribut](/help/support-tools/patches-available-in-qpt-tool/mdva-21095-insert-into-search_tmp...-never-ends-after-mass-attribute-update.md)

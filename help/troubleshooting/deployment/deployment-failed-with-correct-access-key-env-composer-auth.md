@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Distributionen misslyckas med rätt åtkomstnycklar i env:COMPOSER_AUTH eller auth.json
 
-I den här artikeln finns en lösning på problemet när distributionen misslyckas med ett fel som det nedan, i [distributionslogg](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
+Den här artikeln innehåller en lösning på problemet när distributionen misslyckas med ett fel som det nedan i [distributionsloggen](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -40,20 +40,20 @@ Du har distribuerats.
 >
 >Detta är ett exempelfel. Du kan få ett fel som anger en annan fil (beroende på vilken Adobe Commerce-version du distribuerar).
 
-Distributionen misslyckades. Du ser ett liknande fel *Det gick inte att hämta filen https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip (HTTP/1.1 404 Hittades inte)* i [distributionslogg](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+Distributionen misslyckades. Ett fel som *Filen &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; kunde inte hämtas (HTTP/1.1 404 Hittades inte)* i [distributionsloggen](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 ### Orsak
 
 De angivna åtkomstnycklarna för dispositionen som finns på någon av dessa platser kanske inte har åtkomst till koden:
 
-* i `env:COMPOSER_AUTH` variabel på projektnivå
-* i `auth.json file`, som har företräde framför `env:COMPOSER_AUTH` variabel.
+* i variabeln `env:COMPOSER_AUTH` på projektnivå
+* i `auth.json file`, som har företräde framför variabeln `env:COMPOSER_AUTH`.
 
 ### Lösning
 
-Uppdatera `env:COMPOSER_AUTH` på projektnivå och se till att den är konfigurerad med nycklar som har åtkomst till koden.
+Uppdatera variabeln `env:COMPOSER_AUTH` på projektnivå och kontrollera att den är konfigurerad med nycklar som har åtkomst till koden.
 
-Om du vill se steg går du till [Variabelnivåer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) i Commerce om Cloud Infrastructure Guide.
+Anvisningar finns i [Variabelnivåer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) i Commerce on Cloud Infrastructure Guide.
 
 ## Relaterad läsning
 

@@ -24,7 +24,7 @@ I den här artikeln finns en patch för det kända Adobe Commerce-problemet, dä
 
 Den avancerade sökfunktionen returnerar inte de mest relevanta resultaten först, som snabbsökningen gör. Problemet beror inte på den valda sökmotortypen.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Gå till snabbsökningen i butiken och sök efter &quot;Anpassa fodral&quot;.
 1. Observera att&quot;Riktat fodral med två toningar&quot; är det första resultatet.
@@ -50,6 +50,6 @@ Korrigeringen är kompatibel med alla berörda versioner och utgåvor.
 
 ## Så här sätter du på plåstret
 
-Instruktioner finns i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

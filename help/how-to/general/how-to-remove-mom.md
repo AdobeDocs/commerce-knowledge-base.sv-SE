@@ -11,6 +11,6 @@ ht-degree: 0%
 
 # Ta bort Magento Order Management (MOM)
 
-1. Inaktivera MOM-integrering genom att följa stegen i [Inaktivera eller aktivera integreringen](/docs/commerce-admin/systems/integrations/mcom.html#disable-or-enable-the-integration).
+1. Inaktivera MOM-integreringen genom att följa stegen i [Inaktivera eller aktivera integreringen](/docs/commerce-admin/systems/integrations/mcom.html#disable-or-enable-the-integration).
 1. Inaktivera MOM-modulen genom att följa stegen i [Avinstallera moduler](/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
-1. Vi erbjuder API:t för att extrahera fullständiga orderdata. Du kan läsa mer genom att granska [Orderarkiv](https://omsdocs.magento.com/specifications/#magento.sales.order_repository) i ADOBE | Magento OMS Docs, som omfattar orderinformation (order_database). Använd [specifikationsavsnitt](https://omsdocs.magento.com/specifications/#services) i ADOBE | Magento OMS Docs om du vill använda andra API:er för att extrahera olika informationstyper.
+1. Vi erbjuder API:t för att extrahera fullständiga orderdata. Du kan lära dig mer genom att läsa [orderdatabasen](https://omsdocs.magento.com/specifications/#magento.sales.order_repository) i Adobe | Magento OMS Docs, som omfattar orderinformation (order_database). Använd [specifikationsavsnittet](https://omsdocs.magento.com/specifications/#services) i Adobe | Magento OMS Docs om du vill använda andra API:er för att extrahera olika informationstyper.

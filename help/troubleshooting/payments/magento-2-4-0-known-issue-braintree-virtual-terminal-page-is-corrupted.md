@@ -24,31 +24,31 @@ Den här artikeln innehåller en patch för det kända Adobe Commerce 2.4.0-prob
 
 ### Scenario 1: Betalningsmetoden Braintree har konfigurerats
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-Gå till Commerce Admin **Försäljning** > **Virtuell terminal för Braintree** . ** **
+Gå till **Sales** > **Braintree Virtual Terminal** i Commerce Admin. ** **
 
 <u>Förväntat resultat:</u>
 
-The **Virtuell terminal för Braintree** sidan läses in med rätt användargränssnitt.
+Den virtuella terminalsidan **Braintree** läses in med rätt användargränssnitt.
 
 <u>Faktiskt resultat:</u>
 
-Användargränssnittet för **Virtuell terminal för Braintree** sidan är skadad.
+Gränssnittet för den virtuella terminalsidan **Braintree** har brutits.
 
 ### Scenario 2: Betalningsmetoden Braintree har konfigurerats
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-Gå till Commerce Admin **Försäljning** > **Virtuell terminal för Braintree** . ** **
+Gå till **Sales** > **Braintree Virtual Terminal** i Commerce Admin. ** **
 
 <u>Förväntat resultat:</u>
 
-The **Virtuell terminal för Braintree** sidan läses in med rätt användargränssnitt och en varning visas som talar om att Braintree inte har konfigurerats än.
+Sidan **Virtuell terminal** i Braintree läses in med rätt användargränssnitt och en varning visas som talar om att Braintree inte har konfigurerats än.
 
 <u>Faktiskt resultat:</u>
 
-Användargränssnittet för **Virtuell terminal för Braintree** sidan är skadad och ingen varning visas.
+Gränssnittet för den virtuella terminalsidan **Braintree** har brutits och ingen varning visas.
 
 ## Lösning
 
@@ -69,6 +69,6 @@ Korrigeringen skapades för:
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Bifogade filer

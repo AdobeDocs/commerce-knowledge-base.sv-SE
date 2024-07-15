@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fel vid rensning av snabbcache i molnet (rensningsbegäran bearbetades inte korrekt)
 
-I den här artikeln finns en korrigering för när du använder ett snabbtömningsalternativ och du får felmeddelandet: *Begäran om rensning bearbetades inte*. Fast är en CDN och cachningstjänst som ingår i Adobe Commerce om molninfrastrukturplaner och implementeringar. Om du försöker använda ett alternativ för att ta bort snabbt, och det inte fungerar, kan du ha felaktiga autentiseringsuppgifter för snabbt i din miljö eller så har du råkat ut för ett problem.
+Den här artikeln innehåller en korrigering för när du använder ett snabbtömningsalternativ och du får felmeddelandet: *Begäran om tömning kunde inte bearbetas*. Fast är en CDN och cachningstjänst som ingår i Adobe Commerce om molninfrastrukturplaner och implementeringar. Om du försöker använda ett alternativ för att ta bort snabbt, och det inte fungerar, kan du ha felaktiga autentiseringsuppgifter för snabbt i din miljö eller så har du råkat ut för ett problem.
 
 Den här informationen hjälper dig att verifiera och testa snabbmeddelandehuvuden för dina aktiva webbplats- och ursprungsservrar.
 
@@ -37,7 +37,7 @@ Du kan ha angett felaktiga autentiseringsuppgifter i miljön eller behöver öve
 Kontrollera om du har rätt snabb service-ID och API-token i din miljö. Om du har inloggningsuppgifter för mellanlagring i Produktion kanske rensningarna inte bearbetas eller bearbetas felaktigt.
 
 1. Logga in som administratör hos din lokala Commerce-administratör.
-1. Klicka **Lager** > Inställningar > **Konfiguration** > **Avancerat** > **System** och expandera **Helsidescache**.    ![magento_full_page_cache_2.4.1.png](assets/magento_full_page_cache_2.4.1.png)
+1. Klicka på **Lagrar** > Inställningar > **Konfiguration** > **Avancerat** > **System** och expandera **Helsidescache**.    ![magento_full_page_cache_2.4.1.png](assets/magento_full_page_cache_2.4.1.png)
 1. Expandera Snabb konfiguration och verifiera snabb service-ID och API-token för din miljö.
 1. Om du ändrar värdena klickar du på Testa autentiseringsuppgifter.
 
@@ -49,7 +49,7 @@ Om autentiseringsuppgifterna är korrekta kan du ha problem med dina VCL:er. Om 
 curl -X GET -s https://api.fastly.com/service/<Service ID>/version/<Editable Version #>/snippet -H "Fastly-Key:FASTLY_API_TOKEN"
 ```
 
-Granska listan över VCL:er. Om du har problem med standardlistan för VCL från Fast kan du överföra den igen eller verifiera innehållet enligt [Snabbt standard-VCL](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Information om hur du redigerar anpassade VCL:er finns i [Anpassade VCL-fragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) i Commerce on Cloud Infrastructure Guide.
+Granska listan över VCL:er. Om du har problem med standard-VCL:er från Fastly kan du överföra igen eller verifiera innehållet enligt [Snabbt standard-VCL:er](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Mer information om hur du redigerar anpassade VCL-listor finns i [Anpassade snabbVCL-fragment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) i Commerce on Cloud Infrastructure Guide.
 
 ## Mer information
 
@@ -57,4 +57,4 @@ I vår utvecklardokumentation:
 
 * [Om snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
 * [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [Anpassade VCL-fragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [Anpassade VCL-kodfragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)

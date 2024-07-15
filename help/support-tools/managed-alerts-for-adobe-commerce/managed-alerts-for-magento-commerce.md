@@ -14,11 +14,11 @@ ht-degree: 0%
 # Hanterade aviseringar för Adobe Commerce
 
 
-Vi har konfigurerat viktiga instrumentpaneler och varningar som hjälper dig att förstå när din webbplats når kritisk lagring och Apdex-nivåer (användarnas tillfredsställelse med svarstid för program och tjänster). Detta kan hjälpa dig att vidta åtgärder innan du märker att svarstiderna tar lång tid eller att ett driftstopp inträffar. Du kan felsöka varningarna med artiklarna nedan. Innan du kan använda varningarna måste du först konfigurera meddelandekanaler. Se [New Relic Konfigurera meddelandekanaler](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels) i vår dokumentation för utvecklare.
+Vi har konfigurerat viktiga instrumentpaneler och varningar som hjälper dig att förstå när din webbplats når kritisk lagring och Apdex-nivåer (användarnas tillfredsställelse med svarstid för program och tjänster). Detta kan hjälpa dig att vidta åtgärder innan du märker att svarstiderna tar lång tid eller att ett driftstopp inträffar. Du kan felsöka varningarna med artiklarna nedan. Innan du kan använda varningarna måste du först konfigurera meddelandekanaler. Se [New Relic Konfigurera meddelandekanaler](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels) i utvecklardokumentationen.
 
 >[!NOTE]
 >
->Om det inte finns några hanterade aviseringar för Adobe Commerce-aviseringsprincipen kan det bero på att det här kontot har skapats nyligen eller att New Relic har konfigurerats nyligen. En process körs varje tisdag för att lägga till varningsprincipen till dessa konton. Varningspolicyn bör vara tillgänglig dagen efter att nästa process har körts. Om policyn fortfarande saknas, [skicka en supportförfrågan från Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket-Submit-a-support-ticket) och inkludera ditt projekt-ID.
+>Om det inte finns några hanterade aviseringar för Adobe Commerce-aviseringsprincipen kan det bero på att det här kontot har skapats nyligen eller att New Relic har konfigurerats nyligen. En process körs varje tisdag för att lägga till varningsprincipen till dessa konton. Varningspolicyn bör vara tillgänglig dagen efter att nästa process har körts. Om principen fortfarande saknas [skickar du en supportförfrågan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket-Submit-a-support-ticket) från Adobe Commerce och inkluderar ditt projekt-ID.
 
 I tabellen nedan finns länkar till KB-artiklar med felsökningssteg för dessa aviseringar:
 

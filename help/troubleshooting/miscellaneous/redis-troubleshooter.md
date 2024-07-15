@@ -21,7 +21,7 @@ Den här artikeln är ett felsökningsverktyg för Adobe Commerce lokalt och Ado
 
 a. JA - Fortsätt till [Steg 2](#step2)</a>.
 
-b. NEJ - Återgå till [support.magento.com](https://support.magento.com/hc/en-us) och söka efter relevanta felsökningsartiklar.
+b. NO - Gå tillbaka till [support.magento.com](https://support.magento.com/hc/en-us) och sök efter relevanta felsökningsartiklar.
 
 +++
 
@@ -29,9 +29,9 @@ b. NEJ - Återgå till [support.magento.com](https://support.magento.com/hc/en-u
 
 +++Aktuella Redis-korrigeringar installerade?
 
-a. JA - Fortsätt till [Steg 3](#step3)</a>.
+a. JA - Fortsätt till [steg 3](#step3)</a>.
 
-b. NEJ - Kontrollera att du har den senaste versionen av paketet `magento-cloud-patches` installerade. Paketet innehåller de nödvändiga plåstren för Redis. Gå till [GitHub magneto-cloud-patches](https://github.com/magento/magento-cloud-patches/).
+b. NEJ - Kontrollera att du har den senaste versionen av paketet `magento-cloud-patches` installerad. Paketet innehåller de nödvändiga plåstren för Redis. Gå till [GitHub magneto-cloud-patches](https://github.com/magento/magento-cloud-patches/) om du vill få åtkomst.
 
 +++
 
@@ -39,11 +39,11 @@ b. NEJ - Kontrollera att du har den senaste versionen av paketet `magento-cloud-
 
 ++ På Redis version 3.2 eller 5.0?
 
-Kontrollera genom att köra följande kommandon i CLI. Pro eller Staging: `$ redis-cli -p %port-number% info | grep redis_version`, där `%port-number%` är numret på den port som finns i `app/etc/env.php` eller genom att köra något av följande kommandon: `$ vendor/bin/ece-tools env:config:show | grep -i redis -A 3` eller `$ cat app/etc/env.php | grep redis -A 3` Start eller integrering: `$ redis-cli -h 'redis.internal' info | grep redis_version`
+Kontrollera genom att köra följande kommandon i CLI. Pro eller mellanlagring: `$ redis-cli -p %port-number% info | grep redis_version`, där `%port-number%` är numret på porten, som finns i filen `app/etc/env.php` eller genom att köra något av följande kommandon: `$ vendor/bin/ece-tools env:config:show | grep -i redis -A 3` eller `$ cat app/etc/env.php | grep redis -A 3` Starter eller Integration: `$ redis-cli -h 'redis.internal' info | grep redis_version`
 
 a. JA - Fortsätt till [Steg 4](#step4).
 
-b. NO - Adobe Commerce stöder Redis version 3.2 och 5.0. Om du kör Adobe Commerce i molninfrastruktur 2.3.3 eller senare rekommenderar vi att du uppgraderar till Redis 5. Om du vill se installationsstegen för Adobe Commerce i molninfrastrukturen Pro-planarkitekturen, integrerings- och startmiljöerna, inklusive huvudgrenen, kan du läsa [Adobe Commerce i molninfrastruktur > Konfigurera Redis-tjänst](https://devdocs.magento.com/cloud/project/services-redis.html)</a> i vår dokumentation för utvecklare. **Du måste [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att ändra tjänstkonfigurationen i Pro-arkitekturens produktions- och mellanlagringsmiljöer. Dessutom rekommenderas en utökad Redis-cacheimplementering för Adobe Commerce i molninfrastrukturen och Adobe Commerce lokalt 2.3.5+. Den här typen av Redis-cacheimplementering innehåller förbättringar som minimerar antalet frågor till Redis som utförs på varje Adobe Commerce-begäran. Om du vill se steg går du till [Utökad Redis-cacheimplementering Adobe Commerce 2.3.5+](https://support.magento.com/hc/en-us/articles/360049292532) i vår kunskapsbas för support. För alla andra Adobe Commerce-användare, se [Adobe Commerce Configuration Guide > Configure Redis](https://devdocs.magento.com/guides/v2.4/config-guide/redis/config-redis.html) i vår dokumentation för utvecklare, för steg.
+b. NO - Adobe Commerce stöder Redis version 3.2 och 5.0. Om du kör Adobe Commerce i molninfrastruktur 2.3.3 eller senare rekommenderar vi att du uppgraderar till Redis 5. Om du vill ha information om hur du konfigurerar Adobe Commerce för molninfrastruktur Pro-planarkitekturen, integrerings- och startmiljöer, inklusive huvudgrenen, kan du läsa [Adobe Commerce om molninfrastruktur > Konfigurera Redis-tjänsten](https://devdocs.magento.com/cloud/project/services-redis.html)</a> i utvecklardokumentationen. **Du måste [skicka in en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att ändra tjänstkonfigurationen i Pro-arkitekturens produktions- och mellanlagringsmiljöer. Dessutom rekommenderas en utökad Redis-cacheimplementering för Adobe Commerce i molninfrastrukturen och Adobe Commerce lokalt 2.3.5+. Den här typen av Redis-cacheimplementering innehåller förbättringar som minimerar antalet frågor till Redis som utförs på varje Adobe Commerce-begäran. Anvisningar om hur du gör detta finns i [Utökad Redis-cacheimplementering av Adobe Commerce 2.3.5+](https://support.magento.com/hc/en-us/articles/360049292532) i vår kunskapsbas för support. För alla andra Adobe Commerce-användare finns anvisningar i [Adobe Commerce Configuration Guide > Configure Redis](https://devdocs.magento.com/guides/v2.4/config-guide/redis/config-redis.html) i utvecklardokumentationen.
 
 +++
 
@@ -53,7 +53,7 @@ b. NO - Adobe Commerce stöder Redis version 3.2 och 5.0. Om du kör Adobe Comme
 
 Kontrollera vilken version du har genom att köra kommandot i CLI/Terminal: `$php vendor/bin/composer info magento/ece-tools`.
 
-a. JA - Fortsätt till [Steg 5](#step5).
+a. JA - Fortsätt till [steg 5](#step5).
 
 b. NEJ - [Uppgradera ECE-verktyg](https://devdocs.magento.com/cloud/project/ece-tools-update.html) till den senaste versionen.
 
@@ -63,9 +63,9 @@ b. NEJ - [Uppgradera ECE-verktyg](https://devdocs.magento.com/cloud/project/ece-
 
 +++Finns det mycket nätverkstrafik mellan appen och Redis?
 
-a. JA - Prova följande: För en icke-delad arkitektur ska du kontrollera att [sekundär anslutning](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md) används. För en delad arkitektur [L2-cache måste aktiveras](https://devdocs.magento.com/guides/v2.4/config-guide/cache/two-level-cache.html).
+a. JA - Försök med följande: Om du har en icke-delad arkitektur kontrollerar du att en [sekundär anslutning](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md) används. För delad arkitektur måste [L2-cachen aktiveras](https://devdocs.magento.com/guides/v2.4/config-guide/cache/two-level-cache.html).
 
-b. NO - Konfigurera konfiguration av L2-cache med [Uppdaterar Redis Backend](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend). Fortsätt till [Steg 6](#step6).
+b. NO - Konfigurera L2-cachekonfigurationen genom att [uppdatera Redis Backend](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend). Fortsätt till [Steg 6](#step6).
 
 +++
 
@@ -73,7 +73,7 @@ b. NO - Konfigurera konfiguration av L2-cache med [Uppdaterar Redis Backend](htt
 
 +++Fungerar webbplatsen fortfarande långsamt när L2-cachen har aktiverats?
 
-a. JA - Kontrollera den tillfälliga katalogen `/dev/shm` för att se om du behöver öka utrymmet. Om du behöver mer utrymme [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+a. JA - Kontrollera den tillfälliga katalogen `/dev/shm` för att se om du behöver öka utrymmet. Om du behöver mer utrymme [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 b. NEJ - Att aktivera L2-cache verkar ha löst dina Redis-problem.
 
 +++

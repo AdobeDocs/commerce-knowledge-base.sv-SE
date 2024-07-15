@@ -30,9 +30,9 @@ Din butikskatalog innehåller produkter, inte Adobe Commerce exempeldata, och B2
 1. Navigera till butiken och skapa ett kundkonto.
 1. Lägg en produkt i kundvagnen, slutför utcheckningen och skicka en order.
 1. Logga in på Admin.
-1. Navigera till **Kunder,** välj **Alla kunder**.
-1. För den nyskapade kunden klickar du **Redigera**.
-1. Klicka **Beställningar** i panelen till vänster.
+1. Navigera till **Kunder** och välj sedan **Alla kunder**.
+1. Klicka på **Redigera** för den nyskapade kunden.
+1. Klicka på **Beställningar** på panelen till vänster.
 
 <u>Förväntat resultat</u>:
 
@@ -61,6 +61,6 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support, för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

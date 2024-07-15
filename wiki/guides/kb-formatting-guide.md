@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Författare i kod
 
-I allmänhet använder vi [Adobe Experience League Markdown Syntax Style Guide](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), men det finns vissa skillnader och undantag. I vissa fall krävs även vissa HTML-taggar.
+Vanligtvis använder vi [Adobe Experience League Markdown Syntax Style Guide](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), men det finns vissa skillnader och undantag. I vissa fall krävs även vissa HTML-taggar.
 
 Nedan följer exempel på den Markdown-formatering som oftast används i vårt svar.
 
@@ -23,11 +23,11 @@ Använd en asterisk om du vill formatera text som kursiv:
 
 `This text will be *italics*`
 
-Om du vill formatera text som understruken använder du `<ins>` tagg:
+Om du vill formatera text som understruken använder du taggen `<ins>`:
 
 `<ins>This text will be underlined</ins>`
 
-Om du vill lägga till en radbrytning använder du `<br>` HTML-tagg.
+Använd taggen `<br>` HTML om du vill lägga till en radbrytning.
 
 
 ## Sidhuvuden
@@ -54,8 +54,11 @@ Om du vill infoga ett kodblock omsluter du kodblocket med tre bakgrunder och ang
 
 \`\`\` sql
 
-VÄLJ TABLE_NAME AS `Table`, ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
-FRÅN information_schema.TABLES WHERE TABLE_SCHEMA = &quot;%project_id%&quot; ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
+VÄLJ TABLE_NAME SOM `Table`,
+ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
+FRÅN information_schema.TABELLER
+WHERE TABLE_SCHEMA = &quot;%project_id%&quot;
+ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
 
 \`\`\`
 
@@ -81,7 +84,7 @@ your code here
 </pre></code>
 ```
 
-Plats ``%language-code%`` är de koder som definieras av [Prism.js-språk som stöds](https://prismjs.com/#supported-languages).
+Där ``%language-code%`` är de koder som definieras av [språk som stöds av Prism.js ](https://prismjs.com/#supported-languages).
 
 ## Listor
 
@@ -130,7 +133,7 @@ Externa länkar är enkla:
 
 Alla typer av bilagor ska vara i formaten .png, .jpg och .jpeg. Av säkerhetsskäl godkänner vi endast bilagor som är i ett av de tre formaten.
 
-Infoga en bild genom att placera bilden *resurser* undermapp i samma avsnittsmapp som artikeln och använd följande syntax för att infoga bilden i artikeln:
+Om du vill infoga en bild placerar du bilden i undermappen *assets* i samma avsnittsmapp som artikeln och använder följande syntax för att infoga bilden i artikeln:
 
 ```markdown
 ![alt text](assets/image.png)
@@ -162,7 +165,7 @@ Det här är en länk till det här huvudet:
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-Om du behöver referera till ett annat element än sidhuvudet använder du HTML för att definiera elementet som ska läggas till med hjälp av [id-attribut](https://www.w3schools.com/html/html_id.asp). Du kan sedan använda Markdown eller HTML för att referera till detta ID.
+Om du behöver referera till ett annat element än huvudet använder du HTML för att definiera elementet som ska läggas till med attributet [id](https://www.w3schools.com/html/html_id.asp). Du kan sedan använda Markdown eller HTML för att referera till detta ID.
 
 ### Relativa länkar och länkar till andra artiklar
 

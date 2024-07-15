@@ -19,7 +19,7 @@ Den här artikeln innehåller en lösning på problemet där du får ett felmedd
 
 Den begärda URL:en /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ hittades inte på den här servern.
 
-Observera att det inte finns något snedstreck mellan `magento2` och `index.php` i webbadressen.
+Observera att det inte finns något snedstreck mellan `magento2` och `index.php` i URL:en.
 
 ## Lösning
 
@@ -27,6 +27,6 @@ Bas-URL:en är inte korrekt. Bas-URL måste:
 
 * Börja med `http://` eller `https://`
 * Sluta med ett snedstreck ( `/` )
-* Matcha skiftläget för `web/unsecure/base_url` i `core_config_data` databastabell
+* Matcha skiftläget för posten `web/unsecure/base_url` i databastabellen `core_config_data`
 
 Kör installationen igen med ett giltigt värde.

@@ -21,4 +21,4 @@ Adobe Commerce om molninfrastruktur 2.3.x, 2.4.x
 
 ## Bifogade filer
 
-Klicka på [attached.pdf](assets/CPU_Allocation.pdf) fil för att hämta artikeln.
+Klicka på den [bifogade pdf](assets/CPU_Allocation.pdf)-filen för att hämta artikeln.

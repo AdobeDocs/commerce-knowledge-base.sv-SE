@@ -21,13 +21,13 @@ Artikeln innehåller en länk till patchen för ett känt Adobe Commerce 2.3.5-p
 
 ## Problem
 
-Adobe Commerce uppmanar kunderna att logga in genom att visa följande meddelande: *&quot;Det här kontot har inte bekräftats. Klicka här för att skicka bekräftelsemeddelandet igen&quot;*. The **Klicka här** länken ska öppna länksidan Skicka bekräftelse, men är inaktiv.
+Adobe Commerce uppmanar kunderna att logga in genom att visa följande meddelande: *Det här kontot är inte bekräftat. Klicka här för att skicka bekräftelsemeddelandet igen*. Länken **Klicka här** bör öppna länksidan Skicka-bekräftelse, men den är inaktiv.
 
 ## Lösning
 
-En patch till problemet finns i Adobe Commerce Technical Resources: [Skicka e-postutleverans av bekräftelsemeddelanden för Adobe Commerce 2.3.5 igen](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368). En permanent programfix kommer att finnas i Adobe Commerce 2.3.6, som kommer att släppas 4:e kvartalet 2020.
+En korrigering för det här problemet finns i Adobe Commerce Technical Resources: [Skicka e-postlänksfelkorrigering för kontobekräftelse igen för Adobe Commerce 2.3.5](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368). En permanent programfix kommer att finnas i Adobe Commerce 2.3.6, som kommer att släppas 4:e kvartalet 2020.
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner om hur du använder en kompositkorrigering.
+Se [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner om hur du använder en dispositionsruta.
 
 ## Relaterad läsning
 
@@ -39,4 +39,4 @@ Artiklar i vår kunskapsbas för support och dokumentation för utvecklare om k�
 * [Adobe Commerce uppmanar sina kunder att logga in med ogiltig länk](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
 * [Ett problem har uppstått med produktantalet för gruppåtgärd i Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 * [Patch for Amazon Pay checkout issue in Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
-* [Adobe Commerce 2.3.5 Kända fel](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* [Kända fel i Adobe Commerce 2.3.5](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

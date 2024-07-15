@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Kontrollerar distributionsloggen om molngränssnittet har *loggen har klippts* fel
+# Kontrollerar distributionsloggen om molngränssnittet har *loggutdraget* fel
 
-Den här artikeln innehåller en lösning på problemet där Adobe Commerce i molninfrastruktursgränssnittet visar *loggen har klippts av eftersom den var för lång* felmeddelande vid försök att visa distributionsloggen i molnprojektets användargränssnitt. (Gäller inte [Adobe Commerce Cloud Console](https://console.adobecommerce.com/).)
+I den här artikeln finns en lösning på problemet där Adobe Commerce i molninfrastruktursgränssnittet visar *loggen som klippts ut eftersom den var för lång* när ett försök gjordes att visa distributionsloggen i molnprojektets användargränssnitt. (Gäller inte [Adobe Commerce Cloud Console](https://console.adobecommerce.com/).)
 
 ## Berörda produkter
 
@@ -21,20 +21,20 @@ Adobe Commerce om molninfrastruktur (alla versioner som stöds)
 
 ## Problem
 
-När du försöker visa distributionsloggen i molnprojektgränssnittet visas följande felmeddelande i Adobe Commerce i molninfrastrukturgränssnittet: *loggen har klippts av eftersom den var för lång*.
+När du försöker visa distributionsloggen i molnprojektgränssnittet visas följande felmeddelande i Adobe Commerce i molninfrastrukturgränssnittet: *loggen har klippts ut eftersom den var för lång*.
 
 ## Steg som ska återskapas
 
-1. Gå till Project URL och klicka på **Status** av den aktuella driftsättningen.
-1. Om loggen är för lång för att visas i användargränssnittet visas felmeddelandet: *loggen har klippts av eftersom den var för lång*.
+1. Gå till Project URL och klicka på **Status** för den aktuella distributionen.
+1. Om loggen är för lång för att visas i användargränssnittet visas felmeddelandet: *log snipped (loggning) eftersom den var för lång*.
 
 ## Orsak
 
-Observera att loggen som visas i användargränssnittet inte ska behandlas som en källa till sanningen, särskilt om du upptäcker att webbplatsen inte svarar eller fungerar som den ska efter att distributionen hade statusen Slutfört. Du bör även verifiera med loggarna på servern. Se [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) i vår dokumentation för utvecklare.
+Observera att loggen som visas i användargränssnittet inte ska behandlas som en källa till sanningen, särskilt om du upptäcker att webbplatsen inte svarar eller fungerar som den ska efter att distributionen hade statusen Slutfört. Du bör även verifiera med loggarna på servern. Se [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) i utvecklardokumentationen.
 
 ## Lösning
 
-1. Se till att du har [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) installeras i din lokala miljö.
+1. Kontrollera att du har [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) installerat i din lokala miljö.
 1. Kör följande kommando:
 
    ```bash
@@ -66,5 +66,5 @@ Observera att loggen som visas i användargränssnittet inte ska behandlas som e
 
 ## Relaterade läsningar i vår dokumentation för utvecklare:
 
-* [Adobe Commerce i molninfrastruktur > Bygg och driftsätt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
+* [Adobe Commerce i molninfrastruktur > Skapa och distribuera](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
 * [Adobe Commerce i molninfrastruktur > Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)

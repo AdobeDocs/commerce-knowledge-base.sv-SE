@@ -17,21 +17,21 @@ Lär dig hur du felsöker de olika problemen med verktyget för säkerhetsgenoms
 
 ## Problem: Det gick inte att skicka webbplatsen
 
-För säkerhetsgenomsökningsverktyget måste du bevisa att du är ägare till din webbplats innan domänen kan läggas till i säkerhetsgenomsökningsverktyget. Detta kan du göra genom att lägga till en bekräftelsekod på webbplatsen med en HTML-kommentar eller `<meta>` -tagg. HTML-kommentaren ska placeras inuti `<body>` -taggen, t.ex. i sidfotsavsnittet. The `<meta>` -taggen ska placeras inuti sidans `<head>` -avsnitt.
+För säkerhetsgenomsökningsverktyget måste du bevisa att du är ägare till din webbplats innan domänen kan läggas till i säkerhetsgenomsökningsverktyget. Du kan göra detta genom att lägga till en bekräftelsekod på webbplatsen med en HTML-kommentar eller taggen `<meta>`. HTML-kommentaren ska placeras inuti taggen `<body>`, t.ex. i sidfotsavsnittet. Taggen `<meta>` ska placeras inuti sidans `<head>`-avsnitt.
 
 Ett vanligt problem som handlare ställs inför uppstår när verktyget för säkerhetsgenomsökning inte kan bekräfta handlarens ägarskap på webbplatsen.
 
-Om du får ett felmeddelande och inte kan skicka in din webbplats för genomsökning, se [Felmeddelande när webbplatser läggs till i säkerhetsgenomsökningen](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) felsökningsartikel i vår kunskapsbas för support.
+Om du får ett fel och inte kan skicka din webbplats för genomsökningen kan du läsa felmeddelandet [när du lägger till webbplatser i felsökningsartikeln för säkerhetsgenomsökning](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) i vår kunskapsbas för support.
 
 ## Problem: Tomma rapporter som har genererats av verktyget Säkerhetskontroll
 
-Du får tomma skannerrapporter från verktyget för säkerhetsgenomsökning eller rapporter som bara innehåller ett fel som *Säkerhetsverktyget kunde inte nå bas-URL:en* eller *Det gick inte att hitta Magento-installationen på angiven URL*.
+Du får tomma genomsökningsrapporter från verktyget för säkerhetsgenomsökning eller får rapporter som bara innehåller ett fel, t.ex. *Säkerhetsverktyget kunde inte nå bas-URL:en* eller så hittades inte *Magento-installationen på den angivna URL:en*.
 
 ### Lösning
 
 1. Kontrollera att IP-adresserna för 52.87.98.44, 34.196.167.176 och 3.218.25.102 inte blockeras vid 80- och 443-portar.
-1. Kontrollera den skickade URL:en för omdirigeringar (t.ex. `https://mystore.com` omdirigerar till `https://www.mystore.com` eller vice versa eller omdirigerar till andra domännamn).
-1. Undersök åtkomstloggar för WAF/webbserver för avvisade/ej fullgjorda begäranden. HTTP 403 `Forbidden` och HTTP 500 `Internal server error` är de vanligaste serversvaren som genererar tomma rapporter. Här är ett exempel på den bekräftelsekod som blockerar begäranden från användaragenter:
+1. Kontrollera den skickade URL:en för omdirigeringar (t.ex. omdirigeras `https://mystore.com` till `https://www.mystore.com` eller vice versa eller omdirigeras till andra domännamn).
+1. Undersök åtkomstloggar för WAF/webbserver för avvisade/ej fullgjorda begäranden. HTTP 403 `Forbidden` och HTTP 500 `Internal server error` är de vanligaste serversvaren som orsakar tom rapportgenerering. Här är ett exempel på den bekräftelsekod som blockerar begäranden från användaragenter:
 
 ```code block
 if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent_allowlist)
@@ -39,7 +39,7 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 {   error 403;   }
 ```
 
-Du kan också se [Rapporten för verktyget för säkerhetsgenomsökning är tom](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md) artikel i vår kunskapsbas för support för mer information.
+Du kan också se [Rapporten från verktyget för säkerhetsgenomsökning är tom](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md) i vår kunskapsbas för support för mer information.
 
 ## Problem: Säkerhetsproblemet har lösts men är fortfarande sårbart vid skanning
 
@@ -47,7 +47,7 @@ Du löste ett säkerhetsproblem och väntar på att säkerhetsgenomsökningen sk
 
 ### Orsak
 
-Metadata för molninstanser samlas endast in för `active` och `live` Cloud Projects och är INTE en realtidsprocess.
+Metadata för molninstanser samlas endast in för `active` och `live` Cloud-projekt och är INTE en realtidsprocess.
 
 Skriptet för statistikinsamling körs en gång om dagen och verktyget för säkerhetsgenomsökning måste hämta nya data senare.
 
@@ -55,11 +55,11 @@ Förväntad fördröjning i synkroniseringscykeln är upp till en vecka och tar 
 
 Följande statusvärden kan visas vid kontroller:
 
-1. **Godkänd**: Verktyget för säkerhetsgenomsökning har sökt igenom dina uppdaterade data och godkänt ändringarna.
+1. **Steg**: Säkerhetsgenomsökningsverktyget har sökt igenom dina uppdaterade data och godkänt ändringarna.
 1. **Okänd**: Verktyget för säkerhetsgenomsökning har inga data om din domän än; vänta på nästa synkroniseringscykel.
 1. **Misslyckades**: Om statusen inte fungerar måste du åtgärda problemet (aktivera 2FA, ändra administratörs-URL osv.) och vänta på nästa synkroniseringscykel.
 
-Om det har gått 24 timmar sedan ändringarna gjordes för instansen och de inte återspeglas i säkerhetsgenomsökningsrapporten kan du [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Ange butiks-URL när du skickar biljetten.
+Om 24 timmar har gått sedan ändringarna gjordes för instansen och de inte återspeglas i säkerhetsgenomsökningsrapporten, kan du [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Ange butiks-URL när du skickar biljetten.
 
 ## Misslyckad BotNet Suspect
 
@@ -68,7 +68,7 @@ Du får ett meddelande om felet &quot;BotNet Suspect&quot;.
 ### Orsak
 
 1. Butikens domännamn introducerades i en lista över potentiella BotNet-deltagare redan 2019, och administratörspanelen, hämtningsfunktionen eller RSS-funktionen exponerades offentligt, och/eller dess URL har nämnts i CC-gallringsforumen.
-1. Varningen kan orsakas av tecken på butikskombination och/eller skadlig kod, som JavaScript som finns på sidan.
+1. Varningen kan orsakas av tecken på butikskompromiss och/eller skadlig kod, som JavaScript på sidan.
 1. Det behöver inte nödvändigtvis vara en pågående fråga. Om butiken har komprometterats tidigare kan värdnamnet fortfarande flyta runt på den mörka webben som namnet &#39;offer&#39;.
 1. Den kan också orsakas av en systemkompromiss (på operativsystemsnivå), inte av Adobe Commerce.
 
@@ -77,7 +77,7 @@ Du får ett meddelande om felet &quot;BotNet Suspect&quot;.
 1. Kontrollera om det finns nyligen skapade SSH-konton, ändringar i filsystemet osv.
 1. Genomför en säkerhetsgranskning.
 1. Kontrollera Adobe Commerce version och uppgradering, särskilt om Magento 1 fortfarande körs, vilket inte längre stöds.
-1. Om problemet kvarstår [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och ange butiks-URL.
+1. Om problemet kvarstår [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och anger butikens URL.
 
 ## Problem: Komprometterad inmatningsfel
 
@@ -87,10 +87,10 @@ Du får ett felmeddelande om felet &quot;Kompromissinmatning&quot;.
 
 1. Granska skripten som anges i rapporten för verktyget för säkerhetsgenomsökning.
 1. Granska startsidans källtext för infogade skript.
-1. Granska ändringar av systemkonfigurationen, speciellt anpassad `HTML head` och `Miscellaneous HTML` in `footer` avsnittsvärden.
+1. Granska ändringar av systemkonfigurationen, särskilt anpassade `HTML head`- och `Miscellaneous HTML`-värden i `footer`-avsnittsvärden.
 1. Utför kodgranskning och databasgranskning för att se om det finns några okända ändringar och tecken på inmatad skadlig kod.
 
-Om inget av ovanstående hjälper, [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och ange butiks-URL:en och felmeddelandet från rapporten.
+Om inget av ovanstående hjälper, [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och anger butiks-URL:en och felmeddelandet från rapporten.
 
 ## Vanliga frågor
 

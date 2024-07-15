@@ -34,7 +34,7 @@ Distributionen lyckades.
 
 <u>Faktiskt resultat</u>:
 
-Distributionen misslyckas med felmeddelande: *aktuell version av RDBMS stöds inte*.
+Distributionen misslyckas med felmeddelandet: *aktuell version av RDBMS stöds inte*.
 
 ## Orsak
 
@@ -45,12 +45,12 @@ Din version av MariaDB är inte kompatibel med den version av Adobe Commerce som
 Du måste uppgradera MariaDB-tjänsten till en kompatibel version innan du uppgraderar programmet.
 
 
-För integreringsgrenen på Adobe Commerce om molninfrastruktur Pro-planarkitekturen (och alla grenar i Starter-arkitekturen) följer du [Konfigurera tjänst](https://devdocs.magento.com/cloud/project/services.html) i vår dokumentation för utvecklare.
+För integreringsgrenen på Adobe Commerce för molninfrastruktur Pro-planarkitekturen (och alla grenar i Starter-arkitekturen) följer du [Konfigurera tjänsten](https://devdocs.magento.com/cloud/project/services.html) i utvecklardokumentationen.
 
-Om du vill ha information om hur du arbetar med fasning och produktion i Adobe Commerce på Cloud Infrastructure Pro-planarkitekturen kan du [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill att tjänsterna ska uppgraderas innan du distribuerar uppgraderingen av Adobe Commerce-versionen.
+För tjänsten Staging and Production i Adobe Commerce på Cloud Infrastructure Pro-planarkitekturen ska du [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära att tjänsterna uppgraderas innan du distribuerar Adobe Commerce-versionsuppgraderingen.
 
 
 ## Relaterad läsning
 
-* [Bästa tillvägagångssätt för byggen och driftsättningen](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) i vår dokumentation för utvecklare.
+* [Bästa tillvägagångssätt för byggen och distribution](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) i utvecklardokumentationen.
 * [Uppgradering av Adobe Commerce 2.3.5: kompakt till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) i vår kunskapsbas.

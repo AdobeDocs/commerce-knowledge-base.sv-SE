@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Ändra e-postadress för aktuellt Adobe-konto
 
-I den här artikeln beskrivs hur du ändrar den aktuella e-postadressen som är registrerad i [Adobe](https://account.adobe.com/) till en ny adress som inte är registrerad i [Adobe](https://account.adobe.com/) eller [Magento](https://account.magento.com/).
+I den här artikeln beskrivs hur du ändrar den aktuella e-postadressen som är registrerad i [Adobe-kontot](https://account.adobe.com/) till en ny adress som inte är registrerad i [Adobe-kontot](https://account.adobe.com/) eller [Magento-kontot](https://account.magento.com/).
 
 ## Berörda produkter och versioner
 
@@ -30,4 +30,4 @@ Så här ändrar du e-postadressen:
 
 1. Återställ lösenordet som användes med den gamla e-postadressen. Följ instruktionerna i [Återställ glömt lösenord](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) i Adobe helpx.
 1. Länken för återställning av lösenord skickas till den aktuella ägarens postlåda med instruktioner.
-1. Navigera till [Adobe-kontosida](https://account.adobe.com) för att logga in med det nya e-postmeddelandet och konfigurera lösenordet.
+1. Navigera till kontosidan [Adobe](https://account.adobe.com) för att logga in med den nya e-postadressen och konfigurera lösenordet.

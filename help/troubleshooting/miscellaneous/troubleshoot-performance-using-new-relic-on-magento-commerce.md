@@ -30,22 +30,22 @@ Den här artikeln innehåller felsökningssteg för att lösa Adobe Commerce om 
 <tr>
 <td>
 <p>Låg poäng för Apdex:</p>
-<p>Din New Relic <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measuring-user-satisfaction">Apdex-poäng</a> mäter hur nöjda användarna är med svarstiden för era webbprogram och tjänster.</p>
+<p>Din New Relic <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measuring-user-satisfaction">Apdex-poäng</a> mäter hur nöjda användarna är med svarstiden för dina webbprogram och tjänster.</p>
 </td>
 <td>
 <p>Du loggar in på <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; Översikt. På höger sida av översiktssidan ser du diagrammet för Apdex-bakgrundsmusik. En Apdex-poäng på 0,5 eller mindre ger anledning till oro och motiverar en utredning: Web-transaction times (serverförfrågningar):</p>
 <ol>
 <ol>
-<li>Logga in på <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; (Välj en app) &gt; Översikt. Se till att filtret är inställt på tiden för webbtransaktioner i listrutan för huvuddiagram. Titta efter programserverns tid i tabellen Transaktioner. Kontrollera om du har några långvariga eller misstänkta transaktioner.</li>
-<li>Granska dem individuellt genom att gå till Övervaka &gt; Transaktioner och se till att du anger filtren för webben och Mest tidskrävande<em>.</em>
+<li>Logga in på <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; (välj en app) &gt; Översikt. Se till att filtret är inställt på tiden för webbtransaktioner i listrutan för huvuddiagram. Titta efter programserverns tid i tabellen Transaktioner. Kontrollera om du har några långvariga eller misstänkta transaktioner.</li>
+<li>Undersök dem individuellt genom att gå till Övervaka &gt; Transaktioner och se till att du anger filtren för webben och den mest tidskrävande <em>.</em>
 </li>
 <li>Sök sedan efter moduler från tredje part som förbrukar resurser: betalare, ERP osv.</li>
 <li>I avsnittet Övervakning av APM:<ol>
 <li>Klicka på Transaktioner.</li>
 <li>Bläddra nedåt och klicka på Visa alla transaktionsregister.</li>
-<li>Du kan sortera transaktioner efter <a href="https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems#table_view">olika parametrar</a> och gå till dem som orsakar misstanke.</li>
+<li>Du kan sortera transaktioner efter <a href="https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems#table_view">olika parametrar</a> och hoppa till dem som orsakar misstanke.</li>
 <li>Granska transaktionerna med låga Apdex-poäng, ovanligt höga antal eller hög genomsnittlig tid, eller Dissat %.</li>
-<li>Klicka på varje enskild transaktion. Om du inte kan lösa problemet <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">skicka in en supportanmälan.</a>
+<li>Klicka på varje enskild transaktion. Om du inte kan lösa problemet kan du <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">skicka in en supportanmälan.</a>
 </li>
 <li>Om du behöver undersöka fler saker bör du överväga att kontrollera transaktioner som inte är webbtransaktioner.</li>
 </ol>
@@ -55,12 +55,12 @@ Den här artikeln innehåller felsökningssteg för att lösa Adobe Commerce om 
 <p>Tid för icke-webbtransaktioner (åtgärder och bakgrundsuppgifter):</p>
 <ol>
 <ol>
-<li>Logga in på <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; (Välj en app) &gt; Översikt. Se till att du väljer Tid för icke-webbtransaktioner i listrutan för huvuddiagram. Klicka på enskilda transaktioner i transaktionsregistret. Håll utkik efter långvariga eller misstänkta transaktioner. Detta omfattar backend-jobb, cron-jobb eller import-/exportjobb, inklusive tredjepartsjobb.</li>
+<li>Logga in på <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; (välj en app) &gt; Översikt. Se till att du väljer Tid för icke-webbtransaktioner i listrutan för huvuddiagram. Klicka på enskilda transaktioner i transaktionsregistret. Håll utkik efter långvariga eller misstänkta transaktioner. Detta omfattar backend-jobb, cron-jobb eller import-/exportjobb, inklusive tredjepartsjobb.</li>
 </ol>
 </ol>
 </td>
 <td>
-<p>Mer information om poängen i New Relic Apdex finns i <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic Documentation &gt; APM Apdex &gt; Measurement user bel</a>. Du kan även referera till <a href="/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md">Hanterade aviseringar för Adobe Commerce: Adexvarning</a> i vår kunskapsbas för support.</p>
+<p>Mer information om New Relic Apdex-poängen finns i <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic Documentation &gt; APM Apdex &gt; Mät användarnöjdhet</a>. Du kan även referera till <a href="/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md">Hanterade aviseringar för Adobe Commerce: Apdex-varning</a> i vår kunskapsbas för support.</p>
 </td>
 </tr>
 <tr>
@@ -75,7 +75,7 @@ Den här artikeln innehåller felsökningssteg för att lösa Adobe Commerce om 
 </ol>
 </td>
 <td>
-<p>Om du vill veta mer om prestandamått, särskilt CPU i procent, I/O-byte och minnesanvändning för enskilda eller grupper av processer, se <a href="https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes">New Relic Documentation &gt; Infrastructure UI page &gt; Infrastructure Host page &gt; Processes tab</a>.</p>
+<p>Om du vill veta mer om prestandamätningar, särskilt CPU i procent, I/O-byte och minnesanvändning för enskilda eller grupper av processer, kan du läsa <a href="https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes">New Relic Documentation &gt; Infrastructure UI page &gt; Infrastructure Host page &gt; Processes tab</a>.</p>
 </td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ Den här artikeln innehåller felsökningssteg för att lösa Adobe Commerce om 
 <li>Sortera efter Användare.</li>
 <li>Granska de vanligaste frågorna.
 
-Obs! <code>UPPDATERA</code> eller <code>INSERT</code>frågor är de mest processorkrävande frågorna.</li>
+Obs! <code>UPPDATERA</code> eller <code>INFOGA</code>frågor är de mest processorkrävande frågorna.</li>
 <li>Växla till Genomflöde från Sortera efter väljare och sök efter processer som har orsakat databasens genomströmning till listruta.</li>
 <li>Om du behöver utforska mer kan du överväga att undersöka tredjepartstjänster.</li>
 </ol>
@@ -133,7 +133,7 @@ Obs! <code>UPPDATERA</code> eller <code>INSERT</code>frågor är de mest process
 </ol>
 </td>
 <td>
-<p>Mer information om hur du utforskar specifika prestandaproblem finns i <a href="https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems#tx_functions">New Relic Documentation &gt; APM UI pages &gt; Transactions page &gt; Use drill down functions</a>.</p>
+<p>Mer information om hur du undersöker specifika prestandaproblem finns i <a href="https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems#tx_functions">New Relic Documentation &gt; APM UI pages &gt; Transactions page &gt; Use drill down functions</a>.</p>
 </td>
 </tr>
 </tbody>

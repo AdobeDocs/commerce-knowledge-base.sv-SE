@@ -34,7 +34,7 @@ Ett problem har upptäckts i Magento Open Source, Adobe Commerce lokalt och Adob
 
 1. Installera Adobe Commerce.
 1. Aktivera Elasticesach 6 som katalogsökmotor.
-1. Lägg till ett antal produkter i kategorin som överskrider gränsen på en sida i Admin. **Anteckning**: 12 är standardantalet produkter som visas per sida i Adobe Commerce 2.3.3.
+1. Lägg till ett antal produkter i kategorin som överskrider gränsen på en sida i Admin. **Obs!**: 12 är standardantalet produkter som visas per sida i Adobe Commerce 2.3.3.
 1. Öppna kategorin i butiken (antingen sökresultat eller kategorisida) och gå till sidan 2.
 
 <u>Förväntat resultat</u>:
@@ -43,13 +43,13 @@ Produkterna ska visas på den andra sidan.
 
 <u>Faktiskt resultat</u>:
 
-**&quot;***Det går inte att hitta produkter som matchar markeringen***&quot;** -meddelandet visas på den andra sidan.
+**&quot;***Det går inte att hitta produkter som matchar meddelandet***&quot;**&quot; som visas på den andra sidan.
 
 ## Lösning
 
 Åtgärda problemet genom att tillämpa den patch som är bifogad den här artikeln. Om du vill hämta den bläddrar du nedåt till slutet av artikeln och klickar på filnamnet eller klickar på följande länk:
 
-[Ladda ned katalogsidnumreringsproblem med Elasticsearch 6.x-korrigering](assets/Catalog_pagination_issue_on_Elasticsearch_6_composer-2019-10-11-08-07-41.patch.zip) - Korrigeringen är kompatibel med alla berörda versioner och utgåvor.
+[Problem med att hämta katalogsidnumrering på korrigeringsfilen Elasticsearch 6.x](assets/Catalog_pagination_issue_on_Elasticsearch_6_composer-2019-10-11-08-07-41.patch.zip) - Korrigeringen är kompatibel med alla berörda versioner och utgåvor.
 
 >[!WARNING]
 >
@@ -57,6 +57,6 @@ Produkterna ska visas på den andra sidan.
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Bifogade filer

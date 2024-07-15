@@ -34,11 +34,11 @@ Dessa undantag beror på filsystemets behörighetsinställningar.
 
 ### Lösning
 
-[Ange ägarskap och behörigheter för filsystemet igen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) som en användare med `root` behörighet.
+[Ange ägarskap och behörigheter för filsystemet igen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) som en användare med `root`-behörighet.
 
 ## Symptom (produktionsläge)
 
-Om du är inställd för [produktionsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html)misslyckas installationen av exempeldata om du använder [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html) kommando:
+Om du är inställd för [produktionsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html) misslyckas installationen av exempeldata om du använder kommandot [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html):
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -46,9 +46,9 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 ### Lösning
 
-Installera inte exempeldata i produktionsläge. Växla till utvecklarläge och rensa vissa `var` kataloger och försök igen.
+Installera inte exempeldata i produktionsläge. Växla till utvecklarläge, rensa några `var`-kataloger och försök igen.
 
-Ange följande kommandon i den ordning som visas som [Ägare av Adobe Commerce filsystem](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html):
+Ange följande kommandon i den ordning som visas som ägare av [Adobe Commerce-filsystemet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html):
 
 ```php
 cd <magento_root>
@@ -107,15 +107,15 @@ Det här felet inträffar när den maximala konfigurerade körningstiden för di
 
 ### Lösning
 
-Som användare med `root` behörighet, ändra `php.ini` för att öka värdet på `max_execution_time` till minst 600. (600 sekunder är 10 minuter. Du kan öka värdet till vad du vill.) Du bör ändra `max_execution_time` tillbaka till det tidigare värdet när installationen har slutförts.
+Som en användare med `root`-behörighet kan du ändra `php.ini` för att öka värdet för `max_execution_time` till 600 eller mer. (600 sekunder är 10 minuter. Du kan öka värdet till vad du vill.) Du bör ändra tillbaka `max_execution_time` till dess tidigare värde när installationen har slutförts.
 
-Om du inte är säker på var `php.ini` anger du följande kommando:
+Om du är osäker på var `php.ini` finns anger du följande kommando:
 
 ```php
 php --ini
 ```
 
-Värdet för `Loaded Configuration File` är `php.ini` du måste ändra.
+Värdet för `Loaded Configuration File` är det `php.ini` som du måste ändra.
 
 >[!NOTE]
 >

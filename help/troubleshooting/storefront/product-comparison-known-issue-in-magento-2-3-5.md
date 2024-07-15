@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Produktjämförelse - känt fel i Adobe Commerce 2.3.5
 
-Den här artikeln innehåller rekommendationer om hur du undviker en känd [produktjämförelse](https://docs.magento.com/user-guide/marketing/product-compare.html) problem i Adobe Commerce 2.3.5 och Adobe Commerce om molninfrastruktur 2.3.5.
+Den här artikeln innehåller rekommendationer om hur du undviker ett känt [produktjämförelseproblem](https://docs.magento.com/user-guide/marketing/product-compare.html) i Adobe Commerce lokal 2.3.5 och Adobe Commerce om molninfrastruktur 2.3.5.
 
 ## Berörda produkter och versioner
 
@@ -30,7 +30,7 @@ Ange värden som inte är tomma för jämförbara produktattribut eller använd 
 
 >[!NOTE]
 >
->Produktattribut anges att användas för jämförelse med **Jämförelsebar på Storefront** konfigurationsinställning. Mer information finns i [Skapar produktattribut](https://docs.magento.com/user-guide/stores/attribute-product-create.html#step-4-describe-the-storefront-properties) i vår användarhandbok.
+>Produktattribut är inställda för att användas för jämförelse med konfigurationsinställningen **Jämförelsebar på Storefront** . Mer information finns i [Skapa produktattribut](https://docs.magento.com/user-guide/stores/attribute-product-create.html#step-4-describe-the-storefront-properties) i användarhandboken.
 
 En programfix kommer att finnas i Adobe Commerce 2.3.6, som kommer att släppas tredje kvartalet 2020.
 
@@ -53,4 +53,4 @@ Du kan visa korrigeringen i GitHub (tänk på att korrigeringen inte gick igenom
 <p title="Patch for Amazon Pay checkout issue in Adobe Commerce 2.3.5-p1"><a href="/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md">Patch for Amazon Pay checkout issue in Adobe Commerce 2.3.5-p1</a></p>
 </li>
 </ul>
-</li><li><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues">Adobe Commerce 2.3.5 Kända fel</a> i vår utvecklardokumentation</li></ul>
+</li><li><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues">Kända fel i Adobe Commerce 2.3.5</a> i utvecklardokumentationen</li></ul>

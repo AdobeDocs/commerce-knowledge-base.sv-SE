@@ -29,7 +29,7 @@ Den här artikeln innehåller lösningar för när produkter inte visas i butike
 
    ![open_product_page_magento_2.4.1.png](assets/open_product_page_magento_2.4.1.png)
 
-1. Klicka **Lägg till produkt** och gå igenom processen för att skapa produkter. Eller importera produkter från en CSV-fil.
+1. Klicka på **Lägg till produkt** och gå igenom produktskapandeprocessen. Eller importera produkter från en CSV-fil.
 
 <u>Förväntat resultat</u>:
 
@@ -47,15 +47,15 @@ Detta kan bero på flera olika orsaker. Följ stegen nedan för att kontrollera 
 
 Var och en av följande punkter kan lösa problemet.
 
-* Kontrollera produktinställningarna i Admin. Gå till **Katalog** > **Produkter**&#x200B;öppnar du produktsidan och ser till att följande fält är korrekt konfigurerade:
+* Kontrollera produktinställningarna i Admin. Gå till **Katalog** > **Produkter**, öppna produktsidan och kontrollera att följande fält är korrekt konfigurerade:
    * **Aktivera produkt** = *Ja.*
-   * **Stock-status**: *I Stock*. Eller om *Slut på lager* är rätt värde, kontrollera att **Visa ej lagrade produkter** (**LAGRING** > **Inställningar** > **Konfiguration** > **KATALOG** > **Lager** > **Alternativ för Stock** > **Visa ej lagrade produkter**) är inställd på *Ja* (konfigurerat på global nivå).
+   * **Stock-status**: *I Stock*. Eller om *Slut på lager* är rätt värde kontrollerar du att **Visa Utanför Stock-produkter** (**STORES** > **Inställningar** > **Konfiguration** > **KATALOG** > **Lager** > **Stock-alternativ** > **Visa ej i lager**) är inställt på *Ja* (konfigurerat på global nivå).
    * **Kategorier**: Om du försöker hitta produkten på en kategorisida kontrollerar du att produkten är tilldelad kategorin. Om du vill förenkla felsökningen skapar du en ny kategori på den aktuella sidan och tilldelar en produkt till den.
-   * **Synlighet** = *Katalog, sök.*
-   * I **Produkt på webbplatser** kontrollerar du att produkten är tilldelad till rätt webbplats.
+   * **Synlighet** = *Katalog, sökning.*
+   * Kontrollera att produkten har tilldelats rätt webbplats i avsnittet **Produkt i webbplatser**.
    * Växla omfångsväljaren till butiksvyn där du försöker hitta produkten i butiken och verifiera samma inställningar.
-* Utför hela indexeringen genom att köra `bin/magento indexer:reindex` från konsolen och rensa all cache i Admin, under **System** > **verktyg** > **Cachehantering** eller från konsolen genom att köra `bin/magento cache:clean`.
-* Om ovanstående inte hjälper dig kan du starta ytterligare undersökningar genom att kontrollera loggarna i `var/log` katalog.
+* Utför den fullständiga omindexeringen genom att köra `bin/magento indexer:reindex` från konsolen och tömma all cache i Admin, under **System** > **Verktyg** > **Cachehantering**, eller från konsolen genom att köra `bin/magento cache:clean`.
+* Om ovanstående inte hjälper kan du starta ytterligare undersökningar genom att kontrollera loggar i katalogen `var/log`.
 
 ## Relaterad läsning i vår kunskapsbas
 

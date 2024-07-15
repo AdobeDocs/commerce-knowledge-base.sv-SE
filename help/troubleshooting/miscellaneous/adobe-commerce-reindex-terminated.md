@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce cloud: omindexering avslutas med `Killed` message
+# Adobe Commerce-moln: omindexering avslutas med meddelandet `Killed`
 
 ## Berörda produkter och versioner
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Problem
 
-Du försöker köra ett omindex på Integration-grenen (eller på Förproduktion av Starter-arkitekturprojektet) och processen avslutas med `Killed` meddelande.
+Du försöker köra en omindexering på integreringsgrenen (eller på mellanlagring för startarkitekturprojektet) och processen avslutas med meddelandet `Killed`.
 
 ## Orsak
 
@@ -31,11 +31,11 @@ Den vanligaste orsaken till detta är ett stort antal produkter, butiker och/ell
 1. Minska antalet produkter (samt kundgrupper och butiker - om tillämpligt).
 1. Begränsa användningen till en eller två samtidiga användare.
 1. Inaktivera cron-jobb och kör manuellt efter behov.
-1. Om detta inte har gjorts tidigare, begär du en uppgradering till Enhanced Integration-miljöerna - notera begränsningen av antalet miljöer som du begränsas till när uppgraderingen har utförts. Se [Begäran om förbättrad integreringsmiljö - Pro och Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) artikel i vår kunskapsbas för support för mer information.
+1. Om detta inte har gjorts tidigare, begär du en uppgradering till Enhanced Integration-miljöerna - notera begränsningen av antalet miljöer som du begränsas till när uppgraderingen har utförts. Mer information finns i artikeln [Förbättrad integreringsmiljö - Pro och Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) i vår kunskapsbas för support.
 
 ## Relaterad läsning:
 
 I vår utvecklardokumentation:
 
-* [Proffsarkitektur > Integreringsmiljö](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#cloud-arch-int)
+* [Pro-arkitektur > Integreringsmiljö](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#cloud-arch-int)
 * [Startarkitektur > Mellanlagringsmiljö](https://devdocs.magento.com/cloud/architecture/starter-architecture.html#cloud-arch-stage)

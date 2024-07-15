@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Fastly] Frågor och svar om ursprungsinsvepning"
-description: Vanliga frågor och svar om [!DNL Fastly] aktivering av ursprungsinsvepning i Adobe Commerce (som har implementerats fullt ut 2021).
+title: "[!DNL Fastly] frågor och svar om ursprungsinsvepning av aktivering"
+description: Vanliga frågor och svar behandlar frågor om  [!DNL Fastly] ursprungsinsvepning i Adobe Commerce (som har implementerats fullt ut 2021).
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
 source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
 workflow-type: tm+mt
@@ -9,17 +9,17 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Fastly] Vanliga frågor om aktivering av ursprungsinsvepning
+# Vanliga frågor om aktivering av ursprungsinsvepning för [!DNL Fastly]
 
-Vanliga frågor och svar om [!DNL Fastly] aktivering av ursprungsinsvepning i Adobe Commerce (som har implementerats fullt ut 2021).
+Vanliga frågor och svar behandlar vanliga frågor om [!DNL Fastly] ursprungsinsvepning i Adobe Commerce (som har implementerats fullt ut 2021).
 
-## Vad är [!DNL Fastly] Insvepning?
+## Vad är [!DNL Fastly]-ursprung som insveper?
 
-Insvepning är en säkerhetsfunktion som gör att Adobe Commerce i molninfrastrukturen kan blockera alla [!DNL non-Fastly] trafik (för att förhindra DDoS-attacker, till molninfrastrukturen (ursprung).
+Insvepning av ursprung är en säkerhetsfunktion som gör att Adobe Commerce i molninfrastrukturen kan blockera all [!DNL non-Fastly]-trafik (för att förhindra DDoS-attacker, gå till molninfrastrukturen (ursprung).
 
 ## Vilka är fördelarna med ursprungsinsvepning?
 
-Insvepning är avsett att förhindra att trafik kringgår [!DNL Fastly Web Application Firewall] (WAF) och slussa den genom det strikt definierade flödet av **[!DNL Fastly]** > **Belastningsutjämning** > **Instanser**. I och med den här implementeringen garanteras all trafik att passera genom [!DNL Fastly] WAF och den interna WAF som är inbyggd i belastningsutjämnaren.
+Insvepning av startpunkt är utformat för att förhindra att trafik kringgår [!DNL Fastly Web Application Firewall] (WAF) och dirigerar den via det strikt definierade flödet för **[!DNL Fastly]** > **belastningsutjämnare** > **instanser**. Med den här implementeringen garanteras all trafik att passera både [!DNL Fastly]-WAF och den interna WAF som är inbyggd i belastningsutjämnaren.
 
 ## Varför sker det här insvepningen?
 
@@ -35,7 +35,7 @@ Nej, det gör det inte.
 
 ## Påverkar ursprungsinsvepning REST API?
 
-[!DNL Fastly] cachelagrar inte API-anrop, så klienten bör klara ändringen. Insvepning av enbart ursprung blockerar begäranden som går direkt till ursprunget, som:
+[!DNL Fastly] cache-lagrar inte API-anrop, så klienten bör vara okej med ändringen. Insvepning av enbart ursprung blockerar begäranden som går direkt till ursprunget, som:
 
 * Produktion
 
@@ -66,7 +66,7 @@ mywebsite.com/rest/default/V1/inventory/source-items
 
 ## Kommer förändringen att påverka driftsättning och driftstopp?
 
-Nej, den här ändringen **NOT** påverkar driftsättningen och driftstoppen.
+Nej, den här ändringen **NOT** påverkar distributionen och driftstoppen.
 
 ## Om projektet har flera mellanlagringsmiljöer, kommer ursprungsinsvepning att användas i alla mellanlagringsmiljöer?
 

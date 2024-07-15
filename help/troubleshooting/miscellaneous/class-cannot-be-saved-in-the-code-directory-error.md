@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Felet &quot;Klassen kan inte sparas i kodkatalogen&quot;
 
-I den här artikeln beskrivs hur du åtgärdar problemet där det sätt på vilket du angav beroenden förhindrar att klasser genereras automatiskt direkt, och du får *&quot;Klassen kan inte sparas i den genererade katalogen/kodkatalogen&quot;* felmeddelande.
+I den här artikeln beskrivs hur du åtgärdar problemet där det sätt som du angav beroenden förhindrar att klasser genereras automatiskt i farten, och du får felmeddelandet *&quot;Klassen kan inte sparas i den genererade katalogen/kodkatalogen&quot;*.
 
 ## Berörda produkter och versioner
 
@@ -26,7 +26,7 @@ I den här artikeln beskrivs hur du åtgärdar problemet där det sätt på vilk
 1. I den lokala miljön skriver du en anpassad klass med ett beroende på den automatiskt genererade klassen.
 1. Kör scenariot, där din anpassade klass aktiveras, och se hur den fungerar korrekt.
 1. Genomför och överför ändringarna till integreringsmiljön. Detta skulle utlösa distributionsprocessen. Distributionen har slutförts.
-1. I [integreringsmiljö](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md)kör du det scenario där din anpassade klass aktiveras.
+1. Kör scenariot där din anpassade klass utlöses i [integreringsmiljön](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md).
 
 <u>Förväntat resultat</u>
 
@@ -34,11 +34,11 @@ Allt fungerar korrekt, på samma sätt som i din lokala miljö.
 
 <u>Faktiskt resultat</u>
 
-Fel: felmeddelandet att klassen inte kan sparas i `generated/code` katalog.
+Ett fel uppstod när felmeddelandet om att din klass inte kan sparas i katalogen `generated/code` visades.
 
 ## Orsak
 
-Orsaken till problemet är att klassen som du är beroende av inte genereras under distributionen och inte kan genereras senare när klassen aktiveras, eftersom `generated/code` katalogen är inte tillgänglig för skrivning när distributionen har slutförts.
+Orsaken till problemet är att klassen som du är beroende av inte genereras under distributionen och inte kan genereras senare när klassen aktiveras, eftersom katalogen `generated/code` inte kan skrivas när distributionen är klar.
 
 Det finns två huvudorsaker till detta:
 
@@ -57,7 +57,7 @@ Flytta klasskoden från startpunkten till en separat modul och använd den sedan
 
 <u>Exempel</u>
 
-Ursprunglig kod i, till exempel `index2.php` :
+Ursprunglig kod i, till exempel, `index2.php` :
 
 ```php
 <?php
@@ -103,7 +103,7 @@ Du måste göra följande:
        }
    ```
 
-1. Redigera startpunkten `my_api/index.php` så att det ser ut så här:
+1. Redigera startpunkten `my_api/index.php` så att den ser ut så här:
 
    ```php
      <?php
@@ -170,4 +170,4 @@ class YourClass
 
 ## Relaterad läsning
 
-* [Kodgenerering](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/code-generation.html) i vår dokumentation för utvecklare.
+* [Kodgenerering](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/code-generation.html) i utvecklardokumentationen.

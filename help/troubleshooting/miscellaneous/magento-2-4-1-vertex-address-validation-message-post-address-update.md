@@ -24,27 +24,27 @@ I den här artikeln beskrivs ett känt Adobe Commerce 2.4.1-problem där vertex-
 
 Förutsättningar:
 
-Aktivera **Rensning av vertex-adress**. Om du vill se steg går du till [Konfigurerar adressrensning för Storefront](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) i vår användarhandbok.
+Aktivera **vertex-adressrensning**. Anvisningar finns i [Konfigurera adressrensning för Storefront](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) i användarhandboken.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
 1. Skapa ett konto och logga in.
-1. Lägg till en artikel i kundvagnen genom att klicka **Lägg i kundvagnen**. Klicka på kundvagnsikonen och klicka sedan på **Gå till kassan**.
-1. Ange en giltig adress i dialogrutan **Leveransadress** fält.
-1. Markera något av alternativen under **Leveransmetoder**. Klicka sedan på **Nästa**.
-1. Om adressverifieringen föreslår en annan adressinformation klickar du på **Uppdatera adress** och klicka **Nästa**.
-1. Avmarkera **Fakturerings- och leveransadressen är samma** kryssrutan.
+1. Lägg till ett objekt i kundvagnen genom att klicka på **Lägg till i kundvagnen**. Klicka på kundvagnsikonen och sedan på **Fortsätt till kassan**.
+1. Ange en giltig adress i fältet **Leveransadress**.
+1. Markera ett av alternativen under **Leveransmetoder**. Klicka sedan på **Nästa**.
+1. Om adressverifieringen föreslår en annan adressinformation klickar du på **Uppdatera adress** och sedan på **Nästa**.
+1. Avmarkera kryssrutan **Min fakturerings- och leveransadress är densamma**.
 
 <u>Första scenariot:</u>
 
 Följ [över sex steg](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) och sedan:
 
 1. Ange en ny giltig faktureringsadress.
-1. Klicka på **Uppdatera** -knappen. Meddelandet/förslaget visas enligt följande: *Adressen är inte giltig.* Detta följer med ett adressförslag som: *Postnummer: XXXXX-XXXX Street: XXX City Street XXX*
-1. Klicka på **Uppdatera** (klicka inte på **Uppdatera adress** -knapp för vertex-adressförslag).
-1. Klicka på **Redigera** knappen för den uppdaterade faktureringsadressen.
+1. Klicka på knappen **Uppdatera**. Meddelandet/förslaget visas enligt följande: *Adressen är inte giltig.* Detta följer med ett adressförslag som: *Postnummer: XXXXX-XXXX Street : XXX City Street XXX*
+1. Klicka på knappen **Uppdatera** (klicka inte på knappen **Uppdatera adress** i vertex-adressförslaget).
+1. Klicka på knappen **Redigera** för den uppdaterade faktureringsadressen.
 1. Välj adressen i listrutan Adress.
-1. Klicka på **Uppdatera** -knappen.
+1. Klicka på knappen **Uppdatera**.
 
 <u>Förväntat resultat:</u>
 
@@ -52,16 +52,16 @@ Det gamla meddelandet/förslaget för validering har tagits bort.
 
 <u>Faktiskt resultat:</u>
 
-Meddelande/förslag för validering *&quot;Vi hittade ingen giltig adress Postnummer: XXXXX-XXXX Street : XXX City street XXX&quot;* meddelandet är **NOT** borttagen. Samma problem uppstår om du anger en ogiltig adress i formuläret.
+Verifieringsmeddelandet/förslaget *&quot;Vi hittade ingen giltig adress Postnummer: XXXXX-XXXX Street : XXX City Street XXX&quot;* message is **NOT** removed. Samma problem uppstår om du anger en ogiltig adress i formuläret.
 
 <u>Andra scenariot:</u>
 
 Följ [över sex steg](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) och sedan:
 
 1. Ange en giltig adress i adressformuläret.
-1. Klicka på **Uppdatera** -knappen. Meddelandet/förslaget visas enligt följande: *Adressen är inte giltig.* Detta följer med ett adressförslag som: *Postnummer: XXXXX-XXXX Street: XXX City Street XXX*.
-1. Klicka på **Uppdatera** (klicka inte på **Uppdatera adress** knappen för vertex-adressförslag).
-1. Kontrollera ***Fakturerings- och leveransadressen är samma*** nedrullningsbar meny.
+1. Klicka på knappen **Uppdatera**. Meddelandet/förslaget visas enligt följande: *Adressen är inte giltig.* Detta följer med ett adressförslag som: *Postnummer: XXXXX-XXXX Street : XXX City Street XXX*.
+1. Klicka på knappen **Uppdatera** (klicka inte på knappen **Uppdatera adress** för vertex-adressförslag).
+1. Kontrollera att ***Min fakturerings- och leveransadress är samma***-listruta.
 
 <u>Förväntat resultat:</u>
 
@@ -69,7 +69,7 @@ Det gamla meddelandet/förslaget för validering har tagits bort.
 
 <u>Faktiskt resultat:</u>
 
-Meddelande/förslag för validering *&quot;Vi hittade ingen giltig adress Postnummer: XXXXX-XXXX Street XXX City street XXX&quot;* meddelandet är **NOT** borttagen. Samma problem uppstår om du anger en ogiltig adress i formuläret.
+Verifieringsmeddelandet/förslaget *&quot;Vi hittade ingen giltig adress Postnummer: XXXXX-XXXX Street XXX City Street XXX&quot;* meddelande är **INTE** borttaget. Samma problem uppstår om du anger en ogiltig adress i formuläret.
 
 ## Relaterad läsning i vår kunskapsbas:
 

@@ -41,14 +41,14 @@ Sökvägen till bilder och formatmallar är felaktig, antingen på grund av en f
 
 Om du vill bekräfta att så är fallet använder du en webbläsarkontroll för att kontrollera sökvägarna till statiska resurser och kontrollera att resurserna finns i filsystemet Adobe Commerce eller Magento Open Source.
 
-Statiska resurser finns under `<magento_root>/pub/static/` , i `frontend` och `adminhtml` kataloger.
+Statiska resurser finns under `<magento_root>/pub/static/`, i katalogerna `frontend` och `adminhtml`.
 
 ## Lösning
 
 Här följer några möjliga lösningar beroende på vilken programvara du använder och orsaken till problemet:
 
-* Om du använder webbservern Apache bör du kontrollera [serveromskrivningar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html#apache-help-rewrite) och Adobe Commerce/Magento Open Source-serverns bas-URL och försök igen. Om du har konfigurerat Apache `AllowOverride` -direktivet felaktigt hanteras inte de statiska filerna från rätt plats.
-* Om du använder webbservern nginx ska du se till att [konfigurera en virtuell värdfil](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/nginx.html#configure-nginx-ubuntu). Den nya virtuella värdfilen måste uppfylla följande villkor:
-   * The `include` -direktivet måste peka på exempelkonfigurationsfilen nginx i installationskatalogen för Adobe Commerce/Magento Open Source. Till exempel:    `include /var/www/html/magento2/nginx.conf.sample;`
-   * The `server_name` -direktivet måste matcha den bas-URL som du angav när du installerade Adobe Commerce/Magento Open Source. Till exempel: `server_name 192.186.33.10;`
-* Om programmet finns i [produktionsläge](https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html#production-mode), prova att distribuera statiska vyfiler med `magento setup:static-content:deploy` -kommando. Mer information om hur du distribuerar statiska filer finns i [Distribuera statiska vyfiler](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) i vår dokumentation för utvecklare.
+* Om du använder webbservern Apache kontrollerar du att inställningen [server skriver om](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html#apache-help-rewrite) och Adobe Commerce/Magento Open Source-serverns bas-URL och försöker igen. Om du har konfigurerat Apache `AllowOverride`-direktivet på ett felaktigt sätt kommer de statiska filerna inte att hanteras från rätt plats.
+* Om du använder webbservern nginx måste du [konfigurera en virtuell värdfil](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/nginx.html#configure-nginx-ubuntu). Den nya virtuella värdfilen måste uppfylla följande villkor:
+   * Direktivet `include` måste peka på exempelkonfigurationsfilen nginx i installationskatalogen för Adobe Commerce/Magento Open Source. Till exempel:    `include /var/www/html/magento2/nginx.conf.sample;`
+   * Direktivet `server_name` måste matcha den bas-URL som du angav när du installerade Adobe Commerce/Magento Open Source. Till exempel: `server_name 192.186.33.10;`
+* Om programmet är i [produktionsläge](https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html#production-mode) kan du försöka distribuera statiska vyfiler med kommandot `magento setup:static-content:deploy`. Mer information om hur du distribuerar statiska filer finns i [Distribuera statiska vyfiler](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) i utvecklardokumentationen.

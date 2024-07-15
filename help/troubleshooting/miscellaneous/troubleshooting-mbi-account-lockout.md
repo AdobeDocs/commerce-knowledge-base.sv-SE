@@ -27,7 +27,7 @@ När du har bekräftat att e-postadressen är korrekt försöker du logga in ige
 
 ## Försök återställa lösenordet
 
-Om du har verifierat att du använder rätt e-postadress kan du försöka med att återställa lösenordet. Du kan använda **Har du glömt?** på inloggningssidan från föregående avsnitt för att utlösa ett e-postmeddelande för återställning av lösenord.
+Om du har verifierat att du använder rätt e-postadress kan du försöka med att återställa lösenordet. Du kan använda de **glömde?**-länk på inloggningssidan från föregående avsnitt som utlöser ett e-postmeddelande för återställning av lösenord.
 
 Om du inte ser e-postmeddelandet först måste du titta i skräppostmappen. Ibland kan till och med välavsiktliga e-postmeddelanden förväxlas för skräppost. **Observera att länkarna för temporär åtkomst i dessa e-postmeddelanden bara fungerar en gång!**
 
@@ -44,7 +44,7 @@ Om du fortfarande är utelåst måste du vara säker på att din e-postadress ä
 
 Om du fortfarande inte kan komma åt ditt konto rekommenderar vi att du söker efter fel och skickar in en biljett till vårt supportteam. Hur kan du göra såhär? Genom att öppna utvecklarverktygen i webbläsaren och ta en skärmbild av eventuella fel som visas i konsolen eller i loggfönstret. I GIF nedan öppnar jag utvecklingsverktygen för Google Chrome:
 
-![Öppna Chrome&#39;s utvecklarverktyg.](assets/Opening_Chrome_dev_tools.gif)
+![Öppnar Chrome utvecklingsverktyg.](assets/Opening_Chrome_dev_tools.gif)
 
 I exemplet ovan använde vi den vanligaste metoden (**högerklicka** > **Inspect**) för att öppna konsolen. Om webbläsaren inte har den här metoden eller om du behöver hjälp använder du dokumentationslänkarna nedan för den webbläsare som du använder:
 
@@ -53,7 +53,7 @@ I exemplet ovan använde vi den vanligaste metoden (**högerklicka** > **Inspect
 <tr>
 <td><a href="https://www.technipages.com/mac-os-x-enable-web-inspector-in-safari">Safari</a></td>
 <td><a href="https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Opening_the_Web_Console">Firefox</a></td>
-<td><a href="https://developers.google.com/web/tools/chrome-devtools/?hl=en">Krom</a></td>
+<td><a href="https://developers.google.com/web/tools/chrome-devtools/?hl=en">Chrome</a></td>
 <td><a href="https://www.opera.com/dragonfly/documentation/">Opera</a></td>
 <td><a href="https://msdn.microsoft.com/en-us/library/gg589512(v=vs.85).aspx#OpeningTools">Internet Explorer</a></td>
 </tr>
@@ -62,14 +62,14 @@ I exemplet ovan använde vi den vanligaste metoden (**högerklicka** > **Inspect
 
 I vissa webbläsare kanske inte konsolen visas automatiskt när du öppnar utvecklarverktygen - koden för webbplatsen kan visas först. Om detta händer dig klickar du på alternativet Konsol i utvecklarfönstret och tar skärmbilder av eventuella fel som visas där.
 
-Skicka en biljett till vårt supportteam med **felbilder** och **Commerce Intelligence-kontots e-postadress**.
+Skicka en biljett till vårt supportteam med **felbilder** och ditt **Commerce Intelligence-kontos e-postadress**.
 
 ## Ser du inga fel eller så är du bara vilse?
 
-Oroa dig inte! Skicka in en ny supportanmälan (lägg in e-postadressen till ditt Commerce Intelligence-konto) så får du tillbaka till ditt konto så snart som möjligt.
+Oroa dig inte! Skicka in en ny supportanmälan (se till att du anger ditt Commerce Intelligence-kontos e-postadress) så får du tillbaka till ditt konto så snart som möjligt.
 
 ## Relaterade ämnen i vår kunskapsbas för support:
 
-* [Lägga till en ny användare och ange behörigheter](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
+* [Lägger till en ny användare och anger behörigheter](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
 * [Hur uppdaterar jag min e-postadress eller mitt lösenord?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html)
 * [Hur återställer jag mitt lösenord?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html)

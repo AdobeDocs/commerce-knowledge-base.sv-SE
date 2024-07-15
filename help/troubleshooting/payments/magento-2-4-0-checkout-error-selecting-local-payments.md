@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Den här artikeln handlar om en lösning på ett känt problem i Adobe Commerce vid utcheckning där ett felmeddelande visas när du väljer en lokal betalningsmetod för vissa länder. Detta gäller länderna Belgien, Italien, Nederländerna, Polen och Spanien.
 
-Felmeddelandet, &quot;*Det finns för närvarande inga tillgängliga betalningsmetoder. Uppdatera din faktureringsadress.*&quot; kommer att visas, men de lokala betalningsmetoderna kommer fortfarande att visas och fungera korrekt. En permanent programfix finns i Adobe Commerce 2.4.1.
+Felmeddelandet *Det finns för närvarande inga tillgängliga betalningsmetoder. Uppdatera din faktureringsadress.* kommer att visas, men de lokala betalningsmetoderna kommer fortfarande att visas och fungera korrekt. En permanent programfix finns i Adobe Commerce 2.4.1.
 
 ## Berörda produkter och versioner
 
@@ -28,7 +28,7 @@ Felmeddelandet, &quot;*Det finns för närvarande inga tillgängliga betalningsm
 
 * Adobe Commerce 2.4.0 är installerat.
 * Skapa en produkt och en kategori.
-* Konfigurera [Betalningssätt för Braintree](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/braintree.html).
+* Konfigurera betalningsmetoden [Braintree](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/braintree.html).
 
 <u>Steg som ska återskapas</u>:
 
@@ -44,7 +44,7 @@ De lokala betalningsmetoderna ska visas som vanligt, utan något felmeddelande.
 
 <u>Faktiskt resultat</u>:
 
-Felmeddelandet, &quot;*Det finns för närvarande inga tillgängliga betalningsmetoder. Uppdatera din faktureringsadress.*&quot; visas, men de lokala betalningsmetoderna visas och fungerar fortfarande korrekt.
+Felmeddelandet *Det finns för närvarande inga tillgängliga betalningsmetoder. Uppdatera din faktureringsadress.* visas, men de lokala betalningsmetoderna visas och fungerar fortfarande korrekt.
 
 ## Lösning
 

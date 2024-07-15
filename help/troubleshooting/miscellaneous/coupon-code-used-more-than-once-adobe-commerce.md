@@ -33,7 +33,7 @@ Merchants skapar en kupong för engångsbruk och kunderna kan använda den flera
 
 <u>Förväntat resultat</u>:
 
-Kupongen får bara användas en gång. Ett meddelande visas: *Kupongkoden COUPON_NAME är ogiltig*.
+Kupongen får bara användas en gång. Ett meddelande visas: *Kupongkoden COUPON_NAME är inte giltig*.
 
 <u>Faktiskt resultat</u>:
 
@@ -42,11 +42,11 @@ Kupongen kan användas mer än en gång.
 
 ## Orsak
 
-Handlare har inte `sales.rule.update.coupon.usage` kundens inställning och körning resulterar i felaktigt beteende.
+Merchants har inte konfigurerat och kört `sales.rule.update.coupon.usage`-konsument vilket leder till felaktigt beteende.
 
 ## Lösning
 
-Lägg till `sales.rule.update.coupon.usage` för `app/etc/env.php` -fil.
+Lägg till `sales.rule.update.coupon.usage`-konsumenten i filen `app/etc/env.php`.
 
 ```php
 ...
@@ -62,8 +62,8 @@ Lägg till `sales.rule.update.coupon.usage` för `app/etc/env.php` -fil.
 ...
 ```
 
-Detaljerade anvisningar finns i [Hantera meddelandeköer > Konfiguration](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html#configuration) i vår dokumentation för utvecklare.
+Mer information finns i [Hantera meddelandeköer > Konfiguration](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html#configuration) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-[Översikt över meddelandeköer](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html) i vår dokumentation för utvecklare.
+[Message Queues - översikt](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html) i utvecklardokumentationen.

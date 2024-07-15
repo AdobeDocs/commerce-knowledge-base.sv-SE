@@ -30,4 +30,4 @@ Om produktens baspris ändras och blir mindre än det motsvarande delade katalog
 
 ## Relaterad läsning
 
-[Ange priser och struktur för en delad katalog](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html) i vår användarhandbok.
+[Ange priser och struktur för en delad katalog](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html) i användarhandboken.

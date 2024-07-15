@@ -26,20 +26,20 @@ När kundgruppen ändras när ordern skapas, genereras fakturan med en felaktig 
 
 <u>Steg som ska återskapas</u>:
 
-1. Skapa en **Testa kundkonto** och lägg till det i **Kundgrupp (butik)**.
-1. Skapa en **Ny beställning** för testkunden lägger du till **Produkt** och **Adress**.
-1. Välj **Leveranssätt**.
-1. I **Kontoinformation** avsnitt, ändra kundgrupp från **Återförsäljare** till **Offentlig sektor**.
-1. Klicka **Montera beställning**.
-1. Klicka **Faktura** > **Skicka faktura**.
+1. Skapa ett **testkundskonto** och lägg till det i **butikskundgruppen**.
+1. Skapa en **ny beställning** för testkunden, lägg till **Produkt** och **Adress**.
+1. Välj **Leveransmetod**.
+1. I avsnittet **Kontoinformation** ändrar du kundgrupp från **Återförsäljare** till **Offentlig sektor**.
+1. Klicka på **Montera order**.
+1. Klicka på **Faktura** > **Skicka faktura**.
 
 <u>Förväntade resultat</u>:
 
-Följande text ska finnas under **Anteckningar för den här ordern**  avsnitt: &quot;Vertex Invoice sent successfully. Belopp: $0,00.&quot;
+Följande anteckning ska visas under avsnittet **Anteckningar för den här ordern**: &quot;Vertex Invoice sent successfully. Belopp: $0,00.&quot;
 
 <u>Faktiska resultat</u>:
 
-Följande anteckning visas under **Anteckningar för den här ordern** avsnitt: &quot;Vertex Invoice sent successfully. Belopp: 3,23 USD.&quot;
+Följande anteckning visas under avsnittet **Anteckningar för den här ordern**: &quot;Vertex Invoice sent successfully. Belopp: 3,23 USD.&quot;
 
 ## Lösning
 

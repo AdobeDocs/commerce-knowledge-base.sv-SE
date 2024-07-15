@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-31590: Det går inte att uppdatera attribut i grupp med MySQL async-köer
 
-MDVA-31590-korrigeringen löser problemet där användarna inte kan uppdatera attribut i grupp med hjälp av MySQL async-köer. Den här korrigeringen är tillgänglig när [QPT (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.3 är installerat. Korrigerings-ID är MDVA-31590. Observera att problemet har åtgärdats i Adobe Commerce 2.4.2.
+MDVA-31590-korrigeringen löser problemet där användarna inte kan uppdatera attribut i grupp med hjälp av MySQL async-köer. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.3 har installerats. Korrigerings-ID är MDVA-31590. Observera att problemet har åtgärdats i Adobe Commerce 2.4.2.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.0
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.0-2.4.1-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -44,36 +44,36 @@ Användare kan inte uppdatera attribut i grupp med MySQL async.
 
 <u>Förväntade resultat</u>:
 
-1. Sidan visar ett meddelande om att uppdateringen lyckades, som: *1 objekt har uppdaterats.*
+1. Sidan visar ett meddelande om att uppdateringen lyckades, till exempel: *1 objekt har uppdaterats.*
 1. Attributvärden för relaterade produkter uppdateras.
-1. I DB skapas nya poster i båda `magento_bulk` tabell och `magento_operation` tabell (åtgärder som är relaterade till massan).
-1. Nya poster skapas i `queue_message` tabell (relaterat till köerna `product_action_attribute.update` och/eller `product_action_attribute.website.update`).
-1. `queue_message_status` tabellen har poster med status &quot;4&quot;.
-1. Det finns INGA fel i `system.log`.
+1. I DB skapas nya poster i både tabellen `magento_bulk` och tabellen `magento_operation` (åtgärder som är relaterade till massan).
+1. Nya poster skapas i tabellen `queue_message` (relaterat till köerna `product_action_attribute.update` och/eller `product_action_attribute.website.update`).
+1. `queue_message_status`-tabellen har poster med status &quot;4&quot;.
+1. `system.log` innehåller INGA fel.
 
 <u>Faktiska resultat</u>:
 
 1. På sidan visas fortfarande ett meddelande som följande:
    *Uppgiften Uppdatera attribut för N valda produkter: 1 objekt har schemalagts för en uppdatering.*
 1. Attributvärden för produkterna uppdateras.
-1. En ny post skapas i `message_bulk` tabellen, men det finns inga relaterade poster i `magento_operation` tabell.
-1. Nya poster skapas i `queue_message` och `queue_message_status` tabeller.
-1. `queue_message_status` tabellen har en post med felstatus (statusvärde &quot;6&quot;).
+1. En ny post skapas i tabellen `message_bulk`, men det finns inga relaterade poster i tabellen `magento_operation`.
+1. Nya poster skapas i tabellerna `queue_message` och `queue_message_status`.
+1. `queue_message_status`-tabellen har en post med felstatus (statusvärde &quot;6&quot;).
 1. `system.log` innehåller fel som liknar följande:
-   *main.CRITICAL: Meddelandet har avvisats: SQLSTATE[23000]: Överträdelse av integritetsbegränsning: 1048 Kolumnen operation_key får inte vara null, frågan var: INSERT INTO {{magento_operation}} ({{id}}, {{bulk_uuid}}, {{topic_name}}, {{serialized_data}}, {{result_serialized_data}}, {{status}}, {{error_code}}, {{result_message}}, {{operation_key}}) VÄRDEN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [][]*
+   *main.CRITICAL: Meddelandet har avvisats: SQLSTATE[23000]: Överträdelse av integritetsbegränsning: 1048 Kolumnen operation_key får inte vara null, frågan var: INSERT INTO {{magento_operation}} ({{id}}, {{bulk_uuid}}, {{topic_name}}, {{serialized_data}}, {{result_serialized_data}}, {{status}}, {{error_code}}, {{result_message}}, {{operation_key}}) VALUES (?, ?, ?, ?, ?, ?, ?) [][]*
 
 ## Tillämpa korrigeringen
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår dokumentation för utvecklare.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
 Mer information om verktyget för kvalitetskorrigeringar finns i:
 
-* [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra patchar som finns i QPT finns i [Patchar tillgängliga i QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) -avsnitt.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i avsnittet [Patchar i QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

@@ -30,4 +30,4 @@ När du har installerat verktyget kan du söka efter tillgängliga patchar, till
 Mer information finns i utvecklardokumentationen:
 
 * [Patchar tillgängliga i verktyget för kvalitetspatchar](https://devdocs.magento.com/quality-patches/tool.html#patch-grid)
-* [Versionsinformation om verktyget Kvalitetspatchar](https://devdocs.magento.com/quality-patches/release-notes.html)
+* [Versionskommentarer för verktyget Kvalitetspatchar](https://devdocs.magento.com/quality-patches/release-notes.html)

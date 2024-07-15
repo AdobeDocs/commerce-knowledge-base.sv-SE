@@ -20,15 +20,15 @@ Adobe Commerce (alla distributionsmetoder) 2.3.x, 2.4.x.
 
 Skapa en&quot;scrubbed&quot;-dump från administratören:
 
-1. Gå till Commerce Admin **System** > **Support** > **Datainsamling**.
-1. Klicka **Ny säkerhetskopia**.
-1. Efter några minuter klickar du **Uppdatera status** (kan ta längre tid, upprepa var femte minut tills det är klart).
-1. Flytta de genererade dumpfilerna från `/var/support` till Adobe Commerce rotkatalog.
+1. Gå till **System** > **Support** > **Datainsamling** i Commerce Admin.
+1. Klicka på **Ny säkerhetskopia**.
+1. Efter några minuter klickar du på **Uppdatera status** (kan ta längre tid, upprepa var femte minut tills det är klart).
+1. Flytta de genererade dumpfilerna från katalogen `/var/support` till Adobe Commerce rotkatalog.
 
 Du kan sedan ange till Support att länken för direkthämtning till dumpfilerna (din butiksadress och filnamnet som visas) finns.
 
-Om du har problem med att skapa dumpar från administratören bör du överväga att använda CLI-kommandon enligt beskrivningen i [Kör supportverktygen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-spt-util.html) i vår dokumentation för utvecklare.
+Om du har problem med att skapa dumpar från Admin kan du använda CLI-kommandon enligt beskrivningen i [Kör supportverktygen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-spt-util.html) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-* [Skapa en fullständig säkerhetskopiering av databasen för Adobe Commerce i molninfrastrukturen](/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas för support.
+* [Skapa fullständig databassäkerhetskopiering för Adobe Commerce i molninfrastruktur](/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas för support.

@@ -18,8 +18,8 @@ Den bifogade PDF-filen innehåller tips om hur du förbereder din infrastruktur 
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce i molninfrastrukturen, alla [versionerna](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+* Adobe Commerce i molninfrastrukturen, alla [versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 ## Hämta PDF-filen
 
-Klicka [Tips om Commerce semester.pdf](assets/tech-tips-for-commerce-holiday-readiness.pdf) för att hämta PDF-filen.
+Klicka på [Tekniska tips för läsning av helgdagar i Commerce.pdf](assets/tech-tips-for-commerce-holiday-readiness.pdf) om du vill hämta PDF-filen.

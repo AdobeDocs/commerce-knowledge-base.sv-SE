@@ -1,6 +1,6 @@
 ---
 title: 'Översikt: QPT (Quality Patches Tool) v1.1.27'
-description: Detta underavsnitt innehåller en detaljerad beskrivning av de problem som åtgärdats av patcharna i [!UICONTROL Quality Patches Tool] (QPT) v1.1.27.
+description: Detta underavsnitt innehåller en detaljerad beskrivning av de problem som åtgärdats av de korrigeringar som finns i [!UICONTROL Quality Patches Tool] (QPT) v1.1.27.
 exl-id: 81fdbf11-a8f2-49c5-b283-fdac0eaaeaa5
 feature: Tools and External Services
 role: Admin
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Översikt: QPT (Quality Patches Tool) v1.1.27
 
-Detta underavsnitt innehåller en detaljerad beskrivning av de problem som åtgärdats av patcharna i [!UICONTROL Quality Patches Tool] (QPT) v1.1.27.
+Detta underavsnitt innehåller en detaljerad beskrivning av de problem som åtgärdats av de korrigeringar som finns i [!UICONTROL Quality Patches Tool] (QPT) v1.1.27.
 
 QPT v1.1.27 innehåller följande patchar:
 
 1. ACSD-48362: Korrigerar problemet där standardleveransadressen används i stället för en ny när en order läggs med en överlåtbar offert.
-1. ACSD-48059: Åtgärdar problemet med [!UICONTROL Visual Merchandiser] där handlare inte kan spara &quot;[!UICONTROL Match product by rule]&quot; för [!UICONTROL Categories] -attribut.
-1. ACSD-48216: Korrigerar problemet där [!UICONTROL AUTO_INCREMENT] i [!UICONTROL inventory_source_item] tabellökningar på [!UICONTROL UPDATE] operation.
+1. ACSD-48059: Åtgärdar problemet med [!UICONTROL Visual Merchandiser] där handlare inte kan spara [!UICONTROL Match product by rule] för attributet [!UICONTROL Categories].
+1. ACSD-48216: Korrigerar problemet där [!UICONTROL AUTO_INCREMENT] i tabellen [!UICONTROL inventory_source_item] ökar åtgärden [!UICONTROL UPDATE].
 1. ACSD-47908: Korrigerar felet &quot;Ett värde som är mindre än eller lika med 0 förväntas&quot; när du väljer källa och kvantitet i leveranssteget under utcheckningen.
 1. ACSD-49497: Åtgärdar ett problem där en order förblir i bearbetningstillstånd efter leverans och en partiell återbetalning tillämpas.
 1. ACSD-48694: Korrigerar problemet där felet&quot;Ogiltig tillståndsändring begärd&quot; förhindrar att en kund gör en beställning.

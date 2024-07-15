@@ -29,4 +29,4 @@ Magento Inventory stöder för närvarande inte beräkning av fraktkostnader bas
 
 ## Relaterad läsning
 
-* [Vanliga frågor om Magento-lager](https://github.com/magento/inventory/wiki/MSI-FAQs) i GitHub.
+* [Vanliga frågor om Magento-inventering](https://github.com/magento/inventory/wiki/MSI-FAQs) i GitHub.

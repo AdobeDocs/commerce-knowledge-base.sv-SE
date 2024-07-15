@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: webbläsaren kan inte matcha .local.pwadev-platsen
 
-Den här artikeln innehåller en lösning för när ett annat program eller en annan process har redigerat [värdfil](https://en.wikipedia.org/wiki/Hosts_(file\) och tog bort posten för din projektdomän.
+Den här artikeln innehåller en lösning för när ett annat program eller en annan process har redigerat din [värdfil](https://en.wikipedia.org/wiki/Hosts_(file\)) och tagit bort posten för din projektdomän.
 
 ## Berörda produkter och versioner
 
@@ -21,17 +21,17 @@ PWA Studio för Adobe Commerce
 
 ## Problem
 
-När du bläddrar till webbplatsen dev/staging kan du inte se `.local.pwadev` webbplats.
+När du bläddrar till webbplatsen dev/staging kan du inte se webbplatsen `.local.pwadev`.
 
 ## Orsak
 
 Med PWA Studio kan du tilldela din lokala dator ett eget värdnamn och SSL-certifikat för ditt projekt. Detta innebär att du skapar en ny post i datorns värdfil som ser ut ungefär som `my-storefront-project-abc123.local.pwadev`.
 
-Den här posten talar om för alla webbläsare på utvecklarens dator att titta på det lokala butiksprojektet när de öppnar den URL:en. Om ett annat program eller en annan process kom in och tog bort posten, skulle webbläsaren inte veta vart den skulle gå och webbläsaren kan inte lösa problemet `.local.pwadev` webbplats.
+Den här posten talar om för alla webbläsare på utvecklarens dator att titta på det lokala butiksprojektet när de öppnar den URL:en. Om ett annat program eller en annan process kom in och tog bort posten, skulle webbläsaren inte veta vart den skulle gå och webbläsaren kan inte matcha webbplatsen `.local.pwadev`.
 
 ## Lösning
 
-Du kan [redigera värdfilen manuellt](https://support.rackspace.com/how-to/modify-your-hosts-file/) om du vill lägga till bidraget, men du bör undersöka ditt andra installerade program för att se vad som har skrivit över den tidigare ändringen.
+Du kan [redigera din värdfil](https://support.rackspace.com/how-to/modify-your-hosts-file/) manuellt om du vill lägga till posten igen, men du bör undersöka ditt andra installerade program för att se vad som har skrivit över den tidigare ändringen.
 
 ## Relaterad läsning i vår kunskapsbas
 

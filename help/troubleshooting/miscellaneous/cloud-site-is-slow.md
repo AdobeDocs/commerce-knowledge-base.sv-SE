@@ -49,7 +49,7 @@ I följande stycken finns mer information för varje steg.
 
 Det första steget till att åtgärda en webbplats som störs av stor trafik är att se till att sidor med störst trafik, som butikens hemsida och kategorisidor på den översta nivån cachelagras korrekt.
 
-Du kan ta reda på träfffrekvenserna för cacheminnet för de här sidorna genom att granska `X-Cache` HTTP-huvuden som använder cURL, vilket beskrivs i [Kontrollerar cache med cURL](https://docs.fastly.com/guides/debugging/checking-cache#using-curl) i Snabbas dokumentation. Du kan också kontrollera samma rubriker på nätverksfliken i utvecklarverktygsfältet i din favoritwebbläsare.
+Du kan ta reda på cacheminnets träfffrekvenser för de här sidorna genom att granska `X-Cache` HTTP-rubriker med cURL, vilket beskrivs i [Kontrollera cacheminnet med cURL](https://docs.fastly.com/guides/debugging/checking-cache#using-curl) i Snabbdokumentation. Du kan också kontrollera samma rubriker på nätverksfliken i utvecklarverktygsfältet i din favoritwebbläsare.
 
 I allmänhet respekterar svarshuvuden som kommer från programmet, men om alla sidhuvuden är inställda på &quot;cachelagra inte&quot; och för sidan &quot;förfaller tidigare&quot; kan du inte cachelagra sidan.
 
@@ -65,14 +65,14 @@ Om indexsidan har en låg träfffrekvens kan du åtgärda den genom att minska m
 
 Så här kontrollerar du den totala cacheminnesträffhastigheten:
 
-1. [Få inloggningsuppgifter snabbt](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) för din Adobe Commerce i molninfrastrukturmiljö.
+1. [Få snabbt inloggningsuppgifter](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) för din Adobe Commerce i molninfrastrukturmiljö.
 1. Kör följande Linux/macOS cURL-kommando för att kontrollera träffhastigheten för din webbplats under de senaste 30 minuterna, och ersätt och med värdena för dina snabbinloggningsuppgifter:
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
 
-   Du kan även kontrollera tidigare träfffrekvenser under den sista dagen eller månaden genom att ändra frågealternativet för tidsintervall från `?by=minute` till `?by=hour` eller `?by=day`. Mer information om hur du hämtar cachestatus snabbt finns i [Frågealternativ](https://docs.fastly.com/api/stats#Query) i Snabbas dokumentation.
+   Du kan också kontrollera tidigare träfffrekvenser under den sista dagen eller månaden genom att ändra frågealternativet för tidsintervall från `?by=minute` till `?by=hour` eller `?by=day`. Mer information om hur du får status för snabbcache finns i [Frågealternativ](https://docs.fastly.com/api/stats#Query) i dokumentationen Snabbt.
 
-   The `| json_pp` option pretty skriver ut JSON-utdata med `json_pp` utility. Om du får ett_&#39;json\_pp not found&#39;_-fel installerar du `json_pp` eller använd ett annat kommandoradsverktyg för JSON-utskrift. Du kan även ta bort `| json_pp` och kör kommandot igen. JSON-svarsutdata är inte formaterade, men du kan rensa upp det genom en JSON-finjustering.
+   Alternativet `| json_pp` skriver ut JSON-svarsutdata med verktyget `json_pp`. Om du får ett_&#39;json\_pp not found&#39;_-fel installerar du verktyget `json_pp` eller använder ett annat kommandoradsverktyg för JSON-utskrift. Du kan också ta bort parametern `| json_pp` och köra kommandot igen. JSON-svarsutdata är inte formaterade, men du kan rensa upp det genom en JSON-finjustering.
 
 En träfffrekvens över 0,90 eller 90 % anger att helsidescachen fungerar.
 
@@ -81,9 +81,9 @@ En träfffrekvens under 0,85 eller 85 % kan tyda på ett platskonfigurationsprob
 #### Felsökning av den totala träfffrekvensen för cache
 
 1. Identifiera när träfffrekvensen började sjunka med hjälp av träffstatistik per timme och dag. Om träfffrekvensen plötsligt skulle minska vid samma tidpunkt som du distribuerade en ändring till din webbplats bör du överväga att återställa ändringen tills webbplatsinläsningen går ner.
-1. Kontrollera konfigurationen i Commerce Admin under **Lager** > **Konfiguration** > Avancerat > **System** > **Helsidescache**. Se till att **TTL för publikt innehåll** värdet är inte för lågt.
-1. Se till att du [överförde VCL-fragment](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
-1. Om du använder anpassade VCL-kodfragment kan du felsöka dem för korrekt användning av åtgärderna &quot;pass&quot; eller &quot;pipe&quot;: de bör användas med försiktighet och i alla lägen med något slags tillstånd. Fler tips finns på [Anpassade VCL-fragment snabbt](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) i vår dokumentation för utvecklare.
+1. Kontrollera konfigurationen i Commerce Admin, under **Lagrar** > **Konfiguration** > Avancerat > **System** > **Helsidescache**. Kontrollera att värdet **TTL för publikt innehåll** inte är för lågt.
+1. Kontrollera att du har [överfört VCL-kodfragment](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
+1. Om du använder anpassade VCL-kodfragment kan du felsöka dem för korrekt användning av åtgärderna &quot;pass&quot; eller &quot;pipe&quot;: de bör användas med försiktighet och i alla lägen med något slags tillstånd. Mer tips finns i [Anpassade snabbvalsbaserade VCL-kodfragment](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) i utvecklardokumentationen.
 
 ### Steg 3: Identifiera de webbplatser som orsakar hög serverbelastning
 
@@ -112,7 +112,7 @@ alternativ, till exempel:
 magento-cloud log access --lines=500
 ```
 
-Du kan visa den här loggen och kontrollera om en stor del av begäranden kommer från en viss IP-adress. Ett annat sätt är att använda `awk` , `sort` och `uniq` att automatiskt räkna de oftast förekommande IP-adresserna i loggen enligt följande:
+Du kan visa den här loggen och kontrollera om en stor del av begäranden kommer från en viss IP-adress. Ett annat sätt är att använda `awk`, `sort` och `uniq` för att automatiskt räkna de oftast förekommande IP-adresserna i loggen, enligt följande:
 
 ```bash
 magento-cloud log access --lines 2000 | awk '{print $1}' | sort | uniq -c | sort
@@ -127,12 +127,12 @@ magento-cloud log
 
 kommandot fungerar inte, du kan ansluta till fjärrservern med SSH och kontrollera loggfilen på `/var/log/access.log`
 
-När du har identifierat IP-adresserna som orsakar hög serverbelastning kan du blockera dem genom att konfigurera ett IP-blockeringslista från på Commerce Admin-panelen, under **Lager** > **Konfiguration** > AVANCERAT > **System** > **Helsidescache** > **Snabb konfiguration** > **Blockera**.
+När du har identifierat IP-adresserna som orsakar hög serverbelastning kan du blockera dem genom att konfigurera ett IP-blockeringslista från Commerce Admin-panelen, under **Lager** > **Konfiguration** > AVANCERAT > **System** > **Fullständig sidcache** > **Snabbkonfiguration** > **Blockera**.
 
 Om du inte kan komma åt din administratör på grund av stor belastning kan du använda API:t Fastly för att konfigurera blockeringsreglerna:
 
-1. Skapa åtkomstkontrollistan enligt anvisningarna i [Arbeta med åtkomstkontrollistor med API:n](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) Snabbt dok.
-1. I `recv` skapar du ett VCL-fragment med följande innehåll och har ersatt ACL\_NAME\_GOES\_HERE med namnet på den ACL som skapades i föregående steg:
+1. Skapa åtkomstkontrollistan enligt beskrivningen i [Arbeta med åtkomstkontrollistor med API:t ](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) Snabbt.
+1. I avsnittet `recv` skapar du ett VCL-fragment med följande innehåll, som har ersatt ACL\_NAME\_GOES\_HERE med namnet på den åtkomstkontrollista som skapades i föregående steg:
 
    ```
    if( req.http.Fastly-Client-IP ~ ACL_NAME_GOES_HERE ) {
@@ -140,4 +140,4 @@ Om du inte kan komma åt din administratör på grund av stor belastning kan du 
    }
    ```
 
-Mer information om att blockera IP-adresser finns i [Snabb Adobe Commerce-modulguide](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) i GitHub.
+Mer information om att blockera IP-adresser finns i guiden för [Snabb Adobe Commerce-modul](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) i GitHub.

@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Kontrollera diskutrymme med CLI på Adobe Commerce i molninfrastrukturmiljö
 
-Läs mer i [Hantera diskutrymme](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) artikel i vår dokumentation för utvecklare.
+Läs artikeln [Hantera diskutrymme](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) i utvecklardokumentationen.

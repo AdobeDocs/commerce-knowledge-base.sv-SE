@@ -27,11 +27,11 @@ Beroende på dina interna säkerhetsstandarder kan du välja att låta tredjepar
 
 * Ge tredjepartsleverantörer åtkomst till molnmiljön. Relaterade artiklar:
 
-   * [Användarhandbok > DELAD ÅTKOMST TILL Adobe Commerce Help Center: BEVILJA ANDRA ANVÄNDARE ÅTKOMST TILL DITT KONTO](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) i vår kunskapsbas för support.
-   * [Dela ditt Commerce-konto](https://docs.magento.com/user-guide/magento/magento-account-share.html) i vår användarhandbok.
+   * [Användarhandbok för Adobe Commerce Help Center > DELAD ÅTKOMST: BEHÖRIGHET FÖR ANDRA ANVÄNDARE ATT FÅ ÅTKOMST TILL DITT KONTO](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) i vår supportkunskapsbas.
+   * [Dela ditt Commerce-konto](https://docs.magento.com/user-guide/magento/magento-account-share.html) i användarhandboken.
 
-* Skapa en databasdump (eller ge tredjepartsleverantören åtkomst för att göra detta). Det kan göras med CLI eller Commerce Admin. Databasdumpen kommer att förfalska kunddata, så allt de får är kod och produkt-SKU:er, etc., inga egna data/kunddata. Använd som referens [Dela ditt Commerce-konto] (/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas för support.
-* När testningen är klar ska du se till att återkalla den delade åtkomsten till din molnmiljö, enligt beskrivningen i [Användarhandbok för Adobe Commerce Help Center > Återkalla (ta bort delad åtkomst)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) i vår kunskapsbas för support.
+* Skapa en databasdump (eller ge tredjepartsleverantören åtkomst för att göra detta). Det kan göras med CLI eller Commerce Admin. Databasdumpen kommer att förfalska kunddata, så allt de får är kod och produkt-SKU:er, etc., inga egna data/kunddata. Använd [Dela ditt Commerce-konto] (/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas.
+* När testningen är klar måste du se till att återkalla den delade åtkomsten till din molnmiljö, enligt beskrivningen i [Adobe Commerce Help Center User Guide > Återkalla (ta bort delad åtkomst)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) i vår kunskapsbas för support.
 
 ## Testa bästa praxis
 
@@ -39,4 +39,4 @@ Det vanliga är att felsöka i en lokal miljö. Om problemet inte kan reproducer
 
 ## Relaterad läsning
 
-* [Bästa tillvägagångssätt för att använda tillägg från tredje part i Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) i vår kunskapsbas för support.
+* [Bästa metoder för att använda tillägg från tredje part i Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) i vår kunskapsbas för support.

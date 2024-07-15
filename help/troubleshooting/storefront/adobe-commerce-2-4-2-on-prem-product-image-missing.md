@@ -21,7 +21,7 @@ I den här artikeln beskrivs ett känt problem med Adobe Commerce lokalt 2.4.2 d
 
 ## Problem
 
-Produktbilden sparas i `s3` men den synkroniseras inte tillbaka till `pub/media` katalog. Problemet uppstår bara när du använder båda:
+Produktbilden sparas i `s3`-hakparken, men synkroniseras inte tillbaka till katalogen `pub/media`. Problemet uppstår bara när du använder båda:
 
 * Webbplatsaktiverad Nginx för att ändra storlek på bilder
 * AWS `s3` som medielagring
@@ -33,9 +33,9 @@ Adobe Commerce installerat med Nginx.
 <u>Steg som ska återskapas</u>:
 
 1. Konfigurera Adobe Commerce att använda AWS `s3` som medielagring.
-1. Konfigurera Nginx med `nginx.conf.sample` konfigurationsfilen som finns i Adobe Commerce installationskatalog och en Nginx virtuell värd. Se [Konfigurera Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) i vår dokumentation för utvecklare.
+1. Konfigurera Nginx med konfigurationsfilen `nginx.conf.sample` som finns i Adobe Commerce installationskatalog och ett virtuellt Nginx-värdsystem. Se [Konfigurera Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) i utvecklardokumentationen.
 1. Skapa en enkel produkt med en produktbild.
-1. Nginx har en okommenterad konfiguration för storleksändring av bilder i `nginx.conf.sample` liknar detta:
+1. Nginx har en okommenterad konfiguration för storleksändring av bilder i `nginx.conf.sample` som den här:
 
 ```conf
 load_module /etc/nginx/modules/ngx_http_image_filter_module.so;

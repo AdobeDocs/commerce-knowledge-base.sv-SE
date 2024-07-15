@@ -18,7 +18,7 @@ Adobe Commerce kunskapsbas för support innehåller felsökningslösningar för 
 
 Det finns även olika felsökningsresurser för:
 
-* Adobe Commerce: [https://learning.adobe.com/products-resources/contact-us.html](https://learning.adobe.com/products-resources/contact-us.html)
+* Adobe Commerce-utbildning: [https://learning.adobe.com/products-resources/contact-us.html](https://learning.adobe.com/products-resources/contact-us.html)
 * Partners: [https://solutionpartners.adobe.com/](https://solutionpartners.adobe.com/)
 * Tekniska partners: [https://partners.adobe.com/exchangeprogram/experiencecloud.html](https://solutionpartners.adobe.com/)
 * Commerce Marketplace: [https://commercemarketplace.adobe.com](https://commercemarketplace.adobe.com)
@@ -34,7 +34,8 @@ Använd någon av följande länkar om du vill ha teknisk dokumentation eller sl
 <td>Webbplats</td>
 </tr>
 <tr>
-<td rowspan="2">Adobe Commerce lokalt och Adobe Commerce i molninfrastruktur</td>
+<td rowspan="2">Adobe Commerce lokala och
+Adobe Commerce i molninfrastruktur</td>
 <td>
 <p>Developer (technical) documentation:</p>
 <p><a href="https://developer.adobe.com/commerce/docs/">https://developer.adobe.com/commerce/docs/</a></p>

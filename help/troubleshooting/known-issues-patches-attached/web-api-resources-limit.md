@@ -51,13 +51,13 @@ Patcherna är inte kompatibla med andra Adobe Commerce-versioner.
 
 ### Så här sätter du på plåstret
 
-Zippa upp det nedladdade `.zip` och tillämpa korrigeringen enligt beskrivningen i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+Zippa upp den hämtade `.zip`-filen och tillämpa korrigeringen enligt beskrivningen i [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 >[!WARNING]
 >
->Om du misstänker att butik drabbas av en DoS-attack rekommenderar Adobe att standardindatagränserna sänks till ett lägre värde för att begränsa antalet resurser som kan begäras.  Du kan anpassa standardgränserna programmatiskt med [klasskonstruktorargument](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html)
+>Om du misstänker att butik drabbas av en DoS-attack rekommenderar Adobe att standardindatagränserna sänks till ett lägre värde för att begränsa antalet resurser som kan begäras.  Du kan anpassa standardgränserna programmatiskt med [klasskonstruktorargument](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html)
 >enligt beskrivningen i vår utvecklardokumentation: [API-säkerhet > Hastighetsbegränsning > Maximalt antal parameterindata](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html#rate-limiting).
 
 ## Relaterad läsning
 
-[API-säkerhet > Hastighetsbegränsning](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html#rate-limiting) i vår dokumentation för utvecklare.
+[API-säkerhet > Hastighetsbegränsning](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html#rate-limiting) i utvecklardokumentationen.

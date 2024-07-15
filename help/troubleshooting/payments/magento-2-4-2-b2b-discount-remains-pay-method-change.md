@@ -26,7 +26,7 @@ I den här artikeln beskrivs ett känt Adobe Commerce 2.4.2 B2B-problem där en 
 
 <u>Steg som ska återskapas</u> :
 
-1. Skapa en kundvagn **Prisregel** som är knuten till en betalningsmetod (Exempel: PayPal-användare får en rabatt på 20 %).
+1. Skapa en kundvagn **Prisregel** som är knuten till en betalningsmetod (Exempel: PayPal-användare får en rabatt på 20 %.)
 1. Skapa en inköpsorder (PO) och välj PayPal som betalningsmetod. Rabatten tillämpas.
 1. PO har godkänts.
 1. Gå till betalningssidan för att slutföra ordern.
@@ -36,7 +36,7 @@ I den här artikeln beskrivs ett känt Adobe Commerce 2.4.2 B2B-problem där en 
 
 Betalningsmetodens rabatt gäller fortfarande för ordersumman.  Inget felmeddelande visas.Butiksägaren kan se att detta har inträffat genom att kontrollera orderhistoriken.
 
-<u>Förväntade resultat</u> :Betalningsmetodens rabatt tas bort som förväntat från ordersumman.
+<u>Förväntade resultat</u>: Betalningsmetodrabatten tas bort från ordersumman som förväntat.
 
 ## Lösning
 

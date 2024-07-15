@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Cron] jobbet har fastnat i **löpande** status"
-description: Den här artikeln innehåller lösningar för när Adobe Commerce [!DNL cron] jobben inte slutförs och kvarstår i körningsstatus, vilket förhindrar andra [!DNL cron] jobb från att köras. Detta kan inträffa av flera orsaker, t.ex. nätverksproblem, programkrascher och problem med omdistribution.
+title: "[!DNL Cron]-jobbet har fastnat i **löpande**-status"
+description: Den här artikeln innehåller lösningar för när Adobe Commerce [!DNL cron] jobb inte har slutförts och kvarstår i körningsstatus, vilket förhindrar att andra [!DNL cron] jobb körs. Detta kan inträffa av flera orsaker, t.ex. nätverksproblem, programkrascher och problem med omdistribution.
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Cron] jobbet har fastnat i statusen&quot;kör&quot;
+# Jobbet [!DNL Cron] har fastnat i statusen&quot;kör&quot;
 
-Den här artikeln innehåller lösningar för när Adobe Commerce [!DNL cron] jobben inte slutförs och kvarstår i körningsstatus, vilket förhindrar andra [!DNL cron] jobb från att köras. Detta kan inträffa av flera orsaker, t.ex. nätverksproblem, programkrascher och problem med omdistribution.
+Den här artikeln innehåller lösningar för när Adobe Commerce [!DNL cron]-jobb inte har slutförts och fortfarande har statusen&quot;körs&quot;, vilket förhindrar att andra [!DNL cron]-jobb körs. Detta kan inträffa av flera orsaker, t.ex. nätverksproblem, programkrascher och problem med omdistribution.
 
 ## Berörda produkter och versioner
 
@@ -21,9 +21,9 @@ Adobe Commerce om molninfrastruktur, alla versioner
 
 ## Symptom {#symptom}
 
-Symtom på [!DNL cron] jobb som måste återställas inkluderar:
+Symtomen på [!DNL cron] jobb som måste återställas är:
 
-* Stort antal jobb visas i `cron_schedule` kö
+* Ett stort antal jobb visas i kön `cron_schedule`
 * Webbplatsprestanda börjar försämras
 * Jobb kan inte köras enligt schema
 
@@ -33,26 +33,26 @@ Symtom på [!DNL cron] jobb som måste återställas inkluderar:
 
 >[!WARNING]
 >
->Kör kommandot utan `--job-code` alternativåterställningar *alla* [!DNL cron] jobb, inklusive de som körs för närvarande, så vi rekommenderar att du bara använder dem i undantagsfall, till exempel efter att du har verifierat att alla [!DNL cron] jobb måste återställas. Omdistribution kör kommandot som standard för att återställa [!DNL cron] så att de återställs korrekt efter att miljön har säkerhetskopierats. Undvik att använda den här lösningen när indexerare körs.
+>Om du kör det här kommandot utan alternativet `--job-code` återställs *all* [!DNL cron] -jobb, även de som körs för närvarande, så vi rekommenderar att du bara använder det i undantagsfall, till exempel efter att du har verifierat att alla [!DNL cron]-jobb måste återställas. Omdistribution kör som standard det här kommandot för att återställa [!DNL cron] jobb, så att de återställs korrekt efter att miljön har säkerhetskopierats. Undvik att använda den här lösningen när indexerare körs.
 
-För att lösa problemet måste du återställa [!DNL cron] jobb som använder `cron:unlock` -kommando. Det här kommandot ändrar status för [!DNL cron] jobb i databasen. Jobbet måste avslutas för att andra schemalagda jobb ska kunna fortsätta.
+För att lösa det här problemet måste du återställa [!DNL cron] jobb med kommandot `cron:unlock`. Det här kommandot ändrar status för jobbet [!DNL cron] i databasen och avslutar jobbet så att andra schemalagda jobb kan fortsätta.
 
-1. Öppna en terminal och använd [SSH-nycklar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) för att ansluta till den drabbade miljön.
+1. Öppna en terminal och använd dina [SSH-nycklar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) för att ansluta till den drabbade miljön.
 1. Hämta inloggningsuppgifterna för MySQL-databasen:    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
-1. Anslut till databasen med `mysql` :    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
-1. Välj `main` databas:    ```shell    use main    ```
-1. Sök efter alla [!DNL cron] jobb:    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
-1. Kopiera `job_code` av jobb som körs längre än vanligt.
+1. Anslut till databasen med `mysql`:    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
+1. Välj `main`-databasen:    ```shell    use main    ```
+1. Sök efter alla [!DNL cron] jobb som körs:    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
+1. Kopiera `job_code` för alla jobb som körs längre än vanligt.
 1. Använd schema-ID:n från föregående steg för att låsa upp specifika [!DNL cron] jobb:    ```shell    ./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]    ```
 
-### Lösning för att stoppa en enstaka [!DNL cron] {#solution-stop-a-single-cron}
+### Lösning för att stoppa en enskild [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Öppna en terminal och använd [SSH-nycklar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) för att ansluta till den drabbade miljön.
+1. Öppna en terminal och använd dina [SSH-nycklar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) för att ansluta till den drabbade miljön.
 1. Kontrollera tidskrävande uppgifter med följande kommando:
 
    ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```
 
-1. I utdata, som i exempelutdata nedan, visas aktuellt datum och en lista över processer. The `START` kolumn visar starttid eller startdatum för processen:
+1. I utdata, som i exempelutdata nedan, visas aktuellt datum och en lista över processer. Kolumnen `START` visar starttid eller startdatum för processen:
 
    ```
    Wed May  8 22:41:31 UTC 2019
@@ -72,8 +72,8 @@ För att lösa problemet måste du återställa [!DNL cron] jobb som använder `
    bxc2qly+ 25896 29.0  0.6 475320 109876 ?       R    20:51   0:00 /usr/bin/php7.1-zts /app/bxc2qlykqhbqe/bin/magento cron:run --group=ddg_automation --bootstrap=standaloneProcessStarted=1
    ```
 
-1. Om du ser en långvarig [!DNL cron] jobb som kan blockera distributionsprocessen, kan du avsluta processen med `kill` -kommando. Du kan identifiera **Process-ID** (hittade `PID` kolumn) och sedan `PID` i kommandot för att avsluta processen.
-The **avsluta process** kommandot är:
+1. Om du ser ett [!DNL cron]-jobb som körs länge, vilket kan vara blockdistributionsprocessen, kan du avsluta processen med kommandot `kill` . Du kan identifiera **process-ID** (hittade kolumnen `PID`) och sedan placera `PID` i kommandot för att avsluta processen.
+Kommandot **Avsluta process** är:
 
    ```kill -9 <PID>```
 

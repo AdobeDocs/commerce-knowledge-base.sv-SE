@@ -48,15 +48,15 @@ För Adobe Commerce lokalt och Magento Open Source 2.x
    patch -p1 -R %patch_name%.composer.patch
    ```
 
-   (Om ovanstående kommando inte fungerar kan du försöka med att använda `-p2` i stället för `-p1`)
+   (Om ovanstående kommando inte fungerar kan du försöka med att använda `-p2` i stället för `-p1`.)
 
-1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering**.
+1. Uppdatera cacheminnet i administratören under **System** > **Cachehantering** för att ändringarna ska återspeglas.
 
 ### Adobe Commerce om molninfrastruktur, alla versioner
 
 För Adobe Commerce om molninfrastruktur gäller alla versioner,
 
-1. Ta bort `%patch_name%.composer.patch` filer från `m2-hotfixes` katalog.
+1. Ta bort `%patch_name%.composer.patch` fil(er) från katalogen `m2-hotfixes`.
 1. Verkställ och skicka dina kodändringar:
 
    ```
@@ -65,4 +65,4 @@ För Adobe Commerce om molninfrastruktur gäller alla versioner,
 
 ## Relaterad läsning
 
-* [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+* [Använda en kompositörkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.

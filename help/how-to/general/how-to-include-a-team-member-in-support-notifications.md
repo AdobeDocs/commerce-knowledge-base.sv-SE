@@ -17,7 +17,7 @@ I den här artikeln beskrivs hur du inkluderar en teammedlem som automatiskt få
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce i molninfrastrukturen, alla [versionerna](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+* Adobe Commerce i molninfrastrukturen, alla [versioner som stöds](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 ## Orsak
 
@@ -27,18 +27,18 @@ I den här artikeln beskrivs hur du inkluderar en teammedlem som automatiskt få
 ## Lösning
 
 1. Gå till **[!DNL Cloud Project URL]** (Exempel: `https://us-3.magento.cloud/projects/xxxxxx/edit`).
-1. Verifiera om teammedlemmen har lagts till i projektet och är en [!DNL Super User].
+1. Kontrollera om teammedlemmen har lagts till i projektet och är en [!DNL Super User].
 
-Om de inte kräver [!DNL cloud project] behörighet, skicka [Supportförfrågan hos Adobe Commerce Support Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) till CC automatiskt: de finns på alla biljetter och tillhandahåller även **[!DNL MAGE ID]** (om tillgängligt).
+Om de inte behöver [!DNL cloud project]-åtkomst skickar du en [supportförfrågan på Adobe Commerce Support Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) för att automatiskt CC: dem på alla biljetter och tillhandahåller även deras **[!DNL MAGE ID]** (om de är tillgängliga).
 
-Om de inte har lagts till i projektet måste du lägga till dem som en [!DNL Super User] och bidrag [!DNL Shared Access]:
+Om de inte har lagts till i projektet måste du lägga till dem som en [!DNL Super User] och bevilja [!DNL Shared Access]:
 
 * [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) i vår användarhandbok.
-* [Det går inte att lägga till användare i Adobe Commerce molnprojekt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html) i Commerce Knowledge Base.
+* [Det går inte att lägga till användare i Adobe Commerce molnprojekt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html) i Commerce kunskapsbas.
 * [Användarhandbok för Adobe Commerce Help Center: Delad åtkomst](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) i Commerce Knowledge Base.
 
-Om de har lagts till i [!DNL cloud project], men har inte [!DNL Super User role], uppdatera deras [!DNL role] i enlighet med [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
+Om de har lagts till i [!DNL cloud project], men inte har [!DNL Super User role], uppdaterar du deras [!DNL role] i [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
 
 ## Relaterad läsning
 
-[Före detta teammedlemmar får Adobe Commerce molnmeddelanden via e-post](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html)
+[Före detta teammedlemmar får e-postmeddelanden om molnmeddelanden från Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html)

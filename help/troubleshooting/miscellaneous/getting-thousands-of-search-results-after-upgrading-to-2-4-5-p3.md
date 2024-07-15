@@ -17,14 +17,14 @@ I den här artikeln finns en lösning på ett problem där du får tusentals sö
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce alla versioner med [!DNL ElasticSearch] installerat
+* Adobe Commerce alla versioner med [!DNL ElasticSearch] installerade
 
 ## Problem
 
-Du letar efter en viss produkt (till exempel *WSH12-32-Red*) men sökningen returnerar många liknande produkter.
+Du söker efter en viss produkt (till exempel *WSH12-32-Red*) men sökningen returnerar många liknande produkter.
 
 ## Lösningar
 
 Typen av fulltextsökning i [!DNL ElasticSearch] baseras på relevans, inte på exakt matchning. Därför ordnas de mest relevanta matchningarna (som exakt matchade SKU:er) först.
 
-Om du behöver ett sökresultat som matchar exakt söktermen (exakt matchning) bör du använda citattecken för sökfrågan. Till exempel fråga efter *WSH12-32-Red* utan citattecken returnerar flera resultat med exakt matchning (produkt med *SKU WSH12-32-Red*) visas först i resultatet. Men fråga inom citattecken *&quot;WSH12-32-Red&quot;* returnerar bara ett exakt matchningsresultat.
+Om du behöver ett sökresultat som matchar exakt söktermen (exakt matchning) bör du använda citattecken för sökfrågan. Om du till exempel frågar efter *WSH12-32-Red* utan citattecken returneras flera resultat med den exakta matchningen (produkten *SKU WSH12-32-Red*) visas först i resultatet. Men den citerade frågan *WSH12-32-Red* returnerar bara ett exakt matchningsresultat.

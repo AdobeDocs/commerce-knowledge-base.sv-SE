@@ -17,8 +17,8 @@ ht-degree: 0%
 
 Adobe Commerce tillhandahåller kvalitetskorrigeringar för en mindre release i minst 12 månader från det allmänna tillgänglighetsdatumet för nästa mindre programversion. Det sätt på vilket vi tillhandahåller kvalitetskorrigeringar under den här perioden ändras:
 
-* **Tidigare princip:** För närvarande levereras kvalitetskorrigeringarna till föregående rad i EOS-fönstret för 12 månader via vår kvartalsvisa patch-release, vilket gör kvartalsvisa korrigeringar till en kombination av säkerhet och kvalitet.
-* **Ny princip:** Från och med 2.4 som den senaste mindre versionsraden kommer versionsfixar för den föregående raden som stöds (2.3) att flyttas till enbart säkerhet. Vi kommer fortfarande att leverera kvalitetskorrigeringar för den föregående raden som stöds under 12-månadersperioden efter att en delversion (som 2.4) och efterföljande delversionsrader släppts, men dessa kommer att göras tillgängliga via [QPT (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) och fokusera bara på viktiga frågor.
+* **Tidigare princip:** Kvalitetskorrigeringarna till föregående rad som finns i EOS-fönstret för 12 månader levereras i vår kvartalsvisa korrigeringsutgåva, vilket gör att kvartalsvisa korrigeringar blir en kombination av säkerhet + kvalitet.
+* **Ny princip:** Från och med 2.4 som den senaste delversionsraden kommer versionsfixar för föregående rad som stöds (2.3) att flyttas till enbart säkerhet. Vi kommer fortfarande att leverera kvalitetskorrigeringar för den föregående raden som stöds under 12-månadersperioden efter att en delversion (som 2.4) och efterföljande mindre versionsrader släppts. Dessa kommer dock att göras tillgängliga via [QPT-verktyget ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) (Quality Patches Tool) och fokuseras endast på kritiska problem.
 
 ## När börjar denna policy gälla?
 
@@ -26,7 +26,7 @@ Adobe Commerce 2.3.6 kommer att släppas den 15 oktober 2020 och kommer att vara
 
 >[!NOTE]
 >
->Den enda gången vi släpper en fullversion av 2.3 är om vi behöver uppfylla våra krav på teknik, som PHP eller Elasticsearch. Detta sker under andra kvartalet 2021 med en obligatorisk uppdatering av PHP 7.4, vi kommer att öka gränsen till 2.3.7. Mer information finns i [Stöd för PHP 7.4 i Adobe Commerce 2.3.x](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946) DevBlog-inlägg.
+>Den enda gången vi släpper en fullversion av 2.3 är om vi behöver uppfylla våra krav på teknik, som PHP eller Elasticsearch. Detta sker under andra kvartalet 2021 med en obligatorisk uppdatering av PHP 7.4, vi kommer att öka gränsen till 2.3.7. Mer information finns i [PHP 7.4-stöd för Adobe Commerce 2.3.x-versionsrad](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946) DevBlog-inlägg.
 
 ## Vad är en säkerhetsversion?
 
@@ -34,11 +34,11 @@ Endast säkerhetsreleaser innehåller säkerhetskorrigeringar och ingen kvalitet
 
 ## Kommer det fortfarande att finnas en säkerhetsuppdatering för den senaste raden (från och med publiceringen, 2.4)?
 
-Adobe kommer även i fortsättningen att ha säkerhetsversioner för den senaste releaseraden. Processen för dessa beskrivs i [Vi presenterar den nya patchversionen med endast säkerhet](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287) DevBlog-inlägg.
+Adobe kommer även i fortsättningen att ha säkerhetsversioner för den senaste releaseraden. Processen för dessa beskrivs i [Introduktion till DevBlog-inlägget New Security-only Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287).
 
 ## Vad är Quality Patches Tool?
 
-Läs mer i [Quality Patches Tool released: a new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) artikel i vår kunskapsbas för support.
+Se artikeln [Quality Patches Tool som släpps: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas.
 
 ## Vem bör överväga att använda den här nya policyn?
 
@@ -50,7 +50,7 @@ I slutändan bör alla affärsmän fortfarande prioritera planeringen för att i
 
 ## Hur får jag kvalitetskorrigeringar för mindre versioner som stöds och som inte är den senaste raden?
 
-Korrigeringar kommer att göras tillgängliga via [Verktyget Kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+Korrigeringar blir tillgängliga via [kvalitetskorrigeringsverktyget](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
 
 ## Hur får jag tag i kvalitetsfixar på den senaste raden?
 
@@ -86,4 +86,4 @@ Genom att tillämpa många enskilda kvalitetskorrigeringar blir Adobe Commerce-k
 
 Under en lanseringslinjs livstid kommer det att finnas uppdateringar till olika tekniska stackar som PHP eller Elasticsearch som måste uppgraderas för att följa gällande regler. Vi kommer att meddela våra handlare så mycket som möjligt att de kommer.
 
-Obs! Under andra kvartalet 2021 måste vi uppdatera PHP och Redis på 2.3.x-raden för att hålla oss uppdaterade. Detta gör att raden ökas till 2.3.7. Mer information finns i [Stöd för PHP 7.4 i Adobe Commerce 2.3.x](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946) DevBlog-inlägg.
+Obs! Under andra kvartalet 2021 måste vi uppdatera PHP och Redis på 2.3.x-raden för att hålla oss uppdaterade. Detta gör att raden ökas till 2.3.7. Mer information finns i [PHP 7.4-stöd för Adobe Commerce 2.3.x-versionsrad](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946) DevBlog-inlägg.

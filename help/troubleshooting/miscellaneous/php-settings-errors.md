@@ -22,14 +22,14 @@ Med beredskapskontrollerna ser du till att du har minst 1 GB minne reserverat f�
 Så här ökar du PHP-minnesgränsen:
 
 1. Logga in på din Adobe Commerce-server.
-1. Hitta `php.ini` med följande kommando:
+1. Leta reda på filen `php.ini` med följande kommando:
 
    ```
    bash    $ php --ini
    ```
 
-1. Som användare med `root` behörighet, använd en textredigerare för att öppna `php.ini` anges av `Loaded Configuration File`.
-1. Sök `memory_limit`.
+1. Som användare med behörigheten `root` använder du en textredigerare för att öppna `php.ini` som anges av `Loaded Configuration File`.
+1. Sök efter `memory_limit`.
 1. Ändra det till värdet `2GB` för normal användning och felsökning.
 1. Spara ändringarna i `php.ini` och avsluta textredigeraren.
 1. Starta om webbservern. Exempel:
@@ -42,17 +42,17 @@ Så här ökar du PHP-minnesgränsen:
 
 ## max-input-vars-fel på grund av stora formulär
 
-Konfigurationer med ett stort antal butiksgranskningar, produkter, attribut och alternativ kan generera formulär som överskrider den förinställda PHP-gränsen. Om antalet skickade värden överstiger `max-input-vars` gräns angiven inom `php.ini` (standard är 1000), återstående data överförs inte och dessa databasvärden uppdateras inte. När detta inträffar visas en varning i PHP-loggen:
+Konfigurationer med ett stort antal butiksgranskningar, produkter, attribut och alternativ kan generera formulär som överskrider den förinställda PHP-gränsen. Om antalet skickade värden överstiger gränsen på `max-input-vars` som angetts inom `php.ini` (standardvärdet är 1000) överförs inte återstående data och dessa databasvärden uppdateras inte. När detta inträffar visas en varning i PHP-loggen:
 
 ```terminal
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-Det finns inget&quot;proper&quot;-värde för `max-input-vars`; beror på hur stor och komplex konfigurationen är. Ändra värdet i `php.ini` vid behov. Se [Nödvändiga PHP-inställningar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Det finns inget &quot;riktigt&quot;-värde för `max-input-vars`. Det beror på konfigurationens storlek och komplexitet. Ändra värdet i filen `php.ini` efter behov. Se [Nödvändiga PHP-inställningar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
 
 ## xdebug maximum function nesting level error
 
-Se [Vid installation, xdebug fel på högsta funktionsnivå](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md).
+Se [Under installationen kan du felsöka högsta antal funktionsfel på kapslingsnivån ](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md).
 
 ## Fel visas när du öppnar en PHTML-mall
 
@@ -62,9 +62,9 @@ Feltexten är vanligtvis:
 Parse error: syntax error, unexpected 'data' (T_STRING)
 ```
 
-### Lösning: Ange `asp_tags = off` in php.ini
+### Lösning: Ange `asp_tags = off` i php.ini
 
-Flera mallar har syntax för att ge support på abstrakt nivå på mallar (använd olika mallar som Twig) som är insvepta `<% %>` taggar, som detta [mall](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml) för att visa en produktbild:
+Flera mallar har syntax för att ge stöd för abstrakt nivå på mallar (använd olika mallmotorer som Twig) som är inkapslade i `<% %>` -taggar, som den här [mallen](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml) för att visa en produktbild:
 
 ```php
 <img

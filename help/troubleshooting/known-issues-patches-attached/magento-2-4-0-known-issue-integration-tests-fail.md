@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Känt fel i Adobe Commerce 2.4.0: integrationstester misslyckas
 
-Den här artikeln innehåller en patch för Adobe Commerce 2.4.0-problemet där integreringstester misslyckas på grund av deklarationen av `Dotdigitalgroup\Email\Test\Integration\Model\Sync\Importer\ImporterFailedTest::setUp()` är inte kompatibelt med PHPUnit 9 som används för 2.4.0.
+Den här artikeln innehåller en korrigeringsfil för Adobe Commerce 2.4.0-problemet där integreringstester misslyckas eftersom deklarationen av `Dotdigitalgroup\Email\Test\Integration\Model\Sync\Importer\ImporterFailedTest::setUp()` inte är kompatibel med PHPUnit 9 som används för 2.4.0.
 
 ## Berörda produkter och versioner
 
@@ -32,7 +32,7 @@ Testerna går.
 
 <u>Faktiskt resultat</u>
 
-*Allvarligt PHP-fel: Deklarationen av Dotdigitalgroup\\Email\\Test\\Integration\\Model\\Sync\\Importer\\ImporterFailedTest::setUp() måste vara kompatibel med PHPUnit\\Framework\\TestCase::setUp(): void i /var/www/vendor/dotmailer/dotmailer-magento2-extension/Test/Integration/Model/Sync/Importer/ImporterFailedTest.php på rad 36*
+*Allvarligt PHP-fel: Deklarationen för Dotdigitalgroup\\Email\\Test\\Integration\\Model\\Sync\\Importer\\ImporterFailedTest::setUp() måste vara kompatibel med PHPUnit\\Framework\\TestCase::setUp(): void i /var/www/vendor/dotmailer/dotmailer-magento2-extension/Test/Integration/Model/Sync/Importer/ImporterFailedTest.php på rad 36*
 
 ## Lösning
 
@@ -53,6 +53,6 @@ Korrigeringen skapades för:
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer

@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # ACSD-45675: Produktexport använder kategorinamn från standardarkivomfånget
 
-Korrigeringen ACSD-45675 åtgärdar ett problem där produktexporten använder kategorinamn från standardbutiksvyn. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.20 är installerat. Korrigerings-ID är ACSD-45675. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
+Korrigeringen ACSD-45675 åtgärdar ett problem där produktexporten använder kategorinamn från standardbutiksvyn. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.20 har installerats. Korrigerings-ID är ACSD-45675. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 
 ## Berörda produkter och versioner
 
-**Korrigeringen skapas för Adobe Commerce-versionen:**
+**Korrigeringen har skapats för Adobe Commerce-version:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.3
 
-**Kompatibel med Adobe Commerce:**
+**Kompatibel med Adobe Commerce-versioner:**
 
 * Adobe Commerce (alla distributionsmetoder) 2.4.0 - 2.4.5
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya [!DNL Quality Patches Tool] releaser. Om du vill kontrollera om patchen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches` till den senaste versionen och kontrollera om [[!DNL Quality Patches Tool]: Sök efter korrigeringssida](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -36,21 +36,21 @@ Vid produktexport används kategorinamn från standardomfånget för butiksvyn.
 <u>Steg som ska återskapas</u>:
 
 1. Skapa en anpassad butiksvy **[!UICONTROL Thai]** i huvudbutiken.
-1. Skapa **[!UICONTROL Thai]** standardbutiksvyn för huvudwebbplatsen.
+1. Använd **[!UICONTROL Thai]** som standardbutiksvy för huvudwebbplatsen.
 1. Skapa följande kategoristruktur under **[!UICONTROL Default Category]**:
 
    *[!UICONTROL Default category/Tea/Black]*
 
-1. Välj kategori **[!UICONTROL Tea]** och ändra **[!UICONTROL Scope]** till **[!UICONTROL Thai]**.
-1. Ange **[!UICONTROL Category Name]** as **[!UICONTROL ชาดำ]**.
+1. Markera kategorin **[!UICONTROL Tea]** och ändra **[!UICONTROL Scope]** till **[!UICONTROL Thai]**.
+1. Ange **[!UICONTROL Category Name]** som **[!UICONTROL ชาดำ]**.
 1. Skapa en enkel produkt **[!UICONTROL SP001]** och tilldela kategorin **[!UICONTROL Black]**.
 1. Se till att kronen inte går.
-1. Gör en produktexport. Filtrera efter SKU och markera **[!UICONTROL SP001]**.
-1. Kontrollera **[!UICONTROL categories]** -kolumnen i den exporterade CSV-filen.
+1. Gör en produktexport. Filtrera efter SKU och välj **[!UICONTROL SP001]**.
+1. Kontrollera kolumnen **[!UICONTROL categories]** i den exporterade CSV-filen.
 
 <u>Förväntade resultat</u>:
 
-Eftersom ingen butik valdes under exporten bör du hämta en kategorisökväg som den här: *[!UICONTROL Default Category/Tea/Black]*.
+Eftersom ingen butik valdes under exporten bör du hämta en kategorisökväg som följande: *[!UICONTROL Default Category/Tea/Black]*.
 
 <u>Faktiska resultat</u>:
 
@@ -60,14 +60,14 @@ Kategorisökvägen har blandade språk: *[!UICONTROL Default Category/ชาด�
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tools] > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden för verktyget Kvalitetspatchar.
-* Adobe Commerce om molninfrastruktur: [Upgrades and Patches > Apply Patches](https://devdocs.magento.com/cloud/project/project-patch.html) i vår dokumentation för utvecklare.
+* Lokal användning för Adobe Commerce eller Magento Open Source: [[!DNL Quality Patches Tools] > Användning ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i guiden för kvalitetspatchar.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
-Mer information om [!DNL Quality Patches Tool], se:
+Mer information om [!DNL Quality Patches Tool] finns i:
 
-* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av högklassiga patchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
-* [Kontrollera om det finns en patch för din Adobe Commerce-utgåva med [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) i vår kunskapsbas för support.
+* [[!DNL Quality Patches Tool] släppt: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
+* [Kontrollera om det finns en patch för ditt Adobe Commerce-problem med hjälp av [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) i vår kunskapsbas för support.
 
-Mer information om andra patchar finns i [!DNL QPT], se [Patchar finns i [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i guiden för verktyget Kvalitetspatchar.
+Mer information om andra korrigeringsfiler som är tillgängliga i [!DNL QPT] finns i [Patchar som är tillgängliga i  [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i guiden för verktyget för kvalitetskorrigeringar.

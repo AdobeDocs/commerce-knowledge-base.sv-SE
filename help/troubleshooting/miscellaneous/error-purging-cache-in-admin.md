@@ -14,7 +14,7 @@ ht-degree: 0%
 # Fel vid rensning av cache i Commerce Admin
 
 I den här artikeln beskrivs hur du identifierar orsaken till ett felmeddelande som inträffar när cacheminnet rensas i Commerce Admin. När du försöker rensa cacheminnet via administratören får du följande meddelande:
-*Det går inte att ta bort filen /app/project-id/pub/media/catalog/product/cache/directory/filename. Varning!unlink(/app/projekt-id/pub/media/catalog/product/cache/directory/filename): Ingen sådan fil eller katalog*
+Det går inte att ta bort filen */app/project-id/pub/media/catalog/product/cache/directory/filename. Varning!unlink(/app/projekt-id/pub/media/catalog/product/cache/directory/filename): Ingen sådan fil eller katalog*
 
 ## Berörda produkter och versioner
 
@@ -24,9 +24,9 @@ Adobe Commerce (alla distributionsmetoder) 2.3.0-2.3.7, 2.4.0-2.4.2-p1
 
 När du försöker rensa cacheminnet via administratören får du ett felmeddelande.
 
-<u>Steg som ska återskapas:</u>
+<u>Steg att återskapa:</u>
 
-1. Gå till Admin **System** > **verktyg** > **Cachehantering**.
+1. Gå till **System** > **Verktyg** > **Cachehantering** i Admin.
 1. Välj något av alternativen för rensad cachelagring.
 
 <u>Förväntat resultat:</u>
@@ -60,4 +60,4 @@ Om utdata visar att filerna fortfarande finns i cachen måste du [skicka en supp
 
 ## Relaterad läsning
 
-* [Cachehantering](https://docs.magento.com/user-guide/system/cache-management.html) i vår dokumentation för utvecklare.
+* [Cachehantering](https://docs.magento.com/user-guide/system/cache-management.html) i utvecklardokumentationen.

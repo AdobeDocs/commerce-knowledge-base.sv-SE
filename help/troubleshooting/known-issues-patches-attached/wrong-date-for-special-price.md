@@ -17,7 +17,7 @@ I den här artikeln finns en korrigeringsfil för det kända Adobe Commerce 2.2.
 
 ## Problem
 
-När du anger/ändrar specialpriset för en produkt sparas aktuellt datum och tid i databasen som ett värde för `special_from_date` -attribut (inte synligt när du redigerar en produkt). Om du redigerar specialpriset och ditt administratörsanvändarkonto är inställt på ett annat språkområde för gränssnittet kan ett felaktigt värde anges till `special_from_date` på grund av problem med att analysera datumformat för olika språkområden.
+När du anger/ändrar specialpriset för en produkt sparas aktuellt datum och tid i databasen som ett värde för attributet `special_from_date` (inte synligt när du redigerar en produkt). Om du redigerar specialpriset och ditt administratörsanvändarkonto är inställt på ett annat språkområde i gränssnittet, kan ett felaktigt värde anges till `special_from_date` på grund av problem med att analysera datumformat för olika språkområden.
 
 <u>Steg som ska återskapas</u>:
 
@@ -26,10 +26,10 @@ Krav: administratörens nationella inställningar är engelska (USA).
 1. Logga in på Commerce Admin.
 1. Gå till inställningarna för administratörens användarkonto.
 1. Ange gränssnittets språkområde som ukrainskt.
-1. Klicka **Spara konto**.
+1. Klicka på **Spara konto**.
 1. Gå till **Katalog** > **Produkt**.
 1. Välj valfri produkt.
-1. Klicka på **Avancerade priser**.
+1. Klicka på **Avancerade priser** på produktsidan.
 1. Lägg till ett specialpris.
 1. Spara produkten.
 1. Upprepa steg 7-9.
@@ -67,6 +67,6 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 ## Bifogade filer

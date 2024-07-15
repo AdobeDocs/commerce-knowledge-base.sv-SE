@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [Sökmotorn för MySQL-kataloger kommer att tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Du måste ha konfigurerat värddatorn Elasticsearch innan du kan installera version 2.4.0. Se [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
+> [MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Du måste ha konfigurerat värddatorn Elasticsearch innan du kan installera version 2.4.0. Se [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
 
-Artikeln innehåller en fix för när indexstatusen för Elasticsearch inte är *grön*&#39;. &#39;*gul*&#39; anger normal, och &#39;*röd*&#39; anger fel. &quot;Gul&quot; eller &quot;röd&quot; kan förekomma i samband med att produkter saknas eller att gammal produktinformation visas.
+Artikeln innehåller en korrigering när indexstatusen för Elasticsearch inte är *grön*. *gul* anger normal och *röd* anger felaktig. &quot;Gul&quot; eller &quot;röd&quot; kan förekomma i samband med att produkter saknas eller att gammal produktinformation visas.
 
 ## Berörda versioner och produkter
 
@@ -24,7 +24,7 @@ Artikeln innehåller en fix för när indexstatusen för Elasticsearch inte är 
 
 ## Problem
 
-Sökindexet för Elasticsearch-katalogen är långsamt, vilket ger statusen &#39;*gul* eller *röd* i stället för *grön*&#39;. Du kan även upptäcka att ändringar saknas i förgrunden.
+Sökindexet för Elasticsearch-katalogen är långsamt, vilket resulterar i statusen *yellow* eller *red* i stället för *green*. Du kan även upptäcka att ändringar saknas i förgrunden.
 
 ## Orsak
 
@@ -55,8 +55,8 @@ Skapa en ny mysql-dump innan du följer de här stegen och utför dem utanför k
    curl --silent -X GET localhost:9200/_cat/indices?v
    ```
 
-Om de här stegen inte fungerar, [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Om de här stegen inte fungerar skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Relaterad läsning
 
-Mer information finns i [API för Elasticsearch-klusterhälsa](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html).
+Mer information finns i [Elasticsearch Cluster Health API](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html).

@@ -14,7 +14,7 @@ ht-degree: 0%
 Rubriken ska kortfattat beskriva problemet. Högst 70 tecken ska användas.<br/>
 (Exempel: &quot;Minnesbrist under installation eller uppgradering&quot;.)
 
-Se [Bidra > Metadata](../../CONTRIBUTING.md#metadata) för mer information om metadata.
+Mer information om metadata finns i [Medverkar > Metadata](../../CONTRIBUTING.md#metadata).
 
 Inledande stycke eller två stycken: en kort översikt över frågan. De första 140 tecknen är viktiga för SEO.
 
@@ -68,6 +68,6 @@ Om det finns en tillfällig lösning anger du den som ett separat avsnitt under 
 ## Relaterad läsning
 
 * [Artikelämne](https://docs.magento.com/user-guide/) i vår användarhandbok.
-* [Artikelämne](https://devdocs.magento.com) i vår dokumentation för utvecklare. Du kan också säga att skilja mellan instruktioner i devdocs för moln och lokala användare: &quot;[Artikelämne](https://devdocs.magento.com) i vår utvecklardokumentation för Adobe Commerce om molninfrastruktur.&quot; vs &quot;[Artikelämne](https://devdocs.magento.com) i vår utvecklardokumentation för Adobe Commerce lokalt.&quot;
+* [Artikelämne](https://devdocs.magento.com) i utvecklardokumentationen. Du kan också säga att du ska skilja mellan instruktioner i devdocs för moln och lokala användare: &quot;[Artikelavsnitt](https://devdocs.magento.com) i vår utvecklardokumentation för Adobe Commerce om molninfrastruktur.&quot; vs &quot;[Artikelämne](https://devdocs.magento.com) i vår utvecklardokumentation för Adobe Commerce lokalt.&quot;
 * [Artikelämne](https://support.magento.com/hc/en-us) i vår kunskapsbas för support.
 * Relaterade resurser (bloggar, forum, StackOverflow osv.)

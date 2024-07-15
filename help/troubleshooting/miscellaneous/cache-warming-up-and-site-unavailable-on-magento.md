@@ -17,7 +17,7 @@ Den här artikeln innehåller en lösning för när sidcachen värms upp och det
 
 ## Berörda produkter och versioner
 
-* Adobe Commerce i molninfrastrukturen, alla [versionerna](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce i molninfrastrukturen, alla [versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problem
 
@@ -37,8 +37,8 @@ Webbplatsen är inte tillgänglig eller så är svarstiden för hög.
 
 ## Lösning
 
-Begränsa antalet samtidiga anslutningar under cacheuppvarningen. Detta kräver att du lägger till `WARM_UP_CONCURRENCY` variabel efter distribution för att ange antalet uppvärmningsbegäranden som cacheuppvärmarskriptet kan skicka samtidigt. Om du anger det här alternativet kan belastningen på Adobe Commerce molninfrastruktur hanteras. Om du vill se steg går du till [Variabler efter distribution > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) i vår dokumentation för utvecklare.
+Begränsa antalet samtidiga anslutningar under cacheuppvarningen. Detta kräver att variabeln `WARM_UP_CONCURRENCY` post-deploy läggs till för att ange antalet uppvärmningsbegäranden som cacheuppvärmarskriptet kan skicka samtidigt. Om du anger det här alternativet kan belastningen på Adobe Commerce molninfrastruktur hanteras. Stegen finns i [Post-distribuera variabler > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-[Helsidescache](https://docs.magento.com/user-guide/system/cache-full-page.html) i vår användarhandbok
+[Helsidescache](https://docs.magento.com/user-guide/system/cache-full-page.html) i användarhandboken

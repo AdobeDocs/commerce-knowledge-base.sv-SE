@@ -26,12 +26,12 @@ När en butik har Amazon Pay och en annan betalning har tilldelats till olika l�
 
 En uppdatering av en webbsida är en tillfällig lösning på problemet.
 
-För att lösa problemet och ta bort felet har vi skapat ett [patch](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip).
+För att lösa problemet och ta bort felet har vi skapat en [patch](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip).
 
 <u>Förutsättningar</u>:
 
 * En enkel produkt skapas.
-* **Check-/penningorder** aktiveras endast för specifika länder (på **Butik** > **Konfiguration** > **Försäljning** > **Betalningsmetoder**).
+* **Check/Money-order** är bara aktiverad för specifika länder (på **Store** > **Configuration** > **Sales** > **Payment Methods**).
 
 * Exempel: Betalning från tillämpliga länder = särskilda länder
 * Exempel: Betalning från specifika länder = Storbritannien
@@ -43,40 +43,40 @@ För att lösa problemet och ta bort felet har vi skapat ett [patch](assets/BUND
 1. Gå till kassan.
 1. Fyll i formuläret med giltiga data.
 
-   * Land = *Amerikas förenta stater*
+   * Land = *USA*
 
-1. Välj fraktkostnad och klicka **Nästa**.
+1. Välj fraktkostnad och klicka på **Nästa**.
 
    * Betalningssteget öppnas.
    * Det finns inga tillgängliga betalningar.
-   * Meddelande: **Det finns ingen betalningsmetod tillgänglig.**
-   * Det finns inga **Montera beställning** -knappen.
+   * Meddelande: **Det finns ingen betalningsmetod.**
+   * Det finns ingen **monteringsknapp**.
 
-1. Gå tillbaka till **Leveranssteg** och ändra värdet till:
+1. Gå tillbaka till **Leveranssteget** och ändra värdet till:
 
-   * Land = *Förenade kungariket*
+   * Land = *Storbritannien*
 
-1. Välj fraktkostnad och klicka **Nästa**.
+1. Välj fraktkostnad och klicka på **Nästa**.
 
 <u>Förväntat resultat</u>:
 
 Betalningssteget öppnas.
 
 * **Kontant vid leverans** visas.
-* **Check-/penningorder** visas.
-* The **Montera beställning** visas.
+* **Check/Pengar-beställning** visas.
+* Knappen **Placera ordning** visas.
 
 <u>Faktiskt resultat</u>:
 
 Betalningssteget öppnas.
 
 * Det finns inga tillgängliga betalningar.
-* Meddelande: *Det finns ingen betalningsmetod tillgänglig.*
-* Det finns inga **Montera beställning** -knappen.
+* Meddelande: *Det finns ingen betalningsmetod.*
+* Det finns ingen **monteringsknapp**.
 
 ## Lösning
 
-[Tillämpa korrigeringen](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip) nedan.
+[Använd korrigeringen](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip) nedan.
 
 ## Lappa
 
@@ -97,6 +97,6 @@ Patchen är även kompatibel (men löser kanske inte problemet) med följande ve
 
 ## Så här sätter du på plåstret
 
-Se [Använda en kompositkorrigering från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support för instruktioner.
+Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 
 ## Bifogade filer
