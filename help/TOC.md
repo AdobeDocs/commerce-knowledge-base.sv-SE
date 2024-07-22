@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: c75a1ecbf5d89ede71eb3f873c75a5e7d8720a2b
+source-git-commit: 202f5edcef114a1d16177b05328803aca81c11e2
 workflow-type: tm+mt
-source-wordcount: '11069'
+source-wordcount: '11064'
 ht-degree: 0%
 
 ---
@@ -1031,7 +1031,6 @@ ht-degree: 0%
       * [Molnwebbplatsen är långsam](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
       * [Fel vid rensning av snabbcache i molnet (rensningsbegäran bearbetades inte korrekt)](/help/troubleshooting/miscellaneous/error-purging-fastly-cache-on-cloud-the-purge-request-was-not-processed-successfully.md)
       * [Information om förfallodatum för anpassat SSL-certifikat](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
-      * [Redis-felsökning på Adobe Commerce](/help/troubleshooting/miscellaneous/redis-troubleshooter.md)
       * [PWA Studio: Valideringsfel när utvecklarläget körs](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Inaktivera e-post från Amazon varje timme när du använder Adobe Commerce](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
       * [Okänd cache orsakar försämrad svarstid](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
