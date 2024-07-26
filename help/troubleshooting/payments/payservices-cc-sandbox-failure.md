@@ -4,7 +4,7 @@ description: I den här artikeln förklaras varför ett testkreditkort inte fung
 exl-id: 65fd08e0-eefc-47f3-8964-bef3610e6182
 feature: Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -24,7 +24,7 @@ I den här artikeln förklaras varför ett testkreditkort inte fungerar i en san
 
 När du använder ett Visa-kreditkort `4111 1111 1111 1111` från PayPal misslyckas det ibland på grund av PayPal-bedrägeripolicyer med följande fel:
 
-```terminal
+```bash
 Error happened when processing the request. Please try again later.
 ```
 

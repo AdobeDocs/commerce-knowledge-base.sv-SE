@@ -4,7 +4,7 @@ description: I den här artikeln finns en fix som anger när du inte kan uppdate
 exl-id: b133253e-c160-4f15-a9b0-8591e93a1e9b
 feature: Upgrade
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -25,7 +25,7 @@ $ git pull origin develop
 
 Följande fel kan visas:
 
-```terminal
+```bash
 error: Your local changes to the following files would be overwritten by merge:
 <list of files>
 ```

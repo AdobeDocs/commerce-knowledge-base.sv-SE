@@ -4,7 +4,7 @@ description: Den här artikeln innehåller lösningar på PHP-inställningsfel.
 exl-id: 51fb3c95-2e25-4d86-a6cf-e08e90d097ca
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Så här ökar du PHP-minnesgränsen:
 
 Konfigurationer med ett stort antal butiksgranskningar, produkter, attribut och alternativ kan generera formulär som överskrider den förinställda PHP-gränsen. Om antalet skickade värden överstiger gränsen på `max-input-vars` som angetts inom `php.ini` (standardvärdet är 1000) överförs inte återstående data och dessa databasvärden uppdateras inte. När detta inträffar visas en varning i PHP-loggen:
 
-```terminal
+```bash
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
@@ -58,7 +58,7 @@ Se [Under installationen kan du felsöka högsta antal funktionsfel på kapsling
 
 Feltexten är vanligtvis:
 
-```terminal
+```bash
 Parse error: syntax error, unexpected 'data' (T_STRING)
 ```
 
