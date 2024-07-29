@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 202f5edcef114a1d16177b05328803aca81c11e2
+source-git-commit: d3b832d2f8a0ef35e8a8e8899ccdaffeec8029ff
 workflow-type: tm+mt
-source-wordcount: '11064'
+source-wordcount: '11066'
 ht-degree: 0%
 
 ---
@@ -1180,7 +1180,7 @@ ht-degree: 0%
       * [MySQL och Elasticsearch visar olika resultat](/help/troubleshooting/elasticsearch/mysql-and-elasticsearch-show-different-results.md)
       * [Elasticsearch visas som sökmotor trots OpenSearch-installationen](/help/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search.md)
 * Hjälpcenterhandbok {#help-center-guide}
-   * [Användarhandbok för Adobe Commerce Help Center](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
+   * [Experience League Support User Guide for Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
    * [Uppdatering av livscykelpolicy för Adobe Commerce Support-biljetter](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
 * Använda {#how-to}
    * [Instruktioner - översikt](/help/how-to/overview.md)
