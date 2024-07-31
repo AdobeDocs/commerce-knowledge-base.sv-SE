@@ -4,7 +4,7 @@ description: MDVA-41229-korrigeringen åtgärdar ett problem där bilder som fin
 exl-id: 69d7374f-9f8b-4ec4-8a7f-135ee06135a3
 feature: Data Import/Export, Configuration, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 143a694fd573aeb2a52f47d194359e98f74f8033
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 2%
@@ -37,12 +37,15 @@ Bilder som finns på baksidan visas inte på förgrunden efter att du har import
 
 1. Installera en ren Adobe Commerce.
 1. Lägg till ett anpassat attribut genom att gå till **Lager** > **Attribut** > **Produkt** > **Lägg till nytt attribut** med inställningarna nedan:
+
    * Egenskaper:
       * Attributegenskaper:
+
          * Standardetikett: Ange storlek
          * Katalogindatatyp för butiksägare: Textruta
          * Värden som krävs: Nej
          * Uppdatera bild för produktförhandsgranskning: Ja
+
       * Hantera färgruta (värden för attributet):
 
         | Är standard | Administratörsruta | Admin - beskrivning | Standardvy för butiksvy | Beskrivning av standardbutiksvy |
@@ -52,17 +55,24 @@ Bilder som finns på baksidan visas inte på förgrunden efter att du har import
         | no | 30 | 30 | 30 | 30 |
         | no | 60 | 60 | 60 | 60 |
         | no | 68 | 68 | 68 | 68 |
+
       * Avancerade attributegenskaper:
+
          * Attributkod: set_size
          * Omfång: Global
          * Unikt värde: Nej
          * Indatavalidering för butiksägare: Ingen
          * Alternativ för Lägg till i kolumn: Nej
          * Använd i filteralternativ: Nej
+
    * Hantera etiketter:
+
       * Hantera titlar (storlek, färg osv.)
+
          * Standardbutiksvy: Ange storlek
+
    * Egenskaper för Storefront:
+
       * Använd i sökning: Ja
       * Sökbredd: 1
       * Synlig i avancerad sökning: Nej
@@ -73,12 +83,17 @@ Bilder som finns på baksidan visas inte på förgrunden efter att du har import
       * Synligt på katalogsidor i Storefront: Ja
       * Används i produktlistan: Ja
       * Används för sortering i produktlista: Nej
+
 1. Lägg till det här attributet i standardattributuppsättningen i produktinformationsgruppen (**Lagrar** > **Attribut** > **Attributuppsättning**).
 1. Ladda ned bilder i var-mappen i Adobe Commerce rotkatalog.
 1. Gå till **System** > **Dataöverföring** > och importera filen med alternativen nedan:
+
    * Importinställningar:
+
       * Enhetstyp: Produkter
+
    * Importbeteende:
+
       * Importbeteende: Lägg till/uppdatera
       * Valideringsstrategi: Stoppa vid fel
       * Antal tillåtna fel: 1
@@ -86,9 +101,12 @@ Bilder som finns på baksidan visas inte på förgrunden efter att du har import
       * Flera värdeavgränsare: `,`
       * Attributvärdeskonstant: EMPTYVALUE
       * Fältbilaga: avmarkerad
+
    * Fil som ska importeras:
+
       * Välj den fil som ska importeras
       * Bildfilskatalog: lämna den tom
+
 1. Gå till butiken på sidan `/product-set.html` och växla mellan olika uppsättningsstorlekar. För Ange storlek 24 finns inget galleri.
 
 <u>Förväntade resultat</u>:
