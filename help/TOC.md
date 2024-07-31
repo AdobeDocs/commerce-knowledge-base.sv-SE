@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: a520ef45f1c55dbf34a98c4f4d3ab49814535434
+source-git-commit: 4c1199c31f83d7c2aaf28e259d63473779bf2efe
 workflow-type: tm+mt
-source-wordcount: '11073'
+source-wordcount: '11080'
 ht-degree: 0%
 
 ---
@@ -1054,6 +1054,7 @@ ht-degree: 0%
       * [FEL: Det gick inte att värma på Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/error-warming-up-failed-on-magento-commerce-cloud.md)
       * [Det går inte att klona GitHub-databasen i Magento](/help/troubleshooting/miscellaneous/cannot-clone-the-magento-github-repository.md)
       * [Katalogen för Live-sökning är inte synkroniserad](/help/troubleshooting/miscellaneous/live-search-catalog-data-sync.md)
+      * [Instrumentpanelen [!DNL Live Search] och rankningen av sökresultat är felaktig](/help/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect.md)
       * [Kundprofiler visas inte i Experience Platform](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio: webbläsaren kan inte matcha .local.pwadev-platsen](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [Produkt-Recommendations visas inte i Page Builder](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
