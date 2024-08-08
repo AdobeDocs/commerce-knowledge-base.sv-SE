@@ -4,9 +4,9 @@ description: Du kan lösa problem med avancerad rapportering på Adobe Commerce 
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 84b4ca4c4144381f0b404d2eae6684e7b21755df
+source-git-commit: b3bfc41a67eb9ef0bbb52d1c1c3940b1aa49cf44
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ b. NEJ - Fortsätt till [steg 4](#step-4).
 
 +++**Är avancerad rapportering aktiverat?**
 
-Kontrollera **Admin** > **Lagrar** > **Inställningar** > **Konfiguration** > **Allmänt** > **Avancerat**. Granska [Avancerad rapportering: Aktivera avancerad rapportering](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) om du vill ha mer information.
+Kontrollera **Admin** > **Lagrar** > **Inställningar** > **Konfiguration** > **Allmänt** > **Avancerad rapportering**. Granska [Avancerad rapportering: Aktivera avancerad rapportering](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) om du vill ha mer information.
 
 a. JA - Fortsätt till [steg 5](#step-5).\
 b. NEJ - [Aktivera avancerad rapportering](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) och spara, och vänta i 24 timmar på att Adobe Commerce och Advanced Reporting ska synkroniseras. Kontrollera om dina data nu läses in. Om den gör det har du löst problemet. Om det inte fortsätter till [steg 5](#step-5).
