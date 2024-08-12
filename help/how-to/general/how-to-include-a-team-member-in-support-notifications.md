@@ -4,9 +4,9 @@ description: I den här artikeln beskrivs hur du inkluderar en teammedlem i supp
 feature: Cloud, Support, Admin Workspace
 role: Admin, Developer
 exl-id: 63ea3f60-a509-447c-ac3d-bb2133141c80
-source-git-commit: 1c568d75534bbfe322d9f980b40c5dd64fc5b7a2
+source-git-commit: 771793d45000e65c1bf41137cd984d2977b0a9ff
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ I den här artikeln beskrivs hur du inkluderar en teammedlem som automatiskt få
 
 1. Gå till **[!DNL Cloud Project URL]** (Exempel: `https://us-3.magento.cloud/projects/xxxxxx/edit`).
 1. Kontrollera om teammedlemmen har lagts till i projektet och är en [!DNL Super User].
-
-Om de inte behöver [!DNL cloud project]-åtkomst skickar du en [supportförfrågan på Adobe Commerce Support Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) för att automatiskt CC: dem på alla biljetter och tillhandahåller även deras **[!DNL MAGE ID]** (om de är tillgängliga).
 
 Om de inte har lagts till i projektet måste du lägga till dem som en [!DNL Super User] och bevilja [!DNL Shared Access]:
 
