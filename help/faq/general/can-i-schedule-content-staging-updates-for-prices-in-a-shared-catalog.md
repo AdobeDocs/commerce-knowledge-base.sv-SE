@@ -3,18 +3,18 @@ title: Kan jag schemalägga Content Staging-uppdateringar för priser i en delad
 description: Adobe Commerce erbjuder inte möjligheten att schemalägga en prisuppdatering ([Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) för en eller flera produkter i en delad katalog.
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: c3120f7df24e105b082df6544ab82241d6b6851f
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # Kan jag schemalägga Content Staging-uppdateringar för priser i en delad katalog?
 
-Adobe Commerce erbjuder inte funktioner för att schemalägga en prisuppdatering ([Innehållsmellanlagring](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) för en eller flera produkter i en delad katalog.
+Adobe Commerce erbjuder inte funktioner för att schemalägga en prisuppdatering ([Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) för en eller flera produkter i en delad katalog.
 
-Det innebär att du inte kan schemalägga en sådan prisuppdatering direkt från menyn **Ange priser och struktur** på panelen Commerce Admin (det finns ingen **Schemalägg ny uppdatering** på den här menyn).
+Det innebär att du inte kan schemalägga en sådan prisuppdatering direkt från menyn **Ange priser och struktur** på Commerce Admin-panelen (det finns ingen **Schemalägg ny uppdatering** på den här menyn).
 
 Du kan ändå använda alternativa metoder och schemalägga en prisuppdatering för:
 
