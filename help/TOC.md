@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: dfc68a101da26e8ce98295239d2bde7675c19401
+source-git-commit: abfd1e3a042f2756c27471b81004a3dcea0914ac
 workflow-type: tm+mt
-source-wordcount: '11093'
+source-wordcount: '11090'
 ht-degree: 0%
 
 ---
@@ -1118,7 +1118,6 @@ ht-degree: 0%
    * Kända fel {#known-issues-patches-attached}
       * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
       * [Felsöker rotering av krypteringsnyckel: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
-      * [Dolt nedladdningstest](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102-hidden-test.md)
       * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-40] har ändrats så att den innehåller isolerad korrigering för  [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [Migrering av [!DNL UPS]-leveransmetodintegrering från [!DNL SOAP] till [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Stöd för snabbkorrigering för leveransmetod för markförmåner för AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
