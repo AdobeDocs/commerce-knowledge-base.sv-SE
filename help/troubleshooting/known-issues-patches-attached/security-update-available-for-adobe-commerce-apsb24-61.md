@@ -4,21 +4,21 @@ promoted: true
 description: Använd en Isolated-korrigering för att åtgärda [!DNL CVE-2024-39397] för Adobe Commerce 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10 och tidigare versioner med endast  [!DNL Apache].
 feature: Compliance, Security
 role: Developer
-source-git-commit: 2038e766d65c81172391091a0cdff4abb04e84d5
+source-git-commit: 76ff7669a0a57925a176e08031e0789ced0a7f0e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-61]
 
-Den 13 augusti 2024 släppte Adobe en säkerhetsuppdatering för Adobe Commerce, Magento Open Source och Adobe Commerce Webhooks Plugin.
+Den 13 augusti 2024 släppte Adobe en regelbundet schemalagd säkerhetsuppdatering för Adobe Commerce, Magento Open Source och Adobe Commerce Webhooks Plugin.
 Uppdateringen åtgärdar säkerhetsluckorna [[!DNL critical, important] och  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html). Ett lyckat utnyttjande kan leda till exekvering av godtycklig kod, läsning av godtyckliga filsystem, åsidosättande av säkerhetsfunktioner och eskalering av behörigheter. Bulletinen är [Säkerhetsbulletin för Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 >[!NOTE]
 >
->**[!DNL CVE-2024-39397]gäller bara när du använder webbservern [!DNL Apache].** För att åtgärda problemet så snabbt som möjligt har Adobe också släppt en Isolerad korrigering som åtgärdar [!DNL CVE-2024-39397].
+>**[!DNL CVE-2024-39397], som listas i säkerhetsbulletinen ovan, är bara tillgängligt när du använder webbservern [!DNL Apache].** För att åtgärda problemet så snabbt som möjligt har Adobe också släppt en Isolerad korrigering som åtgärdar [!DNL CVE-2024-39397].
 
 **Använd de senaste säkerhetsuppdateringarna så snart som möjligt. Om du inte gör det kommer du att vara sårbar för de här säkerhetsproblemen och Adobe har begränsade möjligheter att åtgärda dem.**
 
