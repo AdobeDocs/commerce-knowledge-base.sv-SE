@@ -3,7 +3,7 @@ title: Återställ miljö på Adobe Commerce i molninfrastruktur
 description: I den här artikeln visas olika scenarier för återställning av en miljö på Adobe Commerce i molninfrastruktur.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: f2aeb0262ddcb3d7e78028d08b9323db243fc96b
+source-git-commit: 4439ee25e929a1bdb2216cc10fa0d4506c4f3aed
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -158,6 +158,6 @@ Om körningen av kommandot `setup:uninstall` misslyckas med ett fel och inte kan
 1. Anslut till MySQL-databasen: `mysql -h database.internal` (för Pro-miljöer, se: [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html)).
 1. Släpp `main` DB: `drop database main;`
 1. Skapa en tom `main`-databas: `create database main;`
-1. Ta bort följande konfigurationsfiler: `config.php`, `config.php` , `.bak,` , `env.php`, `env.php.bak`
+1. Ta bort följande konfigurationsfiler: `config.php`, `config.php.bak`, `env.php`, `env.php.bak`
 
 När du har återställt databasen [gör du en [!DNL git] push till miljön för att aktivera omdistributionen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html) och installera Adobe Commerce till en ny databas. Eller [kör kommandot för omdistribution](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
