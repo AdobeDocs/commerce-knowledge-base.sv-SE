@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 23f19c3b8fff3b31bb42625d210c5330292b79b3
+source-git-commit: 38e67144f337c8359a5602e49d8a0ee91cd20b53
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2117'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,11 @@ Så här skickar du ett nytt supportärende från Adobe Experience League starts
 
    ![open-support-page](assets/click_support.png)
 
-1. Klicka **[!UICONTROL Open Ticket]** på den vänstra menyn eller klicka **[!UICONTROL Get Started]** i *[!UICONTROL Open a support ticket]*-kortet för att starta supportinhämtningen.
+1. För att börja med supportinhämtningen måste du se till att du har valt rätt organisation i listrutan (om den är tillgänglig), eftersom du kan ha flera organisationer med liknande namn, var och en med egna rättigheter.
+
+   ![bild](https://git.corp.adobe.com/storage/user/38345/files/230d6ecd-bce2-4170-b377-3989fa8be615)
+
+1. Klicka på **[!UICONTROL Open Ticket]** på den vänstra menyn eller klicka på **[!UICONTROL Get Started]** i *[!UICONTROL Open a support ticket]*-kortet.
 
    ![open-support-case](assets/open_support_case.png)
 
