@@ -4,9 +4,9 @@ description: Du kan lösa problem med avancerad rapportering på Adobe Commerce 
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: b3bfc41a67eb9ef0bbb52d1c1c3940b1aa49cf44
+source-git-commit: dfe9b9cf4751e28bd151fce36df168e48fb914ed
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -117,13 +117,13 @@ c. JA - Om det finns poster men ett fel uppstår går du vidare till [Steg 10](#
 
 +++**Finns filen `data.tgz` i systemet och finns det poster i åtkomstloggarna?**
 
-Kör kommando för att kontrollera att filen `data.tgz` finns:
+Om du vill kontrollera att filen `data.tgz` finns kör du det här kommandot - det bör returnera katalog(er) med hash-namn:
 
 ```
-ls -ltr pub/media/analytics/<there should be a directory with hash name>/
+ls -ltr pub/media/analytics/
 ```
 
-Kör kommando för att kontrollera att det finns poster i access.logs:
+Kör det här kommandot om du vill kontrollera att det finns poster i access.logs:
 
 ```
 zgrep -i analytics /var/log/platform/[cluster_id|cluster_id_stg]/access.log* | grep MagentoBI
