@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: abfd1e3a042f2756c27471b81004a3dcea0914ac
+source-git-commit: 01d815edd76b749df036021d75d4456d9d7b5550
 workflow-type: tm+mt
-source-wordcount: '11090'
+source-wordcount: '11096'
 ht-degree: 0%
 
 ---
@@ -240,7 +240,7 @@ ht-degree: 0%
          * [MDVA-34680: Kundkontot har inte filtrerats korrekt i kundens rutnät](/help/support-tools/patches-available-in-qpt-tool/v1-0-26/mdva-34680-customer-account-created-time-is-not-filtered-correctly-in-customers-grid.md)
          * [MDVA-37068: Felaktig moms visas vid utcheckning av virtuella produkter](/help/support-tools/patches-available-in-qpt-tool/v1-0-26/mdva-37068-incorrect-tax-rate-displays-on-checkout-for-virtual-products.md)
          * [MDVA-38308: Fel när Vimeo-videofilmer lades till i inaktiverade produkter](/help/support-tools/patches-available-in-qpt-tool/v1-0-26/mdva-38308-error-after-adding-vimeo-videos-to-disabled-products.md)
-         * [MDVA-38468: Ta emot ett felmeddelande när CMS-sidan sparas](/help/support-tools/patches-available-in-qpt-tool/v1-0-26/mdva-38468-error-when-saving-cms-pages.md)
+         * [MDVA-38468: Få ett felmeddelande när du sparar CMS-sidan](/help/support-tools/patches-available-in-qpt-tool/v1-0-26/mdva-38468-error-when-saving-cms-pages.md)
          * [MDVA-38608: Tillfälliga tabeller tas inte bort för misslyckade omindexeringar](/help/support-tools/patches-available-in-qpt-tool/v1-0-26/mdva-38608-temporary-tables-are-not-deleted-when-the-reindex-is-not-finished-successfully.md)
       * v1.1.0 {#v1-1-0}
          * [Översikt: QPT (Quality Patches Tool) v1.1.0](/help/support-tools/patches-available-in-qpt-tool/v1-1-0/overview.md)
@@ -260,7 +260,7 @@ ht-degree: 0%
          * [MDVA-38447: Konfigurerbara underordnade produkter som inte visas individuellt returneras i GraphQL-svar och gör MySQL-frågan långsam](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/mdva-38447-not-visible-individually-configurable-child-products.md)
          * [MDVA-38852: Kataloglager låser tabeller som minskar prestanda](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/mdva-38852-catalog-inventory-locks-tables-for-updates-that-significantly-decrease-performance.md)
          * [MDVA-38929: Fakturan med FPT visar fel summa](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/mdva-38929-invoice-with-fpt-shows-wrong-grand-total.md)
-         * [MDVA-39043: Administratörsanvändare får ett fel när widgeten läggs till på CMS-sidan](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/mdva-39043-admin-users-with-limited-access-get-error-while-adding-products-widget-to-cms.md)
+         * [MDVA-39043: Administratörsanvändare får felmeddelande om att lägga till widget på CMS-sidan](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/mdva-39043-admin-users-with-limited-access-get-error-while-adding-products-widget-to-cms.md)
          * [MDVA-39195: Lägg till i kundvagnen är inaktivt på kategorisidan](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/mdva-39195-add-to-cart-button-is-inactive-on-the-category-page.md)
          * [MDVA-39384: Det går inte att spara anpassat kundattribut för företagsanvändare](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/mdva-39384-unable-to-save-custom-customer-attribute-for-company-user.md)
          * [MDVA-39521: Det går inte att ange leveransadress för kundvagnar via GraphQL](/help/support-tools/patches-available-in-qpt-tool/v1-1-2/mdva-39521-unable-to-set-shipping-address-on-cart-via-graphql.md)
@@ -272,7 +272,7 @@ ht-degree: 0%
       * v1.1.3 {#v1-1-3}
          * [Översikt: QPT (Quality Patches Tool) v1.1.3](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/overview.md)
          * [MDVA-31590: Det går inte att uppdatera attribut i grupp med MySQL async-köer](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-31590-unable-to-update-attributes-in-bulk-using-mysql-async-queues.md)
-         * [MDVA-33606: Användarna får ett fel när CMS-sidan som tilldelats hierarkin sparas](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
+         * [MDVA-33606: Användarna får felmeddelanden när CMS-sidor sparas som tilldelats hierarkin](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
          * [MDVA-36309: Det går långsamt att söka efter attribut i administratörsrutnät](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-36309-product-search-by-attributes-is-slow-in-the-admin-grids.md)
          * [MDVA-37234: Om du lägger till artikel i kundvagnen flera gånger skapas ett dubblettobjekt](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-37234-adding-item-to-cart-multiple-times-creates-duplicate-item.md)
          * [MDVA-40262: GraphQL-frågor visas inte i vanliga söktermer i admin](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-40262-graphql-queries-dont-show-in-popular-search-terms-in-admin.md)
@@ -296,7 +296,7 @@ ht-degree: 0%
          * [MDVA-37748: GraphQL-frågan returnerar produkter som inte har tilldelats en delad katalog](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/mdva-37748-graphql-query-returns-products-not-assigned-to-shared-catalog.md)
          * [MDVA-39229: Fel efter uppdatering av starttid för katalogregel Mellanlagringsuppdatering](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/mdva-39229-error-updating-catalog-rule-staging-update-start-time.md)
          * [MDVA-40545: Endast den första noden för en sida hämtas](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/mdva-40545-only-the-first-node-for-a-page-retrieved.md)
-         * [MDVA-40619: Ändringar i hierarkin bryter infogad redigering av CMS-sida och orsakar 500-fel](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/mdva-40619-hierarchy-changes-break-cms-page-inline-edit-and-throw-500-error.md)
+         * [MDVA-40619: Ändringar i hierarkin bryter CMS sidredigering och orsakar 500-fel](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/mdva-40619-hierarchy-changes-break-cms-page-inline-edit-and-throw-500-error.md)
          * [MDVA-41046: Enkla produkter med anpassade alternativ som inte är tillgängliga för tilldelning](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/mdva-41046-simple-products-with-custom-options-not-available-for-assigning.md)
          * [MDVA-41061: Stock-status återställs till säljbar när produkten sparas från Admin](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/mdva-41061-stock-status-resets-saleable-when-saved-from-admin.md)
          * [MDVA-41164: Det går inte att spara eller redigera företag med anpassade kundattribut](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/mdva-41164-admin-user-cannot-save-or-edit-company-with-custom-customer-attributes.md)
@@ -705,7 +705,7 @@ ht-degree: 0%
          * [ACSD-54472: Kunder i ett avvisat företag kan fortfarande autentisera och göra beställningar](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-54472-customers-of-rejected-company-can-still-authenticate-and-place-orders.md)
          * [ACSD-54680: B2B-offert för en produkt med flera tilldelade källor kan inte bearbetas](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-54680-b2b-quote-submitted-for-a-product-with-multiple-assigneda-sources.md)
          * [ACSD-55004: Valideraren kraschar när en importfil som är större än värdet överförs](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-55004-validator-crashes-while-uploading-an-import-file-larger-than-the-value.md)
-         * [ACSD-53414: Begränsade administratörsanvändare kan se CMS-sidor utanför sitt behörighetsområde](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-53414-restricted-admin-user-can-see-cms-pages-outside-permissions.md)
+         * [ACSD-53414: Begränsade administratörsanvändare kan visa CMS-sidor utanför sitt behörighetsområde](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-53414-restricted-admin-user-can-see-cms-pages-outside-permissions.md)
          * [ACSD-52657: Minicart har inte uppdaterats i den andra butiksgranskningen som använder underdomän](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-52657-minicart-not-updated-on-second-storeview.md)
          * [ACSD-54007: Odefinierat matrisnyckel _scope-fel vid import av kunddata](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-54007-undefined-array-key-scope-error-importing-customer-data.md)
          * [ASCD-54040: Fältet [!UICONTROL Created] är tomt i ordningsinformation när B2B-moduler är aktiverade](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-54040-created-field-is-blank-in-order-details-page.md)
@@ -754,7 +754,7 @@ ht-degree: 0%
          * [ACSD-53309: Ofullständigt skatteprogram för anpassningsbara alternativ och etiketten [!UICONTROL Regular Price]](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-53309-incomplete-tax-application-for-customizable-options.md)
          * [ACSD-53790: Flera RMA:er för en enskild produkt kan skapas via Rest API](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-53790-multiple-rmas-for-single-product-can-be-created-via-rest-api.md)
          * [ACSD-54739: Status [!UICONTROL Product Stock] har inte tillämpats för [!UICONTROL Related Product Rules]](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
-         * [ACSD-54983: Företagets användar-UID med GraphQL är inte tillgängligt med inaktiv användare](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
+         * [ACSD-54983: Företagsanvändare UID med GraphQL är inte tillgänglig med inaktiv användare](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
       * v1.1.44 {#v1-1-44}
          * [Översikt: [!DNL Quality Patches Tool] (QPT) v1.1.44](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/overview.md)
          * [ACSD-55231: Fel hittades inte i SKU när snabbordningsfunktioner användes](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-55231-sku-not-found-in-catalog.md)
@@ -823,6 +823,7 @@ ht-degree: 0%
       * [2024 års utgåva](/help/announcements/adobe-commerce-announcements/2024-release-schedule.md)
       * [Adobe Commerce support intag process migration till Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
    * Help Center News {#news}
+      * [Avställning av Adobe Commerce Help Center](/help/announcements/help-center-news/decommissioning-of-adobe-commerce-help-center.md)
       * [Adobe Commerce Support Knowledge Base börjar ta emot bidrag](/help/announcements/help-center-news/github-repo-for-external-contributions.md)
 * Felsökning av {#troubleshooting}
    * [Felsökning - översikt](/help/troubleshooting/overview.md)
@@ -1261,7 +1262,7 @@ ht-degree: 0%
    * [Ändra e-postadress på magento.com när fältet är nedtonat](/help/how-to/general/change-email-address-on-magento-account.md)
    * [Ta bort Magento Order Management](/help/how-to/general/how-to-remove-mom.md)
    * [Tips om Commerce semester](/help/how-to/general/tech-tips-for-commerce-holiday-readiness.md)
-   * [Åsidosätta WAF för GraphQL-förfrågningar](/help/how-to/general/how-to-bypass-waf-for-graphql-requests.md)
+   * [Hur man kringgår förfrågningar från WAF för GraphQL](/help/how-to/general/how-to-bypass-waf-for-graphql-requests.md)
    * [Uppgradera MariaDB 10.4 till 10.5 för Adobe Commerce i molnet](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * Vanliga frågor {#faq}
    * [Frågor och svar - översikt](/help/faq/overview.md)
