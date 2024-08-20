@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar på Adobe Commerce-problem
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: a1b049dab989d5d8594d86b64b778e6e277a9f41
+source-git-commit: ab39a21ca325cdad30debf89a1cff660bf5925e5
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Om dina produktdata inte synkroniseras korrekt för en viss SKU gör du följand
 1. Om du ser rätt data i `catalog_data_exporter_products` använder du följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`:
 
    ```sql
-   select * from flag where flag_code = 'products-feed-version';
+   select * from scopes_website_data_exporter;
    ```
 
 1. Om tidsstämpeln är äldre kan du antingen vänta på nästa kron-körning eller utlösa den själv med följande kommando:
@@ -111,7 +111,7 @@ Om du ser rätt data i `catalog_data_exporter_product_attributes`:
 1. Använd följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`.
 
    ```sql
-   select * from flag where flag_code = 'product-attributes-feed-version';
+   select * from scopes_website_data_exporter;
    ```
 
 1. Om tidsstämpeln är äldre kan du antingen vänta på nästa kron-körning eller utlösa den själv med följande kommando:
@@ -133,4 +133,5 @@ bin/magento saas:resync --feed productattributes
 
 ## Relaterad läsning
 
-Se [Inbyggd Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) i användardokumentationen.
+* Se [Inbyggd Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) i användardokumentationen.
+* Se [Granska loggar och felsöka dataexport och synkronisering i Adobe Commerce SaaS](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) i Adobe Commerce SaaS dataexportguide.
