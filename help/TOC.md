@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: ac71666c082f59c8f40df57c31ae15a4ef595a18
+source-git-commit: 741b84c9a2a7308ab4fb5b233c99c7d06ec2729a
 workflow-type: tm+mt
-source-wordcount: '11100'
+source-wordcount: '11109'
 ht-degree: 0%
 
 ---
@@ -1119,6 +1119,7 @@ ht-degree: 0%
       * [Distributionen misslyckades: Det finns inga definierade kommandon i namnområdesfelet &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Distributionen misslyckas med rätt åtkomstnycklar i env:COMPOSER_AUTH eller auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Kända fel {#known-issues-patches-attached}
+      * [Vägledning om hur du skyddar din butik och roterar krypteringsnycklar: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
       * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
       * [Felsöker rotering av krypteringsnyckel: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
       * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-40] har ändrats så att den innehåller isolerad korrigering för  [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
