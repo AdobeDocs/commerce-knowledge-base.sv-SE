@@ -1,17 +1,17 @@
 ---
-title: Felsöka produktmodulen Recommendations i Adobe Commerce
-description: Den här artikeln handlar om felsökningsförslag för
+title: Felsöka modulen [!UICONTROL Product Recommendations] i Adobe Commerce
+description: Den här artikeln handlar om felsökningsförslag för modulen [!UICONTROL Product Recommendations] i Adobe Commerce.
 exl-id: 431ee31e-eb5b-400c-9c99-cc86613453d7
 feature: Cache, Compliance, Extensions, Marketing Tools, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: b20ad74194bacb09116131f4a8da1006da75738a
+source-git-commit: af9ee28c5819a9d1b97411210816bfe8a9522614
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-# Felsöka produktmodulen Recommendations i Adobe Commerce
+# Felsöka modulen [!UICONTROL Product Recommendations] i Adobe Commerce
 
 Den här artikeln handlar om felsökningsförslag för
 
@@ -25,7 +25,7 @@ och dess beroende
 saas-export
 ```
 
-eftersom du behöver båda modulerna för att kunna använda verktyget Recommendations i Adobe Commerce.
+eftersom du behöver båda modulerna för att kunna använda verktyget [!UICONTROL Product Recommendations] i Adobe Commerce.
 
 ## Berörda produkter och versioner
 
@@ -39,21 +39,21 @@ Om du har konfigurerat
 magento/product-recommendations
 ```
 
--modulen korrekt (kontrollera [Produkt-Recommendations - Installera och konfigurera Recommendations](https://devdocs.magento.com/recommendations/install-configure.html) i utvecklardokumentationen.), men du ser inga rekommendationer, prova följande:
+modul korrekt, (kontrollera [[!UICONTROL Product Recommendations - Install and Configure]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) i utvecklardokumentationen.) men du ser inga rekommendationer, prova följande:
 
-* Det är möjligt att modulen inte har haft tillräckligt med tid för att samla in beteendedata. Låt systemet köras i 24 timmar så att det kan börja samla in data. Överväg att distribuera en rekommendationstyp som inte kräver beteendedata, till exempel&quot;Mer sådant&quot;.
+* Det är möjligt att modulen inte har haft tillräckligt med tid för att samla in beteendedata. Låt systemet köras i 24 timmar så att det kan börja samla in data. Överväg att distribuera en rekommendationstyp som inte kräver några beteendedata, till exempel *Mer som denna*.
 
 * Om du inte ser de rekommendationer som du har konfigurerat kan det finnas otillräckligt med data för att skapa rekommendationer för användaren.
 
-* Kontrollera att SaaS-datamängden eller API-nyckeln är giltiga. Om du får ett felmeddelande när du har angett ditt SaaS-dataminne eller din API-nyckel under initieringen av produktrekommendationerna kontrollerar du att du har angett [SaaS-datamängd och API-nyckel](https://docs.magento.com/user-guide/configuration/services/saas.html) korrekt (i användarhandboken). För att säkerställa att nyckeln för MageID och API är länkad måste den användare som äger MageID, vanligtvis den användare som äger Adobe Commerce-licensen, vara samma användare som genererar API-nyckeln. Om du måste ändra det MageID som användes [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+* Kontrollera att [!DNL SaaS]-datamängden eller [!DNL API]-nyckeln är giltiga. Om du får ett fel när du har angett ditt [!DNL SaaS]-datautrymme eller din [!DNL API]-nyckel under initieringen av produktrekommendationer kontrollerar du att du har angett [[!DNL SaaS] datautrymmet och [!DNL API] nyckeln](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) (i användarhandboken) korrekt. För att nyckeln [!DNL MageID] och [!DNL API] ska kunna länkas måste användaren som äger [!DNL MageID], vanligtvis den användare som äger Adobe Commerce-licensen, vara samma användare som genererar nyckeln [!DNL API]. Om du måste ändra [!DNL MageID] som användes [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 >[!NOTE]
 >
->Om [läget för cookie-begränsning](https://docs.magento.com/m2/ce/user_guide/stores/compliance-cookie-restriction-mode.html) (i användarhandboken) är aktiverat samlar Adobe Commerce inte in beteendedata förrän kunden godkänner det. Om läget för cookie-begränsning är inaktiverat samlar Adobe Commerce in beteendedata som standard.
+>Om [**[!UICONTROL Cookie Restriction Mode]**](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) (i vår användarhandbok) är *aktiverad* samlar Adobe Commerce inte in beteendedata förrän kunden godkänner det. Om **[!UICONTROL Cookie Restriction Mode]**är *inaktiverad* samlar Adobe Commerce in beteendedata som standard.
 
-## Exporteringsmodulen för katalog-SaaS
+## Exporteringsmodul för katalog [!DNL SaaS]
 
-För problem med katalogexport (
+För problem relaterade till katalogexporten [!DNL SaaS] (
 
 ```php
 saas-export
@@ -61,20 +61,25 @@ saas-export
 
 ):
 
-1. Bekräfta att jobben [cron](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html) (i utvecklardokumentationen) körs.
-1. Bekräfta att [indexerarna](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html) (i utvecklardokumentationen) körs och att    ```php    Product Feed    ```    indexeraren har värdet    ```php    Update by Schedule    ```    .
-1. Bekräfta att modulerna är aktiverade. The    ```php    saas-export    ```    metapackage installerar följande moduler, som alla måste aktiveras:    ```php    "magento/module-catalog-data-exporter"      "magento/module-catalog-inventory-data-exporter"      "magento/module-catalog-url-rewrite-data-exporter"      "magento/module-configurable-product-data-exporter"      "magento/module-data-exporter"      "magento/module-saas-catalog"    ```
-1. Kontrollera [loggarna](https://devdocs.magento.com/guides/v2.3/config-guide/cli/logging.html) (i utvecklardokumentationen). Kontrollera att inga fel är associerade med ovanstående moduler.
-1. Uppdatera cacheminnet för konfiguration. Gå till **System** > **Verktyg** > **Cachehantering** och rensa konfigurationscachen.
-1. Bekräfta att det finns data i    ```php    catalog_data_exporter_products    ```    databastabell.
+1. Bekräfta att jobben [[!DNL cron]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) (i utvecklardokumentationen) körs.
+1. Bekräfta att [[!UICONTROL indexers]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) (i utvecklardokumentationen) körs och att    ```php    Product Feed    ```    [!UICONTROL indexer] är inställt på    ```php    Update by Schedule    ```    .
+1. Bekräfta att modulerna är *aktiverade*. The    ```php    saas-export    ```    metapackage installerar följande moduler, som alla måste vara *aktiverade* :    ```php    "magento/module-catalog-data-exporter"      "magento/module-catalog-inventory-data-exporter"      "magento/module-catalog-url-rewrite-data-exporter"      "magento/module-configurable-product-data-exporter"      "magento/module-data-exporter"      "magento/module-saas-catalog"    ```
+1. Kontrollera [loggarna](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/enable-logging) (i utvecklardokumentationen). Kontrollera att inga fel är associerade med ovanstående moduler.
+1. Uppdatera [!UICONTROL Configuration cache]. Gå till **System** > **Verktyg** > **Cachehantering** och rensa [!UICONTROL Configuration cache].
+1. Bekräfta att det finns data i databastabellen `cde_products_products_feed`.
+
+   >[!NOTE]
+   >
+   >Om du inte kan hitta tabellen kontrollerar du tabellen `catalog_data_exporter_products`. Tabellnamnet ändrades i version 103.3.0 av [!DNL Data Export].
 
 ## Händelser
 
-[Rekommendationshändelser](https://devdocs.magento.com/recommendations/verify.html) i vår utvecklardokumentation beskriver de beteendehändelser som skickas till Adobe Commerce.
+[Verifiera händelsesamling](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/verify) i utvecklardokumentationen, som beskriver de beteendehändelser som skickas till Adobe Commerce.
 
 ## Relaterad läsning
 
-* [Produkt-Recommendations - översikt](https://devdocs.magento.com/recommendations/product-recs.html) i utvecklardokumentationen
-* [Produkt-Recommendations - Installera och konfigurera Recommendations](https://devdocs.magento.com/recommendations/install-configure.html) i utvecklardokumentationen
-* [Marknadsföring - Produkt-Recommendations](https://docs.magento.com/m2/ee/user_guide/marketing/product-recommendations.html) i vår användarhandbok
-* [Skapa Recommendations](https://docs.magento.com/m2/ee/user_guide/marketing/create-new-rec.html) i vår användarhandbok
+* [Produkt-Recommendations Administrator Development](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/development-overview) i utvecklardokumentationen
+* [Introduktion till Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview) i Recommendations-handboken för produkten
+* [Skapa produkt-Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/admin/create) i Recommendations-handboken för produkten
+* [Granska loggar och felsök](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) i [!DNL SaaS]-guiden för dataexport
+* [[!DNL SaaS] Versionsinformation om dataexporttillägg](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) i Adobe Commerce dataexportguide för [!DNL SaaS]-tjänster
