@@ -3,16 +3,20 @@ title: Ändra e-postadress på magento.com när fältet är nedtonat
 description: I den här artikeln beskrivs hur du ändrar e-postadressen på ditt [Magento.com](https://account.magento.com)-konto när fältet är nedtonat.
 exl-id: cd527203-345c-4318-8ca8-0063109b5f79
 feature: Communications
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 123027ee291b44ad4b234e561b9c3f4156af7c90
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # Hur ändrar man e-postadress på magento.com när fältet är nedtonat?
 
-I den här artikeln beskrivs hur du ändrar e-postadressen på ditt [Magento.com](https://account.magento.com) -konto när fältet är nedtonat.
+I den här artikeln beskrivs hur du ändrar e-postadressen på ditt [Magento.com](https://account.magento.com) -konto när fältet är nedtonat under omständigheter som:
+
+* Du eller den ursprungliga användaren har lämnat företaget.
+* Ditt företag har migrerat till en ny e-postdomän.
+* Du byter till en distributionslista eller en e-postadress som fångar upp alla.
 
 ## Berörda produkter och versioner
 
@@ -30,7 +34,7 @@ E-postadressen på ditt [Magento.com](https://account.magento.com)-konto är lä
 
 <u>Lösning</u>
 
-1. Skicka ett e-postmeddelande till Grp-magento-HelpCenterLoginIssues@adobe.com med följande:
+1. [Skicka en supportförfrågan](https://experienceleague.adobe.com/home#support) på https://experienceleague.adobe.com/home#support med följande information:
 
    * Befintlig e-postadress som ska uppdateras
    * Ny e-postadress
@@ -59,3 +63,4 @@ Om du inte har tillgång till e-postmeddelanden som skickas till den [aktuella �
 ## Relaterad läsning
 
 [Återställ glömt lösenord](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) i användarhandboken för Creative Cloud.
+[Uppdatera din kontoprofil](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) i användarhandboken för Creative Cloud.
