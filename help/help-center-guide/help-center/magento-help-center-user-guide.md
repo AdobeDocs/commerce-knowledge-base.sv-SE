@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: b7b272c2e1cb677829afa64e2c77c0faa207313d
+source-git-commit: 88a9fad5d4a38a82001175af4a1611acf6d4e413
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2143'
 ht-degree: 0%
 
 ---
@@ -164,9 +164,16 @@ Dina supporttillfällen är sådana som du har:
 
 #### Visa dina ärenden
 
-Du kan visa dina ärenden genom att klicka på **[!UICONTROL My Cases]** på den vänstra menyn.
+Du kan visa de ärenden som du har skickat personligen genom att klicka på **[!UICONTROL My Cases]** på den vänstra menyn.
 
 ![view-support-cases](assets/view_support_cases.png)
+
+#### Visa bevakade ärenden
+
+Du kan visa de ärenden som du har *lagts till som en bevakare* genom att klicka på **[!UICONTROL My organization's cases]** på den vänstra menyn.
+
+<!-- TODO: Add image here -->
+
 
 #### Sök efter ärenden
 
