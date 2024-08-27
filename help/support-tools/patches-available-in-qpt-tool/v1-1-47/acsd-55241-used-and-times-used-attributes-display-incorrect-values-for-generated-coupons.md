@@ -4,7 +4,7 @@ description: Använd patchen ACSD-55241 för att åtgärda Adobe Commerce-proble
 feature: Price Rules
 role: Admin, Developer
 exl-id: cfe0f8af-423a-4e12-a332-053392cbabed
-source-git-commit: 5d0b4743fe49d22c099102490f93dc4065ab4413
+source-git-commit: f830486ab3b00fca92dda897bbf0bfbae41543c1
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -37,10 +37,10 @@ Attributen **Används** och **Används** visar felaktiga värden för genererade
 
 1. Skapa **[!UICONTROL Cart Price Rules]** från **[!UICONTROL Admin]** > **[!UICONTROL Marketing]** > **[!UICONTROL Promotion]** och lägg till villkor som matchar när en order placeras (Exempel: delsumma större än *5$*)
 
-* Använd rabatt.
-* Välj **[!UICONTROL Auto Coupon]**.
-* Det genererar några kupongkoder från **Hantera kupongkoder**.
-* Indexera om och rensa cachen.
+   * Använd rabatt.
+   * Välj **[!UICONTROL Auto Coupon]**.
+   * Det genererar några kupongkoder från **Hantera kupongkoder**.
+   * Indexera om och rensa cachen.
 
 1. Skapa en **[!UICONTROL customer account]** och logga in på frontend.
 1. Lägg en produkt med mer än *2* kvantiteter i kundvagnen och använd en kupong.
