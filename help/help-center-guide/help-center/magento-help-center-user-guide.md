@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 88a9fad5d4a38a82001175af4a1611acf6d4e413
+source-git-commit: 7c6cc2fc3cd76fc4c156d7cdb15bfbc3a24f39cb
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -89,14 +89,20 @@ Så här skickar du ett nytt supportärende från Adobe Experience League starts
 
 >[!INFO]
 >
->1. Om du tillhör flera organisationer måste du välja lämplig organisation i listrutan.
->1. Du måste ha rätt till support för att kunna lämna in ett ärende. Om du inte gör det visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen.
+>1. För att kunna lämna in ett ärende måste du ha rätt till support för den aktuella produkten (t.ex. Adobe Commerce, Adobe Commerce Intelligence, Experience Platform). Om du inte har rätt till support visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen.
+>1. Om du tillhör flera organisationer eller om det finns flera organisationer med liknande namn (var och en representerar någon av de andra Adobe-produkter som organisationen prenumererar på) måste du först välja rätt organisation i listrutan.
+
+>[!NOTE]
+>
+>Se till att du har valt rätt organisation innan du skickar in ärendet och att den organisation du har valt har rätt behörighet för den produkt som du begär support för. Om ditt problem till exempel är relaterat till Adobe Commerce, men du har valt Experience Platform som produkt och ärendet har skickats in, kan detta leda till felhantering och förseningar i svarstiderna.
+>
+>Om fel organisation har valts kan ditt team inte visa ärendet under [!UICONTROL My Cases] för rätt/korrekt organisation. Supportteamet kan inte ändra den organisation som är kopplad till ärendet i framtiden.
 
 1. Klicka på **Support** i sidhuvudet. På sidan Support öppnas.
 
    ![open-support-page](assets/click_support.png)
 
-1. För att börja med supportinhämtningen måste du se till att du har valt rätt organisation i listrutan (om den är tillgänglig), eftersom du kan ha flera organisationer med liknande namn, var och en med egna rättigheter.
+1. Kontrollera att du har valt lämplig organisation i listrutan Organisation (om den är synlig) för att starta processen för supportintag.
 
    ![select_appropriate_org](assets/select_appropriate_org.png)
 
@@ -104,7 +110,7 @@ Så här skickar du ett nytt supportärende från Adobe Experience League starts
 
    ![open-support-case](assets/open_support_case.png)
 
-1. Välj en produkt i listrutan och ange en falltitel och beskrivning.
+1. Välj en produkt i listrutan och ange en falltitel och beskrivning. Obs! Om listrutan inte visar några produkter, eller om Commerce inte är ett tillgängligt alternativ, kan du prova att byta organisation i den vänstra kolumnen och sedan kontrollera igen.
 
    ![select_product](assets/support_case_product.png)
 
@@ -123,6 +129,18 @@ Så här skickar du ett nytt supportärende från Adobe Experience League starts
 >1. Välj din organisation i listrutan för organisation. 
 >1. Om din organisation fortfarande inte visas kontaktar du Commerce-administratören för att få behörighet som supportrepresentant. Mer information finns i hjälpartikeln för [Commerce Account Share](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share). 
 
+>[!NOTE]
+>
+>Varför organisationen/produkten är viktig
+>
+>**Exempel A**: Du har bara delad åtkomst till ett företag och det företaget har berättiganden för två Adobe-produkter: Produkt1 och Produkt2.
+>1. Eftersom varje organisation representerar en produkt visas två organisationer i listrutan, t.ex. OrgA-Product1 och OrgB-Product2.
+>1. Om du valde Produkt = Produkt1 men problemet är relaterat till Produkt2, dirigeras ärendet till support för Produkt2 och det kommer att bli fördröjt när ärendet överförs till support för Produkt1.
+>1. Om du har skickat in ärendet för OrgA-Product1 och vill granska [!UICONTROL My Cases] för den organisationen i framtiden, kommer du inte att se det om du väljer OrgA-Product2 som organisation (du skulle bara behöva välja den andra organisationen, jämfört med exempel B).
+>
+>**Exempel B**: Du har delad åtkomst till två företag, och varje företag har bara berättiganden för Adobe Commerce.
+>1. Om du har skickat in ärendet för OrgA men problemet faktiskt påverkar OrgB, kommer medlemmar i OrgB inte att kunna se det här fallet under [!UICONTROL My Cases] i framtiden.
+>1. Dessutom kan medlemmar i OrgA se fall under [!UICONTROL My Cases] som faktiskt är avsedda för OrgB, vilket kan leda till sekretessproblem.
 
 Du måste ha ett konto på både https://account.adobe.com och https://account.magento.com för att kunna logga in på Experience League och skicka in ett supportärende. Du kan inte skicka in ett supportärende förrän du är inloggad.
 
