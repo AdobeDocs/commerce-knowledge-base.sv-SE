@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 4d6785ce0c0624f62105a5f1541344c989439c40
+source-git-commit: eb7f8bbb53cf96033c67ae077268351078fa786c
 workflow-type: tm+mt
-source-wordcount: '11180'
+source-wordcount: '11200'
 ht-degree: 0%
 
 ---
@@ -213,8 +213,8 @@ ht-degree: 0%
          * [MDVA-36853: Inga bilder läses in från stora mediegallerier](/help/support-tools/patches-available-in-qpt-tool/v1-0-22/mdva-36853-no-images-load-from-large-media-galleries.md)
          * [MDVA-37182: Inkonsekventa sökresultat i Elasticsearch 6 och 7](/help/support-tools/patches-available-in-qpt-tool/v1-0-22/mdva-37182-inconsistent-search-results-for-elasticsearch-6-and-7.md)
       * v1.0.23 {#v1-0-23}
-         * [Översikt: verktyget Kvalitetskorrigeringar (QPT) v1.0.23](/help/support-tools/patches-available-in-qpt-tool/v1-0-23/overview.md)
-         * [MDVA-30186: Osorterade attributalternativ i GraphQL-svaret](/help/support-tools/patches-available-in-qpt-tool/v1-0-23/mdva-30186-unsorted-attribute-options-in-graphql-response.md)
+         * [Översikt: QPT (Quality Patches Tool) v1.0.23](/help/support-tools/patches-available-in-qpt-tool/v1-0-23/overview.md)
+         * [MDVA-30186: Osorterade attributalternativ i GraphQL-svar](/help/support-tools/patches-available-in-qpt-tool/v1-0-23/mdva-30186-unsorted-attribute-options-in-graphql-response.md)
          * [MDVA-36286: Page Builder-förhandsvisning avbryts om SKU-positionerna i olika kategorier bryts](/help/support-tools/patches-available-in-qpt-tool/v1-0-23/mdva-36286-page-builder-preview-breaks-if-sku-positions-are-in-different-categories.md)
          * [MDVA-37224: Det går inte att betala &quot;överlåtbar offert&quot; med PayFlow Pro](/help/support-tools/patches-available-in-qpt-tool/v1-0-23/mdva-37224-unable-to-pay-negotiable-quote-with-payflow-pro.md)
          * [MDVA-37225: Snabbordningen fungerar inte med heltal-SKU](/help/support-tools/patches-available-in-qpt-tool/v1-0-23/mdva-37225-quick-order-not-working-with-integer-sku.md)
@@ -331,10 +331,10 @@ ht-degree: 0%
          * [MDVA-37984: Visual Merchandiser fungerar inte korrekt när mellanlagringsuppdateringar tillämpas](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-37984-visual-match-product-by-rule-functionality-not-filtering-products-correctly.md)
          * [MDVA-38346: Datumfilter fungerar inte när Adobe Commerce tidszon inte är lokal](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-38346-date-filters-not-working-properly-when-adobe-commerce-timezone-is-different-from-local.md)
          * [MDVA-38526: Administratörsanvändaren kan inte komma åt SWAT-verktyget](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-38526-admin-user-not-able-to-access-swat-tool.md)
-         * [MDVA-38626: Administratören kan inte göra beställningar med PayPal Payflow Pro](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-38626-admin-user-is-not-able-to-place-orders-using-paypal-payflow-pro.md)
+         * [MDVA-38626: Administratörsanvändaren kan inte göra beställningar med PayPal Payflow Pro](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-38626-admin-user-is-not-able-to-place-orders-using-paypal-payflow-pro.md)
          * [MDVA-38666: Administratörsanvändaren kan inte ändra konfigurerbara produktalternativ](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-38666-admin-user-is-unable-to-change-configurable-product-options.md)
-         * [MDVA-39163: Leveransmetoder är inte tillgängliga för nyregistrerade användare med produkter från gästsession](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-39163-shipping-methods-not-available-when-a-new-user-is-registered.md)
-         * [MDVA-40488: Konfigurerbara produkter med underordnade produkter som inte finns i lager visas inte i rätt prisintervall](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-40488-configurable-products-with-out-of-stock-child-products-not-shown-in-correct-price-range.md)
+         * [MDVA-39163: Leveransmetoder som inte är tillgängliga för nyregistrerade användare med produkter från gästsessionen](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-39163-shipping-methods-not-available-when-a-new-user-is-registered.md)
+         * [MDVA-40488: Konfigurerbara produkter med underordnade produkter utanför lagret visas inte i rätt prisintervall](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-40488-configurable-products-with-out-of-stock-child-products-not-shown-in-correct-price-range.md)
          * [MDVA-42507: Helsidescachen rensas när mellanlagringsuppdateringen för kundvagnsregeln har tillämpats](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-42507-full-page-cache-is-cleaned-after-applying-staging-update-for-cart-rule.md)
          * [MDVA-42657: Det går inte att välja kategorier i villkoren för kundsegmentet](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-42657-unable-to-select-categories-in-customer-segment-conditions.md)
          * [MDVA-42806: Nytt e-postmeddelande om företagsregistrering skickas varje gång ett befintligt företag uppdateras](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-42806-new-company-registration-email-is-sent-each-time-an-existing-company-is-updated-via-reset-api.md)
@@ -452,8 +452,8 @@ ht-degree: 0%
       * v1.1.21 {#v1-1-21}
          * [Översikt: QPT (Quality Patches Tool) v1.1.21](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/overview.md)
          * [ACSD-45071: Standardkällan har lagts till i produkten vid import](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-45071-default-source-added-to-product-during-import.md)
-         * [ACSD-46541: Administratörsanvändaren kan inte skapa en kreditnota om en orderartikel tas bort](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46541-admin-user-cannot-create-credit-memo-if-order-item-deleted.md)
-         * [ACSD-46581: Uppskattad total moms uppdateras inte efter att ett land har valts i kundvagnen](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46581-estimated-tax-total-is-not-updated-after-selecting-a-country-in-the-shopping-cart.md)
+         * [ACSD-46541: Administratörsanvändaren kan inte skapa en kreditnota om ett orderobjekt tas bort](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46541-admin-user-cannot-create-credit-memo-if-order-item-deleted.md)
+         * [ACSD-46581: Den beräknade momssumman uppdateras inte när du har valt ett land i kundvagnen](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46581-estimated-tax-total-is-not-updated-after-selecting-a-country-in-the-shopping-cart.md)
          * [ACSD-46618: Widgeten Produktlista visar felaktiga cachelagrade priser för inloggad kund](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46618-product-list-widget-shows-incorrect-cached-prices-logged-in-customer.md)
          * [ACSD-46674: Anpassade alternativ för bildtyp som visas som HTML i kundens e-postmeddelanden](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46674-custom-options-image-type-displayed-html.md)
          * [ACSD-46809: Användaren får ett fel när ett stort antal produktkällor tilldelas](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46809-the-user-gets-an-error-when-assigning-a-large-number-of-product-sources.md)
@@ -757,8 +757,8 @@ ht-degree: 0%
          * [ACSD-54983: Företagsanvändare UID med GraphQL är inte tillgänglig med inaktiv användare](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
       * v1.1.44 {#v1-1-44}
          * [Översikt: [!DNL Quality Patches Tool] (QPT) v1.1.44](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/overview.md)
-         * [ACSD-55231: Felet Hittade inte SKU vid användning av snabbordningsfunktion](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-55231-sku-not-found-in-catalog.md)
-         * [ACSD-55352: Skapar [!UICONTROL Credit Memo] med extrapoäng](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-55352-creating-credit-memos-with-reward-points.md)
+         * [ACSD-55231: Fel hittades inte i SKU när snabbordningsfunktioner användes](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-55231-sku-not-found-in-catalog.md)
+         * [ACSD-55352: Skapar [!UICONTROL Credit Memo] med belöningspunkter](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-55352-creating-credit-memos-with-reward-points.md)
          * [ACSD-55427: Administratörsanvändaren kan inte ta bort tilldelning av produkten från den delade katalogen från produktsidan](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-55427-admin-user-cannot-unassign-product-from-shared-catalog-from-product-page.md)
          * [ACSD-56280: Inköp av presentregister har inte slutförts](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed.md)
          * [ACSD-56193: [!DNL Fastly/Varnish] Cachen har inte rensats för uppdatering av innehållstagning](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-56193-fastly-cache-not-cleared-for-content-staging-update.md)
@@ -809,7 +809,9 @@ ht-degree: 0%
          * [ACSD-58054: API-tokengenerering för inaktiva kunder](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
       * v1.1.50 {#v1-1-50}
          * [Översikt: [!DNL Quality Patches Tool] (QPT) v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
+         * [ACSD-59378: Store-level [!DNL URL] återskriver felaktigt uppdaterade under import](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          * [ACSD-46938: Prestandaproblem med DB-utlösare under installation:uppgradering](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
+         * [ACSD-60441: Uppdatering av kunder via V1/customers [!DNL REST] API-slutpunkt ger ett fel](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       * [Leta efter Adobe Commerce-problem med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * Meddelanden {#announcements}
    * [Översikt över meddelanden](/help/announcements/overview.md)
@@ -876,10 +878,10 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.2: Betalningen till Braintree Venmo fungerar inte](/help/troubleshooting/payments/magento-2-4-2-braintree-venmo-payment-does-not-work.md)
       * [Betalningsmetoder som inte visas vid utcheckning med flera adresser](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
       * [EU-kunder kan inte slutföra betalningar](/help/troubleshooting/payments/eu-customers-cannot-complete-payments.md)
-      * [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md)
-      * [Känt problem med Adobe Commerce 2.4.0: Klarna Tomma sidor för meddelanden på plats](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
-      * [Felsök installation av betalningstjänster](/help/troubleshooting/payments/payservices-install.md)
-   * Butikssida {#storefront}
+      * [PayPal-gateway avvisade begäran - dubblettfakturautleverans](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md)
+      * [Adobe Commerce 2.4.0: Klarna On-Site Messaging - tomma sidor](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
+      * [Felsök installationen av betaltjänster](/help/troubleshooting/payments/payservices-install.md)
+   * Storefront {#storefront}
       * [Adobe Commerce 2.4.0: fel vid visning av beställningar](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce lokal 2.4.2: produktbild saknas](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
       * [Efter installationen läses inte bilder och formatmallar in; endast textvisning, ingen grafik](/help/troubleshooting/storefront/after-installing-images-and-stylesheets-do-not-load-only-text-displays-no-graphics.md)
@@ -994,10 +996,10 @@ ht-degree: 0%
       * [Säkerhetskopieringsproblem](/help/troubleshooting/miscellaneous/backup-issues.md)
       * [Nya kunder visas inte i kundrutnätet efter CSV-import](/help/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import.md)
       * [Rapporten för verktyget för säkerhetsgenomsökning är tom](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
-      * [Adobe Commerce 2.4.2-p1: fakturaanteckning med felaktigt värde](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
-      * [Kan inte komma åt den senaste förhandsversionen av Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
-      * [Administratörslösenord sparas som oformaterad text i åtgärdsloggen](/help/troubleshooting/miscellaneous/admin-passwords-saved-as-plain-text-to-actions-log.md)
-      * [Indexet är låst av en annan process](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
+      * [Adobe Commerce 2.4.2-p1: fakturafaktura med felaktigt värde](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
+      * [Det går inte att komma åt den senaste förhandsversionen av Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
+      * [Administratörslösenord sparade som oformaterad text i åtgärdsloggen](/help/troubleshooting/miscellaneous/admin-passwords-saved-as-plain-text-to-actions-log.md)
+      * [Index är låst av en annan process](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
       * [Diagnostisera en datadiskrepans](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
       * [Admin 2FA-e-postmeddelanden tas inte emot](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
       * [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Din nuvarande session har gått ut&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
