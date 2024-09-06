@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar på Adobe Commerce-problem
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: ab39a21ca325cdad30debf89a1cff660bf5925e5
+source-git-commit: fe276c444c235b096ea6d61b02d8362314b5c154
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Den här artikeln innehåller lösningar på Adobe Commerce-problemet där katal
 ## Problem
 
 Katalogdata är inte korrekt synkroniserade eller så har en ny produkt lagts till, men visas inte i sökresultaten.
+
+>[!NOTE]
+>
+>Tabellnamnen `catalog_data_exporter_products` och `catalog_data_exporter_product_attributes` kallas nu `cde_products_feed` och `cde_product_attributes_feed` från och med [!DNL Live Search] version 4.2.1. För handlare med versioner före 4.2.1, sök efter data i de gamla tabellnamnen, `catalog_data_exporter_products` och `catalog_data_exporter_product_attributes`.
 
 <u>Steg som ska återskapas</u>
 
@@ -59,20 +63,20 @@ Om dina produktdata inte synkroniseras korrekt för en viss SKU gör du följand
 1. Använd följande SQL-fråga och verifiera att du har de data du förväntar dig i kolumnen `feed_data`. Notera också tidsstämpeln `modified_at`.
 
    ```sql
-   select * from catalog_data_exporter_products where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. Om du inte ser rätt data kan du försöka indexera om med följande kommando och köra SQL-frågan igen i steg 1 för att verifiera data:
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_products
+   bin/magento indexer:reindex cde_products_feed
    ```
 
 1. Om du fortfarande inte ser rätt data [skapar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Kontrollera tidsstämpel för senaste produktexport
 
-1. Om du ser rätt data i `catalog_data_exporter_products` använder du följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`:
+1. Om du ser rätt data i `cde_products_feed` använder du följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`:
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -93,20 +97,20 @@ Om produktattributdata inte synkroniseras korrekt för en viss attributkod gör 
 1. Använd följande SQL-fråga och verifiera att du har de data du förväntar dig i kolumnen `feed_data`. Notera också tidsstämpeln `modified_at`.
 
    ```sql
-   select * from catalog_data_exporter_product_attributes where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. Om du inte ser rätt data använder du följande kommando för att indexera om och kör sedan SQL-frågan igen i steg 1 för att verifiera data.
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_product_attributes
+   bin/magento indexer:reindex cde_product_attributes_feed
    ```
 
 1. Om du fortfarande inte ser rätt data [skapar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Kontrollera tidsstämpel för export av senaste produktattribut
 
-Om du ser rätt data i `catalog_data_exporter_product_attributes`:
+Om du ser rätt data i `cde_product_attributes_feed`:
 
 1. Använd följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`.
 
