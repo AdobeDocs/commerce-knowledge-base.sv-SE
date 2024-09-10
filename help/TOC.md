@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 8906fbf4830d8e1612af296efa83f7856f6ccec2
+source-git-commit: ed15e986088286c075953049dbadf329edccca51
 workflow-type: tm+mt
-source-wordcount: '11391'
+source-wordcount: '11408'
 ht-degree: 0%
 
 ---
@@ -823,6 +823,7 @@ ht-degree: 0%
          * [ACSD-58141: PHPSESSID återskapar begäranden om POST för inloggade kunder om L2 Redis-cache är aktiverat](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers-with-l2-redis-cache-enabled.md)
          * [ACSD-59229: Felallokering av kundgruppsdata på grund av ett inaktuellt X-Magento-Vary-värde](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441: Uppdatering av kunder via V1/customers [!DNL REST] API-slutpunkt ger ett fel](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
+         * [ACSD-58790: Åtgärdar nyp för att zooma i produktinformationssidans bilder i mobilvyn på  [!DNL Chrome]](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page-images-in-mobile-view-on-chrome.md)
          * [ACSD-58442: Korrigerar problemet där enheter med 768 px bredd behandlas som mobila, vilket gör att meny och rubrik läses in i mobilvyn och inte i skrivbordsvyn](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
          * [ACSD-48210: Store view specific scope attribute overrides global values](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          * [ACSD-59280: ReflectionUnionType::getName()-fel i 2.4.4-pX-installationer](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
