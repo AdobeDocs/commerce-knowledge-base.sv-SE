@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: a4dfe41e3623e62e12cbefdc2889620b4015c6fd
+source-git-commit: 605a45ed14faed7f3283a7146e4193bf2d26b251
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '11329'
 ht-degree: 0%
 
 ---
@@ -818,6 +818,7 @@ ht-degree: 0%
          * [ACSD-45049: Kundens attributinställning [!UICONTROL Is required] fungerar inte enligt webbplatsomfånget i Admin](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-45049-customer-attribute-is-required-setting-doesnt-work.md)
          * [ACSD-59378: Store-level [!DNL URL] återskriver felaktigt uppdaterade under import](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          * [ACSD-46938: Prestandaproblem med DB-utlösare under installation:uppgradering](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
+         * [ACSD-58141: PHPSESSID återskapar begäranden om POST för inloggade kunder om L2 Redis-cache är aktiverat](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers-with-l2-redis-cache-enabled.md)
          * [ACSD-59229: Felallokering av kundgruppsdata på grund av ett inaktuellt X-Magento-Vary-värde](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441: Uppdatering av kunder via V1/customers [!DNL REST] API-slutpunkt ger ett fel](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
          * [ACSD-59280: ReflectionUnionType::getName()-fel i 2.4.4-pX-installationer](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
