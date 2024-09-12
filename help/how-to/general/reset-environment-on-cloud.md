@@ -3,9 +3,9 @@ title: Återställ miljö på Adobe Commerce i molninfrastruktur
 description: I den här artikeln visas olika scenarier för återställning av en miljö på Adobe Commerce i molninfrastruktur.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 4439ee25e929a1bdb2216cc10fa0d4506c4f3aed
+source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,9 @@ Med en planerad driftsättning eller uppgradering är det enklaste och rekommend
 
 <u>På dagen för ändringarna</u>:
 
-1. Placera webbplatsen i [!UICONTROL Maintenance Mode].<br>
-Läs mer om [ Aktivera eller inaktivera [!UICONTROL Maintenance Mode] ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html) i vår användarhandbok och [[!UICONTROL Maintenance Mode] alternativ för uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) i vår uppgraderingsguide.
+1. Placera webbplatsen i [!UICONTROL Maintenance Mode].
+Läs mer om [Aktivera eller inaktivera [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html) i vår användarhandbok och [[!UICONTROL Maintenance Mode] alternativ för uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) i vår uppgraderingsguide.
+1. Inaktivera cron-jobb. Läs mer om hur du inaktiverar cron-jobb i vår [egenskapsguide](<https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>) för cron.
 1. Ta en lokal [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html).
 
 <u>Om [!UICONTROL Rollback] krävs</u>:
@@ -123,7 +124,7 @@ Med [!DNL git] återställd återställer vi koden till önskat läge tidigare.
 1. Klona miljön i den lokala utvecklingsmiljön. Du kan kopiera kommandot i molnkonsolen:    ![copy_git_clone.png](assets/copy_git_clone.png)
 1. Få åtkomst till implementeringshistoriken. Använd `--reverse` om du vill visa historik i omvänd ordning för att underlätta: `git log --reverse`
 1. Välj den implementeringshash som du har varit bra på. Om du vill återställa koden till dess autentiska läge (Vanilla), söker du efter den första implementeringen som skapade din gren (miljö).
-   ![Välja en implementeringshash i Git-konsolen](assets/select_commit_hash.png)
+   ![Alt-text](image.png)
 1. Använd hård [!DNL git]-återställning: `git reset --h <commit_hash>`
 1. Skicka ändringar till servern: `git push --force <origin> <branch>`
 
