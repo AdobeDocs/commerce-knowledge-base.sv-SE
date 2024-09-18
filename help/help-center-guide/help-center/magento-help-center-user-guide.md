@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 7c6cc2fc3cd76fc4c156d7cdb15bfbc3a24f39cb
+source-git-commit: ab51577ea212470e9fa5a93dce3748de9c5c00a6
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ Läs om hur du skickar en supportanmälan till [Experience League Support](https
 >[!NOTE]
 >
 >Adobe Commerce support har migrerats från Adobe Commerce Help Center till Experience League. Använd formulärflödet [här](#what-is-experience-support) för Experience League för att skicka supportärenden.
+
+>[!NOTE]
+>
+>För att kunna se dina tidigare inskickade ärenden på Adobe Commerce Help Center måste du nu gå till https://support.magento.com/hc/en-us/requests eftersom dessa fall inte har migrerats till det nya supportsystemet. Hjälpcentret är nu skrivskyddat. Om du vill fortsätta få stöd för det ursprungliga problemet måste du skicka en uppföljningsanmälan till [Experience League Support](https://experienceleague.adobe.com/home#support).
 
 >[!NOTE]
 >

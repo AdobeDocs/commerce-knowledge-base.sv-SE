@@ -4,9 +4,9 @@ description: '**Problem:** Du vill ge delad åtkomst till din betrodda kollega, 
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
+source-git-commit: ff863a9c8ebf3759c7ecf0549f79cc3a5efe4b46
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. Klicka på kontot **[!UICONTROL Shared Access]** som du har problem med och kontrollera vilka resurser du har fått åtkomst till.
 1. Om den specifika resursen saknas kan du kontakta kontoägaren (primär kontoinnehavare).
 
-Om du fortfarande har problem kontaktar du kontoteamet på Adobe eller skickar ett e-postmeddelande till grp-Magento-HelpCenterLoginIssues@adobe.com. Ange ditt namn och den e-postadress som är kopplad till ditt konto.
+Om du fortfarande har problem kontaktar du kontoteamet på Adobe. Ange ditt namn och den e-postadress som är kopplad till ditt konto.
 
 ## Jag använde delad åtkomst och klickade på [!UICONTROL Support], men när jag öppnade en ny biljett visas inte listrutan [!UICONTROL Organization]
 
@@ -51,7 +51,7 @@ Om du fortfarande har problem kontaktar du kontoteamet på Adobe eller skickar e
 1. Växla tillbaka till **[!UICONTROL My Account]**.
 1. Om den bara visar en **[!UICONTROL Shared Name]** är det den *standardorganisation* som dina biljetter kommer att öppnas under.
 
-Om du fortfarande har problem kontaktar du ditt Adobe-kontoteam eller skickar ett e-postmeddelande till grp-Magento-HelpCenterLoginIssues@adobe.com. Ange ditt namn och den e-postadress som är kopplad till ditt konto.
+Om du fortfarande har problem kontaktar du kontoteamet på Adobe. Ange ditt namn och den e-postadress som är kopplad till ditt konto.
 
 ## Jag använde delad åtkomst men ser fortfarande mina biljetter istället för de delade
 
