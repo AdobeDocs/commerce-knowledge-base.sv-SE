@@ -4,9 +4,9 @@ description: I den här artikeln finns felsökning när du inte får e-postmedde
 exl-id: 7ab6b2b4-6aca-4323-a45b-2b4e52955160
 feature: Admin Workspace, Communications
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 435a545adcf2a1d6b023abaec55c4b73e942ee1a
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,12 @@ Om du inte har konfigurerat avsändarens e-post korrekt, eller om din domän int
    ```
 
    * Om det inte returnerar några resultat betyder det att avsändaradressen inte har konfigurerats.
+Eftersom du inte har åtkomst till administratören måste du infoga konfigurationen i databasen. Koppla in rätt e-postadress och kör MySQL-satsen:
+
+   ```
+   insert into core_config_data (scope,scope_id,path,value) values ('default',0,'trans_email/ident_general/email', your-email@here.com)
+   ```
+
    * Om det returnerar ett resultat fortsätter du till **Steg 2**.
 
 1. Om e-postmeddelandet visades i din skräppostmapp klickar du på länken i e-postmeddelandet. Om länken sedan har upphört att gälla kan du försöka logga in igen för att upprepa processen.
