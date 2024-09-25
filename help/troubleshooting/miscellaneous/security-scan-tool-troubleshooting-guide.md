@@ -4,9 +4,9 @@ description: Lär dig hur du felsöker de olika problemen med verktyget för sä
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 525352027bfa4a8728bdbbfe61af3dca5dbb18f9
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Du får tomma genomsökningsrapporter från verktyget för säkerhetsgenomsökni
 
 1. Kontrollera att IP-adresserna för 52.87.98.44, 34.196.167.176 och 3.218.25.102 inte blockeras vid 80- och 443-portar.
 1. Kontrollera den skickade URL:en för omdirigeringar (t.ex. omdirigeras `https://mystore.com` till `https://www.mystore.com` eller vice versa eller omdirigeras till andra domännamn).
-1. Undersök åtkomstloggar för WAF/webbserver för avvisade/ej fullgjorda begäranden. HTTP 403 `Forbidden` och HTTP 500 `Internal server error` är de vanligaste serversvaren som orsakar tom rapportgenerering. Här är ett exempel på den bekräftelsekod som blockerar begäranden från användaragenter:
+1. Undersök åtkomstloggar för WAF-/webbservrar för nekade/ej fullgjorda begäranden. HTTP 403 `Forbidden` och HTTP 500 `Internal server error` är de vanligaste serversvaren som orsakar tom rapportgenerering. Här är ett exempel på den bekräftelsekod som blockerar begäranden från användaragenter:
 
 ```code block
 if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent_allowlist)
@@ -76,7 +76,7 @@ Du får ett meddelande om felet &quot;BotNet Suspect&quot;.
 
 1. Kontrollera om det finns nyligen skapade SSH-konton, ändringar i filsystemet osv.
 1. Genomför en säkerhetsgranskning.
-1. Kontrollera Adobe Commerce version och uppgradering, särskilt om Magento 1 fortfarande körs, vilket inte längre stöds.
+1. Kontrollera Adobe Commerce version och uppgradering, särskilt om Magento 1 fortfarande körs, vilket inte stöds längre.
 1. Om problemet kvarstår [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och anger butikens URL.
 
 ## Problem: Komprometterad inmatningsfel
@@ -100,8 +100,12 @@ Nej. Med säkerhetsgenomsökningen kan du göra alla förfrågningar en i taget 
 
 ### Hur länge har Adobe Commerce rapporter om säkerhetsgenomsökning?
 
-Du kan generera de 10 föregående rapporterna från din sida. Kontakta Adobe Commerce support om det krävs äldre rapporter. Upp till ett års tidigare rapporter om säkerhetsgenomsökning kan hämtas.
+Du kan generera de 10 föregående rapporterna från din sida. Kontakta Adobe Commerce support om det krävs äldre rapporter.
 
 ### Vilken information behövs när du skickar in en supportanmälan?
 
 Ange domännamnet.
+
+### Vad händer om jag tar bort min butik från skanning av skanningsverktyg?
+
+Om du tar bort arkivöverföringen tas alla relaterade data, inklusive genomsökningsrapporter, bort. Åtgärden kan inte ångras. Om du skickar arkivdomänen efter att den har tagits bort skapas en NY överföring.
