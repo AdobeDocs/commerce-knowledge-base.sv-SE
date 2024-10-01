@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: f3d662d8843eded65eade4732d2016bf34ccd6a5
+source-git-commit: 25bc401506f81d83b1e00fe682fa477d708414dc
 workflow-type: tm+mt
-source-wordcount: '11462'
+source-wordcount: '11237'
 ht-degree: 0%
 
 ---
@@ -34,32 +34,6 @@ ht-degree: 0%
       * [Hanterade varningar för Adobe Commerce: CPU-varning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
    * Patchar tillgängliga i QPT-verktyget {#patches}
       * [Patchar tillgängliga i QPT-verktyget - översikt](/help/support-tools/patches-available-in-qpt-tool/patches-available-in-qpt-tool-overview.md)
-      * v1.0.5 {#v1-0-5}
-         * [Översikt: QPT (Quality Patches Tool) v1.0.5](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/overview.md)
-         * [MDVA-28191: Ingen betalningsmetod för en webbplats i Admin - Skapa ny order](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-28191-magento-patch-no-payment-method-for-one-website-in-admin-create-new-order.md)
-         * [MDVA-28409-korrigering: Adobe Commerce webbserver kraschar - slut på minne](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-28409-magento-patch-magento-web-server-crashing-out-of-memory.md)
-         * [MDVA-28661: Problem med hantering av företagsanvändare vid ändring av administratörens e-post](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-28661-magento-patch-issue-with-company-users-management-when-changing-admin-email.md)
-         * [MDVA-28763: Problem med att hantera produktbilder via REST API](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-28763-magento-patch-issues-with-managing-product-images-via-rest-api.md)
-         * [MDVA-29042: De globala kategoribehörigheterna ändras inte](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-29042-magento-patch-global-category-permissions-unchanged.md)
-         * [MDVA-29959-korrigering: Administratör med behörighet &quot;Kunder&quot; kan inte hantera företagskonto](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-29959-magento-patch-admin-with-customers-permissions-cannot-manage-company-account.md)
-         * [MDVA-30107: Butiksväxlaren fungerar inte som förväntat](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-30107-magento-patch-store-switcher-does-not-work-as-expected.md)
-         * [MDVA-30265: Länk för spårning i e-post returnerar 404 sidor hittades inte](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-30265-magento-patch-tracking-link-in-email-returns-404-page-not-found.md)
-         * [MDVA-30284 Patch: Elasticsearch 7 - Limit of total fields [XXXXX] in index has been been been been been been been been](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-30284-magento-patch-elasticsearch-7-limit-of-total-fields-xxxxx-in-index-has-been-exceeded.md)
-         * [MDVA-30428: Önsklista fungerar inte med Inventory management](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-30428-magento-patch-wishlist-not-working-with-the-msi.md)
-         * [MDVA-30593-korrigering: Utgångna citattecken rensas inte](/help/support-tools/patches-available-in-qpt-tool/v1-0-5/mdva-30593-magento-patch-expired-quotes-are-not-cleaned-up.md)
-      * v1.0.6 {#v1-0-6}
-         * [Översikt: QPT (Quality Patches Tool) v1.0.6](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/overview.md)
-         * [MDVA-28202-korrigering: Produkterna som inte finns i lager filtreras inte korrekt](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-28202-magento-patch-out-of-stock-products-don-t-filter-properly.md)
-         * [MDVA-28300: Prisberäkningsproblem med katalogprisregel i GraphQL](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-28300-magento-patch-price-calculation-issue-with-catalog-price-rule-in-graphql.md)
-         * [MDVA-28993: partiell sökning i Elasticsearch, &quot;minimum should match&quot; och korrigering för &quot;searches with binphen&quot; issue](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-28993-magento-patch-elasticsearch-partial-search-minimum-should-match-and-fix-for-searches-with-hyphen-issue.md)
-         * [MDVA-29446: Ej relevant leveransmetod för utcheckning](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-29446-magento-patch-non-relevant-shipping-method-available-for-checkout.md)
-         * [MDVA-29787: Relaterade produkter visas inte](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-29787-magento-patch-related-products-are-not-displayed.md)
-         * [MDVA-30102: Redis-cachen börjar bli full](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-30102-magento-patch-redis-cache-getting-full.md)
-         * [MDVA-30357: Webbplatskartan som genereras av cron har fel bild-URL](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-30357-magento-patch-sitemap-generated-by-cron-has-wrong-image-url.md)
-         * [MDVA-30565: Problem med lokal lagring och utcheckning av sessionscache](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-30565-magento-patch-session-cache-local-storage-and-checkout-issue.md)
-         * [MDVA-30599: Customer_is_gäst är felaktigt inställd](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-30599-magento-patch-customer-is-guest-is-set-incorrectly.md)
-         * [MDVA-30977: Produkter från kategorier saknas, indexering relaterade](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-30977-magento-patch-missing-products-from-categories-indexing-related.md)
-         * [MDVA-31006: PayPal-dubblettorder 10415-fel](/help/support-tools/patches-available-in-qpt-tool/v1-0-6/mdva-31006-magento-patch-paypal-duplicate-orders-10415-error.md)
       * v1.0.7 {#v1-0-7}
          * [Översikt: QPT (Quality Patches Tool) v1.0.7](/help/support-tools/patches-available-in-qpt-tool/v1-0-7/overview.md)
          * [MDVA-29148: ArrayBackend tilldelar inte standardvärde när det sparas](/help/support-tools/patches-available-in-qpt-tool/v1-0-7/mdva-29148-patch-arraybackend-does-not-assign-default-value-on-save.md)
