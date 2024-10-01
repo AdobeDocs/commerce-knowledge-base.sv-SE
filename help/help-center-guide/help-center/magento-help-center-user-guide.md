@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: ab51577ea212470e9fa5a93dce3748de9c5c00a6
+source-git-commit: 3cddfcb136147a5c0602a62585438313b3162900
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2586'
 ht-degree: 0%
 
 ---
@@ -82,10 +82,10 @@ Så här loggar du in på Adobe Experience League Support:
 
 ### Skicka ett supportärende {#support-case}
 
-När du har loggat in kan du skicka in ett supportärende via Adobe Experience League hemsida, din Adobe Commerce-kontosida och din kontosida för Adobe Commerce Cloud.
+När du har loggat in som kontoägare eller användare med delad åtkomst kan du skicka ett supportärende via Adobe Experience League hemsida, din Adobe Commerce-kontosida och din Adobe Commerce Cloud-kontosida.
 
-* Om du är kontoägare följer du stegen nedan.
-* Om du är en delad åtkomstanvändare måste du först växla konton. Se [Åtkomst till delat konto (växlingskonton)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts) och fortsätt sedan med stegen nedan.
+* Om du är kontoägare eller en återkommande användare med delad åtkomst följer du stegen nedan.
+* Om du är en användare med delad åtkomst och kontoägaren precis har [gett dig delad åtkomst](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#provide-shared-access), måste du först växla konton innan du fortsätter till stegen nedan. Mer information finns i [Åtkomst till delat konto (växlingskonton)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts).
 
 #### Adobe Experience League startsida {#experience-league-start-page}
 
