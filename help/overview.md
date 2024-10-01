@@ -4,10 +4,10 @@ description: Allt du behöver veta för att felsöka och underhålla din Commerc
 exl-id: feacf38f-2803-4170-a64f-5d7c4567432d
 feature: Support
 role: Admin
-source-git-commit: cfbe281941fbdc3e6fe7ee36385dc6732b46da26
+source-git-commit: 24c7783ca6d25f8cb13e7fe84efdb6cf09efcfa6
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 0%
+source-wordcount: '629'
+ht-degree: 1%
 
 ---
 
@@ -45,194 +45,67 @@ Informationen i den här kunskapsbasen kompletterar [Adobe Commerce Developer Do
 
 <tr>
     <td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment">CLI:n <code>Magento-cloud</code> visar ingen aktiv miljö:</a> Det finns flera aktiva miljöer, och du försöker interagera med en miljö genom att köra ett kommandoradskommando för CLI i Magento-molnet. Uppmaningen att välja önskad miljö listar dock inte den här miljön.
+    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported">Kundprofiler visas inte i Experience Platform:</a> I den här artikeln beskrivs felsökningssteg om kundprofildata inte visas i Experience Platform när du använder dataanslutningstillägget.
     </td>
     <td>Ny artikel</td>
-    <td>30 juli 2024</td>
+    <td>27 augusti 2024</td>
   </tr>
 
-<td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches">Så här hämtar och använder du en säkerhetspatch:</a> Den här artikeln innehåller instruktioner om hur du hämtar och använder en säkerhetspatch som har släppts, men det finns inga instruktioner.  
+<tr>  
+    <td>
+    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect">Kontrollpanelen för Live-sökning och rankningen av sökresultat är felaktig:</a> I den här artikeln förklaras varför de data som visas på kontrollpanelen för Live-sökning kan vara felaktiga eller varför rankningen av sökresultaten kanske inte är som du förväntade dig.  
     </td>
     <td>Ny artikel</td>
-    <td>30 juli 2024</td>
+    <td>27 augusti 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch">Återgår till Elasticsearch7 när sökmotorn är inställd på OpenSearch:</a> Den här artikeln innehåller en lösning på problemet när ett Falling back to Elasticsearch7-fel inträffar när sökmotorn är inställd på OpenSearch i Adobe Commerce. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102">Felsöka rotering av krypteringsnyckel: CVE-2024-34102:</a> Den här artikeln är avsedd att hjälpa handlare att felsöka rotering av krypteringsnyckel efter att de redan har följt stegen som beskrivs i den här <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102">artikeln</a> på CVE-2024-34102. 
     </td>
     <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
+    <td>27 augusti 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error">Distributionen misslyckades: Det finns inga definierade kommandon i namnområdesfelet "cache":</a> Den här artikeln innehåller en lösning på problemet när distributionen misslyckas och ett av de fel som visas i loggen är <em>Det finns inga definierade kommandon i namnområdet "cache"</em>. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center">Avställning av Adobe Commerce Help Center:</a> Under vår resa har Adobe Commerce migrerat vår process för supportinhämtning från Adobe Commerce Help Center till Adobe Experience League för att vara bättre ansluten till Adobe. 
     </td>
     <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
+    <td>27 augusti 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response">ACSD-55566: <code>mergeCart</code> mutation misslyckas med internt serverfel i GraphQL-svar:</a> Korrigeringen ACSD-5566 åtgärdar ett problem där <code>mergeCart</code>-mutationen misslyckas med ett internt serverfel i GraphQL-svar. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats.  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61">Säkerhetsuppdatering för Adobe Commerce - APSB24-61:</a> Uppdateringen åtgärdar allvarliga, viktiga och måttliga säkerhetsluckor Ett lyckat utnyttjande kan leda till godtycklig kodkörning, läsning av godtyckliga filsystem, åsidosättande av säkerhetsfunktioner och eskalering av behörigheter. Bulletinen är Adobe Security Bulletin (APSB24-61). 
     </td>
     <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
+    <td>27 augusti 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront">ACSD-56546: Konfigurerbara produkter och paketprodukter visas som obefintliga i butiken:</a> Korrigeringsfilen ACSD-56546 åtgärdar ett problem där konfigurerbara produkter och paketprodukter visas som lagrade i butiken. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats.  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted">Live Search-ansikten är inte sorterade i bokstavsordning:</a> I den här artikeln förklaras problemet med att alla Adobe Commerce storefront-aspekter sorteras i bokstavsordning med alternativ för en enstaka markering, oavsett vilken indatatyp som tilldelats motsvarande attribut. 
     </td>
     <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
+    <td>27 augusti 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information">ACSD-57565: Orderinstrumentpanelen visar felaktig orderinformation:</a> Korrigeringsfilen ACSD-57565 åtgärdar ett problem där orderinstrumentpanelen visar felaktig orderinformation tills tidsperioden uppdateras. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102">Vägledning om hur du skyddar din butik och roterar krypteringsnycklar: CVE-2024-34102:</a> I den här artikeln finns vägledning om hur du skyddar din butik och roterar krypteringsnycklar. 
     </td>
     <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
+    <td>27 augusti 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql">ACSD-57394: Felaktig produktsortering efter flera sorteringsattribut i GraphQL:</a> Korrigeringsfilen ACSD-57394 åtgärdar ett problem där produkter sorteras felaktigt när flera sorteringsattribut används i GraphQL. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mdee-table-does-not-exist">Det finns inga korrigeringsdata som inte har uppdaterats i Commerce Data Exporter-feeds och kron loggar fel med ändringsloggtabellen:</a> Den här artikeln innehåller en lösning för att åtgärda datasynkroniseringsproblem som orsakas av att fel visnings-ID används i prenumerationen för Data Exporter Mview. Mview-prenumerationen används för att spåra ändringar i databastabeller. 
     </td>
     <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories-that-should-not-be-listed-in-the-category-aggregations">ACSD-57854: GraphQL-svar innehåller inaktiverade kategorier som inte ska listas i kategoriaggregeringar:</a> Korrigeringen ACSD-57854 åtgärdar ett problem där GraphQL-svaret innehåller inaktiverade kategorier som inte ska listas i kategoriaggregeringar. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-57074-yes-no-custom-attribute-does-not-work-with-indexing">ACSD-57074: Anpassat attribut med <code>price_*</code> prefix i <code>attribute_code</code> fungerar inte med indexering:</a> Korrigeringen ACSD-57074 åtgärdar ett problem där det anpassade attributet <em>Yes/No</em> med prefixet <code>price_*</code> i attributet <code>attribute_code</code> inte fungerar med indexering. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-55241-used-and-times-used-attributes-display-incorrect-values-for-generated-coupons">ACSD-55241: Attribut som används och tidsanvändning visar felaktiga värden för genererade kuponger:</a> Korrigeringsfilen ACSD-5241 åtgärdar ett problem där attributen Används och Används visar felaktiga värden för genererade kuponger. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-56760-admin-user-is-restricted-to-a-specific-website-and-is-unable-to-sort-or-add-new-products">ACSD-56760: Administratörsanvändaren är begränsad till en viss webbplats och kan inte sortera eller lägga till nya produkter:</a> Korrigeringsfilen ACSD-56760 åtgärdar ett problem där den Admin-användare som är begränsad till en viss webbplats och inte kan sortera eller lägga till nya produkter i en kategori om webbutiken har en egen rotkategori. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address">ACSD-56635: Importerade kunder dupliceras med samma e-postadress när kontodelning är inställd på Global:</a> Korrigeringen ACSD-56635 åtgärdar ett problem där den importerade kunden dupliceras med samma e-postadress när importen används med kontodelning inställd på Global. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked">ACSD-57315: En ny transaktion skapas i PayPal Payflow Pro varje gång någon klickar på hämtningsknappen:</a> Korrigeringen ACSD-57315 åtgärdar problemet där en ny transaktion skapas i PayPal Payflow Pro varje gång hämtningsknappen klickas på visningstransaktionsskärmen i Admin. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-56741-database-setup-upgrade-error-with-custom-mysql-trigger">ACSD-56741: Felsökning av databaskonfigurationsfel med anpassade MySQL-utlösare:</a> Korrigeringen ACSD-56741 åtgärdar ett problem där ett felmeddelande <em>Försöker få åtkomst till matrisförskjutning för värdet av typen null</em> visas under <code>setup:upgrade</code> på grund av en anpassad MySQL-utlösare i databasen som inte är relaterad till indexering och MVViview. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear">ACSD-58008: Om du redigerar slutdatumet som tomt försvinner schemauppdateringen:</a> Korrigeringsfilen ACSD-58008 åtgärdar ett problem där schemauppdateringen försvinner om du redigerar slutdatumet som tomt. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies">ACSD-57337: Administratörsanvändare med åtkomstbegränsningar kan visa alla företag i företagsrutnätet:</a> Korrigeringsfilen ACSD-57337 åtgärdar ett problem där en administratörsanvändare med åtkomstbegränsningar för specifika webbplatser kan visa företag från alla webbplatser i företagsrutnätet. Den här korrigeringen är tillgänglig när <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth">Distributionen misslyckas med rätt åtkomstnycklar i <code>env:COMPOSER_AUTH</code> eller <code>auth.json</code>:</a> Den här artikeln tillhandahåller en lösning på problemet när distributionen misslyckas med ett fel som det i distributionsloggen. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-bypass-waf-for-graphql-requests">Så här kringgår du förfrågningar från WAF för GraphQL:</a> I den här artikeln beskrivs hur du kringgår förfrågningar från WAF för GraphQL när Snabbt WAF blockerar dina GraphQL-förfrågningar. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full">E-post som anger att exportlagringsutrymmet är nästan fullt:</a> Den här artikeln innehåller en lösning på problemet där du får ett e-postmeddelande som anger att exportlagringsutrymmet är nästan fullt. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud">Uppgradera MariaDB 10.4 till 10.5 för Adobe Commerce i molnet:</a> I den här artikeln beskrivs hur du uppgraderar från MariaDB 10.4 till 10.5 för att fortsätta använda Adobe Commerce i molninfrastrukturen. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions">Uppdaterade korrigeringar för åtkomstförlust för Google Maps för alla Adobe Commerce-versioner:</a> Den här artikeln innehåller en korrigering för Adobe Commerce-handlare som inte är kompatibla med några senaste Google Maps-versioner från 3.54+. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102">Säkerhetsuppdatering för Adobe Commerce - APSB24-40:</a> Den här artikeln delar en uppdatering för CVE-2024-34102. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/poor-performance-in-integration-environments">Dåliga prestanda i integreringsmiljöer:</a> Den här artikeln innehåller en lösning på ett problem där Pro-integreringsmiljöerna och startmiljöer fungerar dåligt. 
-    </td>
-    <td>Ny artikel </td>
-    <td>30 juli 2024</td>
- </tr>
+    <td>27 augusti 2024</td>
+  </tr>
 </table>
 
 ## Populära artiklar
