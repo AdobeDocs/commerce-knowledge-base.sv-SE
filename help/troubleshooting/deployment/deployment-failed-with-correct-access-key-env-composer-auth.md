@@ -4,16 +4,16 @@ description: Den här artikeln innehåller en lösning på problemet när distri
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 9f9dc8374bb681398ed1c295ac15679553cfc74e
+source-git-commit: 2a1c97c65282d03010bffabbcd2d1be7fb9ff9a6
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
 # Distributionen misslyckas med rätt åtkomstnycklar i env:COMPOSER_AUTH eller auth.json
 
-Den här artikeln innehåller en lösning på problemet när distributionen misslyckas med ett fel som det nedan i [distributionsloggen](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
+Den här artikeln innehåller en lösning på problemet när distributionen misslyckas med ett fel som det nedan i [distributionsloggen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -40,7 +40,7 @@ Du har distribuerats.
 >
 >Detta är ett exempelfel. Du kan få ett fel som anger en annan fil (beroende på vilken Adobe Commerce-version du distribuerar).
 
-Distributionen misslyckades. Ett fel som *Filen &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; kunde inte hämtas (HTTP/1.1 404 Hittades inte)* i [distributionsloggen](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+Distributionen misslyckades. Ett fel som *Filen &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; kunde inte hämtas (HTTP/1.1 404 Hittades inte)* i [distributionsloggen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 ### Orsak
 
