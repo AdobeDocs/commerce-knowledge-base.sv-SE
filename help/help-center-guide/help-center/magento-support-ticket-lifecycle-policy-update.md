@@ -2,76 +2,52 @@
 title: Uppdatering av livscykelpolicy för Adobe Commerce Support-biljetter
 description: I den här artikeln finns information om uppdatering av Adobe Commerce supportbiljettens livscykelpolicy.
 exl-id: c3fbcb4a-107f-48b3-afed-b9a0c5d0425c
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 5d291a221509c35c8bc34fd0957534c24342c59c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 1%
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
 # Uppdatering av livscykelpolicy för Adobe Commerce Support-biljetter
 
-I den här artikeln finns information om uppdatering av Adobe Commerce supportbiljettens livscykelpolicy.
+I den här dokumentationen beskrivs förbättringar av Adobe DX Support-ärendets livscykel i syfte att öka kommunikationen och tillhandahålla lösningar för kunder så snabbt som möjligt för att säkerställa att kunderna lyckas. Detta finns också i [Översikt över lyckade Adobe-planer: Supportärende, livscykel](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
+Nedan visas tidslinjer och meddelanden för olika scenarier som påträffats under supportprocessen:
 
-Följande tabell visar de uppdaterade scenarierna. Du hittar information om varje scenario i avsnittet nedan.
+## Påminnelser om uppföljning av ärenden
 
-<table>
- <tbody>
- <tr>
- <td class="wysiwyg-text-align-center"> </td>
- <td class="wysiwyg-text-align-center"><strong>Biljettstatus</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Dagar till "Löst"</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Dagar till"Stängd"</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Tidsinställning</strong></td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>Teknikern tillhandahåller en lösning</strong></td>
- <td class="wysiwyg-text-align-center">"Väntar på ditt svar"</td>
- <td class="wysiwyg-text-align-center">3</td>
- <td class="wysiwyg-text-align-center">6</td>
- <td class="wysiwyg-text-align-center">Dagar 3 och 6</td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>Väntar på information från kund</strong></td>
- <td class="wysiwyg-text-align-center">"Väntar på ditt svar"</td>
- <td class="wysiwyg-text-align-center">Ej tillämpligt</td>
- <td class="wysiwyg-text-align-center">6</td>
- <td class="wysiwyg-text-align-center">Dagar 1, 3 och 6</td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>Kunden anger till"Löst" eller begär att teknikern ska ange till"Löst"</strong></td>
- <td class="wysiwyg-text-align-center">"Löst"</td>
- <td class="wysiwyg-text-align-center">Omedelbar</td>
- <td class="wysiwyg-text-align-center">1</td>
- <td class="wysiwyg-text-align-center">Dag 1</td>
- </tr>
- </tbody>
- </table>
+| Meddelande | Ärendestatus | Tidsinställning för meddelanden | Dagar till stängningsstatus |
+|--- |--- |--- |--- |
+| **1st** | Väntande svar eller lösning har angetts | 24 timmar/1 dag | 5 dagar |
+| **2nd** | Väntande svar eller lösning har angetts | 72 timmar/3 dagar | 3 dagar |
+| **3** | Väntande svar eller lösning har angetts | 120 timmar/5 dagar | 1 dag |
+| **4th** | Väntande svar eller upplösning har ändrats till &quot;Automatiskt stängd&quot; | 14 timmar/6 dagar | stängd |
 
 ## Detaljerade scenarier
 
-### När en tekniker tillhandahåller en lösning
-
-1. När kunden fått en lösning anger teknikern biljettstatus till&quot;Väntar på svar&quot;.
-1. Om kunden inte svarar inom 3 dagar efter att statusen ändrats till&quot;Väntar på ditt svar&quot; flyttas biljetten till&quot;Löst&quot; och kunden meddelas.
-1. Om kunden inte svarar inom 6 dagar efter att statusen ändrats till&quot;Väntar på ditt svar&quot; stängs biljetten och kunden meddelas.
-
 ### När ytterligare information krävs från en kund
 
-1. Om det krävs en uppdatering från kunden sätter teknikern biljetten till&quot;Väntar på ditt svar&quot;.
-1. Meddelanden skickas till kunden dag 1 och dag 3 som begär uppföljning av kunden.
-1. Om kunden inte svarar inom 6 dagar efter att statusen ändrats till&quot;Väntar på ditt svar&quot; stängs biljetten och kunden meddelas.
+I det här scenariot utförs följande steg när ytterligare information krävs från en kund:
 
-### Biljetten är inställd på&quot;Löst&quot; av en kund
+* Teknikern skickar en uppdatering som begär information och ärendestatusen är inställd på Väntande svar.
+* Den 1, 3 och 5 dagen efter att statusen är inställd på &quot;Väntande svar&quot; skickas uppföljningsmeddelanden till kunden som begär ytterligare information.
+* Om kunden inte svarar inom 6 dagar efter att statusen hade angetts till Väntande svar, stängs ärendet och ett stängningsmeddelande skickas.
 
-När en biljett är inställd på&quot;Löst&quot; av en kund stängs den om en dag och kunden meddelas.
+Kunderna kan öppna ett stängt ärende på nytt inom 14 dagar för att fortsätta kommunicera. Efter 14 dagar kan ett nytt supportärende öppnas för att fortsätta kommunikation i samband med ett tidigare stängt ärende.
 
-### Kunden instruerar supporten att stänga biljetten
+### När en tekniker tillhandahåller en lösning
 
-När en kund ber Adobe Commerce Support att stänga biljetten stängs den om en dag och kunden meddelas.
+I det här scenariot, när en tekniker erbjuder en lösning, utförs följande steg:
+
+* Teknikern skickar en uppdatering med en föreslagen lösning och ärendestatusen är inställd på&quot;Upplösning tillhandahålls&quot;.
+* Den 1, 3 och 5 dagen efter att statusen är inställd på &quot;Upplösning tillhandahålls&quot; skickas uppföljningsmeddelanden till kunden som ber om bekräftelse på den angivna lösningen.
+* Om kunden inte svarar inom 6 dagar efter att statusen hade angetts till&quot;Lösning tillhandahållen&quot;, stängs ärendet och ett stängningsmeddelande skickas.
+
+Kunderna kan öppna ett stängt ärende på nytt inom 14 dagar för att fortsätta kommunicera. Efter 14 dagar kan ett nytt supportärende öppnas för att fortsätta kommunikation i samband med ett tidigare stängt ärende.
 
 ## Relaterad läsning
 
-* [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)
-* [Länken Skicka en biljett visas inte på startsidan för Adobe Commerce Help Center](/help/help-center-guide/help-center/magento-help-center-user-guide.md#no-submit-link)
-* [Formulär för att skicka biljetter: handlaren visas inte i den nedrullningsbara listan Organisation](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed)
+* [Skicka in en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
+* Länken [&quot;Skicka en biljett&quot; visas inte på startsidan för Adobe Commerce Help Center ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
+* [Formulär för anmälan av biljett: handlaren visas inte i listrutan Organisation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
+* [Adobe Success Plans Overview: Supportärende Lifecycle](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
