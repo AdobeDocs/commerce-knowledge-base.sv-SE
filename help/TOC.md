@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 41e8cd47b62f68975ed61b5260934ecf2cadec0f
+source-git-commit: d7940db29941e39ee6a664115095c7512a7f8d54
 workflow-type: tm+mt
-source-wordcount: '9806'
+source-wordcount: '9794'
 ht-degree: 0%
 
 ---
@@ -949,7 +949,6 @@ ht-degree: 0%
       * [Migrering av [!DNL UPS]-leveransmetodintegrering från [!DNL SOAP] till [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Stöd för snabbkorrigering för leveransmetod för markförmåner för AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
       * [Adobe Commerce 2.4.3-p2 - 2.4.5 säkerhetsuppdatering för CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
-      * [Tomt kundvagnsproblem när du klickar flera gånger på kassan från mini cart](/help/troubleshooting/known-issues-patches-attached/empty-shopping-cart-issue-when-multiple-click-on-checkout-from-mini-cart.md)
       * [Adobe Commerce 2.4.4: Det går inte att skapa partiella fakturor](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
       * [Nya order skickas till arkivet](/help/troubleshooting/known-issues-patches-attached/new-orders-are-sent-to-archive.md)
       * [Kravjobbsfel i Advanced Reporting Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-cron-job-errors-magento-commerce.md)
