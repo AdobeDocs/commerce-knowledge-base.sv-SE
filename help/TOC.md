@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: d7940db29941e39ee6a664115095c7512a7f8d54
+source-git-commit: 9a93f596b5196a9da61e9698a7e6456c650c2b42
 workflow-type: tm+mt
-source-wordcount: '9794'
+source-wordcount: '9723'
 ht-degree: 0%
 
 ---
@@ -975,25 +975,18 @@ ht-degree: 0%
       * [Adobe Commerce 2.3.5, 2.3.5-p1 patch: landbetalningsproblem](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
       * [Adobe Commerce 2.4.0 patch: returnerar problem med att skapa etiketter för frakt](/help/troubleshooting/known-issues-patches-attached/magento-2-4-0-patch-returns-shipping-label-creation-issue.md)
       * [&quot;500-fel&quot; efter att ha dubbelklickat på länken Ta bort i kundvagnen](/help/troubleshooting/known-issues-patches-attached/500-error-after-double-clicking-remove-link-in-shopping-cart.md)
-      * [Webb-API:t kan inte bearbeta begäranden med mer än 20 objekt i matrisen](/help/troubleshooting/known-issues-patches-attached/web-api-resources-limit.md)
       * [Paket som nedgraderats efter uppgradering från 2.4.4 till 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
       * [Katalogsidindelning fungerar inte med Elasticsearch 6.x](/help/troubleshooting/known-issues-patches-attached/catalog-pagination-doesn-t-work-when-elasticsearch-6-x-is-used.md)
-      * [Säkerhetsuppdateringar för Adobe Commerce APSB22-12](/help/troubleshooting/known-issues-patches-attached/0-day-vulnerability-patch.md)
-      * [404 Fel i butiksleverans när uppdatering av katalogiffegler har utförts](/help/troubleshooting/known-issues-patches-attached/404-error-on-store-front-once-catalog-price-rule-schedules-update-is-performed.md)
       * [Adobe Commerce 2.3.6, 2.4.1 CAPTCHA in checkout fungerar inte](/help/troubleshooting/known-issues-patches-attached/magento-commerce-2-3-6-2-4-1-captcha-in-checkout-not-working.md)
-      * [Leveransadressen har inte sparats efter siduppdatering vid utcheckning](/help/troubleshooting/known-issues-patches-attached/shipping-address-not-saved-post-page-refresh-on-checkout.md)
-      * [Det gick inte att importera CSV-produktinformation för samma namnprodukt](/help/troubleshooting/known-issues-patches-attached/import-csv-product-information-for-same-name-product-fails.md)
       * [E-postbeställning har skickats från serverns e-postadress](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [Advanced Reporting 404 error on split database solution](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md)
       * [Prestandaproblem som orsakas av för många Ajax-begäranden](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md)
       * [Tar bort mellanlagringsuppdatering tar bort relaterad entitet](/help/troubleshooting/known-issues-patches-attached/removing-staging-update-deletes-related-entity.md)
       * [Google Analytics spårar inte konverteringsdata](/help/troubleshooting/known-issues-patches-attached/google-analytics-is-not-tracking-conversion-data.md)
-      * [Känt fel i Adobe Commerce 2.4.0: integrationstester misslyckas](/help/troubleshooting/known-issues-patches-attached/magento-2-4-0-known-issue-integration-tests-fail.md)
       * [Fel datum för specialpris](/help/troubleshooting/known-issues-patches-attached/wrong-date-for-special-price.md)
       * [Adobe Commerce 2.4.1 och 2.3.6 skapar en snabbkorrigering för inaktiverad kontoknapp](/help/troubleshooting/known-issues-patches-attached/2-4-1-and-2-3-6-create-an-account-button-disabled-hotfix.md)
       * [Felet &quot;Område har redan angetts&quot; när konfigurationen av temat sparades i Admin](/help/troubleshooting/known-issues-patches-attached/area-already-set-error-when-saving-theme-configuration-in-admin.md)
       * [Adobe Commerce uppmanar sina kunder att logga in med ogiltig länk](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
-      * [Problem med att skapa etiketter i Adobe Commerce 2.4.0](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md)
       * [B2B: Företag kan inte komma åt profilsidor på butiksfront](/help/troubleshooting/known-issues-patches-attached/b2b-companies-cannot-access-profile-pages-on-store-front.md)
       * [Adobe Commerce 2.4.6 error placing order from Admin panel](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [[!UICONTROL salesRule] etikettproblem vid uppgradering från versioner &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)

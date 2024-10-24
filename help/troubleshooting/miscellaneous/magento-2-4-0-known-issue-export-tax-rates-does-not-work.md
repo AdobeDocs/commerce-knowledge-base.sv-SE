@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på ett Adobe Commerce 2.
 exl-id: 29a34a1f-d23a-43cb-ac1f-8711ce25fa6c
 feature: Data Import/Export, Orders
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,6 @@ Vi planerar att åtgärda problemet i en 2.4.1- patch.
 I vår kunskapsbas:
 
 * [Ett känt fel uppstod i Adobe Commerce 2.4.0: Braintree betalningsmetoder visas inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md).
-* [Problem med att skapa leveransetiketter i Adobe Commerce 2.4.0](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md).
 * [Problem med Adobe Commerce 2.4.0 - Uppdatering av kundens aktiviteter fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md).
 * [Ett känt fel uppstod i Adobe Commerce 2.4.0: visning av råmeddelandedata i store](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md).
 * [Problem med Adobe Commerce 2.4.0: Knappen Lägg till markeringar i kundvagnen fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md).
