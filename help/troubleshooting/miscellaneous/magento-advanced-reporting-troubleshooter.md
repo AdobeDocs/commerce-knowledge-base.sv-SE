@@ -4,7 +4,7 @@ description: Du kan lösa problem med avancerad rapportering på Adobe Commerce 
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: dfe9b9cf4751e28bd151fce36df168e48fb914ed
+source-git-commit: ae6dde9ecc01a0e1c561d1e91dbd2f7bc3504fe0
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -94,7 +94,7 @@ b. NO - Om frågan inte returnerar något, gör du så här: 1. [Inaktivera och 
 
 Kontrollera att jobbet `analytics_collect_data` kördes genom att köra frågan: `SELECT * FROM cron_schedule WHERE job_code LIKE 'analytics_collect_data' \G`
 
-a. JA - Om det finns poster och kolumnen **status** säger _missade_ kan du använda korrigeringen i den här KB-artikeln [Uppdatera avancerad rapportering för att köras i en egen kundgrupp](/help/troubleshooting/known-issues-patches-attached/update-advanced-reporting-to-run-on-its-own-cron-group.md).\
+a. JA - Om det finns poster och kolumnen **status** säger _missade_ använder du korrigeringen i den här KB-artikeln Uppdatera avancerad rapportering för att köra den på en egen cron-grupp.\
 b. JA - Om det finns poster och kolumnen **status** säger _success_ fortsätter du till [steg 9](#step-9).\
 c. JA - Om det finns poster och kolumnen **status** säger _error_ fortsätter du till [steg 8.](#step-8)\
 d. NEJ - Om det inte finns några poster fortsätter du till [steg 8](#step-8).
@@ -140,7 +140,7 @@ b. NEJ - Fortsätt till [steg 10](#step-10).
 
 Exempel: I tabellen `core_config_data` ser du felet *Filen &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0 kan inte tas bort*. Varning!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0?lang=en): Ingen sådan fil eller katalog*
 
-a. JA - Använd ACSD-50165-korrigeringen i [Filen kan inte tas bort. Varning!unlink: Det finns inget sådant fil- eller katalogfel från Admin](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md), vänta 24 timmar tills jobbet körs igen och försök sedan igen.\
+a. JA - Använd ACSD-50165-korrigeringen i [Det går inte att ta bort filen. Varning!unlink: Det finns inget sådant fil- eller katalogfel från Admin](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md), vänta 24 timmar tills jobbet körs igen och försök sedan igen.\
 b. NEJ - Fortsätt till [steg 11](#step-11).
 
 +++
@@ -151,7 +151,7 @@ b. NEJ - Fortsätt till [steg 11](#step-11).
 
 Exempel: `report.ERROR: Cron Job analytics_collect_data has an error: substr_count() expects parameter 1 to be string, null given. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":224919552,"emalloc_start":216398384} [] []`
 
-a. JA - Använd MDVA-19391-korrigeringen i [Vanliga jobbfel för Advanced Reporting på Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-cron-job-errors-magento-commerce.md), vänta 24 timmar tills jobbet körs igen och försök igen.\
+a. JA - Använd MDVA-19391-korrigeringen i Common Advanced Reporting cron-jobbfel på Adobe Commerce, vänta 24 timmar tills jobbet körs igen och försök igen.\
 b. NEJ - [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
