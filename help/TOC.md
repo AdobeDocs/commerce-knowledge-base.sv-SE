@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: a2f113e6d9123fd9058cce34a199a90484523862
+source-git-commit: fdca2b0345bbd259007f5eeef10dd63455395d4f
 workflow-type: tm+mt
-source-wordcount: '9692'
+source-wordcount: '9662'
 ht-degree: 0%
 
 ---
@@ -950,9 +950,6 @@ ht-degree: 0%
       * [[!DNL USPS] Stöd för snabbkorrigering för leveransmetod för markförmåner för AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
       * [Adobe Commerce 2.4.3-p2 - 2.4.5 säkerhetsuppdatering för CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
       * [Adobe Commerce 2.4.4: Det går inte att skapa partiella fakturor](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
-      * [Nya order skickas till arkivet](/help/troubleshooting/known-issues-patches-attached/new-orders-are-sent-to-archive.md)
-      * [Låga prestanda för webbplats och API](/help/troubleshooting/known-issues-patches-attached/low-site-and-api-performance.md)
-      * [Ersätt avskrivna Google Image Charts med Image-Charts](/help/troubleshooting/known-issues-patches-attached/replace-depreciated-google-image-charts-with-image-charts.md)
       * [Avancerad sökning som inte visar de mest relevanta resultaten](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [Fel vid filtrering av order i Admin](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [Användare kan inte lägga till produkten i kundvagnen om inget har valts i Tillåt länder](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
@@ -966,7 +963,6 @@ ht-degree: 0%
       * [Fler produkter togs bort än initierades under massborttagning i Admin](/help/troubleshooting/known-issues-patches-attached/not-selected-rows-are-deleted-during-mass-action-deletion.md)
       * [Adobe Commerce on cloud infrastructure v2.3.5 GraphQL caching invalidisation fungerar inte](/help/troubleshooting/known-issues-patches-attached/magento-commerce-cloud-v2-3-5-graphql-caching-invalidation-not-working.md)
       * [Administratören kan inte skapa en order eller beställa om när Braintree-betalning är aktiverat](/help/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.md)
-      * [Adobe Commerce 2.4.0 B2B: fel inköpsorderlogik när rabatten gått ut](/help/troubleshooting/known-issues-patches-attached/magento-2-4-0-b2b-wrong-purchase-order-logic-when-discount-expired.md)
       * [Duplicera poster i katalogtabellen efter redigering av slutdatum för en schemauppdatering](/help/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.md)
       * [Adobe Commerce 2.3.5, 2.3.5-p1 patch: landbetalningsproblem](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
       * [Adobe Commerce 2.4.0 patch: returnerar problem med att skapa etiketter för frakt](/help/troubleshooting/known-issues-patches-attached/magento-2-4-0-patch-returns-shipping-label-creation-issue.md)
