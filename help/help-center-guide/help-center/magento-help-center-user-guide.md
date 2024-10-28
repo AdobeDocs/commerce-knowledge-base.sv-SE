@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: d8f832869916c04cacc0cefeeb9b45bd3c1f3b80
+source-git-commit: 8ee52f47d9e230ecd633ead3429d864f9df7c33e
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2583'
 ht-degree: 0%
 
 ---
@@ -84,9 +84,6 @@ Så här loggar du in på Adobe Experience League Support:
 
 När du har loggat in som kontoägare eller användare med delad åtkomst kan du skicka ett supportärende via Adobe Experience League hemsida, din Adobe Commerce-kontosida och din Adobe Commerce Cloud-kontosida.
 
-* Om du är kontoägare eller en återkommande användare med delad åtkomst följer du stegen nedan.
-* Om du är en användare med delad åtkomst och kontoägaren precis har [gett dig delad åtkomst](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#provide-shared-access), måste du först växla konton innan du fortsätter till stegen nedan. Mer information finns i [Åtkomst till delat konto (växlingskonton)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts).
-
 #### Adobe Experience League startsida {#experience-league-start-page}
 
 Så här skickar du ett nytt supportärende från Adobe Experience League startsida:
@@ -106,7 +103,7 @@ Så här skickar du ett nytt supportärende från Adobe Experience League starts
 
    ![open-support-page](assets/click_support.png)
 
-1. Kontrollera att du har valt lämplig organisation i listrutan Organisation (om den är synlig) för att starta processen för supportintag.
+1. Kontrollera att du har valt lämplig organisation i listrutan Organisation (om den är synlig) för att starta processen för supportintag. Om du vill skicka ett ärende för Adobe Commerce väljer du organisationens namn som slutar på *[!DNL Commerce]*.
 
    ![select_appropriate_org](assets/select_appropriate_org.png)
 
