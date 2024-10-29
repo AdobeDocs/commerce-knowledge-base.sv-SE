@@ -1,19 +1,19 @@
 ---
 title: Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-73]
 promoted: true
-description: Använd en isolerad korrigering för att åtgärda [!DNL critical, important, and moderate vulnerabilities] för Adobe Commerce 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 och tidigare versioner av instanser som bara körs i modulen  [!DNL B2B] .
+description: Använd en isolerad korrigering för att åtgärda [!DNL critical, important, and moderate vulnerabilities] för Adobe Commerce 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10 och tidigare versioner av instanser som bara körs i modulen  [!DNL B2B] .
 feature: Compliance, Security
 role: Developer
-source-git-commit: 181316dc0bd42feae0a857ff52edd80dbfd492ad
+source-git-commit: 694cb7519733e950b55006866e585097bc2429f4
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-73]
 
-Den 8 oktober 2024 släppte Adobe en regelbundet schemalagd säkerhetsuppdatering för Adobe Commerce, Magento Open Source och [!DNL Adobe Commerce Webhooks Plugin].
+Den 8 oktober 2024 släppte Adobe en regelbundet schemalagd säkerhetsuppdatering för Adobe Commerce och [!DNL Adobe Commerce Webhooks Plugin].
 Uppdateringen åtgärdar säkerhetsluckorna [[!DNL critical, important] och  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html). Ett lyckat utnyttjande kan leda till exekvering av godtycklig kod, läsning av godtyckliga filsystem, åsidosättande av säkerhetsfunktioner och eskalering av behörigheter. Bulletinen är [Säkerhetsbulletin för Adobe ([!DNL APSB24-73])](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
 >[!NOTE]
@@ -28,14 +28,22 @@ Uppdateringen åtgärdar säkerhetsluckorna [[!DNL critical, important] och  [!D
 
 ## Berörda produkter och versioner
 
-Adobe Commerce i molnet, Adobe Commerce lokalt och Magento Open Source:
+Adobe Commerce i molnet och Adobe Commerce lokalt:
 
-* 2.4.7-p3 och tidigare
-* 2.4.6-p8 och tidigare
-* 2.4.5-p10 och tidigare versioner
-* 2.4.4-p11 och tidigare versioner
+* 2.4.7-p2 och tidigare
+* 2.4.6-p7 och tidigare
+* 2.4.5-p9 och tidigare
+* 2.4.4-p10 och tidigare versioner
 
-## Lösning för Adobe Commerce i molnet, Adobe Commerce lokala program och Magento Open Source
+B2B:
+
+* 1.4.2-p2 och tidigare
+* 1.3.5-p7 och tidigare
+* 1.3.4-p9 och tidigare
+* 1.3.3-p10 och tidigare versioner
+
+
+## Lösning för Adobe Commerce i molnet och Adobe Commerce lokala programvara
 
 För att åtgärda säkerhetsluckan för de berörda produkterna och versionerna måste du använda den isolerade korrigeringen [!DNL CVE-2024-45115].
 
@@ -43,7 +51,7 @@ För att åtgärda säkerhetsluckan för de berörda produkterna och versionerna
 
 Använd följande Isolerade plåster:
 
-[vuln-25610-composer-patch.zip](assets/vuln-25610-composer-patch.zip)
+[vuln-26510-composer-patch.zip](assets/vuln-26510-composer-patch.zip)
 
 ## Så här applicerar du det isolerade plåstret
 
