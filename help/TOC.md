@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 61b3cc2fc40b320c3c657a7dd0c6ea2b9db71c75
+source-git-commit: a0b8fdf0e04cad2260a04af7c1049c6831d2921b
 workflow-type: tm+mt
-source-wordcount: '9626'
+source-wordcount: '9617'
 ht-degree: 0%
 
 ---
@@ -639,7 +639,6 @@ ht-degree: 0%
       * [Apache log4j2-sårbarhet i Adobe Commerce](/help/announcements/adobe-commerce-announcements/apache-log4j2-adobe-commerce.md)
       * [Borttagning av åtkomst från Blackfire till Adobe Commerce i molninfrastruktur](/help/announcements/adobe-commerce-announcements/blackfire-access-removal-for-magento-commerce-cloud.md)
       * [Quality Patches Tool released: new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)
-      * [2.4 Adobe Commerce upgrade workshop on January 26 2022](/help/announcements/adobe-commerce-announcements/2-4-upgrade-webinar.md)
       * [Sökmotorn för MySQL-kataloger kommer att tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Adobe ger stöd för åtkomst och integritet av kunddata](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [UPS-API:er har tagits bort](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)
@@ -938,7 +937,7 @@ ht-degree: 0%
       * [Distributionsfel: &quot;fel 7 vid hämtning ... port 443: Anslutningen nekades&quot;](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Distributionsfel vid implementering av felaktiga filer](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [Distributionsfel där korrigeringar inte hittas](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
-      * [Distributionen misslyckades vid cachetömning: Inga kommandon har definierats i namnområdesfelet &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
+      * [Distributionen misslyckades vid cachetömning: &quot;Det finns inga definierade kommandon i namnutrymmesfelet &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Distributionen misslyckas med rätt åtkomstnycklar i env:COMPOSER_AUTH eller auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Kända fel {#known-issues-patches-attached}
       * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
