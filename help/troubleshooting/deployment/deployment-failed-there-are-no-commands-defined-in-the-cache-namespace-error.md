@@ -1,17 +1,18 @@
 ---
-title: "'Distributionen misslyckades vid cachelagring: Det finns inga definierade kommandon i namnområdesfelet 'cache'"
+title: '"Distributionen misslyckades vid cachetömning: "Det finns inga definierade kommandon i felet "cache"-namnutrymme"'
 description: Den här artikeln innehåller en lösning på problemet när distributionen misslyckas med följande fel **Inga kommandon har definierats i cache-namnutrymmet**.
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: e13be3ef9daa17b9463c8251933f68f6a35fedd2
+source-git-commit: 7efa7b5363c7f77d76c02051c7e0e6a0f38ca87d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-# Distributionen misslyckades vid cachetömning: &quot;Det finns inga definierade kommandon i namnområdesfelet &quot;cache&quot;
+
+# Distributionen misslyckades vid cachetömning: &quot;Det finns inga definierade kommandon i namnutrymmesfelet &quot;cache&quot;
 
 >[!WARNING]
 >
@@ -30,11 +31,11 @@ Den här artikeln innehåller en lösning på problemet när distributionen miss
 
 Adobe Commerce i molninfrastruktur 2.4.x
 
-## Problem  
+## Problem
 
 <u>Steg som ska återskapas</u>:
 
-Försök att distribuera. 
+Försök att distribuera.
 
 <u>Förväntade resultat</u>:
 
@@ -66,16 +67,16 @@ Identifiera de ogiltiga raderna som återstår från konfigurationerna för att 
    The store that was requested wasn't found. Verify the store and try again.
    ```
 
-1. Kör den här MySql-frågan för att verifiera att arkivet inte kan hittas, vilket visas i felmeddelandet i steg 2. 
+1. Kör den här MySql-frågan för att verifiera att arkivet inte kan hittas, vilket visas i felmeddelandet i steg 2.
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. Kör följande MySql-sats för att ta bort de ogiltiga raderna: 
+1. Kör följande MySql-sats för att ta bort de ogiltiga raderna:
 
    ```sql
-   delete from core_config_data where scope='stores' and scope_id not in (select store_id from store); 
+   delete from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
 1. Kör det här kommandot igen:
