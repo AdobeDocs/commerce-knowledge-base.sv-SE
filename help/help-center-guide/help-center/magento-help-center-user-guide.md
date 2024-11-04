@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 8438978de04746c8a66816fe4f03d5f0d2d11521
+source-git-commit: 7a70f2c54396f82424e442aca7413c02ebecddb9
 workflow-type: tm+mt
-source-wordcount: '2649'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,8 @@ Så här skickar du ett nytt supportärende från Adobe Experience League starts
 
 >[!INFO]
 >
+>1. För att kunna lämna in ett ärende måste du ha rätt till support för den aktuella produkten (t.ex. Adobe Commerce, Adobe Commerce Intelligence, Experience Platform). Om du inte har rätt till support visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen.
+>1. Om du tillhör flera organisationer eller om det finns flera organisationer med liknande namn (var och en representerar någon av de andra Adobe-produkter som organisationen prenumererar på) måste du först välja rätt organisation i listrutan som slutar på &quot;(Commerce)&quot;.
 >1. För att kunna lämna in ett ärende måste du ha rätt till support för den aktuella produkten (t.ex. Adobe Commerce, Adobe Commerce Reporting, Adobe Commerce Payment Services, Experience Platform). Om du inte har rätt till support visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen. Om du vill skicka ett ärende för Commerce-relaterade problem måste du först välja rätt organisationsnamn som slutar på *[!DNL (Commerce)]*.
 >1. Om du tillhör flera organisationer eller om det finns flera organisationer med liknande namn (var och en representerar någon av de andra Adobe-produkter som organisationen prenumererar på) måste du först välja rätt organisation i listrutan.
 >1. Om du inte ser Adobe Commerce i listrutan [!UICONTROL Select a product] måste du först få [delad åtkomst](#shared-access) från Commerce Kontoägare. När du har fått delad åtkomst måste du [synkronisera ditt konto](#switch-accounts) för att slutföra processen innan du kan skicka ett ärende.
@@ -98,7 +100,7 @@ Så här skickar du ett nytt supportärende från Adobe Experience League starts
 >
 >Se till att du har valt rätt organisation innan du skickar in ärendet och att den organisation du har valt har rätt behörighet för den produkt som du begär support för. Om ditt problem till exempel är relaterat till Adobe Commerce, men du har valt Experience Platform som produkt och ärendet har skickats in, kan detta leda till felhantering och förseningar i svarstiderna.
 >
->Om fel organisation har valts kan ditt team inte visa ärendet under [!UICONTROL My Cases] för rätt/korrekt organisation. Supportteamet kan inte ändra den organisation som är kopplad till ärendet i framtiden.
+>Om fel organisation valdes när ärendet skickades kan ditt team inte visa ärendet under [!UICONTROL My Cases] för rätt/korrekt organisation. Adobe Commerce supportteam har inte möjlighet att ändra den organisation som är kopplad till ärendet. För att kunna åtgärda detta måste du stänga det befintliga ärendet och skicka in ett nytt ärende med den information som anges/valts.
 
 1. Klicka på **Support** i sidhuvudet. På sidan Support öppnas.
 
