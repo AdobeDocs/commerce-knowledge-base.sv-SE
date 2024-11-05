@@ -1,18 +1,18 @@
 ---
 title: Ändra öknings-ID för en databasenhet (order, faktura, kreditnota osv.) på en viss butik
-description: I den här artikeln beskrivs hur du ändrar inkrement-ID för en enhet i en Adobe Commerce-databas (DB) (order, faktura, kreditnota osv.) på en viss Adobe Commerce-butik med SQL-satsen ALTER TABLE.
+description: I den här artikeln beskrivs hur du ändrar tilläggs-ID för en Adobe Commerce-databasentitet (order, faktura, kreditnota osv.) på en viss Adobe Commerce-butik med SQL-satsen "ALTER TABLE".
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
 # Ändra öknings-ID för en databasenhet (order, faktura, kreditnota osv.) på en viss butik
 
-I den här artikeln beskrivs hur du ändrar inkrement-ID för en enhet i en Adobe Commerce-databas (DB) (order, faktura, kreditnota osv.) på en viss Adobe Commerce-butik med SQL-satsen `ALTER TABLE`.
+I den här artikeln beskrivs hur du ändrar tilläggs-ID för en Adobe Commerce-databasentitet (order, faktura, kreditnota osv.) på en viss Adobe Commerce-butik med hjälp av SQL-satsen `ALTER TABLE`.
 
 ## Berörda versioner
 
@@ -86,5 +86,6 @@ Innan vi kör `ALTER TABLE`-frågan i Adobe Commerce produktionsmiljö i molninf
 
 ## Relaterad dokumentation
 
-* [Skapa databasdump i Cloud](/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas för support.
-* [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) i utvecklardokumentationen.
+* [Skapa databasdump i Cloud](/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas för support
+* [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) i utvecklardokumentationen
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

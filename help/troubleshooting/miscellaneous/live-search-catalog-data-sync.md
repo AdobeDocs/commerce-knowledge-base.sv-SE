@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar på Adobe Commerce-problem
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: fe276c444c235b096ea6d61b02d8362314b5c154
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,13 @@ När du har konfigurerat och anslutit kan det ta över 30 minuter innan indexet 
 
 Om dina produktdata inte synkroniseras korrekt för en viss SKU gör du följande:
 
-1. Använd följande SQL-fråga och verifiera att du har de data du förväntar dig i kolumnen `feed_data`. Notera också tidsstämpeln `modified_at`.
+1. Använd följande [!DNL SQL]-fråga och verifiera att du har de data du förväntar dig i kolumnen `feed_data`. Notera också tidsstämpeln `modified_at`.
 
    ```sql
    select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. Om du inte ser rätt data kan du försöka indexera om med följande kommando och köra SQL-frågan igen i steg 1 för att verifiera data:
+1. Om du inte ser rätt data kan du försöka indexera om med följande kommando och köra [!DNL SQL]-frågan igen i steg 1 för att verifiera data:
 
    ```bash
    bin/magento indexer:reindex cde_products_feed
@@ -76,7 +76,7 @@ Om dina produktdata inte synkroniseras korrekt för en viss SKU gör du följand
 
 ### Kontrollera tidsstämpel för senaste produktexport
 
-1. Om du ser rätt data i `cde_products_feed` använder du följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`:
+1. Om du ser rätt data i `cde_products_feed` använder du följande [!DNL SQL]-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`:
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -94,13 +94,13 @@ Om dina produktdata inte synkroniseras korrekt för en viss SKU gör du följand
 
 Om produktattributdata inte synkroniseras korrekt för en viss attributkod gör du följande:
 
-1. Använd följande SQL-fråga och verifiera att du har de data du förväntar dig i kolumnen `feed_data`. Notera också tidsstämpeln `modified_at`.
+1. Använd följande [!DNL SQL]-fråga och verifiera att du har de data du förväntar dig i kolumnen `feed_data`. Notera också tidsstämpeln `modified_at`.
 
    ```sql
    select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. Om du inte ser rätt data använder du följande kommando för att indexera om och kör sedan SQL-frågan igen i steg 1 för att verifiera data.
+1. Om du inte ser rätt data använder du följande kommando för att indexera om och kör sedan [!DNL SQL]-frågan igen i steg 1 för att verifiera data.
 
    ```bash
    bin/magento indexer:reindex cde_product_attributes_feed
@@ -112,7 +112,7 @@ Om produktattributdata inte synkroniseras korrekt för en viss attributkod gör 
 
 Om du ser rätt data i `cde_product_attributes_feed`:
 
-1. Använd följande SQL-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`.
+1. Använd följande [!DNL SQL]-fråga för att kontrollera tidsstämpeln för den senaste exporten. Det ska vara efter tidsstämpeln `modified_at`.
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -137,5 +137,6 @@ bin/magento saas:resync --feed productattributes
 
 ## Relaterad läsning
 
-* Se [Inbyggd Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) i användardokumentationen.
-* Se [Granska loggar och felsöka dataexport och synkronisering i Adobe Commerce SaaS](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) i Adobe Commerce SaaS dataexportguide.
+* [Onboard Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) i vår användardokumentation
+* [Granska loggar och felsöka dataexport och synkronisering i Adobe Commerce SaaS](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) i Adobe Commerce SaaS dataexportguide
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

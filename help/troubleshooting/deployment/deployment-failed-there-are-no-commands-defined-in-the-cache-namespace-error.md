@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på problemet när distri
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: 7efa7b5363c7f77d76c02051c7e0e6a0f38ca87d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Distributionen misslyckades. I loggarna visas ett distributionsfel med ett medde
 
 ### Orsak
 
-Tabellen **core_config_data** innehåller konfigurationer för ett lagrings-ID eller webbplats-ID som inte längre finns i databasen. Detta inträffar när du har importerat en databassäkerhetskopia från en annan instans/miljö, och konfigurationerna för dessa omfattningar finns kvar i databasen trots att de associerade arkiven/webbplatserna har tagits bort.
+Tabellen **`core_config_data`** innehåller konfigurationer för ett lagrings-ID eller webbplats-ID som inte längre finns i databasen. Detta inträffar när du har importerat en databassäkerhetskopia från en annan instans/miljö, och konfigurationerna för dessa omfattningar finns kvar i databasen trots att de associerade arkiven/webbplatserna har tagits bort.
 
 ### Lösning
 
@@ -67,13 +67,13 @@ Identifiera de ogiltiga raderna som återstår från konfigurationerna för att 
    The store that was requested wasn't found. Verify the store and try again.
    ```
 
-1. Kör den här MySql-frågan för att verifiera att arkivet inte kan hittas, vilket visas i felmeddelandet i steg 2.
+1. Kör den här [!DNL MySQL]-frågan för att verifiera att arkivet inte kan hittas, vilket visas i felmeddelandet i steg 2.
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. Kör följande MySql-sats för att ta bort de ogiltiga raderna:
+1. Kör följande [!DNL MySQL]-sats för att ta bort de ogiltiga raderna:
 
    ```sql
    delete from core_config_data where scope='stores' and scope_id not in (select store_id from store);
@@ -91,13 +91,13 @@ Identifiera de ogiltiga raderna som återstår från konfigurationerna för att 
    The website with id X that was requested wasn't found. Verify the website and try again.
    ```
 
-   Kör den här MySql-frågan och verifiera att webbplatsen inte kan hittas:
+   Kör den här [!DNL MySQL]-frågan och verifiera att webbplatsen inte kan hittas:
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. Kör den här MySql-satsen för att ta bort ogiltiga rader från webbplatskonfigurationen:
+1. Kör den här [!DNL MySQL]-satsen för att ta bort ogiltiga rader från webbplatskonfigurationen:
 
    ```sql
    delete from core_config_data where scope='websites' and scope_id not in (select website_id from store_website);
@@ -107,5 +107,6 @@ Kör kommandot `bin/magento` igen för att bekräfta att lösningen fungerade. F
 
 ## Relaterad läsning
 
-* [Adobe Commerce felsökare vid driftsättning](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html)
-* [Kontrollerar distributionsloggen om molnanvändargränssnittet har fel av typen&quot;loggutdragen&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html)
+* [Adobe Commerce felsökare för distribution](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter)
+* [Kontrollerar distributionsloggen om molnanvändargränssnittet har felet&quot;loggad&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

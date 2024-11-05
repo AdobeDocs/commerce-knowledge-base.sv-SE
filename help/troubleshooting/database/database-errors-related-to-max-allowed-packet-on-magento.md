@@ -4,9 +4,9 @@ description: I den här artikeln finns en lösning för databasanslutningsfel i 
 exl-id: e8932b72-91a3-43ea-800e-a6c7a5a17656
 feature: Best Practices, Observability, Services
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Den här artikeln innehåller en lösning för databasanslutningsfel i `var/log/
 
 ## Problem
 
-När en MySQL-klient eller [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html)-servern tar emot ett paket som är större än [max\_allowed\_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet) byte utfärdas ett [ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) -fel (som visas i `exception.log`) och anslutningen stängs. Med vissa klienter kan du även få en *borttappad anslutning till MySQL-servern under ett fråge*-fel om kommunikationspaketet är för stort.
+När en [!DNL MySQL]-klient eller [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html)-servern tar emot ett paket som är större än [max\_allowed\_package](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet) byte, genereras ett [ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) -fel (som visas i `exception.log`) och anslutningen stängs. Med vissa klienter kan du även få en *borttappad anslutning till [!DNL MySQL]-servern under ett fråge*-fel om kommunikationspaketet är för stort.
 
 <u>Steg som ska återskapas</u>
 
@@ -29,7 +29,7 @@ En mängd olika uppgifter kan ge upphov till det här problemet. Det kan vara at
 
 ## Orsak
 
-Standardvärdet 16 MB för MySQL `max_allowed_packets`-inställningen är inte tillräckligt stort för dina behov.
+Standardvärdet 16 MB för inställningen [!DNL MySQL] `max_allowed_packets` är inte tillräckligt stort för dina behov.
 
 ## Lösning
 
@@ -45,7 +45,8 @@ Standardvärdet 16 MB för MySQL `max_allowed_packets`-inställningen är inte t
 
 ## Relaterad läsning
 
-* [Installationshandbok > MySQL](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=max%20allowed%2016%20MB) i utvecklardokumentationen.
-* [Databasöverföringen förlorar anslutningen till MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md) i vår kunskapsbas för support.
+* [Lokal installationsöversikt](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) i utvecklardokumentationen.
+* [Databasöverföringen förlorar anslutningen till  [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) i vår kunskapsbas för support.
 * [Databasera bästa praxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) i vår kunskapsbas för support.
 * [Bästa tillvägagångssätt för att lösa databasprestandaproblem](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) i vår kunskapsbas för support.
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

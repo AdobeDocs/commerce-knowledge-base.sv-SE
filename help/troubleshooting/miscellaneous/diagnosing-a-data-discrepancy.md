@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar för felsökning av avvike
 exl-id: 7d1156cb-9e9b-4426-a0ca-8890b815c245
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ Beroende på hur komplex din analys är kan det krävas att du känner till ett 
 1. Om kolumner som används i analysen kan ändras efter att en rad har lagts till bekräftar du med stöd för att de här kolumnerna [kontrolleras för ändringar](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html), liksom frekvensen för omkontrollen.
 
 **Fortfarande stumpad?** Oroa dig inte - vi är här för att hjälpa till. Skicka oss en begäran med [dessa instruktioner](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md).
+
+## Relaterad läsning
+
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

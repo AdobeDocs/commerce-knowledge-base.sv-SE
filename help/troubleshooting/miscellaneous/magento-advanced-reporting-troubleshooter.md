@@ -4,9 +4,9 @@ description: Du kan lösa problem med avancerad rapportering på Adobe Commerce 
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: ae6dde9ecc01a0e1c561d1e91dbd2f7bc3504fe0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,10 @@ b. NEJ - Slutför de avancerade rapporteringskraven för din webbplats genom att
 
 +++**Används flera basvalutor?**
 
-Används flera basvalutor (i order och konfiguration)? Kör det här SQL-kommandot för att hämta den aktuella konfigurationen: `SELECT value FROM core_config_data WHERE path = 'currency/options/base';`.
+Används flera basvalutor (i order och konfiguration)? Kör det här [!DNL SQL]-kommandot för att hämta den aktuella konfigurationen: `SELECT value FROM core_config_data WHERE path = 'currency/options/base';`.
 
 a. JA - Om frågan returnerar flera rader kan du inte använda Avancerad rapportering eftersom vi bara har stöd för en valuta.\
-b. NEJ - Utdata visar endast en valuta. Exempel: `USD`. Har flera basvalutor använts (i order)? Kör det här SQL-kommandot för att hämta historikorderdata:\
+b. NEJ - Utdata visar endast en valuta. Exempel: `USD`. Har flera basvalutor använts (i order)? Kör det här [!DNL SQL]-kommandot för att hämta historikorderdata:\
 `SELECT DISTINCT base_currency_code FROM sales_order;`.
 **Obs! Det här kommandot kräver en fullständig tabellsökning, så för tabeller med ett stort antal poster kan detta påverka prestanda medan frågan kör** för att hämta historiska orderdata.
 Om flera basvalutor har använts kan du inte använda avancerad rapportering eftersom vi bara har stöd för en valuta. Om utdata endast visar en valuta fortsätter du till [steg 3](#step-3).
@@ -157,3 +157,7 @@ b. NEJ - [skicka en supportanmälan](/help/help-center-guide/help-center/magento
 +++
 
 [Tillbaka till steg 1](#step-1)
+
+## Relaterad läsning
+
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

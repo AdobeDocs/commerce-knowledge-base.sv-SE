@@ -1,19 +1,19 @@
 ---
 title: Identifiera avvikelser med hjälp av dataexport
-description: Den här artikeln innehåller lösningar för felsökning av avvikelser i data från Magento BI. Dataexport är ett användbart verktyg för att jämföra dina Magento BI-data med dina källdata för att identifiera datameddelanden i dina rapporter, särskilt om [checklista för diagnostik av diskrepanser](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md) inte hjälper dig att identifiera problemet. I den här artikeln får du ett exempel på hur datameddelanden kan identifieras med hjälp av dataexport.
+description: Den här artikeln innehåller lösningar för felsökning av avvikelser i data från Magento BI. Dataexport är ett användbart verktyg för att jämföra dina Magento BI-data med dina källdata för att identifiera datameddelanden i dina rapporter, särskilt om [checklista för diagnostik av diskrepanser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) inte hjälper dig att identifiera problemet. I den här artikeln får du ett exempel på hur datameddelanden kan identifieras med hjälp av dataexport.
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
 
 # Identifiera avvikelser med hjälp av dataexport
 
-Den här artikeln innehåller lösningar för felsökning av avvikelser i data från Magento BI. Dataexport är ett användbart verktyg för att jämföra dina Magento BI-data med dina källdata för att identifiera datamatchningsskillnader i dina rapporter, särskilt om checklistan för [diagnostik av datameddelanden](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md) inte hjälper dig att identifiera problemet. I den här artikeln får du ett exempel på hur datameddelanden kan identifieras med hjälp av dataexport.
+Den här artikeln innehåller lösningar för felsökning av avvikelser i data från Magento BI. Dataexport är ett användbart verktyg för att jämföra dina Magento BI-data med dina källdata för att identifiera datamatchningsskillnader i dina rapporter, särskilt om checklistan för [diagnostik av datameddelanden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) inte hjälper dig att identifiera problemet. I den här artikeln får du ett exempel på hur datameddelanden kan identifieras med hjälp av dataexport.
 
 Ta den här analysen, till exempel:
 
@@ -27,9 +27,9 @@ Börja med att klicka på kugghjulet i diagrammets övre högra hörn och sedan 
 
 ![](assets/Export_Discrepancies_5.gif)
 
-På menyn Exportera Raw-data kan du markera den tabell som ska exporteras tillsammans med de kolumner som ska ingå i exporten. Du kan också använda filter på resultatuppsättningen.
+På menyn **Raw-dataexport** kan du markera den tabell som ska exporteras tillsammans med de kolumner som ska ingå i exporten. Du kan också använda filter på resultatuppsättningen.
 
-I vårt exempel använder det **intäktsmått** som används i den här rapporten fältet **order\_total** som definieras i tabellen **order**, med **date** som tidsstämpel. I vår export vill vi inkludera alla **order\_id**-värden för november 2014 och deras **order\_total** . Inga filter används för **intäktsmåttet**, men vi lägger till ett filter i exporten för att begränsa resultatet till bara november 2014.
+I vårt exempel använder det **intäktsmått** som används i den här rapporten fältet **order\_total** som definieras i tabellen **`orders`**, med hjälp av **date** som tidsstämpel. I vår export vill vi inkludera alla **order\_id**-värden för november 2014 och deras **order\_total** . Inga filter används för **intäktsmåttet**, men vi lägger till ett filter i exporten för att begränsa resultatet till bara november 2014.
 
 Så här ser Raw Data Export-menyn ut:
 
@@ -51,7 +51,7 @@ Nu när alla data finns på ett och samma ställe kan vi leta efter orsaken till
 
 Om båda systemen har samma radantal och måttet **Intäkter** inte matchar källdata, måste **order\_total** vara avstängd någonstans. Det är möjligt att fältet **order\_total** har uppdaterats i källdatabasen och att Magento BI inte kan hämta dessa ändringar.
 
-Kontrollera detta genom att kontrollera om kolumnen **order\_total** ommarkeras eller inte. Gå till Data Warehouse Manager och klicka på ordertabellen. Du ser [kontrollfrekvensen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) som anges i avsnittet &#39;Ändringar?&#39; kolumn. Fältet **order\_total** ska ställas in så att det kontrolleras igen så ofta som det förväntas ändras. Om så inte är fallet ska du ställa in den till önskad frekvens för omkontroll.
+Kontrollera detta genom att kontrollera om kolumnen **order\_total** ommarkeras eller inte. Gå till tabellhanteraren och klicka på Datan Warehouse **`orders`**. Du ser [kontrollfrekvensen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) som anges i avsnittet &#39;Ändringar?&#39; kolumn. Fältet **order\_total** ska ställas in så att det kontrolleras igen så ofta som det förväntas ändras. Om så inte är fallet ska du ställa in den till önskad frekvens för omkontroll.
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
@@ -61,7 +61,7 @@ Om kontrollfrekvensen redan är korrekt är något annat fel. Gå till avsnittet
 
 Om källdatabasen har fler rader än Magento BI och mellanrummet är större än det antal order som du kan förvänta dig att komma in under en uppdateringscykel, kan det bero på ett anslutningsproblem. Det innebär att Magento BI inte kan hämta in nya data från källdatabasen, vilket kan hända av flera orsaker.
 
-Gå till sidan Anslutningar och titta på statusen för datakällan som innehåller ordertabellen:
+Gå till sidan Anslutningar och ta en titt på statusen för datakällan som innehåller tabellen `order`:
 
 1. **Om statusen är Återautentiserad** använder anslutningen inte rätt autentiseringsuppgifter. Klicka på anslutningen, ange korrekta autentiseringsuppgifter och försök igen.
 1. **Om statusen är Misslyckad** kanske anslutningen inte är korrekt konfigurerad på serversidan. Felaktiga anslutningar uppstår oftast på grund av ett felaktigt värdnamn eller på grund av att målservern inte accepterar anslutningar på den angivna porten. Klicka på anslutningen och dubbelkontrollera stavningen av värdnamnet och att rätt port har angetts. På serversidan måste du se till att porten kan acceptera anslutningar och att din brandvägg har IP-adressen för Magento BI (54.88.76.97/32) som tillåts. **Om anslutningen fortsätter att misslyckas** kan du gå till avsnittet [Kontakta support](#support) i slutet av den här artikeln för nästa steg.
@@ -87,7 +87,9 @@ Om du inte kan hitta källan till problemet måste du göra en slinga i RJ-stöd
 * **Om källdatabasen har fler rader än Magento BI** och anslutningen visas som Slutförd eller fortsätter att misslyckas, måste vi veta namnet på anslutningen och felmeddelandet om det finns något.
 * **Om din källdatabas har FÄRRE rader än Magento BI, tas** rader inte bort från tabellen och omkontrollsfrekvenser är korrekt angivna, utför en VLOOKUP i ditt kalkylblad **för att hitta vilka order\_id-värden som finns i Magento BI** men inte i din källdatabas. Inkludera dessa värden när du skickar in din biljett.
 
-## Relaterad
+## Relaterad läsning
 
-* [Checklista för diagnostisk diskrepans](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
-* [Skickar en biljett för datadiskrepans](https://support.magento.com/hc/en-us/articles/360016506472-Submitting-a-data-discrepancy-ticket)
+* [Checklista för diagnostisk datameddelandekontroll](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
+* [Adobe Commerce Intelligence tjänstprinciper](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+

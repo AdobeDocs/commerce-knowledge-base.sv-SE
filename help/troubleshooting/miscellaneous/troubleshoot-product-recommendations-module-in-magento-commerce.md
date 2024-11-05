@@ -4,9 +4,9 @@ description: Den här artikeln handlar om felsökningsförslag för modulen [!UI
 exl-id: 431ee31e-eb5b-400c-9c99-cc86613453d7
 feature: Cache, Compliance, Extensions, Marketing Tools, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: af9ee28c5819a9d1b97411210816bfe8a9522614
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Om du har konfigurerat
 magento/product-recommendations
 ```
 
-modul korrekt, (kontrollera [[!UICONTROL Product Recommendations - Install and Configure]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) i utvecklardokumentationen.) men du ser inga rekommendationer, prova följande:
+modul korrekt (Kontrollera [[!UICONTROL Product Recommendations - Install and Configure]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) i utvecklardokumentationen.) men du ser inga rekommendationer, prova följande:
 
 * Det är möjligt att modulen inte har haft tillräckligt med tid för att samla in beteendedata. Låt systemet köras i 24 timmar så att det kan börja samla in data. Överväg att distribuera en rekommendationstyp som inte kräver några beteendedata, till exempel *Mer som denna*.
 
@@ -83,3 +83,5 @@ saas-export
 * [Skapa produkt-Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/admin/create) i Recommendations-handboken för produkten
 * [Granska loggar och felsök](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) i [!DNL SaaS]-guiden för dataexport
 * [[!DNL SaaS] Versionsinformation om dataexporttillägg](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) i Adobe Commerce dataexportguide för [!DNL SaaS]-tjänster
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+

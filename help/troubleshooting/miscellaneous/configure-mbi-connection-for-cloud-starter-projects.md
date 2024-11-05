@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning för när du vill konfigu
 feature: Commerce Intelligence
 role: Developer
 exl-id: 56f6ad64-729d-4e3a-93a9-da1b91bc5c1d
-source-git-commit: b75328202952bf4c8f57ddc538b5c9e4318b2001
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Följ de här stegen:
 
    ![Lägg till offentlig SSH-nyckel](/help/troubleshooting/miscellaneous/assets/add_ssh_key_mbi.png)
 
-1. Ange Business Intelligence Essentials MySQL-autentiseringsuppgifter.
+1. Ange autentiseringsuppgifter för Business Intelligence Essentials [!DNL MySQL].
 
    * Uppdatera din `.magento/services.yaml`.
 
@@ -197,3 +197,7 @@ Följ de här stegen:
 1. Klicka på **[!UICONTROL Save Integration]**.
 1. Du har nu anslutit till ditt Commerce Intelligence Essentials-konto.
 1. Om du är kund hos Adobe Commerce Intelligence Pro kontaktar du din Customer Success Manager eller kundens tekniska rådgivare för att samordna nästa steg.
+
+## Relaterad läsning
+
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar på fel som kan uppstå n�
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -162,3 +162,7 @@ En orsak till felet kan vara att du försöker migrera från en *kopia* av din A
 ### Möjlig lösning
 
 Vi rekommenderar att du testar migreringsprocessen från en kopia av din Adobe Commerce 1-databas för att åtgärda dina migreringsproblem. När du har åtgärdat problemen i kopian startar du om migreringsprocessen från Adobe Commerce 1-databasen. Detta bidrar till att säkerställa en smidig migreringsprocess.
+
+## Relaterad läsning
+
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

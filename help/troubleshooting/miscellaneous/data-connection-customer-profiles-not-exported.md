@@ -3,9 +3,10 @@ title: Kundprofiler visas inte i Experience Platform
 description: I den här artikeln finns felsökningssteg om kundprofildata inte visas i Experience Platform när tillägget  [!DNL Data Connection] används.
 feature: Personalization, Integration, Configuration
 role: Admin, Developer
-source-git-commit: a520ef45f1c55dbf34a98c4f4d3ab49814535434
+exl-id: 4f12b032-0bee-47da-927a-8d4c2d8b8276
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -95,8 +96,8 @@ Kontrollera att följande fält är angivna i Commerce Admin:
 
 ### Query Event Data SaaS-tabell
 
-Anslut och kör följande SQL-fråga för att verifiera att kundprofilposterna visas i
-tabellen `event_data_saas` och att det inte finns några fel:
+Anslut och kör följande [!DNL SQL]-fråga för att verifiera kundprofilsposter som visas i
+`event_data_saas` och att det inte finns några fel:
 
 ```sql
 Copy code
@@ -124,4 +125,5 @@ select * from event_data_saas;
 
 ## Relaterad läsning
 
-Se tillägget [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) i användarhandboken för Commerce Services.
+* [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)-tillägget i användarhandboken för Commerce Services
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

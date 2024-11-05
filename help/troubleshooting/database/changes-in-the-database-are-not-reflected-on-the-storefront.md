@@ -1,19 +1,19 @@
 ---
 title: Ändringar i databasen återspeglas inte i butiken
-description: Den här artikeln innehåller lösningar för att undvika fördröjningar eller avbrott i enhetsuppdateringar. Detta inkluderar hur du undviker att ändra loggtabeller från att bli för stora och hur du konfigurerar MySQL-tabellutlösare.
+description: Den här artikeln innehåller lösningar för att undvika fördröjningar eller avbrott i enhetsuppdateringar. Detta inkluderar hur du undviker att ändra loggtabeller från att bli för stora och hur du ställer in  [!DNL MySQL] tabellutlösare.
 exl-id: ac52c808-299f-4d08-902f-f87db1fa7ca6
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # Ändringar i databasen återspeglas inte i butiken
 
-Den här artikeln innehåller lösningar för att undvika fördröjningar eller avbrott i enhetsuppdateringar. Detta inkluderar hur du undviker att ändra loggtabeller från att bli för stora och hur du konfigurerar MySQL-tabellutlösare.
+Den här artikeln innehåller lösningar för att undvika fördröjningar eller avbrott i enhetsuppdateringar. Detta inkluderar hur du undviker att ändra loggtabeller från att bli för stora och hur du konfigurerar [!DNL MySQL] tabellutlösare.
 
 Berörda produkter och versioner:
 
@@ -32,9 +32,9 @@ Om indexerarna är [konfigurerade att uppdateras av schema](https://devdocs.mage
 
 Registren för ändringsloggar blir så stora om cron-jobbet `indexer_update_all_views` inte slutförs flera gånger.
 
-Ändringsloggtabeller är de databastabeller där ändringar av enheter spåras. En post lagras i en ändringsloggtabell så länge ändringen inte tillämpas, vilket utförs av kron-jobbet `indexer_update_all_views`. Det finns flera ändringsloggtabeller i en Adobe Commerce-databas, de namnges enligt följande mönster: INDEXER\_TABLE\_NAME + ‘\_cl’, till exempel `catalog_category_product_cl`, `catalog_product_category_cl`. Mer information om hur ändringar spåras i databasen finns i artikeln [Indexeringsöversikt > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) i utvecklardokumentationen.
+Ändringsloggtabeller är de databastabeller där ändringar av enheter spåras. En post lagras i en ändringsloggtabell så länge ändringen inte tillämpas, vilket utförs av kron-jobbet `indexer_update_all_views`. Det finns flera ändringsloggtabeller i en Adobe Commerce-databas, de namnges enligt följande mönster: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, till exempel `catalog_category_product_cl`, `catalog_product_category_cl`. Mer information om hur ändringar spåras i databasen finns i artikeln [Indexeringsöversikt > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) i utvecklardokumentationen.
 
-### Utlösare för MySQL-databas har inte konfigurerats
+### [!DNL MySQL] databasutlösare har inte konfigurerats
 
 Du misstänker att databasutlösare inte konfigureras om inga poster läggs till i motsvarande ändringsloggtabell efter att en entitet (produkt, kategori, målregel och så vidare) har lagts till eller ändrats.
 
@@ -60,9 +60,9 @@ Du kan också kontrollera dess status i loggarna genom att söka efter `indexer_
 * `<install_directory>/var/log/cron.log` - för version 2.3.1+ och 2.2.8+
 * `<install_directory>/var/log/system.log` - för tidigare versioner
 
-### Ange MySQL-tabellutlösare igen
+### Återställer [!DNL MySQL] tabellutlösare
 
-Om du vill ställa in de saknade MySQL-tabellutlösarna måste du ställa in indexeringsläget igen:
+Om du vill ställa in de saknade [!DNL MySQL] tabellutlösarna måste du ställa in indexeringsläget igen:
 
 1. Växla till Vid sparande.
 1. Växla tillbaka till Vid schema.
@@ -83,5 +83,6 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## Relaterad läsning
 
-<ul><li title="MySQL-tabeller är för stora"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">MySQL-tabeller är för stora</a> i vår kunskapsbas för support.</li>
-<li title="MySQL-tabeller är för stora"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Översikt över indexeraren &gt; Mview</a> i utvecklardokumentationen.</li></ul>
+* [[!DNL MySQL] tabeller är för stora](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-tables-are-too-large) i vår kunskapsbas för support
+* [Indexering: [!DNL Mview]](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) i utvecklardokumentationen
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

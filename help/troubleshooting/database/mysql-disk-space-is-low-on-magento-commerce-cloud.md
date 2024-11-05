@@ -1,19 +1,19 @@
 ---
-title: Det är ont om diskutrymme på Adobe Commerce i molninfrastrukturen
-description: Den här artikeln innehåller lösningar för när du har mycket lite utrymme eller inte har något utrymme för MySQL på Adobe Commerce i molninfrastruktur. Symtomen kan omfatta avbrott i webbplatser, kunder som inte kan lägga till produkter i kundvagnen, som inte kan ansluta till databasen, få fjärråtkomst till databasen och som inte kan ansluta SSH till noden. Symtomen är också Galera, miljösynkronisering, PHP, databas och distributionsfel som listas nedan. Klicka på [Lösning](https://support.magento.com/hc/en-us/articles/360058472572#solution) för att gå direkt till lösningsavsnittet.
+title: '[!DNL MySQL] diskutrymme börjar ta slut på Adobe Commerce i molninfrastrukturen'
+description: Den här artikeln innehåller lösningar för när du har mycket lite utrymme eller inget utrymme för  [!DNL MySQL]  på Adobe Commerce i molninfrastruktur. Symtomen kan omfatta avbrott i webbplatser, kunder som inte kan lägga till produkter i kundvagnen, som inte kan ansluta till databasen, få fjärråtkomst till databasen och som inte kan ansluta SSH till noden. Symtomen är också Galera, miljösynkronisering, PHP, databas och distributionsfel som listas nedan. Klicka på [Lösning](https://support.magento.com/hc/en-us/articles/360058472572#solution) för att gå direkt till lösningsavsnittet.
 exl-id: 788c709e-59f5-4062-ab25-5ce6508f29f9
 feature: Catalog Management, Categories, Cloud, Paas, Services
 role: Developer
-source-git-commit: 667fcacd5b6cbf56a5fd919d0683ad6a0f979fca
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
 
-# Det är ont om diskutrymme på Adobe Commerce i molninfrastrukturen
+# [!DNL MySQL] diskutrymme börjar ta slut på Adobe Commerce i molninfrastrukturen
 
-Den här artikeln innehåller lösningar för när du har mycket lite utrymme eller inte har något utrymme för MySQL på Adobe Commerce i molninfrastruktur. Symtomen kan omfatta avbrott i webbplatser, kunder som inte kan lägga till produkter i kundvagnen, som inte kan ansluta till databasen, få fjärråtkomst till databasen och som inte kan ansluta SSH till noden. Symtomen är också Galera, miljösynkronisering, PHP, databas och distributionsfel som listas nedan. Klicka på [Lösning](https://support.magento.com/hc/en-us/articles/360058472572#solution) om du vill gå direkt till lösningsavsnittet.
+Den här artikeln innehåller lösningar för när du har mycket lite utrymme eller inget utrymme för [!DNL MySQL] på Adobe Commerce i molninfrastruktur. Symtomen kan omfatta avbrott i webbplatser, kunder som inte kan lägga till produkter i kundvagnen, som inte kan ansluta till databasen, få fjärråtkomst till databasen och som inte kan ansluta SSH till noden. Symtomen är också Galera, miljösynkronisering, PHP, databas och distributionsfel som listas nedan. Klicka på [Lösning](https://support.magento.com/hc/en-us/articles/360058472572#solution) om du vill gå direkt till lösningsavsnittet.
 
 ## Berörda produkter och versioner
 
@@ -37,18 +37,18 @@ Fel vid miljösynkronisering:
 
 PHP-fel:
 
-* *php: SUB::\_\_construct(): MySQL-servern har försvunnit.*
+* *php: SUB::\_\_construct(): [!DNL MySQL]-servern har försvunnit.*
 * *php-fel: SUB::\_\_construct(): Fel vid läsning av gratulationspaket. PID=NNNN.*
-* *FEL 2013 (HY000): Anslutningen till MySQL-servern bröts vid &#39;läsning av ursprungligt kommunikationspaket&#39;, systemfel: 0 &quot;Internt fel/kontroll (inte systemfel)&quot;.*
+* *FEL 2013 (HY000): Anslutningen till [!DNL MySQL]-servern bröts vid &#39;Läser ursprungligt kommunikationspaket&#39;, systemfel: 0 &quot;Internt fel/kontroll (inte systemfel)&quot;.*
 
 Databasfel:
 
 * *Fel\_kod: 1114*
 * *InnoDB: Fel (slut på diskutrymme) vid skrivning av ordnod till FTS-tilläggsindextabell.*
-* *SQLSTATE\[HY000\]: Allmänt fel: 2006 MySQL-servern har försvunnit*
+* *SQLSTATE\[HY000\]: Allmänt fel: 2006 [!DNL MySQL]-servern har försvunnit*
 * *\[ERROR\] Slav SQL: Felet &quot;Tabellen `<table\_name>` är full&quot; i frågan.*
 * *Enheten mysql.service har försatts i ett felaktigt tillstånd.*
-* *fel: Det går inte att ansluta till den lokala MySQL-servern via socketen /var/run/mysqld/mysqld.sock (111 Anslutning nekad)*
+* *fel: Det går inte att ansluta till den lokala [!DNL MySQL]-servern via socketen /var/run/mysqld/mysqld.sock (111 Anslutning nekad)*
 * *1205 Tidsgränsen för låsning har överskridits. Försök starta om transaktionen. Frågan var: INSERT INTO \`cron\_schedule\` (\`job\_code\`, \`status\`, \`created\_at\`, \`edul\_at\`) VÄRDEN (?, ?, `YYYY-02-07 HH:MM:SS`, `YYYY-MM-DD HH:MM:SS`)*
 
 Distributionsfel:
@@ -58,17 +58,17 @@ Distributionsfel:
 * *Uppgraderar schema.. SQLSTATE\[HY000\]: Allmänt fel: 114 Tabellen `<table\_name>` är full*
 * *SQLSTATE\[HY000\]: Allmänt fel: 3 Fel vid skrivning av fil ./`<environment name>`/\#*
 * *W: `<filename>` (Felkod: 28 &quot;Inget utrymme återstår på enheten&quot;)* *Indexeringsfel (tillsammans med tillfälliga Ibd-filer som inte har sparats in i /tmp):*
-* *Katalogregelindexeraren genererar ett undantag. De temporära tabellerna rensas inte i efterbearbetningen och fyller sedan i disken på den aktuella MySQL-huvudnoden*
+* *Katalogregelindexeraren genererar ett undantag. De temporära tabellerna rensas inte i efterbearbetningen och fyller sedan i disken på den aktuella [!DNL MySQL]-huvudnoden*
 
 <u>Steg som ska återskapas</u>:
 
-Ett sätt att kontrollera om `/data/mysql` (eller var MySQL-datalagringen är konfigurerad) är fullt är genom att köra följande kommando i CLI:
+Ett sätt att kontrollera om datalagringen `/data/mysql` (eller där [!DNL MySQL] är konfigurerad) är full är att köra följande kommando i CLI:
 
 ```bash
 df -h
 ```
 
-Mindre än 10 % av det lediga minnet på MySQL-disken är en primär indikator på ett driftstopp.
+Mindre än 10 % av det lediga minnet på disken [!DNL MySQL] är en primär indikator på ett driftstopp.
 
 ## Orsak
 
@@ -76,7 +76,7 @@ Monteringen `/data/mysql` kan bli full på grund av en rad problem, som att det 
 
 ## Lösning
 
-Det finns ett omedelbart steg som du kan ta för att få tillbaka MySQL på spåret (eller förhindra att det fastnar): frigör utrymme genom att tömma stora tabeller.
+Det finns ett omedelbart steg som du kan ta för att få [!DNL MySQL] tillbaka på spår (eller förhindra att den fastnar): frigör utrymme genom att tömma stora tabeller.
 
 Men en långsiktig lösning skulle allokera mer utrymme och följa [Bästa praxis för databaser](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html), inklusive aktivering av funktionen [Arkiv för beställning/faktura/leverans](https://docs.magento.com/user-guide/sales/order-archive.html).
 
@@ -128,7 +128,7 @@ Kontrollera om det finns stora `ibtmp1`-filer på `/data/mysql` i varje nod: det
 
 Kontrollera om det finns stora tabeller och tänk på om någon av dem kan tömmas. Gör detta på den primära (käll-) noden.
 
-Tabeller med rapporter kan till exempel oftast tömmas. Mer information om hur du söker efter stora tabeller finns i artikeln [Sök efter stora MySQL-tabeller](/help/how-to/general/find-large-mysql-tables.md) .
+Tabeller med rapporter kan till exempel oftast tömmas. Mer information om hur du söker efter stora tabeller finns i artikeln [Sök efter stora [!DNL MySQL] tabeller](/help/how-to/general/find-large-mysql-tables.md) .
 
 Om det inte finns några stora rapporttabeller bör du överväga att tömma `_index`-tabeller, bara för att returnera Adobe Commerce-programmet på rätt spår. `index_price` tabeller skulle vara de bästa kandidaterna. Exempel: `catalog_category_product_index_storeX` tabeller, där X kan ha värden från &quot;1&quot; till det maximala antalet arkiv. Tänk på att du måste indexera om för att återställa data i dessa tabeller, och om det gäller stora kataloger kan omindexeringen ta lång tid.
 
@@ -136,15 +136,19 @@ När du har tömt dem väntar du på att wsrep-synkroniseringen ska slutföras. 
 
 ### Kontrollera inställningar för binär loggning
 
-Kontrollera binära loggningsinställningar för MySQL-servern: `log_bin` och `log_bin_index`. Om inställningarna är aktiverade kan loggfilerna bli enorma. [Skapa en supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) som begär att stora binära loggfiler ska rensas. Begär också att du kontrollerar att binär loggning konfigureras korrekt så att loggarna rensas regelbundet och inte tar för mycket utrymme.
+Kontrollera de binära loggningsinställningarna för [!DNL MySQL]-servern: `log_bin` och `log_bin_index`. Om inställningarna är aktiverade kan loggfilerna bli enorma. [Skapa en supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) som begär att stora binära loggfiler ska rensas. Begär också att du kontrollerar att binär loggning konfigureras korrekt så att loggarna rensas regelbundet och inte tar för mycket utrymme.
 
-Om du inte har tillgång till inställningarna för MySQL-servern ber du support att kontrollera dem.
+Om du inte har tillgång till serverinställningarna för [!DNL MySQL] ber du support att kontrollera det.
 
 ### Allokera/köp mer utrymme
 
-Allokera mer diskutrymme för MySQL om du inte har använt något. Mer information om hur du kontrollerar om det finns ledigt diskutrymme finns i artikeln [Kontrollera begränsning av diskutrymme](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md).
+Allokera mer diskutrymme för [!DNL MySQL] om du inte har använt något. Mer information om hur du kontrollerar om det finns ledigt diskutrymme finns i artikeln [Kontrollera begränsning av diskutrymme](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md).
 
-* För Starter-planen, alla miljöer och Pro-planintegreringsmiljöer kan du allokera diskutrymmet om du inte använder något. Mer information finns i [Allokera mer utrymme för MySQL](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md).
+* För Starter-planen, alla miljöer och Pro-planintegreringsmiljöer kan du allokera diskutrymmet om du inte använder något. Mer information finns i [Allokera mer utrymme för [!DNL MySQL]](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md).
 * För Pro-planmiljöer för mellanlagrings- och produktionsmiljöer [kontaktar du support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att tilldela mer diskutrymme om du inte har använt något.
 
 Om du har nått din utrymmesgräns och fortfarande har problem med lite utrymme kan du överväga att köpa mer diskutrymme. Kontakta Adobe Account Team för mer information.
+
+## Relaterad läsning
+
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

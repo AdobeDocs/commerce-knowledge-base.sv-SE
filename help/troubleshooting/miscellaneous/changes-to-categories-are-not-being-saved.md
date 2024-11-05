@@ -4,9 +4,9 @@ description: I den här artikeln finns en fix som du kan använda när du uppdat
 exl-id: d951205c-add9-478c-9c7d-2ba975d53b14
 feature: Categories
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -88,4 +88,8 @@ Följ de här stegen:
 1. Hitta kategoriposterna med samma `entity_id` och samma `created_in`-värde.
 1. Markera posten där `row_id` = `entity_id` och kopiera värdet `updated_in`.
 1. Markera posten där `row_id` inte är lika med `entity_id` och klistra in det kopierade `updated_in`-värdet som `created_in`-värde. Se skärmbilden nedan som en illustration.    ![Kopierar värdet created_in.png](assets/copy_created-in_value.png)
-1. Kontrollera att kategoriuppdateringsposten, vars `created_in`-värde du har uppdaterat (i steg 3), finns i tabellen `staging_update`. *Om till exempel:* Om det kopierade `created_in`-värdet är 1509281953 måste entiteten med `row_id` = 1509281953 finnas i tabellen `staging_update`
+1. Kontrollera att kategoriuppdateringsposten, vars `created_in`-värde du har uppdaterat (i steg 3), finns i tabellen `staging_update`. *Om det kopierade `created_in`-värdet till exempel är 1509281953 måste entiteten med `row_id` = 1509281953 finnas i tabellen `staging_update`.*
+
+## Relaterad läsning
+
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

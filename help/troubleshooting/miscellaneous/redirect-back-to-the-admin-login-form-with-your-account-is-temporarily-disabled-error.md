@@ -1,19 +1,19 @@
 ---
-title: Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet"Ditt konto är tillfälligt inaktiverat"
+title: Omdirigering tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet"Ditt konto är tillfälligt inaktiverat"
 description: 'I den här artikeln beskrivs möjliga lösningar på inloggningsproblemet för Commerce Admin, där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *"Ditt konto är tillfälligt inaktiverat"*. Den föreslagna lösningen är att kontrollera och korrigera inställningarna för administratörsanvändardatabasen.'''
 exl-id: 1c7ffa1c-1fb1-4f69-9534-77d1e119318a
 feature: Admin Workspace, Customer Service
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: f87263cde5aa001f78abc368c949ce150feecb91
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
 
-# Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Ditt konto är tillfälligt inaktiverat&quot;
+# Omdirigera tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet&quot;Ditt konto är tillfälligt inaktiverat&quot;
 
-Den här artikeln innehåller möjliga lösningar på inloggningsproblemet för Commerce Admin, där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *&quot;Ditt konto är tillfälligt inaktiverat&quot;*. Den föreslagna lösningen är att kontrollera och korrigera inställningarna för administratörsanvändardatabasen.
+Den här artikeln innehåller möjliga lösningar på inloggningsproblemet [!UICONTROL Commerce Admin], där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *&quot;Ditt konto är tillfälligt inaktiverat&quot;*. Den föreslagna lösningen är att kontrollera och korrigera inställningarna för administratörsanvändardatabasen.
 
 ## Berörda versioner:
 
@@ -23,12 +23,12 @@ Alla Adobe Commerce-versioner och -utgåvor
 
 <u>Steg som ska återskapas</u>:
 
-1. Gå till sidan Commerce Admin.
-1. Ange dina inloggningsuppgifter och klicka på Logga in.
+1. Gå till sidan **[!UICONTROL Commerce Admin]**.
+1. Ange dina autentiseringsuppgifter och klicka på **Logga in**.
 
 <u>Förväntat resultat</u>:
 
-Du loggas in på Commerce Admin.
+Du loggas in på [!UICONTROL Commerce Admin].
 
 <u>Faktiskt resultat</u>:
 
@@ -37,8 +37,9 @@ Du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande:
 ## Lösning
 
 1. Skapa en säkerhetskopia av databasen.
-1. Använd ett databasverktyg som [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) eller öppna databasen manuellt från kommandoraden. I databastabellen `admin_user` kontrollerar du om `is_active` är inställd på `1` och `lock_expires` är `NULL` för din administratörsanvändarpost. Återställ dessa värden om det behövs.
+1. Använd ett databasverktyg som [[!DNL phpMyAdmin]](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) eller öppna databasen manuellt från kommandoraden. I databastabellen `admin_user` kontrollerar du om `is_active` är inställd på `1` och `lock_expires` är `NULL` för din administratörsanvändarpost. Återställ dessa värden om det behövs.
 
-## Relaterad läsning i vår kunskapsbas
+## Relaterad läsning
 
-* [Omdirigera tillbaka till inloggningsformuläret utan fel när du försöker logga in på Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
+* [Omdirigera tillbaka till inloggningsformuläret utan fel vid inloggning till [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin)
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

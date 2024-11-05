@@ -1,19 +1,19 @@
 ---
-title: Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet"Din nuvarande session har gått ut"
-description: 'I den här artikeln beskrivs möjliga lösningar på inloggningsproblemet för Commerce Admin, där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *"Din nuvarande session har gått ut"*. Lösningarna omfattar kontroll av servertidsinställningar och ändring av inställningar för sessionslagring.'
+title: '"Omdirigera tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet "Din nuvarande session har gått ut""'
+description: 'I den här artikeln finns möjliga lösningar på inloggningsproblemet [!UICONTROL Commerce Admin], där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *"Din nuvarande session har gått ut"*. Lösningarna omfattar kontroll av servertidsinställningar och ändring av inställningar för sessionslagring.'
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 3f205b1d755bda7056f47bf1e1d036feb47ebadd
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-# Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Din nuvarande session har gått ut&quot;
+# Omdirigera tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet&quot;Din nuvarande session har gått ut&quot;
 
-I den här artikeln beskrivs möjliga lösningar på inloggningsproblemet för Commerce Admin, där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *&quot;Din nuvarande session har gått ut&quot;*. Lösningarna omfattar kontroll av servertidsinställningar och ändring av inställningar för sessionslagring.
+Den här artikeln innehåller möjliga lösningar på inloggningsproblemet [!UICONTROL Commerce Admin], där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *&quot;Din aktuella session har gått ut&quot;*. Lösningarna omfattar kontroll av servertidsinställningar och ändring av inställningar för sessionslagring.
 
 ## Berörda versioner:
 
@@ -23,12 +23,12 @@ Alla Adobe Commerce-versioner och -utgåvor
 
 <u>Steg som ska återskapas</u>:
 
-1. Gå till sidan Commerce Admin.
-1. Ange dina inloggningsuppgifter och klicka på Logga in.
+1. Gå till sidan **[!UICONTROL Commerce Admin]**.
+1. Ange dina autentiseringsuppgifter och klicka på **Logga in**.
 
 <u>Förväntat resultat</u>:
 
-Du loggas in på Commerce Admin.
+Du loggas in på [!UICONTROL Commerce Admin].
 
 <u>Faktiskt resultat</u>:
 
@@ -70,6 +70,8 @@ Kör kommandot `bin/magento app:config:import` om du vill importera konfiguratio
 ## Relaterad läsning
 
 * [Importera data från konfigurationsfiler](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) i utvecklardokumentationen
-* [Konfigurera Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) i utvecklardokumentationen
-* [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felet&quot;Ditt konto är tillfälligt inaktiverat&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) i vår kunskapsbas för support
-* [Omdirigera tillbaka till inloggningsformuläret utan fel när du försöker logga in på Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md) i vår kunskapsbas för support
+* [Konfigurera [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) i utvecklardokumentationen
+* [Omdirigera tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet&quot;Ditt konto är tillfälligt inaktiverat&quot; ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) i vår kunskapsbas för support
+* [Omdirigera tillbaka till inloggningsformuläret utan fel när du försöker logga in på [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) i vår kunskapsbas för support
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+

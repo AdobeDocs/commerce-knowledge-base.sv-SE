@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på problemet när du få
 exl-id: 83089465-f810-4a3b-bdb6-4720b44f0b49
 feature: System
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -61,10 +61,11 @@ Detta inträffar när anslutningsprogrammet försöker bearbeta `magento.invento
 
 ## Lösning
 
-Du löser problemet genom att köra följande SQL-sats i CLI som tar bort alla poster i tabellen `mcom_api_messages`:
+Du löser problemet genom att köra följande [!DNL SQL]-sats i CLI som tar bort alla poster i tabellen `mcom_api_messages`:
 
 `delete from mcom_api_messages;`
 
 ## Relaterad läsning
 
-Se självstudiekursen [OMS Docs ](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/) för konfiguration av OMS Connector.
+* OMS Docs [OMS Connector Setup Tutorial](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/)
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

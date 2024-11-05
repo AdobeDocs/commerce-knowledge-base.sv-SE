@@ -4,9 +4,9 @@ description: I den här artikeln finns en lösning på problemet där du ser ett
 feature: Variables, Upgrade
 role: Developer
 exl-id: 92d1d15a-04da-4ba4-b6b8-5c491af9c4c1
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -36,5 +36,6 @@ Kör om du vill aktivera [`CleanExpiredTokens.php`](https://github.com/magento/m
 
 ## Relaterad läsning
 
-* [Tjänster > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html) i referenshandboken för Commerce-konfigurationen.
-* [Autentiseringshandbok](https://developer.adobe.com/developer-console/docs/guides/authentication/) i Adobe Developer-handboken.
+* [Tjänster > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html) i referenshandboken för Commerce-konfigurationen
+* [Autentiseringshandbok](https://developer.adobe.com/developer-console/docs/guides/authentication/) i Adobe Developer-handboken
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

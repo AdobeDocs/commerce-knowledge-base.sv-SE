@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på problemet där det fi
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
 exl-id: 09d5c321-9c45-4041-b6f6-831efca0977e
-source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Där `$entityID = ID` av kategori/produkt/kundvagnsprisregel/katalogprisregel/CM
 |------------------|-----------------------------------|------------------|
 | Kategori/produkt | catalog_category_entity/catalog_product_entity | entity_id |
 | Kundprisregel/katalogprisregel | salesrule/catalogrle | rule_id |
-| CMS-sida | cms_page | page_id |
+| CMS Page | cms_page | page_id |
 
 ## Orsak
 
@@ -67,5 +67,6 @@ Detta är det förväntade beteendet och leder bara till problem om det finns sk
 
 ## Relaterad läsning
 
-* [Ändringar i kategorier sparas inte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) i vår kunskapsbas för support.
-* [Duplicera poster i katalogtabellen efter redigering av slutdatumet för en schemauppdatering](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) i vår kunskapsbas för support.
+* [Ändringar i kategorier sparas inte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) i vår kunskapsbas för support
+* [Duplicera poster i katalogtabellen efter redigering av slutdatumet för en schemauppdatering](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) i vår kunskapsbas för support
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

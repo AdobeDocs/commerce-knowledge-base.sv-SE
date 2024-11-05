@@ -4,9 +4,9 @@ description: Klicka på varje fråga för att visa svarsinformationen i varje st
 exl-id: 10a2313e-cc82-4ffc-9247-624884f3e165
 feature: Support
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Klicka på varje fråga för att visa svarsinformationen i varje steg i felsöka
 
 +++**Visar <https://status.adobe.com> några problem?**
 
-a. JA - Om du har markerat [Adobe Magento status](https://status.adobe.com/products/3350) och ett problem har uppstått öppnar du en [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för ytterligare information.\
-b. NEJ - Om du har markerat [Adobe Magento status](https://status.adobe.com/products/3350) och inget problem visas går du vidare till [steg 2](#step-2).
+a. JA - Om du har markerat [Adobe Commerce-status](https://status.adobe.com/cloud/experience_cloud) och ett problem har uppstått öppnar du en [supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) för ytterligare information.\
+b. NEJ - Om du har markerat [Adobe Commerce-status](https://status.adobe.com/cloud/experience_cloud) och det inte har uppstått något problem går du vidare till [Steg 2](#step-2).
 
 +++
 
@@ -28,8 +28,8 @@ b. NEJ - Om du har markerat [Adobe Magento status](https://status.adobe.com/prod
 
 +++**Visar http://status.fastly.com några problem?**
 
-a. JA - Om du har markerat [Snabbstatus](https://status.fastly.com/) och det har uppstått ett problem, öppnar du en [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för mer information.\
-b. NEJ - Om du har markerat [Snabbstatus](https://status.fastly.com/) och inget problem visas går du vidare till [steg 3](#step-3).
+a. JA - Om du har markerat [[!DNL Fastly] Status](https://status.fastly.com/) och det har uppstått ett problem, öppnar du en [supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) för ytterligare information.\
+b. NEJ - Om du har markerat [[!DNL Fastly] Status](https://status.fastly.com/) och det inte gick att visa ett problem går du vidare till [Steg 3](#step-3).
 
 +++
 
@@ -39,7 +39,7 @@ b. NEJ - Om du har markerat [Snabbstatus](https://status.fastly.com/) och inget 
 
 Så här kontrollerar du felkoder i **Firefox**: Klicka på ikonen **Öppna meny** > **Webbutvecklare** > **Växla verktyg** > fliken **Nätverk** > **Alla** filter > kolumnen **Status** . Så här kontrollerar du felkoder i **Chrome**: Klicka på ikonen **Öppna meny** > **Fler verktyg** > **Utvecklarverktyg** > fliken **Nätverk** > **Alla** filter > kolumnen **Status** .
 
-a. JA - Öppna en [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill ha mer information.\
+a. JA - Öppna en [supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) om du vill ha mer information.\
 b. NEJ - Fortsätt till [steg 4](#step-4).
 
 +++
@@ -48,11 +48,11 @@ b. NEJ - Fortsätt till [steg 4](#step-4).
 
 +++**Vilken webbplatsfelkod fick du?**
 
-a. Felkod 500 - Kontrollera loggen för `/var/log/platform/`. Om dessa data inte utgör problemet för dig kan du öppna en [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och inkludera den felsökningsinformation som du har gjort hittills för ytterligare utredning.
+a. Felkod 500 - Kontrollera loggen för `/var/log/platform/`. Om dessa data inte utgör problemet för dig kan du öppna en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) och inkludera den felsökningsinformation som du har gjort hittills för ytterligare utredning.
 
-b. Felkod 503 - Kontrollera loggen för `var/reports`. Om dessa data inte utgör problemet för dig kan du öppna en [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och inkludera den felsökningsinformation som du har gjort hittills för ytterligare utredning.
+b. Felkod 503 - Kontrollera loggen för `var/reports`. Om dessa data inte utgör problemet för dig kan du öppna en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) och inkludera den felsökningsinformation som du har gjort hittills för ytterligare utredning.
 
-c. Felkod 404 - Kör följande fråga: `SELECT f.flag_data->>'$.current_version' as flag_version, (su.id IS NOT NULL) as update_exists FROM flag f LEFT JOIN staging_update su ON su.id = f.flag_data->>'$.current_version' WHERE flag_code = 'staging';` Om frågan returnerar en tabell där `update_exists`-värdet är &quot;0&quot;, se artikeln [Error 404 på alla sidor, butiker och administratörer på grund av problem med innehållsmellanlagring](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md) . I alla andra fall fortsätter du till [steg 5](#step-5).
+c. Felkod 404 - Kör följande fråga: `SELECT f.flag_data->>'$.current_version' as flag_version, (su.id IS NOT NULL) as update_exists FROM flag f LEFT JOIN staging_update su ON su.id = f.flag_data->>'$.current_version' WHERE flag_code = 'staging';` Om frågan returnerar en tabell där `update_exists`-värdet är &quot;0&quot;, se artikeln [Error 404 på alla sidor, butiker och administratörer på grund av problem med innehållsmellanlagring](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue) . I alla andra fall fortsätter du till [steg 5](#step-5).
 
 d. Andra felkoder - fortsätt till [steg 5](#step-5).
 
@@ -60,9 +60,9 @@ d. Andra felkoder - fortsätt till [steg 5](#step-5).
 
 ## Steg 5 {#step-5}
 
-+++**Är platsen långsam, eller har hög serverbelastning, hög processorbelastning, långsam behandling av begäranden eller avbrott i MySQL eller Redis?**
++++**Är platsen långsam, eller har hög serverbelastning, hög processorbelastning, långsam behandling av begäranden eller avbrott i [!DNL MySQL] eller Redis?**
 
-a. JA - Fortsätt med steg för [Sökning efter DDOS-attacker från CLI](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md).\
+a. JA - Fortsätt med steg för [Sökning efter DDOS-attacker från CLI](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli).\
 b. NO - Kontrollera loggarna för `/var/log/exception.log` och `/var/log/deploy.log`, och om dessa data inte utgör problemet för dig, gå till [steg 6](#step-6).
 
 +++
@@ -80,16 +80,16 @@ b. NEJ - Fortsätt till [steg 7](#step-7).
 
 +++**Har du fel i Elasticsearch?**
 
-a. JA - Fortsätt med steg för att [kontrollera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html).\
+a. JA - Fortsätt med steg för att [kontrollera Elasticsearch](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch/).\
 b. NEJ - Fortsätt till [steg 8](#step-8).
 
 +++
 
 ## Steg 8 {#step-8}
 
-+++**Har din MySQL-databas långsamma frågor eller felaktiga frågor?**
++++**Har din [!DNL MySQL]-databas långsamma frågor eller felaktiga frågor?**
 
-a. JA - Fortsätt med [Kontrollera långsamma frågor och processer som tar för lång tid i MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md) och kontrollera frågestrukturen i den här [MySQL-frågesjälvstudiekursen](https://dev.mysql.com/doc/refman/5.5/en/entering-queries.html).\
+a. JA - Fortsätt med [Kontrollera långsamma frågor och processer som tar för lång tid i [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql) and checking your query structure in this [[!DNL MySQL] frågesjälvstudiekursen](https://dev.mysql.com/doc/refman/5.5/en/entering-queries.html).\
 b. NEJ - Fortsätt till [steg 9](#step-9).
 
 +++
@@ -98,7 +98,7 @@ b. NEJ - Fortsätt till [steg 9](#step-9).
 
 +++**Är ditt statiska innehåll inte tillgängligt?**
 
-a. JA - fortsätt med att konsultera artikeln [Kontrollera statiskt innehåll](https://support.magento.com/hc/en-us/articles/360031624091).\
+a. JA - fortsätt med att konsultera artikeln [Kontrollera statiskt innehåll](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment).\
 b. NEJ - Fortsätt till [steg 10](#step-10).
 
 +++
@@ -107,7 +107,7 @@ b. NEJ - Fortsätt till [steg 10](#step-10).
 
 +++**Ser du allvarliga PHP-fel i dina loggar?**
 
-a. JA - fortsätt med att konsultera [vanliga PHP-allvarliga fel och lösningar](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md).\
+a. JA - fortsätt med att konsultera [vanliga PHP-allvarliga fel och lösningar](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions).\
 b. NEJ - Fortsätt till [steg 11](#step-11).
 
 +++
@@ -116,7 +116,7 @@ b. NEJ - Fortsätt till [steg 11](#step-11).
 
 +++**Ser du Redis-fel?**
 
-a. JA - Fortsätt med stegen för att [verifiera att Redis körs](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify) och för [Redis-felsökning](https://redis.io/topics/problems).\
+a. JA - Fortsätt med stegen för att [verifiera [!DNL Redis] körs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/redis#troubleshooting-redis) och för [[!DNL Redis] felsökning](https://redis.io/topics/problems).\
 b. NEJ - Fortsätt till [steg 12](#step-12).
 
 +++
@@ -125,8 +125,8 @@ b. NEJ - Fortsätt till [steg 12](#step-12).
 
 +++**Ser du indexeringsfel?**
 
-a. JA - Om indexet är låst av en annan process läser du [Index är låst av en annan process](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md). Om du har andra indexeringsfel öppnar du en [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för ytterligare information.\
-b. NEJ - Öppna en [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill ha mer information.
+a. JA - Om indexet är låst av en annan process läser du [Index är låst av en annan process](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/index-is-locked-by-another-process). Om du har andra indexeringsfel öppnar du en [supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) för ytterligare information.\
+b. NEJ - Öppna en [supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) om du vill ha mer information.
 
 +++
 
@@ -134,7 +134,7 @@ b. NEJ - Öppna en [supportbiljett](/help/help-center-guide/help-center/magento-
 
 +++**Har du problem med dina anpassade moduler?**
 
-a. JA - Gå till [Allmän felsökningshjälp för anpassad modul](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md).\
+a. JA - Gå till [Allmän felsökningshjälp för anpassad modul](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help).\
 b. NEJ - Fortsätt till [steg 14](#step-14).
 
 +++
@@ -143,7 +143,7 @@ b. NEJ - Fortsätt till [steg 14](#step-14).
 
 +++**Har du fel efter krok?**
 
-a. JA - Fortsätt med att kontrollera MySQL-felet i det här [felmeddelandet för MySQL-servern](https://dev.mysql.com/doc/mysql-errors/5.7/en/server-error-reference.html).\
+a. JA - Fortsätt med att kontrollera ditt [!DNL MySQL]-fel i den här [[!DNL MySQL] serverfelmeddelandereferensen](https://dev.mysql.com/doc/mysql-errors/5.7/en/server-error-reference.html).\
 b. NEJ - Fortsätt till [steg 15](#step-15).
 
 +++
@@ -152,7 +152,7 @@ b. NEJ - Fortsätt till [steg 15](#step-15).
 
 +++**Har du problem med kompositörens korrigeringar?**
 
-a. JA - fortsätt med att konsultera [När du använder en korrigeringsfil tas din plats bort](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md).\
+a. JA - fortsätt med att konsultera [När du använder en korrigeringsfil tas din plats bort](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down).\
 b. NEJ - Fortsätt till [steg 16](#step-16).
 
 +++
@@ -161,20 +161,24 @@ b. NEJ - Fortsätt till [steg 16](#step-16).
 
 +++**Har du SQL-databasfel?**
 
-a. JA - Fortsätt med att kontrollera MySQL-felet i det här [felmeddelandet för MySQL-servern](https://dev.mysql.com/doc/mysql-errors/5.7/en/server-error-reference.html).\
+a. JA - Fortsätt med att kontrollera ditt [!DNL MySQL]-fel i den här [[!DNL MySQL] serverfelmeddelandereferensen](https://dev.mysql.com/doc/mysql-errors/5.7/en/server-error-reference.html).\
 b. NEJ - Fortsätt till [steg 17](#step-17).
 
 +++
 
 ## Steg 17 {#step-17}
 
-+++**Har du dödläge för MySQL-databasen eller en MySQL-databas som inte svarar?**
++++**Har du [!DNL MySQL] databaslås som inte fungerar eller en [!DNL MySQL] databas som inte svarar?**
 
-a. JA - Fortsätt med att söka efter döda MySQL-lås i den här [Deadlocks-artikeln i MySQL](/help/troubleshooting/database/deadlocks-in-mysql.md).\
-b. NEJ - Öppna en [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill ha mer information.
+a. JA - Fortsätt med att kontrollera om det finns [!DNL MySQL]-deadlocks i den här [Deadlocks in [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/deadlocks-in-mysql)-artikeln.\
+b. NEJ - Öppna en [supportbiljett](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) om du vill ha mer information.
 
 +++
 
 [Tillbaka till steg 1](#step-1)
 
-Klicka [HÄR](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md) om du vill visa felsökningsflödesschemat för webbplats.
+Klicka [HÄR](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram) om du vill visa felsökningsflödesschemat för webbplats.
+
+## Relaterad läsning
+
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

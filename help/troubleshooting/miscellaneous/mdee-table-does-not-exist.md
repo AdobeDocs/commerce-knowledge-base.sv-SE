@@ -3,9 +3,10 @@ title: Åtgärda data som inte har uppdaterats i  [!DNL Commerce Data Exporter] 
 description: Den här artikeln innehåller en lösning för att åtgärda datasynkroniseringsproblem som orsakas av användning av fel vy-ID i  [!DNL Commerce Data Exporter mview] prenumerationen.
 feature: Data Import/Export, Saas, Logs
 role: Developer
-source-git-commit: 3581e39e7054cf765403fd963e22a051457c1097
+exl-id: 50f2223b-bfcf-4c3c-b0f1-dbcc4365edc2
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -48,4 +49,5 @@ I följande exempel visas koden som anger tabellerna som spåras av prenumeratio
 
 ## Relaterad läsning
 
-[[!DNL SaaS] Versionsinformation om dataexporttillägg](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) i Adobe Commerce dataexportguide för [!DNL SaaS]-tjänster
+* [[!DNL SaaS] Versionsinformation om dataexporttillägg](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) i Adobe Commerce dataexportguide för [!DNL SaaS]-tjänster
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

@@ -1,19 +1,19 @@
 ---
 title: Fel 404 på alla sidor på grund av problem med Content Staging
-description: I den här artikeln finns en fix för Adobe Commerce lokalt och Adobe Commerce om molninfrastrukturproblem där du får ett 404-fel när du öppnar en butikssida eller Commerce Admin.
+description: I den här artikeln finns en korrigering för Adobe Commerce lokalt och Adobe Commerce om molninfrastrukturproblem, där du får ett 404-fel när du öppnar en butikssida eller [!UICONTROL Commerce Admin].
 exl-id: 62d8ba6e-8550-4e1e-8e8d-8f319c92778a
 feature: CMS, Catalog Management, Categories, Page Content, Staging
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # Fel 404 på alla sidor på grund av problem med Content Staging
 
-I den här artikeln finns en fix för Adobe Commerce lokalt och Adobe Commerce om molninfrastrukturproblem där du får ett 404-fel när du öppnar en butikssida eller Commerce Admin.
+I den här artikeln finns en korrigering för Adobe Commerce lokalt och Adobe Commerce om molninfrastrukturproblem, där du får ett 404-fel när du öppnar en butikssida eller [!UICONTROL Commerce Admin].
 
 ## Berörda produkter och versioner
 
@@ -24,7 +24,7 @@ I den här artikeln finns en fix för Adobe Commerce lokalt och Adobe Commerce o
 
 >[!NOTE]
 >
->Den här artikeln gäller inte den situation där du får ett 404-fel när du försöker [förhandsgranska mellanlagringsuppdateringen](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change). Öppna en [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du stöter på det problemet.
+>Den här artikeln gäller inte den situation där du får ett 404-fel när du försöker [förhandsgranska mellanlagringsuppdateringen](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Öppna en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) om du stöter på det problemet.
 
 Om du får åtkomst till en butikssida eller Admin genereras felet 404 (sidan&quot;Hoppsan, vår dåliga..&quot;) efter att du har utfört åtgärder med schemalagda uppdateringar för att lagra innehållsresurser med [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) (uppdateringar för att lagra innehållsresurser som schemalagts med modulen [Magento\_Staging](https://developer.adobe.com/commerce/php/module-reference/)). Du kan till exempel ha tagit bort en produkt med en schemalagd uppdatering eller tagit bort slutdatumet för den schemalagda uppdateringen.
 
@@ -34,8 +34,8 @@ En resurs för butiksinnehåll innehåller:
 * Kategori
 * Katalogprisregel
 * Kundprisregel
-* CMS-sida
-* CMS-block
+* CMS Page
+* CMS Block
 * Widget
 
 Vissa scenarier beskrivs i avsnittet Orsak nedan.
@@ -76,7 +76,7 @@ Om frågan returnerar en tabell där värdet `update_exists` är 1 eller ett tom
 
 ![updates_exist_1.png](assets/updates_exist_1.png)
 
-I det här fallet kan du läsa [Felsökning för plats](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) för felsökning av idéer.
+I det här fallet kan du läsa [Felsökning för plats](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) för felsökning av idéer.
 
 ## Lösning
 
@@ -86,6 +86,10 @@ I det här fallet kan du läsa [Felsökning för plats](/help/troubleshooting/si
    DELETE FROM flag WHERE flag_code = 'staging';
    ```
 
-1. Vänta tills cron-jobbet körs (körs på upp till fem minuter om konfigurationen är korrekt) eller kör det manuellt om du inte har ställt in cron.
+1. Vänta tills jobbet [!DNL cron] har körts (körs på upp till fem minuter om det har konfigurerats korrekt) eller kör det manuellt om du inte har konfigurerat [!DNL cron].
 
-Problemet bör lösas direkt efter att den ogiltiga länken har åtgärdats. Om problemet kvarstår [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Problemet bör lösas direkt efter att den ogiltiga länken har åtgärdats. Om problemet kvarstår [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+
+## Relaterad läsning
+
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
