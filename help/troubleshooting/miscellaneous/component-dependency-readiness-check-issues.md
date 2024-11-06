@@ -4,7 +4,7 @@ description: Den här artikeln innehåller lösningar på konflikter för kompon
 exl-id: e0865226-2aaf-4bdd-8c28-28f32f38ce0c
 feature: Configuration
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
@@ -51,7 +51,7 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Se till att du anger filsystembehörigheter enligt beskrivningen i artikeln [Översikt över ägarskap och behörigheter](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) i utvecklardokumentationen.
+Se till att du anger filsystembehörigheter enligt beskrivningen i artikeln [Översikt över ägarskap och behörigheter](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) i utvecklardokumentationen.
 
 ## Status för komponentberoendekontroll ändras aldrig {#trouble-depend-state}
 

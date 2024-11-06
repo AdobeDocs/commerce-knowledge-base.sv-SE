@@ -4,7 +4,7 @@ description: Den här artikeln innehåller lösningar på PHP-inställningsfel.
 exl-id: 51fb3c95-2e25-4d86-a6cf-e08e90d097ca
 feature: Configuration
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Konfigurationer med ett stort antal butiksgranskningar, produkter, attribut och 
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-Det finns inget &quot;riktigt&quot;-värde för `max-input-vars`. Det beror på konfigurationens storlek och komplexitet. Ändra värdet i filen `php.ini` efter behov. Se [Nödvändiga PHP-inställningar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Det finns inget &quot;riktigt&quot;-värde för `max-input-vars`. Det beror på konfigurationens storlek och komplexitet. Ändra värdet i filen `php.ini` efter behov. Se [Nödvändiga PHP-inställningar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
 
 ## xdebug maximum function nesting level error
 
@@ -76,4 +76,4 @@ Flera mallar har syntax för att ge stöd för abstrakt nivå på mallar (använ
 
 Mer information om [asp\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags).
 
-Redigera `php.ini` och ange `asp_tags = off`. Mer information finns i [Nödvändiga PHP-inställningar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Redigera `php.ini` och ange `asp_tags = off`. Mer information finns i [Nödvändiga PHP-inställningar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).

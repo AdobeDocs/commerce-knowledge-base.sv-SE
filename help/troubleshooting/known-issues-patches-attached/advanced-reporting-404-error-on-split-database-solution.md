@@ -1,10 +1,10 @@
 ---
 title: Advanced Reporting 404 error on split database solution
-description: Den här artikeln innehåller en patch för användare av Adobe Commerce 2.3.x med [split database solution](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) som får ett 404-fel när de försöker använda Advanced Reporting.
+description: Den här artikeln innehåller en patch för användare av Adobe Commerce 2.3.x med [split database solution](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) som får ett 404-fel när de försöker använda Advanced Reporting.
 exl-id: b81d4ada-5f38-4882-bc5b-ab4ccd63fc5f
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Advanced Reporting 404 error on split database solution
 
-Den här artikeln innehåller en patch för Adobe Commerce 2.3.x-användare med den [delade databaslösningen](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) som får ett 404-fel när de försöker använda Advanced Reporting.
+Den här artikeln innehåller en patch för Adobe Commerce 2.3.x-användare med den [delade databaslösningen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) som får ett 404-fel när de försöker använda Advanced Reporting.
 
 ## Berörda produkter och versioner
 

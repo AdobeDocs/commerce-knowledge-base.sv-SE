@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs ett känt Adobe Commerce 2.4.1-problem
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Ett ospecifikt fel visas när utcheckning av gäst inaktiveras från serverdelen
 <u>Förutsättningar</u>:
 
 1. I Commerce Admin ställer du in **Tillåt gästutcheckning** = *Nej **under**Lagrar* > **Konfiguration** > **Försäljning** > **Utcheckning**.
-1. Aktivera PayPal via Braintree enligt beskrivningen i [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) i användarhandboken.
+1. Aktivera PayPal via Braintree enligt beskrivningen i [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) i användarhandboken.
 
 <u>Steg som ska återskapas</u>:
 
@@ -55,10 +55,10 @@ Kunden dirigeras om till kundvagnssidan och följande meddelande visas:
 
 ## Tillfällig lösning
 
-Lösningen på problemet är att kunden kan logga in på en butik (inloggade användare använder inte gästutcheckning). där gästutcheckning är inaktiverad. Problemet har åtgärdats i Adobe Commerce version 2.4.2.
+Lösningen på problemet är att kunden kan logga in på en butik (inloggade användare använder inte gästutcheckning) där gästutcheckning är inaktiverad. Problemet har åtgärdats i Adobe Commerce version 2.4.2.
 
 ## Relaterad läsning
 
 * [Bästa praxis för antal produkter i kundvagn i Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) i vår kunskapsbas för support.
-* [Beställningsexempel: Steg 1. Lägg till artiklar i kundvagnen ](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) i utvecklardokumentationen
-* [GraphQL självstudiekurs: Steg 1. Lägg till produkter i kundvagnen ](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) i utvecklardokumentationen
+* [Beställningsexempel: Steg 1. Lägg till artiklar i kundvagnen ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) i utvecklardokumentationen
+* [GraphQL självstudiekurs: Steg 1. Lägg till produkter i kundvagnen ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-add-product-to-cart.html) i utvecklardokumentationen

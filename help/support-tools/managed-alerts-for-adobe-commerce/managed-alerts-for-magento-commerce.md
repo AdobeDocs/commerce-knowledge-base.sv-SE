@@ -4,7 +4,7 @@ description: Om du använder en Adobe Commerce-plan på Cloud Infrastructure Pro
 exl-id: 4d08eaad-a3ce-4f6c-9c32-58e44e1d6534
 feature: Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Hanterade aviseringar för Adobe Commerce
 
 
-Vi har konfigurerat viktiga instrumentpaneler och varningar som hjälper dig att förstå när din webbplats når kritisk lagring och Apdex-nivåer (användarnas tillfredsställelse med svarstid för program och tjänster). Detta kan hjälpa dig att vidta åtgärder innan du märker att svarstiderna tar lång tid eller att ett driftstopp inträffar. Du kan felsöka varningarna med artiklarna nedan. Innan du kan använda varningarna måste du först konfigurera meddelandekanaler. Se [New Relic Konfigurera meddelandekanaler](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels) i utvecklardokumentationen.
+Vi har konfigurerat viktiga instrumentpaneler och varningar som hjälper dig att förstå när din webbplats når kritisk lagring och Apdex-nivåer (användarnas tillfredsställelse med svarstid för program och tjänster). Detta kan hjälpa dig att vidta åtgärder innan du märker att svarstiderna tar lång tid eller att ett driftstopp inträffar. Du kan felsöka varningarna med artiklarna nedan. Innan du kan använda varningarna måste du först konfigurera meddelandekanaler. Se [New Relic Konfigurera meddelandekanaler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen.
 
 >[!NOTE]
 >

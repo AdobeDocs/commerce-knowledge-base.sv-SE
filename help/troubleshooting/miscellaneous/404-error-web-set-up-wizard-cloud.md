@@ -4,7 +4,7 @@ description: I den här artikeln finns en lösning för när du får ett felmedd
 exl-id: 1b89da58-c872-481b-b2a0-aa48db8223db
 feature: Admin Workspace, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -43,9 +43,9 @@ Webbinstallationsguiden har inaktiverats för alla Adobe Commerce i molninfrastr
 
 Den här funktionen är inaktiverad på Adobe Commerce i molninfrastruktur.
 
-Se [Installera, hantera och uppgradera tillägg](https://devdocs.magento.com/cloud/howtos/install-components.html) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce i vår molninfrastruktur.
-Se [Snabbstartsinstallation](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce lokalt.
+Se [Installera, hantera och uppgradera tillägg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce i vår molninfrastruktur.
+Se [Snabbstartsinstallation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce lokalt.
 
 ## Relaterad läsning
 
-* Se [Installera ett tillägg](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) i utvecklardokumentationen.
+* Se [Installera ett tillägg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) i utvecklardokumentationen.

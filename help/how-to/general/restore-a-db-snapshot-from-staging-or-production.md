@@ -2,7 +2,7 @@
 title: Återställ en DB-ögonblicksbild från mellanlagring eller produktion
 description: I den här artikeln beskrivs hur du återställer en DB-ögonblicksbild från Staging eller Production på Adobe Commerce i molninfrastrukturen.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: b99d78845128ca3d995cbbb5df0799449ca954e3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Stegen är:
    ```
 
 1. Kopiera databasen [!DNL dump file] (till exempel: `<cluster ID>.sql.gz` för [!DNL Production] eller `<cluster ID_stg>.sql.gz` för [!DNL Staging]) till den lokala datorn.
-1. Kontrollera att du har konfigurerat [!DNL SSH tunnel] för fjärranslutning till databasen: [[!DNL SSH]  och [!DNL sFTP]: [!DNL SSH tunneling]](https://devdocs.magento.com/cloud/env/environments-ssh.html#env-start-tunn) i utvecklardokumentationen.
+1. Kontrollera att du har konfigurerat [!DNL SSH tunnel] för fjärranslutning till databasen: [[!DNL SSH]  och [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) i utvecklardokumentationen.
 1. Anslut till databasen.
 
    ```sql
@@ -152,5 +152,5 @@ Stegen är:
 
 I vår utvecklardokumentation:
 
-* [Importera kod: Importera databasen](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html#cloud-import-db)
-* [[!DNL Snapshots] och [!DNL backup] hantering: [!DNL Dump] din databas](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump)
+* [Importera kod: Importera databasen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] och [!DNL backup] hantering: [!DNL Dump] din databas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)

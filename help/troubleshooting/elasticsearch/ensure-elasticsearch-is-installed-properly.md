@@ -3,7 +3,7 @@ title: Kontrollera att Elasticsearch är korrekt installerat
 description: I den här artikeln beskrivs lösningar på problem som orsakas av felaktig installation och konfiguration av Elasticsearch (ES).
 exl-id: d2c5971c-4db4-4857-ae79-970313bce981
 feature: Install
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -23,7 +23,7 @@ I den här artikeln beskrivs lösningar på problem som orsakas av felaktig inst
 * Adobe Commerce lokalt och Adobe Commerce i molninfrastruktur:
    * v2.2.3+ stödjer ES 5.x
    * v2.2.8+ och v2.3.1+ har stöd för ES 6.x
-   * ES v2.x och v5.x rekommenderas inte på grund av [slutet på livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du [Ändra Elasticsearch PHP-klienten](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
+   * ES v2.x och v5.x rekommenderas inte på grund av [slutet på livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du [Ändra Elasticsearch PHP-klienten](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
 * Magento Open Source v2.3.0+ stöder ES 5.x och 6.x (men 6.x rekommenderas).
 
 ## Problem
@@ -56,8 +56,8 @@ Elasticsearch är inte korrekt installerat. Detta kan bero på:
 
 Så här konfigurerar du Elasticsearch:
 
-* Handlare på Adobe Commerce i molninfrastruktur kan följa stegen i vår utvecklardokumentation: [Konfigurera tjänsten Elasticsearch](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html).
-* Handlare på Adobe Commerce lokalt och Magento Open Source kan följa stegen i vår utvecklardokumentation: [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
+* Handlare på Adobe Commerce i molninfrastruktur kan följa stegen i vår utvecklardokumentation: [Konfigurera tjänsten Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
+* Handlare på Adobe Commerce lokalt och Magento Open Source kan följa stegen i vår utvecklardokumentation: [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
 
 När du har konfigurerat Elasticsearch kontrollerar du att det är korrekt konfigurerat:
 

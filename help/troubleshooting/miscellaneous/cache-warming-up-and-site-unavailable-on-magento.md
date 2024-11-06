@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning för när sidcachen värm
 exl-id: c91d5c1f-95e6-4240-be98-2acea49ae728
 feature: Cache, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -37,8 +37,8 @@ Webbplatsen är inte tillgänglig eller så är svarstiden för hög.
 
 ## Lösning
 
-Begränsa antalet samtidiga anslutningar under cacheuppvarningen. Detta kräver att variabeln `WARM_UP_CONCURRENCY` post-deploy läggs till för att ange antalet uppvärmningsbegäranden som cacheuppvärmarskriptet kan skicka samtidigt. Om du anger det här alternativet kan belastningen på Adobe Commerce molninfrastruktur hanteras. Stegen finns i [Post-distribuera variabler > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) i utvecklardokumentationen.
+Begränsa antalet samtidiga anslutningar under cacheuppvarningen. Detta kräver att variabeln `WARM_UP_CONCURRENCY` post-deploy läggs till för att ange antalet uppvärmningsbegäranden som cacheuppvärmarskriptet kan skicka samtidigt. Om du anger det här alternativet kan belastningen på Adobe Commerce molninfrastruktur hanteras. Anvisningar finns i [Efterdistribuera variabler > WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
-[Helsidescache](https://docs.magento.com/user-guide/system/cache-full-page.html) i användarhandboken
+[Helsidescache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) i användarhandboken

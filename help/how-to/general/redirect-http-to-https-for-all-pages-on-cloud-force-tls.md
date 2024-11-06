@@ -3,7 +3,7 @@ title: Omdirigera HTTP till HTTPS för alla sidor på Adobe Commerce om molninfr
 description: Aktivera Fast-funktionaliteten **Force TLS** i Commerce Admin för att aktivera den globala omdirigeringen av HTTP till HTTPS för alla sidor i Adobe Commerce i molninfrastrukturbutiken.
 exl-id: 71667f52-a99a-47a6-99d8-10532364870f
 feature: Cache, Cloud
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -29,7 +29,7 @@ I det här steget definierar vi säkra URL:er för butiken. Gå till [Steg 2: Ak
 1. Ange **Använd säkra URL:er i Storefront** och **Använd säkra URL:er i Admin**-inställningarna till **Ja**.    ![magento-admin_base-urls-secure-settings.png](assets/magento-admin_base-urls-secure-settings.png)
 1. Klicka på **Spara konfig** i det övre högra hörnet om du vill använda ändringarna.
 
-**Relaterad dokumentation i vår användarhandbok:**   [Lagra URL:er](https://docs.magento.com/m2/ee/user_guide/stores/store-urls.html).
+**Relaterad dokumentation i vår användarhandbok:**   [Lagra URL:er](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 ### Steg 2: Aktivera Tvinga TLS {#step-2-enable-force-tls}
 

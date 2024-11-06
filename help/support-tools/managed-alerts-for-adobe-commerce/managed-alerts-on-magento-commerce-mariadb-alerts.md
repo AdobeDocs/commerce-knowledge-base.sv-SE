@@ -4,7 +4,7 @@ description: '"I den här artikeln beskrivs felsökningssteg när du får MariaD
 exl-id: 707e20e0-faba-4bcd-884c-b54568787442
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Du får en hanterad avisering i New Relic om du har registrerat upp till [Hanter
 **Gör!**
 
 * Avbryt all schemalagd distribution tills den här aviseringen har rensats.
-* Placera platsen i underhållsläge omedelbart om platsen inte svarar eller inte svarar alls. Anvisningar om hur du gör detta finns i [Installationshandbok > Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) i utvecklardokumentationen. Se till att du lägger till din IP-adress i listan över undantagna IP-adresser för att vara säker på att du fortfarande kan komma åt din webbplats för felsökning. Anvisningar finns i [Underhåll listan över undantagna IP-adresser](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten#instgde-cli-maint-exempt).
+* Placera platsen i underhållsläge omedelbart om platsen inte svarar eller inte svarar alls. Anvisningar om hur du gör detta finns i [Installationshandbok > Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) i utvecklardokumentationen. Se till att du lägger till din IP-adress i listan över undantagna IP-adresser för att vara säker på att du fortfarande kan komma åt din webbplats för felsökning. Anvisningar finns i [Underhåll listan över undantagna IP-adresser](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#instgde-cli-maint-exempt).
 * Avsluta alla skript, t.ex. import, som kan vara orsaken till varningen om platsens prestanda påverkas.
 
 **Gör inte!**
@@ -56,7 +56,7 @@ Om du får en varning om allvarliga DML-frågor startar du steg ett. Om du får 
 1. Se antingen kodoptimeringar eller operativa optimeringar:
 1. Kodoptimeringar: Optimera frågor med massinfogningar/uppdateringar, minimera indexanvändning eller begränsa kod.
 1. Operativa optimeringar: Avlasta resurskrävande dataändringar till lägre trafiktider.
-1. Ytterligare optimeringar: Se till att du har den senaste versionen av ECE-Tools. Anvisningar om hur du gör detta finns i [Cloud för Adobe Commerce > Uppdatera versionen för verktygen](https://devdocs.magento.com/cloud/project/ece-tools-update.html) i utvecklardokumentationen.
+1. Ytterligare optimeringar: Se till att du har den senaste versionen av ECE-Tools. Anvisningar om hur du gör detta finns i [Cloud för Adobe Commerce > Uppdatera versionen för verktygen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) i utvecklardokumentationen.
 
 ## Relaterad läsning
 

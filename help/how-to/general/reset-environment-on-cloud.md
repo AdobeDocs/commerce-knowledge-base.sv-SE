@@ -3,7 +3,7 @@ title: Återställ miljö på Adobe Commerce i molninfrastruktur
 description: I den här artikeln visas olika scenarier för återställning av en miljö på Adobe Commerce i molninfrastruktur.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
@@ -55,13 +55,13 @@ När du jämför detta med att importera en lokal [!UICONTROL Database Dump] gå
 
 ## Scenario 2: Återställ en ögonblicksbild
 
-Läs: [Återställ en ögonblicksbild av Adobe Commerce i molninfrastrukturen](https://devdocs.magento.com/cloud/project/project-webint-snap.html#restore-snapshot) i utvecklardokumentationen.
+Läs: [Återställ en ögonblicksbild av Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot) i utvecklardokumentationen.
 
 >[!NOTE]
 >
 >Att skapa en ögonblicksbild måste vara det första steget efter att du har öppnat Adobe Commerce på molninfrastrukturskontot och innan du kan göra större ändringar. Det är en god praxis och rekommenderas varmt.
 
-Läs: [Skapa en ögonblicksbild](https://devdocs.magento.com/cloud/project/project-webint-snap.html#create-snapshot) i utvecklardokumentationen.
+Läs: [Skapa en ögonblicksbild](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot) i utvecklardokumentationen.
 
 ## Scenario 3: Ingen ögonblicksbild, stabil konstruktion (SSH-anslutning tillgänglig)
 

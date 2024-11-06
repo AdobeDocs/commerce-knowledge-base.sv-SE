@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en korrigering för låg webbplatspre
 exl-id: 90a8bd21-1f2c-4cfe-8213-17f877e20de8
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -38,7 +38,7 @@ För Adobe Commerce om molninfrastruktur 2.2.x:
 
 Om du inte ser alternativet **Banners** under **Innehåll** > *Elements* är detta inte fallet och rekommendationerna från den här artikeln kan inte tillämpas.
 
-För Adobe Commerce i molninfrastruktur 2.3.x (funktionen har [bytt namn i v 2.3.x](https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html#banner-now-dynamic-block)):
+För Adobe Commerce i molninfrastruktur 2.3.x (funktionen har [bytt namn i v 2.3.x](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html#banner-now-dynamic-block)):
 
 1. Logga in på Commerce Admin.
 1. Navigera till **Innehåll** > *Element >* **Dynamiska block**.
@@ -56,5 +56,5 @@ När modulen `Magento_Banner` är aktiverad skickar Adobe Commerce Ajax-förfrå
 >
 >Vi rekommenderar att du först testar ändringar i [mellanlagrings-/integreringsmiljön](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) innan du använder dem i produktionen. Vi rekommenderar även att du har en säkerhetskopia nyligen före eventuella ändringar.
 
-1. Inaktivera `Magento_Banner`-modulens utdata enligt beskrivningen i [Inaktivera modulutdata](https://devdocs.magento.com/guides/v2.3/config-guide/config/disable-module-output.html) i utvecklardokumentationen. Modulnamnet som du måste använda är `Magento_Banner`.
-1. Distribuera koden. För Adobe Commerce i molninfrastruktur distribuerar du enligt beskrivningen i artikeln [Distribuera din butik](https://devdocs.magento.com/guides/v2.3/cloud/live/stage-prod-live.html) i vår utvecklardokumentation.
+1. Inaktivera `Magento_Banner`-modulens utdata enligt beskrivningen i [Inaktivera modulutdata](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/disable-module-output) i utvecklardokumentationen. Modulnamnet som du måste använda är `Magento_Banner`.
+1. Distribuera koden. För Adobe Commerce i molninfrastruktur distribuerar du enligt beskrivningen i artikeln [Distribuera din butik](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) i vår utvecklardokumentation.

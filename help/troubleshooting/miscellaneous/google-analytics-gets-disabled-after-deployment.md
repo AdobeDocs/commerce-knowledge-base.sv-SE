@@ -4,7 +4,7 @@ description: I det här avsnittet beskrivs en lösning på ett typiskt problem s
 exl-id: ecf6a277-2dfa-45cf-b86f-9a27f39017f4
 feature: Build, Deploy, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Detta är en funktion som ska säkerställa att utvecklardata och interaktioner 
 
 ## Lösning
 
-Om du alltid vill att Google Analytics ska vara aktiverat anger du distributionsvariabeln `ENABLE_GOOGLE_ANALYTICS = true` enligt beskrivningen i [Distribuera variabler](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) i utvecklardokumentationen.
+Om du alltid vill att Google Analytics ska vara aktiverat anger du distributionsvariabeln `ENABLE_GOOGLE_ANALYTICS = true` enligt beskrivningen i [Distribuera variabler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) i utvecklardokumentationen.
 
 >[!NOTE]
 >

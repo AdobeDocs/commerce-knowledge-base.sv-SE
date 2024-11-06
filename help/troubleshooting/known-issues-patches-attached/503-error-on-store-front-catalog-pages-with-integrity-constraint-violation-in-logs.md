@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en patch för det kända problemet me
 exl-id: ad363744-756a-48b9-ae11-58642e0ca6a4
 feature: Catalog Management, Logs
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Den här artikeln innehåller en patch som en tillfällig lösning, men problemet har åtgärdats permanent i Adobe Commerce i molninfrastrukturversionen v2.3.3 och du bör uppgradera till v2.3.3. Följ stegen i [Uppgradera Adobe Commerce version](https://devdocs.magento.com/cloud/project/project-upgrade.html) i utvecklardokumentationen.
+>Den här artikeln innehåller en patch som en tillfällig lösning, men problemet har åtgärdats permanent i Adobe Commerce i molninfrastrukturversionen v2.3.3 och du bör uppgradera till v2.3.3. Följ stegen i [Uppgradera Adobe Commerce version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) i utvecklardokumentationen.
 
 I den här artikeln finns en korrigering för det kända Adobe Commerce-problemet i molninfrastruktur 2.2.0 som rör lagring av katalogsidor i frontkatalogen som inte är tillgängliga. Felmeddelandet liknar följande i loggen: *Överträdelse av integritetsbegränsning: 1062 Dubblettpost &#39;%entry%&#39; för nyckeln &#39;PRIMARY&#39;. Frågan var: INSERT INTO \`search\_tmp\_%number%*.
 
@@ -78,6 +78,6 @@ Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/ge
 
 * [Logga filplatser för Adobe Commerce i arkitekturen för Starter-planen för molninfrastruktur](/help/how-to/general/log-locations-directories-for-starter-plan.md) i vår kunskapsbas för support.
 * [Logga filplatser för Adobe Commerce i Pro-planarkitekturen för molninfrastruktur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) i vår kunskapsbas för support.
-* [Logga filplatser för Adobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) i utvecklardokumentationen.
+* [Logga filplatser för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) i utvecklardokumentationen.
 
 ## Bifogade filer

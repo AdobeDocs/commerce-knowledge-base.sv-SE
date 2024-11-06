@@ -1,10 +1,10 @@
 ---
 title: 'MDVA-32776: Stock-status har inte uppdaterats med orderplacering'
-description: MDVA-32776-korrigeringen åtgärdar ett problem där lagerstatusen inte uppdateras när en order läggs men inte skickas. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.6 är installerat. Patch-ID:t är MDVA-32776. Observera att problemet har åtgärdats i Adobe Commerce 2.4.2.
+description: MDVA-32776-korrigeringen åtgärdar ett problem där lagerstatusen inte uppdateras när en order läggs men inte skickas. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.6 är installerat. Patch-ID:t är MDVA-32776. Observera att problemet har åtgärdats i Adobe Commerce 2.4.2.
 exl-id: 10e9458f-562a-480b-b813-104a93db4308
 feature: Orders
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-32776: Stock-status har inte uppdaterats med orderplacering
 
-MDVA-32776-korrigeringen åtgärdar ett problem där lagerstatusen inte uppdateras när en order läggs men inte skickas. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.6 har installerats. Patch-ID:t är MDVA-32776. Observera att problemet har åtgärdats i Adobe Commerce 2.4.2.
+MDVA-32776-korrigeringen åtgärdar ett problem där lagerstatusen inte uppdateras när en order läggs men inte skickas. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.6 har installerats. Patch-ID:t är MDVA-32776. Observera att problemet har åtgärdats i Adobe Commerce 2.4.2.
 
 ## Berörda produkter och versioner
 
@@ -27,7 +27,7 @@ Adobe Commerce (alla distributionsmetoder) 2.4.0 - 2.4.1-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -60,8 +60,8 @@ Grupperade produkter visar `out-of-stock` etiketter när associerade enkla produ
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 

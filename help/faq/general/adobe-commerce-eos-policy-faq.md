@@ -3,7 +3,7 @@ title: Vanliga frågor om Adobe Commerce-programvarans slut
 description: Följande frågor och svar är avsedda att hjälpa handlare, utvecklare och partners att förstå konsekvenserna av Adobe Commerce publicerade End of Support-datum (EOS) för berörda versioner av Adobe Commerce.
 exl-id: ec147307-46eb-4a3a-8572-a014b091c58a
 feature: Best Practices, Compliance, Console
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Följande frågor och svar är avsedda att hjälpa handlare, utvecklare och part
 
 ### Var hittar jag supportdatum för alla versioner av Adobe Commerce?
 
-Du hittar Adobe Commerce livscykelpolicy och datum för programvarusupport i [Adobe Commerce Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Vi publicerar också slutdatum för support (EOS) på [utvecklardokumentationssidan](https://devdocs.magento.com/release/released-versions.html).
+Du hittar Adobe Commerce livscykelpolicy och datum för programvarusupport i [Adobe Commerce Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Vi publicerar också slutdatum för support (EOS) på [utvecklardokumentationssidan](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
 
 ### Vad innebär det när Adobe slutar stödja en version av Adobe Commerce?
 
@@ -70,7 +70,7 @@ Er handelsplattform är ett viktigt affärssystem för ert företag och att hål
 
 Att gå över till den senaste versionen av Adobe Commerce kan ta tid och resurser att bli bra. Det är bäst att ni planerar så långt före supportdagens slut som möjligt för att försäkra er om att ni har den tid och de resurser som behövs för att uppnå era strategiska mål i tid och inom budgeten. För att hjälpa dig med nästa uppgradering har Adobe publicerat [2.4 Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) som innehåller bästa praxis och tekniska steg samt verktyg och resurser som du kan använda när du uppgraderar.
 
-En annan viktig faktor är att förbehålla utvecklare och partners resurser så tidigt som möjligt. Partnertid och resurser bokas ofta långt före supportdatumet, vilket resulterar i betydligt färre resurser för att hjälpa till med migreringsprojekt. Vi rekommenderar att du har en treårig löpande plan som du diskuterar årligen med minimum och ser till att nästa år planeras och budgeteras för. Använd [Adobe&#39;s release calendar](https://devdocs.magento.com/release/) för att hålla reda på releasedatum.
+En annan viktig faktor är att förbehålla utvecklare och partners resurser så tidigt som möjligt. Partnertid och resurser bokas ofta långt före supportdatumet, vilket resulterar i betydligt färre resurser för att hjälpa till med migreringsprojekt. Vi rekommenderar att du har en treårig löpande plan som du diskuterar årligen med minimum och ser till att nästa år planeras och budgeteras för. Använd [Adobe&#39;s release calendar](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) för att hålla reda på releasedatum.
 
 ### Kan jag använda en tredjeparts tjänsteleverantör för programsupport när Adobe Commerce Support upphör?
 
@@ -94,7 +94,7 @@ När Adobe Commerce-licensen upphör måste du sluta använda Adobe Commerce och
 
 ### Kommer supportärenden som har öppnats FÖRE supportdatumet för en programversion att fortsätta att bearbetas till en lösning även efter supporttidens slut?
 
-Ja, supportärenden som öppnats före supportdatumet för en programversion kommer att fortsätta att behandlas och lösas även om supportdatumet för den programversionen har gått ut. Att lösa supportärenden kan dock vara beroende av om upplösningen är beroende av komponenter som ligger utanför Adobe Commerce kontroll (t.ex. PHP, jQuery) som inte längre stöds eller som inte längre stöds. I dessa fall kan supportanmälan lösas genom att du uppmanas att uppgradera till den senaste versionen.
+Ja, supportärenden som öppnats före supportdatumet för en programversion kommer att fortsätta att behandlas och lösas även om supportdatumet för den programversionen har gått ut. Att lösa supportärenden kan dock vara beroende av om upplösningen är beroende av komponenter utanför Adobe Commerce kontroll (t.ex. PHP, jQuery osv.) som har gått ut eller nått slutet av supporten. I dessa fall kan supportanmälan lösas genom att du uppmanas att uppgradera till den senaste versionen.
 
 ### Om jag öppnar en biljett för en programversion där programvarusupporten upphör snart, prioriterar då Adobe biljetterna så att de löses innan supportdatumet är slut?
 

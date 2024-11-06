@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs hur du löser problem med webbplatspre
 exl-id: a78ca3c3-85b4-40a1-a693-4703dd3ef4b5
 feature: Best Practices, Cache, Categories, Catalog Management
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >I alla Adobe Commerce-versioner, eftersom vissa tillägg bara fungerar med platta tabeller, finns det en risk om du inaktiverar platta tabeller. Om du vet att du har tillägg som använder platta katalogindexerare kan du behöva ta hänsyn till det när du anger värdena till *Nej*.
 
-I den här artikeln beskrivs hur du löser problem med webbplatsprestanda och kör långsamt och fastnålade cron som orsakas av att [platta tabeller och indexerare](https://docs.magento.com/m2/ce/user_guide/catalog/catalog-flat.html) har aktiverats.
+I den här artikeln beskrivs hur du löser problem med webbplatsprestanda och kör långsamt och fastnålade cron som orsakas av att [platta tabeller och indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/catalog-flat) har aktiverats.
 
 BERÖRDA PRODUKTER OCH VERSIONER
 

@@ -4,7 +4,7 @@ description: I den här artikeln ges rekommendationer om hur du kan göra din Ad
 exl-id: 144df36b-6305-4e57-b813-46bbb0ddedda
 feature: Cache, Categories, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1064'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Om indexsidan har en låg träfffrekvens kan du åtgärda den genom att minska m
 
 Så här kontrollerar du den totala cacheminnesträffhastigheten:
 
-1. [Få snabbt inloggningsuppgifter](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) för din Adobe Commerce i molninfrastrukturmiljö.
+1. [Få snabbt inloggningsuppgifter](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) för din Adobe Commerce i molninfrastrukturmiljö.
 1. Kör följande Linux/macOS cURL-kommando för att kontrollera träffhastigheten för din webbplats under de senaste 30 minuterna, och ersätt och med värdena för dina snabbinloggningsuppgifter:
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
@@ -82,8 +82,8 @@ En träfffrekvens under 0,85 eller 85 % kan tyda på ett platskonfigurationsprob
 
 1. Identifiera när träfffrekvensen började sjunka med hjälp av träffstatistik per timme och dag. Om träfffrekvensen plötsligt skulle minska vid samma tidpunkt som du distribuerade en ändring till din webbplats bör du överväga att återställa ändringen tills webbplatsinläsningen går ner.
 1. Kontrollera konfigurationen i Commerce Admin, under **Lagrar** > **Konfiguration** > Avancerat > **System** > **Helsidescache**. Kontrollera att värdet **TTL för publikt innehåll** inte är för lågt.
-1. Kontrollera att du har [överfört VCL-kodfragment](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
-1. Om du använder anpassade VCL-kodfragment kan du felsöka dem för korrekt användning av åtgärderna &quot;pass&quot; eller &quot;pipe&quot;: de bör användas med försiktighet och i alla lägen med något slags tillstånd. Mer tips finns i [Anpassade snabbvalsbaserade VCL-kodfragment](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) i utvecklardokumentationen.
+1. Kontrollera att du har [överfört VCL-kodfragment](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).
+1. Om du använder anpassade VCL-kodfragment kan du felsöka dem för korrekt användning av åtgärderna &quot;pass&quot; eller &quot;pipe&quot;: de bör användas med försiktighet och i alla lägen med något slags tillstånd. Mer tips finns i [Anpassade snabbvalsbaserade VCL-kodfragment](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) i utvecklardokumentationen.
 
 ### Steg 3: Identifiera de webbplatser som orsakar hög serverbelastning
 

@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning för när ett anpassat SS
 exl-id: cc968bae-f742-449b-b291-bc121ec45935
 feature: Support
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -46,6 +46,6 @@ Om du befinner dig i en situation där din anpassade SSL har ersatts av vår int
 ## Relaterad läsning
 
 * [SSL-certifikat (TLS) för Magento Commerce Cloud: Frågor och svar](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) i vår kunskapsbas för support.
-* [Referens för kommandoradsverktyg: magento-cloud certificate:add](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html#certificateadd) i utvecklardokumentationen.
-* [Starta checklistan](https://devdocs.magento.com/cloud/live/site-launch-checklist.html)i utvecklardokumentationen.
-* [Använd webbplatsövergripande analysverktyg](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html#step-2-access-site-wide-analysis-tool) i vår användarhandbok.
+* [Referens för kommandoradsverktyg: magento-cloud certificate:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) i utvecklardokumentationen.
+* [Starta checklistan](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist)i utvecklardokumentationen.
+* [Använd webbplatsövergripande analysverktyg](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) i vår användarhandbok.

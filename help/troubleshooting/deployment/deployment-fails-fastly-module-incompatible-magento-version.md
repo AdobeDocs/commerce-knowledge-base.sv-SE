@@ -4,7 +4,7 @@ description: "UPPDATERAD: 29 februari 2019"
 exl-id: aab77407-94e5-42de-92f4-2f0c19e24fa4
 feature: Deploy, Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Distributionen kan misslyckas med följande felmeddelanden:
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-Om du använder Adobe Commerce i molninfrastrukturslösningen visas det här felmeddelandet i [distributionsloggen](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html#log-deploy-log). För Adobe Commerce lokalt visas felet på kommandoraden.
+Om du använder Adobe Commerce i molninfrastrukturslösningen visas det här felmeddelandet i [distributionsloggen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations). För Adobe Commerce lokalt visas felet på kommandoraden.
 
 ## Orsak
 
@@ -70,4 +70,4 @@ Gör så här:
    * om Fastly-modulen ingår i magento-cloud-metapackage:    <pre>Composer update magento/magento-cloud-metapackage</pre>
    * om modulen Fastly installerades separat (om du till exempel använder Adobe Commerce lokalt, inte molnutgåvan) <pre>snabbuppdatering/magento2</pre>
 1. Genomför och skicka ändringarna och utlösa distributionsprocessen om det inte görs automatiskt.
-1. I Admin [överför du den nya VCL:en till Snabbt](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
+1. I Admin [överför du den nya VCL:en till Snabbt](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).

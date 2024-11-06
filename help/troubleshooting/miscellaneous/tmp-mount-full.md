@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning för när "/tmp"-monterin
 exl-id: e72d0f99-0060-474b-bb1c-2851896e1e43
 feature: Storage
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Kontrollera `/tmp` efter `.sql`- eller `.sql.gz`-filer och rensa dem. Dessa kan 
 
 Följ de här rekommendationerna för att undvika att få problem med att `/tmp` är full:
 
-* Använd inte MySQL för sökning. Elasticsearch för sökning eliminerar vanligtvis behovet av de flesta komplicerade temporära tabellskapanden. Se [Konfigurera Adobe Commerce att använda Elasticsearch](https://devdocs.magento.com/guides/v2.2/config-guide/elasticsearch/configure-magento.html) i utvecklardokumentationen.
+* Använd inte MySQL för sökning. Elasticsearch för sökning eliminerar vanligtvis behovet av de flesta komplicerade temporära tabellskapanden. Se [Konfigurera Adobe Commerce att använda Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) i utvecklardokumentationen.
 * Undvik att köra `SELECT`-frågan på kolumner utan index eftersom det här kräver mycket temporärt diskutrymme. Du kan också lägga till index.
 * Skapa en cron för att rensa upp `/tmp` genom att köra följande kommando i CLI:
 

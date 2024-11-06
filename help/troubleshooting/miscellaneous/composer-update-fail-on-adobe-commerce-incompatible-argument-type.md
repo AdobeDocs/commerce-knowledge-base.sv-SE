@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning för när distributionen 
 exl-id: ba2dd229-29f6-43e2-9467-8bd1bf59e6ef
 feature: Console
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Alla 2.3.5+ Adobe Commerce lokala handlare ska köra följande CLI-kommando:
 
 **Så här korrigerar du Adobe Commerce i molninfrastrukturen:**
 
-Kör ovanstående kommandon eller uppgradera till den senaste versionen av ECE-verktygen (ece-tools: 2002.1.7), som kommer att vara tillgänglig torsdagen den 29 juli. Anvisningar om hur du gör detta finns i [Cloud för Adobe Commerce > Uppdatera versionen för verktygen](https://devdocs.magento.com/cloud/project/ece-tools-update.html) i utvecklardokumentationen.
+Kör ovanstående kommandon eller uppgradera till den senaste versionen av ECE-verktygen (ece-tools: 2002.1.7), som kommer att vara tillgänglig torsdagen den 29 juli. Anvisningar om hur du gör detta finns i [Cloud för Adobe Commerce > Uppdatera versionen för verktygen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) i utvecklardokumentationen.
 
 Den fullständiga korrigeringen släpps i Adobe Commerce (alla distributionsmetoder) 2.4.4.
 

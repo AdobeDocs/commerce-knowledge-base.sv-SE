@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs allmänna verktyg för att felsöka an
 exl-id: c6603a2b-dc98-4022-ab29-c081c2b07415
 feature: Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -29,24 +29,24 @@ Kontrollera loggarna för att se om det finns poster med namnet på den anpassad
    * [Adobe Commerce på molninfrastruktur Starter-planens arkitektur loggar](/help/how-to/general/log-locations-directories-for-starter-plan.md) i vår kunskapsbas för support.
    * [Adobe Commerce på Cloud Infrastructure Pro, loggar för planarkitektur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) i vår kunskapsbas för support.
 1. Beroende på vilka fel du hittar, om du vill aktivera, inaktivera eller avinstallera en anpassad modul, innehåller de här artiklarna information om dessa åtgärder:
-   * [Aktivera eller inaktivera moduler](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-enable.html) i utvecklardokumentationen.
-   * [Avinstallera moduler](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall-mods.html) i utvecklardokumentationen.
+   * [Aktivera eller inaktivera moduler](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) i utvecklardokumentationen.
+   * [Avinstallera moduler](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) i utvecklardokumentationen.
 
 ### Adobe Commerce om molninfrastruktur, alla versioner
 
-1. Loggar platser: [Adobe Commerce i molninfrastrukturloggar](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) i utvecklardokumentationen.
+1. Loggar platser: [Adobe Commerce i molninfrastrukturloggar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) i utvecklardokumentationen.
 1. Beroende på vilka fel du hittar, om du vill aktivera, inaktivera eller avinstallera en anpassad modul, innehåller dessa artiklar i vår dokumentation för utvecklare dessa åtgärder:
-   * [Installera, hantera och uppgradera tillägg](https://devdocs.magento.com/guides/v2.3/cloud/howtos/install-components.html).
-   * [Komponentdistributionsfel](https://devdocs.magento.com/guides/v2.3/cloud/trouble/trouble_comp-deploy-fail.html).
+   * [Installera, hantera och uppgradera tillägg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+   * [Komponentdistributionsfel](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment).
 
 ## Relaterad läsning
 
 I vår utvecklardokumentation:
 
-* [Modulöversikt](https://devdocs.magento.com/guides/v2.3/architecture/archi_perspectives/components/modules/mod_intro.html)
-* [Fel vid installation av valfria exempeldata](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_sample-data.html)
-* [Undantagshantering](https://devdocs.magento.com/guides/v2.3/graphql/develop/exceptions.html)
-* [Undantag under installationen](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_exceptions.html)
-* [Kör modulhanteraren](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-checklist.html)
-* [Modulkonfigurationsfiler](https://devdocs.magento.com/guides/v2.3/config-guide/config/config-files.html)
-* [Slut på minne](https://devdocs.magento.com/guides/v2.3/comp-mgr/trouble/cman/out-of-memory.html)
+* [Modulöversikt](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [Fel vid installation av valfria exempeldata](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
+* [Undantagshantering](https://developer.adobe.com/commerce/webapi/graphql/develop/exceptions/)
+* [Undantag under installationen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
+* [Kör modulhanteraren](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
+* [Modulkonfigurationsfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
+* [Slut på minne](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)

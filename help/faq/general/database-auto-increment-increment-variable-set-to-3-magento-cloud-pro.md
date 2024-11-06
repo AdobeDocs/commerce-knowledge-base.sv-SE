@@ -3,7 +3,7 @@ title: Auto_increment-variabeln database inställd på "3" Adobe Commerce på v�
 description: Detta är det förväntade beteendet för Adobe Commerce i molninfrastrukturproffsens arkitekturlösningar på grund av 3-nodarkitekturen och kan inte ändras.
 exl-id: ea478cbc-2dc2-41c9-8ea7-7e2f308e5948
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -31,5 +31,5 @@ Om den valda huvudsidan är nod 1 där `auto_increment_offset = 1`, ökas ID:t m
 
 Läs mer i vår utvecklardokumentation:
 
-* [Cloud för Adobe Commerce > Pro-arkitektur > Säkerhetskopiering och katastrofåterställning](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
-* [Cloud för Adobe Commerce > Installationskrav: databas](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#database)
+* [Cloud för Adobe Commerce > Pro-arkitektur > Säkerhetskopiering och katastrofåterställning](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud för Adobe Commerce > Installationskrav: databas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)

@@ -4,7 +4,7 @@ description: I den här artikeln finns en lösning på problem med modulfunktion
 exl-id: 517f6993-f09e-4a94-8c57-175ecf9a98a8
 feature: Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -30,6 +30,6 @@ Om du inaktiverar en modulutdata under **Lagrar** > **Inställningar** > **Konfi
 
 ## Lösning
 
-Om du behöver inaktivera modulfunktioner inaktiverar du modulen enligt beskrivningen i [Aktivera eller inaktivera moduler](https://devdocs.magento.com/guides/v2.1/install-gde/install/cli/install-cli-subcommands-enable.html) i utvecklardokumentationen.
+Om du behöver inaktivera modulfunktioner inaktiverar du modulen enligt beskrivningen i [Aktivera eller inaktivera moduler](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) i utvecklardokumentationen.
 
 Funktionen för inaktivering av modulutdata har tagits bort från version 2.2.0.

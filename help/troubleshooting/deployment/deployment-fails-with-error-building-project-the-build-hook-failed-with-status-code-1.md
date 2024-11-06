@@ -4,7 +4,7 @@ description: '"I den här artikeln beskrivs orsakerna till och lösningarna för
 exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
 feature: Build, Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -78,11 +78,11 @@ Mer information om hur du kan öka diskutrymmet om du använder Adobe Commerce f
        php ./vendor/bin/ece-tools deploy
    ```
 
-   Använd artikeln [Uppgradera till ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) som referens.
+   Använd artikeln [Uppgradera till ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) som referens.
 
 1. Kontrollera att ECE-verktygspaketet finns i filen `composer.lock` genom att köra följande kommando:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; disposition.lock</code></pre>    Om de anges ser svaret ut som i följande exempel:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
 
-Referens finns i artikeln [Uppgradera till delade verktyg](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html).
+Referens finns i artikeln [Uppgradera till delade verktyg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package).
 
 ### Orsakar korrigeringen problemet?
 

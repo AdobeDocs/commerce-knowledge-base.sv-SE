@@ -4,7 +4,7 @@ description: I den här artikeln finns en patch som gör det möjligt för handl
 exl-id: 4350e83a-495b-41b4-a526-dae5923e9d41
 feature: Orders, Shipping/Delivery, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Adobe Commerce 2.4.5, som planeras släppas i augusti 2022, kommer att innehåll
 ## Lappa
 
 Patch-ID:t är AC-3022 som finns i Quality Patches Tool version 1.1.16.
-Mer information om hur du använder QPT och installerar korrigeringsfiler finns i artikeln [Quality Patches Tool (QPT) > Usage](https://devdocs.magento.com/quality-patches/usage.html) i utvecklardokumentationen.
+Mer information om hur du använder QPT och installerar korrigeringsfiler finns i artikeln [Quality Patches Tool (QPT) > Usage](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i utvecklardokumentationen.
 
 Patchen gäller för följande Adobe Commerce-versioner:
 
@@ -38,5 +38,5 @@ Patchen gäller för följande Adobe Commerce-versioner:
 
 ## Relaterad läsning
 
-* [Transportföretag > DHL](https://docs.magento.com/user-guide/shipping/dhl.html) i användarhandboken
-* [Leveransmetoder](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html) i användarhandboken
+* [Transportföretag > DHL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) i användarhandboken
+* [Leveransmetoder](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/delivery-methods) i användarhandboken

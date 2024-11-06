@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs en lösning på ett känt fel i Adobe 
 exl-id: 682eac73-1ad2-4093-acfb-6a8da4c05cf5
 feature: Page Builder
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Lösningen är att använda en annan webbläsare än Safari. Problemet kommer at
 
 ## Relaterad läsning
 
-* [Vad är Page Builder?](https://devdocs.magento.com/page-builder/docs/) i vår utvecklardokumentation.
+* [Vad är Page Builder?](https://developer.adobe.com/commerce/frontend-core/page-builder/) i vår utvecklardokumentation.
 * [Utskriftsformat för Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) i utvecklardokumentationen.
-* [Page Builder](https://docs.magento.com/user-guide/cms/page-builder.html) i vår användarhandbok.
-* [Page Builder - Elements](https://docs.magento.com/user-guide/cms/page-builder-elements.html) i vår användarhandbok.
+* [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/introduction) i vår användarhandbok.
+* [Page Builder - Elements](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/workspace#elements) i vår användarhandbok.

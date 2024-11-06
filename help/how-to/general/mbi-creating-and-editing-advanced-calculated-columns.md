@@ -1,9 +1,9 @@
 ---
 title: 'MBI: Skapa och redigera avancerade beräknade kolumner'
-description: '[Administratörsanvändare](https://docs.magento.com/mbi/administrator/user-management/user-management.html) kan skapa och redigera vissa beräknade kolumner i Data Warehouse Manager. De här beräknade kolumnerna ger dig möjlighet att konfigurera den rapportering du söker efter för att svara på viktiga affärsfrågor."'
+description: '[Administratörsanvändare](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) kan skapa och redigera vissa beräknade kolumner i Data Warehouse Manager. De här beräknade kolumnerna ger dig möjlighet att konfigurera den rapportering du söker efter för att svara på viktiga affärsfrågor."'
 exl-id: 713a5593-8103-4d74-be5e-0102678d0f97
 feature: Commerce Intelligence
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # MBI: Skapa och redigera avancerade beräknade kolumner
 
-[Administratörsanvändare](https://docs.magento.com/mbi/administrator/user-management/user-management.html) kan skapa och redigera vissa beräknade kolumner i Data Warehouse Manager. De här beräknade kolumnerna ger dig möjlighet att konfigurera den rapportering du söker efter för att svara på viktiga affärsfrågor.
+[Administratörsanvändare](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) kan skapa och redigera vissa beräknade kolumner i Data Warehouse Manager. De här beräknade kolumnerna ger dig möjlighet att konfigurera den rapportering du söker efter för att svara på viktiga affärsfrågor.
 
 En lista med beräknade kolumner som du kan skapa i Data Warehouse Manager, samt riktlinjer för att se till att de är korrekt konfigurerade, finns i följande artiklar i vår användarhandbok:
 
-* [Skapar beräknade kolumner](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/creating-calculated-columns.html)
-* [Beräknade kolumntyper](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/calc-column-types.html)
-* [Förstå och utvärdera tabellrelationer](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/table-relationships.html)
-* [Skapar sökvägar för beräknade kolumner](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/create-paths-calc-columns.html)
+* [Skapar beräknade kolumner](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/creating-calculated-columns)
+* [Beräknade kolumntyper](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/calc-column-types)
+* [Förstå och utvärdera tabellrelationer](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/table-relationships)
+* [Skapar sökvägar för beräknade kolumner](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/create-paths-calc-columns)
 
 ## Jag behöver fortfarande hjälp!
 
@@ -35,7 +35,7 @@ Om du är osäker på hur du ska svara på någon av dessa frågor, var inte oro
 
 ## Relaterad läsning
 
-* [Användarhandbok för MBI](https://docs.magento.com/mbi)
+* [Användarhandbok för MBI](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/guide-overview)
 * [MBI: Dataavvikelser](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
-* [MBI: Dataanalytiker](https://docs.magento.com/mbi/data-analyst.html)
-* [BI: Få hjälp med Magento BI](https://docs.magento.com/mbi/getting-started/support.html)
+* [MBI: Dataanalytiker](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/data-analyst)
+* [BI: Få hjälp med Magento BI](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/start/sign-in)

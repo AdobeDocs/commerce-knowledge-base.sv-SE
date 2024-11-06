@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en korrigeringsfil för problemet dä
 exl-id: 46ab7f4d-ee0a-4cc1-96cc-6eb408319e9c
 feature: Checkout, Orders
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Detta kända problem nämns i vår utvecklardokumentation:
 
 <u>För Adobe Commerce 2.3.6</u>:
 
-* [Versionsinformation om Adobe Commerce 2.3.6: Kända fel](https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html#known-issues)
-* [Versionsinformation om Magento Open Source 2.3.6: Kända fel](https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html#known-issues)
+* [Versionsinformation om Adobe Commerce 2.3.6: Kända fel](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/commerce-2-3-6.html)
+* [Versionsinformation om Magento Open Source 2.3.6: Kända fel](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/open-source-2-3-6.html#known-issues)
 
 <u>För Adobe Commerce 2.4.1</u>:
 
-* [Versionsinformation om Adobe Commerce 2.4.1: Kända fel](https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html#known-issues)
-* Versionsinformation om [Magento Open Source 2.4.1: Kända fel](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html#known-issues)
+* [Versionsinformation om Adobe Commerce 2.4.1: Kända fel](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-1#known-issues)
+* Versionsinformation om [Magento Open Source 2.4.1: Kända fel](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-1#known-issues)
 
 ## Berörda produkter och versioner
 
@@ -83,4 +83,4 @@ Mer information finns i [Använda en dispositionsruta från Adobe](/help/how-to/
 
 <u>Git-korrigering</u>
 
-Mer information om Git-korrigering för Adobe Commerce/Magento Open Source finns i utvecklardokumentationen [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches).
+Mer information om Git-korrigering för Adobe Commerce/Magento Open Source finns i utvecklardokumentationen [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches).

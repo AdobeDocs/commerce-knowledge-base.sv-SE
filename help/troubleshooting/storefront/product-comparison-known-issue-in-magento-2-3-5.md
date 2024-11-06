@@ -1,10 +1,10 @@
 ---
 title: Produktjämförelse - känt fel i Adobe Commerce 2.3.5
-description: I den här artikeln ges rekommendationer om hur du undviker ett känt [produktjämförelse](https://docs.magento.com/user-guide/marketing/product-compare.html)-problem i Adobe Commerce lokal 2.3.5 och Adobe Commerce om molninfrastruktur 2.3.5.
+description: I den här artikeln ges rekommendationer om hur du undviker ett känt [produktjämförelse](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/shopper-tools/product-compare)-problem i Adobe Commerce lokal 2.3.5 och Adobe Commerce om molninfrastruktur 2.3.5.
 exl-id: 1488e2db-4a5d-4963-b48e-b84f760582d1
 feature: Products, Storefront
 role: Admin
-source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Produktjämförelse - känt fel i Adobe Commerce 2.3.5
 
-Den här artikeln innehåller rekommendationer om hur du undviker ett känt [produktjämförelseproblem](https://docs.magento.com/user-guide/marketing/product-compare.html) i Adobe Commerce lokal 2.3.5 och Adobe Commerce om molninfrastruktur 2.3.5.
+Den här artikeln innehåller rekommendationer om hur du undviker ett känt [produktjämförelseproblem](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/shopper-tools/product-compare) i Adobe Commerce lokal 2.3.5 och Adobe Commerce om molninfrastruktur 2.3.5.
 
 ## Berörda produkter och versioner
 
@@ -30,7 +30,7 @@ Ange värden som inte är tomma för jämförbara produktattribut eller använd 
 
 >[!NOTE]
 >
->Produktattribut är inställda för att användas för jämförelse med konfigurationsinställningen **Jämförelsebar på Storefront** . Mer information finns i [Skapa produktattribut](https://docs.magento.com/user-guide/stores/attribute-product-create.html#step-4-describe-the-storefront-properties) i användarhandboken.
+>Produktattribut är inställda för att användas för jämförelse med konfigurationsinställningen **Jämförelsebar på Storefront** . Mer information finns i [Skapa produktattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create#step-4-describe-the-storefront-properties) i användarhandboken.
 
 En programfix kommer att finnas i Adobe Commerce 2.3.6, som kommer att släppas tredje kvartalet 2020.
 
@@ -50,4 +50,4 @@ Du kan visa korrigeringen i GitHub (tänk på att korrigeringen inte gick igenom
 <p title="Patch for Amazon Pay checkout issue in Adobe Commerce 2.3.5-p1"><a href="/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md">Patch for Amazon Pay checkout issue in Adobe Commerce 2.3.5-p1</a></p>
 </li>
 </ul>
-</li><li><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues">Kända fel i Adobe Commerce 2.3.5</a> i utvecklardokumentationen</li></ul>
+</li><li><a href="https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues">Kända fel i Adobe Commerce 2.3.5</a> i utvecklardokumentationen</li></ul>

@@ -4,7 +4,7 @@ description: I den här artikeln finns en korrigering för ett fel med hämtning
 exl-id: 5abdab97-4b0c-466b-a68f-a2637d2826e5
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -52,5 +52,5 @@ Så här undviker du det:
    * Uppgradera disposition till en version som är senare än 26 november 2015: `composer self-update`.
 
 1. Ta bort din Adobe Commerce-katalog och underkataloger.
-1. Försök hämta igen med antingen `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` eller `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
+1. Försök hämta igen med antingen `[composer create-project](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)` eller `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`.
 1. Uppdatera disposition: `composer self-update` när du har hämtat Adobe Commerce-programmet.

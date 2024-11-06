@@ -2,7 +2,7 @@
 title: Spårningsindex för ElasticSuite orsakar problem med Elasticsearch
 description: I den här artikeln behandlas problemet med minnesproblem i Elasticsearch som orsakas av att man håller reda på index som skapats med pluginprogrammet ElasticSuite.
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -68,5 +68,5 @@ Skapa ett cron-jobb för att ta bort spårningsindex. Med det här kommandot tas
 
 Om du vill ta bort index med en viss tidsfrekvens skapar du ett cron-jobb genom att läsa följande artiklar i vår utvecklardokumentation:
 
-* [Konfigurera ett anpassat cron-jobb och en cron-grupp (självstudiekurs)](https://devdocs.magento.com/guides/v2.3/config-guide/cron/custom-cron-tut.html)
-* [Konfigurera cron-jobb](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)
+* [Konfigurera ett anpassat cron-jobb och en cron-grupp (självstudiekurs)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Konfigurera cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

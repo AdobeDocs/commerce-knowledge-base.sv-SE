@@ -3,7 +3,7 @@ title: Visa Adobe Commerce-felrapportnummer i stället för Fastly 503-fel
 description: Som standard döljs alla Adobe Commerce-fel automatiskt bakom felet **503 Service Unavailable**. Om du vill visa rapportnumret för Adobe Commerce fellogg (för att kunna hitta det i loggar och se felinformationen) öppnar du webbplatsen utan att använda dessa steg:"
 exl-id: c0a4a9f8-a674-4cef-8088-e844594e6076
 feature: Cache, Cloud
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Som standard döljer Fastly alla Adobe Commerce-fel bakom felet **503-tjänsten 
 
 När du ser det äkta Adobe Commerce-felet och felrapportnumret kan du få information i felrapportfilen genom att följa dessa steg:
 
-1. SSH till den drabbade miljön. Se [SSH till en miljö](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) i utvecklardokumentationen.
+1. SSH till den drabbade miljön. Se [SSH till en miljö](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) i utvecklardokumentationen.
 1. Leta reda på filen `./var/report/{error_number}`.
 
 ## Lägg till programdomän och IP-adress till din värdfil: detaljerade steg

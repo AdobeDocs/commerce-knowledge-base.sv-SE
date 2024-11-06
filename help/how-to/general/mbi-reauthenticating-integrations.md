@@ -3,7 +3,7 @@ title: 'MBI: Återautentiserar integreringar'
 description: Den här artikeln innehåller lösningar för att återauktorisera en integrering för att ge Magento Business Intelligence (MBI) de behörigheter som krävs för att hämta data från en tredjepartstjänst. Återauktorisering krävs när dessa behörigheter återkallas.
 exl-id: c608d6f9-64a5-44f8-9d7b-9a85a2668775
 feature: Commerce Intelligence, Integration
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Den här artikeln innehåller lösningar för att återauktorisera en integrerin
 
 ## Integreringar mellan databaser och SaaS
 
-En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med hjälp av en integrering](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) i utvecklardokumentationen. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
+En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med hjälp av en integrering](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) i utvecklardokumentationen. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
 
 ## Har du anslutningsproblem?
 

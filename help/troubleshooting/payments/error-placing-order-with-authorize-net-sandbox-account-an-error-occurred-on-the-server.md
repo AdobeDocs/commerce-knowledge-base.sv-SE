@@ -4,7 +4,7 @@ description: I den här artikeln finns en korrigering för "*Ett fel uppstod på
 exl-id: 764a550a-3373-483c-843d-d8c848dcee35
 feature: Compliance, Console, Customer Service, Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Det gick inte att montera beställningen med Authorize.net Sandbox-konto (ett fel uppstod på servern)
 
-I den här artikeln finns en korrigering för felmeddelandet *Ett fel inträffade på servern* när en beställning skulle skickas med Authorize.Net Direct Post.
+I den här artikeln finns en korrigering för *Ett fel inträffade på serverfelmeddelandet* när en beställning gjordes med Authorize.Net Direct Post.
 
 >[!WARNING]
 >
 >**Meddelande om borttagning**
 >
->På grund av betaltjänstdirektivet [PSD2](https://docs.magento.com/user-guide/v2.3/stores/compliance-payment-services-directive.html) och den fortsatta utvecklingen av många API:er riskerar Authorize.Net att bli inaktuell och inte längre kompatibel med säkerhet i framtiden. Därför är den nu föråldrad och vi rekommenderar att du inaktiverar den i din Adobe Commerce-konfiguration och övergår till motsvarande [Commerce Marketplace-tillägg](https://marketplace.magento.com/extensions.html).
+>På grund av betaltjänstdirektivet [PSD2](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) och den fortsatta utvecklingen av många API:er riskerar Authorize.Net att bli inaktuell och inte längre kompatibel med säkerhet i framtiden. Därför är den nu föråldrad och vi rekommenderar att du inaktiverar den i din Adobe Commerce-konfiguration och övergår till motsvarande [Commerce Marketplace-tillägg](https://marketplace.magento.com/extensions.html).
 >
 >**Den här integreringen har tagits bort från Adobe Commerce 2.4.0 och har tagits bort från de aktuella versionerna av 2.3.**
 >
@@ -27,7 +27,7 @@ I den här artikeln finns en korrigering för felmeddelandet *Ett fel inträffad
 
 ## Problem
 
-Om du placerar en order med [Authorize.Net Direct Post](https://docs.magento.com/user-guide/v2.3/payment/authorize-net-direct-post.html) Sandbox-kontot visas ett felmeddelande:
+Om du placerar en order med sandlådekontot [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) visas ett felmeddelande:
 
 >>
 &quot;Ett fel uppstod på servern. Försök beställa igen&quot;
@@ -38,7 +38,7 @@ Det verkar inte uppenbart, men inställningen **Testläge** för Authorize.net m
 
 ## Lösning 1: inaktivera testläge
 
-1. Gå till **Butiker** > **Konfiguration** > **Försäljning** > **Betalningsmetoder** > **Andra betalningsmetoder** > **Authorize.net Direct Post**.
+1. Gå till **Butiker** > **Konfiguration** > **Försäljning** > **Betalningsmetoder** > **Andra betalningsmetoder** > **Authorize.net Direktinlägg**.
 1. Ange **Testläge** till Nej (avmarkera **Använd systemvärde** och välj sedan Nej på menyn).
 1. Klicka på **Spara konfiguration**.
 

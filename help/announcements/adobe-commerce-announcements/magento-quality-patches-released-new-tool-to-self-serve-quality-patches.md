@@ -4,7 +4,7 @@ description: Adobe har släppt verktyget för kvalitetspatchar för allmän till
 exl-id: e6a79d16-84be-4a71-a41d-ef2b43ec98d9
 feature: Tools and External Services
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -29,5 +29,5 @@ När du har installerat verktyget kan du söka efter tillgängliga patchar, till
 
 Mer information finns i utvecklardokumentationen:
 
-* [Patchar tillgängliga i verktyget för kvalitetspatchar](https://devdocs.magento.com/quality-patches/tool.html#patch-grid)
-* [Versionskommentarer för verktyget Kvalitetspatchar](https://devdocs.magento.com/quality-patches/release-notes.html)
+* [Patchar tillgängliga i verktyget för kvalitetspatchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
+* [Versionskommentarer för verktyget Kvalitetspatchar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)

@@ -1,10 +1,10 @@
 ---
 title: 'MDVA-40537: Om du skapar en butiksvy uppstår ett fel när flera CMS-sidor har samma URL-nyckel.'
-description: Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.4 är installerat. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
+description: Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 är installerat. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
 exl-id: d92400c9-0c5a-4416-820d-99ab4ba34003
 feature: CMS
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40537: Om du skapar en butiksvy uppstår ett fel när flera CMS-sidor har samma URL-nyckel.
 
-Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.4 har installerats. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
+Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 har installerats. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
 
 ## Berörda produkter och versioner
 
@@ -27,12 +27,12 @@ Adobe Commerce (alla distributionsmetoder) 2.3.4 - 2.4.0-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 
 ## Problem
 
-Användarna får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel.
+Användarna får ett felmeddelande när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel.
 
 <u>Steg som ska återskapas</u>:
 
@@ -88,8 +88,8 @@ Exception message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplica
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 

@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs lösningar på problem när du försö
 exl-id: cbf54a15-b307-4bfc-90b7-cff98aeb4fce
 feature: Roles/Permissions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Detta är de vanligaste orsakerna till problem:
 
 Under förhandsversionen finns versionspaket på två platser:
 
-1. Via Composer på [magento.com](https://repo.magento.com/) med hjälp av det primära MageID:t för kontot. Mer information om hur du använder Composer finns i [Installera Adobe Commerce med Composer](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) i utvecklardokumentationen.
+1. Via Composer på [magento.com](https://repo.magento.com/) med hjälp av det primära MageID:t för kontot. Mer information om hur du använder Composer finns i [Installera Adobe Commerce med Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) i utvecklardokumentationen.
 1. **Mitt konto** > **Nedladdningar** på [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]

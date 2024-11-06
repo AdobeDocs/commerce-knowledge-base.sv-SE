@@ -4,7 +4,7 @@ description: 'I den här artikeln beskrivs hur du löser problemet med misslycka
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Om din licens har återkallats tidigare på grund av betalningsproblem och du ha
 
 ### 2. Lägg till nyckelvärdet i variabeln env:COMPOSER\_AUTH och kontrollera om samma nycklar anges i auth.json
 
-Se instruktionerna och relaterad information i [Förbered ditt befintliga system](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#auth-json) och [Lägg till autentiseringsnycklar](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#add-authentication-keys) i utvecklardokumentationen.
+Se instruktionerna och relaterad information i [Förbered ditt befintliga system](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) och [Lägg till autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) i utvecklardokumentationen.
 
 ### 3. Uppdatera eller ta bort auth.json
 

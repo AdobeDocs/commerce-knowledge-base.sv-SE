@@ -4,7 +4,7 @@ description: 'I den här artikeln beskrivs möjliga lösningar på inloggningspr
 exl-id: 1c7ffa1c-1fb1-4f69-9534-77d1e119318a
 feature: Admin Workspace, Customer Service
 role: Developer
-source-git-commit: f87263cde5aa001f78abc368c949ce150feecb91
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande:
 ## Lösning
 
 1. Skapa en säkerhetskopia av databasen.
-1. Använd ett databasverktyg som [[!DNL phpMyAdmin]](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) eller öppna databasen manuellt från kommandoraden. I databastabellen `admin_user` kontrollerar du om `is_active` är inställd på `1` och `lock_expires` är `NULL` för din administratörsanvändarpost. Återställ dessa värden om det behövs.
+1. Använd ett databasverktyg som [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden. I databastabellen `admin_user` kontrollerar du om `is_active` är inställd på `1` och `lock_expires` är `NULL` för din administratörsanvändarpost. Återställ dessa värden om det behövs.
 
 ## Relaterad läsning
 

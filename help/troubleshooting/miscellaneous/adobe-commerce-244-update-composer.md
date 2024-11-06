@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning som undviker problemet me
 exl-id: 7502ca9e-c307-4e8a-aa1d-4886e7be25da
 feature: Upgrade
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Efter juli 2022 ändrar Composer standardvärdet för alternativet [`allow-plugi
 
 Lägg till följande i din `composer.json`-fil, beroende på hur du har installerat Adobe Commerce:
 
-* Om projektet har skapats [med `composer create-project`-kommandot](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html#get-the-metapackage):
+* Om projektet har skapats [med `composer create-project`-kommandot](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
 
   ```json
   "config": {

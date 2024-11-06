@@ -1,10 +1,10 @@
 ---
 title: 'MDVA-37748: GraphQL-frågan returnerar produkter som inte har tilldelats en delad katalog'
-description: Korrigeringen MDVA-37748 åtgärdar ett problem där en GraphQL-fråga returnerar produkter som inte har tilldelats en delad katalog. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.5 är installerat. Patch-ID:t är MDVA-37748. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
+description: Korrigeringen MDVA-37748 åtgärdar ett problem där en GraphQL-fråga returnerar produkter som inte har tilldelats en delad katalog. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5 är installerat. Patch-ID:t är MDVA-37748. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 1f441882-dc14-433c-aa03-ff22483ce5a7
 feature: B2B, GraphQL, Catalog Management, Categories, Products
 role: Admin
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-37748: GraphQL-frågan returnerar produkter som inte har tilldelats en delad katalog
 
-Korrigeringen MDVA-37748 åtgärdar ett problem där en GraphQL-fråga returnerar produkter som inte har tilldelats en delad katalog. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.5 har installerats. Patch-ID:t är MDVA-37748. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
+Korrigeringen MDVA-37748 åtgärdar ett problem där en GraphQL-fråga returnerar produkter som inte har tilldelats en delad katalog. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5 har installerats. Patch-ID:t är MDVA-37748. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 
 ## Berörda produkter och versioner
 
@@ -27,7 +27,7 @@ Adobe Commerce (alla distributionsmetoder) 2.4.2 - 2.4.2-p2
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -320,8 +320,8 @@ Endast &quot;Product 2&quot; returneras, men `total_count` visar två.
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 

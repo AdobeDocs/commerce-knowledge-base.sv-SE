@@ -1,10 +1,10 @@
 ---
 title: Radera filer säkert när det inte finns tillräckligt med utrymme på disken i Adobe Commerce i molninfrastrukturen
-description: Den här artikeln innehåller en lösning för när diskutrymmet tar slut och du behöver ta bort filer på ett säkert sätt. Innan du överväger den här åtgärden bör du läsa [Hantera diskutrymme](https://devdocs.magento.com/cloud/project/manage-disk-space.html#no-space-left) i utvecklardokumentationen. Om stegen i den artikeln inte är lämpliga för dig eller inte löser problemet kan du läsa stegen i den här artikeln.
+description: Den här artikeln innehåller en lösning för när diskutrymmet tar slut och du behöver ta bort filer på ett säkert sätt. Innan du överväger den här åtgärden bör du läsa [Hantera diskutrymme](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#no-space-left) i utvecklardokumentationen. Om stegen i den artikeln inte är lämpliga för dig eller inte löser problemet kan du läsa stegen i den här artikeln.
 exl-id: 6b0a5c1a-8db4-49d7-a785-b4e0bbaea0df
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 86515936f72bbd0a5778cb81f665993ed91e4707
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -59,4 +59,4 @@ I vår kunskapsbas:
 
 I vår utvecklardokumentation:
 
-* [Hantera diskutrymme](https://devdocs.magento.com/cloud/project/manage-disk-space.html)
+* [Hantera diskutrymme](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)

@@ -4,7 +4,7 @@ description: Den här artikeln innehåller möjliga lösningar på problemet nä
 exl-id: 8d000ca4-b977-432d-bb26-6ea320067a40
 feature: Cache, Compliance, Console, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -53,4 +53,4 @@ Om du fortfarande inte kan lägga till webbplatser utför du följande steg:
 
 ## Relaterad läsning
 
-* [Säkerhetsgenomsökning](https://docs.magento.com/user-guide/magento/security-scan.html) i vår användarhandbok.
+* [Säkerhetsgenomsökning](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) i vår användarhandbok.

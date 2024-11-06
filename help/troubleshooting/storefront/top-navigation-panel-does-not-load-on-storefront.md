@@ -4,7 +4,7 @@ description: I den här artikeln finns konfigurationslösningar för ESI-problem
 exl-id: e7f9b773-1a2d-4c3b-9e1f-a1781fbc898c
 feature: Categories, Site Navigation, Storefront, Variables
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Följande orsaker kan finnas:
 
 För att lösa problemen måste du utföra ytterligare en Varnish-konfiguration och starta om Varnish.
 
-1. Som användare med `root`-behörighet öppnar du konfigurationsfilen för spanska i en textredigerare. Se [Ändra systemkonfigurationen för lack](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) i utvecklardokumentationen för mer information om var filen kan finnas för olika operativsystem.
+1. Som användare med `root`-behörighet öppnar du konfigurationsfilen för spanska i en textredigerare. Se [Ändra systemkonfigurationen för lack](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) i utvecklardokumentationen för mer information om var filen kan finnas för olika operativsystem.
 1. I `DAEMON_OPTS variable` lägger du till `-p feature=+esi_ignore_https`, `-p  feature=+esi_ignore_other_elements`, `-p  feature=+esi_disable_xml_check`. Det här skulle se ut så här:
 
    ```bash
@@ -64,5 +64,5 @@ För att lösa problemen måste du utföra ytterligare en Varnish-konfiguration 
 
 ## Relaterad läsning
 
-* [Konfigurera lack och din webbserver](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) i utvecklardokumentationen.
+* [Konfigurera lack och din webbserver](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) i utvecklardokumentationen.
 * [Varnish-dokumentation](https://varnish-cache.org/docs/5.1/reference/index.html)

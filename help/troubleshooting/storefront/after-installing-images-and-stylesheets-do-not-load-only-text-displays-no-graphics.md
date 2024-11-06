@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs möjliga orsaker och lösningar till p
 exl-id: f33cee89-b416-4d63-8cc5-9cc57618ce92
 feature: Install, Storefront
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
@@ -47,8 +47,8 @@ Statiska resurser finns under `<magento_root>/pub/static/`, i katalogerna `front
 
 Här följer några möjliga lösningar beroende på vilken programvara du använder och orsaken till problemet:
 
-* Om du använder webbservern Apache kontrollerar du att inställningen [server skriver om](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html#apache-help-rewrite) och Adobe Commerce/Magento Open Source-serverns bas-URL och försöker igen. Om du har konfigurerat Apache `AllowOverride`-direktivet på ett felaktigt sätt kommer de statiska filerna inte att hanteras från rätt plats.
-* Om du använder webbservern nginx måste du [konfigurera en virtuell värdfil](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/nginx.html#configure-nginx-ubuntu). Den nya virtuella värdfilen måste uppfylla följande villkor:
+* Om du använder webbservern Apache kontrollerar du att inställningen [server skriver om](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/apache#apache-rewrites-and-htaccess) och Adobe Commerce/Magento Open Source-serverns bas-URL och försöker igen. Om du har konfigurerat Apache `AllowOverride`-direktivet på ett felaktigt sätt kommer de statiska filerna inte att hanteras från rätt plats.
+* Om du använder webbservern nginx måste du [konfigurera en virtuell värdfil](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx). Den nya virtuella värdfilen måste uppfylla följande villkor:
    * Direktivet `include` måste peka på exempelkonfigurationsfilen nginx i installationskatalogen för Adobe Commerce/Magento Open Source. Till exempel:    `include /var/www/html/magento2/nginx.conf.sample;`
    * Direktivet `server_name` måste matcha den bas-URL som du angav när du installerade Adobe Commerce/Magento Open Source. Till exempel: `server_name 192.186.33.10;`
-* Om programmet är i [produktionsläge](https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html#production-mode) kan du försöka distribuera statiska vyfiler med kommandot `magento setup:static-content:deploy`. Mer information om hur du distribuerar statiska filer finns i [Distribuera statiska vyfiler](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) i utvecklardokumentationen.
+* Om programmet är i [produktionsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/setup/application-modes#production-mode) kan du försöka distribuera statiska vyfiler med kommandot `magento setup:static-content:deploy`. Mer information om hur du distribuerar statiska filer finns i [Distribuera statiska vyfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) i utvecklardokumentationen.

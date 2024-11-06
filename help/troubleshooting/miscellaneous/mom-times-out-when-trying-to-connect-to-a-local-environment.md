@@ -4,7 +4,7 @@ description: I den här artikeln finns en lösning på problemet där det inte g
 exl-id: 19149d8c-ea24-46fb-8815-9f637afe46ca
 feature: System
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
@@ -31,7 +31,7 @@ I den här artikeln finns en lösning på problemet där det inte går att regis
 
 1. Installera Adobe Commerce i den lokala miljön.
 1. Skapa en tunnel för att visa den lokala servern.
-1. Försök med att [ansluta till OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
+1. Försök med att [ansluta till OMS](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/).
 
 <u>Förväntat resultat</u>
 

@@ -1,7 +1,7 @@
 ---
 title: Under installationen, exception SessionHandler::read()
 description: "Den här artikeln innehåller en korrigering för ett undantag **SessionHandler::read()**-fel under Adobe Commerce-installation."
-source-git-commit: 5cec04f8c4f80d34fc26b06eb929960ce21e2dc0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -25,7 +25,7 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 >[!NOTE]
 >
->Det här felet inträffar endast i kodversioner före den 28 september 2015. Om du installerar kod som är daterad 29 september eller senare bör det här felet inte inträffa. Mer information om konfigurationsalternativ för Redis finns i [Konfigurera Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) i utvecklardokumentationen. Mer information om hur du anger Redis med kommandoradsinstallationsprogrammet finns i [installationsavsnittet](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-install.html) eller [avsnittet om distributionskonfiguration](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp) i utvecklardokumentationen.
+>Det här felet inträffar endast i kodversioner före den 28 september 2015. Om du installerar kod som är daterad 29 september eller senare bör det här felet inte inträffa. Mer information om konfigurationsalternativ för Redis finns i [Konfigurera Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) i utvecklardokumentationen. Mer information om hur du anger Redis med kommandoradsinstallationsprogrammet finns i [installationsavsnittet](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced) eller [avsnittet om distributionskonfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/deployment) i utvecklardokumentationen.
 
 ## Orsak
 
@@ -33,7 +33,7 @@ Detta inträffar när din `session.save_handler` PHP-parameter är inställd på
 
 ## Lösningar:
 
-* Uppgradera din Adobe Commerce-kod. Se [Installationshandbok > Uppdatera Adobe Commerce-programvaran](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-update) i utvecklardokumentationen.
+* Uppgradera din Adobe Commerce-kod. Se [Installationshandbok > Uppdatera Adobe Commerce-programvaran](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall) i utvecklardokumentationen.
 * Använd följande lösning med befintlig kod:
 
 ## Hitta `php.ini` {#locate-php-ini}

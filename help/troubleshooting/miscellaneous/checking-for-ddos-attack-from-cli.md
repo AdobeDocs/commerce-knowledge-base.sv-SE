@@ -4,7 +4,7 @@ description: I den här artikeln behandlas frågan om hur man försöker söka e
 exl-id: dfdef289-cf51-42d7-b3fb-d4d2d3760951
 feature: Observability
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -35,8 +35,8 @@ Det är viktigt att komma ihåg att det skulle vara mycket användbart att anvä
 ## Lösningssteg
 
 1. Kontrollera om det finns något annat än en DDoS-attack i Adobe Commerce loggar. Mer information finns i följande artiklar i utvecklardokumentationen:
-   * [Adobe Commerce och Magento Open Source loggar platser](https://devdocs.magento.com/guides/v2.3/config-guide/cli/logging.html)
-   * [Adobe Commerce i molninfrastrukturloggar platser](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html)
+   * [Adobe Commerce och Magento Open Source loggar platser](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/enable-logging)
+   * [Adobe Commerce i molninfrastrukturloggar platser](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)
 1. Börja använda din CLI för att kontrollera alla dina nuvarande internetanslutningar med kommandot `netstat`: `netstat -na`. Detta visar alla aktiva etablerade anslutningar till servern. Här kan du kanske lägga märke till att för många anslutningar kommer från samma IP-adress.
 1. Om du vill begränsa dina etablerade anslutningsresultat ytterligare till de som ansluter på port 80 (webbplatsens http-port), så att du kan sortera och identifiera för många anslutningar från en IP-adress eller grupp med IP-adresser, använder du det här kommandot: `netstat -an | grep :80 | sort`. Du kan upprepa samma kommando för https på port 443: `netstat -an | grep :443 | sort`. Ett annat alternativ är att utöka det ursprungliga kommandot till både port 80 och 443: `netstat -an | egrep ":80|:443" | sort`.
 1. Om du vill se om många aktiva `SYNC_REC` förekommer på servern använder du kommandot:     `netstat -n -p|grep SYN_REC | wc -l`     Detta är vanligtvis mindre än 5, men det kan vara mycket högre för en DDoS-attack, men för vissa servrar kan ett högre antal vara ett normalt tillstånd.
@@ -53,6 +53,6 @@ Om du råkar ut för ett DDoS-angrepp beror de åtgärder du kan vidta på nätv
 
 ## Relaterade läsningar i vår dokumentation för utvecklare:
 
-* [DDoS-skydd](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-fastly.html#ddos-protection)
-* [Använda CLI-kommandon](https://devdocs.magento.com/guides/v2.3/config-guide/deployment/pipeline/example/cli.html)
-* [Cloud CLI för Commerce](https://devdocs.magento.com/guides/v2.3/cloud/reference/cli-ref-topic.html)
+* [DDoS-skydd](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#ddos-protection)
+* [Använda CLI-kommandon](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
+* [Cloud CLI för Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)

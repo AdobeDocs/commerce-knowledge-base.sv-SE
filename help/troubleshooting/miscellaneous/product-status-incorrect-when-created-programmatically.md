@@ -4,7 +4,7 @@ description: I den här artikeln finns en korrigering för när produktstatus ä
 exl-id: ac02f961-f9e2-4620-839f-b8dbd0befb15
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Problemet kan uppstå på grund av ACL-begränsningar för Adobe Commerce instan
 
 ## Lösning för felaktig produktstatus
 
-Ange en dynamisk ID-inställning för `Magento\Framework\Authorization\PolicyInterface`, enligt beskrivningen i avsnittet [ ObjectManager>Programmatiska produktuppdateringar](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) i utvecklardokumentationen.
+Ange en dynamisk ID-inställning för `Magento\Framework\Authorization\PolicyInterface`, enligt beskrivningen i avsnittet [ ObjectManager>Programmatiska produktuppdateringar](https://developer.adobe.com/commerce/php/development/components/object-manager/) i utvecklardokumentationen.
 
 ## Relaterad läsning
 

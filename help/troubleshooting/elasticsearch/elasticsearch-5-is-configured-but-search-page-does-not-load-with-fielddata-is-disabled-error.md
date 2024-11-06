@@ -3,7 +3,7 @@ title: Elasticsearch 5 är konfigurerat, men söksidan läses inte in med felmed
 description: 'I det här avsnittet beskrivs hur du åtgärdar problemet med Elasticsearch 5, där söksidan inte läses in och undantaget som liknar följande genereras:'
 exl-id: f5fa8144-4e7c-45ce-89d0-a8367e91d6db
 feature: Cache
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Resultatet innehåller en lista med attribut som används för Navigering i lage
 För att åtgärda problemet måste du ange `is_filterable` (d.v.s. används i navigering i lager) och `filterable_in_search` (d.v.s. används i sökresultat med navigering i lager) till &quot;0&quot; (används inte). Gör så här:
 
 1. Skapa en säkerhetskopia av databasen.
-1. Använd ett databasverktyg som [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
+1. Använd ett databasverktyg som [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
 
    ```sql
    UPDATE catalog_eav_attribute AS cea

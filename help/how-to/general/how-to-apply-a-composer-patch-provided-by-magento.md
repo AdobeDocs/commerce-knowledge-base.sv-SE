@@ -3,7 +3,7 @@ title: Använda en kompositkorrigering från Adobe
 description: I den här artikeln beskrivs hur du använder en kompositkorrigering för Adobe Commerce lokalt, Adobe Commerce i molninfrastrukturen och Magento Open Source.
 exl-id: a9301ad8-1d4b-49f5-b679-758624928219
 feature: Cache
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -36,7 +36,7 @@ I den här artikeln beskrivs hur du använder en kompositkorrigering för Adobe 
    git push origin
    ```
 
-Mer information om hur du använder korrigeringsfiler i molnprojekt finns i [Tillämpa korrigeringsfiler](https://devdocs.magento.com/cloud/project/project-patch.html) i utvecklardokumentationen.
+Mer information om hur du använder korrigeringsfiler i molnprojekt finns i [Tillämpa korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen.
 
 ### Använda en kompositkorrigering för Adobe Commerce lokalt och Magento Open Source {#commerce}
 

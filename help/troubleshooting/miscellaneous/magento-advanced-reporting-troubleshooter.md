@@ -4,7 +4,7 @@ description: Du kan lösa problem med avancerad rapportering på Adobe Commerce 
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -19,10 +19,10 @@ Du kan lösa problem med avancerad rapportering på Adobe Commerce med hjälp av
 
 +++**Uppfyller din webbplats avancerade rapporteringskrav?**
 
-Du har en 404-felsida när du använder Avancerad rapportering. Uppfyller webbplatsen [avancerade rapporteringskrav](https://docs.magento.com/user-guide/reports/advanced-reporting.html#requirements)?
+Du har en 404-felsida när du använder Avancerad rapportering. Uppfyller webbplatsen [avancerade rapporteringskrav](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements)?
 
 a. JA - Fortsätt till [Steg 2](#step-2).\
-b. NEJ - Slutför de avancerade rapporteringskraven för din webbplats genom att följa stegen i [Avancerade rapporteringskrav](https://docs.magento.com/user-guide/reports/advanced-reporting.html#requirements). Fortsätt sedan till [Steg 2](#step-2).
+b. NEJ - Slutför de avancerade rapporteringskraven för din webbplats genom att följa stegen i [Avancerade rapporteringskrav](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). Fortsätt sedan till [Steg 2](#step-2).
 
 +++
 
@@ -44,7 +44,7 @@ Om flera basvalutor har använts kan du inte använda avancerad rapportering eft
 
 +++**Använder du en delad databaslösning?**
 
-Använder du [delad databaslösning](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html)?
+Använder du [delad databaslösning](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master)?
 
 a. JA - Använd korrigeringen **MDVA-26831** i [Advanced Reporting 404-fel vid delad databaslösning](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md) och rensa cache. Vänta i 24 timmar tills jobbet körs igen och försök igen.\
 b. NEJ - Fortsätt till [steg 4](#step-4).
@@ -55,10 +55,10 @@ b. NEJ - Fortsätt till [steg 4](#step-4).
 
 +++**Är avancerad rapportering aktiverat?**
 
-Kontrollera **Admin** > **Lagrar** > **Inställningar** > **Konfiguration** > **Allmänt** > **Avancerad rapportering**. Granska [Avancerad rapportering: Aktivera avancerad rapportering](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) om du vill ha mer information.
+Kontrollera **Admin** > **Lagrar** > **Inställningar** > **Konfiguration** > **Allmänt** > **Avancerad rapportering**. Granska [Avancerad rapportering: Aktivera avancerad rapportering](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) om du vill ha mer information.
 
 a. JA - Fortsätt till [steg 5](#step-5).\
-b. NEJ - [Aktivera avancerad rapportering](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) och spara, och vänta i 24 timmar på att Adobe Commerce och Advanced Reporting ska synkroniseras. Kontrollera om dina data nu läses in. Om den gör det har du löst problemet. Om det inte fortsätter till [steg 5](#step-5).
+b. NEJ - [Aktivera avancerad rapportering](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) och spara, och vänta i 24 timmar på att Adobe Commerce och Advanced Reporting ska synkroniseras. Kontrollera om dina data nu läses in. Om den gör det har du löst problemet. Om det inte fortsätter till [steg 5](#step-5).
 
 +++
 
@@ -81,9 +81,9 @@ Kontrollera räknarvärdet i flaggtabellen genom att köra den här frågan: ``S
 
 a. JA - Gör följande: 1. Kör frågan nedan:\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
-2\. [Inaktivera och aktivera modulen för avancerad rapportering](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) i inställningarna och [auktorisera token igen](https://docs.magento.com/user-guide/reports/advanced-reporting.html#verify-that-the-integration-is-active).\
+2\. [Inaktivera och aktivera modulen för avancerad rapportering](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) i inställningarna och [auktorisera token igen](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 3\. Vänta i 24 timmar tills Adobe Commerce och Advanced Reporting har synkroniserats. Om du fortfarande inte kan se data i avancerad rapportering [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NO - Om frågan inte returnerar något, gör du så här: 1. [Inaktivera och aktivera modulen för avancerad rapportering](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) i inställningarna och [auktorisera token igen](https://docs.magento.com/user-guide/reports/advanced-reporting.html#verify-that-the-integration-is-active).\
+b. NO - Om frågan inte returnerar något, gör du så här: 1. [Inaktivera och aktivera modulen för avancerad rapportering](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) i inställningarna och [auktorisera token igen](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 2\. Vänta i 24 timmar tills Adobe Commerce och Advanced Reporting har synkroniserats. Om du fortfarande inte kan se data i avancerad rapportering [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++

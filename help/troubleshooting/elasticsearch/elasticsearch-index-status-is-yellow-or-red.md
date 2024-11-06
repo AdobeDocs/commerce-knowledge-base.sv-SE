@@ -2,7 +2,7 @@
 title: Elasticsearch-indexstatus är "gul" eller "röd"
 description: Artikeln innehåller en korrigering för när indexstatusen för Elasticsearch inte är '*green*'. '*yellow*' anger normal och '*red*' anger felaktig. "Gul" eller "röd" kan förekomma i samband med att produkter saknas eller att gammal produktinformation visas.
 exl-id: 27689511-6a41-41a9-8dda-a627d2f65263
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Du måste ha konfigurerat värddatorn Elasticsearch innan du kan installera version 2.4.0. Se [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
+> [MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Du måste ha konfigurerat värddatorn Elasticsearch innan du kan installera version 2.4.0. Se [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
 
 Artikeln innehåller en korrigering när indexstatusen för Elasticsearch inte är *grön*. *gul* anger normal och *röd* anger felaktig. &quot;Gul&quot; eller &quot;röd&quot; kan förekomma i samband med att produkter saknas eller att gammal produktinformation visas.
 

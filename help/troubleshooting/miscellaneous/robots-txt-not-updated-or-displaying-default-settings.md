@@ -4,7 +4,7 @@ description: Artikeln innehåller en lösning för när du har konfigurerat "rob
 exl-id: 629b1247-9282-49f9-ada3-a804ddbaa0f5
 feature: Configuration
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -42,8 +42,8 @@ Indexering med sökmotorer är inaktiverat.
 
 ## Lösning
 
-Aktivera indexering av sökmotorer. Se [Konfigurera indexering med hjälp av sökmotor](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) i utvecklardokumentationen.
+Aktivera indexering av sökmotorer. Se [Konfigurera indexering med hjälp av sökmotor](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-* [Lägg till webbplatskarta och sökrobotar](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) i utvecklardokumentationen.
+* [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) i utvecklardokumentationen.

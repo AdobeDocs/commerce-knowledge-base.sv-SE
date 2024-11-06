@@ -4,7 +4,7 @@ description: I den här artikeln finns en korrigering som anger att Stock-status
 exl-id: ae32fbe3-deab-4f31-b427-95f8b54a476f
 feature: Install, Inventory, Orders
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -33,4 +33,4 @@ När du först installerar/uppgraderar tilldelas alla produkter standardkällan 
 
 Om du har fler än en webbplats måste du lägga till dessa webbplatser som Sales Channeler i standardlagret eller andra anpassade resurser.
 
-Se avsnittet [Stock i wiki-/användarhandboken](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) i vår användarhandbok för mer information om hur du gör detta.
+Se avsnittet [Stock i wiki-/användarhandboken](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) i vår användarhandbok för mer information om hur du gör detta.

@@ -4,7 +4,7 @@ description: MDVA-44147-korrigeringen åtgärdar ett problem där GraphQL-begär
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -27,7 +27,7 @@ MDVA-44147-korrigeringen åtgärdar ett problem där GraphQL-begäran inte retur
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -36,8 +36,8 @@ GraphQL-begäran returnerar inte rekvisitionslistor.
 <u>Steg som ska återskapas</u>:
 
 1. Gå till **Store** > **Inställningar** > **Konfiguration** > **Allmänt** > **B2B-funktioner** och aktivera rekvisitionslista.
-1. Logga in som kund och lägg till en produkt i [rekvisitionslistan](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html).
-1. Skapa en [kundtoken](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+1. Logga in som kund och lägg till en produkt i [rekvisitionslistan](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Skapa en [kundtoken](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
    <pre>
     <code class="language-graphql">
@@ -52,7 +52,7 @@ GraphQL-begäran returnerar inte rekvisitionslistor.
       </code>
       </pre>
 
-1. Använd följande fråga för att hämta alla rekvisitionslistor från kunden. Använd huvudet **Authorization** med värdet `Bearer <customer_token>`. Mer information finns i artikeln [Customer Query](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) i utvecklardokumentationen.
+1. Använd följande fråga för att hämta alla rekvisitionslistor från kunden. Använd huvudet **Authorization** med värdet `Bearer <customer_token>`. Mer information finns i artikeln [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) i utvecklardokumentationen.
 
    Begäran:
 
@@ -126,7 +126,7 @@ GraphQL-begäran returnerar inte rekvisitionslistor.
       </code>
       </pre>
 
-1. Kopiera UID för objekt från den returnerade listan (MQ==) och använd följande fråga för att få listan filtrerad av UID:t.
+1. Kopiera UID för alla objekt från den returnerade listan (MQ==) och använd följande fråga för att få listan filtrerad av UID.
 
    <pre>
     <code class="language-graphql">
@@ -177,8 +177,8 @@ Nollresultat returneras.
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
@@ -187,4 +187,4 @@ Mer information om verktyget för kvalitetskorrigeringar finns i:
 * [Verktyget för kvalitetskorrigeringar har släppts: ett nytt verktyg för självbetjäning av kvalitetskorrigeringar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas för support.
 * [Kontrollera om det finns en korrigeringsfil för din Adobe Commerce-utgåva med verktyget för kvalitetskorrigeringar](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
-Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [Patchar i QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) i vår utvecklardokumentation.
+Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [Patchar i QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i vår utvecklardokumentation.

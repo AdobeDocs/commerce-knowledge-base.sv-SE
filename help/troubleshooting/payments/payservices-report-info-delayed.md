@@ -4,7 +4,7 @@ description: I den här artikeln förklaras varför rapportering av data i Betal
 exl-id: 2f3249d1-be12-45bc-aa73-bef9766509ae
 feature: Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -29,7 +29,7 @@ När du har fakturerat (hämtat) en order eller utfärdat en kreditnota för en 
 
 Krav: En beställning görs med funktionen Betalningstjänster.
 
-1. En order är [fakturerad](https://docs.magento.com/user-guide/sales/invoice-create.html) (eller [annullerad](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order) eller [återbetald via kreditnota](https://docs.magento.com/user-guide/sales/credit-memos.html)) i [Admin](https://docs.magento.com/user-guide/stores/admin.html).
+1. En order är [fakturerad](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) (eller [annullerad](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) eller [återbetald via kreditnota](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)) i [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin).
 1. Navigera till rapporten Orderbetalningsstatus för att se information om den ordern.
 1. Statusen visas som `AUTHORIZED`, vilket är orderstatus före faktureringen eller annan orderåtgärd.
 
@@ -37,7 +37,7 @@ Krav: En beställning görs med funktionen Betalningstjänster.
 
 >[!NOTE]
 >
->Detta är bara ett vanligt användningsfall. Det kan finnas andra användningsfall när en [orderåtgärd](https://docs.magento.com/user-guide/sales/order-actions.html) inträffar och data inte är omedelbart tillgängliga i den tillämpliga rapporten.
+>Detta är bara ett vanligt användningsfall. Det kan finnas andra användningsfall när en [orderåtgärd](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) inträffar och data inte är omedelbart tillgängliga i den tillämpliga rapporten.
 
 <u>Förväntat resultat</u>:
 Rapportdata fylls i omedelbart efter en åtgärd för en order.

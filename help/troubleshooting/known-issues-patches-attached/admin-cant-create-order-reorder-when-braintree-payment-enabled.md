@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en patch för Adobe Commerce 2.4.5-ut
 exl-id: 8840aecb-21d9-4965-8c09-395e2d263aaa
 feature: Admin Workspace, Native Luma Frontend Development, Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Korrigeringen är kopplad till den här artikeln. Klicka på följande länk om 
 
 >[!NOTE]
 >
->Dessutom för Adobe Commerce på återförsäljare av molninfrastruktur: Adobe har tagit med korrigeringen i Cloud Patches for Commerce version 1.0.18. Se [Cloud Patches for Commerce release notes](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html) i utvecklardokumentationen för att hitta instruktioner om hur du använder det senaste paketet.
+>Dessutom för Adobe Commerce på återförsäljare av molninfrastruktur: Adobe har tagit med korrigeringen i Cloud Patches for Commerce version 1.0.18. Se [Cloud Patches for Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) i utvecklardokumentationen för att hitta instruktioner om hur du använder det senaste paketet.
 
 ### Kompatibla Adobe Commerce-versioner:
 

@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning på problemet när du int
 exl-id: 3cbe1e6c-fc73-4331-add7-1ebcb28a4580
 feature: Data Import/Export, Products
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -50,5 +50,5 @@ Produktens statusattribut har bytt namn i CSV-filen. Det är nu kolumnen [!UICON
 
 ## Relaterad läsning
 
-* [Arbeta med CSV-filer](https://docs.magento.com/user-guide/system/data-csv.html) i vår användarhandbok.
-* [Referens för produktexportattribut](https://docs.magento.com/user-guide/system/data-attributes-product.html) i användarhandboken.
+* [Arbeta med CSV-filer](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) i vår användarhandbok.
+* [Referens för produktexportattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) i användarhandboken.

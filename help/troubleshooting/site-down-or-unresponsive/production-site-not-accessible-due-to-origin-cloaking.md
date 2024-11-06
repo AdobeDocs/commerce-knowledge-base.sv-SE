@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning för när din Adobe Comme
 exl-id: 4412d744-3066-4f78-bc45-8149614ce455
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Insvepning är en säkerhetsfunktion som gör det möjligt för Adobe Commerce a
 ## Lösning
 
 * Om din molnsajt är aktiv växlar du till https://mydomain.com/.
-* Om du har en aktiv plats (ej molnet), som använder domänen https://mydomain.com/, konfigurerar du en underdomän `mcprod.mydomain.com` och uppdaterar **bas-URL** till *https://mcprod.mydomain.com* i stället, pekar [DNS på Fast](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+* Om du har en aktiv plats (ej molnet), som använder domänen https://mydomain.com/, konfigurerar du en underdomän `mcprod.mydomain.com` och uppdaterar **bas-URL** till *https://mcprod.mydomain.com* i stället, pekar [DNS på Fast](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
 
 ## Relaterad läsning
 

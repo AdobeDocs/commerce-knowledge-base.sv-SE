@@ -4,7 +4,7 @@ description: I den här artikeln finns en korrigering för när filen "robots.tx
 exl-id: 6f0b9f47-1901-4c43-88d8-fd992015d70f
 feature: Cloud, Marketing Tools, Paas
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -38,5 +38,5 @@ Om du har aktiverat självbetjäning kan du uppgradera ECE-Tools till minst 2002
 ## Relaterad läsning
 
 * [Så här blockerar du skadlig trafik för Magento Commerce Cloud på snabbnivå](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) i vår kunskapsbas för support.
-* [Lägg till webbplatskarta och sökrobotar](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) i utvecklardokumentationen.
+* [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) i utvecklardokumentationen.
 * [Sökmotorrobotar](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) i användarhandboken.

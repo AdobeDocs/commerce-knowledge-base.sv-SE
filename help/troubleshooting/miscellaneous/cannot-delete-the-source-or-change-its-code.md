@@ -4,7 +4,7 @@ description: I den här artikeln finns en korrigering för när du inte kan ta b
 exl-id: dbdb4d62-9138-4a3d-a58f-8671f1dc5b42
 feature: Console
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -37,6 +37,6 @@ Koden är viktig för att koppla källan till beställningarna. Detta är ett un
 
 Du kan ta bort en källa från en produkt genom att överföra lagret eller släppa produkten från alla leveranser på en plats.
 
-Om du behöver ta bort en källa från [SSA](https://devdocs.magento.com/guides/v2.3/inventory/source-selection-algorithms.html)-beräkningar och Adobe Commerce Inventory-orderbearbetning kan du inaktivera källan. Inaktiverade källor bevarar alla data, tilldelade produkter och lagerkvantiteter och kan återaktiveras när som helst för att börja leverera igen.
+Om du behöver ta bort en källa från [SSA](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/selection-reservations)-beräkningar och Adobe Commerce Inventory-orderbearbetning kan du inaktivera källan. Inaktiverade källor bevarar alla data, tilldelade produkter och lagerkvantiteter och kan återaktiveras när som helst för att börja leverera igen.
 
 Mer information om hur du inaktiverar en källa finns i guiden [Skapa källor](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources).

@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs ett känt problem med Adobe Commerce l
 exl-id: c4d9240e-5df5-4eab-bb4e-1f06f9bd3a1e
 feature: Iaas, Products, Storefront
 role: Admin
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Adobe Commerce installerat med Nginx.
 <u>Steg som ska återskapas</u>:
 
 1. Konfigurera Adobe Commerce att använda AWS `s3` som medielagring.
-1. Konfigurera Nginx med konfigurationsfilen `nginx.conf.sample` som finns i Adobe Commerce installationskatalog och ett virtuellt Nginx-värdsystem. Se [Konfigurera Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) i utvecklardokumentationen.
+1. Konfigurera Nginx med konfigurationsfilen `nginx.conf.sample` som finns i Adobe Commerce installationskatalog och ett virtuellt Nginx-värdsystem. Se [Konfigurera Nginx](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) i utvecklardokumentationen.
 1. Skapa en enkel produkt med en produktbild.
 1. Nginx har en okommenterad konfiguration för storleksändring av bilder i `nginx.conf.sample` som den här:
 

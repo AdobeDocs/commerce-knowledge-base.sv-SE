@@ -3,7 +3,7 @@ title: Blockera skadlig trafik för Adobe Commerce på snabbnivå
 description: I den här artikeln beskrivs de åtgärder du kan vidta för att blockera skadlig trafik när du misstänker att en DoS-attack inträffar i din Adobe Commerce på molninfrastrukturbutik.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -24,7 +24,7 @@ I den här artikeln antar vi att du redan har de skadliga IP-adresserna och/elle
 
 Om webbplatsen är överbelastad av DoS kanske du inte kan logga in på din Commerce Admin (och utföra alla steg som beskrivs nedan).
 
-Om du vill få åtkomst till Admin placerar du webbplatsen i underhållsläge enligt beskrivningen i [Aktivera eller inaktivera underhållsläge](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html#instgde-cli-maint) och vitlistar din IP-adress. Inaktivera underhållsläget när detta är klart.
+Om du vill få åtkomst till Admin placerar du webbplatsen i underhållsläge enligt beskrivningen i [Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) och vitlistar din IP-adress. Inaktivera underhållsläget när detta är klart.
 
 ## Blockera trafik efter IP
 
@@ -74,7 +74,7 @@ Det finns två viktiga saker att tänka på när du använder `robots.txt`:
 * Roboter kan ignorera din `robots.txt`. I synnerhet robotar för skadlig kod som skannar webben efter säkerhetsproblem och e-postadresskörare som används av spamrerare kommer inte att bry sig.
 * Filen `robots.txt` är en offentligt tillgänglig fil. Vem som helst kan se vilka delar av servern som du inte vill att robotar ska använda.
 
-Grundläggande information och standardkonfigurationen för Adobe Commerce `robots.txt` finns i artikeln [ Sökmotorrobotar ](https://docs.magento.com/m2/ee/user_guide/marketing/search-engine-robots.html) i vår utvecklardokumentation.
+Grundläggande information och standardkonfigurationen för Adobe Commerce `robots.txt` finns i artikeln [ Sökmotorrobotar ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) i vår utvecklardokumentation.
 
 Allmän information och rekommendationer om `robots.txt` finns i:
 

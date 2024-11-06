@@ -4,7 +4,7 @@ description: Korrigeringen MDVA-37725 åtgärdar ett problem där asynkrona e-po
 exl-id: c0d1b9a3-01bb-445b-b7da-f9be6952eaeb
 feature: Communications, Orders
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 > MDVA-37725-korrigeringen är föråldrad.
 
-Korrigeringen MDVA-37725 åtgärdar ett problem där asynkrona e-postmeddelanden om beställningar skickas via icke-standardwebbplatser som innehåller URL:er för logotyper från standardwebbplatsen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.4 har installerats. Patch-ID:t är MDVA-37725. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
+Korrigeringen MDVA-37725 åtgärdar ett problem där asynkrona e-postmeddelanden om beställningar skickas via icke-standardwebbplatser som innehåller URL:er för logotyper från standardwebbplatsen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 har installerats. Patch-ID:t är MDVA-37725. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 
 ## Berörda produkter och versioner
 
@@ -31,7 +31,7 @@ Adobe Commerce (alla distributionsmetoder) 2.3.0 - 2.4.3
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -61,8 +61,8 @@ E-postens logotyp-URL innehåller standardwebbplatsens URL.
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) i vår utvecklardokumentation.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 

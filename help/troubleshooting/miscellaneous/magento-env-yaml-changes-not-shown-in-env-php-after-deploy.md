@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning på problemet där ändri
 exl-id: 39ea7295-ba5a-40cc-bc68-a5e0b965c1a7
 feature: Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Den här artikeln innehåller en lösning på problemet där ändringar i filen 
 
 <u>Steg att återskapa:</u>
 
-Ändra ett värde i `.magento.env.yaml` och skicka till servern, där konfigurationen (och distributionsinställningarna) för den utcheckade miljön ska definieras. Stegen finns i [Miljövariabler > Distribuera variabler](https://devdocs.magento.com/cloud/env/variables-deploy.html) i utvecklardokumentationen.
+Ändra ett värde i `.magento.env.yaml` och skicka till servern, där konfigurationen (och distributionsinställningarna) för den utcheckade miljön ska definieras. Stegen finns i [Miljövariabler > Distribuera variabler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) i utvecklardokumentationen.
 
 <u>Förväntat resultat:</u>
 
@@ -45,11 +45,11 @@ Problemet kan bero på det felaktiga värdet för parametern `opcache.enable_cli
 
 ## Lösning
 
-1. Kontrollera att systemet är konfigurerat enligt [Adobe Commerce Performance Best Practices > Software recommendations](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html).
+1. Kontrollera att systemet är konfigurerat enligt [Adobe Commerce Performance Best Practices > Software recommendations](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/software).
 1. Kontrollera om direktivet `opcache.enable_cli` i `php.ini` är inställt på `0` genom att köra: `php -i | grep opcache.enable_cli`
 1. Om utdata ser ut som `opcache.enable_cli=1` redigerar du filen `php.ini` i projektets rotkatalog och ändrar `opcache.enable_cli=1` till `opcache.enable_cli=0`
 1. Distribuera om projektet.
 
 ## Relaterad läsning
 
-* [Cloud för Adobe Commerce > Skapa och distribuera](https://devdocs.magento.com/cloud/project/magento-env-yaml.html).
+* [Cloud för Adobe Commerce > Skapa och distribuera](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml).

@@ -4,7 +4,7 @@ description: "Den här artikeln innehåller en lösning för när sidcachen vär
 exl-id: 20a88030-b1c9-4fdc-83c1-f344d44cd2e1
 feature: Cache, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
@@ -47,5 +47,5 @@ Kontrollera att du inte har åtkomstkontroll aktiverad: gå till den specifika g
 
 ## Relaterad läsning
 
-* [Adobe Commerce Användarhandbok > Helsidescache](https://docs.magento.com/user-guide/system/cache-full-page.html) i vår användarhandbok.
+* [Adobe Commerce Användarhandbok > Helsidescache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) i vår användarhandbok.
 * [Cacheuppvärmning och webbplatsen är inte tillgänglig på Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) i vår kunskapsbas för support.

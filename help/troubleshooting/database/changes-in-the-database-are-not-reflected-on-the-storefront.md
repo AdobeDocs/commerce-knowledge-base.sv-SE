@@ -4,7 +4,7 @@ description: Den här artikeln innehåller lösningar för att undvika fördröj
 exl-id: ac52c808-299f-4d08-902f-f87db1fa7ca6
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -26,13 +26,13 @@ Berörda produkter och versioner:
 
 ## Orsak
 
-Om indexerarna är [konfigurerade att uppdateras av schema](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) kan problemet bero på en eller flera tabeller där ändringsloggarna är för stora eller att MySQL-utlösare inte har konfigurerats.
+Om indexerarna är [konfigurerade att uppdateras av schema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) kan problemet bero på en eller flera tabeller där ändringsloggarna är för stora eller att MySQL-utlösare inte har konfigurerats.
 
 ### Stora ändringsloggtabeller
 
 Registren för ändringsloggar blir så stora om cron-jobbet `indexer_update_all_views` inte slutförs flera gånger.
 
-Ändringsloggtabeller är de databastabeller där ändringar av enheter spåras. En post lagras i en ändringsloggtabell så länge ändringen inte tillämpas, vilket utförs av kron-jobbet `indexer_update_all_views`. Det finns flera ändringsloggtabeller i en Adobe Commerce-databas, de namnges enligt följande mönster: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, till exempel `catalog_category_product_cl`, `catalog_product_category_cl`. Mer information om hur ändringar spåras i databasen finns i artikeln [Indexeringsöversikt > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) i utvecklardokumentationen.
+Ändringsloggtabeller är de databastabeller där ändringar av enheter spåras. En post lagras i en ändringsloggtabell så länge ändringen inte tillämpas, vilket utförs av kron-jobbet `indexer_update_all_views`. Det finns flera ändringsloggtabeller i en Adobe Commerce-databas, de namnges enligt följande mönster: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, till exempel `catalog_category_product_cl`, `catalog_product_category_cl`. Mer information om hur ändringar spåras i databasen finns i artikeln [Indexeringsöversikt > Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) i utvecklardokumentationen.
 
 ### [!DNL MySQL] databasutlösare har inte konfigurerats
 

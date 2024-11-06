@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning på problemet när du har
 exl-id: 7f7bf782-4b35-4067-aa94-417097079f1f
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Du har en giltig CSV-fil som innehåller paketprodukter.
 
 <u>Steg som ska återskapas</u>:
 
-1. Importera filen med [importfunktionen](https://docs.magento.com/m2/ee/user_guide/system/data-import.html).
+1. Importera filen med [importfunktionen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import).
 1. Öppna produktsidan för paketet.
 
 <u>Förväntade resultat</u>:
@@ -46,7 +46,7 @@ Alternativpositionen har inte deklarerats explicit.
 
 ## Lösning
 
-1. Deklarera en position explicit för varje alternativ i parametern `position` i kolumnen `bundle_values` i CSV-filen. Mer information finns i [Redigera produktdata](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) i vår användarhandbok.
+1. Deklarera en position explicit för varje alternativ i parametern `position` i kolumnen `bundle_values` i CSV-filen. Mer information finns i [Redigera produktdata](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) i vår användarhandbok.
 1. Upprepa importåtgärden.
 
-Allmän information om import finns i [Importera paketprodukt](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) i användarhandboken.
+Allmän information om import finns i [Importera paketprodukt](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) i användarhandboken.

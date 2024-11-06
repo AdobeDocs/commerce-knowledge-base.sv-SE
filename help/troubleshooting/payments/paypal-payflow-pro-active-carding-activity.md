@@ -4,7 +4,7 @@ description: UPPDATERAD 2 april 2019
 exl-id: 9fe73788-5b67-445a-9b0d-86489125d271
 feature: Cache, Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -119,8 +119,8 @@ bin/magento cache:clean
 
 När du har installerat paketet konfigurerar du Google reCAPTCHA (rekommenderas) eller CAPTCHA enligt beskrivningen i följande dokument:
 
-* [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html) i vår användarhandbok.
-* [CAPTCHA](https://docs.magento.com/user-guide/stores/security-captcha.html) i vår användarhandbok.
+* [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) i vår användarhandbok.
+* [CAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-captcha) i vår användarhandbok.
 
 Det nya alternativet för utcheckningsformulär är:
 

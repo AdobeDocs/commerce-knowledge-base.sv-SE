@@ -4,7 +4,7 @@ description: I det här avsnittet diskuteras en lösning när hög belastning fr
 exl-id: c1f9d282-41d8-4850-8a24-336d55aa3140
 feature: Cloud, Observability, Paas, Services
 role: Developer
-source-git-commit: 075f55b94202f75839abd25bd47824eeb5226485
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
@@ -24,7 +24,7 @@ I det här avsnittet diskuteras en lösning när hög belastning från MySQL ors
 * ECE-verktyg version 2002.0.16 och senare
 * New Relic APM-tjänst (**Ditt Adobe Commerce-konto för molninfrastruktur innehåller programvaran för New Relic APM-tjänsten** tillsammans med en licensnyckel.)
 
-Mer information om New Relic APM-tjänsten och dess konfiguration med ditt Adobe Commerce-konto för molninfrastruktur finns på [New Relic-tjänster](https://devdocs.magento.com/guides/v2.3/cloud/project/new-relic.html) och [Introduktion till New Relic APM](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
+Mer information om New Relic APM-tjänsten och dess konfiguration med ditt Adobe Commerce-konto för molninfrastruktur finns på [New Relic-tjänster](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) och [Introduktion till New Relic APM](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
 
 ## Problem
 
@@ -61,7 +61,7 @@ Adobe Commerce kan läsa flera databaser eller Redis asynkront. Uppdaterar filen
 
    ![KB-372_image004.png](assets/KB-372_image004.png)
 
-   Mer information finns i [Distribuera variabler i DevDocs](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection).
+   Mer information finns i [Distribuera variabler i DevDocs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection).
 
 1. Genomför ändringarna och gör ändringarna mer omfattande.
 1. När du gör ändringar initieras en ny distributionsprocess. När distributionen är klar bör du nu ha konfigurerat Adobe Commerce på molninfrastrukturinstansen så att den använder slavanslutningar.
@@ -70,7 +70,7 @@ Adobe Commerce kan läsa flera databaser eller Redis asynkront. Uppdaterar filen
 
 Nedan beskrivs de vanligaste frågorna du kan ställa när du funderar på att använda Slave Connections-funktionen för din Adobe Commerce i molninfrastrukturbutiken.
 
-* Finns det några kända problem eller begränsningar för att använda slavanslutningar? **Vi har inga kända problem med att använda slavanslutningar. Se bara till att du använder det senaste uppdaterade verktygspaketet. Instruktioner finns här för [hur du uppdaterar ditt verktygspaket](https://devdocs.magento.com/cloud/project/ece-tools-update.html).**
+* Finns det några kända problem eller begränsningar för att använda slavanslutningar? **Vi har inga kända problem med att använda slavanslutningar. Se bara till att du använder det senaste uppdaterade verktygspaketet. Instruktioner finns här för [hur du uppdaterar ditt verktygspaket](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package).**
 * Finns det någon extra fördröjning genom att använda slavanslutningar? *Ja, fördröjningen mellan AZ (cross-Availability Zones) är högre och minskar prestanda för en Adobe Commerce på en molninfrastrukturinstans om instansen inte är överbelastad och kan bära hela belastningen. Men om instansen är överlastad kan master-slave hjälpa till med prestandan genom att sprida belastningen på MySQL-databasen eller Redis över olika noder.*
 
   **För kluster som inte är överbelastade** - **Slavanslutningar saktar ned prestanda med 10-15 %**, vilket är en av orsakerna till att det inte är standard.
@@ -82,9 +82,9 @@ Nedan beskrivs de vanligaste frågorna du kan ställa när du funderar på att a
 
 I vår utvecklardokumentation:
 
-* [Distribuera variabler](https://devdocs.magento.com/cloud/env/variables-deploy.html).
-* [Konfigurera valfri databasreplikering](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master_slavedb.html).
-* [ece-tools-paket](https://devdocs.magento.com/cloud/reference/ece-tools-reference.html).
+* [Distribuera variabler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy).
+* [Konfigurera valfri databasreplikering](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication).
+* [ece-tools-paket](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview).
 
 >[!NOTE]
 >

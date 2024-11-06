@@ -4,7 +4,7 @@ description: I den här artikeln finns en lösning för komponentberoenden i kon
 exl-id: 782049c4-b6e1-4ead-a00f-80d2aa8475c9
 feature: Configuration
 role: Developer
-source-git-commit: 8f0f7412e75e07a22e66236b88c095c698dbf23e
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
@@ -51,14 +51,14 @@ Två huvudscenarier kan leda till komponentberoenden i konflikt. Klicka på ditt
 Om du uppgraderar Adobe Commerce till molninfrastruktur kan du försöka med följande för att lösa komponentberoenden i konflikt:
 
 * Kontrollera vilka nycklar som används för att uppgradera. Genereras nycklarna från rätt e-postkonto?
-* Kontrollera behörigheterna och se till att de överensstämmer med uppgraderingskraven för Magento. Granska [Magento Upgrade Overview > Update and Upgrade Checklist > File System Permissions](https://devdocs.magento.com/guides/v2.3/comp-mgr/prereq/prereq_compman-checklist.html#perms) i utvecklardokumentationen.
+* Kontrollera behörigheterna och se till att de överensstämmer med uppgraderingskraven för Magento. Granska [Magento Upgrade Overview > Update and Upgrade Checklist > File System Permissions](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#verify-file-system-permissions) i utvecklardokumentationen.
 
 ## Inkompatibilitet med tredjepartsmoduler: {#incompatibility-third-party-modules}
 
 Komponentberoenden i konflikt kan också orsakas av tredjepartsmoduler som är beroende av tidigare Commerce-komponenter än de som du har installerat. Försök med följande:
 
-1. I föregående [exempel](#issue) kan den installerade paketets magento/sample-data version 0.74.0-beta15 inte uppgraderas till 1.0.0-beta. 0.74.0-beta15 kan dock uppgraderas till 0.74.0-beta16 (eller andra). Redigera `composer.json` om du vill göra några av dessa ändringar. Vanligtvis definieras de versioner som ditt projekt begär i egenskapen `require` eller `require-dev` för objektet i den JSON-filen. Beroende på vilka alternativ som finns för de paketversioner som tillhandahålls, kan det hända att de anger en specifik version eller en begränsning. Allmän vägledning om hur du använder Composer finns i [Cloud for Adobe Commerce > Technologies and Requirements > Composer](https://devdocs.magento.com/cloud/reference/cloud-composer.html#files) i vår utvecklardokumentation. Om du befinner dig i Adobe Commerce lokalt, se [Adobe Commerce > Installationshandbok > Installera Adobe Commerce med Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) .
-1. Prova beredskapskontrollen nu. Granska [Adobe Commerce Upgrade Overview > Run the Module Manager > Step 1 Readiness Check](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-readiness.html) i vår utvecklardokumentation.
+1. I föregående [exempel](#issue) kan den installerade paketets magento/sample-data version 0.74.0-beta15 inte uppgraderas till 1.0.0-beta. 0.74.0-beta15 kan dock uppgraderas till 0.74.0-beta16 (eller andra). Redigera `composer.json` om du vill göra några av dessa ändringar. Vanligtvis definieras de versioner som ditt projekt begär i egenskapen `require` eller `require-dev` för objektet i den JSON-filen. Beroende på vilka alternativ som finns för de paketversioner som tillhandahålls, kan det hända att de anger en specifik version eller en begränsning. Allmän vägledning om hur du använder Composer finns i [Cloud for Adobe Commerce > Technologies and Requirements > Composer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#files) i vår utvecklardokumentation. Om du befinner dig i Adobe Commerce lokalt, se [Adobe Commerce > Installationshandbok > Installera Adobe Commerce med Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) .
+1. Prova beredskapskontrollen nu. Granska [Adobe Commerce Upgrade Overview > Run the Module Manager > Step 1 Readiness Check](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview) i vår utvecklardokumentation.
 1. Om beredskapskontrollen misslyckas med ett annat felmeddelande om komponentberoendekontroll klickar du på följande länkar beroende på om du använder [Adobe Commerce](#magento-commerce-magento-commerce-cloud) eller [Magento Open Source](#opensource) för att få fler felsökningssteg.
 
 ## Adobe Commerce {#magento-commerce-magento-commerce-cloud}

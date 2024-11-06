@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs några vanliga MySQL-problem (långsam
 exl-id: cae02e4f-d8cb-4074-abac-24ead22bdc07
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -80,5 +80,5 @@ Detta hjälper till att identifiera om MySQL-servern är aktiv och att det inte 
 
 * [MySQL - visa processlistsyntax](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) i dev.mysql.com.
 * [MySQL Kill Syntax](https://dev.mysql.com/doc/refman/8.0/en/kill.html) i dev.mysql.com.
-* [Säkerhet, prestanda och datahantering](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) i utvecklardokumentationen.
-* [MySQL-hjälp](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html) i utvecklardokumentationen.
+* [Säkerhet, prestanda och datahantering](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) i utvecklardokumentationen.
+* [MySQL-hjälp](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) i utvecklardokumentationen.

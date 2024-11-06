@@ -3,7 +3,7 @@ title: Elasticsearch i Adobe Commerce felsökare
 description: Problem med Elasticsearch i Adobe Commerce kan lösas med felsökningsverktyget i Elasticsearch. Klicka på varje fråga för att visa svaret i varje steg i felsökaren.
 exl-id: acae0da0-2918-4021-9fbe-c138940c5a72
 feature: Categories
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -100,7 +100,7 @@ b. NEJ - Om statusen för katalogsökningen är _Indexera om krävs_ körs i CLI
 
 +++**`.yaml`fil uppdaterades nyligen?**
 
-a. JA - Kontrollera konfigurationen för `.yaml` Elasticsearch genom att referera till DevDocs [Konfigurera Elasticsearch: Om du vill aktivera Elasticsearch ](https://devdocs.magento.com/cloud/project/project-conf-files_services-elastic.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=elastic%20search%20yaml).\
+a. JA - Kontrollera konfigurationen för `.yaml` Elasticsearch genom att referera till DevDocs [Konfigurera Elasticsearch: Om du vill aktivera Elasticsearch ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).\
 b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
@@ -131,7 +131,7 @@ b. NEJ - Fortsätt till [steg 12](#step-12).
 
 +++**Lagringsanvändning > 85 %?**
 
-a. JA - Du måste öka det tillgängliga lagringsutrymmet. Mer information finns i DevDocs[Konfigurera Elasticsearch: Om du vill aktivera Elasticsearch](https://devdocs.magento.com/cloud/project/project-conf-files_services-elastic.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=elastic%20search%20yaml). Kör sedan: `localhost:9200/_cat/allocation?v` (om du arbetar i Pro-miljöer för staging eller produktion). Om du är i någon av integreringsmiljöerna (som innehåller alla startgrenar) kör du: `elasticsearch.internal:9200/_cat/allocation?v`. Fortsätt till [Steg 11](#step-11).\
+a. JA - Du måste öka det tillgängliga lagringsutrymmet. Mer information finns i DevDocs[Konfigurera Elasticsearch: Om du vill aktivera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch). Kör sedan: `localhost:9200/_cat/allocation?v` (om du arbetar i Pro-miljöer för staging eller produktion). Om du är i någon av integreringsmiljöerna (som innehåller alla startgrenar) kör du: `elasticsearch.internal:9200/_cat/allocation?v`. Fortsätt till [Steg 11](#step-11).\
 b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++

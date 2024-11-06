@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning för när du inte kan än
 exl-id: 5fe0967a-4241-440b-bb0d-429fa5644bbc
 feature: Admin Workspace
 role: Developer
-source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -52,6 +52,6 @@ Kontrollera att konfigurationen inte har sparats i `app/etc/env.php` eller `app/
 
 ## Relaterad läsning
 
-* [Exportera konfigurationen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-export.html#sensitive-or-system-specific-settings) i utvecklardokumentationen.
-* [Ange konfigurationsvärden](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-set.html#config-cli-config-set) i utvecklardokumentationen.
+* [Exportera konfigurationen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration) i utvecklardokumentationen.
+* [Ange konfigurationsvärden](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values) i utvecklardokumentationen.
 * [Adobe Commerce i molninfrastruktur: minska driftsättningsdriftsavbrott med Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) i vår kunskapsbas för support.

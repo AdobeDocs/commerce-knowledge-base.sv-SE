@@ -2,7 +2,7 @@
 title: MySQL och Elasticsearch visar olika resultat
 description: I den här artikeln finns en patch för det kända problemet med Adobe Commerce i molninfrastruktur 2.2.3 som rör hämtning av olika sökresultat för samma sökfråga med MySQL och Elasticsearch.
 exl-id: 37a0164a-0237-4200-ab9c-e0dbad7e2062
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Elasticsearch-värden måste vara konfigurerad och konfigurerad innan du kan installera version 2.4.0. Mer information finns i [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) i utvecklardokumentationen.
+> [MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Elasticsearch-värden måste vara konfigurerad och konfigurerad innan du kan installera version 2.4.0. Mer information finns i [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) i utvecklardokumentationen.
 
 I den här artikeln finns en patch för det kända problemet med Adobe Commerce i molninfrastruktur 2.2.3 som rör hämtning av olika sökresultat för samma sökfråga med MySQL och Elasticsearch.
 

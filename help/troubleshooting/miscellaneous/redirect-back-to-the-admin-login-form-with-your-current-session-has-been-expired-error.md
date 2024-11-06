@@ -4,7 +4,7 @@ description: 'I den här artikeln finns möjliga lösningar på inloggningsprobl
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer
-source-git-commit: 3f205b1d755bda7056f47bf1e1d036feb47ebadd
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Kontrollera sessionsposten som skapats i tabellen `admin_user_session`. Om värd
 
 ### Ändra sessionslagring
 
-Försök att ändra sessionslagringen. Använd informationen från artikeln [Hitta dina sessionsfiler](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) i vår utvecklardokumentation för att ta reda på var din session är lagrad och ändra den genom att redigera filen `app/etc/env.php`.
+Försök att ändra sessionslagringen. Använd informationen från artikeln [Hitta dina sessionsfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) i vår utvecklardokumentation för att ta reda på var din session är lagrad och ändra den genom att redigera filen `app/etc/env.php`.
 
 Om du till exempel vill börja lagra sessionen i filsystemet ändrar du avsnittet `'session'` så här:
 
@@ -69,7 +69,7 @@ Kör kommandot `bin/magento app:config:import` om du vill importera konfiguratio
 
 ## Relaterad läsning
 
-* [Importera data från konfigurationsfiler](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) i utvecklardokumentationen
+* [Importera data från konfigurationsfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) i utvecklardokumentationen
 * [Konfigurera [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) i utvecklardokumentationen
 * [Omdirigera tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet&quot;Ditt konto är tillfälligt inaktiverat&quot; ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) i vår kunskapsbas för support
 * [Omdirigera tillbaka till inloggningsformuläret utan fel när du försöker logga in på [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) i vår kunskapsbas för support

@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs hur du åtgärdar ett problem där du 
 exl-id: e2c00d4d-31c3-4446-a317-a8ac92c707d5
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -170,4 +170,4 @@ class YourClass
 
 ## Relaterad läsning
 
-* [Kodgenerering](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/code-generation.html) i utvecklardokumentationen.
+* [Kodgenerering](https://developer.adobe.com/commerce/php/development/components/code-generation/) i utvecklardokumentationen.

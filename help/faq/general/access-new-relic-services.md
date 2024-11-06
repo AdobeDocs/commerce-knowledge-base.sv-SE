@@ -2,7 +2,7 @@
 title: Få tillgång till New Relic tjänster
 description: "I den här artikeln beskrivs hur kunder med tillräcklig licens-/prenumerationsauktorisering kan få tillgång till utvalda New Relic-tjänster:"
 exl-id: c01af85e-0590-49e8-a1a0-b901f23c4431
-source-git-commit: e07ade849a4105b5e499b5282d75cb1b5321b6ea
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -28,8 +28,8 @@ Om några kunder har fått e-postmeddelandet med en aktiveringslänk från New R
 
 **Kunder med startplanarkitektur för Adobe Commerce i molninfrastruktur som vill använda New Relic:**
 
-Startarkitekturskunder ingår inte i New Relic Infrastructure Service som en del av prenumerationen. De kan dock använda New Relic APM (Application Performance Monitoring) om de lägger till en licens genom att följa stegen [Anslut till New Relic](https://devdocs.magento.com/cloud/project/new-relic.html#connect-to-new-relic) i utvecklardokumentationen.
+Startarkitekturskunder ingår inte i New Relic Infrastructure Service som en del av prenumerationen. De kan dock använda New Relic APM (Application Performance Monitoring) om de lägger till en licens genom att följa stegen [Anslut till New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-Mer information om New Relic tjänster finns i [Undersök prestanda](https://devdocs.magento.com/cloud/project/new-relic.html#investigate-performance) i utvecklardokumentationen. Du kan även läsa [Felsöka prestanda med New Relic i Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) i vår kunskapsbas för support.
+Mer information om New Relic tjänster finns i [Undersök prestanda](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen. Du kan även läsa [Felsöka prestanda med New Relic i Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) i vår kunskapsbas för support.

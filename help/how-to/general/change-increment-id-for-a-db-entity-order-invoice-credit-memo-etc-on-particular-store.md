@@ -3,7 +3,7 @@ title: Ändra öknings-ID för en databasenhet (order, faktura, kreditnota osv.)
 description: I den här artikeln beskrivs hur du ändrar tilläggs-ID för en Adobe Commerce-databasentitet (order, faktura, kreditnota osv.) på en viss Adobe Commerce-butik med SQL-satsen "ALTER TABLE".
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -18,7 +18,7 @@ I den här artikeln beskrivs hur du ändrar tilläggs-ID för en Adobe Commerce-
 
 * Lokal Adobe Commerce: 2.x.x
 * Adobe Commerce i molninfrastruktur: 2.x.x
-* MySQL: any [supported version](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements-tech.html#database)
+* MySQL: any [supported version](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
 
 ## När behöver du ändra ID för ökning (fall)
 
@@ -34,7 +34,7 @@ Du kan behöva ändra ID:t för ökning för nya DB-entiteter i följande fall:
 ## Krav på steg
 
 1. Sök efter butiker och enheter som det nya tilläggs-ID:t ska ändras för.
-1. [Anslut](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) till din MySQL-databas. För Adobe Commerce i molninfrastruktur måste du först [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [Anslut](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) till din MySQL-databas. För Adobe Commerce i molninfrastruktur måste du först [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Kontrollera det aktuella auto\_increment-värdet för entitetssekvenstabellen med följande fråga:
 
 ```sql
@@ -53,7 +53,7 @@ Om värdet för kolumnen `auto_increment` är *1234* får nästa ordning som pla
 
 ### Relaterad dokumentation
 
-* [Konfigurera en MySQL-fjärrdatabasanslutning](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) i utvecklardokumentationen.
+* [Konfigurera en MySQL-fjärrdatabasanslutning](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) i utvecklardokumentationen.
 
 ## Uppdatera enhet för att ändra öknings-ID
 

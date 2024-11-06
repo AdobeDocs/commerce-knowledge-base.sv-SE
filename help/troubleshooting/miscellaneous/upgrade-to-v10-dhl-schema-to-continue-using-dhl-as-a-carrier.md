@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning som tillåter handlare at
 exl-id: eed83713-2d6a-4360-bfa1-bebd4d604f2f
 feature: Orders, Shipping/Delivery, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Korrigerings-ID:t är AC-3023 och det är tillgängligt i [!DNL Quality Patches 
 Använd följande länkar om hur du använder [!DNL Quality Patches Tool] och installera korrigeringsfiler beroende på distributionsmetoder:
 
 * Adobe Commerce lokalt och Magento Open Source: [Kvalitetskorrigeringsverktyg > Användning](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) i Adobe Experience League.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://devdocs.magento.com/cloud/project/project-patch.html) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 **Korrigeringen gäller för följande Adobe Commerce-versioner (alla distributionsmetoder):**
 

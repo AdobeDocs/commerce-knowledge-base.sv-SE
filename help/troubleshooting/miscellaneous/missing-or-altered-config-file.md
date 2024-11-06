@@ -4,7 +4,7 @@ description: Lös problemet med saknade eller ändrade konfigurationsfiler för 
 exl-id: d80bf981-8ba6-4357-a841-57bf5d3f2a3f
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -36,7 +36,7 @@ BAK-filerna är en produkt i distributionsprocessen. Om du ändrar en konfigurat
 
 Så här återställer du konfigurationsfilerna:
 
-1. Logga in på fjärrdatabasen med [SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+1. Logga in på fjärrdatabasen med [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 1. Visa en lista över tillgängliga säkerhetskopieringsfiler.
 
    ```

@@ -2,7 +2,7 @@
 title: Tjänsten Elasticsearch körs inte
 description: Den här artikeln innehåller lösningar på fel som kan uppstå när tjänsten Elasticsearch (ES) inte körs (vanligtvis som ett resultat av krascher). Symtomen kan vara fel vid hälsokontroller som körs med vändning, omindexering med kommandoraden, undantag- och PHP-fel samt fel på produktsidor. I tabellen visas fel och länkar till resurser som du kan försöka åtgärda. Ett symtom kan ha en rad olika orsaker.
 exl-id: 2c2230de-cb30-4a03-8c3e-d9f44783dbae
-source-git-commit: 3ff881f1c799201ed25ba9737864b1226d283c22
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Den här artikeln innehåller lösningar på fel som kan uppstå när tjänsten 
 
    * v2.2.3+ stödjer ES 5.x
    * v2.2.8+ och v2.3.1+ har stöd för ES 6.x
-   * ES v2.x och v5.x rekommenderas inte på grund av [slutet på livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du [Ändra Elasticsearch PHP-klienten](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
+   * ES v2.x och v5.x rekommenderas inte på grund av [slutet på livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du [Ändra Elasticsearch PHP-klienten](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
 
 * Magento Open Source v2.3.0+ stöder ES 5.x och 6.x (men 6.x rekommenderas).
 
@@ -59,8 +59,8 @@ Elasticsuite-index tas inte bort.  Se <a href="https://experienceleague.adobe.co
 <li><a href="https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk/">8 tips för att lösa problem med hårddisken i Linux och Unix, t.ex. när disken är full eller inte kan skriva till disken</a></li>
 <li><a href="https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not">serverdefault: df says disk is full, but it is not</a></li>
 <li><a href="https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux">unix.stackexchange.com: Spåra var diskutrymmet har pågått i Linux?</a></li>
-<li>Loggfiler arkiveras inte tillräckligt ofta. Se <a href="https://docs.magento.com/m2/ee/user_guide/system/action-log-archive.html#configure-the-log-archive">Konfigurera loggarkivet</a> i utvecklardokumentationen.</li>
-<li>Filsystemkataloger är inte optimerade. Se <a href="https://docs.magento.com/m2/ee/user_guide/system/file-optimization.html">Filoptimering</a> i utvecklardokumentationen.</li>
+<li>Loggfiler arkiveras inte tillräckligt ofta. Se <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/action-logs/action-log-archive">Konfigurera loggarkivet</a> i utvecklardokumentationen.</li>
+<li>Filsystemkataloger är inte optimerade. Se <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#resource-file-optimization">Filoptimering</a> i utvecklardokumentationen.</li>
 <li>Om lösningarna i ovanstående dokumentation inte löser problemet kan du kontakta ditt Adobe-kontoteam för att begära ytterligare lagringsutrymme.</li>
 </ul>
 </li>

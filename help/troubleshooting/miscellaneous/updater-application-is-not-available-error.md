@@ -4,7 +4,7 @@ description: Den här artikeln handlar om lösningen på problemet med att uppda
 exl-id: 85e55ed8-0bc9-4378-b722-46be98ce2638
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -29,4 +29,4 @@ Följande meddelande visas i beredskapskontrollen:
 
 ## Lösning
 
-Du kan lösa det här problemet genom att kontrollera om det finns en `<magento_root>/update`-katalog som innehåller filer och underkataloger. Annars kan du läsa [Konfigurera uppdateraren](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) i utvecklardokumentationen.
+Du kan lösa det här problemet genom att kontrollera om det finns en `<magento_root>/update`-katalog som innehåller filer och underkataloger. Annars kan du läsa [Konfigurera uppdateraren](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error) i utvecklardokumentationen.

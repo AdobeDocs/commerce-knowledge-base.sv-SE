@@ -4,7 +4,7 @@ description: "Ser siffrorna i en viss rapport felaktiga ut? Ser du oväntade NUL
 exl-id: 2ecea990-7292-46c1-b6eb-75f0404aaf0b
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Ser siffrorna i en viss rapport felaktiga ut? Ser du oväntade NULL-värden? Om 
 * [Checklista för diagnostisk diskrepans](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Använda export för att identifiera dataavvikelser](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Vi rekommenderar även att du kontrollerar att rätt [replikeringsmetoder](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) och [rechecks](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) har angetts för de tabeller och kolumner som är inblandade i avvikelsen. Observera att du behöver administratörsbehörighet för att komma åt replikeringsmetoden och för att kontrollera information igen.
+Vi rekommenderar även att du kontrollerar att rätt [replikeringsmetoder](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) och [rechecks](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) har angetts för de tabeller och kolumner som är inblandade i avvikelsen. Observera att du behöver administratörsbehörighet för att komma åt replikeringsmetoden och för att kontrollera information igen.
 
 ## Jag behöver fortfarande hjälp!
 

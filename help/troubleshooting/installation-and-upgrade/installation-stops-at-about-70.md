@@ -4,7 +4,7 @@ description: I den här artikeln finns en korrigering för när installationen s
 exl-id: 04aa3572-3c42-4565-9f7f-b4d90df96df2
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Ställ in följande på lämpligt sätt.
 
 ### Alla webbservrar och lack {#all-web-servers-and-varnish}
 
-1. Leta upp `php.ini` med hjälp av en [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo)-fil.
+1. Leta upp `php.ini` med hjälp av en [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software)-fil.
 1. Som användare med `root`-behörighet öppnar du `php.ini` i en textredigerare.
 1. Leta reda på inställningen `max_execution_time`.
 1. Ändra värdet till `18000`.

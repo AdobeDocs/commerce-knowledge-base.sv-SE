@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning på problem med distribut
 exl-id: e8d72ebe-453f-4d18-a25e-c76e685aa667
 feature: Deploy, Roles/Permissions
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -64,4 +64,4 @@ Om du har tillgång till det Marketplace-konto som är kopplat till den gamla ny
 
 ## Relaterad läsning
 
-* [Hämta dina autentiseringsnycklar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html) i utvecklardokumentationen.
+* [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) i utvecklardokumentationen.

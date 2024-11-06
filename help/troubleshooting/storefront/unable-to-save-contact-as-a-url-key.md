@@ -1,10 +1,10 @@
 ---
 title: Kan inte spara *kontakt* som URL-nyckel
-description: I den här artikeln finns en lösning på problemet när du inte kan spara *contact* som en URL-nyckel (t.ex. "/contact") för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett-URL.
+description: I den här artikeln finns en lösning på problemet när du inte kan spara *contact* som URL-nyckel (t.ex. "/contact") för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett-URL.
 exl-id: eb340813-aba5-43a4-af5d-8fb64c93e021
 feature: CMS, Marketing Tools, Storefront
 role: Admin
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Det går inte att spara *kontakt* som URL-nyckel
 
-Den här artikeln innehåller en lösning på problemet när du inte kan spara *contact* som en URL-nyckel (t.ex. &quot;/contact&quot;) för produkter eller CMS-sidor.
+I den här artikeln finns en lösning på problemet när du inte kan spara *contact* som en URL-nyckel (t.ex. &quot;/contact&quot;) för produkter eller CMS-sidor.
 
 ## Berörda produkter och versioner
 
@@ -25,7 +25,7 @@ Du kan inte spara en produkt eller en CMS-sida med termen *contact* som URL-nyck
 
 <u>Steg som ska återskapas</u>:
 
-Skapa en CMS-sida med *kontakt* som URL-nyckel.
+Skapa en CMS-sida med *contact* som URL-nyckel.
 
 <u>Förväntat resultat</u>:
 
@@ -63,5 +63,5 @@ Utför följande steg:
 
 ## Relaterad läsning
 
-* [URL-omskrivningar](https://docs.magento.com/user-guide/marketing/url-rewrite.html) i användarhandboken.
-* [SEO Best Practices](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) i vår användarhandbok.
+* [URL-omskrivningar](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) i användarhandboken.
+* [SEO Best Practices](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) i vår användarhandbok.

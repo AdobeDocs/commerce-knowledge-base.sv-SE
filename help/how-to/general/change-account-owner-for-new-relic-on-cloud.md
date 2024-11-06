@@ -3,7 +3,7 @@ title: Ändra kontoägare för New Relic i molnet
 description: För ditt Adobe Commerce i molninfrastrukturprojekt kan du ändra kontoägaren för New Relic på New Relic användargränssnittssida. Detaljerade steg finns i [Ändra kontoägare](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/change-account-owner) i New Relic-dokumentationen.
 exl-id: fbb778d5-7e5d-4cd9-849a-4071ca9e4bea
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -20,4 +20,4 @@ Om någon måste läggas till som användare, men ingen befintlig ägare eller a
 
 ## Relaterad läsning
 
-* [New Relic-tjänster](https://devdocs.magento.com/guides/v2.3/cloud/project/new-relic.html) i utvecklardokumentationen.
+* [New Relic-tjänster](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen.

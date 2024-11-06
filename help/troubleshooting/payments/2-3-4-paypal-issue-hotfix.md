@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en korrigering för fel som tas emot 
 exl-id: 9f5ec100-49b0-4ac5-8951-32b5c4fe6bed
 feature: Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 För Adobe Commerce lokala handlare: Använd snabbkorrigeringen [hotfix](https://magento.com/tech-resources/download#download2353) som finns i hämtningsavsnittet på portalen [magento.com](https://magento.com) i Mitt konto.
 
-För Adobe Commerce på återförsäljare av molninfrastruktur: Adobe har tagit med korrigeringen i Cloud Patches for Commerce v1.0.2. Se [Cloud Patches for Commerce release notes](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) i utvecklardokumentationen för att hitta instruktioner om hur du använder det senaste paketet.
+För Adobe Commerce på återförsäljare av molninfrastruktur: Adobe har tagit med korrigeringen i Cloud Patches for Commerce v1.0.2. Se [Cloud Patches for Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) i utvecklardokumentationen för att hitta instruktioner om hur du använder det senaste paketet.
 
 ## Så här använder du patchen
 
@@ -57,4 +57,4 @@ Instruktioner finns i [Använda en dispositionsruta från Adobe](/help/how-to/ge
 
 ## Relaterad läsning
 
-* [Versionsinformation > Versionsinformation för Adobe Commerce 2.3.4 > Tillämpa PayPal Express Checkout-problemet med regionkorrigering för Adobe Commerce 2.3.4 för att åtgärda ett kritiskt PayPal Express Checkout-problem](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue) i vår utvecklardokumentation.
+* [Versionsinformation > Versionsinformation för Adobe Commerce 2.3.4 > Tillämpa PayPal Express Checkout-problemet med regionkorrigering för Adobe Commerce 2.3.4 för att åtgärda ett kritiskt PayPal Express Checkout-problem](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue) i vår utvecklardokumentation.

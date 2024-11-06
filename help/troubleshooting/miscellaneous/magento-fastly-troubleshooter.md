@@ -4,9 +4,9 @@ description: Den här snabbfelsökaren för Adobe Commerce-användare vägleder 
 exl-id: c5c51b89-5a7d-49ba-a0ee-7abbaf78fdad
 feature: Support, Services
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ b. NO - Kontrollera DNS genom att köra i CLI/terminal: `dig [your website.com] 
 
 +++**Vad händer när du kör `dig`?**
 
-När du körde `dig` returnerade det en post som pekar på prod.magentocloud.map.fastly.net eller någon av följande IP-adresser (se [Uppdatera DNS-konfiguration med produktionsinställning](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns) i utvecklardokumentationen):
+När du körde `dig` returnerade det en post som pekar på prod.magentocloud.map.fastly.net eller någon av följande IP-adresser (se [Uppdatera DNS-konfiguration med produktionsinställning](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist#update-dns-configuration-with-production-settings) i utvecklardokumentationen):
 
 * 151.101.1.124
 * 151.101.65.124
@@ -56,7 +56,7 @@ När du körde `dig` returnerade det en post som pekar på prod.magentocloud.map
 * 151.101.193.124
 
 a. JA - Problemet är inte DNS-relaterat. Fortsätt till [Steg 5](#step-5).\
-b. NEJ - Problemet är sannolikt DNS-relaterat. Kunden bör [kontrollera DNS-konfigurationen](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns "https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns") eller kontakta sin DNS-leverantör för mer information.
+b. NEJ - Problemet är sannolikt DNS-relaterat. Kunden bör [kontrollera DNS-konfigurationen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist#update-dns-configuration-with-production-settings) eller kontakta sin DNS-leverantör för mer information.
 
 +++
 
@@ -74,7 +74,7 @@ b. NEJ - Besök [http://fastly-debug.com](https://www.fastly-debug.com/) och del
 +++**Har certifikatet gått ut?**
 
 a. JA - Du måste förnya ditt TLS-certifikat med certifikatutfärdaren.\
-b. NEJ - Du kanske inte har något certifikat alls. Om du har Adobe Commerce rekommenderar vi att du köper ett TLS-certifikat. Om du använder Adobe Commerce i en molninfrastruktur kan du ha ett domänvaliderat Låt oss kryptera SSL-/TLS-certifikat för säker HTTPS-trafik från Fast. Se [etablera SSL-/TLS-certifikat](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates) i utvecklardokumentationen.
+b. NEJ - Du kanske inte har något certifikat alls. Om du har Adobe Commerce rekommenderar vi att du köper ett TLS-certifikat. Om du använder Adobe Commerce i en molninfrastruktur kan du ha ett domänvaliderat Låt oss kryptera SSL-/TLS-certifikat för säker HTTPS-trafik från Fast. Se [etablera SSL-/TLS-certifikat](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) i utvecklardokumentationen.
 
 +++
 

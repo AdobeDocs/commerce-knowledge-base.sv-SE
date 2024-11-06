@@ -4,7 +4,7 @@ description: I den här artikeln listas några vanliga snabba PHP Fatal Error-ex
 exl-id: 3e42d38f-97bc-4d38-8e36-23b1453f81d9
 feature: Support
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Exempel:
 
 `max_execution_time = 120`
 
-Läs artikeln [Anpassa inställningar för php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html).
+Läs artikeln [Anpassa inställningar för php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Exempel
 
@@ -35,7 +35,7 @@ Allvarligt fel i PHP för *: Tillåten minnesstorlek på 792723456 byte är slut
 
 ## Lösning
 
-Anpassa dina `php.ini`-inställningar. Läs den här [Anpassa php.ini-inställningsartikeln](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html).
+Anpassa dina `php.ini`-inställningar. Läs den här [Anpassa php.ini-inställningsartikeln](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Exempel
 
@@ -65,9 +65,9 @@ Kontrollera katalogen `<root>/tmp` eftersom den förmodligen är full. Om den ä
 
 I vår utvecklardokumentation:
 
-* [PHP-inställningsfel](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html)
-* [Nödvändiga PHP-inställningar](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html)
-* [Redis-verifiering](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify)
-* [Konfigurera Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)
-* [PHP-minnesbegränsningsfel](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html#trouble-php-memory)
-* [Lösningar på vanliga problem - minnesbegränsning](https://devdocs.magento.com/guides/v2.3/test/unit/unit_test_execution_cli.html#solutions-to-common-problems)
+* [PHP-inställningsfel](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Nödvändiga PHP-inställningar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Redis-verifiering](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Konfigurera Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [PHP-minnesbegränsningsfel](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Lösningar på vanliga problem - minnesbegränsning](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)

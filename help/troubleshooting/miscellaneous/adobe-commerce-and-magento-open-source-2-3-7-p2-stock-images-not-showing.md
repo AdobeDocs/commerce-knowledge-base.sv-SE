@@ -4,7 +4,7 @@ description: I den här artikeln finns en lösning på problemet där Adobe stoc
 exl-id: 84488d87-095f-4739-858f-19a52d6e5822
 feature: Categories, Orders
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -50,4 +50,4 @@ Ta bort överförda Adobe Stock-bilder från mapparna `pub/media` och `pub/media
 
 ## Relaterad läsning
 
-* [Medielagring](https://docs.magento.com/user-guide/v2.3/cms/media-storage.html) i användarhandboken.
+* [Medielagring](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) i användarhandboken.

@@ -4,7 +4,7 @@ description: I den här artikeln beskrivs möjliga lösningar på problem med at
 exl-id: 1a6204ad-bd5a-46dc-8a8e-39655a174e09
 feature: Storage, Data Import/Export
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Ange följande CLI-kommando:
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
-Mer information om säkerhetskopiering finns i [Säkerhetskopiera och återställa filsystemet, mediet och databasen.](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-backup.html)
+Mer information om säkerhetskopiering finns i [Säkerhetskopiera och återställa filsystemet, mediet och databasen.](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/backup)
 
 ## Otillräckligt diskutrymme {#insufficient-disk-space-trouble-backup-space-}
 
@@ -55,6 +55,6 @@ Tyvärr kan vi inte rekommendera något specifikt på grund av den mängd olika 
 
 ## Säkerhetskopieringen misslyckades {#backup-fails-trouble-backup-all-}
 
-Om säkerhetskopieringen misslyckas eller om alla säkerhetskopieringstester misslyckas, är det möjligt att [Adobe Commerce-filsystemets ägare](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/file-sys-perms-over.html) inte har tillräcklig behörighet och ägarskap för Adobe Commerce-filsystemet. En annan användare kan till exempel äga filerna eller så är filerna skrivskyddade.
+Om säkerhetskopieringen misslyckas eller om alla säkerhetskopieringstester misslyckas, är det möjligt att [Adobe Commerce-filsystemets ägare](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) inte har tillräcklig behörighet och ägarskap för Adobe Commerce-filsystemet. En annan användare kan till exempel äga filerna eller så är filerna skrivskyddade.
 
-Var särskilt uppmärksam på filsystembehörigheter och ägarskap för katalogen och underkatalogerna `<magento_root>/var`. Mer information finns i [Ange behörigheter och ägarskap för filsystemet](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-system-perms.html).
+Var särskilt uppmärksam på filsystembehörigheter och ägarskap för katalogen och underkatalogerna `<magento_root>/var`. Mer information finns i [Ange behörigheter och ägarskap för filsystemet](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).

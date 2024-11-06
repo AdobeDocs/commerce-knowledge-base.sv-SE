@@ -4,7 +4,7 @@ description: I den här artikeln behandlas lösningar för fel när minnet tar s
 exl-id: c0ed8228-9357-4a3b-a102-1119386ea52a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -40,7 +40,7 @@ kan även visas på kommandoraden.
 
 ## Lösning {#solution}
 
-Vi rekommenderar att du [tilldelar 2 GB minne till PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) i vår utvecklardokumentation för att vara säker på att installationen eller uppgraderingen lyckas.
+Vi rekommenderar att du [tilldelar 2 GB minne till PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) i vår utvecklardokumentation för att vara säker på att installationen eller uppgraderingen lyckas.
 
 Om du redan har gjort det skapar du en växlingsfil på datorn. En Linux-dator använder *växlingsutrymme* om den behöver mer minnesresurser och RAM-minnet är fullt. Växlingsutrymmet används för inaktiva sidor i minnet.
 

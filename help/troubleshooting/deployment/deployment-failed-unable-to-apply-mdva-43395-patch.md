@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en lösning på problemet, där ett f
 exl-id: 5341be3a-a9d7-4a4b-9755-8c585c6922a4
 feature: Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Du kan inte använda MDVA-43395-korrigeringen.
 
 ## Orsak
 
-Molnhandlare behöver inte tillämpa MDVA-43395-korrigeringen separat om de har [magento/magento-cloud-patches 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) installerad, som redan innehåller korrigeringen.
+Molnhandlare behöver inte tillämpa MDVA-43395-korrigeringen separat om de har [magento/magento-cloud-patches 1.0.16](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) installerad, som redan innehåller korrigeringen.
 
 ## Lösning
 
@@ -45,4 +45,4 @@ $ vendor/bin/magento-patches -n status |grep 43443
 ## Relaterad läsning
 
 * [Använda en kompositörkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
-* [Molnkorrigeringar för Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) i utvecklardokumentationen.
+* [Molnkorrigeringar för Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) i utvecklardokumentationen.

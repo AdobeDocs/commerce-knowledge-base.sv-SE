@@ -4,9 +4,9 @@ description: I den här artikeln finns en patch för säkerhetsproblemet i Adobe
 exl-id: fe147ad5-6019-46c1-b48c-6b957b6e1582
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -48,4 +48,4 @@ Adobe rekommenderar också starkt att handlare använder verktyg för att säkra
 * [5 Omedelbara åtgärder mot attacker från Protect mot akutstyrda attacker](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
 * [Protect Ditt installationslösenord för Magento Garanterar en ny uppdatering](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
 * [Bästa praxis för säkerhet](https://magento.com/security/best-practices/security-best-practices)
-* Lägger till och konfigurerar tvåfaktorsautentisering i Adobe Commerce för [2.3.x](https://docs.magento.com/user-guide/v2.3/stores/security-two-factor-authentication.html) och [2.4.x](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html)
+* Lägger till och konfigurerar tvåfaktorsautentisering i Adobe Commerce för [2.4.x](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication)

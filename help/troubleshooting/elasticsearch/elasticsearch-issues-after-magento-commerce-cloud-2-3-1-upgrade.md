@@ -3,7 +3,7 @@ title: Problem med Elasticsearch efter uppgraderingen av Adobe Commerce molninfr
 description: I den här artikeln beskrivs en lösning på problem under distributionen efter uppgradering till Adobe Commerce i molninfrastrukturversionerna 2.3.1+, om du använder Elasticsearch version 2.x och 5.x.
 exl-id: 6ceeb2ea-528d-4c03-ab2b-c5aed46fd0a2
 feature: Cloud
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->[MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Du måste ha konfigurerat värddatorn Elasticsearch innan du kan installera version 2.4.0. Se [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
+>[MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Du måste ha konfigurerat värddatorn Elasticsearch innan du kan installera version 2.4.0. Se [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
 
 >[!WARNING]
 >
@@ -29,7 +29,7 @@ I den här artikeln beskrivs en lösning på problem under distributionen efter 
 
 ## Orsak
 
-Handlare som har uppgraderat till Adobe Commerce i molninfrastruktur (version 2.3.1 och senare) och som använder en tidigare version av Elasticsearch än version 6.x kan råka ut för fel vid distributionen. Detta beror på att Elasticsearch version 2.x och 5.x är [End of Life](https://www.elastic.co/support/eol) och inte längre stöds i Adobe Commerce. Elasticsearch-klienten måste vara uppdaterad eller köra en distributionsrisk som utlöser ett fel. Mer information finns i [Ändra Elasticsearch-klienten](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html) i utvecklardokumentationen.
+Handlare som har uppgraderat till Adobe Commerce i molninfrastruktur (version 2.3.1 och senare) och som använder en tidigare version av Elasticsearch än version 6.x kan råka ut för fel vid distributionen. Detta beror på att Elasticsearch version 2.x och 5.x är [End of Life](https://www.elastic.co/support/eol) och inte längre stöds i Adobe Commerce. Elasticsearch-klienten måste vara uppdaterad eller köra en distributionsrisk som utlöser ett fel. Mer information finns i [Ändra Elasticsearch-klienten](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) i utvecklardokumentationen.
 
 ## Problem
 
@@ -43,12 +43,12 @@ När du distribuerar ser du ett felmeddelande som liknar följande, som anger at
 
 För att lösa detta problem måste klientmodulen och tjänsten Elasticsearch finnas på de senaste rekommenderade versionerna av Elasticsearch:
 
-1. Följ instruktionerna för att [ändra modulen Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html) i utvecklardokumentationen så att du har den senaste rekommenderade versionen av klientmodulen Elasticsearch.
+1. Följ instruktionerna för att [ändra modulen Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) i utvecklardokumentationen så att du har den senaste rekommenderade versionen av klientmodulen Elasticsearch.
 1. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär en Elasticsearch-tjänstuppdatering till 6.x för testning och produktion. Observera att det kan ta lite tid att uppgradera till Elasticsearch.
 
 ## Relaterad läsning
 
-* [Krav för teknikhög i Adobe Commerce 2.3](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements-tech.html) i utvecklardokumentationen.
-* [Konfigurera tjänsten Elasticsearch](https://devdocs.magento.com/cloud/project/project-conf-files_services-elastic.html) i utvecklardokumentationen.
-* [Installera och konfigurera Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) i utvecklardokumentationen.
+* [Krav för teknikhög i Adobe Commerce 2.3](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) i utvecklardokumentationen.
+* [Konfigurera tjänsten Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) i utvecklardokumentationen.
+* [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) i utvecklardokumentationen.
 * [Kontrollera att Elasticsearch är korrekt installerat](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md) i vår kunskapsbas för support.

@@ -2,7 +2,7 @@
 title: Så här skapar du en"scrubbed"-dump på supportagentens begäran
 description: I den här artikeln finns information om hur du skapar en"rensad" dump (säkerhetskopia) av din databas och kod från Adobe Commerce Admin när du ombeds att tillhandahålla en sådan av en Adobe Commerce supportagent. Den här dumpen exkluderar dina mediefiler för att snabba upp processen och resultera i en mycket mindre fil. Alla känsliga data hashas när databassäkerhetskopieringen görs.
 exl-id: ad088bd2-3f92-416e-89f0-d037d53cd6a9
-source-git-commit: e07ade849a4105b5e499b5282d75cb1b5321b6ea
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Skapa en&quot;scrubbed&quot;-dump från administratören:
 
 Du kan sedan ange till Support att länken för direkthämtning till dumpfilerna (din butiksadress och filnamnet som visas) finns.
 
-Om du har problem med att skapa dumpar från Admin kan du använda CLI-kommandon enligt beskrivningen i [Kör supportverktygen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-spt-util.html) i utvecklardokumentationen.
+Om du har problem med att skapa dumpar från Admin kan du använda CLI-kommandon enligt beskrivningen i [Kör supportverktygen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) i utvecklardokumentationen.
 
 ## Relaterad läsning
 

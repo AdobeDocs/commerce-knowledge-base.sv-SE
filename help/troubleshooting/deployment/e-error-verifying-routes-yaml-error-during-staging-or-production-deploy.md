@@ -4,7 +4,7 @@ description: '"I den här artikeln finns en lösning på problemet med molninfra
 exl-id: 7f58591a-5581-46cd-984d-09ac2c0f3903
 feature: Deploy, Routes, Staging
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Du löser den blockerade distributionen genom att uppdatera filen `routes.yaml` 
 
 1. С implementera och implementera ändringarna för att omdistribuera projektet.
 
-Detaljerade instruktioner om hur du uppdaterar vägkonfigurationen finns i [Cloud for Adobe Commerce > Konfigurera vägar](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_routes.html) i utvecklardokumentationen.
+Detaljerade instruktioner om hur du uppdaterar vägkonfigurationen finns i [Cloud for Adobe Commerce > Konfigurera vägar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) i utvecklardokumentationen.
 
 >[!NOTE]
 >

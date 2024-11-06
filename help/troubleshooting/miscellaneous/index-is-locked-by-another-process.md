@@ -4,7 +4,7 @@ description: Den här artikeln handlar om ett vanligt indexeringsproblem i Adobe
 exl-id: 542c714c-fad5-4f0e-9757-d90044c36bfc
 feature: Catalog Management, Categories
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
@@ -77,12 +77,12 @@ I vår kunskapsbas:
 
 I vår användarhandbok:
 
-* [Indexhantering](https://docs.magento.com/user-guide/system/index-management.html?itm_source=merchdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=reindexing)
+* [Indexhantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management?itm_source=merchdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=reindexing)
 
 I vår utvecklardokumentation:
 
-* [Indexeringsöversikt](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
-* [Bästa praxis för indexerare](https://devdocs.magento.com/guides/v2.3/performance-best-practices/configuration.html#indexers)
-* [Konfigurera och kör Cron](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html)
-* [Hantera indexerare](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
-* [Indexeroptimering](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexer-batch.html)
+* [Indexeringsöversikt](https://developer.adobe.com/commerce/php/development/components/indexing/)
+* [Bästa praxis för indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration)
+* [Konfigurera och kör Cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
+* [Hantera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+* [Indexeroptimering](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)

@@ -4,7 +4,7 @@ description: Den här artikeln innehåller lösningar för ökad inläsningstid 
 exl-id: 7401d9bd-710c-4221-9c3d-d78042c1c1ad
 feature: Cache, Categories
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Dessa sidor är:
 
 Cacheable och uncacheable är termer som används för att ange om en sida ska cachelagras eller inte. Som standard är alla sidor tillgängliga. Om ett block i en layout däremot inte är tillgängligt är hela sidan inte tillgänglig.
 
-Skärmbilden nedan visar ett block med inställningen `cacheable="false”` ** ** som skapar en otillgänglig sida.
+Skärmbilden nedan visar ett block med inställningen `cacheable="false"` ** ** som skapar en otillgänglig sida.
 
 ![non_cacheable_kb.png](assets/non_cacheable_kb.png)
 
@@ -46,15 +46,15 @@ Följande lista med sidor cachelagras inte (cachelagring med fast, blockerad och
 
 ### Lösning
 
-Kontrollera om filerna som anges ovan har inställningen `cacheable="false”`. Om de har det, kontrollera om den här inställningen är nödvändig eller obligatorisk.
+Kontrollera om filerna som anges ovan har inställningen `cacheable="false"`. Om de har det, kontrollera om den här inställningen är nödvändig eller obligatorisk.
 
-* Om det behövs kan du överväga att flytta icke-cachebara block till [mekanismen för privat innehåll](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=private%20co) i stället.
-* Om det inte behövs tar du bort attributet `cacheable="false”` och tömmer layoutcachen.
+* Om det behövs kan du överväga att flytta icke-cachebara block till [mekanismen för privat innehåll](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) i stället.
+* Om det inte behövs tar du bort attributet `cacheable="false"` och tömmer layoutcachen.
 
 >[!NOTE]
 >
->För Adobe Commerce i molninfrastruktur 2.4.1 och senare kan du använda [Site-Wide Analysis Tool](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) för att automatiskt kontrollera om helsidescachen inte är korrekt konfigurerad.
+>För Adobe Commerce i molninfrastruktur 2.4.1 och senare kan du använda [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) för att automatiskt kontrollera om helsidescachen inte är korrekt konfigurerad.
 
 ### Relaterad läsning
 
-[Översikt över Adobe Commerce-cache](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/cache_for_frontdevs.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=cacheable%2) i utvecklardokumentationen.
+[Översikt över Adobe Commerce-cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/) i utvecklardokumentationen.

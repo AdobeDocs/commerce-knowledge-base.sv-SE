@@ -4,7 +4,7 @@ description: I den här artikeln finns en korrigering av problemet där verktyge
 exl-id: e5f7f8c6-2dd3-44e3-8d19-f1f38d06dd6c
 feature: Compliance, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -23,7 +23,7 @@ I den här artikeln finns en korrigering av problemet där verktyget för säker
 
 <u>Steg som ska återskapas</u>:
 
-1. Konfigurera verktyget för säkerhetsgenomsökning för att kontrollera din webbplats, enligt beskrivningen i [Säkerhetsgenomsökning](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) i användarhandboken.
+1. Konfigurera verktyget för säkerhetsgenomsökning för att kontrollera din webbplats, enligt beskrivningen i [Säkerhetsgenomsökning](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) i användarhandboken.
 1. Välj **Kör skanning** i åtgärdskolumnen.
 
 <u>Förväntade resultat</u>:
@@ -47,5 +47,5 @@ Försök att öppna din webbplats.
 
 ## Relaterad läsning
 
-* [Publicera och starta](https://devdocs.magento.com/guides/v2.3/cloud/live/live.html?_ga=2.73579601.273749082.1559572284-888339099.1547722854#security-scan) i utvecklardokumentationen.
-* [Säkerhetsgenomsökning](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) i vår användarhandbok.
+* [Publicera och starta](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview) i utvecklardokumentationen.
+* [Säkerhetsgenomsökning](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) i vår användarhandbok.

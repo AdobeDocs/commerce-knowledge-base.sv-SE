@@ -1,10 +1,10 @@
 ---
 title: Leveransen kan inte sparas som en URL-nyckel
-description: I den här artikeln finns en lösning på problemet när du inte kan spara leverans som en URL-nyckel (_t.ex. /shipping_) för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett av en URL.
+description: I den här artikeln finns en lösning på problemet när du inte kan spara frakten som en URL-nyckel (_t.ex. /shipping_) för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett av en URL.
 exl-id: df19b597-f615-4b19-82c1-59cc179fa720
 feature: Marketing Tools, Shipping/Delivery, Storefront
 role: Admin
-source-git-commit: 1ce963142a261a17e2b42f79dd567c8484ec5b3e
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Det går inte att spara _leverans_ som en URL-nyckel
 
-I den här artikeln finns en lösning på problemet när du inte kan spara leverans som en URL-nyckel (_t.ex. /shipping_) för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett-URL.
+I den här artikeln finns en lösning på problemet när du inte kan spara frakten som en URL-nyckel (_t.ex. /shipping_) för produkter eller CMS-sidor. När du försöker spara URL-nyckeln visas ett fel som anger att URL-nyckeln är en dubblett-URL.
 
 ## Berörda produkter och versioner
 
@@ -122,5 +122,5 @@ Undvik dessutom att använda dessa nyckelord som är märkta som *reserverade* n
 
 ## Relaterad läsning
 
-* [URL-omskrivning](https://docs.magento.com/user-guide/marketing/url-rewrite.html) i vår användarhandbok för marknadsföring och marknadsföring.
-* [SEO Best Practices](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) i vår användarhandbok för marknadsföring och marknadsföring.
+* [URL-omskrivning](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) i vår användarhandbok för marknadsföring och marknadsföring.
+* [SEO Best Practices](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) i vår användarhandbok för marknadsföring och marknadsföring.

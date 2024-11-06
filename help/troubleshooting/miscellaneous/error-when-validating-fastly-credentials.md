@@ -4,7 +4,7 @@ description: I den här artikeln finns en lösning på problemet där användare
 exl-id: 02104731-6666-47a6-abc6-215812f09915
 feature: Configuration
 role: Developer
-source-git-commit: 831a928dbe8fd6b37f3fe9ad5dc35ee80e11a578
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -22,11 +22,11 @@ Användaren får ett fel vid valideringen av snabbinloggningsuppgifterna.
 ## Berörda produkter och versioner
 
 * Adobe Commerce (alla distributionsmetoder): Alla versioner
-* Tillägg eller teknik (snabbt, New Relic osv.) version snabbt
+* Tilläggs- eller teknikversion (snabbt, New Relic osv.) snabbt
 
 ## Lösning
 
-1. Kontrollera att du har rätt ID och API-token för tjänsten och försök validera igen. Mer information finns i [Testa snabbinloggningsuppgifterna](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) i utvecklardokumentationen.
+1. Kontrollera att du har rätt ID och API-token för tjänsten och försök validera igen. Mer information finns i [Testa snabbinloggningsuppgifterna](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) i utvecklardokumentationen.
 1. Om verifieringen av inloggningsuppgifterna misslyckas kör du följande kommando för att bekräfta tjänstens status:
 
    ```curl
@@ -45,6 +45,6 @@ Användaren får ett fel vid valideringen av snabbinloggningsuppgifterna.
 
 ## Relaterade läsningar i vår dokumentation för utvecklare:
 
-* [Cloud för Adobe Commerce > Snabbt > Snabbt tjänstkonto och autentiseringsuppgifter](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-service-account-and-credentials)
+* [Cloud för Adobe Commerce > Snabbt > Snabbt tjänstkonto och autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
 
-* [Cloud för Adobe Commerce > Konfigurera snabbt > Testa snabbinloggningsuppgifterna](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials)
+* [Cloud för Adobe Commerce > Konfigurera snabbt > Testa snabbinloggningsuppgifterna](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)

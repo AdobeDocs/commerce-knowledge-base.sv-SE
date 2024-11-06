@@ -4,7 +4,7 @@ description: Upgrade Compatibility Tool 1.1.0 är ett kommandoradsverktyg som ko
 exl-id: 312abc5a-1d6a-4f32-9929-a94f4962eddd
 feature: Upgrade
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Adobe Commerce-kunder.
 
 ## Installera uppgraderingskompatibilitetsverktyget 1.1.0
 
-Installationsanvisningar finns i Adobe Commerce: [Upgrade Compatibility Tool > Install](https://devdocs.magento.com/upgrade-compatibility-tool/install.html) i utvecklardokumentationen. Information om krav för att använda verktyget finns i Adobe Commerce: [Upgrade Compatibility Tool](https://devdocs.magento.com/upgrade-compatibility-tool/prerequisites.html) i utvecklardokumentationen.
+Installationsanvisningar finns i Adobe Commerce: [Upgrade Compatibility Tool > Install](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) i utvecklardokumentationen. Information om krav för att använda verktyget finns i Adobe Commerce: [Upgrade Compatibility Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) i utvecklardokumentationen.
 
 ## Vilket nummer har varje nummer?
 
@@ -47,7 +47,7 @@ Felmeddelandena för verktyget Kompatibilitet för uppgradering är indelade eft
 * Felkod: Felmeddelandets Adobe Commerce-tilldelade identifierare.
 * Felbeskrivning: En beskrivning som sammanfattar orsaken till felet.
 * Föreslagen felåtgärd: Om det är tillämpligt ger det vägledning om hur du felsöker och löser felet.
-* Koderna listas och beskrivs på [referenssidan för felmeddelanden](https://devdocs.magento.com/upgrade-compatibility-tool/errors.html).
+* Koderna listas och beskrivs på [referenssidan för felmeddelanden](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages).
 
 ## Var kan jag få feedback om verktyget?
 
@@ -56,4 +56,4 @@ Du kan kontakta UCT-teamet på vår [#upgrade-compatibility-tool](https://magent
 ## Relaterad läsning
 
 * Adobe Commerce-blogg: [Introduktion till uppgraderingskompatibilitetsverktyget (Alpha)](https://magento.com/blog/magento-news/introducing-upgrade-compatibility-tool)
-* Adobe Commerce: [Kompatibilitetsverktyg för uppgradering](https://devdocs.magento.com/upgrade-compatibility-tool/introduction.html) i utvecklardokumentationen.
+* Adobe Commerce: [Kompatibilitetsverktyg för uppgradering](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) i utvecklardokumentationen.

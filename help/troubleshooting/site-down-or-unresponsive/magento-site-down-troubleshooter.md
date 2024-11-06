@@ -4,7 +4,7 @@ description: Klicka på varje fråga för att visa svarsinformationen i varje st
 exl-id: 10a2313e-cc82-4ffc-9247-624884f3e165
 feature: Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 0%
@@ -80,7 +80,7 @@ b. NEJ - Fortsätt till [steg 7](#step-7).
 
 +++**Har du fel i Elasticsearch?**
 
-a. JA - Fortsätt med steg för att [kontrollera Elasticsearch](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch/).\
+a. JA - Fortsätt med steg för att [kontrollera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine).
 b. NEJ - Fortsätt till [steg 8](#step-8).
 
 +++
@@ -116,7 +116,7 @@ b. NEJ - Fortsätt till [steg 11](#step-11).
 
 +++**Ser du Redis-fel?**
 
-a. JA - Fortsätt med stegen för att [verifiera [!DNL Redis] körs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/redis#troubleshooting-redis) och för [[!DNL Redis] felsökning](https://redis.io/topics/problems).\
+a. JA - Fortsätt med stegen för att [verifiera [!DNL Redis] körs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection) och för [[!DNL Redis] felsökning](https://redis.io/topics/problems).\
 b. NEJ - Fortsätt till [steg 12](#step-12).
 
 +++

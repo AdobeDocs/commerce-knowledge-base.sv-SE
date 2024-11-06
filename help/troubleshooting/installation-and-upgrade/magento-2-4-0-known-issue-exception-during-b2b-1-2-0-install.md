@@ -4,7 +4,7 @@ description: I den här artikeln finns en korrigering för ett känt Adobe Comme
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -69,8 +69,8 @@ Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-app
 
 <u>Git-korrigering </u>
 
-* Se [Tillämpa korrigeringsfiler](https://devdocs.magento.com/cloud/project/project-patch.html) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce i molninfrastrukturen.
-* Se [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce.
+* Se [Tillämpa korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce i molninfrastrukturen.
+* Se [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce.
 
 ## Relaterad läsning
 
