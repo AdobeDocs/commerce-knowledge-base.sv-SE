@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en korrigering för blockering av sta
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: 3dd44b72bc9f02fe808b70355c4331fc28aa3606
+source-git-commit: d728d44c4e1be3172ebf595122f3cc215207ac17
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,6 @@ Problem: Utan ett giltigt och fungerande SSL-certifikat kan du inte testa extern
 
 Rekommendation **:** Begär ditt delade SSL-certifikat för mellanlagrings- eller Live-domännamn.
 
-Läs om SSL-certifikat i den här [vanliga frågorna ](/help/announcements/adobe-commerce-announcements/magento-ssl-tls-certificate-requirements-and-clean-up.md)-artikeln i vår kunskapsbas för support.
 
 ## 3. Konfigurera och testa 301 omdirigeringar
 
