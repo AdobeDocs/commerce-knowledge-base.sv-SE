@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 03dfb2423e5cdb4e7f87e1e1f05a8261f3b4e602
+source-git-commit: 692e665558205301f3b7915ce7eb9f3cf0288aff
 workflow-type: tm+mt
-source-wordcount: '9587'
+source-wordcount: '9579'
 ht-degree: 0%
 
 ---
@@ -965,7 +965,6 @@ ht-degree: 0%
       * [Paket som nedgraderats efter uppgradering från 2.4.4 till 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
       * [Adobe Commerce 2.3.6, 2.4.1 CAPTCHA in checkout fungerar inte](/help/troubleshooting/known-issues-patches-attached/magento-commerce-2-3-6-2-4-1-captcha-in-checkout-not-working.md)
       * [E-postbeställning har skickats från serverns e-postadress](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
-      * [Advanced Reporting 404 error on split database solution](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md)
       * [Prestandaproblem som orsakas av för många Ajax-begäranden](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md)
       * [Tar bort mellanlagringsuppdatering tar bort relaterad entitet](/help/troubleshooting/known-issues-patches-attached/removing-staging-update-deletes-related-entity.md)
       * [Google Analytics spårar inte konverteringsdata](/help/troubleshooting/known-issues-patches-attached/google-analytics-is-not-tracking-conversion-data.md)

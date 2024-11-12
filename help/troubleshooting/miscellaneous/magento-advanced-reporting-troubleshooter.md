@@ -4,7 +4,7 @@ description: Du kan lösa problem med avancerad rapportering på Adobe Commerce 
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 3b402728be7a80b62f21319d2cf91a92f1ad4a0c
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Om flera basvalutor har använts kan du inte använda avancerad rapportering eft
 
 Använder du [delad databaslösning](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master)?
 
-a. JA - Använd korrigeringen **MDVA-26831** i [Advanced Reporting 404-fel vid delad databaslösning](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md) och rensa cache. Vänta i 24 timmar tills jobbet körs igen och försök igen.\
+a. JA - Använd korrigeringen **MDVA-26831** i Advanced Reporting 404-felet för delad databaslösning och rensning av cache. Vänta i 24 timmar tills jobbet körs igen och försök igen.\
 b. NEJ - Fortsätt till [steg 4](#step-4).
 
 +++
