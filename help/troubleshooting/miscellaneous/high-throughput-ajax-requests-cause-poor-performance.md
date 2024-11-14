@@ -4,9 +4,9 @@ description: I den här artikeln finns en lösning för prestandaproblem med Ado
 exl-id: 68dfca8a-826c-4476-acaf-a139052b5dcc
 feature: Cache
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 3bcdbd0536ec71cb80ffa3afbcd53c4ae385d2e3
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Förfrågningar AJAX hög genomströmning omfattar förfrågningar som rör kund
 
 Det finns tre lösningar:
 
-* [Uppgradera till version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version). Om detta inte är möjligt just nu installerar [korrigeringen som åtgärdar problemet](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md).
+* [Uppgradera till version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
 * Se till att enklare förfrågningar görs (cachelagra förfrågningar eller flytta till kundens privata innehåll).
 * Minska antalet förfrågningar.
 
