@@ -4,9 +4,9 @@ description: I den här artikeln beskrivs ett sätt att kringgå det kända buti
 exl-id: a0cca226-4d95-40b3-bd37-f13d28591366
 feature: Checkout, Orders, Storefront
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: b3d39e6b02728f05f046adf7be94ffacbca944d5
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -46,9 +46,6 @@ Kunderna kan uppdatera ordersidan och informationen i ordersammanfattningen läs
 Artiklar för Adobe Commerce 2.3.5 Kända fel i vår kunskapsbas:
 
 * [Beställningar för flera leveranser med en virtuell produkt som inte har bearbetats korrekt i Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
-
-* [Problem med betalningsmetod i Adobe Commerce för molninfrastruktur och Adobe Commerce lokal 2.3.5 och 2.3.5-p1](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
-
 
 * [Ett problem har uppstått med produktantalet för gruppåtgärd i Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 
