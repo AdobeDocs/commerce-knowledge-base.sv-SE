@@ -4,9 +4,9 @@ description: Allt du behöver veta för att felsöka och underhålla din Commerc
 exl-id: feacf38f-2803-4170-a64f-5d7c4567432d
 feature: Support
 role: Admin
-source-git-commit: 607b835da518536196654734f62d78d095099476
+source-git-commit: 52d07e5a5bb7be492f6799d0e5ad9fd49c3a61ae
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -43,209 +43,137 @@ Informationen i den här kunskapsbasen kompletterar [Adobe Commerce Developer Do
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25075">Verktyget för säkerhetsgenomsökning returnerar"Kan inte avgöra om servern använder 2FA":</a> Kontrollera om modulen <code>Magento_TwoFactorAuth</code> har inaktiverats för att åtgärda felet. För att kontrollen ska lyckas bör den i allmänhet vara aktiverad.
+    <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25234">Licensöverföring på grund av omstrukturering:</a> Den här artikeln hjälper dig att enkelt övergå till ditt Adobe Commerce-konto, inklusive alla nödvändiga steg som krävs för att hålla igång dina tjänster utan problem.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt">ACSD-60632: Adress sparad med varje orderförsök:</a> Korrigeringsfilen ACSD-60632 åtgärdar ett problem där en ny adress sparas med varje orderplaceringsförsök, oavsett om ordern har skapats eller inte. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.51 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25289">Säkerhetsuppdateringar för Adobe Commerce (APSB24-90):</a> Den 12 november 2024 släppte Adobe en säkerhetsuppdatering för Adobe Commerce (i molnet och lokalt) och Magento Open Source-funktioner som drivs av Commerce Services och distribueras som SaaS (Software as a Service). Uppdateringen åtgärdar en säkerhetslucka som klassas som <a href="https://helpx.adobe.com/security/severity-ratings.html">critical</a>. 
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status">ACSD-60326: GraphQL-fråga om kundreturstatus ger ett fel:</a> Korrigeringsfilen ACSD-60326 åtgärdar ett problem där ett fel inträffar i GraphQL-frågan om kundreturstatus. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.51 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25231">MageID-kontoägaren kan inte logga in och skicka en supportanmälan:</a> Den här artikeln åtgärdar Adobe Commerce-problemet där du inte kan logga in på ditt konto (MageID) på account.magento.com för att skicka en supportanmälan.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery">ACSD-59925: Sortering av objekt i mediegalleriet efter position i GraphQL:</a> Korrigeringen ACSD-59925 åtgärdar ett problem där objekt i mediegalleriet inte sorteras efter position, vilket leder till en felaktig visningsordning. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.52 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25135">OTB-tillägget Braintree för Adobe Commerce saknar stöd för de senaste Visa 3DS-fälten:</a> I den här artikeln beskrivs hur du följer de nya Visa-reglerna eftersom Adobe Commerce färdiga Braintree-tillägg saknar stöd för de senaste Visa 3DS-fälten.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue">ACSD-61322: Produkter som inte har tilldelats den delade katalogen ingår i XML-webbplatskartan:</a> Korrigeringen ACSD-61322 åtgärdar ett problem där produkter/kategorier som inte har tilldelats den delade katalogen för standardgruppen (Allmänt) fortfarande ingår i XML-platskartan. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.52 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results">ACSD-61528: Hämtning av roller med GraphQL returnerar inga resultat:</a> Korrigeringen ACSD-61528 åtgärdar ett problem där hämtning av roller från företagets administratör med GraphQL alltid returnerar ett null-resultat. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.53 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation">ACSD-60590: Förbättrade prestanda för Bestsellers Aggregated Daily Report-generering:</a> Korrigeringen ACSD-60590 åtgärdar ett problem där det tar lång tid för Bestsellers Aggregated Daily Report att generera för ett stort antal placerade order. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.52 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log">ACSD-48318: Fel vid kapsling av miljöemulering i system.log:</a> Korrigeringen ACSD-48318 åtgärdar ett fel där felmeddelandet <em>main.ERROR:Environment emulation nesting inte tillåts</em> i <code>system.log</code> varje gång ett fakturameddelande skickas. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.53 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue">ACSD-59865: Prisregeln för kundvagn kan inte avbryta tidigare regler på grund av otillräcklig produktkvantitet:</a> Korrigeringen ACSD-59865 åtgärdar ett problem där värdet för <em>Rabattkvantitet i </em> i <em>Fast beloppsrabatt</em>, <em>Procent av produktprisrabatt</em> och <em>Köp X - köp </em> Kundprisreglerna avbryter inte längre åtgärden för tidigare regler. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.52 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list">ACSD-59366: Ta bort team med inaktiverade användare som inte visas i grupplistan:</a> Korrigeringen ACSD-59366 åtgärdar ett problem där ett fel inträffar när du försöker ta bort ett team som innehåller inaktiverade användare som inte visas i grupplistan. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.52 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin">Fel vid filtrering av order i Admin:</a> Den här artikeln innehåller en korrigering för Adobe Commerce-problemet där ett fel inträffar när försök görs att filtrera ordningarna i Admin efter datum. Meddelandet <em>Överträdelse av integritetsbegränsning: 1052 Kolumnen 'created_at' där satsen är tvetydig</em> visas.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied">ACSD-60234: PayPal visar ett felaktigt belopp när rabatten tillämpas:</a> Korrigeringsfilen ACSD-60234 åtgärdar problemet där [!DNL PayPal] visar ett felaktigt belopp när rabatten tillämpas via betalningsmetoden. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.51 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25030">Adobe Commerce: Inline JavaScript Issues on checkout page in Content Security Policy (CSP) restricted mode (Inline Issues on checkout page):</a> Den här artikeln innehåller detaljerade förklaringar och lösningar för problem som uppstår med anpassade JavaScript som har lagts till via Adobe Commerce Admin och Google Tag Manager i Adobe Commerce 2.4.7 vid utcheckning när <strong>begränsat CSP-läge</strong> är aktiverat.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout">ACSD-60673: Problem med kundprisregel som har korrigerats för flera betalningsmetoder vid utcheckning:</a> Korrigeringsfilen ACSD-60673 åtgärdar ett problem där rabatterna från en [!UICONTROL Cart Price Rule] som använder ett betalningsmetodvillkor inte alltid anges i summorna. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.52 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page">ACSD-61195: Cart GraphQL-begäran returnerar inte objekt på den sista sidan:</a> Korrigeringen ACSD-61195 åtgärdar ett problem där inga varukorgsobjekt returneras på den sista sidan för kundvagnsbegäran från GraphQL. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.51 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites">ACSD-60584: Åtkomsttoken som skapats för en webbplats har åtkomst till information på andra webbplatser:</a> Korrigeringen för ACSD-60584 åtgärdar ett problem där den åtkomsttoken som skapats för användaren på en webbplats har åtkomst till eller kan ändra kundinformation på andra webbplatser. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.53 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console">ACSD-59514: Forms i Admin med Page Builder returnerar ett fel i webbläsarkonsolen:</a> Korrigeringsfilen ACSD-59514 åtgärdar ett problem där formulären i Admin med Page Builder orsakade felet <em>Page Builder återgav i 5 sekunder utan att frigöra lås</em> i webbläsarkonsolen efter att formuläret har skickats och ändringarna kan inte sparas . Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.50 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors">ACSD-60788: Anpassade skript för Google Tag Manager körs inte på grund av säkerhetsfel för innehåll:</a> Korrigeringsfilen ACSD-60788 åtgärdar ett problem där anpassade skript för [!DNL Google Tag Manager] inte körs på grund av fel i säkerhetsprincipen för innehåll. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.52 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show">ACSD-60538: Attribut visas inte korrekt om produkten är inaktiverad i <em>Alla butiksvyer</em>:</a> Korrigeringen ACSD-60538 åtgärdar ett problem där produktattributen inte visas korrekt i GraphQL-svaret om en produkt är inaktiverad i <em>Alla butiksvyer</em> och endast aktiveras i specifika butiksvyområden. som leder till att produkten inte visas som den ska. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.51 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error">ACSD-61366: Kommandot <code>bin/magento setup:static-content:deploy --jobs 4</code> påträffar flera jobbfel med ett fel:</a> Korrigeringsfilen ACSD-61366 åtgärdar ett problem där kommandot <code>bin/magento setup:static-content:deploy --jobs 4</code> påträffar flera jobbfel med porten <em>Port måste konfigureras inom värdparametern</em> trots att porten för databasanslutningen anges. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.52 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api">ACSD-58352: Returattributetiketter för standardbutiken returneras via GraphQL API:</a> Korrigeringsfilen ACSD-58352 åtgärdar ett problem där returattributetiketter för standardbutiken returneras via GraphQL API när en icke-standardbutiksvy anges i begärandehuvudet. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.50 har installerats.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp">ACSD-60816: Skript för webbläsarövervakning i New Relic som har injicerats av APM-agenten är inte kompatibla med CSP:</a> Korrigeringsfilen ACSD-60816 åtgärdar ett problem där de [!DNL New Relic] skript för webbläsarövervakning som har injicerats av APM-agenten inte följer Content Security Policy (CSP). Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.51 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href = "https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24983">Listrutan <em>Byt konto</em> saknas i ditt konto:</a> Den här artikeln innehåller en lösning på Adobe Commerce-problemet där listrutan <em>Byt konto</em> saknas i ditt konto och du har förlorat åtkomsten att skicka biljetter för handlarens räkning.
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog">ACSD-59952: Fel vid borttagning av delad katalog med samma grupp-ID som en annan delad katalog:</a> Korrigeringen ACSD-59952 åtgärdar det fel som uppstod när delade kataloger med samma <code>customer_group_id</code> som en annan delad katalog togs bort. Dessutom förhindras användare från att skapa sådana delade kataloger. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.52 har installerats.
     </td>
-    <td>Ny artikel</td>
-    <td>17 oktober 2024</td>
-  </tr>
-
-<tr>  
-    <td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted">ACSD-56979: Produktbilder som tagits bort efter borttagning av mellanlagringsuppdatering:</a> Korrigeringen ACSD-56979 åtgärdar ett problem där produktbilder tas bort efter borttagning av en mellanlagringsuppdatering. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.49 har installerats.  
-    </td>
-    <td>Ny artikel</td>
-    <td>17 oktober 2024</td>
+    <td>Ny artikel </td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values">ACSD-48210: Butiksvyspecifika omfångsattribut åsidosätter globala värden:</a> Korrigeringsfilen ACSD-48210 åtgärdar ett problem där attributen i det globala omfånget åsidosätts när ett <em>Webbplatsomfångsattribut </em> uppdateras i en viss butiksvy. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.50 har installerats. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired-quote">ACSD-59786: GraphQL returnerar ett fel när en <code>quote_id</code> hämtas för en offert som har gått ut:</a> Korrigeringen ACSD-59786 åtgärdar ett problem där en GraphQL-fråga returnerar ett fel när en <code>quote_id</code> för en offert som har gått ut hämtas. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.51 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-50/acsd-59280-fix-for-reflection-union-type-error">ACSD-59280: ReflectionUnionType::getName()-fel i 2.4.4-pX-installationer:</a> Korrigeringen ACSD-59280 åtgärdar ett problem där anropet till den odefinierade metoden <code>ReflectionUnionType::getName()</code> inträffar under installationen av 2.4.4-pX-versioner. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.50 har installerats. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly">ACSD-59967: JavaScript-fel förhindrar att Google Maps återges korrekt:</a> Korrigeringsfilen ACSD-59967 åtgärdar ett problem där JavaScript-felet förhindrar att [!DNL Google Maps] återges korrekt. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.51 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry">ACSD-54887: Kundvagnen raderas efter att kundsessionen har upphört:</a> Korrigeringsfilen ACSD-54887 åtgärdar ett problem där kundens kundvagn raderas efter att kundsessionen har upphört och <em>Beständig kundvagn</em> är aktiverad. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.50 har installerats. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows">ACSD-59930: Förbättrar prestanda för företagets flöden:</a> Korrigeringsfilen ACSD-59930 åtgärdar ett problem där ett <em>Timeout</em> -fel visas på administratörspanelen när ett företag med en administratör som har fler än 1 000 adresser skapas, sparas eller tas bort. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.53 har installerats.
     </td>
     <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
-  </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-50/acsd-60303-admin-order-placement-fix">ACSD-60303: Problem med placering av administratörsorder som har aktiverats med HTML-minification:</a> Korrigeringen ACSD-60303 åtgärdar ett problem där en beställning från Admin inte kan placeras om HTML-minification är aktiverat. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.50 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
-  </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy">ACSD-57045: URL-omskrivningar orsakar oändliga sidloopar efter <em>webbplatsens rot</em> avmarkerad från hierarki:</a> Korrigeringen ACSD-57045 åtgärdar ett problem där URL-omskrivningar orsakar oändliga sidloopar efter att <em>webbplatsens rot</em> har avmarkerats från hierarkin. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.49 har installerats.
-    </td>
-    <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
-  </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-49/ascd-58446-deleting-a-team-with-child-users-or-teams-via-graphql-gives-an-uninformative-error-message">ACSD-58446: Om du tar bort ett team med underordnade användare eller team via GraphQL får du ett felmeddelande som inte ger information:</a> Korrigeringen ACSD-58446 åtgärdar Adobe Commerce-problemet där ett team med underordnade användare eller team via GraphQL returnerar ett felmeddelande som inte ger information och som inte stämmer överens med användargränssnittet. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.49 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
-  </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error-when-adding-a-youtube-video-at-the-store-view-level">ACSD-58735: Felaktigt konfigurerad YouTube API-nyckel orsakar fel när video läggs till på butiksvynivå:</a> Korrigeringen ACSD-58735 åtgärdar ett problem där fel YouTube API-nyckelkonfiguration orsakar ett fel när en YouTube-video läggs till på butiksvynivå. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.49 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
-  </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-49/acsd-57086-orders-placed-from-non-default-websites-with-terms-conditions-processed-incorrectly">ACSD-57086: Order från icke-standardwebbplatser med villkor aktiverade behandlas felaktigt:</a> Korrigeringsfilen ACSD-57086 åtgärdar ett problem där beställningar från icke-standardwebbplatser med villkor aktiverade inte behandlas korrekt. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.49 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
-  </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers-with-l2-redis-cache-enabled">ACSD-58141: PHPSESSID återskapar begäranden om POST för inloggade kunder om L2 Redis-cachen är aktiverad:</a> Korrigeringen ACSD-58141 åtgärdar ett problem där PHPSESSID återskapar begäranden om POST till en inloggad kund om L2 Redis-cachen är aktiverad och kunden uppdateras från Admin. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.50 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
-  </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page-images-in-mobile-view-on-chrome">ACSD-58790: Korrigerar funktionen att fästa vid zoomning på produktinformationssidbilder i mobilvyn i Chrome:</a> Korrigeringen ACSD-58790 åtgärdar Adobe Commerce-problemet där bilden i mobilvyn i Chrome inte zoomade in på bilden som förväntat. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.50 har installerats. 
-    </td>
-    <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
-  </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop">ACSD-58442: Korrigerar problemet där enheter med 768 px bredd behandlas som mobila enheter, vilket gör att meny och rubrik läses in i mobilvyn och inte i skrivbordsvyn:</a> Korrigeringsfilen ACSD-58442 åtgärdar Adobe Commerce-problemet där enheter med en bredd på 768 px hanteras som mobila enheter, vilket gör att menyn och huvudet läses in i mobilvyn i stället för en dator. Den här korrigeringen är tillgänglig när [!DNL Quality Patches Tool (QPT)] 1.1.50 har installerats.
-    </td>
-    <td>Ny artikel </td>
-    <td>17 oktober 2024</td>
+    <td>14 november 2024</td>
   </tr>
 </table>
