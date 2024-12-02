@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-47004: moms tillämpas inte på faktureringsadress utan moms-ID'
+title: 'ACSD-47004: moms tillämpas inte på faktureringsadressen utan moms-ID'
 description: Använd patchen ACSD-47004 för att åtgärda Adobe Commerce-problemet där moms inte tillämpas på en faktureringsadress utan moms-ID.
 exl-id: 04706219-be1d-4d9a-a8bf-f5c24b45076d
 feature: Customer Service, Shipping/Delivery, Orders

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-56621: Uppdaterade namn visas inte i hethubriken för företagsadministratörer'
+title: 'ACSD-56621: Uppdaterade namn visas inte i sidhuvudet för hälsningar för företagsadministratörsanvändare'
 description: Använd patchen ACSD-56621 för att åtgärda Adobe Commerce-problemet där det uppdaterade förnamnet och efternamnet för företagsadministratörsanvändaren inte visas i sidhuvudet för hälsningar.
 feature: Companies, B2B, User Account
 role: Admin, Developer

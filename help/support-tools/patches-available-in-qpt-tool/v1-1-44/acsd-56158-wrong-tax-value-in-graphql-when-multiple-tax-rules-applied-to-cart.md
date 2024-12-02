@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-56158: Fel momsvärde i GraphQL-svar när flera momsregler tillämpas på kundvagn'
+title: 'ACSD-56158: Felaktigt momsvärde i GraphQL-svar när flera momsregler tillämpas på kundvagn'
 description: Använd korrigeringsfilen ACSD-56158 för att åtgärda Adobe Commerce-problemet där återgivningen av momsvärdet i GraphQL-svaret är felaktig när flera momsregler tillämpas på kundvagnen.
 feature: GraphQL, Taxes
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49392: Orderstatus ändras till stängd efter partiell återbetalning"
+title: 'ACSD-49392: Orderstatus ändras till stängd efter partiell återbetalning'
 description: Använd patchen ACSD-49392 för att åtgärda Adobe Commerce-problemet där orderstatusen ändras till stängd efter en partiell återbetalning av en paketerad produkt.
 exl-id: fca6f502-e224-4444-b0d0-f823853c9458
 feature: Orders

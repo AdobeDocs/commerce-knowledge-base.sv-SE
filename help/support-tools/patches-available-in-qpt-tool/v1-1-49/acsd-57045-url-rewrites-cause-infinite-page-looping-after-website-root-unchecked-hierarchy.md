@@ -1,15 +1,15 @@
 ---
-title: '''ACSD-57045: URL-omskrivningar orsakar oändliga sidupprepningar efter [!UICONTROL Website Root] avmarkerat från [!UICONTROL Hierarchy]'
+title: 'ACSD-57045: URL-omskrivningar orsakar oändliga sidloopar efter [!UICONTROL Website Root] avmarkerat från [!UICONTROL Hierarchy]'
 description: Använd korrigeringen ACSD-57045 för att åtgärda Adobe Commerce-problemet där URL-omskrivningar orsakar oändliga sidupprepningar efter att [!UICONTROL Website Root] har avmarkerats från [!UICONTROL Hierarchy].
 feature: CMS
 role: Admin, Developer
-source-git-commit: a39e5c857aae398a0b0ba44308ea417525a410d3
+exl-id: 9dca2d1a-3aef-41f0-b140-f3987003a5fd
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57045: URL-omskrivningar orsakar oändliga sidloopar efter [!UICONTROL Website Root] avmarkerat från [!UICONTROL Hierarchy]
 

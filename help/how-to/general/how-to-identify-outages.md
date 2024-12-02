@@ -1,7 +1,7 @@
 ---
 title: Identifiera och mäta avbrott för Adobe Commerce i molninfrastrukturen
 promoted: true
-description: '"Det finns flera sätt för en handlare (eller någon som är intresserad av webbplatsens hälsa) att identifiera webbplatsavbrott, som också kallas webbplatsavbrott. En nedläggning av en webbplats är den tidsperiod under vilken handlarens webbplats inte på ett adekvat sätt kan svara på kundens önskemål. Definitionen av avbrott och deras effekter på webbplatser är bred. I den bifogade artikeln beskrivs följande:'''
+description: 'Det finns flera sätt för en handlare (eller någon som är intresserad av webbplatsens hälsa) att identifiera webbplatsavbrott, som också kallas webbplatsavbrott. En nedläggning av en webbplats är den tidsperiod under vilken handlarens webbplats inte på ett adekvat sätt kan svara på kundens önskemål. Definitionen av avbrott och deras effekter på webbplatser är bred. I den bifogade artikeln beskrivs följande:'
 exl-id: 204910b0-49d5-43df-921b-8c0c7a42524e
 feature: Cloud
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8

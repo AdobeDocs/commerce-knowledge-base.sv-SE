@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-58008: Om du redigerar slutdatumet som *empty* försvinner schemauppdateringen.'
+title: 'ACSD-58008: Om du redigerar slutdatumet som *tom* försvinner schemauppdateringen'
 description: Använd patchen ACSD-58008 för att åtgärda Adobe Commerce-problemet där redigering av slutdatumet som *tom* gör att schemauppdateringen försvinner.
 feature: Staging, Page Content
 role: Admin, Developer

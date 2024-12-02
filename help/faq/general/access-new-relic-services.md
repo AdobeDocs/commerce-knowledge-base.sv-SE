@@ -1,6 +1,6 @@
 ---
 title: Få tillgång till New Relic tjänster
-description: "I den här artikeln beskrivs hur kunder med tillräcklig licens-/prenumerationsauktorisering kan få tillgång till utvalda New Relic-tjänster:"
+description: 'I den här artikeln beskrivs hur kunder med tillräcklig licens-/prenumerationsbehörighet kan få tillgång till vissa New Relic-tjänster:'
 exl-id: c01af85e-0590-49e8-a1a0-b901f23c4431
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt

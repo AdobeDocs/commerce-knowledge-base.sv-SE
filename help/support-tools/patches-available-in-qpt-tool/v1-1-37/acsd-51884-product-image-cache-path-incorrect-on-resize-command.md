@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51884: Produktbildens cachesökväg är felaktig vid storleksändring, kommando'
+title: 'ACSD-51884: Sökvägen till produktbildens cache är felaktig vid storleksändring, kommando'
 description: Använd korrigeringsfilen ACSD-51884 för att åtgärda Adobe Commerce-problemet där sökvägen till produktbildens cacheminne blir felaktig efter att du har kört storlekskommandot.
 feature: Products
 role: Admin

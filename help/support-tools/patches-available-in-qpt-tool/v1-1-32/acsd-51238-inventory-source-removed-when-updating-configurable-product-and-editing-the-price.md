@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51238: Lagerkällan tas bort när en konfigurerbar produkt uppdateras och priset redigeras'
+title: 'ACSD-51238: Lagerkällan tas bort när en konfigurerbar produkt uppdateras och priset ändras'
 description: Använd patchen ACSD-51238 för att åtgärda Adobe Commerce-problemet där lagerkällan tas bort när en konfigurerbar produkt uppdateras och priset redigeras.
 exl-id: ab2f60fd-5da3-45f7-a489-6f4f9d34e1f1
 feature: Configuration, Inventory, Orders, Products

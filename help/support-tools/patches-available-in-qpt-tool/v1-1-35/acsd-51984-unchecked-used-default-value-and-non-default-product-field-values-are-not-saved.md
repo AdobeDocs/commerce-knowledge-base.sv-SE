@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51984: Omarkerade [!UICONTROL Use Default Value] och icke-standardvärden för produktfält sparas inte för den andra webbplats-, butiks- och butiksvyn'
+title: 'ACSD-51984: Omarkerade [!UICONTROL Use Default Value] och icke-standardvärden för produktfält sparas inte för den andra webbplatsen, butiken och butiksvyn'
 description: Använd korrigeringen ACSD-51984 för att åtgärda Adobe Commerce-problemet där värdena för omarkerade [!UICONTROL Use Default Value] och icke-standardproduktfält inte sparas för den andra webbplatsen, butiken och butiksvyn.
 feature: Products
 role: Admin

@@ -1,6 +1,6 @@
 ---
 title: Driftsättningen misslyckas med snabb inkompatibel Adobe Commerce-version
-description: "UPPDATERAD: 29 februari 2019"
+description: 'UPPDATERAD: 29 februari 2019'
 exl-id: aab77407-94e5-42de-92f4-2f0c19e24fa4
 feature: Deploy, Extensions
 role: Developer

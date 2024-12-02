@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-50368: Customer group_id is ignore when a customer is created via Async REST API or Async Bulk REST API'
+title: 'ACSD-50368: Kundgrupp_ID ignoreras när en kund skapas via Async REST API eller Async Bulk REST API'
 description: Använd korrigeringsfilen ACSD-50368 för att åtgärda Adobe Commerce-problemet där customer group_id ignoreras när en kund skapas via Async REST API eller Async Bulk REST API.
 feature: REST
 role: Admin

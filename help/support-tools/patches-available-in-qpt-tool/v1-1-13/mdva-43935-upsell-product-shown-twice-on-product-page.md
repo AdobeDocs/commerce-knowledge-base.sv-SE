@@ -1,5 +1,5 @@
 ---
-title: "MDVA-43935: Upsell product shown two on product page"
+title: 'MDVA-43935: Merförsäljning visas två gånger på produktsidan'
 description: MDVA-43935-korrigeringen åtgärdar ett problem där merförsäljningsprodukten visas två gånger på produktsidan. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 är installerat. Korrigerings-ID är MDVA-43935. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 4ca531b8-12c1-4fa1-b036-5531d11b0f1d
 feature: Products

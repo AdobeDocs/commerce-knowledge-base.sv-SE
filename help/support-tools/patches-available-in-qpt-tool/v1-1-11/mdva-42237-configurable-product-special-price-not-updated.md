@@ -1,5 +1,5 @@
 ---
-title: "MDVA-42237: Specialpriset för den konfigurerbara produkten har inte uppdaterats"
+title: 'MDVA-42237: Specialpriset för den konfigurerbara produkten har inte uppdaterats'
 description: MDVA-42237-korrigeringen åtgärdar ett problem där den konfigurerbara produktens specialpris inte uppdateras efter ändringar av dess underproduktspris. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.11 är installerat. Korrigerings-ID är MDVA-42237. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 3e890448-8368-4eb2-ab64-c04cdacf20bb
 feature: Admin Workspace, Configuration, Orders, Personalization, Products

@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-42507: Helsidescachen rensas när mellanlagringsuppdateringen för kundvagnsregel har tillämpats'
+title: 'MDVA-42507: Helsidescachen rensas när mellanlagringsuppdateringen för kundvagnsregeln har tillämpats'
 description: MDVA-42507-korrigeringen löser problemet där helsidescachen rensas efter att mellanlagringsuppdateringen för kundvagnsregeln har tillämpats. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 är installerat. Patch-ID:t är MDVA-42507. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 9303d488-428b-4565-b9ea-469c34856dce
 feature: Cache, Categories, Orders, Shopping Cart, Staging

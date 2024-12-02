@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44147: GraphQL-begäran returnerar inte rekvisition Lists"
+title: 'MDVA-44147: GraphQL-begäran returnerar inte rekvisition Lists'
 description: MDVA-44147-korrigeringen åtgärdar ett problem där GraphQL-begäran inte returnerar rekvisition Lists. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 är installerat. Korrigerings-ID är MDVA-44147. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL

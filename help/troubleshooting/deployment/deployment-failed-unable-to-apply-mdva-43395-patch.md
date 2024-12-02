@@ -1,5 +1,5 @@
 ---
-title: 'Distributionen misslyckades: det går inte att använda MDVA-43395-korrigering'
+title: 'Distributionen misslyckades: Det går inte att använda MDVA-43395-korrigering'
 description: Den här artikeln innehåller en lösning på problemet, där ett försök att använda MDVA-43395-korrigeringen leder till misslyckad distribution.
 exl-id: 5341be3a-a9d7-4a4b-9755-8c585c6922a4
 feature: Deploy

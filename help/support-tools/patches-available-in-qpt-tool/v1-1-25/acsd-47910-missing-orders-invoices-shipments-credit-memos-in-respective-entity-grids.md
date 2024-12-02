@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47910: saknade order, fakturor, leveranser, kreditnotor i respektive enhetsnät"
+title: 'ACSD-47910: saknade order, fakturor, leveranser, kreditnotor i respektive entitetsnät'
 description: Använd patchen ACSD-47910 för att åtgärda Adobe Commerce-problemet där det saknas order, fakturor, leveranser och kreditnotor i respektive enhetsrutnät.
 exl-id: 4eb897ec-16e4-420e-89a6-c8f7c8740303
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery

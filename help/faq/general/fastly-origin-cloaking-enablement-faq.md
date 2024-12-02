@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Fastly] frågor och svar om ursprungsinsvepning av aktivering"
+title: Vanliga frågor om aktivering av ursprungsinsvepning för [!DNL Fastly]
 description: Vanliga frågor och svar behandlar frågor om  [!DNL Fastly] ursprungsinsvepning i Adobe Commerce (som har implementerats fullt ut 2021).
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
 source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
@@ -19,7 +19,7 @@ Insvepning av ursprung är en säkerhetsfunktion som gör att Adobe Commerce i m
 
 ## Vilka är fördelarna med ursprungsinsvepning?
 
-Insvepning av startpunkt är utformat för att förhindra att trafik kringgår [!DNL Fastly Web Application Firewall] (WAF) och dirigerar den via det strikt definierade flödet för **[!DNL Fastly]** > **belastningsutjämnare** > **instanser**. Med den här implementeringen garanteras all trafik att passera både [!DNL Fastly]-WAF och den interna WAF som är inbyggd i belastningsutjämnaren.
+Insvepning av startpunkt är utformat för att förhindra att trafik kringgår [!DNL Fastly Web Application Firewall] (WAF) och dirigerar den via det strikt definierade flödet för **[!DNL Fastly]** > **belastningsutjämnare** > **instanser**. Med den här implementeringen garanteras all trafik att passera både [!DNL Fastly] WAF och den interna WAF som är inbyggd i belastningsutjämnaren.
 
 ## Varför sker det här insvepningen?
 

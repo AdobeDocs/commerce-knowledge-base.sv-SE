@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-48216: *AUTO_INCREMENT of layer_source_item* table increase on *UPDATE* operation'
+title: 'ACSD-48216: *AUTO_INCREMENT för tabellen layer_source_item* ökar med åtgärden *UPDATE*'
 description: Använd patchen ACSD-48216 för att åtgärda Adobe Commerce-problemet där *AUTO_INCREMENT för tabellen layer_source_item* ökar med åtgärden *UPDATE*.
 exl-id: fb97f240-95c0-479e-ac5a-00f6792374ab
 feature: Admin Workspace, Inventory, Orders

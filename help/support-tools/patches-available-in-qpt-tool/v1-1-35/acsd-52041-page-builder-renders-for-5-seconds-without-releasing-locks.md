@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52041: Page Builder-återgivning frigör inte lås"
+title: 'ACSD-52041: Page Builder-återgivning frigör inte lås'
 description: Använd korrigeringsfilen ACSD-52041 för att åtgärda Adobe Commerce-problemet där Page Builder renderar i fem sekunder utan att frigöra lås.
 feature: Page Builder
 role: Admin, Developer

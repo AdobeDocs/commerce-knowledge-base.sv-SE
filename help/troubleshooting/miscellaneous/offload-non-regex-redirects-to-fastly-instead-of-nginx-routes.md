@@ -1,5 +1,5 @@
 ---
-title: Avlastning av icke-[!DNL regex] omdirigeras till [!DNL Fastly] i stället för  [!DNL Nginx] (vägar)
+title: Avlastning av icke-[!DNL regex] omdirigerar till  [!DNL Fastly] i stället för  [!DNL Nginx] (vägar)
 description: Det här avsnittet föreslår en lösning på ett typiskt prestandaproblem som kan uppstå när du avlastar icke-[!DNL regex] omdirigerar till  [!DNL Fastly] i stället för  [!DNL Nginx]  i Adobe Commerce om molninfrastruktur.
 exl-id: 8b22d25d-0865-4d21-b275-d344ba8748f2
 feature: Routes

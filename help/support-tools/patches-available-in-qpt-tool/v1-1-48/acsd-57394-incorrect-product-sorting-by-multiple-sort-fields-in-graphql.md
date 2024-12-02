@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-57394: Felaktig produktsortering efter flera sorteringsattribut i  [!DNL GraphQL]'
+title: 'ACSD-57394: Ogiltig produktsortering efter flera sorteringsattribut i  [!DNL GraphQL]'
 description: Använd korrigeringen ACSD-57394 för att åtgärda Adobe Commerce-problemet där produkter sorteras felaktigt när flera sorteringsattribut används i  [!DNL GraphQL].
 feature: GraphQL, Products
 role: Admin, Developer

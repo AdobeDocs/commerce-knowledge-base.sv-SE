@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-44703: Ordersummor i orderrapport är felberäknade'
+title: 'MDVA-44703: Ordersummor i orderrapporten är felberäknade'
 description: MDVA-44703-korrigeringen åtgärdar ett problem där ordersummorna i Orders-rapporten är felberäknade för den begränsade administratörsanvändaren. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 är installerat. Patch-ID:t är MDVA-44703. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 exl-id: d8c31e47-ace6-4dba-a57c-941e722a6aad
 feature: Orders

@@ -1,5 +1,5 @@
 ---
-title: '"Adobe Commerce 2.4.0 known issue: missing "Refund" label in Klarna'
+title: 'Adobe Commerce 2.4.0 Känt fel: etiketten"Refund" saknas i Klarna'
 description: I den här artikeln finns en lösning på ett känt problem i Admin för ett saknat **Refund**-märke i Klarna VBE (Vendor Bundled Extension). När det är i Klarna-portalen som gör en återbetalning visas inte etiketten **Refund** bredvid den paketerade produkten som har återbetalats.
 exl-id: f08039b2-7f8b-481e-8ec8-1659e227744f
 feature: B2B, Orders, Payments

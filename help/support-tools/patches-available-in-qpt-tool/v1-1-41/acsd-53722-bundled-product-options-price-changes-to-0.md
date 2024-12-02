@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-53722: Prisändringar för produktalternativ som paketerats till $0'
+title: 'ACSD-53722: Prisändringar för programpaket till $0'
 description: Använd patchen ACSD-53722 för att åtgärda Adobe Commerce-problemet där priset för de paketerade produktalternativen ändras till $0 när schemalagda uppdateringar för olika omfång aktiveras.
 feature: Products
 role: Admin, Developer

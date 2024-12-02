@@ -1,5 +1,5 @@
 ---
-title: "PWA Studio: Venia GraphQL frågar efter Adobe Commerce vid valideringsfel"
+title: 'PWA Studio: Venia GraphQL-frågor till Adobe Commerce skapar valideringsfel'
 description: I den här artikeln ges rekommendationer om hur du löser problemet där Venia storefront GraphQL skickar frågor till Adobe Commerce-instansen som genererar valideringsfel.
 exl-id: ba268945-2a10-4af5-8089-cde21f0687bd
 feature: GraphQL

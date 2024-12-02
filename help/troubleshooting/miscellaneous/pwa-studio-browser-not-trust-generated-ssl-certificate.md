@@ -1,5 +1,5 @@
 ---
-title: 'PWA Studio: webbläsaren saknar förtroende för det SSL-certifikat som genereras'
+title: 'PWA Studio: webbläsaren litar inte på det SSL-certifikat som genererats'
 description: I den här artikeln finns en lösning på en otillförlitlig, genererad SSL-certifikatvarning i webbläsaren när du navigerar till en lokal instans av PWA Studio storefront under utvecklingen.
 exl-id: b7bfe1e6-5832-4472-9e51-f04b8583428a
 feature: Configuration

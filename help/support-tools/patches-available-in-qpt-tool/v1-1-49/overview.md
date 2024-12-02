@@ -3,7 +3,8 @@ title: 'Översikt: [!DNL Quality Patches Tool] (QPT) v1.1.49'
 description: I det här underavsnittet finns en detaljerad beskrivning av de problem som åtgärdats av de korrigeringar som finns i  [!DNL Quality Patches Tool] (QPT) v1.1.49.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d7a17283c736dae37ec3960f47f1500fc70af691
+exl-id: 212f68b7-d43c-468d-a935-931b2bccb5b5
+source-git-commit: 9bb839292a120a3dab5151d493f915619dbf5c06
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -29,4 +30,3 @@ QPT v1.1.49 innehåller följande patchar:
 1. **ACSD-58163**: Korrigerar problemet där *[!UICONTROL Cart Price Rule]* inte tillämpar en rabatt för en gästkund från den matchande *[!UICONTROL Customer Segment]*-vagnen utan kupongkod.
 
 Använd menyn till vänster för att navigera till en viss korrigeringssida.
-

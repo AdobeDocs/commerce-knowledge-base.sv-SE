@@ -1,6 +1,6 @@
 ---
 title: Frågor och svar om den uppdaterade livscykelpolicyn för Adobe Commerce-releaser
-description: "Adobe Commerce tillhandahåller kvalitetskorrigeringar för en mindre release i minst 12 månader från det allmänna tillgänglighetsdatumet för nästa mindre programvarurelease. Det sätt på vilket vi tillhandahåller kvalitetskorrigeringar under denna period ändras:"
+description: 'Adobe Commerce tillhandahåller kvalitetskorrigeringar för en mindre release i minst 12 månader från det allmänna tillgänglighetsdatumet för nästa mindre programversion. Det sätt på vilket vi tillhandahåller kvalitetskorrigeringar under den här perioden ändras:'
 exl-id: 4aa601d0-ee1d-4f1f-a684-188772a58dd1
 feature: Compliance, Support
 role: Admin

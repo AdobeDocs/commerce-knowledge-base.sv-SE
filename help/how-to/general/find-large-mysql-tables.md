@@ -1,6 +1,6 @@
 ---
 title: Söka efter stora MySQL-tabeller
-description: '"För att identifiera de stora tabellerna ansluter du till databasen enligt beskrivningen i artikeln [Anslut till databasen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) och kör följande kommando, där "project_id" är ditt projekt-ID i molnet:"'
+description: 'Om du vill identifiera de stora tabellerna ansluter du till databasen enligt beskrivningen i artikeln [Anslut till databasen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) och kör följande kommando, där "project_id" är ditt projekt-ID i molnet:'
 exl-id: dc5019bc-ab6c-4568-986f-0a294a0f3ac3
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt

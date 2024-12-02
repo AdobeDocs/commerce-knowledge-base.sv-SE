@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-46617: **[!UICONTROL Continue to Checkout]***-knapp nedtonad när delsumman är större än det konfigurerade minimiorderbeloppet'
+title: 'ACSD-46617: **[!UICONTROL Continue to Checkout]**-knapp nedtonad när delsumman är större än det konfigurerade minimiorderbeloppet'
 description: Använd korrigeringsfilen ACSD-46617 för att lösa Adobe Commerce-problemet där knappen **[!UICONTROL Continue to Checkout]** är nedtonad även om delsumman är större än det konfigurerade minimiantalet order.
 exl-id: 42fe02bd-f48b-4c6d-8643-ea2c1aa98c94
 feature: Checkout, Orders

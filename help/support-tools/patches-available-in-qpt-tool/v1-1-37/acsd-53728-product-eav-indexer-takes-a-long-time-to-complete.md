@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-53728: Product EAV indexer tar lång tid att slutföra'
+title: 'ACSD-53728: Produktens EAV-indexerare tar lång tid att slutföra'
 description: Använd korrigeringsfilen ACSD-53728 för att åtgärda problemet med Adobe Commerce där det tar lång tid att slutföra produktindexeraren.
 feature: Products, Attributes
 role: Admin, Developer

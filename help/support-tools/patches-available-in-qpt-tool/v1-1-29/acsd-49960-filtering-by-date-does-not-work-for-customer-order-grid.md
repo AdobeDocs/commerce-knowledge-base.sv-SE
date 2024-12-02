@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49960: Det går inte att filtrera efter datum för kundorderns rutnät"
+title: 'ACSD-49960: Det går inte att filtrera efter datum för kundorderns rutnät'
 description: Använd patchen ACSD-49960 för att åtgärda Adobe Commerce-problemet där filtrering efter datum inte fungerar för kundorderns rutnät.
 exl-id: 483479f4-2688-4ff5-bbf3-bfd577a0c641
 feature: Admin Workspace, Orders

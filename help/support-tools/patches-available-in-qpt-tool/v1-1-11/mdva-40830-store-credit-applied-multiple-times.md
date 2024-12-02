@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-40830: Butikskrediten tillämpas flera gånger under beställningen'
+title: 'MDVA-40830: Butikskrediter som tillämpas flera gånger under beställningen'
 description: MDVA-40830-korrigeringen åtgärdar ett problem där butikskrediten tillämpas flera gånger under orderplaceringen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.11 är installerat. Korrigerings-ID är MDVA-40830. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 218a100a-4500-4ef5-bbdb-fbbd12f2fa26
 feature: Orders, Returns

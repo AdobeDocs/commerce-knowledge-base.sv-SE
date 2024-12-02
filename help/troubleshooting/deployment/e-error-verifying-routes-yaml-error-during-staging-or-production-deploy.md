@@ -1,6 +1,6 @@
 ---
-title: "E: Fel vid verifiering av vägar.yaml-fel under mellanlagring eller produktionsdistribution"
-description: '"I den här artikeln finns en lösning på problemet med molninfrastruktur, där du får felmeddelandet *"E: Error while verification route.yaml"* när du försöker distribuera projektet till förproduktionsmiljön."'
+title: 'E: Fel vid verifiering av vägar.yaml-fel under mellanlagrings- eller produktionsdistributionen'
+description: 'I den här artikeln finns en lösning på problemet med molninfrastruktur, där du får felmeddelandet *"E: Error while verification route.yaml"* när du försöker distribuera projektet till förproduktionsmiljön.'
 exl-id: 7f58591a-5581-46cd-984d-09ac2c0f3903
 feature: Deploy, Routes, Staging
 role: Developer

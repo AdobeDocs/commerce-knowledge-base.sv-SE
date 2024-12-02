@@ -1,5 +1,5 @@
 ---
-title: "MDVA-42645: Administratören kan inte återbetala belöningspoäng för inaktiverad butikskredit"
+title: 'MDVA-42645: Administratören kan inte återbetala belöningspoäng för inaktiverade butikskrediter'
 description: MDVA-42645-korrigeringen löser problemet där administratören inte kan återbetala belöningspoäng om butikskreditfunktionen är inaktiverad. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 är installerat. Korrigerings-ID är MDVA-42645. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 8e8f8c07-c1a2-4031-a2fb-cb737165dc2c
 feature: Admin Workspace, Orders, Rewards, Returns

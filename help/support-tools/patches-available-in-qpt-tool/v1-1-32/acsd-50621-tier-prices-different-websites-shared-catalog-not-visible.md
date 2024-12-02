@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-50621: Nivåpriser för olika webbplatser i delad katalog är inte synliga'
+title: 'ACSD-50621: Nivåpriser för olika webbplatser i delad katalog visas inte'
 description: Använd korrigeringsfilen ACSD-50621 för att åtgärda Adobe Commerce-problemet där nivåpriserna för olika webbplatser i den delade katalogen inte syns när de redigeras i en miljö med flera webbplatser.
 exl-id: 6d6635bc-4f76-4e2f-9bc7-0276cced8ca9
 feature: Catalog Management, Orders

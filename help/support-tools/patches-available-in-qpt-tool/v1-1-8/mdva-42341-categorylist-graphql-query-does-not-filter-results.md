@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-42341: GraphQL-frågan "categoryList" filtrerar inte resultat'
+title: 'MDVA-42341: GraphQL-frågan"categoryList" filtrerar inte resultat'
 description: Korrigeringen MDVA-42341 löser problemet där GraphQL-frågan"categoryList" inte filtrerar resultat om en begäran har Store-rubriken. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 är installerat. Korrigerings-ID är MDVA-42341. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 34aeb30a-9491-4102-b33e-dcd857b6a1c2
 feature: GraphQL, Categories

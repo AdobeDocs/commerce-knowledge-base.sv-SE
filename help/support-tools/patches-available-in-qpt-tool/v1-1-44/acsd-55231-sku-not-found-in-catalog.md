@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-55231: SKU-fel hittades inte när snabbbeställningsfunktionen användes'
+title: 'ACSD-55231: Fel hittades inte i SKU när snabbordningsfunktioner användes'
 description: Använd patchen ACSD-55231 för att åtgärda Adobe Commerce-problemet där du fick *'SKU:n hittades inte i katalogfelet* när du försökte lägga till en produkt i kundvagnen med hjälp av snabbbeställningsfunktionerna.
 feature: Products, Checkout, B2B
 role: Admin, Developer

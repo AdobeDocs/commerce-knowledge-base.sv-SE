@@ -3,13 +3,13 @@ title: 'ACSD-58790: Åtgärdar funktionen att fästa vid zoomning på produktinf
 description: ACSD-58790 åtgärdar ett Adobe Commerce-problem där bilden i mobilvyn på  [!DNL Chrome] inte zoomade in bilden som förväntat.
 feature: Storefront
 role: Admin, Developer
-source-git-commit: 51c740dc70937c7b80d8492d02ee4a758f103a35
+exl-id: 0985534c-49af-439a-8859-39222dedcf67
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58790: Åtgärdar funktionen att fästa vid zoomning på produktinformationssidans bilder i mobilvyn på [!DNL Chrome]
 

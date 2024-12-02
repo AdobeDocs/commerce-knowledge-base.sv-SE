@@ -1,6 +1,6 @@
 ---
 title: Kontrollera diskutrymmesgränsen för Adobe Commerce i molninfrastrukturen
-description: 'För att se hur mycket utrymme du har för varje Adobe Commerce i molninfrastrukturmiljö:'
+description: 'Så här ser du hur mycket utrymme du har för varje Adobe Commerce i molninfrastrukturmiljö:'
 exl-id: 0dd613e4-161f-403e-95a1-d228303693d3
 feature: Cloud
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733

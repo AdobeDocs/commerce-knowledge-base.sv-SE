@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-52202: Standardvärdet för lagersaldokvantitet ändras till 0 om icke-standardlagervärdet är 0 i ordning.'
+title: 'ACSD-52202: Standardvärdet för lagersaldokvantitet ändras till 0 om standardvärdet för lagersaldo är 0.'
 description: Använd patchen ACSD-52202 för att åtgärda Adobe Commerce-problemet där standardkvantiteten för lagerförsäljning ändras till 0 om standardvärdet för lagersaldo är 0.
 feature: Inventory, Products
 role: Admin

@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-42689: Användarna får felmeddelande om integritetsbegränsning när produktkategorier uppdateras under importen'
+title: 'MDVA-42689: Användarna får felmeddelande om integritetsbegränsning när produktkategorier uppdateras vid import'
 description: MDVA-42689-korrigeringen åtgärdar ett problem där användaren får ett integritetsbegränsningsfel när produktkategorier uppdateras under importen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 är installerat. Korrigerings-ID är MDVA-42689. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 7beff3bb-9313-43dc-be96-e33eff52a38e
 feature: Categories, Data Import/Export, Products

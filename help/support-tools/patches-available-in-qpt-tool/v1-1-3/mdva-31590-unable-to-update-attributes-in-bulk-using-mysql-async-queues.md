@@ -60,7 +60,7 @@ Användare kan inte uppdatera attribut i grupp med MySQL async.
 1. Nya poster skapas i tabellerna `queue_message` och `queue_message_status`.
 1. `queue_message_status`-tabellen har en post med felstatus (statusvärde &quot;6&quot;).
 1. `system.log` innehåller fel som liknar följande:
-   *main.CRITICAL: Meddelandet har avvisats: SQLSTATE[23000]: Överträdelse av integritetsbegränsning: 1048 Kolumnen operation_key får inte vara null, frågan var: INSERT INTO {{magento_operation}} ({{id}}, {{bulk_uuid}}, {{topic_name}}, {{serialized_data}}, {{result_serialized_data}}, {{status}}, {{error_code}}, {{result_message}}, {{operation_key}}) VALUES (?, ?, ?, ?, ?, ?, ?) [][]*
+   *main.CRITICAL: Meddelandet har avvisats: SQLSTATE[23000]: Överträdelse av integritetsbegränsning: 1048 Kolumnen operation_key får inte vara null, frågan var: INSERT INTO {{magento_operation}} ({{id}}, {{bulk_uuid}}, {{topic_name}}, {{serialized_data}}, {{result_serialized_data}}, {{status}}, {{error_code}}, {{result_message}} {{operation_key}}, ) VÄRDEN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [][]*
 
 ## Tillämpa korrigeringen
 

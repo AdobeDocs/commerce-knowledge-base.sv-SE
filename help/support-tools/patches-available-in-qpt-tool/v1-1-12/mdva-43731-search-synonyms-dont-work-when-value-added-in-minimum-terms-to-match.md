@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-43731: Söksynonymer fungerar inte när ett värde läggs till i "Minimivillkor att matcha""'
+title: 'MDVA-43731: Söksynonymer fungerar inte när ett värde läggs till i Minimivillkor för matchning'
 description: Korrigeringen MDVA-43731 åtgärdar ett problem där söksynonymer slutar att fungera när ett värde läggs till i"Minimala villkor att matcha". Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 är installerat. Korrigerings-ID är MDVA-43731. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: b795989c-d10b-443e-aebe-f3859930396a
 feature: Cache, Marketing Tools, Search

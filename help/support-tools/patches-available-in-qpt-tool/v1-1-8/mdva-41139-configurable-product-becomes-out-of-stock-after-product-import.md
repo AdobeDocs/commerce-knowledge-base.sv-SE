@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-41139: Konfigurerbara produkter blir obefintliga efter produktimport'
+title: 'MDVA-41139: Den konfigurerbara produkten blir inte i lager efter produktimporten'
 description: Korrigeringen MDVA-41139 åtgärdar ett problem där den konfigurerbara produkten inte finns i lager efter produktimporten när den enkla produktens kvantitet = 0 för en av dess källor. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 är installerat. Korrigerings-ID är MDVA-41139. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: e90ab578-50b9-4bc4-baf9-de4182e700ae
 feature: Data Import/Export, Configuration, Orders, Products

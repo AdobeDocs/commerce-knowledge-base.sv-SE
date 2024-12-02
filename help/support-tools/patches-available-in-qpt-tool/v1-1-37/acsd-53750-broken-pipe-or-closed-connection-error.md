@@ -1,5 +1,5 @@
 ---
-title: '''ACSD-53750: Felet "Trasig pipe eller sluten anslutning" vid flertrådad katalog_product_price reindex"'
+title: 'ACSD-53750: Felet "Trasig pipe eller sluten anslutning" vid flertrådad katalog_product_price reindex'
 description: Använd korrigeringsfilen ACSD-53750 för att åtgärda Adobe Commerce-problemet där ett *trasigt rör eller en sluten anslutning* inträffar under omindexering av flertrådig katalog_product_price.
 feature: Products
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-52831: Det går inte att placera överlåtbara offertorder när [!DNL Google reCAPTCHA v3 Invisible] aktiverat'
+title: 'ACSD-52831: Det går inte att placera överlåtbara offertorder när [!DNL Google reCAPTCHA v3 Invisible] är aktiverat'
 description: Använd patchen ACSD-52831 för att åtgärda Adobe Commerce-problemet där du inte kan göra överlåtbara offertbeställningar när  [!DNL Google reCAPTCHA v3 Invisible] är aktiverat.
 feature: Quotes, B2B, Checkout
 role: Admin

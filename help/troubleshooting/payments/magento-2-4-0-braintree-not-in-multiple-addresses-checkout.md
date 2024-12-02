@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.0: Braintree inte i kassan för flera adresser"
+title: 'Adobe Commerce 2.4.0: Braintree inte i kassan för flera adresser'
 description: I den här artikeln finns en lösning på ett problem med Adobe Commerce 2.4.0 där betalningsmetoder i Braintree inte ingår i kassan för flera adresser. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
 exl-id: efde0bba-fd4a-490b-becb-856cb9ea58a5
 feature: Checkout, Compliance, Orders, Payments, Shipping/Delivery

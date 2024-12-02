@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-40488: Konfigurerbara produkter med underordnade produkter utanför lagret som inte visas i rätt prisintervall'
+title: 'MDVA-40488: Konfigurerbara produkter med underordnade produkter utanför lagret visas inte i rätt prisintervall'
 description: MDVA-40488-korrigeringen åtgärdar ett problem där konfigurerbara produkter med underordnade produkter utanför lagret inte visas i rätt prisintervall. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 är installerat. Korrigerings-ID är MDVA-40488. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 0c4b9f5e-ae41-409e-b244-1d7cf948ed6f
 feature: Configuration, Orders, Products

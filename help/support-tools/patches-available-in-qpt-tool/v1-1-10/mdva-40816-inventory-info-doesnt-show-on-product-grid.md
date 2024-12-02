@@ -1,5 +1,5 @@
 ---
-title: "MDVA-40816: Inventeringsdata visas inte i produktrutnätet"
+title: 'MDVA-40816: Inventeringsdata visas inte i produktrutnätet'
 description: MDVA-40816-korrigeringen löser problemet där lagerinformation inte visas i produktrutnätet om en produkt-SKU innehåller specialtecken. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 är installerat. Korrigerings-ID är MDVA-40816. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 88c05c88-33be-4d72-a302-23a1510c401c
 feature: Admin Workspace, Inventory, Orders, Products

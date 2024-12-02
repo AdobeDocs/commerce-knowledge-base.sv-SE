@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-50817: Optimerar sälj_ren_offerter för seriejobb för att köra snabbare'
+title: 'ACSD-50817: Optimerar sälj_ren_offerter för seriejobb så att körningen går snabbare'
 description: Använd korrigeringsfilen ACSD-50817 för att optimera cron-jobbet "sales_clean_quotes" så att det körs snabbare genom att lägga till ett sammansatt index i kolumnerna "store_id" och "updated_at" i citattabellen.
 exl-id: b08b12ff-37ac-4a7d-bce2-2a27e4f916f0
 feature: Quotes

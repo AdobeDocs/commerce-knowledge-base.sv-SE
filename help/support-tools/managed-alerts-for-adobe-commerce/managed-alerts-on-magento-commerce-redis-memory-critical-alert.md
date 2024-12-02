@@ -1,5 +1,5 @@
 ---
-title: 'Hanterade aviseringar på Adobe Commerce: Redis memory critical alert'
+title: 'Hanterade varningar på Adobe Commerce: Redis-minneskritisk varning'
 description: I den här artikeln finns felsökningsanvisningar för när du får en Redis-varning om minneskritisk status för Adobe Commerce i New Relic. Du måste vidta omedelbara åtgärder för att lösa problemet. Varningen ser ut ungefär så här, beroende på vilken meddelandekanal du valt.
 exl-id: 28e1d879-d7ca-4439-8e81-52a1fbf3ecb0
 feature: Cache, Categories, Observability, Services, Support, Tools and External Services, Variables

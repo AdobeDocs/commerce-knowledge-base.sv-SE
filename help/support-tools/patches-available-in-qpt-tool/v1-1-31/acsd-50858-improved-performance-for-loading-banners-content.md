@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50858: Förbättrade prestanda för inläsning av banners-innehåll"
+title: 'ACSD-50858: Förbättrade prestanda för inläsning av banners-innehåll'
 description: Använd patchen ACSD-50858 för att åtgärda Adobe Commerce-problemet där banderollens prestanda påverkas på kundvagn-/utcheckningssidan på grund av för stora DB-frågor och längre sidladdningstid.
 exl-id: f9526d66-fc0e-44a0-8c72-b9f183004840
 feature: Page Content

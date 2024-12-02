@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.3.5 known issue: virtual product multi-ship orders"
+title: 'Adobe Commerce 2.3.5: Problem med beställningar av virtuella produkter för flera leveranser'
 description: I den här artikeln förklaras ett känt fel i Adobe Commerce 2.3.5 där en beställning som innehåller en virtuell produkt för flera leveranser inte behandlas korrekt.
 exl-id: 34ce79a2-5157-492b-8ee4-bdc09aae0c40
 feature: Orders, Products, Shipping/Delivery

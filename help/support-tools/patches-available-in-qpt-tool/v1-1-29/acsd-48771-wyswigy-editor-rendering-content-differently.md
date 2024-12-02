@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-48771: WYSIWYG-redigeraren återger innehåll på olika sätt'
+title: 'ACSD-48771: WYSIWYG-redigeraren återger innehåll på ett annat sätt'
 description: Använd patchen ACSD-48771 för att åtgärda Adobe Commerce-problemet där WYSIWYG-redigeraren återger innehåll på ett annat sätt.
 exl-id: 6a856fa3-6099-4237-8d1c-e3735b8ca012
 feature: Cache, Page Content
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48771: WYSIWYG-redigeraren återger innehåll på olika sätt
+# ACSD-48771: WYSIWYG-redigeraren återger innehåll på ett annat sätt
 
 Korrigeringen ACSD-48771 åtgärdar ett problem där WYSIWYG-redigeraren återger innehåll på ett annat sätt. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.29 har installerats. Korrigerings-ID är ACSD-48771. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
 
@@ -31,7 +31,7 @@ Korrigeringen ACSD-48771 åtgärdar ett problem där WYSIWYG-redigeraren återge
 
 ## Problem
 
-WYSIWYG-redigeraren återger innehållet på ett annat sätt.
+WYSIWYG Editor återger innehåll på ett annat sätt.
 
 <u>Steg som ska återskapas</u>:
 

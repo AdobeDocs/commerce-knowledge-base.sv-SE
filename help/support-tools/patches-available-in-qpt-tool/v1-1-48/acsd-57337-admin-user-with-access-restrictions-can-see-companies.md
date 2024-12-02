@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-57337: Administratörsanvändare med åtkomstbegränsningar kan visa alla företag i rutnätet *Companies*'
+title: 'ACSD-57337: Administratörsanvändare med åtkomstbegränsningar kan visa alla företag i rutnätet *Företag*'
 description: Använd patchen ACSD-57337 för att åtgärda Adobe Commerce-problemet där en administratörsanvändare med åtkomstbegränsningar för specifika webbplatser kan visa företag från alla webbplatser i rutnätet *Companies*.
 feature: Companies, B2B, Configuration
 role: Admin, Developer

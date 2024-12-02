@@ -1,5 +1,5 @@
 ---
-title: 'Loggplatser (kataloger) för Pro-planen: Integration, Mellanlagring, Produktion'
+title: 'Loggplatser (kataloger) för Pro-planen: Integration, Förproduktion, Produktion'
 description: Se [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) i *Commerce on Cloud Infrastructure Guide* för att lära dig var du kan hitta bygg- och driftsättningsloggarna, program- och tjänstloggarna för ditt projekt.
 exl-id: daa79b73-68c2-4c89-bf5e-51c105762774
 feature: Integration, Logs

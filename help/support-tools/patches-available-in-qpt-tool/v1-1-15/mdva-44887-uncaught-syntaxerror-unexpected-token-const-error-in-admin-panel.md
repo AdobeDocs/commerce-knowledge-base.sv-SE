@@ -1,6 +1,6 @@
 ---
-title: "MDVA-44887: 'SyntaxError uncaught: Unexpected token const' error in Admin panel"
-description: "MDVA-44887-korrigeringen åtgärdar ett problem där administratörsanvändaren inte kan klicka på något menyalternativ. *Ohanterat SyntaxError: Oväntat token const*-fel visas på Admin-panelen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 är installerat. Patch-ID:t är MDVA-44887. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5."
+title: 'MDVA-44887: Felet ''SyntaxError uncaught: Unexpected token const'' i Admin panel'
+description: 'MDVA-44887-korrigeringen åtgärdar ett problem där administratörsanvändaren inte kan klicka på något menyalternativ. *Ohanterat SyntaxError: Oväntat token const*-fel visas på Admin-panelen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 är installerat. Patch-ID:t är MDVA-44887. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.'
 exl-id: 66555e66-49d0-4f80-8f77-84ee107ab12e
 feature: Admin Workspace, Orders
 role: Admin

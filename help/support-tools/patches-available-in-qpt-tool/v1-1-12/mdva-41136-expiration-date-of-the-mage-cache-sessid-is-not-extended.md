@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-41136: Förfallodatumet för mage-cache-sessid har inte utökats'
+title: 'MDVA-41136: Förfallodatumet för image-cache-sessid har inte utökats'
 description: MDVA-41136-korrigeringen löser problemet där utgångsdatumet för "image-cache-sessid"-cookien inte förlängs, vilket resulterar i rensning av kunddata. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 är installerat. Korrigerings-ID är MDVA-41136. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 7673d084-1ed2-4f1d-8525-e665b971baf2
 feature: Cache

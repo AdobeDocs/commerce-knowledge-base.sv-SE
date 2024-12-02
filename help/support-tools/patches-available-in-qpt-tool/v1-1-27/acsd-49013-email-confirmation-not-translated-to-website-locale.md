@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-49013: e-postbekräftelse har inte översatts till webbplatsens språkområde'
+title: 'ACSD-49013: E-postbekräftelse har inte översatts till webbplatsens nationella inställningar'
 description: Använd korrigeringsfilen ACSD-49013 för att åtgärda Adobe Commerce-problemet där e-postbekräftelse inte översätts till webbplatsens språkområde när du skapar kunder som använder satsvis-API.
 exl-id: 68203bd4-021a-4736-a793-4b6663a9c66b
 feature: Admin Workspace, Communications

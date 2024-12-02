@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-56842: Uppskjutna proxies och proxyfabriker saknas efter körning av "setup:di:compile"'
+title: 'ACSD-56842: Uppskjutna proxies och proxyfabriker saknas efter körning av "setup:di:compile"'
 description: Använd korrigeringsfilen ACSD-56842 för att åtgärda Adobe Commerce-problemet där de fördröjda proxieserna och proxyfabrikerna saknas efter att ha kört "setup:di:compile".
 feature: Deploy, Catalog Management
 role: Admin, Developer

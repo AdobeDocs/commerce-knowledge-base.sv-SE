@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-38393: Katalogregler slutar att fungera för konfigurerbara produkter om den enkla produkten får ett nytt namn'
+title: 'MDVA-38393: Katalogregler slutar fungera för konfigurerbara produkter om den enkla produkten får ett nytt namn'
 description: MDVA-38393-korrigeringen åtgärdar ett problem där katalogregler slutar fungera för en konfigurerbar produkt om dess enkla produkt namnges på nytt. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 är installerat. Korrigerings-ID är MDVA-38393. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: a20856c4-8aff-427b-a404-7afe706be06f
 feature: Catalog Management, Categories, Configuration, Products

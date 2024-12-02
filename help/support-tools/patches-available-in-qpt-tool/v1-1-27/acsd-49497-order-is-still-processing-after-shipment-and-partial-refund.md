@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49497: Beställning som fortfarande bearbetas efter leverans och partiell återbetalning"
+title: 'ACSD-49497: Beställning som fortfarande bearbetas efter leverans och partiell återbetalning'
 description: Använd patchen ACSD-49497 för att åtgärda Adobe Commerce-problemet där orderstatusen kvarstår som behandling efter leverans och en partiell återbetalning tillämpas.
 exl-id: d195bcf4-bb8b-4373-8aad-a5b953b07443
 feature: Admin Workspace, Orders, Shipping/Delivery

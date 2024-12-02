@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-39923: Sökning på SKU i B2B-snabbordningsfunktioner är skiftlägeskänslig'
+title: 'MDVA-39923: Sökning på SKU i B2B-snabbordningsfunktioner är skiftlägeskänsligt'
 description: MDVA-39923-korrigeringen åtgärdar ett problem där kunderna får ett felmeddelande när de söker igenom beställningen av SKU:n i B2B-snabborderfunktionen med ett annat fall än det som namnet sparas med. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 är installerat. Korrigerings-ID är MDVA-39923. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 52e435df-28a7-49be-a257-7e5801601d57
 feature: B2B, Catalog Management, Orders, Search

@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-39521: Det går inte att ange leveransadress för varukorgar via GraphQL'
+title: 'MDVA-39521: Det går inte att ange leveransadress för kundvagnar via GraphQL'
 description: Korrigeringen MDVA-39521 löser problemet där användaren inte kan ange leveransadress på kundvagnar med ett tomt telefonnummer via GraphQL. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 är installerat. Korrigerings-ID är MDVA-39521. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: b6bb4e83-ba65-4f15-82be-1252d9beb2fb
 feature: GraphQL, Orders, Shipping/Delivery, Shopping Cart

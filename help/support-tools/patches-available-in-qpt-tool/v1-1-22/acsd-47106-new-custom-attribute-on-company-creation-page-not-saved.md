@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47106: nytt anpassat attribut på företagsskapandesidan har inte sparats"
+title: 'ACSD-47106: Nytt anpassat attribut på företagsskapandesidan har inte sparats'
 description: Använd korrigeringsfilen ACSD-47106 för att åtgärda Adobe Commerce-problemet där ett värde inte kan sparas i ett nytt anpassat attribut på en företagsskapelsesida.
 exl-id: 941d6d8f-36eb-4b50-980f-e4afe6bf33df
 feature: Attributes, B2B, Companies

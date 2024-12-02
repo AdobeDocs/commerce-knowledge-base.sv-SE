@@ -1,5 +1,5 @@
 ---
-title: "MDVA-37725: E-postmeddelanden som skickas via icke-standardwebbplatser innehåller standardwebbplatsens URL:er för logotyp"
+title: 'MDVA-37725: E-postmeddelanden som skickas via icke-standardwebbplatser innehåller standardwebbplatsens logotyp-URL'
 description: Korrigeringen MDVA-37725 åtgärdar ett problem där asynkrona e-postmeddelanden om beställningar skickas via icke-standardwebbplatser som innehåller URL:er för logotyper från standardwebbplatsen.
 exl-id: c0d1b9a3-01bb-445b-b7da-f9be6952eaeb
 feature: Communications, Orders

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49574: Det går inte att uppdatera presentkortsprodukten i kundvagnen via GraphQL"
+title: 'ACSD-49574: Kan inte uppdatera presentkortsprodukten i kundvagnen via GraphQL'
 description: Använd patchen ACSD-49574 för att åtgärda Adobe Commerce-problemet där en presentkortsprodukt inte kan uppdateras i kundvagnen via GraphQL.
 exl-id: e446128f-c991-4c3c-8d1c-bbff6230e448
 feature: Admin Workspace, Gift, GraphQL, Orders, Products, Shopping Cart

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-55427: En administratör kan inte ta bort tilldelning för en produkt från **[!UICONTROL Product in Shared Catalogs]** på produktens sida"
+title: 'ACSD-55427: En administratör kan inte ta bort produkttilldelningen från **[!UICONTROL Product in Shared Catalogs]** på produktens sida'
 description: Använd korrigeringsfilen ACSD-55427 för att åtgärda Adobe Commerce-problemet där en produkt inte kan tas bort från **[!UICONTROL Product in Shared Catalogs]**.
 feature: Products, B2B
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-53414: Begränsade administratörsanvändare kan se CMS-sidor utanför sitt behörighetsområde'
+title: 'ACSD-53414: Begränsade administratörsanvändare kan visa CMS-sidor utanför sitt behörighetsområde'
 description: Använd patchen ACSD-53414 för att åtgärda Adobe Commerce-problemet där en begränsad administratörsanvändare kan se CMS-sidor utanför sitt behörighetsområde.
 feature: CMS
 role: Admin, Developer
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# ACSD-53414: Begränsade administratörsanvändare kan se CMS-sidor utanför sitt behörighetsområde
+# ACSD-53414: Begränsade administratörsanvändare kan visa CMS-sidor utanför sitt behörighetsområde
 
 Korrigeringen ACSD-53414 åtgärdar ett problem där en begränsad administratörsanvändare kan se CMS-sidor utanför sitt behörighetsområde. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.40 har installerats. Korrigerings-ID är ACSD-53414. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.7.
 
@@ -44,7 +44,7 @@ Begränsade administratörsanvändare kan se CMS-sidor utanför sitt behörighet
    * [!UICONTROL 503 Service Unavailable] > Standardbutiksgranskning
 
 1. Logga in på administratören med den administratörsanvändare som skapades i steg 3.
-1. Kontrollera CMS-sidstödrastret.
+1. Kontrollera CMS sidstödraster.
 
 <u>Förväntade resultat</u>:
 

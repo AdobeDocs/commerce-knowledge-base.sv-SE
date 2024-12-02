@@ -1,6 +1,6 @@
 ---
-title: "Adobe Commerce 2.4.0 known issue: order display error"
-description: "Den här artikeln innehåller en lösning på ett känt problem i Adobe Commerce för ett ordervisningsfel. När inloggade kunder granskar sina beställningar på menyn **Mitt konto** (**Mitt konto&stämpel;gt; Mina beställningar**) kan beställningsrutnätet inte ändra antalet beställningar per sida till 20 från sidan 2 när det finns 11 beställningar. Om det finns fler beställningar än vad som är konfigurerat att visas per sida visas felmeddelandet när du navigerar till den sista sidan med beställningar och ändrar antalet beställningar per sida: *Du har inte gjort några beställningar*. Problemet kommer att lösas i Adobe Commerce 2.4.1."
+title: 'Adobe Commerce 2.4.0: fel vid visning av beställningar'
+description: 'I den här artikeln finns en lösning på ett känt problem i Adobe Commerce för ett ordervisningsfel. När inloggade kunder granskar sina beställningar på menyn **Mitt konto** (**Mitt konto&stämpel;gt; Mina beställningar**) kan beställningsrutnätet inte ändra antalet beställningar per sida till 20 från sidan 2 när det finns 11 beställningar. Om det finns fler beställningar än vad som är konfigurerat att visas per sida visas felmeddelandet när du navigerar till den sista sidan med beställningar och ändrar antalet beställningar per sida: *Du har inte gjort några beställningar*. Problemet kommer att lösas i Adobe Commerce 2.4.1.'
 exl-id: a6d300e1-1cbc-42b9-997d-d72f8765517b
 feature: B2B, Categories, Storefront
 role: Admin

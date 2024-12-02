@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45424: Felaktig reservationskompensation skapad efter partiell återbetalning"
+title: 'ACSD-45424: Felaktig reservationskompensation skapad efter partiell återbetalning'
 description: Korrigeringen ACSD-45424 åtgärdar ett problem där en felaktig reservationskompensation skapas efter en partiell återbetalning. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 är installerat. Korrigerings-ID är ACSD-45424. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 exl-id: 0676cfda-a28e-4a66-a75b-8a3fc5e22566
 feature: Orders

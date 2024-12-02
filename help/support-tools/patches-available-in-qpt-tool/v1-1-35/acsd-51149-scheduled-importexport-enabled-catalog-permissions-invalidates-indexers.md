@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51149: Schemalagd [!UICONTROL ImportExport] med aktiverade [!UICONTROL Catalog Permissions] ogiltiga indexerare'
+title: 'ACSD-51149: Schemalagd [!UICONTROL ImportExport] med aktiverad [!UICONTROL Catalog Permissions] gör indexerare ogiltiga'
 description: Använd korrigeringsfilen ACSD-51149 för att åtgärda prestandaproblemet i Adobe Commerce där den schemalagda [!UICONTROL ImportExport] med aktiverad [!UICONTROL Catalog Permissions] gör indexerare ogiltiga.
 feature: Cache, Data Import/Export
 role: Admin

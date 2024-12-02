@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-52160: Produktvalideringsresultat mot kundprisregeln'
+title: 'ACSD-52160: Produktvalideringsresultat jämfört med kundprisregeln'
 description: Använd patchen ACSD-52160 för att åtgärda Adobe Commerce-problemet där produktvalideringsresultatet mot kundprisregeln inte utvärderas korrekt baserat på regelvillkoret *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*.
 exl-id: a371c539-4440-4c84-baa4-774c32f66e41
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-46683: Leveranspriset anges *ännu ej beräknat*'
+title: 'ACSD-46683: Leveranspriset anges *Inte beräknat ännu*'
 description: Använd patchen ACSD-46683 för att åtgärda Adobe Commerce-problemet där fraktpriset visar *ännu ej beräknat*.
 exl-id: 77986612-87b7-4f50-afaf-1cfe9a4feb6f
 feature: Marketing Tools, Orders, Shipping/Delivery

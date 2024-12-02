@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-31763: Katalogens prisregler återställs till manuell omindexering'
+title: 'MDVA-31763: Katalogens prisregler återställs tills manuell omindexering utförs'
 description: MDVA-31763-korrigeringen löser problemet där katalogprisreglerna återställs tills manuell omindexering. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 är installerat. Patch-ID:t är MDVA-31763. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: eb2dfd1a-6d12-4676-82c1-bf92c6fa9fda
 feature: Catalog Management, Orders, Price Rules

@@ -1,5 +1,5 @@
 ---
-title: '''MDVA-43414: Allvarligt PHP-fel vid körning av "layer.reservation.updateSalabilityStatus"'
+title: 'MDVA-43414: Allvarligt PHP-fel vid körning av "Inventering.reservation.updateSalabilityStatus"'
 description: Korrigeringen MDVA-43414 löser det allvarliga PHP-fel som inträffar när kökonsumenten "Inventation.reservation.updateSalabilityStatus" körs på numeriska SKU:er. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 är installerat. Korrigerings-ID är MDVA-43414. Observera att problemet har åtgärdats i Adobe Commerce 2.4.2.
 exl-id: 197c5db1-36bc-41a7-a5ca-f026600da786
 feature: Inventory, Orders

@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-38852: Kataloglager låser tabeller som försämrar prestanda'
+title: 'MDVA-38852: Kataloglager låser tabeller som minskar prestanda'
 description: MDVA-38852-korrigeringen löser problemet där kataloginventeringen låser tabeller för uppdateringar som avsevärt försämrar prestanda när flera parallella order placeras. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 är installerat. Patch-ID:t är MDVA-38852. Observera att problemet har åtgärdats i Adobe Commerce 2.3.6.
 exl-id: 6ecee9c8-1f39-47de-8fbc-55e30cc936af
 feature: Catalog Management, Inventory, Orders

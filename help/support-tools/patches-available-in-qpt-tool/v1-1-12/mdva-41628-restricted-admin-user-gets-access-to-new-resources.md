@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-41628: Begränsade administratörsanvändare får åtkomst till nya resurser'
+title: 'MDVA-41628: Administratörsanvändare med begränsningar får tillgång till nya resurser'
 description: MDVA-41628-korrigeringen åtgärdar ett problem där de begränsade administratörsanvändarna kan komma åt de nya resurserna när nya moduler läggs till. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 är installerat. Korrigerings-ID är MDVA-41628. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 8f63ce9d-07b6-4d9d-a51b-b85b783b2adf
 feature: Admin Workspace

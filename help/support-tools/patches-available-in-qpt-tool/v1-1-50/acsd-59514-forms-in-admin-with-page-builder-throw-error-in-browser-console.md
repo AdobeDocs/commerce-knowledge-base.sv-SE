@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-59514: Forms i Admin med  [!DNL Page Builder] ett fel i webbläsarkonsolen'
+title: 'ACSD-59514: Forms i Admin med  [!DNL Page Builder] utlöser ett fel i webbläsarkonsolen'
 description: Använd ACSD-59514-korrigeringen för att åtgärda Adobe Commerce-problemet där formulär i Admin med  [!DNL Page Builder] orsakade felet [!DNL Page Builder] återgav i 5 sekunder utan att frigöra lås. i webbläsarkonsolen när formuläret har skickats och ändringarna kan inte sparas.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: 19ecaa6b287d63bfae00c51911b53e1ed7ab5ed8
+exl-id: 4bb17d7b-9ea4-44c2-a42b-d0117e5f8f9a
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59514: Forms i Admin med [!DNL Page Builder] orsakar ett fel i webbläsarkonsolen
 

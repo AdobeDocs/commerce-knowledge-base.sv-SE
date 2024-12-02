@@ -1,6 +1,6 @@
 ---
-title: "Adobe Commerce Support KB Newsletter två gånger i veckan: nya artiklar och uppdateringar"
-description: '**NÄSTA UPPDATERING**: 27 september 2022.'
+title: 'Nyhetsbrevet Adobe Commerce Support KB två gånger i veckan: nya artiklar och uppdateringar'
+description: '**NEXT UPDATE**: 27 september 2022.'
 exl-id: 1f28086d-3567-4828-b5ee-b3d7953cff82
 feature: Support
 role: Admin

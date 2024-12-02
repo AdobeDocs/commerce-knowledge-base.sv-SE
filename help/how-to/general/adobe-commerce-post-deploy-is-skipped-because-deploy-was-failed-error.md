@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce *post-deploy hoppas över eftersom distributionen misslyckades*-fel
-description: 'I den här artikeln beskrivs hur du undersöker ett distributionsfel: *Post-deploy ignoreras eftersom distributionen misslyckades*'
+description: 'I den här artikeln beskrivs hur du undersöker ett distributionsfel: *Efter distributionen hoppas över eftersom distributionen misslyckades*'
 exl-id: cd0a3015-b7b9-442e-8ac1-89447ef12cd7
 feature: Deploy
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce *efter distributionen hoppas över eftersom distributionen misslyckades*-fel
 
-I den här artikeln beskrivs hur du undersöker ett distributionsfel: *Post-distribution ignoreras eftersom distributionen misslyckades*, vilket inträffar under distributionen till olika miljöer, till exempel uppgradering.
+I den här artikeln beskrivs hur du undersöker ett distributionsfel: *Efterdistributionen hoppas över eftersom distributionen misslyckades*, vilket inträffar under distributionen till olika miljöer, till exempel uppgradering.
 
 ## Berörda produkter och versioner
 

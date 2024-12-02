@@ -1,5 +1,5 @@
 ---
-title: Installationen av [!DNL B2B] 1.4.0 misslyckas i Adobe Commerce 2.4.6-p1 lokalt
+title: Installationen av [!DNL B2B] 1.4.0 misslyckas på Adobe Commerce 2.4.6-p1 lokalt
 description: I den här artikeln finns en lösning på det lokala problemet i Adobe Commerce 2.4.6-p1 där installationen av  [!DNL B2B] version 1.4.0 misslyckas.
 feature: Install, Upgrade, B2B
 role: Developer

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-49748: Det går inte att skicka e-postinbjudningar'
+title: 'ACSD-49748: E-postinbjudningar kan inte skickas'
 description: Använd patchen ACSD-49748 för att åtgärda Adobe Commerce-problemet där användarna inte kan skicka e-postinbjudningar.
 exl-id: 65de8ea9-e65c-463b-8cba-d35767d4343d
 feature: Admin Workspace, Communications, Marketing Tools

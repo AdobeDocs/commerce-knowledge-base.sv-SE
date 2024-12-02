@@ -1,6 +1,6 @@
 ---
 title: Distributionsfel där korrigeringar inte hittas
-description: "Den här artikeln innehåller en lösning på problemet där du ser ett fel *Nästa korrigeringsfiler hittades inte: MDVA-XXXXX, ACSD-XXXXX. Kontrollera med kommandot 'status' att dessa korrigeringsfiler för den aktuella Magento-versionen* är tillgängliga."
+description: 'Den här artikeln innehåller en lösning på problemet där ett fel uppstod *Nästa korrigeringsfiler inte hittades: MDVA-XXXXX, ACSD-XXXXX. Kontrollera med kommandot ''status'' att dessa korrigeringsfiler för den aktuella Magento-versionen* är tillgängliga.'
 exl-id: 5a2fd35a-892a-48af-a41f-f275297b3e2e
 source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
 workflow-type: tm+mt

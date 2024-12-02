@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-49480: Ignorera efterföljande regler fungerar inte'
+title: 'ACSD-49480: Ignorera efterföljande regler som inte fungerar'
 description: Använd korrigeringsfilen ACSD-49480 för att åtgärda Adobe Commerce-problemet där [!UICONTROL Cart Price Rule - Discard Subsequent Rules] inte fungerar som det ska.
 exl-id: 8d306a9e-ed1a-4295-8130-81700cbf31a6
 feature: Price Rules

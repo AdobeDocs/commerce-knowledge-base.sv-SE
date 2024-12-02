@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51574: Bilden har inte uppdaterats på klientsidan när den ersätts med en annan bild"
+title: 'ACSD-51574: Bilden har inte uppdaterats på klientsidan när den ersatts med en annan bild'
 description: Använd korrigeringsfilen ACSD-51574 för att korrigera Adobe Commerce-problemet där bilden inte uppdateras på klientsidan efter att den har ersatts med en annan bild.
 feature: Configuration
 role: Admin

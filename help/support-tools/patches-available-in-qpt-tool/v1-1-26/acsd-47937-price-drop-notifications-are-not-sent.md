@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-47937: meddelanden om prisfall skickas inte på grund av cachelagring på programnivå'
+title: 'ACSD-47937: Meddelanden om prisfall skickas inte på grund av cachelagring på programnivå'
 description: Använd patchen ACSD-47937 för att åtgärda Adobe Commerce-problemet där meddelanden om prisfall inte alltid skickas på grund av cachelagring på applikationsnivå.
 exl-id: f39c9ef6-4689-427f-bd61-3a52dec88be2
 feature: Admin Workspace, Cache, Orders

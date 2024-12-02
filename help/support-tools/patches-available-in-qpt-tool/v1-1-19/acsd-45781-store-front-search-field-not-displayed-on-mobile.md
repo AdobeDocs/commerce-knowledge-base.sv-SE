@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-45781: Butik sökfält visas inte på mobilen'
+title: 'ACSD-45781: Butik sökfält för lagring visas inte på mobilen'
 description: Korrigeringen MDVA-45781 löser problemet där sökfältet på framsidan inte visas på mobilen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 är installerat. Patch-ID:t är MDVA-45781. Observera att problemet har åtgärdats i Adobe Commerce 2.4.3.
 exl-id: 0ae90f6d-1c04-4599-b21d-4d02fd6b36db
 feature: Cache, Native Luma Frontend Development, Search

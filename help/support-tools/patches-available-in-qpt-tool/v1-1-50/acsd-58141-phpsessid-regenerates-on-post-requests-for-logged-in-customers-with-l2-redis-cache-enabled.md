@@ -3,13 +3,13 @@ title: 'ACSD-58141: PHPSESSID återskapar begäranden om POST för inloggade kun
 description: Använd patchen ACSD-58141 för att åtgärda Adobe Commerce-problemet där PHESSID återskapas vid förfrågningar från POSTER på Storefront för en inloggad kund med L2 Redis-cache aktiverad och kunden uppdateras från Admin.
 feature: Customers, Cache
 role: Admin, Developer
-source-git-commit: 488699c5d880baee2f7191d963368415f90c3340
+exl-id: 72ae2ed4-bbac-472b-b257-3234f86000f4
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58141: PHPSESSID återskapar [!DNL POST]-begäranden för inloggade kunder om L2 Redis-cache är aktiverad
 

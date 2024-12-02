@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48293: sammansatta produkter ur lager vid försäljning av underordnade produkter som återköpts"
+title: 'ACSD-48293: Sammansatta produkter som inte ingår i lager när de säljs ut i underprodukter som återställs'
 description: Använd patchen ACSD-48293 för att åtgärda Adobe Commerce-problemet där de sammansatta produkterna hamnar utanför lagret när de utsålda underordnade produkterna skickas tillbaka till lagret.
 exl-id: 74ca34fe-e015-4daf-a608-4756c8ab3558
 feature: Admin Workspace, Orders, Products

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51431: Indexerstatus är *[!UICONTROL Working]* trots att det inte finns några poster i ändringsloggen'
+title: 'ACSD-51431: Indexerstatus är *[!UICONTROL Working]* även om det inte finns några poster i ändringsloggen'
 description: Använd korrigeringen ACSD-51431 för att åtgärda Adobe Commerce-problemet där indexerarstatusen är *[!UICONTROL Working]* trots att det inte finns några poster i ändringsloggen.
 feature: Logs, Price Indexer
 role: Admin

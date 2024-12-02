@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46581: Den beräknade momssumman uppdateras inte när du har valt ett land i kundvagnen"
+title: 'ACSD-46581: Den beräknade momssumman uppdateras inte när du har valt ett land i kundvagnen'
 description: Använd patchen ACSD-46581 för att lösa problemet med Adobe Commerce där momssatsen inte uppdateras efter att landet bytt i kundvagnen.
 exl-id: 17334f7b-e5a2-4091-8196-eff80875c003
 feature: Orders, Shopping Cart

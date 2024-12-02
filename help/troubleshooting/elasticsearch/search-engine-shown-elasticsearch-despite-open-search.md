@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Elasticsearch] visas som sökmotor trots att  [!DNL OpenSearch] installationen är klar'
+title: '[!DNL Elasticsearch] visas som sökmotor trots [!DNL OpenSearch] installation'
 description: Den här artikeln innehåller en lösning på problemet där  [!DNL Elasticsearch]  fortfarande visas som sökmotor för Adobe Commerce i molnet, även efter installation eller uppgradering till  [!DNL OpenSearch].
 exl-id: cdd8a35d-da6f-46d3-b732-65626487c9bb
 feature: Install

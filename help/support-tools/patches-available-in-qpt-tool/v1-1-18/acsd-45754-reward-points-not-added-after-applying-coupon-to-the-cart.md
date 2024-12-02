@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45754: Belöningspoäng som inte lagts till efter kupong"
+title: 'ACSD-45754: Belöningspunkter har inte lagts till efter kupong'
 description: Korrigeringen ACSD-45754 löser problemet där belöningspoäng inte läggs till efter att en kupong har använts på vagnen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 är installerat. Korrigerings-ID är ACSD-45754. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 exl-id: 957713c0-3e2e-4dc9-8924-2ae84c817e47
 feature: Orders, Rewards, Shopping Cart

@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44100: Alla bildrutefrekvenser tilldelas den sista produkten i kundvagnen"
+title: 'MDVA-44100: Alla bildrutefrekvenser tilldelas den sista produkten i kundvagnen'
 description: MDVA-44100-korrigeringen löser problemet där alla bildrutefrekvenser tilldelas den sista produkten i kundvagnen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 är installerat. Korrigerings-ID är MDVA-44100. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: ab0f195c-fcc6-41ac-932d-d2603d068aa6
 feature: Orders, Products, Shopping Cart

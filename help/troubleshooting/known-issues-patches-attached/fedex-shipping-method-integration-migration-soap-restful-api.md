@@ -1,5 +1,5 @@
 ---
-title: Migrering av integrering av leveransmetod för [!DNL FedEx] från SOAP till RESTful API
+title: Migrering av integrering av [!DNL FedEx]-leveransmetod från SOAP till RESTful API
 promoted: true
 description: Använd en patch för att hantera migrering av  [!DNL FedEx] leveransmetodintegrering från SOAP till RESTful API för Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
 feature: Shipping/Delivery

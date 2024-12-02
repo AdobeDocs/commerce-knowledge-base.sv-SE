@@ -1,5 +1,5 @@
 ---
-title: '"Det går inte att ta bort filen. Varning! ta bort länk: Det finns inget sådant fil- eller katalogfel från  [!DNL Admin]'
+title: 'Det går inte att ta bort filen. Varning! Bryt länk: Det finns inget sådant fil- eller katalogfel från  [!DNL Admin]'
 description: Den här artikeln innehåller en lösning på problemet där ett fel uppstod *Det går inte att ta bort filen. Varning!avlänka Det finns inget sådant fil- eller katalogfel* från  [!DNL Admin] när du utför en [!DNL Javascript/CSS] tömning.
 feature: Admin Workspace, Observability
 role: Developer

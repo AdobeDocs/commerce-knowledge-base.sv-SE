@@ -1,5 +1,5 @@
 ---
-title: 'Hanterade aviseringar för Adobe Commerce: minnesvarning'
+title: 'Hanterade varningar för Adobe Commerce: minnesvarning'
 description: I den här artikeln beskrivs felsökningssteg för när du får en minnesvarning för Adobe Commerce i New Relic. Det krävs omedelbara åtgärder för att åtgärda problemet. Varningen ser ut ungefär så här, beroende på vilken meddelandekanal du valt.
 exl-id: bb5eb3f4-b162-4737-93d5-4037f2844bb1
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services

@@ -1,6 +1,6 @@
 ---
-title: '"Distributionen misslyckas med "Fel vid projektskapande: Byggkroken misslyckades med statuskod 1"'
-description: '"I den här artikeln beskrivs orsakerna till och lösningarna för Adobe Commerce när det gäller molninfrastruktursproblem, där installationsfasen misslyckas och felmeddelandet sammanfattas med: *"Fel i byggprojekt: Byggprocessen misslyckades med statuskod 1"*."'
+title: 'Distributionen misslyckas med felet"Error building project: The build krok failed with status code 1"'
+description: 'I den här artikeln beskrivs orsakerna till och lösningarna för Adobe Commerce när det gäller molninfrastruktursproblem, där installationsfasen misslyckas och felmeddelandet sammanfattas med: *"Fel när projekt byggs: Bygget misslyckades med statuskod 1"*.'
 exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
 feature: Build, Deploy
 role: Developer

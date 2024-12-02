@@ -1,6 +1,6 @@
 ---
-title: Omdirigering tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet"Ditt konto är tillfälligt inaktiverat"
-description: 'I den här artikeln beskrivs möjliga lösningar på inloggningsproblemet för Commerce Admin, där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *"Ditt konto är tillfälligt inaktiverat"*. Den föreslagna lösningen är att kontrollera och korrigera inställningarna för administratörsanvändardatabasen.'''
+title: Omdirigera tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet"Ditt konto är tillfälligt inaktiverat"
+description: 'I den här artikeln beskrivs möjliga lösningar på inloggningsproblemet i Commerce Admin, där du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande: *"Ditt konto är tillfälligt inaktiverat"*. Den föreslagna lösningen är att kontrollera och korrigera inställningarna för administratörsanvändardatabasen.'
 exl-id: 1c7ffa1c-1fb1-4f69-9534-77d1e119318a
 feature: Admin Workspace, Customer Service
 role: Developer

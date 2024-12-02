@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48784: Kundsegmentpriser cachelagrades felaktigt mellan kundgrupper"
+title: 'ACSD-48784: Kundsegmentpriser cachelagrades felaktigt mellan kundgrupper'
 description: Använd patchen ACSD-48784 för att åtgärda problemet med Adobe Commerce där kundsegmentpriserna cachas felaktigt mellan kundgrupper.
 exl-id: 6be11fd0-5c93-4ac7-8664-7e2a289c9e38
 feature: Admin Workspace, Cache, Customer Service, Orders

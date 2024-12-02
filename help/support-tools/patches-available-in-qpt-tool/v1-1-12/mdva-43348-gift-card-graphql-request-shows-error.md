@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-43348: Fel i GraphQL-presentkortsbegäran'
+title: 'MDVA-43348: Fel i GraphQL-begäran med presentkort'
 description: Korrigeringen MDVA-43348 åtgärdar ett fel där en GraphQL-begäran med presentkort visar ett fel om "present_card_options" innehåller "uid". Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 är installerat. Korrigerings-ID är MDVA-43348. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: a9c0e1da-6698-463a-a6a8-60522f029b53
 feature: Gift, GraphQL

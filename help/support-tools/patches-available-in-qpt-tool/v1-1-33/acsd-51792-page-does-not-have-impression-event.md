@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51792: Sidan har ingen inställningshändelse'
+title: 'ACSD-51792: Sidan har ingen händelse för att göra intryck'
 description: Använd korrigeringsfilen ACSD-51792 för att åtgärda prestandaproblem i Adobe Commerce där en sida inte har en inställningshändelse när Google Tag Manager 4 är aktiverat.
 exl-id: 59194d4c-c387-4372-a0ff-1cdd74f8c6df
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc

@@ -1,5 +1,5 @@
 ---
-title: "MDVA-40120: GraphQL product DESC/ASC sort does not work"
+title: 'MDVA-40120: GraphQL product DESC/ASC sort does not work'
 description: MDVA-40120-korrigeringen löser problemet där GraphQL sortering efter DESC/ASC inte fungerar med produkter som har samma relevans eller pris. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.6 är installerat. Korrigerings-ID är MDVA-40120. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: f04373d6-d3e8-47ba-9261-87fad8dff327
 feature: GraphQL, Products

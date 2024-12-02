@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-54885: Undantag under utcheckning av flera adresser när administratören loggar in som kund'
+title: 'ACSD-54885: Undantag vid utcheckning av flera adresser när administratören loggar in som kund'
 description: Använd korrigeringsfilen ACSD-54885 för att åtgärda Adobe Commerce-problemet när ett fel inträffar under utcheckning av flera adresser när administratören använder funktionen *[!UICONTROL Login as Customer]*.
 feature: Checkout
 role: Admin, Developer

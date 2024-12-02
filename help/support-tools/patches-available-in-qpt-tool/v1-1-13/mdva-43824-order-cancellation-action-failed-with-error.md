@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-43824: Orderannulleringsåtgärden misslyckades med felet "Du har inte avbrutit objektet"'
-description: "MDVA-43824-korrigeringen löser problemet där åtgärden för att avbryta beställningen misslyckades. Felkod: *Du har inte avbrutit artikeln*. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 är installerat. Korrigerings-ID är MDVA-43824. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5."
+title: 'MDVA-43824: Orderannulleringsåtgärden misslyckades med felet"Du har inte avbrutit objektet"'
+description: 'MDVA-43824-korrigeringen löser problemet där åtgärden för att avbryta beställningen misslyckades. Felkod: *Du har inte avbrutit artikeln*. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 är installerat. Korrigerings-ID är MDVA-43824. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.'
 exl-id: e4d839d6-84ed-4157-80a1-fd482fef897c
 feature: Orders
 role: Admin

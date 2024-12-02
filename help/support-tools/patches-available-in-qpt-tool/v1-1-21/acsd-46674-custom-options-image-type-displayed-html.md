@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-46674: anpassade alternativ för bildtyp som visas som HTML i kundens e-postmeddelanden'
+title: 'ACSD-46674: anpassade alternativ för bildtyp som visas som HTML i kundmeddelanden'
 description: Använd patchen ACSD-46674 för att åtgärda Adobe Commerce-problemet där anpassade alternativ för bildtyp visas som HTML i kundens e-postmeddelanden.
 exl-id: b4941dd0-bb3a-4805-9631-1d256a92f461
 feature: Communications, Personalization

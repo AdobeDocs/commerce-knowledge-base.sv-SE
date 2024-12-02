@@ -1,5 +1,5 @@
 ---
-title: '''ACSD-54989: Företagsadministratören kan inte beställa när [!UICONTROL Enable Purchase Orders] har värdet Ja och [!UICONTROL Purchase Order] har värdet Nej'
+title: 'ACSD-54989: Företagsadministratören kan inte beställa när [!UICONTROL Enable Purchase Orders] har värdet Ja och [!UICONTROL Purchase Order] har värdet Nej'
 description: Använd ACSD-54989-korrigeringen för att åtgärda Adobe Commerce-problemet där företagsadministratören inte kan göra beställningar om [!UICONTROL Enable Purchase Orders] är inställt på Ja och [!UICONTROL Purchase Order] är inställd på Nej.
 feature: Orders, Companies, Purchase Orders
 role: Admin, Developer

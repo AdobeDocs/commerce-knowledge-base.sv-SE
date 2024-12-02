@@ -1,5 +1,5 @@
 ---
-title: '''ACSD-52606: Felmeddelande visas när användaren klickar på "Notify Order is Ready for Pickup"'
+title: 'ACSD-52606: Felmeddelande som visas när användaren klickar på Meddela beställning är klar för hämtning'
 description: Åtgärda Adobe Commerce-problemet med korrigeringen ACSD-52606 där ett felmeddelande visas när användaren klickar på **[!UICONTROL Notify Order is Ready for Pickup]**.
 feature: Orders, User Account
 role: Admin, Developer

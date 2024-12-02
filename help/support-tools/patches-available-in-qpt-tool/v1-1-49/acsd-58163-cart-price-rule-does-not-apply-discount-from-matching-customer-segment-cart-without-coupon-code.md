@@ -3,13 +3,13 @@ title: 'ACSD-58163: [!UICONTROL Cart Price Rule] tillämpar inte rabatt från ma
 description: Använd patchen ACSD-58163 för att åtgärda Adobe Commerce-problemet där [!UICONTROL Cart Price Rule] inte tillämpar en rabatt för en gäst från den matchande [!UICONTROL Customer Segment]-vagnen utan kupongkod.
 feature: Products
 role: Admin, Developer
-source-git-commit: 7603a482953dc0ac0784ab6e6d3b22e4245e3e75
+exl-id: bc8587be-076c-4210-902c-6ecb69f581e2
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58163: [!UICONTROL Cart Price Rule] tillämpar inte rabatt från matchande [!UICONTROL Customer Segment]-kundvagn utan kupongkod
 

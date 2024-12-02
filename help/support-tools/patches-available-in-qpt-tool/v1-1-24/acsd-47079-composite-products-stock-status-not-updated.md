@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47079: Produkternas lagerstatus uppdateras inte när delproduktens lagerstatus ändras"
+title: 'ACSD-47079: Produkternas lagerstatus uppdateras inte när delproduktens lagerstatus ändras'
 description: Använd patchen ACSD-47079 för att åtgärda Adobe Commerce-problemet där sammansatta produkter (bundle, grouped och configurable) inte uppdateras när delproduktens lagerstatus ändras via REST API-POSTEN /rest/V1/layer/source-items.
 exl-id: 603e4548-fb04-43b4-a033-4f2c7f665fae
 feature: Orders, Products

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-53824: Distributionen misslyckas vid konfigurationsuppgradering'
+title: 'ACSD-53824: Distributionen misslyckas vid installation av uppgradering'
 description: Använd korrigeringsfilen ACSD-53824 för att åtgärda Adobe Commerce-problemet där distributionen misslyckas vid konfigurationsuppgradering
 feature: Attributes, Upgrade
 role: Admin, Developer

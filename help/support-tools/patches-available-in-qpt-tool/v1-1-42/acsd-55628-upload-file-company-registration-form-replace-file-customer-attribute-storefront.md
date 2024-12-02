@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-55628: Överför fil i registreringsformulär; ersätter fil för kundattribut i butiken'
+title: 'ACSD-55628: Överför fil i företagsregistreringsformulär; ersätter fil för kundattribut i butiken'
 description: Använd patchen ACSD-55628 för att åtgärda Adobe Commerce-problemet genom att ladda upp en fil i registreringsformuläret och ersätta en fil för ett kundattribut i butiken.
 feature: Storefront, Attributes, B2B, Customers
 role: Admin, Developer

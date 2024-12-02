@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46541: En administratörsanvändare kan inte skapa en kreditnota om ett orderobjekt tas bort"
+title: 'ACSD-46541: En administratörsanvändare kan inte skapa en kreditnota om ett orderobjekt tas bort'
 description: Använd korrigeringsfilen ACSD-46541 för att åtgärda Adobe Commerce-problemet där du inte kan skapa en kreditnota i Adobe Commerce Admin när en produkt har tagits bort.
 exl-id: ff3f8f21-76c1-41b5-bf02-349403a46fc1
 feature: Admin Workspace, Orders, Returns

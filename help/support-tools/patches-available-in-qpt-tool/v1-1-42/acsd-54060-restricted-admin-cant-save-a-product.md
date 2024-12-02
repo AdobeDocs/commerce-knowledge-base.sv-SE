@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54060: Begränsad administratör kan inte spara produkten om den är underordnad en annan produkt"
+title: 'ACSD-54060: Begränsad administratör kan inte spara produkten om den är underordnad en annan produkt'
 description: Använd patchen ACSD-54060 för att åtgärda Adobe Commerce-problemet där en begränsad administratör inte kan spara en produkt om den är underordnad en annan produkt som tilldelats ett annat omfång.
 feature: Admin Workspace, Roles/Permissions, Products
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-55241: **Används** och **Används i tider** visar felaktiga värden för genererade kuponger'
+title: 'ACSD-55241: **Används** och **Används**-attribut visar felaktiga värden för genererade kuponger'
 description: Använd patchen ACSD-55241 för att åtgärda Adobe Commerce-problemet där attributen **Used** och **Times Used** visar felaktiga värden för genererade kuponger
 feature: Price Rules
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: "MDVA-40435: Rabatten på paketprodukter tillämpas inte korrekt via GraphQL"
+title: 'MDVA-40435: Rabatten på paketprodukter tillämpas inte korrekt via GraphQL'
 description: MDVA-40435-patchen löser problemet där rabatten på en paketerad produkt inte tillämpas korrekt via GraphQL. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.4 är installerat. Korrigerings-ID är MDVA-40435. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 939ba940-35b5-4ab0-81fe-38981246e389
 feature: GraphQL, Orders, Personalization, Products

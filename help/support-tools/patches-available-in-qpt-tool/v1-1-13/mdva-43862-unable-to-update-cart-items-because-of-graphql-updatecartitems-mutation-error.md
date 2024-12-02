@@ -1,5 +1,5 @@
 ---
-title: "MDVA-43862: Kunden kan inte uppdatera kundvagnsobjekt på grund av ett GraphQL UpdateCartItems-mutationsfel"
+title: 'MDVA-43862: Kunden kan inte uppdatera kundvagnsobjekt på grund av ett GraphQL UpdateCartItems-mutationsfel'
 description: MDVA-43862-korrigeringen åtgärdar ett problem där kunden inte kan uppdatera kundvagnsobjekt på grund av ett GraphQL UpdateCartItems-mutationsfel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 är installerat. Korrigerings-ID är MDVA-43862. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 5f0a2970-34a8-4a25-baf8-15c007f97084
 feature: GraphQL, Orders, Shopping Cart

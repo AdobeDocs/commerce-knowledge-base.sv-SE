@@ -1,6 +1,6 @@
 ---
 title: Fel vid rensning av snabbcache i molnet (rensningsbegäran bearbetades inte korrekt)
-description: 'I den här artikeln finns en korrigering för när du använder ett snabbtömningsalternativ och du får felmeddelandet: *Begäran om tömning har inte bearbetats korrekt*. Fast är en CDN och cachningstjänst som ingår i Adobe Commerce om molninfrastrukturplaner och implementeringar. Om du försöker använda alternativet Rensa snabbt, och det inte fungerar, kan du ha felaktiga Fastly-autentiseringsuppgifter i miljön eller så kan ett fel ha uppstått."'
+description: 'I den här artikeln finns en korrigering för när du använder ett snabbtömningsalternativ och du får felmeddelandet: *Begäran om tömning har inte bearbetats korrekt*. Fast är en CDN och cachningstjänst som ingår i Adobe Commerce om molninfrastrukturplaner och implementeringar. Om du försöker använda ett alternativ för att ta bort snabbt, och det inte fungerar, kan du ha felaktiga autentiseringsuppgifter för snabbt i din miljö eller så har du råkat ut för ett problem.'
 exl-id: 568b1f4c-2ccb-4740-a6e4-d227a55fcfe6
 feature: Cache, Cloud, Paas
 role: Developer

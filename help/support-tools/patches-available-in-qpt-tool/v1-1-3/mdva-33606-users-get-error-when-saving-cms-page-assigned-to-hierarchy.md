@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-33606: Användarna får felmeddelanden när CMS-sidor som tilldelats hierarkin sparas'
+title: 'MDVA-33606: Användarna får felmeddelanden när CMS-sidor sparas som tilldelats hierarkin'
 description: MDVA-33606-korrigeringen åtgärdar ett problem där användaren får felet *Unikt villkorsfel påträffades* när en CMS-sida som tilldelats hierarkiträdet sparas. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.3 är installerat. Korrigerings-ID är MDVA-33606. Observera att problemet har åtgärdats i Adobe Commerce 2.4.3.
 exl-id: cdefece5-6d13-4003-87e9-810c665e940c
 feature: CMS

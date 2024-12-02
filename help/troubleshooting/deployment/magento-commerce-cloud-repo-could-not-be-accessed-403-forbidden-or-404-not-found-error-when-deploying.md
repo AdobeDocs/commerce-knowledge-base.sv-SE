@@ -1,5 +1,5 @@
 ---
-title: 'Det gick inte att komma åt Adobe Commerce i molnet: 403 Otillåten eller 404 Det gick inte att hitta felet vid distributionen'
+title: 'Det gick inte att komma åt Adobe Commerce i molnet: 403 Otillåten eller 404 Inte hittad vid distribution'
 description: 'I den här artikeln beskrivs hur du löser problemet med misslyckade distribueringsfel i Adobe Commerce om molninfrastruktur på ungefär följande sätt:'
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables

@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-37897: Felaktig omdirigering när du lägger till produkter från Senast visade'
+title: 'MDVA-37897: Felaktig omdirigering när produkter från Senast visade läggs till'
 description: MDVA-37897-korrigeringen löser problemet med felaktig omdirigering när användare försöker lägga till produkter med alternativ från widgeten Senast visade. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.1 är installerat. Patch-ID:t är MDVA-37897. Observera att problemet schemaläggs att åtgärdas i Adobe Commerce version 2.4.4.
 exl-id: f0a86e02-b357-4d2d-8386-e9cc045bcf06
 feature: Products

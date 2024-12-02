@@ -1,5 +1,5 @@
 ---
-title: 'Uppdatering av disposition misslyckas på Adobe Commerce: Inkompatibel argumenttyp'
+title: 'Det går inte att uppdatera disposition på Adobe Commerce: Inkompatibel argumenttyp'
 description: Den här artikeln innehåller en lösning för när distributionen stoppas på grund av ett problem med kodkompilering. Problemet orsakas av en ny version av symfony/console-beroende (4.4.27, 4.4.28).
 exl-id: ba2dd229-29f6-43e2-9467-8bd1bf59e6ef
 feature: Console

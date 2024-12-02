@@ -1,15 +1,15 @@
 ---
-title: "ACSD-54887: Kundvagnen raderas efter att kundsessionen har upphört"
+title: 'ACSD-54887: Kundvagnen raderas efter att kundsessionen har upphört'
 description: Använd korrigeringsfilen ACSD-54887 för att korrigera Adobe Commerce-problemet där kundvagnen raderas efter att kundsessionen har upphört och [!UICONTROL Persistent Shopping Cart] är aktiverat.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fd73d89e8d60f6a4ab2ff5ba08df385adbd3faaa
+exl-id: 81e0a20e-0c68-420e-b14e-3f331249c8d9
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-54887: Kundvagnen raderas efter att kundsessionen har upphört
 
@@ -70,4 +70,3 @@ Mer information om [!DNL Quality Patches Tool] finns i:
 * [Kontrollera om det finns en korrigeringsfil för ditt Adobe Commerce-problem med  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) i vår kunskapsbas för support.
 
 Mer information om andra tillgängliga korrigeringsfiler i QPT finns i [[!DNL Quality Patches Tool]: Söka efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i [!DNL Quality Patches Tool]-handboken.
-

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-46146: Två e-postmeddelanden med orderbekräftelse skickade efter beställning från administratör'
+title: 'ACSD-46146: Två e-postmeddelanden med orderbekräftelse skickas efter beställning från administratör'
 description: Korrigeringen ACSD-46146 löser problemet där två e-postmeddelanden med orderbekräftelse skickas efter att en beställning från administratören har gjorts. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 är installerat. Korrigerings-ID är ACSD-46146. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 exl-id: 3bf2cccf-7a40-48ca-ab51-ffb5939f8802
 feature: Admin Workspace, Communications, Orders

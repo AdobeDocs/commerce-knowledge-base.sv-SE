@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-47292: Produkterna som inte finns i lager finns inte i GraphQL-svar'
+title: 'ACSD-47292: Olagerförda paketprodukter är inte tillgängliga i GraphQL svar'
 description: Använd patchen ACSD-47292 för att åtgärda Adobe Commerce-problemet där de färdiga paketerade produkterna inte är tillgängliga i GraphQL-svaret, även om"show out-of-stock products" är inställd på Ja.
 exl-id: 377dc62f-d1cd-4292-b25d-53c498b772a9
 feature: Admin Workspace, Categories, GraphQL, Orders, Products

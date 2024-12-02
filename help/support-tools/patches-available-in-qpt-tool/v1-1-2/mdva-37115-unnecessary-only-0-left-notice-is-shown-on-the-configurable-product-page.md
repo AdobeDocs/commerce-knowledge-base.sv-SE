@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-37115: Meddelandet "Endast 0 kvar" visas på produktsidan'
+title: 'MDVA-37115: Meddelandet "Endast 0 kvar" visas på produktsidan'
 description: MDVA-37115-korrigeringen åtgärdar ett problem där det onödiga *Endast 0 varningar* visas på den konfigurerbara produktsidan. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 är installerat. Korrigerings-ID är MDVA-37115. Observera att problemet har åtgärdats i Adobe Commerce 2.4.3.
 exl-id: 08aa6ac7-13ae-44c1-9db4-d449c3d8c985
 feature: Configuration, Products, Orders

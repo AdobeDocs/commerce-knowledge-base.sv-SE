@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52689: Bilder kan inte överföras till Amazon S3-lagring via REST API"
+title: 'ACSD-52689: Bilder kan inte överföras till Amazon S3-lagring via REST API'
 description: Använd patchen ACSD-52689 för att åtgärda Adobe Commerce-problemet där bilderna inte kan överföras till Amazon S3-lagring via REST API.
 feature: REST, Storage, Iaas
 role: Admin

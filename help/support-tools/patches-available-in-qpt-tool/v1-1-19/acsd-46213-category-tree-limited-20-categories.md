@@ -1,6 +1,6 @@
 ---
-title: "ACSD-46213: Begäran om kategoriträd begränsad till 20 kategorier"
-description: Korrigeringen ACSD-46213 åtgärdar ett fel där kategoriträdets begäran är begränsad till 20 kategorier. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 är installerat. Korrigerings-ID är ACSD-46213. '
+title: 'ACSD-46213: Begäran om kategoriträd begränsad till 20 kategorier'
+description: 'Korrigeringen ACSD-46213 åtgärdar ett problem där kategoriträdets begäran är begränsad till 20 kategorier. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 är installerat. Korrigerings-ID är ACSD-46213. '
 exl-id: 27a18871-8552-4ecd-9e03-0dc38d037ea0
 feature: Categories
 role: Admin

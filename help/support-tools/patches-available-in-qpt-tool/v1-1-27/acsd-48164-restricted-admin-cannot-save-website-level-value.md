@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-48164: begränsad administratör kan inte spara webbplatsnivåvärde'
+title: 'ACSD-48164: Begränsad administratör kan inte spara webbplatsnivåvärde'
 description: Använd korrigeringsfilen ACSD-48164 för att åtgärda Adobe Commerce-problemet där en begränsad administratör inte kan spara ett webbplatsnivåvärde.
 exl-id: 6ec15163-ad30-4566-a46c-5756bfd9f8d4
 feature: Admin Workspace

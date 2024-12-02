@@ -1,5 +1,5 @@
 ---
-title: Inloggningen [!DNL Admin] fungerar inte - den tillåtna maxstorleken för sessionen har överskridits
+title: '[!DNL Admin]-inloggningen fungerar inte - den tillåtna maxstorleken för sessionen har överskridits'
 description: Lös problemet när du försöker logga in på  [!DNL Admin] panelen och formuläret uppdateras, och du kan inte logga in.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
 source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1

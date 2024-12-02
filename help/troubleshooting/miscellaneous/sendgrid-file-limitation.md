@@ -1,5 +1,5 @@
 ---
-title: Filbegränsning [!DNL SendGrid] för Adobe Commerce Cloud
+title: Filbegränsning för [!DNL SendGrid] för Adobe Commerce Cloud
 description: I den här artikeln finns en tillfällig lösning på begränsningen  [!DNL SendGrid] för Adobe Commerce i molninfrastrukturen.
 feature: Deploy, Marketing Tools
 role: Developer, Admin

@@ -1,5 +1,5 @@
 ---
-title: '[!DNL ACSD-47280]: Inaktivera delad katalog ger fel produktsökresultat'
+title: '[!DNL ACSD-47280]: Inaktivera delad katalog ger felaktiga produktsökresultat'
 description: Använd korrigeringen  [!DNL ACSD-47280] för att korrigera och visa rätt sökresultat när funktionen för delad katalog är inaktiverad.
 exl-id: 98bbae42-fd68-4b54-823d-189d742cc35f
 source-git-commit: 975f5b5c95ad488128a5dbb3488b8d54f7b73b59

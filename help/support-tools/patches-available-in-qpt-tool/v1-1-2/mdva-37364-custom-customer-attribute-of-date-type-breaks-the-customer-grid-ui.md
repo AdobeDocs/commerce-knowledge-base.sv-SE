@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-37364: Anpassat kundattribut med datumtypen avbryter stödrastergränssnittet'
+title: 'MDVA-37364: Anpassat kundattribut för datumtyp, brytningsgränssnitt för stödraster'
 description: MDVA-37364-korrigeringen löser problemet där det anpassade kundattributet av datumtyp bryter användargränssnittet för kundstödraster. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 är installerat. Patch-ID:t är MDVA-37364. Observera att problemet schemaläggs att åtgärdas i Adobe Commerce version 2.4.4.
 exl-id: d25baabf-45eb-403c-9f88-9c2448cc7b49
 feature: Attributes, Cache

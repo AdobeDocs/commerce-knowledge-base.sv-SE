@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Cron] aktiviteter låser aktiviteter från andra grupper'
+title: '[!DNL Cron] uppgifter låser uppgifter från andra grupper'
 description: I den här artikeln finns en lösning på problemet med molninfrastruktur i Adobe Commerce som rör vissa  [!DNL cron] jobb som är igång eller som blockerar andra [!DNL cron] jobb.
 exl-id: b5b9e8b3-373c-4f93-af9c-85da84dbc928
 feature: Configuration

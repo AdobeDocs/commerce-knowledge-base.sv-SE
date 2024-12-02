@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52736: [!UICONTROL Cart Price Rule] fungerar inte som förväntat"
+title: 'ACSD-52736: [!UICONTROL Cart Price Rule] fungerar inte som förväntat'
 description: Använd patchen ACSD-52736 för att åtgärda Adobe Commerce-problemet där en [!UICONTROL Cart Price Rule] som innehåller kraven för konfigurerbar produktkvantitet inte fungerar som förväntat.
 feature: Shopping Cart, Products
 role: Admin, Developer

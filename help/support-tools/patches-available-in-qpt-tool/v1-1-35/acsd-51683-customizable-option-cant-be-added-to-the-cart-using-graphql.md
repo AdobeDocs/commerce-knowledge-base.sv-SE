@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51683: Det går inte att lägga till anpassningsbara alternativ i kundvagnen med GraphQL"
+title: 'ACSD-51683: Det går inte att lägga till det anpassningsbara alternativet i kundvagnen med GraphQL'
 description: Använd patchen ACSD-51683 för att åtgärda Adobe Commerce-problemet där det anpassningsbara alternativet inte kan läggas till i kundvagnen med GraphQL.
 feature: GraphQL
 role: Admin

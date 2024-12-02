@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-40619: Hierarkiändringar bryter CMS sidredigering och orsakar 500-fel'
+title: 'MDVA-40619: Ändringar i hierarkin bryter CMS sidredigering och orsakar 500-fel'
 description: Korrigeringen MDVA-40619 löser problemet där CMS sidhierarki bryter CMS sidinfogade redigering och ger"500-fel". Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 är installerat. Korrigerings-ID är MDVA-40619. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: c003d845-1ba0-49c0-9f1a-a4b0ec00f30c
 feature: CMS

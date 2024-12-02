@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-52786: Katalogregeln *[!UICONTROL SKU is]* gäller alla produkter som börjar med SKU'
+title: 'ACSD-52786: Katalogregeln *[!UICONTROL SKU is]* gäller alla produkter som börjar med SKU:n'
 description: Använd ACSD-52786-korrigeringen för att åtgärda Adobe Commerce-problemet där katalogregelvillkoret *[!UICONTROL SKU is]* gäller för alla produkter som börjar med den angivna SKU:n.
 feature: Price Rules
 role: Admin

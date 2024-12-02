@@ -3,13 +3,13 @@ title: 'ACSD-56979: Produktbilder som tagits bort efter att mellanlagringsuppdat
 description: Använd korrigeringsfilen ACSD-56979 för att åtgärda Adobe Commerce-problemet där produktbilder tas bort efter att en mellanlagringsuppdatering har tagits bort
 feature: Products
 role: Admin, Developer
-source-git-commit: 8e916feab8be9d92d047fae8861a479070d448e8
+exl-id: efb8aada-d775-4428-b7fe-7ab5d41ae2b6
+source-git-commit: 9bb839292a120a3dab5151d493f915619dbf5c06
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-56979: Produktbilder som tagits bort efter att mellanlagringsuppdateringen tagits bort
 

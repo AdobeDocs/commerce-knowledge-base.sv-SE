@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce i molnet: ändra autentiseringsnycklar och omdistribuera"
+title: 'Adobe Commerce i molnet: ändra autentiseringsnycklar och återdistribuera'
 description: Den här artikeln innehåller anvisningar om hur du distribuerar om Adobe Commerce i molninfrastruktur med olika autentiseringsnycklar. Du kan till exempel ha använt nycklarna för ett annat konto eller så har du använt Magento Open Source i stället för Adobe Commerce nycklar.
 exl-id: 47407c81-5c52-406f-812f-6c6b3ca5cafa
 feature: Cloud, Deploy

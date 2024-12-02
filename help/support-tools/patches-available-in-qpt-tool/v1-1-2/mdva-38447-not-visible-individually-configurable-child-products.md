@@ -1,5 +1,5 @@
 ---
-title: '''MDVA-38447: Konfigurerbara underordnade produkter som inte är synliga individuellt'' returneras i GraphQL-svar och kör MySQL-frågan långsamt'''
+title: 'MDVA-38447: Konfigurerbara underordnade produkter som inte visas individuellt returneras i GraphQL-svar och gör MySQL-frågan långsam'
 description: MDVA-38447 Adobe Commerce-korrigeringen åtgärdar ett problem där konfigurerbara underordnade produkter som inte är synliga var för sig returneras i GraphQL-svar och gör MySQL-frågan för GraphQL-produktfrågan långsam med kategorifilter. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 är installerat. Patch-ID:t är MDVA-38447. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 302e7458-d9ea-466a-a2ac-d86a8ee3eca3
 feature: B2B, GraphQL, Categories, Configuration, Products, Services

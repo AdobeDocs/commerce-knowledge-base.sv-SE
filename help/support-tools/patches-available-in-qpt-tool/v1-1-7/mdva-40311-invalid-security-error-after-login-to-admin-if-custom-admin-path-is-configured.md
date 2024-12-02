@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40311: Felet "Ogiltig säkerhet eller formulärnyckel" efter inloggning i Admin om anpassad administratörssökväg har konfigurerats'
-description: 'Korrigeringen MDVA-40311 åtgärdar ett fel där administratörsanvändaren får ett felmeddelande: *Ogiltig säkerhet eller formulärnyckel. Uppdatera sidan* efter inloggning i administratören om den anpassade administratörssökvägen är konfigurerad och den hemliga nyckeln är aktiverad. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 är installerat. Korrigerings-ID är MDVA-40311. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4."'
+description: 'MDVA-40311-korrigeringen åtgärdar ett problem där administratörsanvändaren får ett felmeddelande: *Ogiltig säkerhets- eller formulärnyckel. Uppdatera sidan* efter inloggning i administratören om den anpassade administratörssökvägen är konfigurerad och den hemliga nyckeln är aktiverad. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 är installerat. Korrigerings-ID är MDVA-40311. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.'
 exl-id: d4562f09-0aed-438e-8c2e-90557aa2f146
 feature: Admin Workspace, Compliance, Security
 role: Admin

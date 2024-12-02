@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce i molnet: kontrollera om det krävs en uppstorlek för värdinstanserna"
+title: 'Adobe Commerce i molnet: kontrollera om det krävs en uppstorlek för värdinstanserna'
 description: I den bifogade artikeln finns detaljerade riktlinjer för vilka mätvärden som ska användas när beslut om storleksändring fattas och hur de ska mätas.
 exl-id: e6ace5b5-6cf0-4d8a-a399-cb8c01662f4e
 feature: Cloud

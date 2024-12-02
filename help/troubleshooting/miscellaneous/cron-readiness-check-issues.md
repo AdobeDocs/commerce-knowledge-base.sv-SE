@@ -1,6 +1,6 @@
 ---
 title: Problem med beredskapskontroll av kron
-description: "Den här artikeln innehåller lösningar på viktiga beredskapsproblem. Följande är symtom på kronproblem:"
+description: 'Den här artikeln innehåller lösningar på problem med viktig beredskap. Följande är symtom på kronproblem:'
 exl-id: 1f2cee2c-98ad-4cf5-af16-d736fced2a15
 feature: Configuration
 role: Developer

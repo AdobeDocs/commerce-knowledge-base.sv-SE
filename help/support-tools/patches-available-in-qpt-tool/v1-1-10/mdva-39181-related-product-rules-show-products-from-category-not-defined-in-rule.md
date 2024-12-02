@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-39181: Relaterade produktregler visar produkter från kategorin odefinierad i regel'
+title: 'MDVA-39181: Relaterade produktregler visar produkter från en kategori som inte definierats i regeln'
 description: MDVA-39181-korrigeringen löser problemet där relaterade produktregler visar produkter från en kategori som inte definierats i regeln. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 är installerat. Korrigerings-ID är MDVA-39181. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: b6364d1c-2480-483a-9a83-ac91feeb14b9
 feature: Categories, Products

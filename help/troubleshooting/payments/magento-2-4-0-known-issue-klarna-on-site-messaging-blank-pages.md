@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.0 known issue: Klarna On-Site Messaging blank pages"
+title: 'Adobe Commerce 2.4.0: Klarna On-Site Messaging - tomma sidor'
 description: I den här artikeln beskrivs ett känt problem med betalningsmetoden Adobe Commerce 2.4.0, där aktivering av klarna på-plats-meddelanden utan att ange ett designtema resulterar i att produktsidor inte visas korrekt i butiken (produktsidor visas tomma).
 exl-id: f0f9edfc-eaad-4947-9200-41e217bfbe84
 feature: Orders, Payments

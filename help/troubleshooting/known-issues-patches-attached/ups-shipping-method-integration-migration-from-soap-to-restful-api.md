@@ -1,5 +1,5 @@
 ---
-title: Migrering av [!DNL UPS]-transportmetodintegration från [!DNL SOAP] till [!DNL RESTful API]
+title: Migrering av [!DNL UPS]-leveransmetodintegrering från [!DNL SOAP] till [!DNL RESTful API]
 promoted: true
 description: Använd en patch för att hantera migrering av  [!DNL UPS] leveransmetodintegration från [!DNL SOAP] till [!DNL RESTful API] för Adobe Commerce 2.4.4-2.4.6-pX.
 feature: Shipping/Delivery

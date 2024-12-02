@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-53204: *Det går inte att spara produkten* fel vid samtidig begäran om att lägga till bilder i galleriet'
+title: 'ACSD-53204: *Produkten kan inte sparas* fel vid samtidig begäran om att lägga till bilder i galleriet'
 description: Använd patchen ACSD-53204 för att åtgärda Adobe Commerce-problemet där *Felet inte kan sparas* uppstår när du gör samtidiga begäranden om att lägga till bilder i produktgalleriet med resten/V1/products/&lt;sku&gt;/media endpoint.
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer

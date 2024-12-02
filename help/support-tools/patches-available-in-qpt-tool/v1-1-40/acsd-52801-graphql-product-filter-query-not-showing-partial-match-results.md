@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-52801: GraphQL produktfilterfråga visar inte delmatchningsresultat'
+title: 'ACSD-52801: GraphQL produktfilterfråga visar inte delvisa matchningsresultat'
 description: Använd korrigeringsfilen ACSD-52801 för att åtgärda Adobe Commerce-problemet där GraphQL produktfilterfråga inte visar partiella matchningsresultat.
 feature: Products
 role: Admin, Developer

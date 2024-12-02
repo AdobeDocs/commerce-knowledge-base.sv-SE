@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-45049: Kundens attributinställning "Är obligatorisk" fungerar inte enligt webbplatsens definitionsområde i Admin"'
+title: 'ACSD-45049: Kundens attributinställning ''Är obligatorisk'' fungerar inte enligt webbplatsomfånget i Admin'
 description: Använd korrigeringsfilen ACSD-45049 för att åtgärda Adobe Commerce-problemet där attributet [!UICONTROL Is required] för kund inte har åsidosatts korrekt enligt webbplatsomfånget i Admin.
 feature: Attributes, Customers
 role: Admin, Developer
-source-git-commit: 16e7c9e4e4bbbc62db0671016bce85ecb6414622
+exl-id: e6ed7076-9d39-4b01-9e20-50ce296032c0
+source-git-commit: 06f751e43ef825c0eb29cb9b42eb41f07c308625
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

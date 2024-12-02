@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-54111: Produktminiatyrbilden visas inte'
+title: 'ACSD-5411: Miniatyrbilden av produkten visas inte'
 description: Använd korrigeringsfilen ACSD-54111 för att åtgärda Adobe Commerce-problemet där alla bilder ersätts av standardproduktplatshållarbilden.
 feature: Products
 role: Admin, Developer

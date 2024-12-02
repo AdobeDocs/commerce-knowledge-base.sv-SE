@@ -1,6 +1,6 @@
 ---
-title: 'Hanterade aviseringar på Adobe Commerce: Redis memory warning'
-description: I den här artikeln beskrivs felsökningsåtgärder för när du får en Redis-varning för Adobe Commerce i New Relic. Du måste vidta omedelbara åtgärder för att lösa problemet. Varningen ser ut ungefär så här, beroende på vilken meddelandekanal du valt:'
+title: 'Hanterade varningar på Adobe Commerce: Redis Memory Warning'
+description: 'I den här artikeln finns felsökningsanvisningar för när du får en Redis-varning för Adobe Commerce i New Relic. Du måste vidta omedelbara åtgärder för att lösa problemet. Varningen ser ut ungefär så här, beroende på vilken meddelandekanal du valt:'
 exl-id: b7867a42-3817-4cb4-93cf-d69acee33a41
 feature: Categories, Marketing Tools, Observability, Services, Support, Tools and External Services, Variables
 role: Admin

@@ -1,9 +1,10 @@
 ---
-title: Instrumentpanelen [!DNL Live Search] och rankningen av sökresultatet är felaktig
+title: Instrumentpanelen [!DNL Live Search] och rankningen av sökresultat är felaktig
 description: I den här artikeln finns felsökningsinformation om data i  [!DNL Live Search] kontrollpanelen är felaktiga eller om rangordningen av sökresultaten inte är vad du förväntar dig.
 feature: Admin Workspace, Categories, Search
 role: Developer
-source-git-commit: 4c1199c31f83d7c2aaf28e259d63473779bf2efe
+exl-id: d4aea1f1-c2c4-45e5-87c8-73069f7c9ffd
+source-git-commit: 9bb839292a120a3dab5151d493f915619dbf5c06
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%

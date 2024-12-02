@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce i molninfrastruktur: beräkning av processorallokering"
+title: 'Adobe Commerce i molninfrastruktur: Beräkning av processorallokering'
 promoted: true
 description: I den bifogade artikeln finns detaljerade riktlinjer för vilka mätvärden som ska användas när beslut fattas om CPU-allokering och hur de ska beräknas.
 exl-id: 2fe93b96-f975-4ac6-81d2-e24002ce69db

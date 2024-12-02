@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-43859: Felet "Ingen sådan entitet med customerId =" loggades när borttagna kunder loggar in'
+title: 'MDVA-43859: Felet"Ingen sådan entitet med customerId =" loggades när en kund togs bort från loggen'
 description: MDVA-43859-korrigeringen åtgärdar ett problem där felet *Ingen sådan enhet med customerId =* loggas när en borttagen kund försöker logga in. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 är installerat. Korrigerings-ID är MDVA-43859. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 62c4b6ee-88a0-40b8-9eb2-37b6cefa0b83
 feature: Variables

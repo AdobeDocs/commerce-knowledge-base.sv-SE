@@ -1,6 +1,6 @@
 ---
-title: 'PWA Studio: Valideringsfel vid körning av utvecklarläge'
-description: I det här avsnittet beskrivs en lösning för när valideringsfel inträffar när utvecklarläget körs i PWA (Progressive Web App) Studio för Adobe Commerce på grund av att venia-concept inte tidigare skapats (Venia är en PWA-butik). miljöfil. Den här filen innehåller variablerna för den lokala utvecklingsmiljön.
+title: 'PWA Studio: Valideringsfel när utvecklarläget körs'
+description: I det här avsnittet beskrivs en lösning för när valideringsfel inträffar när utvecklarläget körs i PWA (Progressive Web App) Studio för Adobe Commerce på grund av att du inte tidigare har skapat miljöfilen venia-concept (Venia är en PWA storefront.). Den här filen innehåller variablerna för den lokala utvecklingsmiljön.
 exl-id: 97d042ef-88e6-4eda-a834-2cff4de276e2
 feature: Configuration
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: Valideringsfel när utvecklarläget körs
 
-I det här avsnittet beskrivs en lösning för när valideringsfel inträffar när utvecklarläget körs i PWA (Progressive Web App) Studio för Adobe Commerce på grund av att venia-concept inte tidigare skapats (Venia är en PWA-butik). miljöfil. Den här filen innehåller variablerna för den lokala utvecklingsmiljön.
+I det här avsnittet beskrivs en lösning för när valideringsfel inträffar när utvecklarläget körs i PWA (Progressive Web App) Studio för Adobe Commerce på grund av att du inte tidigare har skapat miljöfilen venia-concept (Venia är en PWA storefront.). Den här filen innehåller variablerna för den lokala utvecklingsmiljön.
 
 ## Berörda produkter och versioner
 

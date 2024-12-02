@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49042: Produkt med oändlig backorder kan inte beställas från storefront"
+title: 'ACSD-49042: Produkt med oändlig backorder kan inte beställas från storefront'
 description: Använd patchen ACSD-49042 för att åtgärda Adobe Commerce-problemet där en produkt med oändlig backorder inte kan beställas från butiken.
 exl-id: b9227296-f300-447c-a241-30ccc0691c9a
 feature: Admin Workspace, Orders, Products, Storefront

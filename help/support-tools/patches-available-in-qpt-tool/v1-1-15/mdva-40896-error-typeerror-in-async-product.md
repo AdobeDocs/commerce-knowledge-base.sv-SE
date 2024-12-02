@@ -1,6 +1,6 @@
 ---
-title: '"MDVA-40896: ''Fel: TypeError: Argument 3''-fel i asynkron produkt'''
-description: '"Korrigeringen MDVA-40896 åtgärdar ett fel där felet "Error: TypeError: Argument 3 som skickas till Magento\Framework\Webapi\ServiceInputProcessor::process() måste vara av typen array, strängen given" visas i asynkront produktbulk-API. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 är installerat. Korrigerings-ID är MDVA-40896. Observera att problemet har åtgärdats i Adobe Commerce 2.4.4."'
+title: 'MDVA-40896: Fel: TypeError: Argument 3 fel i asynkron produkt'
+description: 'Korrigeringen MDVA-40896 åtgärdar ett problem där felet "Error: TypeError: Argument 3 som skickas till Magento\Framework\Webapi\ServiceInputProcessor::process() måste vara av typen array, strängen given" visas i asynkront produktbulk-API. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 är installerat. Korrigerings-ID är MDVA-40896. Observera att problemet har åtgärdats i Adobe Commerce 2.4.4.'
 exl-id: d9b73e7a-c228-492c-9fdf-c57cceafb330
 feature: Products
 role: Admin

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54680: B2B-offert för en produkt med flera tilldelade källor kan inte bearbetas"
+title: 'ACSD-54680: B2B-offert för en produkt med flera tilldelade källor kan inte bearbetas'
 description: Använd patchen ACSD-54680 för att åtgärda Adobe Commerce-problemet där B2B-offerten för en produkt med flera tilldelade källor inte kan bearbetas.
 feature: B2B
 role: Admin, Developer

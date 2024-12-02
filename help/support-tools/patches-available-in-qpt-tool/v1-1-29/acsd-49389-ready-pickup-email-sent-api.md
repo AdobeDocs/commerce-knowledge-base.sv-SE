@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-49389: Redo för att hämta e-post som skickas av API när den inte är klar för hämtning'
+title: 'ACSD-49389: Redo för hämtning av e-post som skickas av API när den inte är klar för hämtning'
 description: Använd patchen ACSD-49389 för att åtgärda Adobe Commerce-problemet där ett e-postmeddelande som är klart för hämtning skickas av API:t när beställningen inte är klar för hämtning.
 exl-id: a1baae06-cf36-448b-bda4-aff1e5ca68db
 feature: REST, Communications
@@ -43,7 +43,7 @@ Ett e-postmeddelande som är klart för hämtning skickas av API:t när beställ
 1. Ta en titt på produkten som skapats i steg 4 med metoden *[!UICONTROL In-Store Delivery]* från butiken.
 1. Skapa en faktura för ordern.
 1. Ställ in produktkvantiteten på *0* och skapa den ur lager.
-1. Post följande API-begäran:
+1. Bokför följande API-begäran:
 
 ```
 {

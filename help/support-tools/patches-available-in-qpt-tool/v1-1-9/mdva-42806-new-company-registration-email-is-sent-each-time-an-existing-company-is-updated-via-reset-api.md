@@ -1,5 +1,5 @@
 ---
-title: "MDVA-42806: Nytt e-postmeddelande om företagsregistrering skickas varje gång ett befintligt företag uppdateras"
+title: 'MDVA-42806: Nytt e-postmeddelande om företagsregistrering skickas varje gång ett befintligt företag uppdateras'
 description: MDVA-42806-korrigeringen löser problemet där ett nytt e-postmeddelande om företagsregistrering skickas varje gång ett befintligt företag uppdateras via REST API. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 är installerat. Korrigerings-ID är MDVA-42806. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 957b89f7-cd4d-4c94-8d1d-c30442aafa6a
 feature: REST, B2B, Communications, Companies

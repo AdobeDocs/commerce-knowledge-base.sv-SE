@@ -1,5 +1,5 @@
 ---
-title: "MDVA-40550: Produkter som saknas på klientsidan efter omindexering"
+title: 'MDVA-40550: Produkter som saknas på klientsidan efter omindexering'
 description: MDVA-40550-korrigeringen löser problemet där omindexering leder till att vissa eller alla butikskategorier saknar produkter. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.6 är installerat. Korrigerings-ID är MDVA-40550. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 0aca6eb2-6eb2-4ac4-8ae1-052f671c14e5
 feature: Categories, Console, Products

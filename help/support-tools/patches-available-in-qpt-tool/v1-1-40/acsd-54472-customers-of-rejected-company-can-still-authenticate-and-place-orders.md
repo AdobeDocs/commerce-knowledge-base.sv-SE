@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54472: Kunder i ett avvisat företag kan fortfarande autentisera"
+title: 'ACSD-54472: Kunder i ett avvisat företag kan fortfarande autentisera'
 description: Använd patchen ACSD-54472 för att åtgärda Adobe Commerce-problemet där kunderna i ett avvisat företag fortfarande kan autentisera och kunder i ett blockerat och avvisat företag fortfarande kan göra beställningar.
 feature: B2B
 role: Admin, Developer

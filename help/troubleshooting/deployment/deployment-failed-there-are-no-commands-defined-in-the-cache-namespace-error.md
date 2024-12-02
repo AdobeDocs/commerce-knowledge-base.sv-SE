@@ -1,5 +1,5 @@
 ---
-title: '"Distributionen misslyckades vid cachetömning: "Det finns inga definierade kommandon i felet "cache"-namnutrymme"'
+title: 'Distributionen misslyckades vid cachetömning: ''Det finns inga definierade kommandon i namnområdesfelet ''cache'''
 description: Den här artikeln innehåller en lösning på problemet när distributionen misslyckas med följande fel **Inga kommandon har definierats i cache-namnutrymmet**.
 feature: Deploy
 role: Developer

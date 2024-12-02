@@ -1,6 +1,6 @@
 ---
 title: Felet "Aktuell version av RDBMS stöds inte" vid distribution
-description: "Den här artikeln innehåller en lösning för när en distribution misslyckas och du får följande fel i distributionsloggen: *aktuell version av RDBMS stöds inte*."
+description: 'Den här artikeln innehåller en lösning för när en distribution misslyckas och du får följande fel i distributionsloggen: *aktuell version av RDBMS stöds inte*.'
 exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
 feature: Deploy
 role: Developer

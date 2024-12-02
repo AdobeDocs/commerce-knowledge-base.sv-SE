@@ -1,5 +1,5 @@
 ---
-title: 'MC-42528: GraphQL query of categoryList visar alla kategorier'
+title: 'MC-42528: GraphQL-frågan för categoryList visar alla kategorier'
 description: Korrigeringen MC-42528 löser problemet där GraphQL-frågan för categoryList returnerar både tilldelade och ej tilldelade kategorier när bläddringskategorin för en viss kategori är inställd på Neka. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.4 är installerat. Korrigerings-ID är MC-42528. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 8bb29f43-92ae-4f37-b147-7121b55c185b
 feature: Catalog Management, Categories, GraphQL, Customer Service

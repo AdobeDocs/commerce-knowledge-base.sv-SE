@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45257: Kundrabatt visas inte korrekt i GraphQL"
+title: 'ACSD-45257: Kundrabatt visas inte korrekt i GraphQL'
 description: Korrigeringsfilen ACSD-45257 åtgärdar ett problem där kundvagnsrabatten inte visas korrekt i GraphQL. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 är installerat. Korrigerings-ID är ACSD-45257. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 exl-id: 64576fa3-1160-4fc3-8458-4e622c30af74
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart

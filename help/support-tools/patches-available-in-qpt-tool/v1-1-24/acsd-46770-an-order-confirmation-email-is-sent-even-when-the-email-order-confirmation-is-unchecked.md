@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-46770: e-postmeddelande med orderbekräftelse skickas även när [!UICONTROL Email Order Confirmation] inte är markerat'
+title: 'ACSD-46770: E-postmeddelande med orderbekräftelse skickas även när [!UICONTROL Email Order Confirmation] inte är markerat'
 description: Använd patchen ACSD-46770 för att åtgärda Adobe Commerce-problemet där e-postmeddelanden med orderbekräftelse skickas även när [!UICONTROL Email Order Confirmation] inte har valts.
 exl-id: 9cbf3a57-1f59-4030-b432-0e6cad410a27
 feature: Communications, Orders

@@ -1,6 +1,6 @@
 ---
-title: "Adobe Commerce 2.3.7-p1 known issue: outdated order total for PayPal"
-description: "Den här artikeln innehåller en patch för ett känt fel i Adobe Commerce 2.3.7-p1: när du använder PayPal Checkout flera gånger får kunderna den tidigare beställda produkten i kundvagn i stället för den nya som de försöker beställa."
+title: 'Adobe Commerce 2.3.7-p1 Känt fel: inaktuell ordersumma för PayPal'
+description: 'Den här artikeln innehåller en patch för ett känt problem i Adobe Commerce 2.3.7-p1: när du använder PayPal Checkout flera gånger får kunderna den tidigare beställda produkten i kundvagn i stället för den nya som de försöker beställa.'
 exl-id: ceb8f7ad-0cf7-4d42-aded-25d1dd947f5b
 feature: Orders, Payments
 role: Developer

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-44851: Kategori med underkategorier som inte kan öppnas eller expanderas"
+title: 'ACSD-44851: Kategori med underkategorier som inte kan öppnas eller expanderas'
 description: Den här artikeln innehåller en lösning på problemet där användaren inte kan öppna eller utöka en kategori med underkategorier.
 exl-id: 46ad9f9d-ed66-44df-b66d-ab9ff3923c36
 feature: Categories

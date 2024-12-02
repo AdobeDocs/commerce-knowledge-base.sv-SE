@@ -1,5 +1,5 @@
 ---
-title: "BB2B-2598: Lägger till cachelagring för storeConfig, valuta, land, availableStores GraphQl-frågor"
+title: 'BB2B-2598: Lägger till cachelagring för storeConfig, valuta, land, länder, availableStores GraphQl-frågor'
 description: Använd korrigeringen BB2B-2598 för att lägga till cachelagring i storeConfig, valuta, land, länder och availableStores GraphQl-frågor.
 exl-id: 37551954-d721-4f3a-b237-cd795f715a5f
 feature: B2B, GraphQL, Cache

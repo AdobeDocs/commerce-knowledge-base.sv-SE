@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53643: Ordern har ett felaktigt totalt värde när en inköpsorder placeras"
+title: 'ACSD-53643: Ordern har ett felaktigt belopp när en inköpsorder placeras'
 description: Använd patchen ACSD-53643 för att åtgärda Adobe Commerce-problemet där ordern har ett felaktigt totalt ordervärde när en inköpsorder med inaktiverade eller färdiga produkter läggs.
 feature: B2B
 role: Admin, Developer

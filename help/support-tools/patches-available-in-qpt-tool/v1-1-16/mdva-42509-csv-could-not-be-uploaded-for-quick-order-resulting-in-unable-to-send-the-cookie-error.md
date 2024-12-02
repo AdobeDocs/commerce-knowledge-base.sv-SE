@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-42509: CSV kunde inte överföras för snabbbeställning vilket resulterade i felet "Det gick inte att skicka cookien"'
+title: 'MDVA-42509: Det gick inte att överföra CSV för snabbbeställning vilket resulterade i felet"Det går inte att skicka cookien"'
 description: MDVA-42509-korrigeringen löser problemet där en CSV-fil inte kunde överföras för snabbbeställning vilket resulterade i *Det gick inte att skicka cookie-filen*. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 är installerat. Korrigerings-ID är MDVA-42509. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 7aa0e710-9a28-4531-b9cb-c82f654487f4
 feature: B2B, Orders

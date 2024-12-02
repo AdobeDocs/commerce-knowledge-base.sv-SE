@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-52133: Kundkontot kan inte sparas efter en uppgradering'
+title: 'ACSD-52133: Kundkonto kan inte sparas efter en uppgradering'
 description: Använd patchen ACSD-52133 för att åtgärda Adobe Commerce-problemet där ett kundkonto inte kan sparas efter en uppgradering.
 feature: Customers, Upgrade
 role: Admin

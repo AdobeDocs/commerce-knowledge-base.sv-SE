@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.0: uppdatering av kundens aktiviteter fungerar inte"
+title: 'Adobe Commerce 2.4.0: Uppdatering av kundens aktiviteter fungerar inte'
 description: Den här artikeln innehåller en lösning på ett problem som är känt i Adobe Commerce 2.4.0 när en admin-användare skapar en beställning för en kund och uppdateringsknapparna på aktivitetspanelen inte fungerar.
 exl-id: 50048e9f-6009-4db5-ae4a-c35a84cec265
 feature: Configuration

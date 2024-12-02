@@ -1,5 +1,5 @@
 ---
-title: 'Kryssrutan ACSD-49835: [!UICONTROL Use Default Value] har inte sparats.'
+title: 'ACSD-49835: Kryssrutan [!UICONTROL Use Default Value] sparas inte'
 description: Använd korrigeringsfilen ACSD-49835 för att åtgärda Adobe Commerce-problemet där kryssrutan [!UICONTROL Use Default Value] inte har sparats korrekt på en butiksnivå för ett flervalsattribut.
 exl-id: 84270551-c8a9-4b08-a055-ffdcc538c33d
 feature: Storefront

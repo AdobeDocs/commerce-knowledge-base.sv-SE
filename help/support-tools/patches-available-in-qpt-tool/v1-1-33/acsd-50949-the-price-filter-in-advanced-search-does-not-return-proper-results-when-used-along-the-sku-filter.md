@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-50949: Prisfiltret i den avancerade sökningen returnerar inte korrekta resultat när det används tillsammans med SKU-filtret'
+title: 'ACSD-50949: Prisfiltret i avancerad sökning returnerar inte korrekta resultat när det används tillsammans med SKU-filtret'
 description: Använd patchen ACSD-50949 för att åtgärda Adobe Commerce-problemet där prisfiltret i den avancerade sökningen inte returnerar korrekta resultat när det används tillsammans med SKU-filtret.
 feature: Orders, Search
 role: Admin

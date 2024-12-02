@@ -1,5 +1,5 @@
 ---
-title: "MDVA-43167: Åtgärd för massan av administratörsorder gäller inte för flersidiga dokument"
+title: 'MDVA-43167: Massa-åtgärd för administratörsorderstödraster gäller inte för flersidiga'
 description: Korrigeringen MDVA-43167 åtgärdar ett problem där massåtgärden för administratörsorderraster inte gäller för flersidiga dokument när administratörsanvändaren väljer alla order. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 är installerat. Korrigerings-ID är MDVA-43167. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 exl-id: 58a126db-8a4f-4e20-8fe5-3ce2e25edf7e
 feature: Admin Workspace, Orders

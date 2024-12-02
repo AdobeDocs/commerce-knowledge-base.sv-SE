@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48212: produktimport tilldelar produkten fel källa"
+title: 'ACSD-48212: Produktimport tilldelar produkten fel källa'
 description: Använd patchen ACSD-48212 för att åtgärda Adobe Commerce-problemet där produktimporten tilldelar produkten fel källa.
 exl-id: b3426f62-f73a-4b76-8e0e-544a9133720f
 feature: Admin Workspace, Data Import/Export, Products

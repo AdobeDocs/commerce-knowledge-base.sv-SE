@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50336: Produktvarningsmeddelanden har inte skickats"
+title: 'ACSD-50336: Produktvarningsmeddelanden har inte skickats'
 description: Använd patchen ACSD-50336 för att åtgärda Adobe Commerce-problemet där e-postmeddelanden om produktvarningar inte skickas när en produkt finns i lager eller priset ändras.
 exl-id: 0fc51603-e74d-4ce7-9e67-42826ffbfab2
 feature: Communications, Personalization, Products

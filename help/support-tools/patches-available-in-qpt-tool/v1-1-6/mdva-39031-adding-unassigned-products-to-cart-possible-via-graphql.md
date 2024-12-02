@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-39031: Lägger till otilldelade produkter i kundvagnen som kan köpas via GraphQL'
+title: 'MDVA-39031: Lägger till produkter som inte tilldelats i varukorgen via GraphQL'
 description: MDVA-39031-korrigeringen åtgärdar ett problem där det går att lägga till en produkt i kundvagnen via GraphQL även om den inte tilldelats målwebbplatsen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.6 är installerat. Korrigerings-ID är MDVA-39031. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 5bbd64d1-06ae-4cab-a20e-0e5e5807742b
 feature: GraphQL, Orders, Products, Shopping Cart

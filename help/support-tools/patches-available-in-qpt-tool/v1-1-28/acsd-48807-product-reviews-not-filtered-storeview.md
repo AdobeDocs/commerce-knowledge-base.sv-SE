@@ -4,7 +4,7 @@ description: Använd patchen ACSD-48807 för att åtgärda Adobe Commerce-proble
 exl-id: 754ef455-ff06-4832-9eb6-ad8cccec8799
 feature: Admin Workspace, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

@@ -1,6 +1,6 @@
 ---
 title: Under installationen, exception SessionHandler::read()
-description: "Den här artikeln innehåller en korrigering för ett undantag **SessionHandler::read()**-fel under Adobe Commerce-installation."
+description: I den här artikeln finns en korrigering för ett undantagsfel **SessionHandler::read()** under Adobe Commerce-installation.
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '218'

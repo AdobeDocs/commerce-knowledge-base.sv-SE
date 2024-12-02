@@ -3,7 +3,8 @@ title: 'ACSD-59229: Felallokering av kundgruppsdata på grund av ett inaktuellt 
 description: Använd patchen ACSD-59229 för att åtgärda Adobe Commerce-problemet där kundgruppsrelaterad information sparas i fel segment på grund av ett inaktuellt X-Magento-Vary-värde i begäran.
 feature: Customers, Personalization, Marketing Tools
 role: Admin, Developer
-source-git-commit: 41d502a85a0cbb4eb8d186e4c1e1256aec3f8740
+exl-id: 090b674a-5103-48cd-9426-41166bf9272c
+source-git-commit: 06f751e43ef825c0eb29cb9b42eb41f07c308625
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%

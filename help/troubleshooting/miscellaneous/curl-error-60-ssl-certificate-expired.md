@@ -1,6 +1,6 @@
 ---
 title: 'cURL-fel 60: SSL-certifikatet har upphört att gälla'
-description: "I den här artikeln visas hur du kontrollerar när en gren senast distribuerades efter att ha fått ett cURL-fel 60: SSL-certifikatet har upphört att gälla i huvud- eller integreringsgrenarna på Adobe Commerce i molninfrastrukturen."
+description: 'I den här artikeln visas hur du kontrollerar när en gren senast distribuerades efter att ha fått ett cURL-fel 60: SSL-certifikatet har upphört att gälla i huvud- eller integreringsgrenarna på Adobe Commerce i molninfrastrukturen.'
 exl-id: 74f1db7e-ee2b-4e27-8fcc-fe462a9e72c3
 feature: Configuration
 role: Developer

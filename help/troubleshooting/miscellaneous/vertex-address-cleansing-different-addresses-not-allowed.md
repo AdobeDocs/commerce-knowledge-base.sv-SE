@@ -1,5 +1,5 @@
 ---
-title: 'Vertex Address Cleansing: different address not allowed'
+title: 'Vertex Address Cleansing: olika adresser tillåts inte'
 description: Den här artikeln handlar om lösningen på problemet där användaren inte kan ange en fakturerings- och leveransadress som är **different** och Vertex-adressverifiering är aktiverad.
 exl-id: a481b044-3b74-4792-abc6-249a182c49e1
 feature: B2B, Orders, Shipping/Delivery, Checkout

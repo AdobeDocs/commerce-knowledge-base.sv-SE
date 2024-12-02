@@ -1,5 +1,5 @@
 ---
-title: "MDVA-40961: Det går inte att lägga till ytterligare artikel i kundvagnen när den minsta artikelkvantiteten redan finns i kundvagnen"
+title: 'MDVA-40961: Det går inte att lägga till ytterligare artikel i kundvagnen när den minsta artikelkvantiteten redan finns i kundvagnen'
 description: MDVA-40961-korrigeringen åtgärdar ett problem där en ytterligare artikel inte kan läggas till i vagnen när den minsta kvantiteten av artikeln redan finns i vagnen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 är installerat. Korrigerings-ID är MDVA-40961. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: fc90c2b6-f631-49ff-81b0-e41918dd79a7
 feature: Orders, Shopping Cart

@@ -1,5 +1,5 @@
 ---
-title: 'MDVA-40175: Alternativknappar visas inte vid omordning'
+title: 'MDVA-40175: Alternativknappar visas inte när ordningen ändras'
 description: MDVA-40175-korrigeringen löser problemet där alternativknapparna inte visas när användaren försöker ändra ordningen. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 är installerat. Korrigerings-ID är MDVA-40175. Observera att problemet har åtgärdats i Adobe Commerce 2.4.3.
 exl-id: 307c450d-9f53-40b7-b2f5-d867850c043a
 feature: Admin Workspace, Orders

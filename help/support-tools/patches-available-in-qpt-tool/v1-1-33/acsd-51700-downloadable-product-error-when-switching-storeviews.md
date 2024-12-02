@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51700: Fel vid växling av butiksvyer på nedladdningsbar produktredigeringssida"
+title: 'ACSD-51700: Fel vid växling av butiksvyer på hämtningsbar produktredigeringssida'
 description: Använd patchen ACSD-51700 för att åtgärda Adobe Commerce-problemet när ett fel inträffar när butiksvyer växlas på en nedladdningsbar produktredigeringssida i administratören.
 feature: Products
 role: Admin

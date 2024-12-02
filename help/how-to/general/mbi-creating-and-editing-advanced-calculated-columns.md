@@ -1,6 +1,6 @@
 ---
 title: 'MBI: Skapa och redigera avancerade beräknade kolumner'
-description: '[Administratörsanvändare](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) kan skapa och redigera vissa beräknade kolumner i Data Warehouse Manager. De här beräknade kolumnerna ger dig möjlighet att konfigurera den rapportering du söker efter för att svara på viktiga affärsfrågor."'
+description: '[Administratörsanvändare](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) kan skapa och redigera vissa beräknade kolumner i Data Warehouse Manager. De här beräknade kolumnerna ger dig möjlighet att konfigurera den rapportering du söker efter för att svara på viktiga affärsfrågor.'
 exl-id: 713a5593-8103-4d74-be5e-0102678d0f97
 feature: Commerce Intelligence
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733

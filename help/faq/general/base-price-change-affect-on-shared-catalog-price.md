@@ -1,6 +1,6 @@
 ---
 title: Basprisändringen påverkar det delade katalogpriset
-description: "Artikeln besvarar frågan: Om en produkt i en delad katalog har ett anpassat pris och produktens baspris ändras (till exempel efter en schemalagd uppdatering), vilket pris gäller i den delade katalogen?"
+description: 'Den här artikeln besvarar frågan: Om en produkt i en delad katalog har ett anpassat pris och produktens baspris ändras (till exempel efter en schemalagd uppdatering), vilket pris gäller i den delade katalogen?'
 exl-id: 916678c1-ada6-4f23-af16-b107cb83ff16
 feature: Catalog Management
 source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0

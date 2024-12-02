@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51379: Ändringar i sidans textinnehåll via [!DNL Page Builder] sparas inte"
+title: 'ACSD-51379: Ändringar av sidans textinnehåll via [!DNL Page Builder] sparas inte'
 description: Använd korrigeringsfilen ACSD-51379 för att åtgärda Adobe Commerce-problemet där ändringar som gjorts i en sidas textinnehåll via  [!DNL Page Builder] inte sparas.
 exl-id: e274ca03-b675-4ded-9820-1d60978685d0
 feature: Page Builder, Page Content

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-52921: Fel vid begäran om kundvagnsinformation från GraphQL för ej lagrad konfigurerbar produkt'
+title: 'ACSD-52921: Fel vid begäran om kundvagnsinformation från GraphQL för produkt som inte finns i lager'
 description: Använd patchen ACSD-52921 för att åtgärda Adobe Commerce-problemet när ett internt fel inträffar när kundvagnsinformation begärs från GraphQL för en ej lagrad konfigurerbar produkt.
 feature: GraphQL, Configuration, Products, Shopping Cart
 role: Admin

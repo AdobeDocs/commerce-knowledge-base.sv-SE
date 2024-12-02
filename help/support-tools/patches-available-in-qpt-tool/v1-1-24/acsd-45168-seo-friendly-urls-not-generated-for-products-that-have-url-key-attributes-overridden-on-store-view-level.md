@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-45168: SEO-vänliga URL:er genereras inte för produkter som har åsidosatt attributen url_key'
+title: 'ACSD-45168: SEO-vänliga URL:er genereras inte för produkter som har attributen url_key åsidosatt'
 description: Använd patchen ACSD-45168 för att åtgärda Adobe Commerce-problemet där SEO-vänliga URL:er inte genereras för produkter som har attributen url_key åsidosatt på butiksvisningsnivå.
 exl-id: cdba42ac-3c96-439b-befa-f0a13587b5d9
 feature: Attributes, Cache, Categories, Marketing Tools, Products

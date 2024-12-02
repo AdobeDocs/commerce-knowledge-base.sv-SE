@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.0: Amazon betala, inga betalningsmetoder"
+title: 'Adobe Commerce 2.4.0: Amazon lönevillkor, inga betalningsmetoder'
 description: Den här artikeln innehåller en lösning på ett Adobe Commerce 2.4.0-problem där betalningsmetoder saknas när man använder **Återgå till standardutcheckning** efter att Amazon betalat.
 exl-id: efd792c7-8970-4366-b9d1-4bf284ea96db
 feature: B2B, Orders, Payments

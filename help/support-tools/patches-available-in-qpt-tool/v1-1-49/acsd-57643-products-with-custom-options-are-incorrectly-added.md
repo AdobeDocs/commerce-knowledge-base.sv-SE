@@ -3,13 +3,13 @@ title: 'ACSD-57643: Produkter med anpassade alternativ har felaktigt lagts till 
 description: Använd patchen ACSD-57643 för att åtgärda Adobe Commerce-problemet där produkter med anpassade alternativ felaktigt läggs till i kundvagnen via GraphQL.
 feature: Shopping Cart, GraphQL, Products
 role: Admin, Developer
-source-git-commit: 62c83f36440cd05fa2d7f85da3e22c9744ad75c1
+exl-id: c17b97f0-98b8-408a-bd10-ceb13d383a65
+source-git-commit: 9bb839292a120a3dab5151d493f915619dbf5c06
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57643: Produkter med anpassade alternativ har felaktigt lagts till i kundvagnen via GraphQL
 

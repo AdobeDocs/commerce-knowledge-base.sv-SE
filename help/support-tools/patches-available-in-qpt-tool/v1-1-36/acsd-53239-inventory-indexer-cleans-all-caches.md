@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-53239: Inventeringsindexeraren rensar alla cacher'
+title: 'ACSD-53239: Lagerindexeraren rensar alla cacheminnen'
 description: Använd korrigeringsfilen ACSD-53239 för att åtgärda Adobe Commerce-problemet där alla cacheminnen rensas i [!UICONTROL Update on Schedule]-läget.
 feature: GraphQL, Inventory, Catalog Management
 role: Admin, Developer

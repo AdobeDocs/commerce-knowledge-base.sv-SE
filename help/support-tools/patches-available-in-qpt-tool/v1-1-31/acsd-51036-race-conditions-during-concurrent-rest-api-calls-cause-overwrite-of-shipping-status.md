@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51036: Rätvillkoren vid samtidiga REST API-anrop resulterar i en överskrivning av leveransstatus'
+title: 'ACSD-51036: Utrymmesvillkor vid samtidiga REST API-anrop resulterar i en överskrivning av leveransstatus'
 description: Använd patchen ACSD-51036 för att åtgärda Adobe Commerce-problemet där det finns konkurrensförhållanden under samtidiga REST API-anrop, vilket resulterar i en överskrivning av leveransstatus i artikeltabellen.
 exl-id: 12d90de7-fe5c-4fcc-b84a-d420dcd871ca
 feature: REST, Orders, Shipping/Delivery

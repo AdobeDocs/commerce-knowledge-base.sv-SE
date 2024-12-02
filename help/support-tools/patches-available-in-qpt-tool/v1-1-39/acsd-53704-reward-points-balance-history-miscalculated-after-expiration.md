@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-53704: Historik för saldoposter som inte har beräknats efter förfallodatum'
+title: 'ACSD-53704: Historik över återbetalningsbalans har inte beräknats efter förfallodatum'
 description: Använd patchen ACSD-53704 för att åtgärda Adobe Commerce-problemet där historiken för belöningspoängsaldo inte beräknas efter belöningspoängens förfallodatum.
 feature: Rewards
 role: Admin, Developer

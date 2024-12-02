@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47988: HTML-taggar för produktexport beskärs från produktbeskrivningen i Page Builder"
+title: 'ACSD-47988: HTML-taggar för produktexport beskärs från produktbeskrivningen i Page Builder'
 description: Använd patchen ACSD-47988 för att åtgärda problemet med Adobe Commerce där HTML-taggar från produktbeskrivningen för Page Builder beskärs vid export av produkten.
 exl-id: 96c45ca8-f526-4876-8f2c-39bce07f86eb
 feature: Admin Workspace, Data Import/Export, Page Builder, Products

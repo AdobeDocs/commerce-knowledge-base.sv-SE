@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51291: Begränsad administratör kan lägga till bilder/videor till produkt som tilldelats flera webbplatser'
+title: 'ACSD-51291: Begränsad administratör kan lägga till bilder/videor till produkter som tilldelats flera webbplatser'
 description: Använd patchen ACSD-51291 för att åtgärda Adobe Commerce-problemet där en begränsad administratör med tillgång till en webbplats kan lägga till bilder/videor till en produkt som tilldelats flera webbplatser.
 feature: Admin Workspace, Products, Page Content
 role: Admin

@@ -1,5 +1,5 @@
 ---
-title: 'PWA Studio: Webpack låser sig före kompilering'
+title: 'PWA Studio: Webpack låser sig innan kompileringen påbörjas'
 description: I den här artikeln beskrivs en föreslagen lösning för när ett javascript-skript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) låser sig länge innan kompileringen börjar i Progressive Web App Studio (PWA Studio).
 exl-id: 692eeafa-9289-4d66-9f2f-1e0fe36e681d
 feature: Configuration

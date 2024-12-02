@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-57086: Order från icke-standardwebbplatser med villkor aktiverade behandlas felaktigt'
+title: 'ACSD-57086: Beställningar från webbplatser som inte är standard och där villkor är aktiverade behandlas felaktigt'
 description: Använd patchen ACSD-57086 för att åtgärda Adobe Commerce-problemet där beställningar från icke-standardwebbplatser med aktiverade villkor inte behandlas korrekt.
 feature: Orders
 role: Admin, Developer
-source-git-commit: ab90568b0333415e73ca42b9c127a2a599f00aa7
+exl-id: 400e3673-9c61-4acd-8e37-e9a2e0bf9379
+source-git-commit: e61dd2874a2b6cb4c49aa6916c6273a2cb9f9e60
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57086: Beställningar från webbplatser som inte är standard och där villkor är aktiverade behandlas felaktigt
 

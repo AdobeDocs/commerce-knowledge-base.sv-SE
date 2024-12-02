@@ -1,6 +1,6 @@
 ---
 title: Installationen av Adobe Commerce 2.4.0 misslyckas med inaktuell arkivcache
-description: "I den här artikeln finns en lösning på problemet där din Adobe Commerce 2.4.0-installation misslyckas med felmeddelandet: *Standardwebbplatsen är inte definierad. Ange webbplatsen och försök igen.* visas i konsolen."
+description: 'I den här artikeln finns en lösning på ett problem där din Adobe Commerce 2.4.0-installation misslyckas med felmeddelandet: *Standardwebbplatsen är inte definierad. Ange webbplatsen och försök igen.* visas i konsolen.'
 exl-id: 0680199b-7e47-4a8c-91fe-9f6c32839a0e
 feature: B2B, Cache, Console, Install, Upgrade
 role: Developer

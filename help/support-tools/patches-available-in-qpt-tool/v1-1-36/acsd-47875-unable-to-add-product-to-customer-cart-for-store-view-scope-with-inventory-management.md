@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47875: Det går inte att lägga till produkten i varukorgen för butiksvyn med lagerhantering"
+title: 'ACSD-47875: Det går inte att lägga till produkten i varukorgen för butiksvyn med lagerhantering'
 description: Använd patchen ACSD-47875 för att åtgärda Adobe Commerce-problemet där en produkt inte kan läggas till i kundvagnen från Admin för ett visst butiksvy med lagerhantering.
 feature: Inventory, Shopping Cart, Products
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51845: Det går inte att uppdatera efterföljande produkter med nivåpriser och olika attributuppsättningar via en synkroniserad bulk  [!DNL API]"
+title: 'ACSD-51845: Det går inte att uppdatera efterföljande produkter med nivåpriser och olika attributuppsättningar via en synkroniserad bulk [!DNL API]'
 description: Använd korrigeringsfilen ACSD-51845 för att åtgärda Adobe Commerce-problemet, där du inte kan uppdatera efterföljande produkter med nivåpriser och olika attributuppsättningar via asynkron bulk [!DNL REST API].
 feature: REST, Products
 role: Admin

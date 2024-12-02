@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-47137: improve image gallery loading speed "pub/media` folder big"'
+title: 'ACSD-47137: Förbättra inläsningshastigheten för bildgalleriet i mappen "pub/media", stor'
 description: Använd patchen ACSD-47137 för att förbättra inläsningshastigheten för bildgalleriet när mappen "pub/media" är mycket stor.
 exl-id: 43268909-6845-4d1d-b6b8-4ae0ce40fd5e
 feature: Cache, Catalog Management, Categories, Media

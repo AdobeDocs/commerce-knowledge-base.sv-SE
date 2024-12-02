@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48204: Katalogprisregeln som skapats baserat på attributet *Ja/Nej* tar inte hänsyn till valt omfång"
+title: 'ACSD-48204: Katalogprisregeln som skapats baserat på attributet *Ja/Nej* tar inte hänsyn till valt scope'
 description: Använd patchen ACSD-48204 för att åtgärda Adobe Commerce-problemet där den katalogprisregel som skapas baserat på attributet *Ja/Nej* inte tar hänsyn till det valda omfånget.
 exl-id: 9b0b4d62-c4c5-40d7-a279-52f59ee7ac42
 feature: Admin Workspace, Attributes, Catalog Management, Orders, Price Rules

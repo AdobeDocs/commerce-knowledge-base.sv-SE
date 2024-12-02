@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.1 Känt fel: fel uppstår vid utcheckning med PayPal Braintree"
+title: 'Adobe Commerce 2.4.1 Känt fel: fel vid utcheckning med PayPal Braintree'
 description: I den här artikeln beskrivs ett känt Adobe Commerce 2.4.1-problem, där ett felmeddelande visas och försvinner i faktureringssteget i utcheckningen om betalning från PayPal Braintree används och flera adresser skickas.
 exl-id: db3830b2-4885-4d89-85cd-bdcbd4b396e6
 feature: Checkout, Orders, Payments
