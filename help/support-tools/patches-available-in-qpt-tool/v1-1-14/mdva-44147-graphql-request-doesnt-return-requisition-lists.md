@@ -4,7 +4,7 @@ description: MDVA-44147-korrigeringen åtgärdar ett problem där GraphQL-begär
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -52,7 +52,7 @@ GraphQL-begäran returnerar inte rekvisitionslistor.
       </code>
       </pre>
 
-1. Använd följande fråga för att hämta alla rekvisitionslistor från kunden. Använd huvudet **Authorization** med värdet `Bearer <customer_token>`. Mer information finns i artikeln [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) i utvecklardokumentationen.
+1. Använd följande fråga för att hämta alla rekvisitionslistor från kunden. Använd huvudet **Authorization** med värdet `Bearer <customer_token>`. Mer information finns i artikeln [Customer Query](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) i utvecklardokumentationen.
 
    Begäran:
 

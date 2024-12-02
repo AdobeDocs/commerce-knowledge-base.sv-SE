@@ -1,10 +1,10 @@
 ---
-title: 'MDVA-41631: Det gick inte att hämta orderinformation utan det valfria telefonvärdet'
+title: 'MDVA-41631: Fel vid hämtning av orderinformation utan "telefonvärde" (tillval)'
 description: MDVA-41631-korrigeringen åtgärdar ett problem där användare får felmeddelanden när de hämtar orderinformation utan att ange ett"telefonvärde" via GraphQL. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 är installerat. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 94b0b918-c1f9-4f5d-8fcd-8b92a9ca8c59
 feature: Orders
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -37,8 +37,8 @@ Det går inte att hämta orderinformation utan telefonnummer via GraphQL.
 
 1. Gå till **Store** > **Konfiguration** > **Kunder** > **Kundkonfiguration** > **Alternativ för namn och adress** > **Visa telefonnummer** och ange telefonnumret som valfritt.
 1. Gör en beställning med GraphQL API som inloggad kund.
-   * Ange inte telefonnumret när du anger fakturerings- och leveransadress. Följ instruktionerna i [GraphQL självstudiekurs för utcheckning](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) i vår utvecklardokumentation.
-1. Hämta ordern med GraphQL [customerOrders-frågan](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html).
+   * Ange inte telefonnumret när du anger fakturerings- och leveransadress. Följ instruktionerna i [GraphQL självstudiekurs för utcheckning](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) i vår utvecklardokumentation.
+1. Hämta ordern med GraphQL [customerOrders-frågan](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
 
 <pre>
 <code class="language-graphql">

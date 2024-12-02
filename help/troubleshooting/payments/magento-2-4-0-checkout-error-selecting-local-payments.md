@@ -1,10 +1,10 @@
 ---
-title: "Adobe Commerce 2.4.0: Utcheckningsfel vid val av lokala betalningar"
-description: "Den här artikeln handlar om en lösning på ett känt problem i Adobe Commerce vid utcheckning där ett felmeddelande visas när du väljer en lokal betalningsmetod för vissa länder. Detta gäller länderna Belgien, Italien, Nederländerna, Polen och Spanien."
+title: 'Adobe Commerce 2.4.0: Utcheckningsfel vid val av lokala betalningar'
+description: Den här artikeln handlar om en lösning på ett känt problem i Adobe Commerce vid utcheckning där ett felmeddelande visas när du väljer en lokal betalningsmetod för vissa länder. Detta gäller länderna Belgien, Italien, Nederländerna, Polen och Spanien.
 exl-id: de2eafb0-d03c-4ff8-9615-0f2676d95848
 feature: B2B, Categories, Checkout, Orders, Payments
 role: Developer
-source-git-commit: a8cc7ad0cb9cb111f5b9636ff18aef3b6ed44329
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Felmeddelandet *Det finns för närvarande inga tillgängliga betalningsmetoder.
 
 * Adobe Commerce 2.4.0 är installerat.
 * Skapa en produkt och en kategori.
-* Konfigurera betalningsmetoden [Braintree](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree.html).
+* Konfigurera betalningsmetoden [Braintree](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/).
 
 <u>Steg som ska återskapas</u>:
 

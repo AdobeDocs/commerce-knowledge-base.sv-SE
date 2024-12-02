@@ -4,7 +4,7 @@ description: Korrigeringen ACSD-44938 åtgärdar ett problem där VAT_ID inte ka
 exl-id: 18b3dfa5-b666-491e-a067-526a53294f39
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -35,12 +35,12 @@ VAT_ID kan inte användas i en GraphQL-begäran för en gästanvändare.
 
 <u>Steg som ska återskapas</u>:
 
-1. Följ stegen som anges i [GraphQL-självstudiekursen](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) i utvecklardokumentationen för att skapa en gästvagn.
+1. Följ stegen som anges i [GraphQL-självstudiekursen](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) i utvecklardokumentationen för att skapa en gästvagn.
 1. Försök att använda VAT_ID för gästanvändaren med GraphQL.
 
 <u>Förväntade resultat</u>:
 
-VAT_ID kan användas på samma sätt som för en registrerad kund. Se artikeln [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) i utvecklardokumentationen.
+VAT_ID kan användas på samma sätt som för en registrerad kund. Se artikeln [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) i utvecklardokumentationen.
 
 <u>Faktiska resultat</u>:
 
