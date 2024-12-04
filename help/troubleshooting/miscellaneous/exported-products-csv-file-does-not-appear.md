@@ -1,19 +1,19 @@
 ---
 title: CSV-filen för exporterade produkter visas inte
-description: I den här artikeln finns en lösning på problemet där du försöker exportera produkter till en CSV-fil i Commerce Admin, men filen visas inte.
+description: I den här artikeln finns en korrigering av problemet där du försöker exportera den önskade entitetstypen till en CSV-fil i Commerce Admin, men filen visas inte.
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
+source-git-commit: b6f1222918b027eaecda42b767e6f83b2cf0f5d0
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
 
 # CSV-filen för exporterade produkter visas inte
 
-I den här artikeln finns en lösning på problemet där du försöker exportera produkter till en CSV-fil i Commerce Admin, men filen visas inte.
+I den här artikeln finns en lösning på problemet där export av önskad entitetstyp till en CSV-fil i Commerce Admin resulterar i att filen inte visas.
 
 ## Berörda produkter och versioner
 
@@ -30,7 +30,7 @@ Krav: Alternativet **Lägg till hemlig nyckel till URL:er** är inställt på *J
    ![magento_export_products_2.3.4.png](assets/magento_export_products_2.3.4.png)
 
 1. Välj
-   * **Entitetstyp**: *Produkter*
+   * **Entitetstyp**: Den entitet du vill exportera
    * **Exportera filformat**: *CSV*
    * **Fältbilaga**: lämna omarkerat.
 1. Klicka på **Fortsätt**.
@@ -38,11 +38,11 @@ Krav: Alternativet **Lägg till hemlig nyckel till URL:er** är inställt på *J
 
 <u>Förväntat resultat</u>
 
-CSV-filen med de exporterade produkterna visas i rutnätet om några minuter.
+CSV-filen som innehåller den exporterade önskade entitetstypen visas i rutnätet inom några minuter.
 
 <u>Faktiskt resultat</u>
 
-CSV-filen med de exporterade produkterna visas inte i rutnätet på 10 minuter eller mer.
+CSV-filen som innehåller den exporterade önskade entitetstypen visas inte i rutnätet på 10 minuter eller mer.
 
 ## Orsak
 
