@@ -4,9 +4,9 @@ description: Adobe Commerce erbjuder en mängd supportverktyg som hjälper dig a
 exl-id: 1f41c02b-5e5c-45c9-a68c-24787b69e193
 feature: Support, Tools and External Services
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: ffb7b597d38eaed4b66e23ea533c275746e7181a
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '204'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Adobe Commerce erbjuder en mängd supportverktyg som hjälper dig att förbättr
 
 * Observation för Adobe Commerce
 
-   * [Obs för Adobe Commerce - översikt](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md)
+   * [Observera Adobe Commerce - översikt](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/observation-for-adobe-commerce/intro)
 
 * Hanterade aviseringar om Adobe Commerce
    * [Hanterade varningar på Adobe Commerce: Redis-minneskritisk varning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)

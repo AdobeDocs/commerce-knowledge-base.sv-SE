@@ -3,9 +3,9 @@ title: Visa miljöns vCPU-nivå i ditt kluster på Adobe Commerce
 promoted: true
 description: I den här artikeln beskrivs hur du kontrollerar din nivåtilldelning för vCPU med hjälp av fliken New Relic Infra i Observation for Adobe Commerce. Observation for Adobe Commerce är en New Relic-nördlet som visar status för din Adobe Commerce-webbplats, aktuella vyer och vyer över tidigare tidsperioder.
 exl-id: a0332e7e-d38d-47d3-b3da-293902f45edc
-source-git-commit: 309fda5284de3b8be54e95bf2bfd8ff1777b6c90
+source-git-commit: ffb7b597d38eaed4b66e23ea533c275746e7181a
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,3 @@ Så här kommer du åt och loggar in på New Relic Observation for Adobe Commerc
    * I det första diagrammet visas **vCPU-nivåvy över tidslinjen GREATER 2 veckor (du måste välja en tidslinje GREATER mer än 2 veckor). Obs! Samplingsfrekvensen kommer att vara per dag. Om kluster har upp- och nedstorlekar på en dag visas slutskiktsstorleken följande dag:**.
    * I det andra diagrammet visas **vCPU-nivåvy över tidslinjen (du måste välja en tidslinje som är större än 24 timmar men inte större än 2 veckor)**.
    * I det tredje diagrammet visas **vCPU-nivåvyn över tidslinjen BY NODE, som ska titta på tidslinjen mindre än 24 timmar**.
-
-## Relaterad läsning
-
-* [Observation för Adobe Commerce - översikt](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) i vår kunskapsbas för support.

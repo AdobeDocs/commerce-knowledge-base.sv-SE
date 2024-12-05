@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 63664230a110a4ebf37c058e3bde71f6a359ac13
+source-git-commit: 80b0dc119058ec7533124919d5917cdd219552fe
 workflow-type: tm+mt
-source-wordcount: '9478'
+source-wordcount: '9469'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,6 @@ ht-degree: 0%
    * Webbplatsövergripande analysverktyg {#site-wide-analysis-tool}
       * [Site-Wide Analysis Tool by Adobe: översikt](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
       * [Adobe Commerce Site-Wide Analysis Tool - rapport, frågor och svar](/help/support-tools/site-wide-analysis-tool/swat-faq.md)
-   * Observation för Adobe Commerce {#observation}
-      * [Obs för Adobe Commerce - översikt](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md)
    * Hanterade aviseringar på Adobe Commerce {#managed-alerts}
       * [Hanterade varningar på Adobe Commerce: Redis-minneskritisk varning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
       * [Hanterade varningar för Adobe Commerce: Diskvarning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
