@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 7fbedaaf0d4edccc688be24951a7d30a9e774be8
+source-git-commit: 9abd435c2b360ca667b7c5a4431fdbf4b3c86831
 workflow-type: tm+mt
-source-wordcount: '2782'
+source-wordcount: '2934'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,18 @@ Så här loggar du in på Adobe Experience League Support:
 ### Skicka ett supportärende {#support-case}
 
 När du har loggat in som kontoägare eller användare med delad åtkomst kan du skicka ett supportärende via Adobe Experience League hemsida, din Adobe Commerce-kontosida och din Adobe Commerce Cloud-kontosida.
+
+>[!NOTE]
+>
+>Supportförfrågningar för Adobe Commerce Marketplace-teamet kan inte skickas via Experience League eftersom deras supportsystem fungerar på en separat plattform som inte är integrerad med Experience League.
+>
+>Du kan skicka in ditt supportärende om följande uppgifter är sanna:
+>
+>* Organisationen i fråga har ett namn i den vänstra kolumnen och slutar i ([!DNL Commerce]). Problemet är relaterat till den organisationen eller ett konto som är kopplat till den.
+>* Problemet är att du inte kan logga in på Marketplace-kontot eller att du har en fråga om att distribuera ett tillägg.
+>* Ditt problem handlar inte bara om att begära återbetalning för ditt Marketplace-inköp.
+>
+>Om du har problem med att publicera tillägget, har problem med att köpa eller begär en återbetalning på [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/) måste du kontakta [!DNL Commerce Marketplace]-teamet direkt på https://commercemarketplace.adobe.com/. Navigera till nederkanten av sidan och klicka på **[!UICONTROL Contact Us]**, som öppnar ett formulär för att skicka ett supportärende på Marketplace.
 
 #### Adobe Experience League startsida {#experience-league-start-page}
 
