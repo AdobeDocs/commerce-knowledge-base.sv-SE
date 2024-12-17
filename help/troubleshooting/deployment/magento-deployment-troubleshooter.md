@@ -4,9 +4,9 @@ description: Stuckedistributioner och misslyckade distributioner på Adobe Comme
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: 6177863da268f43cc30119cef6f718a04c46b3e6
+source-git-commit: 7f4f24c596eac96dc8fef40589a827eb9aa0c468
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ b. NO - Underhållsavbrott eller globala driftavbrott. Kontrollera om det finns 
 
 +++**Finns det distributioner i andra miljöer som blockerar distributionen i den befintliga miljön?**
 
-För att få en lista över pågående aktiviteter kör du följande kommando med magento-cloud CLI (om du bara har lagts till i ett molnprojekt):
+För att få en lista över pågående aktiviteter kör du följande kommando med magento-cloud CLI (om du bara har lagts till i ett molnprojekt). **Obs!** Kontrollera att du har den senaste versionen av magento-cloud CLI. Anvisningar finns i [Uppdatera CLI](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview#update-the-cli) i guiden för Commerce om molninfrastruktur.
 
 ```bash
 magento-cloud --state=in_progress
@@ -199,7 +199,7 @@ b. NEJ - Fortsätt till [steg 18](#step-18).
 
 ## Steg 18 - Kontrollera om det inte gick att utföra en postkrok {#step-18}
 
-+++**Post-krokfel/hängande?**
++++**Efterbeställning av krokfel/hängande?**
 
 a. JA - Databas: [Ledigt diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space), skadade, ofullständiga/skadade tabeller.\
 b. NEJ - Fortsätt till [steg 19](#step-19).
