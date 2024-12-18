@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 80b0dc119058ec7533124919d5917cdd219552fe
+source-git-commit: ace01511b6a3f3b406b25d563d892351a5f6cf7d
 workflow-type: tm+mt
-source-wordcount: '9469'
+source-wordcount: '9409'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ ht-degree: 0%
       * [Hanterade varningar för Adobe Commerce: Diskkritisk varning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
       * [Hanterade varningar på Adobe Commerce: Redis Memory Warning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
       * [Hanterade aviseringar för Adobe Commerce: Minnesvarning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
-      * [Hanterade varningar på Adobe Commerce: CPU-kritisk varning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
+      * [Hanterade aviseringar om Adobe Commerce: CPU Critical Alert](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
       * [Hanterade aviseringar om Adobe Commerce: Minneskritisk avisering](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
       * [Hanterade aviseringar för Adobe Commerce: ADOBE-varning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
       * [Hanterade aviseringar om Adobe Commerce: MariaDB-aviseringar](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
       * [Hanterade aviseringar för Adobe Commerce: Adexvarning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
-      * [Hanterade varningar för Adobe Commerce: CPU-varning](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
+      * [Hanterade varningar för Adobe Commerce: CPU-varningsmeddelanden](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
    * Patchar tillgängliga i QPT-verktyget {#patches}
       * [Patchar tillgängliga i QPT-verktyget - översikt](/help/support-tools/patches-available-in-qpt-tool/patches-available-in-qpt-tool-overview.md)
       * v1.1.0 {#v1-1-0}
@@ -947,15 +947,9 @@ ht-degree: 0%
       * [Avancerad sökning som inte visar de mest relevanta resultaten](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [Fel vid filtrering av order i Admin](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [Användare kan inte lägga till produkten i kundvagnen om inget har valts i Tillåt länder](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
-      * [Beställningar som inte visas i beställningsrutnätet i administratören](/help/troubleshooting/known-issues-patches-attached/orders-not-displayed-in-the-orders-grid-in-the-admin.md)
-      * [Det går inte att validera momsregistreringsnumret - Adobe Commerce i molninfrastrukturen](/help/troubleshooting/known-issues-patches-attached/unable-to-validate-vat-number-magento-commerce-cloud.md)
-      * [Utcheckningssidor som inte läses in när annonsblockering är aktiverat](/help/troubleshooting/known-issues-patches-attached/checkout-pages-not-loading-when-ad-blocker-is-enabled.md)
       * [URL för Adobe Commerce Admin - adress visas](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
-      * [Flera kronijobb har schemalagts för samma tidsperiod](/help/troubleshooting/known-issues-patches-attached/multiple-cron-jobs-scheduled-for-the-same-time-period.md)
-      * [Konfigurerbara färgrutor visas inte överstruken när de inte finns i lager](/help/troubleshooting/known-issues-patches-attached/configurable-product-swatches-not-displayed-as-crossed-out-when-out-of-stock.md)
       * [Administratören kan inte skapa en order eller beställa om när Braintree-betalning är aktiverat](/help/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.md)
       * [Paket som nedgraderats efter uppgradering från 2.4.4 till 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
-      * [Adobe Commerce 2.3.6, 2.4.1 CAPTCHA in checkout fungerar inte](/help/troubleshooting/known-issues-patches-attached/magento-commerce-2-3-6-2-4-1-captcha-in-checkout-not-working.md)
       * [E-postbeställning har skickats från serverns e-postadress](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [Adobe Commerce 2.4.6 error placing order from Admin panel](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [[!UICONTROL salesRule] etikettproblem vid uppgradering från versioner &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
@@ -992,7 +986,7 @@ ht-degree: 0%
    * [Så här lägger du till ett nytt land i Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Anpassa designkonfigurationen i Commerce Admin](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
    * [Öka diskutrymmet för integreringsmiljön i molnet](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md)
-   * [Adobe Commerce i molninfrastruktur: Beräkning av processorallokering](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
+   * [Adobe Commerce om molninfrastruktur: CPU allokeringsberäkning](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Uppdatera priser för delad katalog med hjälp av REST API](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [Söka efter stora MySQL-tabeller](/help/how-to/general/find-large-mysql-tables.md)
    * [Synkronisera data och filer Produktion till Förproduktion eller Förproduktion till integrering](/help/how-to/general/sync-data-and-files-from-production-to-staging-or-staging-to-integration.md)
