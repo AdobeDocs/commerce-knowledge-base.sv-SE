@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 9abd435c2b360ca667b7c5a4431fdbf4b3c86831
+source-git-commit: 16511a9bcc0e229297916f5c48ee8b606e10edbe
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
@@ -339,13 +339,15 @@ När en ny användare har fått delad åtkomst är den relaterade informationen 
 
 <u>Orsak</u>
 
-Om du har/har haft ett Adobe Commerce Cloud-projekt och lagt till en användare i projektet, skulle de automatiskt ha fått delad åtkomst på projektägarens MAGE-ID. Detta anges normalt i kolumnen **[!UICONTROL Share Name]** och visar *Cloud Shared Access från MAG[XYZ]*.
+Om du har/har haft ett Adobe Commerce Cloud-projekt och har lagt till en användare i projektet, kan de automatiskt ha fått delad åtkomst på Projektägarens MAGE-ID. Detta anges normalt i kolumnen **[!UICONTROL Share Name]** och visar *Cloud Shared Access från MAG[XYZ]*.
 
-Om länken DELETE saknas innebär det att delad åtkomst automatiskt beviljades via Commerce Cloud.
+>[!NOTE]
+>
+>Om länken DELETE saknas innebär det att delad åtkomst automatiskt beviljades via Commerce Cloud.
 
 <u>Lösning</u>
 
-Det går inte att ta bort listan över användare med delad åtkomst med resursnamnet *Cloud-delad åtkomst från MAG[XYZ]* om den delade åtkomsten inte lades till/gavs på den här sidan. Dessa bevaras i informations-/revisionssyfte.
+Det går inte att ta bort listan över användare med delad åtkomst med resursnamnet *Cloud-delad åtkomst från MAG[XYZ]* om den delade åtkomsten inte lades till/gavs [på den här sidan](https://account.magento.com/grantor/manage/). Dessa bevaras i informations-/revisionssyfte.
 
 När du har återkallat behörigheten för dessa användare med delad åtkomst har de inte längre den åtkomsten.
 
