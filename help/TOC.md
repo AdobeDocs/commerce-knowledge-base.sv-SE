@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: ace01511b6a3f3b406b25d563d892351a5f6cf7d
+source-git-commit: c46d29aa11b9cbbcccbf1765b4ae972e14ac80ac
 workflow-type: tm+mt
-source-wordcount: '9409'
+source-wordcount: '9397'
 ht-degree: 0%
 
 ---
@@ -1021,7 +1021,6 @@ ht-degree: 0%
    * [Hur man begär tillfälliga Adobe Commerce-lösningar för molninfrastruktur](/help/how-to/general/how-to-request-temporary-magento-upsize.md)
    * [Visa miljöns vCPU-nivå i ditt kluster på Adobe Commerce](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
    * [Adobe Commerce i molninfrastruktur: Kontrollera värddatorns CPU-konfiguration](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
-   * [Ändra kontoägare (få åtkomst till autentiseringsuppgifter via API-tokens) för Fast i molnet](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md)
    * [Adobe Commerce i molnet: ändra autentiseringsnycklar och återdistribuera](/help/how-to/general/redeploy-with-another-key.md)
    * [Så här skapar du en&quot;scrubbed&quot;-dump på supportagentens begäran](/help/how-to/general/create-dump-for-support.md)
    * [MBI: Skapa och redigera avancerade beräknade kolumner](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
