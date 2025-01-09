@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en korrigering för dålig prestanda 
 exl-id: 4f20a862-cf54-4196-8a88-101f0c80f8f1
 feature: Best Practices
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 72ee49a8667f575a58e0cf1b3d5c9df936cc628b
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -59,3 +59,4 @@ Kör bara omindexering när det behövs. Om du vill veta mer går du till [Konfi
 
 * [Indexeringsöversikt: Så här indexerar du om ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) i utvecklardokumentationen.
 * [Ovaliderat cacheminne orsakar en försämring av svarstiden](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) i vår kunskapsbas för support.
+
