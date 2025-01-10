@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en korrigering för blockering av sta
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: d728d44c4e1be3172ebf595122f3cc215207ac17
+source-git-commit: df966df6a85057b26d53a870d038269ebdcc2b32
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Problem: Statiska resurser hanteras långsamt så att webbplatsen har dålig pre
 
 Rekommendation: Om du vill identifiera möjliga orsaker till dålig prestanda bör du använda [Adobe Commerce Performance Toolkit](https://github.com/magento/magento2/tree/2.3/setup/performance-toolkit) för prestandatestning. Du kan även använda dessa verktyg från tredje part:
 
-* [Beskyddare](https://www.joedog.org/siege-home/): HTTP-belastningstestning och testverktyg; stöder grundläggande autentisering, cookies, HTTP-, HTTPS- och FTP-protokoll.
+* [Beskyddare](https://www.joedog.org/siege-home): HTTP-belastningstestning och testverktyg; stöder grundläggande autentisering, cookies, HTTP-, HTTPS- och FTP-protokoll.
 * [Jmeter](https://jmeter.apache.org/): Ett välrenommerat lasttestnings- och prestandamätningsverktyg. Hjälper till att mäta prestanda för spikad trafik, t.ex. för flashförsäljning.
 * [New Relic](https://support.newrelic.com/): Söker efter processer och områden på webbplatsen som orsakar långsamma prestanda med spårad tid per åtgärd, som överföring av data, frågor, Redis osv.
 * [WebPageTest](https://www.webpagetest.org/) (kostnadsfritt) och [Passagerare](https://www.pingdom.com/) (betalt): Realtidsanalys av webbplatssidorna läses in med olika ursprungsplatser.

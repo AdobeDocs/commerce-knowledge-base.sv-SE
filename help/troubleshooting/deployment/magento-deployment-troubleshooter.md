@@ -4,7 +4,7 @@ description: Stuckedistributioner och misslyckade distributioner på Adobe Comme
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: 7f4f24c596eac96dc8fef40589a827eb9aa0c468
+source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -30,7 +30,7 @@ b. NO - Underhållsavbrott eller globala driftavbrott. Kontrollera om det finns 
 
 +++**Finns det distributioner i andra miljöer som blockerar distributionen i den befintliga miljön?**
 
-För att få en lista över pågående aktiviteter kör du följande kommando med magento-cloud CLI (om du bara har lagts till i ett molnprojekt). **Obs!** Kontrollera att du har den senaste versionen av magento-cloud CLI. Anvisningar finns i [Uppdatera CLI](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview#update-the-cli) i guiden för Commerce om molninfrastruktur.
+För att få en lista över pågående aktiviteter kör du följande kommando med magento-cloud CLI (om du bara har lagts till i ett molnprojekt). **Obs!** Kontrollera att du har den senaste versionen av magento-cloud CLI. Anvisningar finns i [Uppdatera CLI](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) i guiden för Commerce om molninfrastruktur.
 
 ```bash
 magento-cloud --state=in_progress

@@ -4,7 +4,7 @@ description: MDVA-44147-korrigeringen åtgärdar ett problem där GraphQL-begär
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
+source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -37,7 +37,7 @@ GraphQL-begäran returnerar inte rekvisitionslistor.
 
 1. Gå till **Store** > **Inställningar** > **Konfiguration** > **Allmänt** > **B2B-funktioner** och aktivera rekvisitionslista.
 1. Logga in som kund och lägg till en produkt i [rekvisitionslistan](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
-1. Skapa en [kundtoken](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
+1. Skapa en [kundtoken](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/).
 
    <pre>
     <code class="language-graphql">
