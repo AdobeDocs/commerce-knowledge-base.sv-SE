@@ -4,9 +4,9 @@ description: I den här artikeln finns en lösning på problemet där användarg
 exl-id: 04d28741-72c1-4722-be46-425fe136b9a6
 feature: Cloud, Deploy, Logs, Paas
 role: Developer
-source-git-commit: 71bec5b99063d771982f6dcab111b9e5a4aaec69
+source-git-commit: 846df05668b357b9088bcaf605a75c45ab10f1ae
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -35,13 +35,17 @@ Observera att loggen som visas i användargränssnittet inte ska behandlas som e
 ## Lösning
 
 1. Kontrollera att du har [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) installerat i din lokala miljö.
-1. Kör följande kommando:
+1. Du kan köra något av följande kommandon:
 
    ```bash
-   magento-cloud activity -p <project id> -e <environment>
+   magento-cloud act -p <project id> -e <environment>
    ```
 
-1. Den returnerar utdata som liknar följande:
+   ```bash
+   magento-cloud activity:list -p <project id> -e <environment>
+   ```
+
+1. De returnerar utdata som liknar följande:
 
    ```bash
    Activities on the project <project name> (project id), environment <environment>:
