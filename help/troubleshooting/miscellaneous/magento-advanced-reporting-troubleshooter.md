@@ -4,7 +4,7 @@ description: Du kan lösa problem med avancerad rapportering på Adobe Commerce 
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 3b402728be7a80b62f21319d2cf91a92f1ad4a0c
+source-git-commit: aed14781c6a7b43d0a719ac89c2965d5044d8c22
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -138,7 +138,7 @@ b. NEJ - Fortsätt till [steg 10](#step-10).
 
 +++**Har kron-jobbet gett upphov till ett felmeddelande?**
 
-Exempel: I tabellen `core_config_data` ser du felet *Filen &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0 kan inte tas bort*. Varning!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0?lang=en): Ingen sådan fil eller katalog*
+Exempel: I tabellen `cron_schedule` ser du felet *Filen &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0 kan inte tas bort*. Varning!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0?lang=en): Ingen sådan fil eller katalog*
 
 a. JA - Använd ACSD-50165-korrigeringen i [Det går inte att ta bort filen. Varning!unlink: Det finns inget sådant fil- eller katalogfel från Admin](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md), vänta 24 timmar tills jobbet körs igen och försök sedan igen.\
 b. NEJ - Fortsätt till [steg 11](#step-11).
