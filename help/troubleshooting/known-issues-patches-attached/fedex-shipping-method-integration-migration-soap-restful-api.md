@@ -5,18 +5,29 @@ description: Använd en patch för att hantera migrering av  [!DNL FedEx] levera
 feature: Shipping/Delivery
 role: Developer
 exl-id: 7e11a171-6924-41d0-a5c7-7b794d0da84c
-source-git-commit: 7c468583883789a6bc6e41d1a787a356ea3205c4
+source-git-commit: 7a54e992e365238ec7c764225a31cd3b6b8ad019
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # Migrering av integrering av [!DNL FedEx]-leveransmetod från SOAP till RESTful API
 
+>[!WARNING]
+>
+>Använd patchen ACSD-61622 från version [!DNL Quality Patches Tool] (QPT) 1.1.57 i stället för den tidigare patchen. Den nya korrigeringen är kompatibel med Adobe Commerce-versioner (alla distributionsmetoder) 2.4.6-p1 - 2.4.6-p8. Det kan bli tillämpligt på andra versioner med nya [!DNL Quality Patches Tool]-versioner.
+>
+>Mer information finns i artikeln [ACSD-61622-korrigering](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response) i Adobe Commerce-handboken.
+
+>[!WARNING]
+>
+>Innan du installerar den nya korrigeringen måste du avinstallera den tidigare korrigeringen som finns i den här artikeln. Instruktioner om hur du avinstallerar korrigeringsfiler finns i [Återställa en anpassad korrigeringsfil](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#revert-a-custom-patch) i användarhandboken.
+
+
 I den här artikeln finns en patch som löser problem med migrering av [!DNL FedEx]-leveransmetodintegration från SOAP till RESTful API för Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
 
-Spårning av [!DNL FedEx Web Services], adressvalidering och validering av WSDLS (Postal Codes Web Services Definition Languages) upphör 15 maj 2024. Den SOAP baserade [!DNL FedEx Web Services] är i utvecklingsbegränsning och har ersatts med [!DNL FedEx] RESTFUL-API:er. Mer information finns i [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
+Spårning av [!DNL FedEx Web Services], adressvalidering och validering av WSDLS (Postal Codes Web Services Definition Languages) upphörde 15 maj 2024. Den SOAP baserade [!DNL FedEx Web Services] är i utvecklingsbegränsning och har ersatts med [!DNL FedEx] RESTFUL-API:er. Mer information finns i [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
 
 Den här ändringen påverkar vår nuvarande implementering av [!DNL FedEx]-leveransmetoder i Adobe Commerce och kräver att vi korrigerar vår nuvarande implementering och migrerar från inaktuella SOAP-API:er till de senaste [!DNL FedEx] RESTFUL-API:erna.
 
