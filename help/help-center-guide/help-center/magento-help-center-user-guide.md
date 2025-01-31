@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 6321dfa57f694a53f4b9b1c1e93182d60fa63c7b
+source-git-commit: c287b45c3cea99f6d536d6ed4d90a5e19d9fa71c
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2963'
 ht-degree: 0%
 
 ---
@@ -309,6 +309,10 @@ Användare som har fått delad åtkomst kan inte överföra eller ge sådan åtk
 ### Ge delad åtkomst {#provide-shared-access}
 
 I avsnittet [Dela ett Commerce-konto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) i Adobe Commerce Starthandbok finns mer information om hur du konfigurerar ett delat konto.
+
+>[!NOTE]
+>
+>Användaren måste ha ett befintligt konto innan han/hon kan beviljas delad åtkomst - se [Skapa ett Commerce-konto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account) för mer information.
 
 När en ny användare har fått delad åtkomst är den relaterade informationen tillgänglig i **Delad åtkomst** > **Hantera behörigheter** på din Adobe Commerce-kontosida.
 
