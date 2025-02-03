@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar på Adobe Commerce-problem
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 96e5bfc677949fb5f925040b95f951ca518fa71a
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ Den här artikeln innehåller lösningar på Adobe Commerce-problemet där katal
 
 ## Problem
 
-Katalogdata är inte korrekt synkroniserade eller så har en ny produkt lagts till, men visas inte i sökresultaten.
+Katalogdata är inte korrekt synkroniserade eller så har en ny produkt lagts till, men visas inte i sökresultaten. Du kan även få följande fel i `var/log/exception.log`:
+
+`Magento_LiveSearch: An error occurred in search backend. {"result":{"errors":[{"message":"Exception while fetching data (/productSearch) : No index was found for this request"}]}}`
 
 >[!NOTE]
 >
@@ -134,6 +136,22 @@ Om du ser rätt data i `cde_product_attributes_feed`:
 bin/magento saas:resync --feed products
 bin/magento saas:resync --feed productattributes
 ```
+
+Kör följande kommandon för att synkronisera om flödena:
+
+```
+bin/magento saas:resync --feed productattributes --cleaup-feed
+bin/magento saas:resync --feed products --cleanup-feed
+bin/magento saas:resync --feed scopesCustomerGroup --cleanup-feed
+bin/magento saas:resync --feed scopesWebsite --cleanup-feed
+bin/magento saas:resync --feed prices --cleanup-feed
+bin/magento saas:resync --feed productOverrides --cleanup-feed
+bin/magento saas:resync --feed variants --cleanup-feed
+bin/magento saas:resync --feed categories --cleanup-feed
+bin/magento saas:resync --feed categoryPermissions --cleanup-feed
+```
+
+[Skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support) om du vill begära omindexering av Live Search-indexet. I felbeskrivningen tar du med ditt ID för datautrymme/miljö som finns på administratörspanelen under **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**.
 
 ## Relaterad läsning
 
