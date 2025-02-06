@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: b14ce46b2e68b76f349c3d2791897c7519088f24
+source-git-commit: 9de7cb6d2c9e529031999cad9ae6f3c8de5520c7
 workflow-type: tm+mt
-source-wordcount: '9387'
+source-wordcount: '9382'
 ht-degree: 0%
 
 ---
@@ -958,7 +958,6 @@ ht-degree: 0%
       * [Återgår till  [!DNL Elasticsearch7] när sökmotorn är inställd på  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Problem med Elasticsearch efter uppgraderingen av Adobe Commerce molninfrastruktur 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
       * [Spårningsindex för ElasticSuite orsakar problem med Elasticsearch](/help/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.md)
-      * [Elasticsearch i Adobe Commerce felsökare](/help/troubleshooting/elasticsearch/elasticsearch-in-magento-troubleshooter.md)
       * [Kontrollera att Elasticsearch är korrekt installerat](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md)
       * [Elasticsearch 5 är konfigurerat, men söksidan läses inte in med felmeddelandet &quot;FieldData is disabled...&quot;.](/help/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled-error.md)
       * [Elasticsearch-indexstatus är &quot;gul&quot; eller &quot;röd&quot;](/help/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.md)
