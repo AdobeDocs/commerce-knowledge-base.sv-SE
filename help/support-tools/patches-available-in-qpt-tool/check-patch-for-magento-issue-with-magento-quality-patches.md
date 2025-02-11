@@ -4,7 +4,7 @@ description: I den här artikeln finns en översikt över QPT (Quality Patches T
 exl-id: 43393708-3939-449f-a764-b2ac6326165f
 feature: Tools and External Services
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: ce9c69e12d64b4b4a8e6129783d9b15e95eff867
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -59,4 +59,5 @@ Mer information om hur du installerar och använder QPT för att tillämpa och �
 ## Relaterad läsning
 
 * [Versionsinformation för verktyget Kvalitetspatchar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) i utvecklardokumentationen.
-* [Använda dispositionskorrigeringar från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+* [Använda Composer-korrigeringar från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
+
