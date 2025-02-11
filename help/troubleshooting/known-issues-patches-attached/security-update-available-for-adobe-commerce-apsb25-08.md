@@ -1,12 +1,13 @@
 ---
 title: Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB25-08]
 promoted: true
-description: Använd en Isolated-korrigering för att åtgärda [!DNL critical, important, and moderate vulnerabilities] för både Adobe Commerce och Magento Open Source 2.4.7-beta1, 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 och tidigare versioner.
+description: Använd en Isolated-korrigering för att åtgärda [!DNL critical, important, and moderate vulnerabilities] för Adobe Commerce 2.4.8-beta1, 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 och tidigare versioner.
 feature: Compliance, Security
 role: Developer
-source-git-commit: 45c6486dea10b37aa8114467bbd7be0c7f9f86f6
+exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
+source-git-commit: f0c4bfae30d462d160e8096f0c4cee703f6f24e5
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ ht-degree: 0%
 
 Adobe Commerce i molninfrastrukturen, Adobe Commerce lokalt och Magento Open Source:
 
-* 2.4.7-beta1 och tidigare
+* 2.4.8-beta1 och tidigare
 * 2.4.7-p3 och tidigare
 * 2.4.6-p8 och tidigare
 * 2.4.5-p10 och tidigare versioner
@@ -37,13 +38,32 @@ Adobe Commerce i molninfrastrukturen, Adobe Commerce lokalt och Magento Open Sou
 
 ## Lösning för Adobe Commerce i molnet och Adobe Commerce lokala program
 
-För att åtgärda säkerhetsluckan för de berörda produkterna och versionerna måste du använda den isolerade korrigeringen [!DNL CVE-2025-24434].
+För att åtgärda säkerhetsluckan för de berörda produkterna och versionerna måste du tillämpa den isolerade korrigeringen [!DNL CVE-2025-24434], beroende på vilken version av Adobe Commerce/Magento Open Source du har.
 
 ## Information om isolerad lagning
 
-Använd följande Isolerade plåster:
+Använd följande bifogade Isolerade patchar, beroende på vilken version av Adobe Commerce/Magento Open Source du har:
 
-[vuln-28982-composer-patch.zip](assets/vuln-28982-composer-patch.zip)
+### För version 2.4.8-beta1:
+
+* [vuln-28982-2-4-8x-v2-composer-patch.zip](assets/vuln-28982-2-4-8x-v2-composer-patch.zip)
+
+### För version 2.4.7, 2.4.7-p1, 2.4.7-p2, 2.4.7-p3:
+
+* [vuln-28982-2-4-7x-v2-composer-patch.zip](assets/vuln-28982-2-4-7x-v2-composer-patch.zip)
+
+### För versionerna 2.4.6, 2.4.6-p1, 2.4.6-p2, 2.4.6-p3, 2.4.6-p4, 2.4.6-p5, 2.4.6-p6, 2.4.6-p7, 2.4.6-p8:
+
+* [vuln-28982-2-4-6x-v2-composer-patch.zip](assets/vuln-28982-2-4-6x-v2-composer-patch.zip)
+
+### För version 2.4.5, 2.4.5-p1, 2.4.5-p2, 2.4.5-p3, 2.4.5-p4, 2.4.5-p5, 2.4.5-p6, 2.4.5-p7, 2.4.5-p8, 2.4.5-p9, 2.4.5-p10:
+
+* [vuln-28982-2-4-5x-v2-composer-patch.zip](assets/vuln-28982-2-4-5x-v2-composer-patch.zip)
+
+### För version 2.4.4, 2.4.4-p1, 2.4.4-p2, 2.4.4-p3, 2.4.4-p4, 2.4.4-p5, 2.4.4-p6, 2.4.4-p7, 2.4.4-p8, 2.4.4-p9, 2.4.4-p1 0, 2.4.4-p11:
+
+* [vuln-28982-2-4-4x-v2-composer-patch.zip](assets/vuln-28982-2-4-4x-v2-composer-patch.zip)
+
 
 ## Så här applicerar du det isolerade plåstret
 
@@ -77,4 +97,4 @@ Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats, kansk
 Säkerhetsuppdateringar för Adobe Commerce:
 
 * [Adobe säkerhetsbulletin ([!DNL APSB25-08])](https://helpx.adobe.com/security/products/magento/apsb25-08.html)
-* [De senaste säkerhetsuppdateringarna för Adobe Commerce](https://helpx.adobe.com/security/products/magento.html)
+* [De senaste säkerhetsuppdateringarna för Adobe Commerce)](https://helpx.adobe.com/security/products/magento.html)
