@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 229ae54f21cef7d8fe488bfacf5aaec8942a5fc2
+source-git-commit: 83b57cde528c8f581d243553006cf0eb97aed138
 workflow-type: tm+mt
-source-wordcount: '9386'
+source-wordcount: '9380'
 ht-degree: 0%
 
 ---
@@ -773,7 +773,6 @@ ht-degree: 0%
       * [Omdirigering vid inloggning till Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [Lös problem med krypteringsnyckeln](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
       * [Felet &quot;Updater application is not available&quot;](/help/troubleshooting/miscellaneous/updater-application-is-not-available-error.md)
-      * [Det går inte att komma åt rätt molnprojekt](/help/troubleshooting/miscellaneous/cannot-access-the-correct-cloud-project.md)
       * [PWA Studio: Venia GraphQL-frågor till Adobe Commerce skapar valideringsfel](/help/troubleshooting/miscellaneous/pwa-studio-venia-graphql-queries-to-magento-produce-validation-errors.md)
       * [Stock-statusen är felaktig efter installation av Inventory management](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [Adobe Commerce 2.3.5: Problem med beställningar av virtuella produkter för flera leveranser](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
