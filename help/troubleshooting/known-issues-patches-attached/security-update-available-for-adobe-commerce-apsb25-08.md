@@ -5,9 +5,9 @@ description: Använd en Isolated-korrigering för att åtgärda [!DNL critical, 
 feature: Compliance, Security
 role: Developer
 exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
-source-git-commit: f0c4bfae30d462d160e8096f0c4cee703f6f24e5
+source-git-commit: f4a7a6ac538cf1199aea32875215709fcd165a08
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Adobe Commerce i molninfrastrukturen, Adobe Commerce lokalt och Magento Open Sou
 * 2.4.5-p10 och tidigare versioner
 * 2.4.4-p11 och tidigare versioner
 
-## Lösning för Adobe Commerce i molnet och Adobe Commerce lokala program
+## ## Lösning för Adobe Commerce i molnet, Adobe Commerce lokalt och Magento Open Source
 
 För att åtgärda säkerhetsluckan för de berörda produkterna och versionerna måste du tillämpa den isolerade korrigeringen [!DNL CVE-2025-24434], beroende på vilken version av Adobe Commerce/Magento Open Source du har.
 
