@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 83b57cde528c8f581d243553006cf0eb97aed138
+source-git-commit: 3003dc048e6f0bc34dd0264f0e038759e8ff94fa
 workflow-type: tm+mt
-source-wordcount: '9380'
+source-wordcount: '9388'
 ht-degree: 0%
 
 ---
@@ -932,6 +932,7 @@ ht-degree: 0%
       * [Distributionen misslyckades vid cachetömning: &quot;Det finns inga definierade kommandon i namnutrymmesfelet &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Distributionen misslyckas med rätt åtkomstnycklar i env:COMPOSER_AUTH eller auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Kända fel {#known-issues-patches-attached}
+      * [Adobe Commerce 2.4.7-p4 [!DNL HIPAA] 1.2.0-kompatibilitetspaket Hotfix](/help/troubleshooting/known-issues-patches-attached/hotfix-for-hipaa-package-1-2-0-compatibility-with-adobe-commerce-2-4-7-p4.md)
       * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB25-08]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
       * [Bakåtkompatibla ändringar för  [!DNL GraphQL "placeOrder" API] i Adobe Commerce 2.4.6-p8](/help/troubleshooting/known-issues-patches-attached/backwards-incompatible-changes-for-graphql-placeorder-api-in-adobe-commerce-2-4-6-p8.md)
       * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
