@@ -2,16 +2,16 @@
 title: Uppdatering av livscykelpolicy för Adobe Commerce Support-biljetter
 description: I den här artikeln finns information om uppdatering av Adobe Commerce supportbiljettens livscykelpolicy.
 exl-id: c3fbcb4a-107f-48b3-afed-b9a0c5d0425c
-source-git-commit: 5d291a221509c35c8bc34fd0957534c24342c59c
+source-git-commit: b882fcc3a890fa0eb06c17f877d7d315be66e294
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
 # Uppdatering av livscykelpolicy för Adobe Commerce Support-biljetter
 
-I den här dokumentationen beskrivs förbättringar av Adobe DX Support-ärendets livscykel i syfte att öka kommunikationen och tillhandahålla lösningar för kunder så snabbt som möjligt för att säkerställa att kunderna lyckas. Detta finns också i [Översikt över lyckade Adobe-planer: Supportärende, livscykel](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
+I den här dokumentationen beskrivs förbättringar av Adobe DX Support-ärendets livscykel i syfte att öka kommunikationen och tillhandahålla lösningar för kunder så snabbt som möjligt för att säkerställa att kunderna lyckas. Detta finns också i [Adobe Success Plans Overview: Support Case Lifecycle](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
 Nedan visas tidslinjer och meddelanden för olika scenarier som påträffats under supportprocessen:
 
 ## Påminnelser om uppföljning av ärenden
@@ -33,7 +33,7 @@ I det här scenariot utförs följande steg när ytterligare information krävs 
 * Den 1, 3 och 5 dagen efter att statusen är inställd på &quot;Väntande svar&quot; skickas uppföljningsmeddelanden till kunden som begär ytterligare information.
 * Om kunden inte svarar inom 6 dagar efter att statusen hade angetts till Väntande svar, stängs ärendet och ett stängningsmeddelande skickas.
 
-Kunderna kan öppna ett stängt ärende på nytt inom 14 dagar för att fortsätta kommunicera. Efter 14 dagar kan ett nytt supportärende öppnas för att fortsätta kommunikation i samband med ett tidigare stängt ärende.
+Kunderna kan återuppta ett stängt ärende på Experience League inom 14 dagar för att fortsätta kommunicera. Efter 14 dagar kan ett nytt supportärende öppnas för att fortsätta kommunikation i samband med ett tidigare stängt ärende. Observera att svar på ett e-postmeddelande om en stängd biljett inte kommer att öppna den igen.
 
 ### När en tekniker tillhandahåller en lösning
 
@@ -50,4 +50,4 @@ Kunderna kan öppna ett stängt ärende på nytt inom 14 dagar för att fortsät
 * [Skicka in en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
 * Länken [&quot;Skicka en biljett&quot; visas inte på startsidan för Adobe Commerce Help Center ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
 * [Formulär för anmälan av biljett: handlaren visas inte i listrutan Organisation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
-* [Adobe Success Plans Overview: Supportärende Lifecycle](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
+* [Adobe Success Plans - översikt: Supportärende - livscykel](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
