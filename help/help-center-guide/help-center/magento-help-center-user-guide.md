@@ -3,9 +3,9 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: c287b45c3cea99f6d536d6ed4d90a5e19d9fa71c
+source-git-commit: c578bdc5684705283bb1d3eb4c42edb62ad769f9
 workflow-type: tm+mt
-source-wordcount: '2963'
+source-wordcount: '3072'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Läs om hur du skickar en supportanmälan till [Experience League Support](https
 
 >[!NOTE]
 >
->Adobe Commerce support har migrerats från Adobe Commerce Help Center till Experience League. Använd formulärflödet [här](#what-is-experience-support) för Experience League för att skicka supportärenden.
+>Adobe Commerce support har migrerats från Adobe Commerce Help Center till Experience League. Använd det formulärflöde för Experience League som beskrivs [här](#what-is-experience-support) för att skicka supportärenden.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Läs om hur du skickar en supportanmälan till [Experience League Support](https
 
 >[!NOTE]
 >
->Kunskapsbasen i Adobe Commerce Help Center har migrerats till Adobe Experience League-portalen. När du skapar en supportanmälan visas tillhörande artiklar i kunskapsbasen tillsammans med annan relevant Adobe Commerce-dokumentation från Adobe Experience League.
+>Kunskapsbasen i Adobe Commerce Help Center har migrerats till Adobe Experience League-portalen. När du skapar en supportanmälan kommer du att få förslag på relaterade artiklar i kunskapsbasen tillsammans med annan relevant Adobe Commerce-dokumentation från Adobe Experience League.
 
 **Viktig uppdatering:** 29 juli 2024
 
@@ -35,7 +35,7 @@ Läs om hur du skickar en supportanmälan till [Experience League Support](https
 * [Logga in på Experience League Support](#sign-in-experience-support)
 * [Skicka ett supportärende](#submit-case)
 
-   * [Adobe Experience League startsida](#experience-league-start-page)
+   * [Startsida för Adobe Experience League](#experience-league-start-page)
    * [Adobe Commerce kontosida](#submit-case-adobe-commerce-account-page)
    * [*Verifiera din e-postadress*](#verify-email-address-error)
 
@@ -67,22 +67,22 @@ Experience League Support är en supportportal för Adobe där Adobe Commerce-ku
 
 ## STÖDFALL {#support-cases}
 
-Med Adobe Experience League Support Case Management kan man arbeta med support genom olika ärenden för att åtgärda specifika problem som uppstår när man använder Adobe-produkter, inklusive Adobe Commerce, för alla Adobe Commerce-produkter som omfattas av avtal.
+Med Adobe Experience Clouds supportfallshantering kan ni arbeta med support genom olika ärenden för att åtgärda specifika problem som uppstår när Adobe-produkter, inklusive Adobe Commerce, används för alla Adobe Commerce-produkter som omfattas av avtal.
 
-## LOGGA IN PÅ STÖD FÖR EXPERIENCE LEAGUE {#sign-in-experience-support}
+## LOGGA IN PÅ EXPERIENCE LEAGUE SUPPORT {#sign-in-experience-support}
 
 Om du loggar in kan du skicka, uppdatera och besvara frågor från agenter på supportärenden.
 
 Så här loggar du in på Adobe Experience League Support:
 
 1. Navigera till [experience.adobe.com](https://experienceleague.adobe.com/).
-1. Logga in med inloggningsuppgifterna för Adobe.
+1. Logga in med dina inloggningsuppgifter för Adobe.
 
 ![inloggning-experience-leag](assets/experience_league_sign_in.png)
 
 ### Skicka ett supportärende {#support-case}
 
-När du har loggat in som kontoägare eller användare med delad åtkomst kan du skicka ett supportärende via Adobe Experience League hemsida, din Adobe Commerce-kontosida och din Adobe Commerce Cloud-kontosida.
+När du har loggat in som kontoägare eller användare med delad åtkomst kan du skicka ett supportärende via Adobe Experience Leagings hemsida, din Adobe Commerce-kontosida och din kontosida för Adobe Commerce Cloud.
 
 >[!NOTE]
 >
@@ -96,21 +96,21 @@ När du har loggat in som kontoägare eller användare med delad åtkomst kan du
 >
 >Om du har problem med att publicera tillägget, har problem med att köpa eller begär en återbetalning på [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/) måste du kontakta [!DNL Commerce Marketplace]-teamet direkt på https://commercemarketplace.adobe.com/. Navigera till nederkanten av sidan och klicka på **[!UICONTROL Contact Us]**, som öppnar ett formulär för att skicka ett supportärende på Marketplace.
 
-#### Adobe Experience League startsida {#experience-league-start-page}
+#### Startsida för Adobe Experience League {#experience-league-start-page}
 
-Så här skickar du ett nytt supportärende från Adobe Experience League startsida:
+Följ de här stegen för att skicka in ett nytt supportärende från Adobe Experience Leagas startsida:
 
 >[!INFO]
 >
->1. För att kunna lämna in ett ärende måste du ha rätt till support för den aktuella produkten (t.ex. Adobe Commerce, Adobe Commerce Intelligence, Experience Platform). Om du inte har rätt till support visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen.
->1. Om du tillhör flera organisationer eller om det finns flera organisationer med liknande namn (var och en representerar någon av de andra Adobe-produkter som organisationen prenumererar på), måste du först välja rätt organisation i listrutan i den vänstra kolumnen som slutar i &quot;(Commerce)&quot;.
->1. För att kunna lämna in ett ärende måste du ha rätt till support för den aktuella produkten (t.ex. Adobe Commerce, Adobe Commerce Reporting, Adobe Commerce Payment Services, Experience Platform). Om du inte har rätt till support visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen. Om du vill skicka ett ärende för Commerce-relaterade problem måste du först välja rätt organisationsnamn som slutar på *[!DNL (Commerce)]*.
+>1. För att kunna lämna in ett ärende måste du ha rätt till support för lämplig produkt (t.ex. Adobe Commerce, Adobe Commerce Intelligence, Experience Platform osv.). Om du inte har rätt till support visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen.
+>1. Om du tillhör flera organisationer eller om det finns flera organisationer med liknande namn (var och en representerar någon av de andra Adobe-produkter som organisationen prenumererar på), måste du först välja rätt organisation i den vänstra kolumnen som slutar på &quot;(Commerce)&quot;.
+>1. För att kunna lämna in ett ärende måste du ha rätt till support för lämplig produkt (t.ex. Adobe Commerce, Adobe Commerce Reporting, Adobe Commerce Payment Services, Experience Platform). Om du inte har rätt till support visas ett fält högst upp på sidan som informerar dig om att du inte är en supportberättigad användare i organisationen. Om du vill skicka ett ärende för Commerce-relaterade problem måste du först välja rätt organisationsnamn som slutar på *[!DNL (Commerce)]*.
 >1. Om du tillhör flera organisationer eller om det finns flera organisationer med liknande namn (var och en representerar någon av de andra Adobe-produkter som organisationen prenumererar på) måste du först välja rätt organisation i listrutan.
 >1. Om du inte ser Adobe Commerce i listrutan [!UICONTROL Select a product] måste du först få [delad åtkomst](#shared-access) från Commerce Kontoägare. När du har fått delad åtkomst måste du [synkronisera ditt konto](#switch-accounts) för att slutföra processen innan du kan skicka ett ärende.
 
 >[!NOTE]
 >
->Se till att du har valt rätt organisation innan du skickar in ärendet och att den organisation du har valt har rätt behörighet för den produkt som du begär support för. Om ditt problem till exempel är relaterat till Adobe Commerce, men du har valt Experience Platform som produkt och ärendet har skickats in, kan detta leda till felhantering och förseningar i svarstiderna.
+>Se till att du har valt rätt organisation innan du skickar in ärendet och att den organisation du har valt har rätt behörighet för den produkt som du begär support för. Om ditt problem till exempel är relaterat till Adobe Commerce, men du har valt Adobe Commerce Intelligence eller Adobe Experience Platform som produkt och ärendet har skickats in, kan detta leda till felhantering av ditt ärende och förseningar i svarstiderna.
 >
 >Om fel organisation valdes när ärendet skickades kan ditt team inte visa ärendet under [!UICONTROL My Cases] för rätt/korrekt organisation. Adobe Commerce supportteam har inte möjlighet att ändra den organisation som är kopplad till ärendet. För att kunna åtgärda detta måste du stänga det befintliga ärendet och skicka in ett nytt ärende med den information som anges/valts.
 
@@ -126,11 +126,16 @@ Så här skickar du ett nytt supportärende från Adobe Experience League starts
 
    ![open-support-case](assets/open_support_case.png)
 
-1. Välj en produkt i listrutan och ange en falltitel och beskrivning. Obs! Om listrutan inte visar några produkter, eller om Commerce inte är ett tillgängligt alternativ, kan du prova att byta organisation i den vänstra kolumnen och sedan kontrollera igen.
+1. Välj en produkt i listrutan och ange en falltitel och beskrivning. Obs! Om listrutan inte visar några produkter eller om [!DNL Commerce] inte är ett tillgängligt alternativ kan du försöka med att växla [!UICONTROL Organization] i den vänstra kolumnen och sedan kontrollera igen.
 
    ![select_product](assets/support_case_product.png)
 
-1. Adobe Experience League kommer att föreslå artiklar och bästa praxis som kan hjälpa dig att lösa ditt ärende. Om du fortfarande behöver direktsupport måste du ange ytterligare information innan du skickar in ärendet.
+>[!NOTE]
+>
+>Om du skickar in en biljett med **[!DNL Commerce]i molninfrastrukturen** som har valts som produkt och organisationen har flera projekt listade, uppmanas du att välja rätt [!UICONTROL Project ID]. Om du inte kan hitta det önskade [!UICONTROL Project ID] måste du lägga till en anteckning på biljetten om att du söker hjälp med ett annat X-projekt.<br>Om du tänker skicka in en **[!DNL Commerce]på Managed Services**-biljett och är på **[!DNL Commerce]i molninfrastrukturen**, men inte **[!DNL Commerce]i molninfrastrukturen** som en tillgänglig produkt:<br>1. Ange ett ämne för din utgåva i **[!UICONTROL Case title]**.<br>2. Ange en beskrivning av ditt problem i **[!UICONTROL Case description]**.<br>3. När du har angett båda dessa objekt visas fältet **[!UICONTROL Cloud Project URL]** nedan.
+
+
+1. Adobe Experience League kommer att föreslå artiklar och bästa praxis som kan hjälpa er att lösa ert ärende. Om du fortfarande behöver direktsupport måste du ange ytterligare information innan du skickar in ärendet.
 
    ![direct_support_required](assets/direct_support.png)
 
@@ -140,7 +145,7 @@ Så här skickar du ett nytt supportärende från Adobe Experience League starts
 >
 >Om du inte kan se din organisation i listrutan för organisationen när du loggar in på experienceleague.adobe.com, kan du behöva synkronisera din profil med accounts.magento.com innan du begär support eller hanterar ett befintligt supportärende.   
 >
->1. Gå till accounts.magento.com och logga in med samma profil (företag, skola eller personlig) som du använder för att hantera supportärenden i Adobe Experience League. 
+>1. Navigera till accounts.magento.com och logga in med samma profil (företag, skola eller personlig) som du använder för att hantera supportärenden i Adobe Experience League. 
 >1. När du har loggat in på din accounts.magento.com går du tillbaka till experienceleague.adobe.com och loggar in. 
 >1. Välj din organisation i listrutan för organisation. 
 >1. Om din organisation fortfarande inte visas kontaktar du Commerce-administratören för att få behörighet som supportrepresentant. Mer information finns i hjälpartikeln för [Commerce Account Share](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share). 
@@ -177,7 +182,7 @@ Så här skickar du en ny supportanmälan på din Adobe Commerce-kontosida:
 
    ![magento_account_support_tab](assets/magento_account_support_tab.png){width="800"}
 
-1. Adobe Experience League supportsida visas.
+1. Adobe Experience Leagas supportsida laddas för er.
 1. Välj **[!UICONTROL Open Ticket]** på den vänstra menyn.
 1. Fyll i fälten.
 1. Klicka på **Skicka**.
