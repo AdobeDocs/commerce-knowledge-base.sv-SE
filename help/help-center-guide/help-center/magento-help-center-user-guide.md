@@ -3,7 +3,7 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: c578bdc5684705283bb1d3eb4c42edb62ad769f9
+source-git-commit: cb0d3b47c7b9693c83c6f1e85fa41cce57972c9f
 workflow-type: tm+mt
 source-wordcount: '3072'
 ht-degree: 0%
@@ -130,9 +130,9 @@ Följ de här stegen för att skicka in ett nytt supportärende från Adobe Expe
 
    ![select_product](assets/support_case_product.png)
 
->[!NOTE]
->
->Om du skickar in en biljett med **[!DNL Commerce]i molninfrastrukturen** som har valts som produkt och organisationen har flera projekt listade, uppmanas du att välja rätt [!UICONTROL Project ID]. Om du inte kan hitta det önskade [!UICONTROL Project ID] måste du lägga till en anteckning på biljetten om att du söker hjälp med ett annat X-projekt.<br>Om du tänker skicka in en **[!DNL Commerce]på Managed Services**-biljett och är på **[!DNL Commerce]i molninfrastrukturen**, men inte **[!DNL Commerce]i molninfrastrukturen** som en tillgänglig produkt:<br>1. Ange ett ämne för din utgåva i **[!UICONTROL Case title]**.<br>2. Ange en beskrivning av ditt problem i **[!UICONTROL Case description]**.<br>3. När du har angett båda dessa objekt visas fältet **[!UICONTROL Cloud Project URL]** nedan.
+   >[!NOTE]
+   >
+   >Om du skickar in en biljett med **[!DNL Commerce]i molninfrastrukturen** som har valts som produkt och organisationen har flera projekt listade, uppmanas du att välja rätt [!UICONTROL Project ID]. Om du inte kan hitta det önskade [!UICONTROL Project ID] måste du lägga till en anteckning på biljetten om att du söker hjälp med ett annat X-projekt.<br>Om du tänker skicka in en **[!DNL Commerce]på Managed Services**-biljett och är på **[!DNL Commerce]i molninfrastrukturen**, men inte **[!DNL Commerce]i molninfrastrukturen** som en tillgänglig produkt:<br>1. Ange ett ämne för din utgåva i **[!UICONTROL Case title]**.<br>2. Ange en beskrivning av ditt problem i **[!UICONTROL Case description]**.<br>3. När du har angett båda dessa objekt visas fältet **[!UICONTROL Cloud Project URL]** nedan.
 
 
 1. Adobe Experience League kommer att föreslå artiklar och bästa praxis som kan hjälpa er att lösa ert ärende. Om du fortfarande behöver direktsupport måste du ange ytterligare information innan du skickar in ärendet.
@@ -143,23 +143,25 @@ Följ de här stegen för att skicka in ett nytt supportärende från Adobe Expe
 
 >[!IMPORTANT]
 >
->Om du inte kan se din organisation i listrutan för organisationen när du loggar in på experienceleague.adobe.com, kan du behöva synkronisera din profil med accounts.magento.com innan du begär support eller hanterar ett befintligt supportärende.   
+>Om du inte kan se din organisation i listrutan för organisationen när du loggar in på experienceleague.adobe.com, kan du behöva synkronisera din profil med accounts.magento.com innan du begär support eller hanterar ett befintligt supportärende.
 >
->1. Navigera till accounts.magento.com och logga in med samma profil (företag, skola eller personlig) som du använder för att hantera supportärenden i Adobe Experience League. 
->1. När du har loggat in på din accounts.magento.com går du tillbaka till experienceleague.adobe.com och loggar in. 
->1. Välj din organisation i listrutan för organisation. 
->1. Om din organisation fortfarande inte visas kontaktar du Commerce-administratören för att få behörighet som supportrepresentant. Mer information finns i hjälpartikeln för [Commerce Account Share](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share). 
+>1. Navigera till accounts.magento.com och logga in med samma profil (företag, skola eller personlig) som du använder för att hantera supportärenden i Adobe Experience League.
+>1. När du har loggat in på din accounts.magento.com går du tillbaka till experienceleague.adobe.com och loggar in.
+>1. Välj din organisation i listrutan för organisation.
+>1. Om din organisation fortfarande inte visas kontaktar du Commerce-administratören för att få behörighet som supportrepresentant. Mer information finns i hjälpartikeln för [Commerce Account Share](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share).
 
 >[!NOTE]
 >
 >Varför organisationen/produkten är viktig
 >
 >**Exempel A**: Du har bara delad åtkomst till ett företag och det företaget har berättiganden för två Adobe-produkter: Produkt1 och Produkt2.
+>
 >1. Eftersom varje organisation representerar en produkt visas två organisationer i listrutan, t.ex. OrgA-Product1 och OrgB-Product2.
 >1. Om du valde Produkt = Produkt1 men problemet är relaterat till Produkt2, dirigeras ärendet till support för Produkt2 och det kommer att bli fördröjt när ärendet överförs till support för Produkt1.
 >1. Om du har skickat in ärendet för OrgA-Product1 och vill granska [!UICONTROL My Cases] för den organisationen i framtiden, kommer du inte att se det om du väljer OrgA-Product2 som organisation (du skulle bara behöva välja den andra organisationen, jämfört med exempel B).
 >
 >**Exempel B**: Du har delad åtkomst till två företag, och varje företag har bara berättiganden för Adobe Commerce.
+>
 >1. Om du har skickat in ärendet för OrgA men problemet faktiskt påverkar OrgB, kommer medlemmar i OrgB inte att kunna se det här fallet under [!UICONTROL My Cases] i framtiden.
 >1. Dessutom kan medlemmar i OrgA se fall under [!UICONTROL My Cases] som faktiskt är avsedda för OrgB, vilket kan leda till sekretessproblem.
 
@@ -170,6 +172,7 @@ Du måste ha ett konto på både https://account.adobe.com och https://account.m
 >Om du redan har ett konto på https://account.magento.com, men inte kan logga in, kanske du inte har registrerat dig för ett konto på https://account.adobe.com, vilket krävs från och med augusti 2022.
 >
 >Så här löser du det:
+>
 >1. Skapa ett konto på https://account.adobe.com med samma e-postadress på ditt MAG-ID.
 >1. Gå till https://account.magento.com om du vill länka din Adobe ID till ditt MAG-ID.
 
