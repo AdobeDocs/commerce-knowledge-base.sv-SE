@@ -2,9 +2,9 @@
 title: Så här hämtar och använder du [!UICONTROL security patch]
 description: Den här artikeln innehåller anvisningar om hur du hämtar och använder en [!UICONTROL security patch] som har släppts, men det finns inga instruktioner.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: b15a1d008b6cc2bdce797768e6ee7029a747e6da
+source-git-commit: 06bc239cb5b1a894d2a60236a9b32b2b0c4eba80
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,11 @@ Om en fysisk korrigeringsfil/snabbkorrigering anges i versionsinformationen:
 
 **Caveats:**
 
-Om du har en äldre version av Adobe Commerce och har köpt Extended Support (Utökad support) måste din version vara något av följande för att du ska kunna tillämpa Security Patches (Säkerhetsuppdateringar):
+Om du har en äldre version av Adobe Commerce (2.4.4) har du automatiskt fått utökad support. Din version måste vara en av följande versioner som inte stöds för att du ska kunna tillämpa de senaste tillgängliga säkerhetsuppdateringarna:
 
-* 2.4.2-p2
-* 2.4.3-p3
+2.4.4 - 2.4.4-p11
+
+Versioner som inte stöds (2.3.x, 2.4.0 - 2.4.3) har inte rätt till support och du måste först uppgradera till en version som stöds för att kunna utnyttja de senaste säkerhetskorrigeringarna.
 
 Om du inte har Extended Support (Utökad support) kan du begära Support för att dela korrigeringsfilerna med dig, men de kan inte lösa eventuella problem eller fel som du kan stöta på när du tillämpar dem.
 
@@ -55,5 +56,5 @@ Om en fysisk korrigeringsfil/snabbkorrigering inte omnämns i versionsinformatio
 
 ## Relaterad läsning
 
-* Se [Versionsinformation för Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) i *Adobe Commerce on Cloud Infrastructure Guide*.
+* Se [Versionsinformation om Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) i *Adobe Commerce on Cloud Infrastructure Guide*.
 * Se [Uppgradera Adobe Commerce-versionen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) i *Adobe Commerce on Cloud Infrastructure Guide*.

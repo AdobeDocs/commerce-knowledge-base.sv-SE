@@ -3,9 +3,9 @@ title: '[!DNL Elasticsearch] visas som sökmotor trots [!DNL OpenSearch] install
 description: Den här artikeln innehåller en lösning på problemet där  [!DNL Elasticsearch]  fortfarande visas som sökmotor för Adobe Commerce i molnet, även efter installation eller uppgradering till  [!DNL OpenSearch].
 exl-id: cdd8a35d-da6f-46d3-b732-65626487c9bb
 feature: Install
-source-git-commit: 1f053f76ae56edc06bfe82e55210244c8ec4b8eb
+source-git-commit: b3f68e43ce3c4fdea001db1d8ba2774900db7dba
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Den här artikeln innehåller en lösning på problemet där [!DNL Elasticsearch
 
 ## Berörda versioner
 
-Adobe Commerce i molnet 2.4.3-p2 - 2.4.5-p6
+Adobe Commerce i molnet 2.4.4 - 2.4.5-p11
 
 >[!NOTE]
 >
@@ -33,9 +33,9 @@ Adobe Commerce i molnet 2.4.3-p2 - 2.4.5-p6
 
 ## Orsak
 
-Adobe Commerce är hårdkodat för att ange [!DNL Elasticsearch7] som sökmotor.
+[!DNL Elasticsearch7] är hårdkodad i Adobe Commerce för att vara sökmotorn som används i dessa versioner.
 
-Detta ska inte blandas ihop med den installerade versionen av tjänsten. Programmet identifierar bara [!DNL Elasticsearch7] som sökmotor, men inte [!DNL OpenSearch], även om den underliggande [!DNL OpenSearch]-tjänsten används som motor i serverdelen.
+Detta ska inte blandas ihop med den installerade versionen av tjänsten. Även om det inte finns någon [!DNL Opensearch]-modul i koden kan Adobe Commerce använda den underliggande [!DNL Opensearch]-tjänsten.
 
 ## Lösning
 
@@ -70,7 +70,7 @@ $ curl 127.0.0.1:9200
 
 **Metod 2**:
 
-* Använd följande kommando i CLI för Magento-molnet: `magento-cloud relationships -p <project_id>`. Leta reda på [!DNL OpenSearch] när du har använt kommandot.
+* Använd följande kommando i Magento-cloud CLI: `magento-cloud relationships -p <project_id>`. Leta reda på [!DNL OpenSearch] när du har använt kommandot.
 
 ## Relaterad läsning
 
