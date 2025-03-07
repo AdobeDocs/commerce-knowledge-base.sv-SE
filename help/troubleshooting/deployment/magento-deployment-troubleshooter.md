@@ -4,9 +4,9 @@ description: Stuckedistributioner och misslyckade distributioner på Adobe Comme
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
+source-git-commit: 4704446d043e3175b5af27c068908e58bfb7a9ff
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ b. NO - Underhållsavbrott eller globala driftavbrott. Kontrollera om det finns 
 
 +++**Finns det distributioner i andra miljöer som blockerar distributionen i den befintliga miljön?**
 
-För att få en lista över pågående aktiviteter kör du följande kommando med magento-cloud CLI (om du bara har lagts till i ett molnprojekt). **Obs!** Kontrollera att du har den senaste versionen av magento-cloud CLI. Anvisningar finns i [Uppdatera CLI](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) i guiden för Commerce om molninfrastruktur.
+För att få en lista över pågående aktiviteter kör du följande kommando med magento-cloud CLI (om du bara har lagts till i ett molnprojekt). **Obs!** Kontrollera att du har den senaste versionen av magento-cloud CLI. Anvisningar finns i [Uppdatera CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) i guiden för Commerce om molninfrastruktur.
 
 ```bash
 magento-cloud --state=in_progress
@@ -42,7 +42,7 @@ För att få en lista över pågående aktiviteter kör du följande kommando me
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-Om du vill hitta information om en befintlig distributionsaktivitet (se [Kontrollera distributionsloggen om molngränssnittet har felet&quot;loggad&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html))
+Om du vill hitta information om en befintlig distributionsaktivitet (se [Kontrollera distributionsloggen om molngränssnittet har felet&quot;loggad&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error))
 om du vill ha mer information) kan du köra det här kommandot för att få en logg över aktiviteten:
 
 ```bash
@@ -79,7 +79,7 @@ b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento
 +++**Använder du Bitbucket?**
 
 a. JA - Kontrollera [status.bitbucket.com](https://bitbucket.status.atlassian.com/).\
-b. NO - Kontrollera distributionsloggfel i [Build and Deploy logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html). Fortsätt till [Steg 6](#step-6).
+b. NO - Kontrollera distributionsloggfel i [Build and Deploy logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations). Fortsätt till [Steg 6](#step-6).
 
 +++
 
@@ -124,7 +124,7 @@ b. NEJ - Fortsätt till [steg 11](#step-11).
 +++**Tillgänglig lagring fungerar?**
 
 a. JA - Fortsätt med [steg 11](#step-11).\
-b. NEJ - Granska [Hantera diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html).
+b. NEJ - Granska [Hantera diskutrymme](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space).
 
 +++
 
@@ -146,11 +146,11 @@ b. NEJ - Fortsätt med [steg 8](#step-8).
 
 +++
 
-## Steg 13 - Kontrollera om Elasticsearch-uppgradering misslyckades {#step-13}
+## Steg 13 - Kontrollera om Elasticsearch uppgradering misslyckades {#step-13}
 
 +++**Elasticsearch uppgraderas eller distribueras?**
 
-a. JA - Elasticsearch misslyckades med uppgraderingsstegen. Mer information finns i [Elasticsearch-programkompatibilitet](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html). Om Elasticsearch-uppgraderingen fortfarande inte fungerar skickar [du in en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). **Obs!** På Adobe Commerce i molninfrastruktur bör du vara medveten om att serviceuppgraderingar inte kan skickas till produktionsmiljön utan att meddela vårt infrastrukturteam om 48 arbetstimmar. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom den önskade tidsramen med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när dina ändringar behöver vara i produktion skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) med information om den serviceuppgradering du behöver och när du vill att uppgraderingsprocessen ska börja.\
+a. JA - Elasticsearch misslyckades med uppgraderingsstegen. Se [Kompatibilitet med Elasticsearch-program](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html). Om Elasticsearch-uppgraderingen fortfarande inte fungerar kan du [skicka in en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). **Obs!** På Adobe Commerce i molninfrastruktur bör du vara medveten om att serviceuppgraderingar inte kan skickas till produktionsmiljön utan att meddela vårt infrastrukturteam om 48 arbetstimmar. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom den önskade tidsramen med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när dina ändringar behöver vara i produktion skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) med information om den serviceuppgradering du behöver och när du vill att uppgraderingsprocessen ska börja.\
 b. NEJ - Fortsätt till [steg 14](#step-14).
 
 +++
@@ -210,7 +210,7 @@ b. NEJ - Fortsätt till [steg 19](#step-19).
 
 +++**Använda tillägg från tredje part?**
 
-a. JA - Prova [Inaktivera tillägg från tredje part](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html) och kör distributionen (för att se om de är orsaken till problemet), särskilt om det finns tilläggsnamn i några fel.\
+a. JA - Prova [Inaktivera tillägg från tredje part](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions) och kör distributionen (för att se om de är orsaken till problemet), särskilt om det finns tilläggsnamn i några fel.\
 b. NEJ - Fortsätt till [steg 20](#step-20).
 
 +++
