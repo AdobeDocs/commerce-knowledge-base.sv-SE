@@ -1,12 +1,12 @@
 ---
 title: Felsöka prestanda med New Relic på Adobe Commerce
-description: '"I den här artikeln beskrivs felsökningsåtgärder för att lösa Adobe Commerce om prestandaproblem i molnet med hjälp av New Relic. Det innehåller också resurser för mer information. Här är en lista över problem. Klicka här om du vill se felsökningsstegen i vår kunskapsbas:'''
+description: 'Den här artikeln innehåller felsökningssteg för att lösa Adobe Commerce om prestandaproblem i molninfrastruktur med New Relic. Det innehåller också resurser för mer information. Här är en lista över problem. Klicka för att se felsökningsstegen i vår kunskapsbas:'
 exl-id: 0a22beb7-18b0-47eb-a6b8-63b7322b392c
 feature: Observability
 role: Developer
-source-git-commit: 324cce66df1e4ab7ec4ef8fb6512c3acbabdf3ab
+source-git-commit: 27fed162416c619a08d757279a3405f1fa72e976
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Den här artikeln innehåller felsökningssteg för att lösa Adobe Commerce om prestandaproblem i molninfrastruktur med New Relic. Det innehåller också resurser för mer information. Följande problem med rekommenderade resurser som beskrivs i tabellen nedan är:
 
 * Låga Apdex-poäng
-* Hög CPU-användning
+* Hög användning av CPU
 * Höga I/O-åtgärder
 * Utfall
 
@@ -60,22 +60,22 @@ Den här artikeln innehåller felsökningssteg för att lösa Adobe Commerce om 
 </ol>
 </td>
 <td>
-<p>Mer information om New Relic Apdex-poängen finns i <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic Documentation &gt; APM Apdex &gt; Mät användarnöjdhet</a>. Du kan även referera till <a href="/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md">Hanterade aviseringar för Adobe Commerce: Apdex-varning</a> i vår kunskapsbas för support.</p>
+<p>Mer information om New Relic Apdex-poängen finns i <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic Documentation &gt; APM Apdex &gt; Mät användarnöjdhet</a>. Du kan även referera till <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Hanterade aviseringar för Adobe Commerce: Apdex-varning</a> i vår kunskapsbas för support.</p>
 </td>
 </tr>
 <tr>
 <td>
-<p>Hög processoranvändning:</p>
-<p>Hög processoranvändning kan indikera att det finns en särskilt upptagen tjänst, som MySQL, Redis osv.</p>
+<p>Hög CPU-användning:</p>
+<p>Hög användning av CPU kan visa att det finns en särskilt upptagen tjänst, som MySQL, Redis osv.</p>
 </td>
 <td>
 <ol>
 <li>Logga in på <a href="https://login.newrelic.com/login">New Relic</a> &gt; Infrastruktur &gt; Processer.</li>
-<li>Granska processordiagram för att se om det finns någon fastande eller mycket krävande process som använder mer än 100 % processortid och jämföra med processorantalet för instansen. Var uppmärksam på toppar i resursanvändningen. Vi rekommenderar inte att du avbryter en process om den inte är en ifastande kron.</li>
+<li>Granska CPU-diagram för att se om det finns några fastnade eller mycket krävande processer som använder mer än 100 % CPU-tid och jämför med processorantalet i instansen. Var uppmärksam på toppar i resursanvändningen. Vi rekommenderar inte att du avbryter en process om den inte är en ifastande kron.</li>
 </ol>
 </td>
 <td>
-<p>Om du vill veta mer om prestandamätningar, särskilt CPU i procent, I/O-byte och minnesanvändning för enskilda eller grupper av processer, kan du läsa <a href="https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes">New Relic Documentation &gt; Infrastructure UI page &gt; Infrastructure Host page &gt; Processes tab</a>.</p>
+<p>Mer information om prestandamått, särskilt CPU i procent, I/O-byte och minnesanvändning för enskilda eller grupper av processer finns i <a href="https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes">New Relic Documentation &gt; Infrastructure UI page &gt; Infrastructure Host page &gt; Processes tab</a>.</p>
 </td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ Den här artikeln innehåller felsökningssteg för att lösa Adobe Commerce om 
 <li>Sortera efter Användare.</li>
 <li>Granska de vanligaste frågorna.
 
-Obs! <code>UPPDATERA</code> eller <code>INFOGA</code>frågor är de mest processorkrävande frågorna.</li>
+Obs! <code>UPPDATERA</code> eller <code>INFOGA</code>frågor är de mest CPU-krävande frågorna.</li>
 <li>Växla till Genomflöde från Sortera efter väljare och sök efter processer som har orsakat databasens genomströmning till listruta.</li>
 <li>Om du behöver utforska mer kan du överväga att undersöka tredjepartstjänster.</li>
 </ol>
