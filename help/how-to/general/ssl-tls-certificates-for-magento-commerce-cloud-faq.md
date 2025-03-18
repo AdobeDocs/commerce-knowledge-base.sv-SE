@@ -3,9 +3,9 @@ title: SSL-certifikat (TLS) för Adobe Commerce i molninfrastruktur
 description: I den här artikeln finns snabba svar på frågor om hur du får SSL-certifikat (TLS) för din Adobe Commerce-webbplats i vår molninfrastruktur.
 exl-id: 5a682d07-e4d7-4e81-a2ad-3232f2d8d9c1
 feature: Cloud, Console
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 7694e6cb739d73a28c902e95d324b1317f4daaf6
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ I den här artikeln finns snabba svar på frågor om hur du får SSL-certifikat 
 
 ## Vilket SSL/TLS-certifikat tillhandahåller Adobe?
 
-Adobe tillhandahåller ett domänverifierat [Låt oss kryptera SSL-/TLS-certifikat](https://letsencrypt.org/) för att tillhandahålla säker HTTPS-trafik från [!DNL Fastly]. Adobe tillhandahåller ett certifikat för varje Adobe Commerce för molninfrastruktur Pro-planens arkitektur, mellanlagring och Adobe Commerce för arkitekturmiljön för Starter-planer i molninfrastrukturen för att skydda alla domäner i den miljön.
+Adobe tillhandahåller ett domänverifierat [Låt oss kryptera SSL-/TLS-certifikat](https://letsencrypt.org/) för att tillhandahålla säker HTTPS-trafik från [!DNL Fastly]. Adobe tillhandahåller ett certifikat för varje Adobe Commerce för molninfrastruktur Pro-planens arkitektur, mellanlagring och Adobe Commerce för arkitekturmiljön Starter för molninfrastruktur för att skydda alla domäner i den miljön.
 
 ## Vad omfattar ett certifikat?
 
@@ -54,8 +54,8 @@ När du har SSL-certifikatet skickar du en [Adobe Commerce-supportanmälan](/hel
 
 >[!WARNING]
 >
->Det är viktigt att du inte överför certifikatfilerna direkt till biljetten. I annat fall betraktas certifikaten som komprometterade och Adobe måste begära ett nytt certifikat.
->Filerna ska överföras via SFTP till servern - använd inga andra metoder som att implementera filerna i databasen (vilket bara ska göras för oföränderliga filer som inte innehåller känsliga data).
+>Det är viktigt att du inte överför certifikatfilerna direkt till biljetten. Annars betraktas certifikaten som komprometterade och Adobe måste begära ett nytt certifikat.
+>Filerna ska överföras via SFTP till servern i en mapp som du väljer, t.ex. `var/ssl`, `/tmp/ssl` osv. - använd inga andra metoder som att implementera filerna i databasen (vilket endast bör göras för oföränderliga filer som inte innehåller känsliga data).
 
 ## Certifikatets namn
 
@@ -67,7 +67,7 @@ Domänen som visas på certifikatet är bara den första domänen som läggs til
 
 ## Kan jag använda TLS-certifikat med jokertecken?
 
-TLS-certifikat med jokertecken kan bara användas med ditt anpassade certifikat och inte med Adobe Commerce Let&#39;s Encrypt-certifikat. Som en del av vår TLS-optimering upphör Adobe stödet för TLS-certifikat med jokertecken. Vi identifierar och kontaktar handlare som använder ett jokertecken med krypteringscertifikat från AdobeLet och som har konfigurerats i konsolen [!DNL Fastly] för Adobe Commerce. Vi ber att dessa jokertecken ersätts med exakta domäner för att säkerställa TLS-täckning. Om du vill ersätta ett TLS-certifikat med jokertecken går du till [domänavsnittet](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) i plugin-programmet [!DNL Fastly]. Här kan du lägga till exakta domäner och ta bort jokertecknet. Observera att DNS måste peka på [!DNL Fastly] för dessa nya domäner för att kunna dirigera via CDN. När domänerna har lagts till och DNS har uppdaterats kommer ett matchande [Låt oss kryptera](https://letsencrypt.org/)-certifikat att etableras. Om du inte tar bort en domän som pekar på [!DNL Fastly] med hjälp av ett jokertecken tar Adobe bort det delade certifikatet. Detta kan leda till ett webbplatsutbrott om du inte har konfigurerat URL:ens FQDN och samma URL FQDN konfigurerad i din DNS. Du bör därför bekräfta att de konfigurerade URL:erna också har en-till-en-matchning i sin DNS som pekar på [!DNL Fastly].
+TLS-certifikat med jokertecken kan bara användas med ditt anpassade certifikat och inte med Adobe Commerce Let&#39;s Encrypt-certifikat. Som en del av vår TLS-optimering upphör Adobe med stödet för TLS-jokertecken. Vi identifierar och kontaktar handlare som använder ett jokertecken med Adobe Let&#39;s Encrypt-certifikat och som har konfigurerats i [!DNL Fastly]-konsolen för Adobe Commerce. Vi ber att dessa jokertecken ersätts med exakta domäner för att säkerställa TLS-täckning. Om du vill ersätta ett TLS-certifikat med jokertecken går du till [domänavsnittet](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) i plugin-programmet [!DNL Fastly]. Här kan du lägga till exakta domäner och ta bort jokertecknet. Observera att DNS måste peka på [!DNL Fastly] för dessa nya domäner för att kunna dirigera via CDN. När domänerna har lagts till och DNS har uppdaterats kommer ett matchande [Låt oss kryptera](https://letsencrypt.org/)-certifikat att etableras. Om du inte tar bort en domän som pekar på [!DNL Fastly] med hjälp av ett jokertecken kommer Adobe att ta bort det delade certifikatet. Detta kan leda till ett webbplatsutbrott om du inte har konfigurerat URL:ens FQDN och samma URL FQDN konfigurerad i din DNS. Du bör därför bekräfta att de konfigurerade URL:erna också har en-till-en-matchning i sin DNS som pekar på [!DNL Fastly].
 
 ## Vad ska jag göra om min domän inte längre pekar på Adobe Commerce?
 
