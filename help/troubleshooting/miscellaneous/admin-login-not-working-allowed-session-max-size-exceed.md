@@ -1,17 +1,18 @@
 ---
-title: '[!DNL Admin]-inloggningen fungerar inte - den tillåtna maxstorleken för sessionen har överskridits'
-description: Lös problemet när du försöker logga in på  [!DNL Admin] panelen och formuläret uppdateras, och du kan inte logga in.
+title: '[!UICONTROL Admin]-inloggningen fungerar inte - den tillåtna maxstorleken för sessionen har överskridits'
+description: Lös problemet när du försöker logga in på panelen [!UICONTROL Admin] och formuläret uppdateras, och du kan inte logga in.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
+source-git-commit: fe4a48581bdfe24da5082b69fb26a8032bd77334
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# [!DNL Admin]-inloggningen fungerar inte - den tillåtna maxstorleken för sessionen har överskridits
+# [!UICONTROL Admin]-inloggningen fungerar inte - den tillåtna maxstorleken för sessionen har överskridits
 
-I den här artikeln finns en fix som du kan använda när du försöker logga in på panelen [!DNL Admin], men formuläret uppdateras bara och du kan inte logga in. Detta beror på att sessionsstorleken [!DNL Admin] har överskridits.
+I den här artikeln finns en fix som du kan använda när du försöker logga in på panelen [!UICONTROL Admin], men formuläret uppdateras bara och du kan inte logga in, eller så utför du några åtgärder på panelen [!UICONTROL Admin] och loggas ut automatiskt.
+Detta orsakas av att [!UICONTROL Admin] [!UICONTROL Session Size] har överskridits.
 
 ## Berörda versioner
 
@@ -20,7 +21,10 @@ I den här artikeln finns en fix som du kan använda när du försöker logga in
 
 ## Problem
 
-Det går inte att logga in på [!DNL Admin] eftersom formuläret fortsätter att läsas in.
+Du upplever något av följande symtom på [!UICONTROL Admin]:
+
+1. Det går inte att logga in på [!UICONTROL Admin] eftersom formuläret läses in igen.
+1. Du loggas ut automatiskt när du försöker utföra en åtgärd.
 
 ## Orsak
 
@@ -41,7 +45,7 @@ Om du ser dessa fel är lösningen:
 
 <u>Adobe Commerce i molninfrastruktur</u>:
 
-(Den här inställningen är bara tillgänglig i [!DNL Admin] när distributions-/åtgärdsläget är standard eller utvecklare. Det är dock bara distributionsläget Production som tillåts i molnmiljön.)
+(Den här inställningen är bara tillgänglig i [!UICONTROL Admin] när distributions-/åtgärdsläget är *standard* eller *utvecklare*. I molnmiljön är dock endast Production-distributionsläget tillåtet.)
 
 Om du vill öka det här värdet kör du det här kommandot i terminalen (SSH):
 
@@ -53,6 +57,6 @@ Du kan ange högre än *50000* beroende på den befintliga maxstorleken som rapp
 
 ## Relaterad läsning
 
-* [Sessionsstorlek](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) i Admin Systems Guide.
-* [Åtgärdsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) i konfigurationshandboken.
-* [Säkra anslutningar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) i Commerce on Cloud Infrastructure Guide.
+* [Sessionsstorlek](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) i handboken för administratörssystem
+* [Åtgärdsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) i konfigurationshandboken
+* [Säkra anslutningar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) i Commerce on Cloud Infrastructure Guide
