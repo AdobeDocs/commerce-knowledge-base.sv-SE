@@ -3,9 +3,9 @@ title: Blockera skadlig trafik för Adobe Commerce på snabbnivå
 description: I den här artikeln beskrivs de åtgärder du kan vidta för att blockera skadlig trafik när du misstänker att en DoS-attack inträffar i din Adobe Commerce på molninfrastrukturbutik.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: b58e182c64b3fad508145d9078619ddbe0e2b887
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -85,4 +85,5 @@ Arbeta med utvecklaren och/eller SEO-experten för att avgöra vilka användarag
 
 ## Relaterad läsning
 
-[Produktspecifika licensieringsvillkor för Adobe Commerce i molnet](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
+* [Produktspecifika licensieringsvillkor för Adobe Commerce i molnet](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
+* [Anpassad VCL för blockeringsbegäranden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) i handboken för Commerce on Cloud
