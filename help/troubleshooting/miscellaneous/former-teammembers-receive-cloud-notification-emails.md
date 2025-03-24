@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på e-postmeddelanden om 
 exl-id: b2535f66-8aec-4ddf-9a69-60879a0a1939
 feature: Cloud, Communications, Paas
 role: Developer
-source-git-commit: 0017d43e221ef3023630f714c34aa65b368e214f
+source-git-commit: bd199fac6d8f33491b9fa0f508b2bb52d56b46a5
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,7 @@ ht-degree: 0%
 # Före detta teammedlemmar får Adobe Commerce molnmeddelanden via e-post
 
 Den här artikeln innehåller en lösning för att ta bort användare från mottagarens lista med e-postmeddelanden som är:
+
 * Tidigare teammedlemmar som inte längre är kopplade till ditt projekt.
 * Aktuella teammedlemmar som inte ska ta emot meddelanden.
 
@@ -22,6 +23,10 @@ Den här artikeln innehåller en lösning för att ta bort användare från mott
 Ett meddelande om ett inspelningsfel eller ett viktigt problem med molnprojektet/molnmiljön har skickats till ditt team. Detta inkluderar medlemmar som kanske inte längre är kopplade till ditt projekt, t.ex. externa utvecklare/agentutvecklare eller systemintegratörer. Du vill att de här användarna ska sluta ta emot meddelanden.
 
 ## Lösning
+
+>[!NOTE]
+>
+>Om du är en extern utvecklare/agentutvecklare eller systemintegratör och inte längre är kopplad till projektet, måste du kontakta projektägaren eller projektadministratören för att få hjälp.
 
 Det finns två sätt att stoppa meddelandena genom att ta bort användare från projektet:
 
@@ -32,5 +37,5 @@ Om detta redan har gjorts och e-postmeddelandena fortfarande omfattar dessa anv�
 
 ## Relaterad läsning
 
-* [Visa en användares projektroll](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#view-a-user’s-project-role) i guiden för Commerce om molninfrastruktur.
+* [Visa en användares projektroll](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#view-a-user&#39;s-project-role) i guiden för Commerce om molninfrastruktur.
 * [Så här inkluderar du en teammedlem i supportmeddelanden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html) i Commerce KB.
