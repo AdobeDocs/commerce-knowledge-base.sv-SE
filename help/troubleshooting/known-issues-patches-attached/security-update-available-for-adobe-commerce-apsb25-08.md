@@ -5,9 +5,9 @@ description: Använd en Isolated-korrigering för att åtgärda [!DNL critical, 
 feature: Compliance, Security
 role: Developer
 exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
-source-git-commit: d669c097767b5855c6bd747a0ab11b3520f405a0
+source-git-commit: aba9548c0b5a06ffd0cddce630e53e5664bb9aac
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ Adobe Commerce i molninfrastrukturen, Adobe Commerce lokalt och Magento Open Sou
 * 2.4.4-p11 och tidigare versioner
 
 ## Lösning för Adobe Commerce i molnet, Adobe Commerce lokalt och Magento Open Source
+
+>[!NOTE]
+>
+>Problemet har åtgärdats med den [senaste molnuppdateringen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Om du försöker att använda den isolerade korrigeringen när korrigeringen redan finns från molnuppdateringen kan installationsfel uppstå.
 
 För att åtgärda säkerhetsluckan för de berörda produkterna och versionerna måste du tillämpa den isolerade korrigeringen [!DNL CVE-2025-24434], beroende på vilken version av Adobe Commerce/Magento Open Source du har.
 
@@ -97,4 +101,4 @@ Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats, kansk
 Säkerhetsuppdateringar för Adobe Commerce:
 
 * [Adobe säkerhetsbulletin ([!DNL APSB25-08])](https://helpx.adobe.com/security/products/magento/apsb25-08.html)
-* [De senaste säkerhetsuppdateringarna för Adobe Commerce)](https://helpx.adobe.com/security/products/magento.html)
+* [De senaste säkerhetsuppdateringarna för Adobe Commerce](https://helpx.adobe.com/security/products/magento.html)
