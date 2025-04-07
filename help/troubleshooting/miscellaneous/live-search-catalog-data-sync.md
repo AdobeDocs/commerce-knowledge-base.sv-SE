@@ -4,7 +4,7 @@ description: Den här artikeln innehåller lösningar på Adobe Commerce-problem
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 54f6fb60adca6f639cd315b3d070c7b93aa45bab
+source-git-commit: b0d4b2e541c42095d6d09b91ba6f390064c89af6
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -146,7 +146,7 @@ bin/magento saas:resync --feed productattributes
 Kör följande kommandon för att synkronisera om flödena:
 
 ```
-bin/magento saas:resync --feed productattributes --cleaup-feed
+bin/magento saas:resync --feed productattributes --cleanup-feed
 bin/magento saas:resync --feed products --cleanup-feed
 bin/magento saas:resync --feed scopesCustomerGroup --cleanup-feed
 bin/magento saas:resync --feed scopesWebsite --cleanup-feed
