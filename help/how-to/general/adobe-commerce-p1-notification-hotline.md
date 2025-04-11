@@ -3,7 +3,7 @@ title: Adobe Commerce P1 notification hotline
 description: I den här artikeln finns snabbradsnummer för P1-meddelanden för Adobe Commerce som kan användas för att rapportera ett P1-ärende och en förklaring av vilken information som ska tillhandahållas.
 feature: Communications
 exl-id: 48c4fe93-676e-4c69-a96c-8fb3e6872973
-source-git-commit: c5e94c6407394cd905ea470628d28db2c2c6c0ed
+source-git-commit: 8c0c128f2469086c44dcea0e9edc87f934578a69
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -16,7 +16,7 @@ I den här artikeln finns snabbradsnummer för P1-meddelanden för Adobe Commerc
 
 ## P1-incidentdefinition
 
-Så som definieras i [Adobe Commerce Support Services-villkor](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf):&quot;En P1-incident är en katastrofal produktionsincident i tjänsten som allvarligt påverkar kundens webbplats, som får webbplatsen att sluta hantera eller acceptera beställningar, eller på grund av vilken kundens webbplats är helt ur funktion eller inte fungerar, eller som leder till en förlust av produktionsdata och ingen lösning finns. P1-incidenter måste rapporteras på Adobe avgiftsfria P1-telefonnummer för att underlätta upplösningen. Adobe kommer att fortsätta att arbeta, med lämplig eskalering till den högsta ledningen, för att tillhandahålla en lösning för ett P1-ärende så snart det är kommersiellt rimligt.&quot;
+Så som definieras i [Adobe Commerce Support Services-villkor](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf):&quot;En P1-incident är en katastrofal produktionsincident i tjänsten som allvarligt påverkar kundens webbplats, som får webbplatsen att sluta hantera eller acceptera beställningar, eller på grund av vilken kundens webbplats är helt ur funktion eller inte fungerar, eller som leder till en förlust av produktionsdata och ingen lösning finns. P1-incidenter måste rapporteras på Adobe avgiftsfria P1-telefonnummer för att lösningen ska gå snabbare. Adobe kommer att fortsätta att arbeta, med lämplig eskalering till högsta ledningen, för att ta fram en lösning för ett P1-ärende så snart det är kommersiellt rimligt.&quot;
 
 ## P1-meddelande - telefonprinciper för hotline
 
@@ -40,7 +40,7 @@ Obs! Om du av någon anledning ringer röstbrevlådan, lämna dina uppgifter: Fu
    * Italien: (+39) 0269 682 818 (På första menyn trycker du på 6 för snabblinjen Adobe Commerce P1)
    * Sverige: (+46) 0200 810 330 (På första menyn trycker du på 6 för Adobe Commerce P1 hotline)
 * APAC
-   * Australien: (+61) 1 800 358 683 (På första menyn trycker du på 6 för Adobe Commerce P1 hotline)
+   * Australien: (+61) 1 800 358 683 (På första menyn trycker du på 3 för Adobe Commerce P1 hotline)
    * Singapore: (+65) 1 800 818 5220 (På första menyn trycker du på 6 för Adobe Commerce P1 hotline)
    * Filippinerna (vägtull): (+63) 1 800 1441 0660 (På första menyn trycker du på 6 för Adobe Commerce P1 hotline)
    * Nya Zeeland (avgift): (+64) 050 861 4264 (tryck 6 på snabblinjen Adobe Commerce P1 på första menyn)
