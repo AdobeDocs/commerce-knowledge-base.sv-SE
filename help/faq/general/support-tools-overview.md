@@ -2,9 +2,9 @@
 title: Adobe Commerce supportverktyg i korthet
 description: Adobe Commerce erbjuder en mängd supportverktyg som hjälper dig att förbättra e-handelsupplevelsen.
 exl-id: 5364ff2b-07ea-4b42-8756-adec85f4efca
-source-git-commit: f2e4dbeeade5006e253beba9ff808e6571647ef4
+source-git-commit: 6ccebaec7f0a228b646737a2f48fe6d087ea2861
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Om du vill veta mer om hur du använder [!DNL Observation for Adobe Commerce] i 
 
 Hanterade aviseringar för Adobe Commerce om molninfrastruktur genererar färdiga [!DNL New Relic]-aviseringar som innehåller anvisningar om hur du ska felsöka nästa steg.
 
-Vi har konfigurerat viktiga instrumentpaneler och varningar som hjälper dig att förstå när din webbplats når kritisk lagring och Apdex-nivåer (användarnas tillfredsställelse med svarstid för program och tjänster). Detta kan hjälpa dig att vidta åtgärder innan du märker att svarstiderna tar lång tid eller att ett driftstopp inträffar. Du kan felsöka varningarna med artiklarna som finns i vår kunskapsbas för support. Klicka på [Hanterade aviseringar för Adobe Commerce](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) om du vill veta mer om hanterade aviseringar.
+Vi har konfigurerat viktiga instrumentpaneler och varningar som hjälper dig att förstå när din webbplats når kritisk lagring och Apdex-nivåer (användarnas tillfredsställelse med svarstid för program och tjänster). Detta kan hjälpa dig att vidta åtgärder innan du märker att svarstiderna tar lång tid eller att ett driftstopp inträffar. Du kan felsöka varningarna med artiklarna som finns i vår kunskapsbas för support. Klicka på [Hanterade aviseringar för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) om du vill veta mer om hanterade aviseringar.
 
 
 ## [!DNL Site-Wide Analysis Tool] - få prestandarekommendationer baserat på webbplatsgenomsökning {#site-wide-analysis-tool}
