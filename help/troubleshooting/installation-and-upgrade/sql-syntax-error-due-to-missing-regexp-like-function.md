@@ -3,7 +3,8 @@ title: Uppgradering till B2B 1.5.2 misslyckas med SQL-syntaxfel eftersom funktio
 description: I den här artikeln finns en snabbkorrigering för det problem där ett SQL-syntaxfel inträffar på grund av att funktionen REGEXP_LIKE saknas vid försök att uppdatera tabellen company_structure.
 feature: B2B, Upgrade
 role: Admin, Developer
-source-git-commit: ec1f0e06c0f2a59d4b78eba69bf02798e6bf66f3
+exl-id: c5fe316c-99e3-482e-80b5-25aaae371230
+source-git-commit: f83b82a95d4592252c8923720e90733115c52d87
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
@@ -68,7 +69,7 @@ Följ stegen nedan för Adobe Commerce om Cloud-infrastrukturer:
 
    ```
    composer require magento/magento-cloud-patches:1.1.5 --no-update
-   composer updatemagento/magento-cloud-patches
+   composer update magento/magento-cloud-patches
    ```
 
 1. Genomför och skicka ändringarna för att initiera omdistributionen. Mer information finns i [Använda korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) i handboken för Adobe Commerce om molnet.
