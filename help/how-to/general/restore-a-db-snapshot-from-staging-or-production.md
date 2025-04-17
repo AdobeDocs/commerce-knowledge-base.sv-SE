@@ -2,9 +2,9 @@
 title: Återställ en DB-ögonblicksbild från mellanlagring eller produktion
 description: I den här artikeln beskrivs hur du återställer en DB-ögonblicksbild från Staging eller Production på Adobe Commerce i molninfrastrukturen.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: c8cd2bf97681527a32a403a413c5fa823d07abed
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,12 @@ Stegen är:
 
    ```sql
    drop database <cluster ID_stg>;
+   ```
+
+1. När du har släppt databasen återskapar du den:
+
+   ```mysql
+   create database [database_name];
    ```
 
 1. Ange följande kommando för att importera [!DNL snapshot]:
