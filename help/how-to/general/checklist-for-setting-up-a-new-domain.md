@@ -3,16 +3,16 @@ title: Checklista för att konfigurera en ny  [!DNL domain]
 description: Det här är en checklista över hur du konfigurerar en ny  [!DNL domain]  i Adobe Commerce för molninfrastruktur.
 exl-id: bfe0582d-2c6d-4814-908f-dfd8c898bef7
 feature: Cache
-source-git-commit: 625ed2c7ab79f7bca9a979903e97c44c875e607c
+source-git-commit: f7b246088e3580922bd3389b2992e5dd8f97ff7a
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
 # Checklista för att konfigurera en ny [!DNL domain]
 
-Det här är en checklista över hur du konfigurerar en ny [!DNL domain] i Adobe Commerce för molninfrastruktur. Det gäller oavsett om du försöker lägga till en ny domän eller ersätta den aktuella domänen med en ny.
+Den här checklistan förklarar hur du konfigurerar en ny [!DNL domain] i Adobe Commerce för molninfrastruktur. Det gäller oavsett om du lägger till en ny domän eller ersätter den aktuella domänen. Det gäller också efter hämtning av en ny mellanlagringsmiljö (se steg 4).
 
 ## Berörda produkter och versioner
 
@@ -65,3 +65,4 @@ Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://www.adob
 ## Relaterad läsning
 
 * [Konfigurera flera webbplatser eller butiker: Lägg till ny [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains) i användarhandboken.
+* [Webbplatsen är inte tillgänglig på grund av ursprungsinsvepning](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking)
