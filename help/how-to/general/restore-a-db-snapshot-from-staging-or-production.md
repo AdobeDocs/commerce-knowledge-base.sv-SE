@@ -2,9 +2,9 @@
 title: Återställ en DB-ögonblicksbild från mellanlagring eller produktion
 description: I den här artikeln beskrivs hur du återställer en DB-ögonblicksbild från Staging eller Production på Adobe Commerce i molninfrastrukturen.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: c8cd2bf97681527a32a403a413c5fa823d07abed
+source-git-commit: 20aaeacc4f71725c005e7bec3b9d6ac3aa844170
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -160,3 +160,4 @@ I vår utvecklardokumentation:
 
 * [Importera kod: Importera databasen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
 * [[!DNL Snapshots] och [!DNL backup] hantering: [!DNL Dump] din databas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Säkerhetskopiera (ögonblicksbild) i molnet: Vanliga frågor ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
