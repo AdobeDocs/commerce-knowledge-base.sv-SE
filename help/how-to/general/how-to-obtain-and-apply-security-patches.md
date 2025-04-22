@@ -2,14 +2,17 @@
 title: Så här hämtar och använder du [!UICONTROL security patch]
 description: Den här artikeln innehåller anvisningar om hur du hämtar och använder en [!UICONTROL security patch] som har släppts, men det finns inga instruktioner.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: 06bc239cb5b1a894d2a60236a9b32b2b0c4eba80
+source-git-commit: 43c8308c6539c53f60fb6457047898a2edd46532
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
 
 # Så här hämtar och använder du en [!UICONTROL security patch]
+
+>[!NOTE]
+>Om du har en lokal installation och inte använder versionskontrollsystem som [!DNL CVS] eller [!DNL GitHub] för att hantera koden, kan din webbvärd kanske hjälpa dig med att tillämpa korrigeringen. Du kan kontakta dem och få support
 
 Den här artikeln innehåller anvisningar om hur du hämtar och använder en [!UICONTROL security patch] som har släppts, men det finns inga instruktioner.
 
@@ -17,18 +20,17 @@ Den här artikeln innehåller anvisningar om hur du hämtar och använder en [!U
 
 Adobe Commerce On-Premise och Cloud - alla versioner
 
+
 ## Orsak
 
-De flesta [!UICONTROL Security Patches] släpps utan någon fysisk fil eller snabbkorrigering.
+De flesta [!UICONTROL Security Patches] släpps utan någon isolerad korrigering eller snabbkorrigering och måste uppgraderas till [!UICONTROL Security Patch]-versionen.
 
 ## Lösning
 
 
 ### Fall I:
 
-Om en fysisk korrigeringsfil/snabbkorrigering anges i versionsinformationen:
-
-* Hämta filen från hämtningsavsnittet för [https://account.magento.com](https://account.magento.com/downloads/view/). (Delade åtkomstanvändare måste först tilldelas hämtningsbehörighet av kontoägaren/licenshavaren)
+* Om en isolerad korrigeringsfil/snabbkorrigering anges i [Versionsinformation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) hämtar du filen från hämtningsavsnittet på [https://account.magento.com](https://account.magento.com/downloads/view/). Användare med delad åtkomst måste först få hämtningsbehörighet av kontoägaren/licenshavaren.
 
 **Caveats:**
 
@@ -42,7 +44,9 @@ Om du inte har Extended Support (Utökad support) kan du begära Support för at
 
 ### Fall II:
 
-Om en fysisk korrigeringsfil/snabbkorrigering inte omnämns i versionsinformationen:
+Isolerade korrigeringsfiler tillhandahålls endast i undantagsfall och är inte den rekommenderade formen för implementering av säkerhetskorrigeringar.
+
+Om en isolerad korrigeringsfil/snabbkorrigering inte omnämns i versionsinformationen:
 
 * **Cloud:**
 
@@ -51,8 +55,8 @@ Om en fysisk korrigeringsfil/snabbkorrigering inte omnämns i versionsinformatio
 
 * **Cloud eller lokal:**
 
-* Om det inte finns någon fysisk korrigeringsfil/snabbkorrigering kan du [uppgradera Adobe Commerce-versionen i molnet](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X till den senaste korrigeringsversionen, 2.4.X-pY.
-* Om det inte finns någon fysisk korrigeringsfil/snabbkorrigering kan du [uppgradera Adobe Commerce-versionen On-Premise](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X till den senaste korrigeringsversionen, 2.4.X-pY.
+* Om det inte finns någon isolerad korrigeringsfil/snabbkorrigering kan du [uppgradera Adobe Commerce-versionen i molnet](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X till den senaste korrigeringsversionen, 2.4.X-pY.
+* Om det inte finns någon isolerad korrigeringsfil/snabbkorrigering kan du [uppgradera Adobe Commerce-versionen On-Premise](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X till den senaste korrigeringsversionen, 2.4.X-pY.
 
 ## Relaterad läsning
 
