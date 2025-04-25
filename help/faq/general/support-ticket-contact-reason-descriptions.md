@@ -2,7 +2,7 @@
 title: Orsaksbeskrivningar för supportärende
 description: I den här artikeln listas alternativen för supportanmälan **Orsak till problem** och detaljerade beskrivningar av varje alternativ.
 exl-id: 678505fe-8c8d-4963-8dee-eec0a61a2daf
-source-git-commit: d3523be967f16a3e65025917fa6ac65097214100
+source-git-commit: e1f13098e3e0894b1d3acf9ad38fb49f6a5a54f6
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -49,7 +49,7 @@ I den här artikeln listas alternativen för supportbiljetten **Orsak till probl
   </tr>
   <tr>
     <td>Infrastrukturincident</td>
-    <td>Du behöver hjälp med din Adobe Commerce om molninfrastruktur, som fasta distributioner, [!DNL New Relic]-åtkomst, SSH/sFTP-åtkomst, tjänstuppgraderingar ([!DNL OpenSearch], [!DNL MariaDB]/[!DNL MySQL], [!DNL Redis], [!DNL RabbitMQ], men inte PHP), SSL-certifikat osv. **(Gäller inte [!DNL Live Search])**</td>
+    <td>Du behöver hjälp med din Adobe Commerce om molninfrastruktur, som fasta distributioner, [!DNL New Relic]-åtkomst, SSH/sFTP-åtkomst, tjänstuppgraderingar ([!DNL OpenSearch], [!DNL MariaDB]/[!DNL MySQL], [!DNL Redis], [!DNL RabbitMQ], men inte PHP), SSL-certifikat osv.<strong> (Gäller inte [!DNL Live Search])</strong>.</td>
   </tr>  
 </tbody>
 </table>
