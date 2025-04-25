@@ -3,7 +3,7 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 46c19ec1185aa176beff9e5039a324a1f11b9aa1
+source-git-commit: 145fc1dfc197cde39d55ceac4d02ecee6c641459
 workflow-type: tm+mt
 source-wordcount: '2966'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Så här skickar du en ny supportanmälan på din Adobe Commerce-kontosida:
 
 1. Adobe Experience Leagas supportsida laddas för er.
 1. Välj **[!UICONTROL Open Ticket]** på den vänstra menyn.
-1. Fyll i fälten.
+1. Fyll i [fälten](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions).
 1. Klicka på **Skicka**.
 
 #### *Verifiera din e-postadress*-fel på Adobe Commerce-kontosida {#verify-email-address-error}
@@ -279,8 +279,7 @@ Så här skickar du en ny supportanmälan via molnkonsolen:
 1. Välj **[!UICONTROL Support]** på användarmenyn.
 1. Sidan **[!UICONTROL My Tickets]** visas.
 1. Klicka på **[!UICONTROL Submit a ticket]** i det övre högra hörnet.
-1. Fyll i fälten.
-1. Klicka på **Skicka**.
+1. Fyll i [fälten](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions).
 1. Klicka på **[!UICONTROL Submit]**.
 
 ### Adobe Commerce P1 hotline {#P1-hotline}
