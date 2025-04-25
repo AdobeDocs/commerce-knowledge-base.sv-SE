@@ -1,11 +1,11 @@
 ---
-title: 'Säkerhetskopiera (ögonblicksbild) i molnet: Vanliga frågor'
+title: 'Säkerhetskopiering (ögonblicksbild) i molnet: Vanliga frågor och svar'
 description: I den här artikeln beskrivs grunderna för säkerhetskopiering av miljöer med ögonblicksbilder av Adobe Commerce om molninfrastruktur.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
+source-git-commit: cfaa7043eed9cc5369f5317b10609d97a91d5861
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ I den här artikeln beskrivs hur du säkerhetskopierar miljöer med ögonblicksb
 ### Mellanlagrings- och produktionsmiljöer
 
 * Manuella ögonblicksbilder är inte tillgängliga för miljöer med mellanlagring och produktion i Pro-planen.
-* Automatiska ögonblicksbilder skapas **oavsett webbplatsens aktiva läge** (ögonblicksbilder skapas också för webbplatser som inte har startats ännu). Automatiska säkerhetskopior är inte tillgängliga för allmänheten eftersom de lagras i ett separat system. Du kan [skicka en Adobe Commerce Support-biljett](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) för att begära en särskild säkerhetskopia eller för att återställa från en viss säkerhetskopia med datum, tid och tidszon i biljetten. Observera också att stödet inte utför återställning eller återställning av databasen åt dig. De hämtar ögonblicksbilden, men du måste återställa databasen själv.
+* Automatiska ögonblicksbilder skapas **oavsett webbplatsens aktiva läge** (ögonblicksbilder skapas också för webbplatser som inte har startats ännu). Automatiska säkerhetskopior är inte tillgängliga för allmänheten eftersom de lagras i ett separat system.
+Du kan [skicka en Adobe Commerce Support-biljett](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) för att begära en särskild säkerhetskopia eller för att återställa från en viss säkerhetskopia med datum, tid och tidszon i biljetten. Supporten genererar inga manuella ögonblicksbilder vid behov.
+Observera också att stödet inte utför återställning eller återställning av databasen åt dig. De hämtar ögonblicksbilden, men du måste återställa databasen själv.
 * Säkerhetskopiorna skapas med **krypterade ögonblicksbilder av Amazon Web Services Elastic Block Store (AWS EBS)**.
 * Miljöögonblicksbilder innehåller hela systemet (filsystemet och databasen).
 * Bevarandetiden för automatiska ögonblicksbilder **skiljer sig åt** och följer [schemat](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=en#backup-and-disaster-recovery).
