@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar på Adobe Commerce-problem
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: b0d4b2e541c42095d6d09b91ba6f390064c89af6
+source-git-commit: fec99ebd6b03f2dc1b70c0ea388935dc5e60ad57
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -136,14 +136,7 @@ Om du ser rätt data i `cde_product_attributes_feed`:
 
 ### Synkronisera efter ändring av API-konfiguration
 
-(Känt fel) Om du har ändrat din API-konfiguration, vilket leder till en ändring av ditt Data Space-ID och upptäcker att katalogändringarna inte längre synkroniseras, kör du följande kommandon:
-
-```bash
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed productattributes
-```
-
-Kör följande kommandon för att synkronisera om flödena:
+(Känt fel) Om du har ändrat din API-konfiguration, vilket leder till en ändring av ditt Data Space-ID och upptäcker att katalogändringarna inte längre synkroniseras, kör du följande kommandon för att synkronisera om flödena:
 
 ```
 bin/magento saas:resync --feed productattributes --cleanup-feed
@@ -158,6 +151,9 @@ bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
 [Skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support) om du vill begära omindexering av Live Search-indexet. I felbeskrivningen tar du med ditt ID för datautrymme/miljö som finns på administratörspanelen under **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**.
+
+>[!IMPORTANT]
+>Använd bara alternativet `--cleanup-feed` om du har uppdaterat API-konfigurationen, eller om du kör kommandot `saas:resync` med alternativet [ - torr](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run). Om du använder alternativet `--cleanup-feed` i andra fall uppstår problem med förlorade data och datasynkronisering.
 
 ## Relaterad läsning
 
