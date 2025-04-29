@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 1f9b11e38ed11fc022a5afa9132130ea2a266616
+source-git-commit: a4a913c9159e9267ca20da99b9d690c85667c7db
 workflow-type: tm+mt
-source-wordcount: '9326'
+source-wordcount: '9340'
 ht-degree: 0%
 
 ---
@@ -945,6 +945,7 @@ ht-degree: 0%
       * [[!DNL JQuery UI] säkerhetslucka [!DNL CVE-2022-31160] åtgärda för version 2.4.4, 2.4.5 och 2.4.6](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
       * [Migrering av [!DNL FedEx]-leveransmetodintegrering från SOAP till RESTful API](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
       * [Det högsta antalet cookies som tillåts i Adobe Commerce skulle överskridas](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
+      * [Ökad körningstid för alla asynkrona webbslutpunkter efter APSB25-08-säkerhetsuppdatering](/help/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch.md)
    * Elasticsearch {#elasticsearch}
       * [Återgår till  [!DNL Elasticsearch7] när sökmotorn är inställd på  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Elasticsearch-problem efter uppgraderingen av Adobe Commerce molninfrastruktur 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
