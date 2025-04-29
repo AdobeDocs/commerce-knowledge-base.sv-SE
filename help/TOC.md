@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 41948c702d5c4e37847ab18ca2a93798e70a8e98
+source-git-commit: 1f9b11e38ed11fc022a5afa9132130ea2a266616
 workflow-type: tm+mt
-source-wordcount: '9315'
+source-wordcount: '9326'
 ht-degree: 0%
 
 ---
@@ -708,6 +708,7 @@ ht-degree: 0%
       * [Felsöka fel i verktyg för uppgraderingskompatibilitet](/help/troubleshooting/installation-and-upgrade/uct-segmentation-fault-error.md)
       * [Slut på minne under installation eller uppgradering](/help/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade.md)
       * [Uppgradering till B2B 1.5.2 misslyckas med SQL-syntaxfel eftersom funktionen REGEXP_LIKE saknas](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
+      * [Prestandaproblem i moduluppgraderingen Magento_Company efter uppdatering av B2B 1.5.2](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
    * Webbplatsen är nere eller svarar inte {#site-down-or-unresponsive}
       * [Webbplatsen är inte tillgänglig på grund av ursprungsinsvepning](/help/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking.md)
       * [503-fel vid åtkomst till Adobe Commerce i webbläsaren](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
