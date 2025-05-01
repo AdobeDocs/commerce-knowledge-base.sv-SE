@@ -2,7 +2,7 @@
 title: Så här hämtar och använder du [!UICONTROL security patch]
 description: Den här artikeln innehåller anvisningar om hur du hämtar och använder en [!UICONTROL security patch] som har släppts, men det finns inga instruktioner.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: 43c8308c6539c53f60fb6457047898a2edd46532
+source-git-commit: 3c7234b52e5e4465d95c95345e1c070c28600dfb
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 # Så här hämtar och använder du en [!UICONTROL security patch]
 
 >[!NOTE]
->Om du har en lokal installation och inte använder versionskontrollsystem som [!DNL CVS] eller [!DNL GitHub] för att hantera koden, kan din webbvärd kanske hjälpa dig med att tillämpa korrigeringen. Du kan kontakta dem och få support
+>Om du har en lokal installation och inte använder versionskontrollsystem som [!DNL CVS] eller [!DNL GitHub] för att hantera koden, kan din webbvärd kanske hjälpa dig med att tillämpa korrigeringen. Kontakta dem gärna om du behöver hjälp.
 
 Den här artikeln innehåller anvisningar om hur du hämtar och använder en [!UICONTROL security patch] som har släppts, men det finns inga instruktioner.
 
