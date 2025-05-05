@@ -36,7 +36,7 @@ Dessa sidor är:
 
 Cacheable och uncacheable är termer som används för att ange om en sida ska cachelagras eller inte. Som standard är alla sidor tillgängliga. Om ett block i en layout däremot inte är tillgängligt är hela sidan inte tillgänglig.
 
-Skärmbilden nedan visar ett block med inställningen `cacheable="false"` ** ** som skapar en otillgänglig sida.
+Skärmbilden nedan visar ett block med inställningen `cacheable="false"` **&#x200B; ** som skapar en otillgänglig sida.
 
 ![non_cacheable_kb.png](assets/non_cacheable_kb.png)
 

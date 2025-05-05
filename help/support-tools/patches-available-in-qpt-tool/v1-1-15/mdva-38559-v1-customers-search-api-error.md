@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-38559: /V1/customers/search API returns error'
-description: MDVA-38559-korrigeringen åtgärdar ett problem där "/V1/customers/search`-API:t returnerar ett fel för kunder som har fler än en prenumeration. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 är installerat. Patch-ID:t är MDVA-38559. Observera att problemet har åtgärdats i Adobe Commerce 2.4.3.
+description: MDVA-38559-korrigeringen åtgärdar ett problem där "/V1/customers/search&grave;-API:t returnerar ett fel för kunder som har fler än en prenumeration. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 är installerat. Patch-ID:t är MDVA-38559. Observera att problemet har åtgärdats i Adobe Commerce 2.4.3.
 exl-id: 434fe78c-c384-4fa8-b26a-cb00007e490e
 feature: REST, Search
 role: Admin

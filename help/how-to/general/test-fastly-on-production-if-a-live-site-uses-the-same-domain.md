@@ -1,6 +1,6 @@
 ---
 title: Testa snabbt i produktionen om en Live Site använder samma domän
-description: Om du har en aktiv webbplats som är igång i din produktionsdomän (`example.com`) och du behöver testa din nya butik på Adobe Commerce i molninfrastrukturens produktionsmiljö med Fastly CDN aktiverat, rekommenderar vi att du använder underdomänen (som "prod.example.com"), som tidigare har lagt till den i Fastly, för alla testaktiviteter före start. I den här artikeln beskrivs detaljerna och här finns användbara länkar till Adobe Commerce dokumentationsresurser.
+description: Om du har en aktiv webbplats som är igång i din produktionsdomän (&grave;example.com&grave;) och du behöver testa din nya butik på Adobe Commerce i molninfrastrukturens produktionsmiljö med Fastly CDN aktiverat, rekommenderar vi att du använder underdomänen (som "prod.example.com"), som tidigare har lagt till den i Fastly, för alla testaktiviteter före start. I den här artikeln beskrivs detaljerna och här finns användbara länkar till Adobe Commerce dokumentationsresurser.
 exl-id: bc9d11c8-ce47-461d-b5b8-c03494bc4ceb
 feature: Cache
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8

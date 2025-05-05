@@ -36,9 +36,9 @@ Distributionen är blockerad och följande felmeddelande visas i loggen:
 <pre>Distribuerar program Verifierar konfiguration E: Fel vid verifiering av route.yaml.
 Följande domäner har konfigurerats för ditt kluster, men inga vägar har definierats i filen route.yaml:
 
-- store1.example.com
-- store2.example.com
-- test-store.example.com
+&#x200B;- store1.example.com
+&#x200B;- store2.example.com
+&#x200B;- test-store.example.com
 
 Med din nuvarande konfiguration route.yaml
   dessa domäner skulle INTE betjänas!

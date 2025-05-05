@@ -65,7 +65,7 @@ Om du vill återställa en befintlig ögonblicksbild (i den miljö som stöds: i
 
 Databassäkerhetskopiering är en del av en molnögonblicksbild:
 
->>
+&#x200B;>>
 En ögonblicksbild är en fullständig säkerhetskopia av en miljö som innehåller alla beständiga data från alla tjänster som körs (till exempel **din MySQL-databas**, Redis och så vidare) och alla filer som lagras på de monterade volymerna.
 
 >[!NOTE]

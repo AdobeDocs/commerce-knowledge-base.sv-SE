@@ -37,7 +37,8 @@ Knappen **[!UICONTROL Continue to Checkout]** är nedtonad även om delsumman ä
 
 1. Gå till Adobe Commerce Admin > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** och ange följande:
    * [!UICONTROL Enable]: *[!UICONTROL Yes]*
-   * 
+   * &#x200B;
+
      [!UICONTROL Minimum Amount]: *2*
 
 1. Skapa en [!UICONTROL Cart Price Rule].
@@ -45,7 +46,8 @@ Knappen **[!UICONTROL Continue to Checkout]** är nedtonad även om delsumman ä
    * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
    * [!UICONTROL Actions]:
       * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
-      * 
+      * &#x200B;
+
         [!UICONTROL Discount Amount]: *92*
       * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. Skapa en produkt till priset av 25 USD.

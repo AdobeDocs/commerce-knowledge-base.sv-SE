@@ -1,6 +1,6 @@
 ---
-title: "MDVA-44660: Groave-accent character [`] cannot be used for customer's name"
-description: Korrigeringen MDVA-44660 åtgärdar ett problem där den grav accenten (`) inte kan användas som kundens namn. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 är installerat. Korrigerings-ID är MDVA-44660. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
+title: "MDVA-44660: Groave-accent character [&grave;] cannot be used for customer's name"
+description: Korrigeringen MDVA-44660 åtgärdar ett problem där den grav accenten (&grave;) inte kan användas som kundens namn. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 är installerat. Korrigerings-ID är MDVA-44660. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 696f2690-2af5-4770-a4a8-c88c423c6c16
 feature: Variables
 role: Admin

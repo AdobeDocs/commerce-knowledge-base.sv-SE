@@ -57,10 +57,10 @@ Kunddata uppdateras.
 Du får följande fel:
 
     &quot;json
-    {
+    &lbrace;
     &quot;message&quot;: &quot;En kund med samma e-postadress finns redan på en associerad webbplats.&quot;,
     &quot;trace&quot;: ...
-    }
+    &rbrace;
     &quot;
 
 ## Tillämpa korrigeringen

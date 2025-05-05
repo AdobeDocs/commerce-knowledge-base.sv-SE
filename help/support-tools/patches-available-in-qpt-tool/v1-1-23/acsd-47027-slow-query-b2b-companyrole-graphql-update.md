@@ -44,43 +44,43 @@ Installera B2B-modulen.
 1. Skicka nu begäran [!DNL GraphQL] nedan (id är det [!UICONTROL base64]-kodade roll-ID:t):
 
    <pre><code>
-   mutation {
+   mutation &lbrace;
    updateCompanyRole(
-      input: {
+      input: &lbrace;
          id: "Mg=="
-         permissions: [
+         permissions: &lbrack;
          "Magento_Company::view"
          "Magento_Company::view_account"
          "Magento_Company::user_management"
          "Magento_Company::roles_view"
-        ]
-      }
-    ) {
-      role {
+        &rbrack;
+      &rbrace;
+    ) &lbrace;
+      role &lbrace;
          id
 
          name
 
-         permissions {
+         permissions &lbrace;
          id
 
          text
 
-         children {
+         children &lbrace;
             id
 
             text
 
-            children {
+            children &lbrace;
                id
 
                text
-             }
-           }
-         }
-       }
-     }
-   }
+             &rbrace;
+           &rbrace;
+         &rbrace;
+       &rbrace;
+     &rbrace;
+   &rbrace;
    </code></pre>
 
 1. Kontrollera frågeloggen.

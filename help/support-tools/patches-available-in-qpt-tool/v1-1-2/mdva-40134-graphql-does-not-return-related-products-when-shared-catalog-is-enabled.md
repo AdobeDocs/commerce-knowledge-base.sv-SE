@@ -46,16 +46,16 @@ Instansen måste vara ren med endast exempeldata.
 1. Under **Relaterade produkter** lägger du till de två Duffle-påsarna (ID 7 och 13).
 1. Skicka en **Post**-förfrågan:
 
-<pre>{
-  products(filter: {sku: {eq: "24-MB01"}}, sort: {name: ASC}) {
-    items {
-      related_products {
+<pre>&lbrace;
+  products(filter: {sku: {eq: "24-MB01"}}, sort: {name: ASC}) &lbrace;
+    items &lbrace;
+      related_products &lbrace;
         uid
         name
-      }
-    }
-  }
-}</pre>
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 <u>Förväntade resultat</u>:
 
@@ -65,7 +65,7 @@ Samhörande produkter visas i GraphQL svar.
 
 Användarna får följande fel:
 
-<pre>Returvärdet för Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId() måste vara av typen int, null returnerade {"exception":"[object] (GraphQL\\Error\\Error(code: 0): Returvärdet för Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId() måste vara av typen int, null returnerat </pre>
+<pre>Returvärdet för Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId() måste vara av typen int, null returnerade &lbrace;"exception":"[object] (GraphQL\\Error\\Error(code: 0): Returvärdet för Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId() måste vara av typen int, null returnerat </pre>
 
 ## Tillämpa korrigeringen
 

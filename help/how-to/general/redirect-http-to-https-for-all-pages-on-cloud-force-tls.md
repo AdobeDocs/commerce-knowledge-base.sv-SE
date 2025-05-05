@@ -47,7 +47,7 @@ TLS (Transport Layer Security) är ett protokoll för säkra HTTP-anslutningar s
 
 Med Fast&#39;s Force TLS-funktionen kan du tvinga alla inkommande okrypterade förfrågningar för dina webbplatssidor till TLS.
 
->>
+&#x200B;>>
 Det fungerar genom att returnera ett *301 Flyttat permanent* -svar på en okrypterad begäran, som dirigeras om till TLS-motsvarigheten. Om du till exempel gör en begäran för *http://www.example.com/foo.jpeg* dirigeras den om till *https://www.example.com/foo.jpeg*.
 
 [Skydda kommunikationen](https://docs.fastly.com/guides/securing-communications/) (snabb dokumentation)

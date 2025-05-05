@@ -132,7 +132,7 @@ b. NEJ - Granska [Hantera diskutrymme](https://experienceleague.adobe.com/en/doc
 
 +++**_filen kunde inte skrivas med varning _?**
 
-a. JA - Öka diskvärdet i .magento.app.yaml](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) och återdistribuera. [ Om detta inte fungerar skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+a. JA - Öka diskvärdet i .magento.app.yaml[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) och återdistribuera.  Om detta inte fungerar skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NEJ - Fortsätt med [steg 12](#step-12).
 
 +++

@@ -38,7 +38,7 @@ Katalogregelvillkoret *[!UICONTROL SKU is]* gäller alla produkter som börjar m
 1. Skapa två produkter, en med SKU &quot;24&quot; och en annan med SKU &quot;24 MB01&quot;.
 1. Navigera till **[!UICONTROL Marketing]** > **[!UICONTROL Catalog Price Rule]** > **[!UICONTROL Add New Rule]**.
 1. Använd följande villkor:
-   * *[!UICONTROL If ** ALLA **av dessa villkor är** TRUE **]*: *[!UICONTROL SKU is 24]*
+   * *[!UICONTROL If **&#x200B; ALLA &#x200B;** av dessa villkor är **&#x200B; TRUE &#x200B;**]*: *[!UICONTROL SKU is 24]*
 1. Ange ett rabattbelopp i funktionsmakron.
 1. Klicka på **[!UICONTROL Save and Apply]**.
 1. Töm cacheminnet.

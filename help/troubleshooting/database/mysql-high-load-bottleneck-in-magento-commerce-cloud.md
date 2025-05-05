@@ -76,7 +76,7 @@ Nedan beskrivs de vanligaste frågorna du kan ställa när du funderar på att a
   **För kluster som inte är överbelastade** - **Slavanslutningar saktar ned prestanda med 10-15 %**, vilket är en av orsakerna till att det inte är standard.
 
   *Men i överlagrade kluster ökar prestandan eftersom dessa 10-15 % minskas genom att belastningen minskas med trafiken.*
-* Ska jag aktivera de här inställningarna för min butik? *Om du har hög belastning eller förväntar dig hög belastning på MySQL-databasen eller Redis måste du definitivt aktivera slavanslutningar. För en vanlig kund med genomsnittlig trafik är detta **inte**en optimal inställning som ska aktiveras.*
+* Ska jag aktivera de här inställningarna för min butik? *Om du har hög belastning eller förväntar dig hög belastning på MySQL-databasen eller Redis måste du definitivt aktivera slavanslutningar. För en vanlig kund med genomsnittlig trafik är detta **inte**&#x200B;en optimal inställning som ska aktiveras.*
 
 ## Relaterad läsning
 

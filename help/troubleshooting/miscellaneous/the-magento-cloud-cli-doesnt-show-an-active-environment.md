@@ -50,6 +50,6 @@ Your environments are:
 |          Integration 2 | Integration 2    | Active       | Development    |
 ```
 
-2. Ange miljöns ID med ditt kommando:
+&#x200B;2. Ange miljöns ID med ditt kommando:
 
 `magento-cloud ssh -e integration`

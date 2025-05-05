@@ -1,6 +1,6 @@
 ---
 title: Konfigurera NPM för att kunna använda PWA Studio
-description: '[Progressive Web Apps (PWA) Studio](https://magento.github.io/pwa-studio/) är ett nytt projekt för Adobe Commerce i molninfrastruktur 2.3.x eller senare. För att kunna använda och installera PWA Studio måste du ställa in NPM-pakethanterarversionen på 5.x eller senare för att få stöd för Node.js 8.x. Detta görs i avsnittet "hooks:build" i konfigurationsfilen `.magento.app.yaml".'
+description: '[Progressive Web Apps (PWA) Studio](https://magento.github.io/pwa-studio/) är ett nytt projekt för Adobe Commerce i molninfrastruktur 2.3.x eller senare. För att kunna använda och installera PWA Studio måste du ställa in NPM-pakethanterarversionen på 5.x eller senare för att få stöd för Node.js 8.x. Detta görs i avsnittet "hooks:build" i konfigurationsfilen &grave;.magento.app.yaml".'
 exl-id: 3854fc94-e8ad-45d8-bf3e-73462364220d
 source-git-commit: 37ac9cca1f876a48092467aa38f2f2f013c83dd9
 workflow-type: tm+mt
@@ -40,7 +40,7 @@ Om du vill ange den NPM-version som behövs anger du den i konfigurationsfilen `
    >
    >Om du vill köra Node.JS i ditt program och inte bara i ditt bygge lägger du till följande kommandon för att ändra din build-krok:
    > 
-   ```
+   > ```
    > echo 'unset NPM_CONFIG_PREFIX' >> .environment
    > echo 'export NO_UPDATE_NOTIFIER=1' >> .environment
    > echo 'export NVM_DIR="$MAGENTO_CLOUD_DIR/.nvm"' >> .environment

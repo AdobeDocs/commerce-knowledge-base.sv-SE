@@ -27,7 +27,7 @@ Om du är kund hos Adobe Commerce på en Pro-planarkitektur i molnet och för n�
 1. Handlaren måste [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära en uppgradering till förbättrade integreringsmiljöer, med hjälp av kontaktorsaken *Begär en ändring av molnkonfigurationen*.
 1. Adobe kundkonstruktionsgrupp bekräftar antalet integreringsmiljöer och påbörjar ändringen.
 1. Handlaren meddelas i biljetten när uppgraderingen är klar.
-1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) i utvecklardokumentationen. *Obs!* Distributionen sker automatiskt när du kör: <pre>git push-ursprung <branch-name></pre>
+1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) i utvecklardokumentationen. *Obs!* Distributionen sker automatiskt när du kör: <pre>git push-ursprung &lt;branch-name></pre>
 
 Förbättrade prestanda innebär en lyckad uppgradering till förbättrade integreringsmiljöer.
 
@@ -43,7 +43,7 @@ Förbättrade prestanda innebär en lyckad uppgradering till förbättrade integ
 1. Handlaren måste [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära en uppgradering till förbättrade integreringsmiljöer, med hjälp av kontaktorsaken *&quot;Begär en ändring av molnkonfigurationen&quot;* - **din mellanlagringsmiljö är en namngiven integreringsmiljö**.
 1. Adobe kundkonstruktionsgrupp bekräftar antalet integreringsmiljöer och påbörjar ändringen.
 1. Handlaren meddelas i biljetten när uppgraderingen är klar.
-1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) i utvecklardokumentationen. *Obs!* Distributionen sker automatiskt när du kör: <pre>git push-ursprung <branch-name></pre>
+1. Handlaren omdistribuerar integreringsmiljöerna. Följ stegen i [Sammanfoga en gren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) i utvecklardokumentationen. *Obs!* Distributionen sker automatiskt när du kör: <pre>git push-ursprung &lt;branch-name></pre>
 
 Förbättrade prestanda innebär en lyckad uppgradering till förbättrade integreringsmiljöer.
 

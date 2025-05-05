@@ -1,6 +1,6 @@
 ---
 title: Ändra administratörs-URL på Adobe Commerce i molninfrastruktur
-description: Som standard är URL:en för [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) inställd på *&lt;domain\_name&gt;/admin*. I den här artikeln visas hur du ändrar URL-adressen.
+description: Som standard är URL:en för [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) inställd på *&lt;domain_name&gt;/admin*. I den här artikeln visas hur du ändrar URL-adressen.
 exl-id: 6236370c-e0a2-45a6-a38f-12e219c540af
 feature: Admin Workspace, Cloud
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733

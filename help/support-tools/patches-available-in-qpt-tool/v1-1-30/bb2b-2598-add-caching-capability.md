@@ -36,7 +36,7 @@ Korrigeringen BB2B-2598 lägger till cachelagringsfunktioner i `storeConfig`-, `
 <u>Förutsättningar</u>:
 
 * Servern pekar på [!DNL Varnish] som proxar till Adobe Commerce serverdel.
-* Konfigurationsinställningen `system/full_page_cache/caching_application` är inställd på ** ([!DNL Varnish]), eller gå till Adobe Commerce Admin > **[!UICONTROL Stores]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Caching Application]** > och ställ in den på [!DNL Varnish].
+* Konfigurationsinställningen `system/full_page_cache/caching_application` är inställd på **&#x200B; ([!DNL Varnish]), eller gå till Adobe Commerce Admin > &#x200B;** [!UICONTROL Stores] **&#x200B; > &#x200B;** [!UICONTROL System] **&#x200B; > &#x200B;** [!UICONTROL Full Page Cache] **&#x200B; > &#x200B;** [!UICONTROL Caching Application]** > och ställ in den på [!DNL Varnish].
 
 När korrigeringen har installerats utför du följande steg för att se till att det nu finns möjlighet till cachelagring:
 

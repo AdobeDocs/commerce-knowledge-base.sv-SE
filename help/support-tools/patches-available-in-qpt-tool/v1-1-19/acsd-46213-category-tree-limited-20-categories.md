@@ -42,30 +42,30 @@ Kategoriträdets begäran är begränsad till 20 kategorier.
 
    <pre>
     <code class="language-graphql">
-    {
-      categoryList(filters: { parent_id: { in: ["3"] } }) {
+    &lbrace;
+      categoryList(filters: { parent_id: { in: ["3"] } }) &lbrace;
         name
         level
         path
         url_path
-        children {
+        children &lbrace;
           id
           level
           name
           path
           url_path
           url_key
-          children {
+          children &lbrace;
             uid
             level
             name
             path
             url_path
             url_key
-          }
-        }
-      }
-    }
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 

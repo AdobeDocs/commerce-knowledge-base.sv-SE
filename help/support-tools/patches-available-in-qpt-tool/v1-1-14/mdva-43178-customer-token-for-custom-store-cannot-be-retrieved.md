@@ -44,10 +44,10 @@ Kundtoken för en anpassad butik kan inte hämtas i GraphQL.
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "username": "login",
       "password": "password"
-    }
+    &rbrace;
     </code>
     </pre>
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-47336: _[!UICONTROL Something went wrong]_-fel vid inaktivering av meddelanden i Adobe Commerce Admin
 
-ACSD-47336-korrigeringen åtgärdar ett problem där användaren ser felet _[!UICONTROL Something went wrong]_när meddelanden i [!DNL Commerce]-administratören stängs av. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 har installerats. Korrigerings-ID är ACSD-47336. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
+ACSD-47336-korrigeringen åtgärdar ett problem där användaren ser felet _[!UICONTROL Something went wrong]_&#x200B;när meddelanden i [!DNL Commerce]-administratören stängs av. Den här korrigeringen är tillgänglig när [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 har installerats. Korrigerings-ID är ACSD-47336. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.6.
 
 ## Berörda produkter och versioner
 
@@ -41,11 +41,11 @@ Användaren ser _[!UICONTROL Something went wrong]_-fel när meddelanden i [!DNL
 
 <u>Förväntade resultat</u>:
 
-Felet _[!UICONTROL Something went wrong]_ska inte visas när de slutförda aktiviteterna rensas.
+Felet _[!UICONTROL Something went wrong]_&#x200B;ska inte visas när de slutförda aktiviteterna rensas.
 
 <u>Faktiska resultat</u>:
 
-Felet _[!UICONTROL Something went wrong]_visas.
+Felet _[!UICONTROL Something went wrong]_&#x200B;visas.
 
 ## Tillämpa korrigeringen
 

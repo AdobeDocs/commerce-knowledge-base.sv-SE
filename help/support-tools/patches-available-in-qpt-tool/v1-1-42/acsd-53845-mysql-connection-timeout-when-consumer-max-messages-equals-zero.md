@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-53845: MySQL-anslutningstimeout-problem när konsumentens max_messages = 0'
-description: Använd korrigeringsfilen ACSD-53845 för att åtgärda Adobe Commerce-problemet där MySQL-anslutningen slutar fungera när konsument`max_messages = 0`.
+description: Använd korrigeringsfilen ACSD-53845 för att åtgärda Adobe Commerce-problemet där MySQL-anslutningen slutar fungera när konsument&grave;max_messages = 0&grave;.
 feature: REST, Configuration
 role: Admin, Developer
 exl-id: 68f862ed-5401-41e9-a6cc-cef44ebc1915

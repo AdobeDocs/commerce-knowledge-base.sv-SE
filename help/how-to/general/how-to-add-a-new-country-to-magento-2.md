@@ -37,27 +37,27 @@ I det här exemplet ska vi skapa en ny modul med namnet \`Extracountries\` med f
 
 (Mer information om modulstrukturen finns i [Modulöversikt](https://developer.adobe.com/commerce/php/architecture/modules/overview/) i utvecklardokumentationen).
 
-<pre><ExtraCountries>
+<pre>&lt;ExtraCountries>
  |
- <etc>
+ &lt;etc>
  | |
  | config.xml
  | di.xml
  | module.xml
  |
- <Plugin>
+ &lt;Plugin>
  | |
- | <Framework>
+ | &lt;Framework>
  |   |
- |   <Locale>
+ |   &lt;Locale>
  |     |
  |     TranslatedListsPlugin.php
  |
- <Setup>
+ &lt;Setup>
  | |
- | <Patch>
+ | &lt;Patch>
  |   |
- |   <Data>
+ |   &lt;Data>
  |     |
  |     AddDataForAbstractCountry.php
  |

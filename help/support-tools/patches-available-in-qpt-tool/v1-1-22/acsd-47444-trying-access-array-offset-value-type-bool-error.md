@@ -29,7 +29,7 @@ Korrigeringen ACSD-47444 löser problemet där _[!UICONTROL Trying to access arr
 
 ## Problem
 
-Följande fel uppstod: _[!UICONTROL Trying to access array offset on value of type bool]_vid åtkomst till vissa kategorisökvägar som inte finns för kända produkter i PHP 7.4.
+Följande fel uppstod: _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;vid åtkomst till vissa kategorisökvägar som inte finns för kända produkter i PHP 7.4.
 
 <u>Förutsättningar</u>:
 

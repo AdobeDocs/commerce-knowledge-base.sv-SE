@@ -38,7 +38,7 @@ En begränsad administratörsanvändare kan inte massuppdatera [!UICONTROL Produ
 1. Skapa ytterligare en webbplats-, butik- och butiksvy.
 1. Lägg till en produkt i den andra butiken och lägg sedan till en recension.
 1. Skapa en begränsad administratörsanvändare med endast åtkomst till den andra butiken.
-1. Logga in som begränsad administratörsanvändare, gå till **[!UICONTROL  Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** och ange **Status** till *Godkänd* eller *Väntande*.
+1. Logga in som begränsad administratörsanvändare, gå till **[!UICONTROL &#x200B; Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** och ange **Status** till *Godkänd* eller *Väntande*.
 
 <u>Förväntade resultat</u>:
 

@@ -27,7 +27,7 @@ ACSD-49877 åtgärdar ett problem där alternativet för automatisk uppspelning 
 
 >[!NOTE]
 >
->Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du paketet [!magento/quality-patches] till den senaste versionen och kontrollerar kompatibiliteten för [[!DNL Quality Patches Tool]: Sök efter korrigeringar]. Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Korrigeringen kan bli tillämplig för andra versioner med nya [!DNL Quality Patches Tool]-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du paketet [ !magento/quality-patches] till den senaste versionen och kontrollerar kompatibiliteten för [[!DNL Quality Patches Tool]: Sök efter korrigeringar]. Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 

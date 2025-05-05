@@ -1,6 +1,6 @@
 ---
 title: Installationskommandot för Composer åsidosätter .gitignore-filen, Adobe Commerce
-description: Den här artikeln innehåller en lösning för när en spårad `.gitignore`-fil åsidosätts av en kompositör på Adobe Commerce i molninfrastrukturen 2.4.2-p1 och 2.3.7.
+description: Den här artikeln innehåller en lösning för när en spårad &grave;.gitignore&grave;-fil åsidosätts av en kompositör på Adobe Commerce i molninfrastrukturen 2.4.2-p1 och 2.3.7.
 exl-id: b0604bae-d630-4292-88d7-6945db30fcf4
 feature: Install, Upgrade
 role: Developer

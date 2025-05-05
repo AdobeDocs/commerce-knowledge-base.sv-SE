@@ -40,19 +40,19 @@ API-begäran för GraphQL-valuta returnerar null-värden för en anpassad valuta
 
 <pre>
 <code class="language-graphql">
-{
-    currency {
+&lbrace;
+    currency &lbrace;
         base_currency_code
         base_currency_symbol
         default_display_currency_code
         default_display_currency_symbol
         available_currency_codes
-        exchange_rates {
+        exchange_rates &lbrace;
             currency_to
             rate
-        }
-    }
-}
+        &rbrace;
+    &rbrace;
+&rbrace;
 </code>
 </pre>
 

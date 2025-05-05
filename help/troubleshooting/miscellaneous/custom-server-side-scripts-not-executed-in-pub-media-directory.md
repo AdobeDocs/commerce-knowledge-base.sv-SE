@@ -1,6 +1,6 @@
 ---
 title: Anpassade serverskript körs inte i pub-mediekatalogen
-description: I den här artikeln finns en korrigering för när anpassade serverskript inte körs om de placeras i `./pub/media/" för ditt Adobe Commerce-program i molninfrastrukturen. Detta är en förväntad säkerhetsbegränsning, eftersom `.Katalogen /pub/media/` är skrivbar. Om du vill göra skript körbara placerar du dem i kataloger som inte är skrivbara, till exempel `./app/code/` eller `./pub/`.
+description: I den här artikeln finns en korrigering för när anpassade serverskript inte körs om de placeras i &grave;./pub/media/" för ditt Adobe Commerce-program i molninfrastrukturen. Detta är en förväntad säkerhetsbegränsning, eftersom &grave;.Katalogen /pub/media/&grave; är skrivbar. Om du vill göra skript körbara placerar du dem i kataloger som inte är skrivbara, till exempel &grave;./app/code/&grave; eller &grave;./pub/&grave;.
 exl-id: fcad8a5d-47d6-4729-93a4-2410d7710d69
 feature: Media
 role: Developer

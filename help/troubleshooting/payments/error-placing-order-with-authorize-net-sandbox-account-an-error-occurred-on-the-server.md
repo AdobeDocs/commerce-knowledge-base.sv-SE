@@ -29,7 +29,7 @@ I den här artikeln finns en korrigering för *Ett fel inträffade på serverfel
 
 Om du placerar en order med sandlådekontot [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) visas ett felmeddelande:
 
->>
+&#x200B;>>
 &quot;Ett fel uppstod på servern. Försök beställa igen&quot;
 
 ## Orsak 1: Testläget är aktiverat

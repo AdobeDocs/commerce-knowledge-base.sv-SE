@@ -1,6 +1,6 @@
 ---
 title: 'PWA Studio: webbläsaren kan inte matcha .local.pwadev-platsen'
-description: Den här artikeln innehåller en lösning för när ett annat program eller en process har redigerat din [värdfil](https://en.wikipedia.org/wiki/Hosts_(file\)) och tagit bort posten för din projektdomän.
+description: Den här artikeln innehåller en lösning för när ett annat program eller en process har redigerat din [värdfil](https://en.wikipedia.org/wiki/Hosts_(file)) och tagit bort posten för din projektdomän.
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer

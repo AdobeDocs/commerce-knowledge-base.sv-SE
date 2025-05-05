@@ -42,7 +42,7 @@ Ett SQL-fel inträffar när en kategori sparas från administratören.
 
 1. Skapa Stock och ytterligare en källa som är tilldelad detta lager och en försäljningskanal som är tilldelad den andra webbplatsen.
 1. Skapa en testprodukt som tilldelats den andra webbplatsen.
-1. Gå till **Admin** > **Katalog** > **Kategorier**, välj **Omfång** = **Andra webbplatsen** och gå till **Produkter i kategori** > **Automatisk sortering** > Flytta utmedieprodukter längst ned och klicka på **Spara**}.
+1. Gå till **Admin** > **Katalog** > **Kategorier**, välj **Omfång** = **Andra webbplatsen** och gå till **Produkter i kategori** > **Automatisk sortering** > Flytta utmedieprodukter längst ned och klicka på **Spara**&rbrace;.
 
 <u>Förväntade resultat</u>:
 

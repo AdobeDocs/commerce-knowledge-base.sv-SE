@@ -131,7 +131,7 @@ I det här fallet måste du först återställa arbetstillståndet för ditt Ado
 
 [3. Avinstallera Adobe Commerce.](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&amp;period; Tvinga omdistribution.
+4&period; Tvinga omdistribution.
 
 När du har utfört dessa steg får du samma resultat som i scenario 1.
 

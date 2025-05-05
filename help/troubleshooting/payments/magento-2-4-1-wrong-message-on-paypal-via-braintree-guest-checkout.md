@@ -26,7 +26,7 @@ Ett ospecifikt fel visas när utcheckning av gäst inaktiveras från serverdelen
 
 <u>Förutsättningar</u>:
 
-1. I Commerce Admin ställer du in **Tillåt gästutcheckning** = *Nej **under**Lagrar* > **Konfiguration** > **Försäljning** > **Utcheckning**.
+1. I Commerce Admin ställer du in **Tillåt gästutcheckning** = *Nej **under**&#x200B;Lagrar* > **Konfiguration** > **Försäljning** > **Utcheckning**.
 1. Aktivera PayPal via Braintree enligt beskrivningen i [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) i användarhandboken.
 
 <u>Steg som ska återskapas</u>:

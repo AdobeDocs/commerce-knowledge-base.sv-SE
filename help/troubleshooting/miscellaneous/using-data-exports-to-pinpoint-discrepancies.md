@@ -69,7 +69,7 @@ Gå till sidan Anslutningar och ta en titt på statusen för datakällan som inn
 
 ## Källdatabasen har FÄRRE rader än Magento BI {#lessrows}
 
-Om källdatabasen har färre rader än Magento BI kan det hända att rader tas bort från källdatabasen och Magento BI inte kan hämta dessa borttagningar. ** [Om du tar bort data](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) kan det leda till avvikelser, längre uppdateringstider och en rad logistiska problem**. Därför rekommenderar vi att du aldrig tar bort data om det inte är nödvändigt.
+Om källdatabasen har färre rader än Magento BI kan det hända att rader tas bort från källdatabasen och Magento BI inte kan hämta dessa borttagningar. **&#x200B; [Om du tar bort data](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) kan det leda till avvikelser, längre uppdateringstider och en rad logistiska problem**. Därför rekommenderar vi att du aldrig tar bort data om det inte är nödvändigt.
 
 Om du däremot tar bort rader från tabellen bör du titta på hur ofta kontrollen ska göras om primärnyckeln. Om du upprepar primärnyckeln kontrolleras om tabellen innehåller borttagna rader.
 
