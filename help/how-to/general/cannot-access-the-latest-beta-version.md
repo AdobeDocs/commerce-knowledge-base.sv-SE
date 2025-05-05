@@ -33,7 +33,7 @@ Detta är de vanligaste orsakerna till problem:
 
 ### Kodplats för tidig åtkomst
 
-Under betaåtkomstperioder är versionspaket endast tillgängliga via Composer på [repo.magento.com](https://repo.magento.com/). Versionspaket är inte tillgängliga på GitHub- och Adobe Commerce-portaler under den här perioden, och vi kommer att publicera dem på dessa platser på GA-datumet. Klicka [här](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) om du vill ha mer information om hur du använder Composer.
+Under betaåtkomstperioder är versionspaket endast tillgängliga via Composer på [repo.magento.com](https://repo.magento.com/). Versionspaket är inte tillgängliga på GitHub- och Adobe Commerce-portaler under den här perioden, och vi kommer att publicera dem på dessa platser på GA-datumet. Klicka [här](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/composer) om du vill ha mer information om hur du använder Composer.
 
 ### MageID som du behöver använda
 

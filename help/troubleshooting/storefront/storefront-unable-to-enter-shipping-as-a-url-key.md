@@ -122,5 +122,5 @@ Undvik dessutom att använda dessa nyckelord som är märkta som *reserverade* n
 
 ## Relaterad läsning
 
-* [URL-omskrivning](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) i vår användarhandbok för marknadsföring och marknadsföring.
-* [SEO Best Practices](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) i vår användarhandbok för marknadsföring och marknadsföring.
+* [URL-omskrivning](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) i vår användarhandbok för marknadsföring och marknadsföring.
+* [SEO Best Practices](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/seo-overview) i vår användarhandbok för marknadsföring och marknadsföring.

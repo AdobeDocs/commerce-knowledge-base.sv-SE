@@ -48,11 +48,11 @@ Om du använder underdomänen kan du göra en &quot;mjuk start&quot; av din buti
 
 I vår kunskapsbas:
 
-* [Konfigurera snabbt DNS-inställningar i mellanlagrings- och produktionsmiljöer](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
-* [Konfigurera snabbt för Starter-plan i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html)
-* [Potentiella blockerare för att starta Adobe Commerce på molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
+* [Konfigurera snabbt DNS-inställningar i mellanlagrings- och produktionsmiljöer](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=sv-SE)
+* [Konfigurera snabbt för Starter-plan i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html?lang=sv-SE)
+* [Potentiella blockerare för att starta Adobe Commerce på molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=sv-SE)
 
 I vår utvecklardokumentation:
 
-* [Snabbt översikt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Go live checklist: DNS-konfigurationer för Fast](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+* [Snabbt översikt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=sv-SE)
+* [Go live checklist: DNS-konfigurationer för Fast](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=sv-SE)

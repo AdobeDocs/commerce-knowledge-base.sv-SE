@@ -60,7 +60,7 @@ Den här artikeln innehåller felsökningssteg för att lösa Adobe Commerce om 
 </ol>
 </td>
 <td>
-<p>Mer information om New Relic Apdex-poängen finns i <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic Documentation &gt; APM Apdex &gt; Mät användarnöjdhet</a>. Du kan även referera till <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Hanterade aviseringar för Adobe Commerce: Apdex-varning</a> i vår kunskapsbas för support.</p>
+<p>Mer information om New Relic Apdex-poängen finns i <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic Documentation &gt; APM Apdex &gt; Mät användarnöjdhet</a>. Du kan även referera till <a href="https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Hanterade aviseringar för Adobe Commerce: Apdex-varning</a> i vår kunskapsbas för support.</p>
 </td>
 </tr>
 <tr>

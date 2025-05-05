@@ -37,9 +37,9 @@ Med en planerad driftsättning eller uppgradering är det enklaste och rekommend
 <u>På dagen för ändringarna</u>:
 
 1. Placera webbplatsen i [!UICONTROL Maintenance Mode].
-Läs mer om [Aktivera eller inaktivera [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html) i vår användarhandbok och [[!UICONTROL Maintenance Mode] alternativ för uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) i vår uppgraderingsguide.
-1. Inaktivera cron-jobb. Läs mer om hur du inaktiverar cron-jobb i vår [egenskapsguide](<https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>) för cron.
-1. Ta en lokal [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html).
+Läs mer om [Aktivera eller inaktivera [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html?lang=sv-SE) i vår användarhandbok och [[!UICONTROL Maintenance Mode] alternativ för uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html?lang=sv-SE) i vår uppgraderingsguide.
+1. Inaktivera cron-jobb. Läs mer om hur du inaktiverar cron-jobb i vår [egenskapsguide](<https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>) för cron.
+1. Ta en lokal [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=sv-SE).
 
 <u>Om [!UICONTROL Rollback] krävs</u>:
 
@@ -55,13 +55,13 @@ När du jämför detta med att importera en lokal [!UICONTROL Database Dump] gå
 
 ## Scenario 2: Återställ en ögonblicksbild
 
-Läs: [Återställ en ögonblicksbild av Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot) i utvecklardokumentationen.
+Läs: [Återställ en ögonblicksbild av Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot) i utvecklardokumentationen.
 
 >[!NOTE]
 >
 >Att skapa en ögonblicksbild måste vara det första steget efter att du har öppnat Adobe Commerce på molninfrastrukturskontot och innan du kan göra större ändringar. Det är en god praxis och rekommenderas varmt.
 
-Läs: [Skapa en ögonblicksbild](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot) i utvecklardokumentationen.
+Läs: [Skapa en ögonblicksbild](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot) i utvecklardokumentationen.
 
 ## Scenario 3: Ingen ögonblicksbild, stabil konstruktion (SSH-anslutning tillgänglig)
 
@@ -88,24 +88,24 @@ Om du vill inaktivera Configuration Management kontrollerar du att katalogen `/a
 
 Så här tar du bort konfigurationsfilen:
 
-1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
 1. Ta bort konfigurationsfilen: `rm app/etc/config.php`
 
 Läs mer om konfigurationshantering:
 
 * [Minska driftsättningsdriftsavbrotten på Adobe Commerce i molninfrastrukturen](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) i vår kunskapsbas för support.
-* [Konfigurationshantering för butiksinställningar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) i utvecklardokumentationen.
+* [Konfigurationshantering för butiksinställningar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=sv-SE) i utvecklardokumentationen.
 
 ### Steg 1: Avinstallera Adobe Commerce med kommandot setup:uninstall
 
 
 Om du avinstallerar Adobe Commerce-programvaran tas databasen bort och återställs, distributionskonfigurationen tas bort och katalogerna under `var` rensas.
 
-Läs: [Avinstallera Adobe Commerce-programmet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html) i utvecklardokumentationen.
+Läs: [Avinstallera Adobe Commerce-programmet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html?lang=sv-SE) i utvecklardokumentationen.
 
 Så här avinstallerar du Adobe Commerce:
 
-1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
 1. Kör `setup:uninstall` : `bin/magento setup:uninstall`
 1. Bekräfta avinstallationen.
 
@@ -155,10 +155,10 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 Om körningen av kommandot `setup:uninstall` misslyckas med ett fel och inte kan slutföras, kan vi rensa databasen manuellt med följande steg:
 
-1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
-1. Anslut till MySQL-databasen: `mysql -h database.internal` (för Pro-miljöer, se: [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html)).
+1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
+1. Anslut till MySQL-databasen: `mysql -h database.internal` (för Pro-miljöer, se: [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html?lang=sv-SE)).
 1. Släpp `main` DB: `drop database main;`
 1. Skapa en tom `main`-databas: `create database main;`
 1. Ta bort följande konfigurationsfiler: `config.php`, `config.php.bak`, `env.php`, `env.php.bak`
 
-När du har återställt databasen [gör du en [!DNL git] push till miljön för att aktivera omdistributionen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html) och installera Adobe Commerce till en ny databas. Eller [kör kommandot för omdistribution](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
+När du har återställt databasen [gör du en [!DNL git] push till miljön för att aktivera omdistributionen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html?lang=sv-SE) och installera Adobe Commerce till en ny databas. Eller [kör kommandot för omdistribution](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=sv-SE#environment-commands).

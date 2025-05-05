@@ -68,5 +68,5 @@ Skapa ett cron-jobb för att ta bort spårningsindex. Med det här kommandot tas
 
 Om du vill ta bort index med en viss tidsfrekvens skapar du ett cron-jobb genom att läsa följande artiklar i vår utvecklardokumentation:
 
-* [Konfigurera ett anpassat cron-jobb och en cron-grupp (självstudiekurs)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [Konfigurera cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [Konfigurera ett anpassat cron-jobb och en cron-grupp (självstudiekurs)](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Konfigurera cron-jobb](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

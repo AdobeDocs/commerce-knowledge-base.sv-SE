@@ -53,21 +53,21 @@ Se något av följande avsnitt för en lösning på ditt problem.
 
 ### Lösning för missade [!DNL OpCache]-inställningar {#solution-missed-opcache-settings}
 
-Se [[!DNL Cron] stoppad på grund av felkonfigurerade eller saknade [!DNL OpCache] inställningar](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings) i Commerce kunskapsbas.
+Se [[!DNL Cron] stoppad på grund av felkonfigurerade eller saknade [!DNL OpCache] inställningar](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings) i Commerce kunskapsbas.
 
 ### Lösning för inaktiverad av infrastrukturteamet {#solution-disabled-by-infrastructure-team}
 
 1. Kontrollera dina tidigare supportärenden där sajten var nere eller inte svarade.
 1. Kontrollera sedan om infrastrukturteamet har angett att de har inaktiverat det.
 1. Kontrollera att du har åtgärdat de problem/problem som infrastrukturteamet har tagit upp.
-1. Skicka en [supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) om du behöver ytterligare hjälp för att kunna återaktivera [!DNL cron] och förklara hur du har åtgärdat de problem som infrastrukturteamet har angett.
+1. Skicka en [supportförfrågan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) om du behöver ytterligare hjälp för att kunna återaktivera [!DNL cron] och förklara hur du har åtgärdat de problem som infrastrukturteamet har angett.
 
 ### Distributionslösningen misslyckades {#solution-deployment-failed}
 
 Kontrollera distributionsloggarna:
 
-* [Visa och hantera loggar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) i vår Commerce on Cloud Infrastructure Guide.
-* [Kontrollerar distributionsloggen om molngränssnittet har *`log snipped`* error](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error) i Commerce kunskapsbas.
+* [Visa och hantera loggar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/test/log-locations) i vår Commerce on Cloud Infrastructure Guide.
+* [Kontrollerar distributionsloggen om molngränssnittet har *`log snipped`* error](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error) i Commerce kunskapsbas.
 
 1. Om distributionen misslyckades under steget `setup:upgrade` kommer [!DNL cron] inte att ha återaktiverats.
 Du kan till exempel se den här raden i distributionsloggen:
@@ -80,4 +80,4 @@ Du kan till exempel se den här raden i distributionsloggen:
 ...<br>
    ```  [2024-02-07T10:50:09.579005+00:00] INFO: Enable cron```
 
-**Skicka en [supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) om du behöver mer hjälp.**
+**Skicka en [supportförfrågan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) om du behöver mer hjälp.**

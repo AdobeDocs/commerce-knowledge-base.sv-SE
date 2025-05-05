@@ -42,7 +42,7 @@ Verktyget är avsett att göra det möjligt för dig att använda korrigeringsfi
 
 ## Patchar tillgängliga i verktyget för kvalitetspatchar
 
-Se [Verktyget för kvalitetskorrigeringar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i utvecklardokumentationen för en lista över tillgängliga korrigeringsfiler.
+Se [Verktyget för kvalitetskorrigeringar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=sv-SE) i utvecklardokumentationen för en lista över tillgängliga korrigeringsfiler.
 
 ## Installera och använda verktyget för kvalitetspatchar
 
@@ -50,14 +50,14 @@ Installations- och användningskommandona skiljer sig åt för Adobe Commerce lo
 
 ### Installera och använda QPT för Adobe Commerce lokalt
 
-Mer information om hur du installerar och använder QPT för att tillämpa och återställa korrigeringsfiler finns i [Programuppdateringsguiden > Lappa](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i utvecklardokumentationen.
+Mer information om hur du installerar och använder QPT för att tillämpa och återställa korrigeringsfiler finns i [Programuppdateringsguiden > Lappa](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/usage) i utvecklardokumentationen.
 
 ### Installera och använda QPT för Adobe Commerce i molninfrastrukturen
 
-Mer information om hur du installerar och använder QPT för att tillämpa och återställa korrigeringsfiler på Adobe Commerce i molninfrastrukturen finns i [Cloud for Adobe Commerce > Tillämpa korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen.
+Mer information om hur du installerar och använder QPT för att tillämpa och återställa korrigeringsfiler på Adobe Commerce i molninfrastrukturen finns i [Cloud for Adobe Commerce > Tillämpa korrigeringsfiler](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-* [Versionsinformation för verktyget Kvalitetspatchar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) i utvecklardokumentationen.
+* [Versionsinformation för verktyget Kvalitetspatchar](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/release-notes) i utvecklardokumentationen.
 * [Använda Composer-korrigeringar från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
 

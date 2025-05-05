@@ -63,4 +63,4 @@ Eftersom Admin används via Varnish kan du inte logga in på Admin för att akti
 $ bin/magento cache:enable
 ```
 
-Mer information om hur du använder kommandoraden finns i [Komma igång med kommandoradskonfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli).
+Mer information om hur du använder kommandoraden finns i [Komma igång med kommandoradskonfiguration](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/config-cli).

@@ -56,7 +56,7 @@ Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]` och `[ AUTO_INCRE
 
 >[!WARNING]
 >
->Säkerhetskopiera databasen innan du ändrar tabellerna. Placera webbplatsen i [underhållsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode). Vi rekommenderar även att du kör optimeringskommandot [!DNL MySQL] i databastabellerna (endast i tabeller där ändringar har gjorts) efter att du har gjort ändringarna.
+>Säkerhetskopiera databasen innan du ändrar tabellerna. Placera webbplatsen i [underhållsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=sv-SE#maintenance-mode). Vi rekommenderar även att du kör optimeringskommandot [!DNL MySQL] i databastabellerna (endast i tabeller där ändringar har gjorts) efter att du har gjort ändringarna.
 
 >[!NOTE]
 >
@@ -111,8 +111,8 @@ Så här gör du:
 
 ## Relaterad läsning
 
-* [Allmänna [!DNL MySQL] riktlinjer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html) i Commerce installationshandbok
-* [Databasöverföringen förlorar anslutningen till  [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html) i vår kunskapsbas för support
-* [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) i vår kunskapsbas för support
-* [De vanligaste databasproblemen i Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) i vår kunskapsbas för support
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Allmänna [!DNL MySQL] riktlinjer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=sv-SE) i Commerce installationshandbok
+* [Databasöverföringen förlorar anslutningen till  [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html?lang=sv-SE) i vår kunskapsbas för support
+* [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=sv-SE) i vår kunskapsbas för support
+* [De vanligaste databasproblemen i Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=sv-SE) i vår kunskapsbas för support
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

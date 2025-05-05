@@ -32,7 +32,7 @@ Uppgradering av modulen `Magento_Company` efter uppdatering till B2B 1.5.2 tar m
 
 <u>Steg som ska återskapas</u>:
 
-1. Tilldela ett företag till ett överordnat företag för att upprätta en företagshierarki. Mer information finns i [Hantera företagshierarkin](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) i Adobe Commerce B2B-guiden.
+1. Tilldela ett företag till ett överordnat företag för att upprätta en företagshierarki. Mer information finns i [Hantera företagshierarkin](https://experienceleague.adobe.com/sv/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) i Adobe Commerce B2B-guiden.
 1. Uppgradera B2B till version 1.5.2.
 
 <u>Förväntade resultat</u>:
@@ -61,7 +61,7 @@ Så här löser du problemet:
 
 ### Så här sätter du på plåstret
 
-Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) i vår kunskapsbas för support för instruktioner.
+Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) i vår kunskapsbas för support för instruktioner.
 
 ### Tillämpa en korrigering med hjälp av molnkorrigeringar
 
@@ -80,8 +80,8 @@ För Adobe Commerce-handlare i molnet följer du stegen nedan:
    ```
 
 1. Lägg till patchen ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch i katalogen `m2-hotfixes`.
-1. Genomför och skicka ändringarna för att initiera omdistribution och `bin/magento setup:upgrade`. Mer information finns i [Använda korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) i handboken för Adobe Commerce om molnet.
+1. Genomför och skicka ändringarna för att initiera omdistribution och `bin/magento setup:upgrade`. Mer information finns i [Använda korrigeringsfiler](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) i handboken för Adobe Commerce om molnet.
 
 ## Relaterad läsning
 
-* [Uppgradering till B2B 1.5.2 misslyckas med SQL-syntaxfel på grund av att funktionen REGEXP_LIKE saknas](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)
+* [Uppgradering till B2B 1.5.2 misslyckas med SQL-syntaxfel på grund av att funktionen REGEXP_LIKE saknas](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)

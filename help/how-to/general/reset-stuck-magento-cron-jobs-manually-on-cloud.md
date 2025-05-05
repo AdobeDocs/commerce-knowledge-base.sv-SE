@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Adobe Commerce på molninfrastrukturcron-jobb slutför inte körningen, fastnar och förhindrar att andra kronijobb körs. I den här artikeln visas hur du återställer de fastnade kron-jobben manuellt.
 
-Använd det här kommandot med försiktighet! Vi rekommenderar att du läser artikeln [Återställ cron-jobb](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) i vår kunskapsbas för support för mer information.
+Använd det här kommandot med försiktighet! Vi rekommenderar att du läser artikeln [Återställ cron-jobb](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=sv-SE) i vår kunskapsbas för support för mer information.
 
 ## Steg
 
 >[!INFO]
 >
->Från [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html#v2002.0.4) kan du manuellt återställa fastnade cron-jobb med ett CLI-kommando via SSH-åtkomst.
+>Från [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html?lang=sv-SE#v2002.0.4) kan du manuellt återställa fastnade cron-jobb med ett CLI-kommando via SSH-åtkomst.
 
-1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
 1. Kör det här kommandot: `./vendor/bin/ece-tools cron:unlock`
 
 ## Varningar
@@ -32,4 +32,4 @@ Använd det här kommandot med försiktighet! Vi rekommenderar att du läser art
 
 ## Läs det i vår kunskapsbas:
 
-[Återställ cron-jobb](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+[Återställ cron-jobb](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=sv-SE)

@@ -31,9 +31,9 @@ Detta kan bero på att bilderna läses in från cachen.
 
 Om det inträffar kan du använda kommandot Magento för att återskapa bildcachen och visa bilderna på rätt sätt.
 
-För att kunna utföra detta behöver du SSH-informationen och butiks-URL:en som är tillgängliga via [molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+För att kunna utföra detta behöver du SSH-informationen och butiks-URL:en som är tillgängliga via [molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=sv-SE).
 
-1. SSH till ditt projekt som var en källa för [databasdumpen](/help/how-to/general/create-database-dump-on-cloud.md), vilket beskrivs i [SSH till miljön](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) i vår utvecklardokumentation.
+1. SSH till ditt projekt som var en källa för [databasdumpen](/help/how-to/general/create-database-dump-on-cloud.md), vilket beskrivs i [SSH till miljön](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections) i vår utvecklardokumentation.
 1. Återskapa bildcachen genom att köra:
 
    ```bash

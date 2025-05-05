@@ -35,10 +35,10 @@ Det är till exempel en bra rutin att undvika en fastsatt import av MySQL-databa
 ## Lösning
 
 1. Kontrollera programmet, distributionen eller MySQL-loggarna för att se om det finns några dödlåsningsfel:
-   * [Loggplatser för Adobe Commerce och Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html)
-   * [Adobe Commerce i molninfrastrukturloggar platser](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+   * [Loggplatser för Adobe Commerce och Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html?lang=sv-SE)
+   * [Adobe Commerce i molninfrastrukturloggar platser](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=sv-SE)
 1. Kontrollera din MySQL-processlista för att se om processer körs med kommandot `mysql -e 'show full processlist';`
-1. Om du använder Adobe Commerce i molninfrastruktur kontrollerar du att MySQL-slav är aktiverat. Läs den här artikeln: [Distribuera variabler (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection).
+1. Om du använder Adobe Commerce i molninfrastruktur kontrollerar du att MySQL-slav är aktiverat. Läs den här artikeln: [Distribuera variabler (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=sv-SE#mysql_use_slave_connection).
 1. Beroende på vilka fel som har uppstått kan det bero på att lösningen finns på sig själv eller på att du måste inkludera din användbara logginformation om du behöver öppna en [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Relaterad läsning

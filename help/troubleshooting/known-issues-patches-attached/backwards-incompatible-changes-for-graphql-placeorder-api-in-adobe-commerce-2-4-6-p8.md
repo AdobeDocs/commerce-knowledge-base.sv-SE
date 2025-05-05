@@ -60,7 +60,7 @@ Klicka på följande länk om du vill hämta den:
 
 ## Så här sätter du på plåstret
 
-Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) i vår kunskapsbas för support för instruktioner.
+Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=sv-SE) i vår kunskapsbas för support för instruktioner.
 
 ## Endast för Adobe Commerce på molnhandlare - Hur du ser om korrigeringsfiler har tillämpats
 
@@ -68,7 +68,7 @@ Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats, kansk
 
 <u>Du kan göra detta genom att utföra följande steg, med exempelfilen `VULN-27015-2.4.7_COMPOSER.patch` **som exempel</u>**:
 
-1. [Installera  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installera  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=sv-SE).
 1. Kör kommandot:<br>
    ![ac-13283-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Du bör se utdata som liknar detta, där VULN-27015 returnerar statusen *Används*:

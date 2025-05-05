@@ -17,7 +17,7 @@ I den här artikeln beskrivs fel som kan uppstå när du använder verktyget fö
 
 ## Berörda produkter och versioner
 
-* [Kompatibilitetsverktyget för uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) är kompatibelt med Adobe Commerce-versioner från och med 2.3.0.
+* [Kompatibilitetsverktyget för uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=sv-SE) är kompatibelt med Adobe Commerce-versioner från och med 2.3.0.
 
 ## Segmenteringsfel
 
@@ -82,4 +82,4 @@ Med det här kommandoalternativet kan du även analysera en mapp som innehåller
 bin/uct upgrade:check /<dir>/<instance-name> -m /vendor/<vendor-name>/
 ```
 
-Mer information om gränssnittsalternativ för kommandorad finns på sidan [Kör verktyget i ett kommandoradsgränssnitt](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) .
+Mer information om gränssnittsalternativ för kommandorad finns på sidan [Kör verktyget i ett kommandoradsgränssnitt](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html?lang=sv-SE) .

@@ -23,7 +23,7 @@ I den här artikeln finns en lösning på problemet med saknade tillägg i Admin
 
 När du köper tillägg via Commerce Marketplace kan du inte installera dem med Adobe Commerce Extension Manager. När du lägger till dina nycklar och synkroniserar till Marketplace visas inga tillägg i Extension Manager.
 
-**Tillfällig lösning** för problemet är att använda kommandoradsinstallationen av Adobe Commerce enligt [den allmänna CLI-installationen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) i utvecklardokumentationen.
+**Tillfällig lösning** för problemet är att använda kommandoradsinstallationen av Adobe Commerce enligt [den allmänna CLI-installationen](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/extensions) i utvecklardokumentationen.
 
 <u>Steg som ska återskapas</u>:
 
@@ -44,4 +44,4 @@ Tillägget visas Extension Manager i Commerce Admin.
 
 ## Tillfällig lösning
 
-Använd kommandoradsinstallationen av Adobe Commerce så som visas i [Allmän CLI-installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) i utvecklardokumentationen.
+Använd kommandoradsinstallationen av Adobe Commerce så som visas i [Allmän CLI-installation](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/extensions) i utvecklardokumentationen.

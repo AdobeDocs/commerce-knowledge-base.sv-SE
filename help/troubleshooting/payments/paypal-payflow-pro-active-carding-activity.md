@@ -119,8 +119,8 @@ bin/magento cache:clean
 
 När du har installerat paketet konfigurerar du Google reCAPTCHA (rekommenderas) eller CAPTCHA enligt beskrivningen i följande dokument:
 
-* [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) i vår användarhandbok.
-* [CAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-captcha) i vår användarhandbok.
+* [Google reCAPTCHA](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) i vår användarhandbok.
+* [CAPTCHA](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/captcha/security-captcha) i vår användarhandbok.
 
 Det nya alternativet för utcheckningsformulär är:
 

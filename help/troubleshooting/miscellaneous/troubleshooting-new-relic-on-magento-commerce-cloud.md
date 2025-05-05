@@ -34,7 +34,7 @@ I den här artikeln finns resurser för att felsöka New Relic i Adobe Commerce 
 <p>I sådana fall måste en administratörsanvändare lägga till dig i projektet.</p>
 </td>
 <td>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">Åtkomst till New Relic-tjänster</a> i vår kunskapsbas för support.</p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html?lang=sv-SE">Åtkomst till New Relic-tjänster</a> i vår kunskapsbas för support.</p>
 </td>
 </tr>
 <tr>

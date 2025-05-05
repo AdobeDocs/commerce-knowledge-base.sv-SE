@@ -56,5 +56,5 @@ När modulen `Magento_Banner` är aktiverad skickar Adobe Commerce Ajax-förfrå
 >
 >Vi rekommenderar att du först testar ändringar i [mellanlagrings-/integreringsmiljön](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) innan du använder dem i produktionen. Vi rekommenderar även att du har en säkerhetskopia nyligen före eventuella ändringar.
 
-1. Inaktivera `Magento_Banner`-modulens utdata enligt beskrivningen i [Inaktivera modulutdata](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/disable-module-output) i utvecklardokumentationen. Modulnamnet som du måste använda är `Magento_Banner`.
-1. Distribuera koden. För Adobe Commerce i molninfrastruktur distribuerar du enligt beskrivningen i artikeln [Distribuera din butik](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) i vår utvecklardokumentation.
+1. Inaktivera `Magento_Banner`-modulens utdata enligt beskrivningen i [Inaktivera modulutdata](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/files/disable-module-output) i utvecklardokumentationen. Modulnamnet som du måste använda är `Magento_Banner`.
+1. Distribuera koden. För Adobe Commerce i molninfrastruktur distribuerar du enligt beskrivningen i artikeln [Distribuera din butik](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) i vår utvecklardokumentation.

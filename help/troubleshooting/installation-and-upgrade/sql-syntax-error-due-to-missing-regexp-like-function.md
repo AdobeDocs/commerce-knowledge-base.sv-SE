@@ -38,7 +38,7 @@ Uppgraderingen till B2B version 1.5.2 misslyckas med ett SQL-syntaxfel på grund
 
 <u>Steg som ska återskapas</u>:
 
-1. Tilldela ett företag till ett överordnat företag för att upprätta en företagshierarki. Mer information finns i [Hantera företagshierarkin](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) i Adobe Commerce B2B-guiden.
+1. Tilldela ett företag till ett överordnat företag för att upprätta en företagshierarki. Mer information finns i [Hantera företagshierarkin](https://experienceleague.adobe.com/sv/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) i Adobe Commerce B2B-guiden.
 1. Uppgradera B2B till version 1.5.2.
 
 <u>Förväntade resultat</u>:
@@ -78,4 +78,4 @@ Följ stegen nedan för Adobe Commerce om Cloud-infrastrukturer:
    composer update magento/magento-cloud-patches
    ```
 
-1. Genomför och skicka ändringarna för att initiera omdistributionen. Mer information finns i [Använda korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) i handboken för Adobe Commerce om molnet.
+1. Genomför och skicka ändringarna för att initiera omdistributionen. Mer information finns i [Använda korrigeringsfiler](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) i handboken för Adobe Commerce om molnet.

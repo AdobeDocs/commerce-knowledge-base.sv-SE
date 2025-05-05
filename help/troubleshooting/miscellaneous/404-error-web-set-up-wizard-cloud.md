@@ -43,9 +43,9 @@ Webbinstallationsguiden har inaktiverats för alla Adobe Commerce i molninfrastr
 
 Den här funktionen är inaktiverad på Adobe Commerce i molninfrastruktur.
 
-Se [Installera, hantera och uppgradera tillägg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce i vår molninfrastruktur.
-Se [Snabbstartsinstallation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce lokalt.
+Se [Installera, hantera och uppgradera tillägg](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure-store/extensions) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce i vår molninfrastruktur.
+Se [Snabbstartsinstallation](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/composer) i utvecklardokumentationen för mer information om hur du utför uppdateringar eller installerar externa moduler för Adobe Commerce lokalt.
 
 ## Relaterad läsning
 
-* Se [Installera ett tillägg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) i utvecklardokumentationen.
+* Se [Installera ett tillägg](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) i utvecklardokumentationen.

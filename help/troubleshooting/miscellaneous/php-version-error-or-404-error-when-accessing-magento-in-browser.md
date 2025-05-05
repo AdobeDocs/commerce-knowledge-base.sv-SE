@@ -29,7 +29,7 @@ Följande meddelande visas när du försöker få åtkomst till Adobe Commerce s
 
 Försök med följande:
 
-* Uppgradera PHP till version 7.3. Mer information finns i [Krav för Adobe Commerce 2.3-teknikhög](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) i utvecklardokumentationen.
+* Uppgradera PHP till version 7.3. Mer information finns i [Krav för Adobe Commerce 2.3-teknikhög](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements) i utvecklardokumentationen.
 * Starta om Apache eftersom den kanske inte använder samma PHP-version som i filsystemet. Använd följande kommandon om du vill starta om Apache:
    * Ubuntu: `service apache2 restart`
    * CentOS: `service httpd restart`
@@ -42,5 +42,5 @@ Ett 404-fel (Hittades inte) visas när du försöker få åtkomst till Adobe Com
 
 Försök med följande:
 
-* Kontrollera att [Omskrivningar av Apache-servern](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/apache) är aktiverade. Om omskrivningar från Apache-servern är felaktigt inställda kommer statiska filer inte att hanteras från rätt plats.
+* Kontrollera att [Omskrivningar av Apache-servern](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/web-server/apache) är aktiverade. Om omskrivningar från Apache-servern är felaktigt inställda kommer statiska filer inte att hanteras från rätt plats.
 * Det kan vara problem med den bas-URL som du angav under installationen. Du anger bas-URL:en som värdet för `--base-url=` när du installerar Adobe Commerce från kommandoraden eller som värdet för fältet **Din butiksadress** på webbkonfigurationssidan i webbinstallationsprogrammet. Bas-URL:en *måste* börja med schemat (till exempel `http://` ) och sluta med ett avslutande snedstreck (/). Kör installationsprogrammet igen med ett giltigt värde och försök sedan komma åt Adobe Commerce.

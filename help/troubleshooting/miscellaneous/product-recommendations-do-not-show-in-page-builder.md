@@ -32,10 +32,10 @@ Det finns inget alternativ i Page Builder för att lägga till Product Recommend
 1. Kontrollera om du har installerat modulen separat genom att köra kommandot: `composer show magento/module-page-builder-product-recommendations`
 1. Om det returnerar följande meddelande: *Package magento/module-page-builder-product-recommendations not found* måste du installera det genom att köra kommandot: `composer require magento/module-page-builder-product-recommendations`
 
-Genom att aktivera Product Recommendations i Page Builder kan du [lägga till en rekommendationsenhet](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) i allt innehåll som skapas i Page Builder.
+Genom att aktivera Product Recommendations i Page Builder kan du [lägga till en rekommendationsenhet](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=sv-SE) i allt innehåll som skapas i Page Builder.
 
 ## Relaterad läsning
 
-* [Lägg till innehåll - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) i vår användarhandbok.
-* [Installera och konfigurera Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) i utvecklardokumentationen.
-* [Adobe Commerce Användarhandbok](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
+* [Lägg till innehåll - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=sv-SE) i vår användarhandbok.
+* [Installera och konfigurera Recommendations](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) i utvecklardokumentationen.
+* [Adobe Commerce Användarhandbok](https://experienceleague.adobe.com/sv/docs/commerce-admin/user-guides/home)

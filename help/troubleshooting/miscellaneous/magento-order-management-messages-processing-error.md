@@ -68,4 +68,4 @@ Du löser problemet genom att köra följande [!DNL SQL]-sats i CLI som tar bort
 ## Relaterad läsning
 
 * OMS Docs [OMS Connector Setup Tutorial](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/)
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

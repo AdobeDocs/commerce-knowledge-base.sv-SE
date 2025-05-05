@@ -19,7 +19,7 @@ Det finns några anledningar till att det här kan hända. Här är de meddeland
 
 ## Det gick inte att köra frågan. Kostnadsvärdet \[xxx\] för EXPLAIN är för högt för att köra den här frågan.
 
-Om det här meddelandet visas innebär det att frågan ansågs för dyr för att köras. Vi har två rekommendationer för den här situationen: en är att ta bort ORDER BY-klausuler från din fråga, eftersom de är kostsamma operationer. Det andra är att följa tipsen i vår [optimeringsartikel](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) för att justera din fråga.
+Om det här meddelandet visas innebär det att frågan ansågs för dyr för att köras. Vi har två rekommendationer för den här situationen: en är att ta bort ORDER BY-klausuler från din fråga, eftersom de är kostsamma operationer. Det andra är att följa tipsen i vår [optimeringsartikel](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html?lang=sv-SE) för att justera din fråga.
 
 ## Det gick inte att köra frågan. Frågan returnerar \[xxx\] rader, vilket överskrider gränsen på 10 000
 

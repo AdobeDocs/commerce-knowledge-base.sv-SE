@@ -1,6 +1,6 @@
 ---
 title: "MDVA-39935: GraphQL returnerar konfigurerbara underordnade produkter som är inaktiverade på webbplatsnivå"
-description: MDVA-39935 Adobe Commerce-korrigeringen åtgärdar ett problem där GraphQL returnerar konfigurerbara underordnade produkter som är inaktiverade på webbplatsnivå. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.2 är installerat. Korrigerings-ID är MDVA-39935. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
+description: MDVA-39935 Adobe Commerce-korrigeringen åtgärdar ett problem där GraphQL returnerar konfigurerbara underordnade produkter som är inaktiverade på webbplatsnivå. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.2 är installerat. Korrigerings-ID är MDVA-39935. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 45bd6bd9-3572-4477-a689-d6b952a3290a
 feature: GraphQL, Configuration, Products
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-39935: GraphQL returnerar konfigurerbara underordnade produkter som är inaktiverade på webbplatsnivå
 
-MDVA-39935 Adobe Commerce-korrigeringen åtgärdar ett problem där GraphQL returnerar konfigurerbara underordnade produkter som är inaktiverade på webbplatsnivå. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.2 har installerats. Korrigerings-ID är MDVA-39935. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
+MDVA-39935 Adobe Commerce-korrigeringen åtgärdar ett problem där GraphQL returnerar konfigurerbara underordnade produkter som är inaktiverade på webbplatsnivå. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.2 har installerats. Korrigerings-ID är MDVA-39935. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 
 ## Berörda produkter och versioner
 
@@ -27,7 +27,7 @@ Adobe Commerce (alla distributionsmetoder) 2.4.1 - 2.4.3
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=sv-SE). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -77,8 +77,8 @@ Inaktiverade produktdata hämtas i variantresultaten.
 
 Använd följande länkar beroende på vilken distributionstyp du har när du vill använda enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 

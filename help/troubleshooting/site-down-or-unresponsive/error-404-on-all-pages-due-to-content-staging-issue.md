@@ -24,9 +24,9 @@ I den här artikeln finns en korrigering för Adobe Commerce lokalt och Adobe Co
 
 >[!NOTE]
 >
->Den här artikeln gäller inte den situation där du får ett 404-fel när du försöker [förhandsgranska mellanlagringsuppdateringen](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Öppna en [supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) om du stöter på det problemet.
+>Den här artikeln gäller inte den situation där du får ett 404-fel när du försöker [förhandsgranska mellanlagringsuppdateringen](https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Öppna en [supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) om du stöter på det problemet.
 
-Om du får åtkomst till en butikssida eller Admin genereras felet 404 (sidan&quot;Hoppsan, vår dåliga..&quot;) efter att du har utfört åtgärder med schemalagda uppdateringar för att lagra innehållsresurser med [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) (uppdateringar för att lagra innehållsresurser som schemalagts med modulen [Magento\_Staging](https://developer.adobe.com/commerce/php/module-reference/)). Du kan till exempel ha tagit bort en produkt med en schemalagd uppdatering eller tagit bort slutdatumet för den schemalagda uppdateringen.
+Om du får åtkomst till en butikssida eller Admin genereras felet 404 (sidan&quot;Hoppsan, vår dåliga..&quot;) efter att du har utfört åtgärder med schemalagda uppdateringar för att lagra innehållsresurser med [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=sv-SE) (uppdateringar för att lagra innehållsresurser som schemalagts med modulen [Magento\_Staging](https://developer.adobe.com/commerce/php/module-reference/)). Du kan till exempel ha tagit bort en produkt med en schemalagd uppdatering eller tagit bort slutdatumet för den schemalagda uppdateringen.
 
 En resurs för butiksinnehåll innehåller:
 
@@ -76,7 +76,7 @@ Om frågan returnerar en tabell där värdet `update_exists` är 1 eller ett tom
 
 ![updates_exist_1.png](assets/updates_exist_1.png)
 
-I det här fallet kan du läsa [Felsökning för plats](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) för felsökning av idéer.
+I det här fallet kan du läsa [Felsökning för plats](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) för felsökning av idéer.
 
 ## Lösning
 
@@ -88,8 +88,8 @@ I det här fallet kan du läsa [Felsökning för plats](https://experienceleague
 
 1. Vänta tills jobbet [!DNL cron] har körts (körs på upp till fem minuter om det har konfigurerats korrekt) eller kör det manuellt om du inte har konfigurerat [!DNL cron].
 
-Problemet bör lösas direkt efter att den ogiltiga länken har åtgärdats. Om problemet kvarstår [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+Problemet bör lösas direkt efter att den ogiltiga länken har åtgärdats. Om problemet kvarstår [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 ## Relaterad läsning
 
-[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

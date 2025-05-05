@@ -56,4 +56,4 @@ I den här artikeln listas alternativen för supportbiljetten **Orsak till probl
 
 ## Relaterad läsning
 
-* [Skicka ett supportärende](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) i Experience League Support User Guide for Adobe Commerce.
+* [Skicka ett supportärende](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) i Experience League Support User Guide for Adobe Commerce.

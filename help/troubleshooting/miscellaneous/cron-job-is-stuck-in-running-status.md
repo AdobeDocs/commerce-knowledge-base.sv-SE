@@ -37,7 +37,7 @@ Symtomen på [!DNL cron] jobb som måste återställas är:
 
 För att lösa det här problemet måste du återställa [!DNL cron] jobb med kommandot `cron:unlock`. Det här kommandot ändrar status för jobbet [!DNL cron] i databasen och avslutar jobbet så att andra schemalagda jobb kan fortsätta.
 
-1. Öppna en terminal och använd dina [SSH-nycklar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) för att ansluta till den drabbade miljön.
+1. Öppna en terminal och använd dina [SSH-nycklar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections) för att ansluta till den drabbade miljön.
 1. Hämta inloggningsuppgifterna för MySQL-databasen:    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
 1. Anslut till databasen med `mysql`:    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
 1. Välj `main`-databasen:    ```shell    use main    ```
@@ -47,7 +47,7 @@ För att lösa det här problemet måste du återställa [!DNL cron] jobb med ko
 
 ### Lösning för att stoppa en enskild [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Öppna en terminal och använd dina [SSH-nycklar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) för att ansluta till den drabbade miljön.
+1. Öppna en terminal och använd dina [SSH-nycklar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections) för att ansluta till den drabbade miljön.
 1. Kontrollera tidskrävande uppgifter med följande kommando:
 
    ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```

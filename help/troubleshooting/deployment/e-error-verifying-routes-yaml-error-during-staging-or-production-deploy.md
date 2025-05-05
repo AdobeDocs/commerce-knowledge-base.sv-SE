@@ -80,7 +80,7 @@ Du löser den blockerade distributionen genom att uppdatera filen `routes.yaml` 
 
 1. С implementera och implementera ändringarna för att omdistribuera projektet.
 
-Detaljerade instruktioner om hur du uppdaterar vägkonfigurationen finns i [Cloud for Adobe Commerce > Konfigurera vägar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) i utvecklardokumentationen.
+Detaljerade instruktioner om hur du uppdaterar vägkonfigurationen finns i [Cloud for Adobe Commerce > Konfigurera vägar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) i utvecklardokumentationen.
 
 >[!NOTE]
 >

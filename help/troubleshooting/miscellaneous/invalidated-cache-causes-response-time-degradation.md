@@ -67,4 +67,4 @@ Vanligtvis blir cachen ogiltig på grund av följande:
 ## Rekommendation
 
 1. Undvik att tömma cacheminnet från Commerce CLI.
-1. Konfigurera indexerare till **Uppdatera enligt schema** i stället för **Uppdatera vid sparläge** eftersom det senare utlöser fullständig omindexering. Mer information finns i [Hantera indexerare > Konfigurera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) i utvecklardokumentationen.
+1. Konfigurera indexerare till **Uppdatera enligt schema** i stället för **Uppdatera vid sparläge** eftersom det senare utlöser fullständig omindexering. Mer information finns i [Hantera indexerare > Konfigurera indexerare](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) i utvecklardokumentationen.

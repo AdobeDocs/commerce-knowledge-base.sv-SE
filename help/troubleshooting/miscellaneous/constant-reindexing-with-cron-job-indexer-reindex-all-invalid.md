@@ -55,7 +55,7 @@ Du kan se hur lång tid en period spelas in genom att köra:
 SELECT executed_at FROM cron_schedule WHERE job_code = 'indexer_reindex_all_invalid' AND executed_at IS NOT NULL ORDER BY executed_at ASC LIMIT 1;
 ```
 
-Om detta inte ger dig tillräckligt lång tid för att göra en korrekt bedömning kan du öka tiden som en lyckad `cron`-process sparas i loggen efter den här [[!DNL Cron] (schemalagda aktiviteter)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)-guiden och öka **[!DNL Success History Lifetime]**-värdet (standardvärdet är bara 60 minuter).
+Om detta inte ger dig tillräckligt lång tid för att göra en korrekt bedömning kan du öka tiden som en lyckad `cron`-process sparas i loggen efter den här [[!DNL Cron] (schemalagda aktiviteter)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=sv-SE)-guiden och öka **[!DNL Success History Lifetime]**-värdet (standardvärdet är bara 60 minuter).
 
 
 ## Lösning
@@ -77,4 +77,4 @@ Där `ENTITY_CODE` är det värde som används för entitetsnamnparametern i fil
 
 ## Relaterad läsning
 
-[Konfigurera [!DNL cron] jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) i konfigurationsguiden för Adobe Commerce-åtgärder.
+[Konfigurera [!DNL cron] jobb](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=sv-SE) i konfigurationsguiden för Adobe Commerce-åtgärder.

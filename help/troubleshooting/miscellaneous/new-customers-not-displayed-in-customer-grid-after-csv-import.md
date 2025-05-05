@@ -47,4 +47,4 @@ Vi rekommenderar även att du indexerar om indexeraren `customer_grid` manuellt 
 Länkar till relaterade ämnen i vår utvecklardokumentation:
 
 * [Indexeringsöversikt](https://developer.adobe.com/commerce/php/development/components/indexing/)
-* [Hantera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+* [Hantera indexerare](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers)

@@ -45,6 +45,6 @@ Problemet orsakas av den felaktiga Nginx-konfigurationsuppsättningen i `.magent
    * Integrering: korrigera filen själv och skicka ändringarna.
    * Mellanlagring och produktion: korrigera filen själv, skicka ändringarna och skapa en [Adobe Commerce-supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) som den ska tillämpas på.
 
-1. Aktivera Snabb bildoptimering i Commerce Admin (snabbast måste konfigureras före) enligt beskrivningen i <https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization>.
+1. Aktivera Snabb bildoptimering i Commerce Admin (snabbast måste konfigureras före) enligt beskrivningen i <https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization>.
 
 Om konfigurationen är korrekt, men problemet kvarstår, kan du fortsätta med undersökningen eller kontakta [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

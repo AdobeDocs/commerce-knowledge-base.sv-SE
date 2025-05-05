@@ -53,7 +53,7 @@ Kontrollera om filerna som anges ovan har inställningen `cacheable="false"`. Om
 
 >[!NOTE]
 >
->För Adobe Commerce i molninfrastruktur 2.4.1 och senare kan du använda [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) för att automatiskt kontrollera om helsidescachen inte är korrekt konfigurerad.
+>För Adobe Commerce i molninfrastruktur 2.4.1 och senare kan du använda [Site-Wide Analysis Tool](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/site-wide-analysis-tool/access) för att automatiskt kontrollera om helsidescachen inte är korrekt konfigurerad.
 
 ### Relaterad läsning
 

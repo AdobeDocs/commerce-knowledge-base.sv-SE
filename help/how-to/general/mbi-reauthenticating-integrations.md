@@ -16,7 +16,7 @@ Den här artikeln innehåller lösningar för att återauktorisera en integrerin
 
 ## Integreringar mellan databaser och SaaS
 
-En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med hjälp av en integrering](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) i utvecklardokumentationen. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
+En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med hjälp av en integrering](https://experienceleague.adobe.com/sv/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) i utvecklardokumentationen. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
 
 ## Har du anslutningsproblem?
 

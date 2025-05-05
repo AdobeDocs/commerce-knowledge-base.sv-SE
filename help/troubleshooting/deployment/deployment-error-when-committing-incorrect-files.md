@@ -21,7 +21,7 @@ Adobe Commerce om molninfrastruktur (alla versioner)
 
 ## Problem
 
-Distributionsfel uppstår när du implementerar i databasen med filer/mappar. Följande fel orsakas till exempel av ett försök att ansluta till databasen när den inte är tillgänglig under [byggfasen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#build-phase):
+Distributionsfel uppstår när du implementerar i databasen med filer/mappar. Följande fel orsakas till exempel av ett försök att ansluta till databasen när den inte är tillgänglig under [byggfasen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=sv-SE#build-phase):
 
 ```SQL
 SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i  
@@ -42,7 +42,7 @@ SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i
 
 ## Orsak
 
-Vissa filer/mappar bör inte implementeras i databasen eftersom de orsakar en brytning i [distributionsarbetsflödet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html).
+Vissa filer/mappar bör inte implementeras i databasen eftersom de orsakar en brytning i [distributionsarbetsflödet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=sv-SE).
 
 ## Lösning
 

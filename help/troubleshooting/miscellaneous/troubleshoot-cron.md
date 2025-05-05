@@ -48,7 +48,7 @@ I det här avsnittet beskrivs hur du ser om cron körs och hur du kontrollerar o
 
 Så här kontrollerar du om din crontab är inställd:
 
-1. Logga in på Magento-servern som, eller växla till, ägare av [Magento-filsystemet](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview).
+1. Logga in på Magento-servern som, eller växla till, ägare av [Magento-filsystemet](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/file-system/overview).
 1. Kontrollera om följande fil finns:    `bash    ls -al <magento_root>/var/.setup_cronjob_status`. Om filen finns har cron körts tidigare. Om filen *inte* finns, har du inte installerat Magento än eller så körs inte cron. I båda fallen fortsätter du med nästa steg.
 1. Mer information om cron. Som användare med `root`-behörighet anger du följande kommando:    `bash    crontab -u <Magento file system owner name> -l`. Exempel: i CentOS `bash    crontab -u magento_user -l`.  Om ingen crontab har konfigurerats för användaren visas följande meddelande:    `terminal    no crontab for magento_user`. På din crontab ser du följande:
 
@@ -62,17 +62,17 @@ Se något av följande avsnitt för en lösning på ditt problem.
 
 ### Lösning för crontab konfigureras inte {#solution-crontab-not-set-up}
 
-Se [Konfigurera cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration) för att kontrollera att dina cron-jobb är korrekt konfigurerade.
+Se [Konfigurera cron-jobb](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/next-steps/configuration) för att kontrollera att dina cron-jobb är korrekt konfigurerade.
 
 ### Lösning för cron som körs från felaktig PHP-binär {#solution-cron-running-from-incorrect-php-binary}
 
 Om ditt cron-jobb använder en annan PHP-binärfil än webbserverplugin-programmet kan PHP-inställningsfel visas. Du löser problemet genom att ange identiska PHP-inställningar för både PHP-kommandoraden och PHP-webbserverns plugin-program.
 
-Mer information om PHP-inställningar finns i [Nödvändiga PHP-inställningar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) i utvecklardokumentationen.
+Mer information om PHP-inställningar finns i [Nödvändiga PHP-inställningar](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/php-settings) i utvecklardokumentationen.
 
 ### Lösning för cron som körs med fel {#solution-cron-running-with-errors}
 
-Prova att köra varje kommando manuellt eftersom kommandot kan visa praktiska felmeddelanden. Se [Konfigurera cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration).
+Prova att köra varje kommando manuellt eftersom kommandot kan visa praktiska felmeddelanden. Se [Konfigurera cron-jobb](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/next-steps/configuration).
 
 >[!NOTE]
 >

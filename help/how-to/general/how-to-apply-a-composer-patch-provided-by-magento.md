@@ -36,7 +36,7 @@ I den här artikeln beskrivs hur du använder en kompositkorrigering för Adobe 
    git push origin
    ```
 
-Mer information om hur du använder korrigeringsfiler i molnprojekt finns i [Tillämpa korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen.
+Mer information om hur du använder korrigeringsfiler i molnprojekt finns i [Tillämpa korrigeringsfiler](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen.
 
 ### Använda en kompositkorrigering för Adobe Commerce lokalt och Magento Open Source {#commerce}
 

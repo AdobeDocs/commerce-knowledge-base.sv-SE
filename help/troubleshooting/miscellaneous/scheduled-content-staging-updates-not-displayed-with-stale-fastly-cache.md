@@ -17,7 +17,7 @@ I den här artikeln finns en korrigering för när Adobe Commerce butiker inte v
 
 ## Problem
 
-Schemalagda uppdateringar för en butiksinnehållsresurs (sida, produkt, block osv.) visas inte i butiken omedelbart efter uppdateringens starttid. Det här inträffar när uppdateringar har schemalagts med funktionen [Innehållsmellanlagring](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html).
+Schemalagda uppdateringar för en butiksinnehållsresurs (sida, produkt, block osv.) visas inte i butiken omedelbart efter uppdateringens starttid. Det här inträffar när uppdateringar har schemalagts med funktionen [Innehållsmellanlagring](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=sv-SE).
 
 ## Orsak
 
@@ -45,6 +45,6 @@ Om det inte går att skicka gammalt innehåll även för den första begäran ka
 
 ## Relaterad dokumentation
 
-* [Konfigurera rensningsalternativ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i infrastrukturguiden för Commerce i molnet.
-* [Förproduktion av innehåll](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) i dokumentationen för innehåll och design.
+* [Konfigurera rensningsalternativ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE) i infrastrukturguiden för Commerce i molnet.
+* [Förproduktion av innehåll](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=sv-SE) i dokumentationen för innehåll och design.
 * [Skickar inaktuellt innehåll](https://docs.fastly.com/guides/performance-tuning/serving-stale-content) i Snabbdokumentation.

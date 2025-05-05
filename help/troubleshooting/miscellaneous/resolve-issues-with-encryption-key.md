@@ -33,7 +33,7 @@ Du måste kopiera krypteringsnyckeln från källmiljön och lägga till den i m�
 
 Så här kopierar du krypteringsnyckeln:
 
-1. SSH till ditt projekt som var källa för databasdumpen, vilket beskrivs i [SSH till miljön](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) i vår utvecklardokumentation.
+1. SSH till ditt projekt som var källa för databasdumpen, vilket beskrivs i [SSH till miljön](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE) i vår utvecklardokumentation.
 1. Öppna `app/etc/env.php` i en textredigerare.
 1. Kopiera värdet för `key` för `crypt`.
 
@@ -44,7 +44,7 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 Så här anger du nyckelvärdet för målprojektet:
 
 1. Öppna [molnkonsolen](https://console.adobecommerce.com) och leta upp ditt projekt.
-1. Ange värdet för variabeln [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (i vår utvecklardokumentation) enligt beskrivningen i [Konfigurera ditt projekt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) i vår utvecklardokumentation. Detta utlöser distributionsprocessen och `CRYPT_KEY` åsidosätts i `app/etc/env.php`-filen för varje distribution.
+1. Ange värdet för variabeln [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=sv-SE) (i vår utvecklardokumentation) enligt beskrivningen i [Konfigurera ditt projekt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=sv-SE) i vår utvecklardokumentation. Detta utlöser distributionsprocessen och `CRYPT_KEY` åsidosätts i `app/etc/env.php`-filen för varje distribution.
 
 Om du vill kan du manuellt åsidosätta krypteringsnyckeln i filen `app/etc/env.php`:
 

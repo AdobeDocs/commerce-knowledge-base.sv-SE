@@ -79,4 +79,4 @@ Om du fortfarande inte har tillgång till analysverktyget för hela webbplatsen 
 
 ## Relaterad läsning
 
-* [Handbok för analysverktyget för hela webbplatsen](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)
+* [Handbok för analysverktyget för hela webbplatsen](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=sv-SE)

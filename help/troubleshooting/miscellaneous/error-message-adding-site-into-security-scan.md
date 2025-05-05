@@ -53,4 +53,4 @@ Om du fortfarande inte kan lägga till webbplatser utför du följande steg:
 
 ## Relaterad läsning
 
-* [Säkerhetsgenomsökning](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) i vår användarhandbok.
+* [Säkerhetsgenomsökning](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/security-scan) i vår användarhandbok.

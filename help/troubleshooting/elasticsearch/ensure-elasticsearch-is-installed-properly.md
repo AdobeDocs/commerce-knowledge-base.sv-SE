@@ -23,7 +23,7 @@ I den här artikeln beskrivs lösningar på problem som orsakas av felaktig inst
 * Adobe Commerce lokalt och Adobe Commerce i molninfrastruktur:
    * v2.2.3+ stödjer ES 5.x
    * v2.2.8+ och v2.3.1+ har stöd för ES 6.x
-   * ES v2.x och v5.x rekommenderas inte på grund av [slutet på livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du [Ändra Elasticsearch PHP-klienten](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
+   * ES v2.x och v5.x rekommenderas inte på grund av [slutet på livscykeln](https://www.elastic.co/support/eol). Om du har Adobe Commerce v2.3.1 och vill använda ES 2.x eller ES 5.x måste du [Ändra Elasticsearch PHP-klienten](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/search/overview-search).
 * Magento Open Source v2.3.0+ stöder ES 5.x och 6.x (men 6.x rekommenderas).
 
 ## Problem
@@ -56,8 +56,8 @@ Elasticsearch är inte korrekt installerat. Detta kan bero på:
 
 Så här konfigurerar du Elasticsearch:
 
-* Handlare på Adobe Commerce i molninfrastruktur kan följa stegen i vår utvecklardokumentation: [Konfigurera tjänsten Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
-* Handlare på Adobe Commerce lokalt och Magento Open Source kan följa stegen i vår utvecklardokumentation: [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
+* Handlare på Adobe Commerce i molninfrastruktur kan följa stegen i vår utvecklardokumentation: [Konfigurera tjänsten Elasticsearch](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
+* Handlare på Adobe Commerce lokalt och Magento Open Source kan följa stegen i vår utvecklardokumentation: [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/search/overview-search).
 
 När du har konfigurerat Elasticsearch kontrollerar du att det är korrekt konfigurerat:
 

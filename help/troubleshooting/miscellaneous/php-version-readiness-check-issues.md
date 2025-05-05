@@ -32,7 +32,7 @@ Kontrollen misslyckas eftersom du använder en PHP-version som inte stöds.
 
 ### Lösning
 
-Du löser det här problemet genom att använda en av de versioner som stöds i utvecklardokumentationen [2.3.x systemkrav](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) och [ 2.2.x systemkrav](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+Du löser det här problemet genom att använda en av de versioner som stöds i utvecklardokumentationen [2.3.x systemkrav](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements) och [ 2.2.x systemkrav](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements).
 
 ## PHP-beredskapskontrollen visas inte
 
@@ -43,7 +43,7 @@ PHP-beredskapskontrollen visar inte PHP-versionen som på bilden nedan.
 
 ### Lösning
 
-Det här är ett symtom på en felaktig inställning av kronjobb. Mer information finns i [Konfigurera cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration) i utvecklardokumentationen.
+Det här är ett symtom på en felaktig inställning av kronjobb. Mer information finns i [Konfigurera cron-jobb](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/next-steps/configuration) i utvecklardokumentationen.
 
 ## Felaktig PHP-version
 
@@ -62,7 +62,7 @@ Försök med följande för att lösa problemet:
 * Starta om webbservern eller php-fm.
 * Kontrollera miljövariabeln `$PATH` om det finns flera sökvägar till PHP.
 * Använd kommandot `which php` för att hitta den första körbara PHP-filen i sökvägen. Om den inte är korrekt tar du bort den eller skapar en länk till rätt PHP-version.
-* Använd en [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software)-sida för att samla in mer information.
+* Använd en [`phpinfo.php`](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/optional-software)-sida för att samla in mer information.
 * Se till att du kör en PHP-version som stöds enligt våra systemkrav i vår utvecklardokumentation:
-   * [Systemkrav för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
-* Ange samma PHP-inställningar för både PHP-kommandoraden och PHP-webbserverns plugin-program, vilket beskrivs i [PHP-konfigurationsalternativen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements#php-settings) i utvecklardokumentationen.
+   * [Systemkrav för Adobe Commerce](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements)
+* Ange samma PHP-inställningar för både PHP-kommandoraden och PHP-webbserverns plugin-program, vilket beskrivs i [PHP-konfigurationsalternativen](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements#php-settings) i utvecklardokumentationen.

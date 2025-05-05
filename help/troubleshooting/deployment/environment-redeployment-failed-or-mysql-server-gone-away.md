@@ -30,13 +30,13 @@ Den troligaste orsaken till problemen är att det tilldelade utrymmet i MySQL-da
 
 ### Kontrollera om det finns tillräckligt med utrymme för MySQL
 
-För alla arkitekturmiljöer för Starter-planer för molninfrastruktur och [Integreringsmiljö](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) för Adobe Commerce-planarkitekturen för molninfrastruktur Pro [SSH till miljön](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) och kör kommandot:
+För alla arkitekturmiljöer för Starter-planer för molninfrastruktur och [Integreringsmiljö](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) för Adobe Commerce-planarkitekturen för molninfrastruktur Pro [SSH till miljön](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE) och kör kommandot:
 
 ```bash
 magento-cloud db:size
 ```
 
-[SSH till miljön](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) och kör `df -h` för den förproduktion eller produktionsmiljö som Pro-arkitekturen omfattar.   `| grep mysql` . Resultatet kommer att se ut ungefär så här:
+[SSH till miljön](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE) och kör `df -h` för den förproduktion eller produktionsmiljö som Pro-arkitekturen omfattar.   `| grep mysql` . Resultatet kommer att se ut ungefär så här:
 
 ```bash
 sxpe7gigd5ok2@i-00baa9e24f31dba41:~$ df -h | grep mysql
@@ -55,7 +55,7 @@ mysql:
     disk: 2048
 ```
 
-Se artikeln [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html) för referens.
+Se artikeln [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html?lang=sv-SE) för referens.
 
 Om du vill göra de här ändringarna för mellanlagrings- eller produktionsmiljön i Pro-arkitekturen måste du skapa en [supportanmälan](https://support.magento.com). Men vanligtvis behöver du inte hantera detta på Staging/Production av Pro-arkitekturen eftersom Adobe Commerce övervakar parametrarna åt dig och varnar dig och/eller vidtar åtgärder enligt kontraktet.
 

@@ -18,9 +18,9 @@ ht-degree: 0%
 > [MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Du måste ha konfigurerat värddatorn Elasticsearch innan du kan installera version 2.4.0.
 > 
 > Se:
-> [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
-> [Installera och konfigurera OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
-> [Installera och konfigurera Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install)
+> [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
+> [Installera och konfigurera OpenSearch](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+> [Installera och konfigurera Live Search](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/live-search/install)
 
 Den här artikeln innehåller en lösning för att ändra Adobe Commerce Search Engine med Commerce Admin om fältet **Sökmotor** inte visas eller om kryssrutan **Använd systemvärde** är nedtonad och inte tillgänglig.
 
@@ -74,7 +74,7 @@ Sökmotorn är en global konfigurationsuppsättning på programnivå, inte på S
 
 ![change_store_view.png](assets/change_store_view.png)
 
-**Relaterad dokumentation:** [Ändra omfång](https://experienceleague.adobe.com/docs/commerce-admin/config/scope-change.html#set-the-scope) i vår användarhandbok.
+**Relaterad dokumentation:** [Ändra omfång](https://experienceleague.adobe.com/docs/commerce-admin/config/scope-change.html?lang=sv-SE#set-the-scope) i vår användarhandbok.
 
 ### Problem 2: Det går inte att avmarkera Använd systemvärde
 
@@ -108,7 +108,7 @@ Ta bort avsnittet med standardsökmotorkonfigurationen från `app/etc/env.php`- 
 
 ### Relaterade artiklar i vår utvecklardokumentation
 
-[Adobe Commerce konfigurationsfiler](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html) i Adobe Commerce Configuration Guide
+[Adobe Commerce konfigurationsfiler](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html?lang=sv-SE) i Adobe Commerce Configuration Guide
 
 ## Adobe Commerce i molninfrastruktur
 
@@ -137,7 +137,7 @@ stage:
      elasticsearch_server_timeout: '15'
 ```
 
-Om du byter till [Opensearch (i 2.4.6 och senare)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search) kan SEARCH\_CONFIGURATION-variabeln i den resulterande `.magento.env.yaml`-filen se ut så här:
+Om du byter till [Opensearch (i 2.4.6 och senare)](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search) kan SEARCH\_CONFIGURATION-variabeln i den resulterande `.magento.env.yaml`-filen se ut så här:
 
 ```yaml
 stage:
@@ -150,7 +150,7 @@ stage:
      elasticsearch_server_timeout: '15'
 ```
 
-Om du [byter till Live Search](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch) kan SEARCH\_CONFIGURATION-variabeln i den resulterande `.magento.env.yaml`-filen se ut så här:
+Om du [byter till Live Search](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch) kan SEARCH\_CONFIGURATION-variabeln i den resulterande `.magento.env.yaml`-filen se ut så här:
 
 ```yaml
 stage:
@@ -167,8 +167,8 @@ stage:
 
 #### Dokumentation för utvecklare
 
-* [Konfigurera tjänsten Elasticsearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html)
-* [Skapa och distribuera](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) (dokumentation om konfigurationsfilen `.magento.env.yaml`)
-* [Distribuera variabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) ([SEARCH\_CONFIGURATION-avsnittet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#search_configuration))
-* [Tjänster](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) (dokumentation om konfigurationsfilen `.magento/services.yaml`)
-* [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)
+* [Konfigurera tjänsten Elasticsearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html?lang=sv-SE)
+* [Skapa och distribuera](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=sv-SE) (dokumentation om konfigurationsfilen `.magento.env.yaml`)
+* [Distribuera variabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=sv-SE) ([SEARCH\_CONFIGURATION-avsnittet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=sv-SE#search_configuration))
+* [Tjänster](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=sv-SE) (dokumentation om konfigurationsfilen `.magento/services.yaml`)
+* [Live Search](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/live-search/overview)

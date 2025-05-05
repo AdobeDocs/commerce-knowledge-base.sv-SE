@@ -25,7 +25,7 @@ Använd följande bifogade patch:
 
 ## Så här sätter du på plåstret
 
-1. Följ stegen i [Utför en uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) i Commerce-guiden.
+1. Följ stegen i [Utför en uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=sv-SE) i Commerce-guiden.
 1. Använd den bifogade korrigeringen före **[!UICONTROL Update metadata]**-fasen.
 (Du kan också tillämpa korrigeringen när du har slutfört **[!UICONTROL Update metadata]**-fasen, men sedan måste du köra `bin/magento setup:upgrade` igen).
-1. Fortsätt med resten av stegen i [Utför en uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
+1. Fortsätt med resten av stegen i [Utför en uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=sv-SE).

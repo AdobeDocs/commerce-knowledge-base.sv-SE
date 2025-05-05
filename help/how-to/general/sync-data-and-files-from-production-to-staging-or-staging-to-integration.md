@@ -20,7 +20,7 @@ I den här artikeln beskrivs hur du synkroniserar din produktionsmiljö ända ti
 
 ## Synkronisera data från en miljö till en annan
 
-Om du vill synkronisera data måste du manuellt dumpa databasen från källmiljön. Om du vill överföra data till en annan miljö måste du sedan överföra källdumpen till målmiljön och importera den. Mer information finns i [Importera Adobe Commerce-kod till ett molnprojekt > Importera Adobe Commerce-databas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) i utvecklardokumentationen.
+Om du vill synkronisera data måste du manuellt dumpa databasen från källmiljön. Om du vill överföra data till en annan miljö måste du sedan överföra källdumpen till målmiljön och importera den. Mer information finns i [Importera Adobe Commerce-kod till ett molnprojekt > Importera Adobe Commerce-databas](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) i utvecklardokumentationen.
 
 För Adobe Commerce på Cloud Infrastructure Pro-planarkitekturen kan du även synkronisera från Förproduktion och Produktion till din Integration Master-gren. Synkroniseringen hämtar och push-tar bara fram kod, inte data. Om du vill synkronisera data måste du dumpa databasdata och överföra dem till en annan miljös databas.
 
@@ -30,7 +30,7 @@ För Adobe Commerce på Cloud Infrastructure Pro-planarkitekturen kan du även s
 
 ## Synkronisera filer från en miljö till en annan
 
-Om du vill synkronisera filer från en miljö till en annan använder du kommandot `rsync`. Mer information finns i [Distribuera kod och migrera statiska filer och data > Migrera filer med hjälp av synkronisering](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production#migrate-files-using-rsync) i utvecklardokumentationen.
+Om du vill synkronisera filer från en miljö till en annan använder du kommandot `rsync`. Mer information finns i [Distribuera kod och migrera statiska filer och data > Migrera filer med hjälp av synkronisering](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production#migrate-files-using-rsync) i utvecklardokumentationen.
 
 >[!NOTE]
 >

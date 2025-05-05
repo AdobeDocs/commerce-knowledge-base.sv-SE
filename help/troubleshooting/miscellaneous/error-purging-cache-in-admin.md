@@ -60,4 +60,4 @@ Om utdata visar att filerna fortfarande finns i cachen måste du [skicka en supp
 
 ## Relaterad läsning
 
-* [Cachehantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) i utvecklardokumentationen.
+* [Cachehantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/cache-management) i utvecklardokumentationen.

@@ -35,4 +35,4 @@ Lagra serverskript i kataloger som inte är skrivbara, till exempel `./app/code/
 
 ## Relaterad dokumentation
 
-* [Cloud för Adobe Commerce > Projektstruktur > Skrivbara kataloger](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) i vår utvecklardokumentation.
+* [Cloud för Adobe Commerce > Projektstruktur > Skrivbara kataloger](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) i vår utvecklardokumentation.

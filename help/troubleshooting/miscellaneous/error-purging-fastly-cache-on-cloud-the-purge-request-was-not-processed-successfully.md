@@ -49,12 +49,12 @@ Om autentiseringsuppgifterna är korrekta kan du ha problem med dina VCL:er. Om 
 curl -X GET -s https://api.fastly.com/service/<Service ID>/version/<Editable Version #>/snippet -H "Fastly-Key:FASTLY_API_TOKEN"
 ```
 
-Granska listan över VCL:er. Om du har problem med standard-VCL:er från Fastly kan du överföra igen eller verifiera innehållet enligt [Snabbt standard-VCL:er](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Mer information om hur du redigerar anpassade VCL-listor finns i [Anpassade snabbVCL-fragment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) i Commerce on Cloud Infrastructure Guide.
+Granska listan över VCL:er. Om du har problem med standard-VCL:er från Fastly kan du överföra igen eller verifiera innehållet enligt [Snabbt standard-VCL:er](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Mer information om hur du redigerar anpassade VCL-listor finns i [Anpassade snabbVCL-fragment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=sv-SE) i Commerce on Cloud Infrastructure Guide.
 
 ## Mer information
 
 I vår utvecklardokumentation:
 
-* [Om snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [Anpassade VCL-kodfragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [Om snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=sv-SE)
+* [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE)
+* [Anpassade VCL-kodfragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=sv-SE)

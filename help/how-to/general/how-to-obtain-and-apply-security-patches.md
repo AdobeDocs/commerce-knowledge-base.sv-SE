@@ -30,7 +30,7 @@ De flesta [!UICONTROL Security Patches] släpps utan någon isolerad korrigering
 
 ### Fall I:
 
-* Om en isolerad korrigeringsfil/snabbkorrigering anges i [Versionsinformation](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) hämtar du filen från hämtningsavsnittet på [https://account.magento.com](https://account.magento.com/downloads/view/). Användare med delad åtkomst måste först få hämtningsbehörighet av kontoägaren/licenshavaren.
+* Om en isolerad korrigeringsfil/snabbkorrigering anges i [Versionsinformation](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) hämtar du filen från hämtningsavsnittet på [https://account.magento.com](https://account.magento.com/downloads/view/). Användare med delad åtkomst måste först få hämtningsbehörighet av kontoägaren/licenshavaren.
 
 **Caveats:**
 
@@ -50,15 +50,15 @@ Om en isolerad korrigeringsfil/snabbkorrigering inte omnämns i versionsinformat
 
 * **Cloud:**
 
-1. Vissa [!UICONTROL Security Patches] kan ingå/släppas i den senaste versionen av Cloud Tools Suite (ECE-verktyg) under Cloud Patches for Commerce - kontrollera [Versionsinformation](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) och om en säkerhetskorrigering nämns i den versionen uppgraderar du paketet till den versionen.
+1. Vissa [!UICONTROL Security Patches] kan ingå/släppas i den senaste versionen av Cloud Tools Suite (ECE-verktyg) under Cloud Patches for Commerce - kontrollera [Versionsinformation](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) och om en säkerhetskorrigering nämns i den versionen uppgraderar du paketet till den versionen.
 1. Om versionsinformationen inte innehåller någon säkerhetskorrigering kan du fortsätta läsa.
 
 * **Cloud eller lokal:**
 
-* Om det inte finns någon isolerad korrigeringsfil/snabbkorrigering kan du [uppgradera Adobe Commerce-versionen i molnet](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X till den senaste korrigeringsversionen, 2.4.X-pY.
-* Om det inte finns någon isolerad korrigeringsfil/snabbkorrigering kan du [uppgradera Adobe Commerce-versionen On-Premise](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X till den senaste korrigeringsversionen, 2.4.X-pY.
+* Om det inte finns någon isolerad korrigeringsfil/snabbkorrigering kan du [uppgradera Adobe Commerce-versionen i molnet](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X till den senaste korrigeringsversionen, 2.4.X-pY.
+* Om det inte finns någon isolerad korrigeringsfil/snabbkorrigering kan du [uppgradera Adobe Commerce-versionen On-Premise](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X till den senaste korrigeringsversionen, 2.4.X-pY.
 
 ## Relaterad läsning
 
-* Se [Versionsinformation om Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) i *Adobe Commerce on Cloud Infrastructure Guide*.
-* Se [Uppgradera Adobe Commerce-versionen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) i *Adobe Commerce on Cloud Infrastructure Guide*.
+* Se [Versionsinformation om Commerce Cloud Tools Suite](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) i *Adobe Commerce on Cloud Infrastructure Guide*.
+* Se [Uppgradera Adobe Commerce-versionen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) i *Adobe Commerce on Cloud Infrastructure Guide*.

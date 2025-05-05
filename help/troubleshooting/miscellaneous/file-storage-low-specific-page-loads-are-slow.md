@@ -33,8 +33,8 @@ Bilderna är inte optimerade för att balansera prestanda med visningskvalitet.
 
 Innan du överför bilder bör du optimera och komprimera dem för att balansera prestanda med visningskvalitet. Detta bidrar till att öka utrymmet och minska sidinläsningstiden. PNG-filer ger mindre storlekar för bilder med stora enfärgade områden. JPEG ger mindre storlekar för allt annat. Använd den högsta komprimeringen (utan märkbar försämring). Detta är vanligtvis 60-80 procent.
 
-Använd [Snabbt bildoptimering](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html) för att få mer lagringseffektiva bilder.
+Använd [Snabbt bildoptimering](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=sv-SE) för att få mer lagringseffektiva bilder.
 
 ## Relaterad läsning
 
-Mer information om hur du hanterar ditt diskutrymme (om du använder Adobe Commerce i molninfrastruktur) finns i [Hantera diskutrymme i Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) i Commerce on Cloud Infrastructure Guide.
+Mer information om hur du hanterar ditt diskutrymme (om du använder Adobe Commerce i molninfrastruktur) finns i [Hantera diskutrymme i Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=sv-SE) i Commerce on Cloud Infrastructure Guide.

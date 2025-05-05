@@ -64,4 +64,4 @@ Nu kan du lägga till produkter i kategorier eller flytta kategorier med ett sto
 
 ## Relaterad läsning
 
-[Automatiska produktomdirigeringar](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic) i användarhandboken.
+[Automatiska produktomdirigeringar](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic) i användarhandboken.

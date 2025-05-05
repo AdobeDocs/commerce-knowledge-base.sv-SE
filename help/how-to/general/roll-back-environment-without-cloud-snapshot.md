@@ -48,7 +48,7 @@ Om du vill inaktivera Configuration Management kontrollerar du att katalogen `/a
 
 Så här tar du bort konfigurationsfilen:
 
-1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
 1. Ta bort konfigurationsfilen:
    * För Adobe Commerce 2.4:
 
@@ -65,18 +65,18 @@ Så här tar du bort konfigurationsfilen:
 Läs mer om konfigurationshantering genom att läsa:
 
 * [Minska driftsättningsdriftsavbrotten på Adobe Commerce i molninfrastrukturen](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) i vår kunskapsbas för support.
-* [Konfigurationshantering för butiksinställningar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) i utvecklardokumentationen.
+* [Konfigurationshantering för butiksinställningar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=sv-SE) i utvecklardokumentationen.
 
 ### Steg 1: Avinstallera Adobe Commerce med kommandot setup:uninstall {#setup-uninstall}
 
 
 Om du avinstallerar Adobe Commerce-programvaran tas databasen bort och återställs, distributionskonfigurationen tas bort och katalogerna under `var` rensas.
 
-Granska [Avinstallera Adobe Commerce-programmet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html) i utvecklardokumentationen.
+Granska [Avinstallera Adobe Commerce-programmet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html?lang=sv-SE) i utvecklardokumentationen.
 
 Så här avinstallerar du Adobe Commerce:
 
-1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
 1. Kör `setup:uninstall`:
 
    ```php
@@ -147,7 +147,7 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 Om körningen av kommandot `setup:uninstall` misslyckas med ett fel och inte kan slutföras, kan vi rensa databasen manuellt med följande steg:
 
-1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
 1. Anslut till MySQL DB:
 
    ```sql
@@ -168,15 +168,15 @@ Om körningen av kommandot `setup:uninstall` misslyckas med ett fel och inte kan
 
 1. Ta bort följande konfigurationsfiler: `config.php`, `config.php` `.bak`, `env.php` och `env.php.bak`.
 
-När du har återställt databasen gör [en Git-överföring till miljön för att utlösa omdistributionen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#git-commands) och installera Adobe Commerce till en nyligen skapad DB. Eller [kör kommandot för omdistribution](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
+När du har återställt databasen gör [en Git-överföring till miljön för att utlösa omdistributionen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=sv-SE#git-commands) och installera Adobe Commerce till en nyligen skapad DB. Eller [kör kommandot för omdistribution](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=sv-SE#environment-commands).
 
 ## Relaterad läsning
 
 I vår utvecklardokumentation:
 
-* [Återställ en ögonblicksbild i molnet](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
-* [Skapa en ögonblicksbild](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
-* [Fixeringar och hantering av säkerhetskopior](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Hantera grenar med molnkonsolen - Visa loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=en#view-logs)
-* [Komponentdistributionsfel](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html)
-* [Hantera ditt projekt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)
+* [Återställ en ögonblicksbild i molnet](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
+* [Skapa en ögonblicksbild](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
+* [Fixeringar och hantering av säkerhetskopior](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Hantera grenar med molnkonsolen - Visa loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=sv-SE#view-logs)
+* [Komponentdistributionsfel](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html?lang=sv-SE)
+* [Hantera ditt projekt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=sv-SE#configure-the-project)

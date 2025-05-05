@@ -28,8 +28,8 @@ Om några kunder har fått e-postmeddelandet med en aktiveringslänk från New R
 
 **Kunder med startplanarkitektur för Adobe Commerce i molninfrastruktur som vill använda New Relic:**
 
-Startarkitekturskunder ingår inte i New Relic Infrastructure Service som en del av prenumerationen. De kan dock använda New Relic APM (Application Performance Monitoring) om de lägger till en licens genom att följa stegen [Anslut till New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen.
+Startarkitekturskunder ingår inte i New Relic Infrastructure Service som en del av prenumerationen. De kan dock använda New Relic APM (Application Performance Monitoring) om de lägger till en licens genom att följa stegen [Anslut till New Relic](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-Mer information om New Relic tjänster finns i [Undersök prestanda](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen. Du kan även läsa [Felsöka prestanda med New Relic i Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) i vår kunskapsbas för support.
+Mer information om New Relic tjänster finns i [Undersök prestanda](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen. Du kan även läsa [Felsöka prestanda med New Relic i Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) i vår kunskapsbas för support.

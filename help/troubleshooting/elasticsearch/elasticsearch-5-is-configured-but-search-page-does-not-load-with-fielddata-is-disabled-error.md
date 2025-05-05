@@ -56,7 +56,7 @@ Resultatet innehåller en lista med attribut som används för Navigering i lage
 För att åtgärda problemet måste du ange `is_filterable` (d.v.s. används i navigering i lager) och `filterable_in_search` (d.v.s. används i sökresultat med navigering i lager) till &quot;0&quot; (används inte). Gör så här:
 
 1. Skapa en säkerhetskopia av databasen.
-1. Använd ett databasverktyg som [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
+1. Använd ett databasverktyg som [phpMyAdmin](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
 
    ```sql
    UPDATE catalog_eav_attribute AS cea

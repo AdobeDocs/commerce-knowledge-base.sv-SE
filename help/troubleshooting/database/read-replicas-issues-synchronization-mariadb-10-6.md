@@ -54,7 +54,7 @@ Konfigurationen `slave_parallel_mode` för databasen ändrades som standard till
 
 
 
-Anvisningar om hur du uppdaterar databaskonfigurationen finns i [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#database_configuration) i avsnittet Distribuera variabler i Commerce on Cloud Infrastructure Guide.
+Anvisningar om hur du uppdaterar databaskonfigurationen finns i [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=sv-SE#database_configuration) i avsnittet Distribuera variabler i Commerce on Cloud Infrastructure Guide.
 
 
 ## Relaterad läsning

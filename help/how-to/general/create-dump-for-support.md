@@ -27,7 +27,7 @@ Skapa en&quot;scrubbed&quot;-dump från administratören:
 
 Du kan sedan ange till Support att länken för direkthämtning till dumpfilerna (din butiksadress och filnamnet som visas) finns.
 
-Om du har problem med att skapa dumpar från Admin kan du använda CLI-kommandon enligt beskrivningen i [Kör supportverktygen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) i utvecklardokumentationen.
+Om du har problem med att skapa dumpar från Admin kan du använda CLI-kommandon enligt beskrivningen i [Kör supportverktygen](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/run-support-utilities) i utvecklardokumentationen.
 
 ## Relaterad läsning
 

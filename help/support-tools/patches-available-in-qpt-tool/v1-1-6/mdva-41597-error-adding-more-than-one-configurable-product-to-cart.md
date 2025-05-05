@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41597: Det gick inte att lägga till mer än en konfigurerbar produkt i kundvagnen'
-description: MDVA-41597-korrigeringen åtgärdar ett problem där användare får ett felmeddelande när de lägger till mer än en konfigurerbar produkt i kundvagnen med GraphQL. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.6 är installerat. Korrigerings-ID är MDVA-41597. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
+description: MDVA-41597-korrigeringen åtgärdar ett problem där användare får ett felmeddelande när de lägger till mer än en konfigurerbar produkt i kundvagnen med GraphQL. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.6 är installerat. Korrigerings-ID är MDVA-41597. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 exl-id: 777e0f9c-80e3-4cfb-9328-c20eb038f74a
 feature: Configuration, Orders, Products, Shopping Cart
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-41597: Det gick inte att lägga till mer än en konfigurerbar produkt i kundvagnen
 
-MDVA-41597-korrigeringen åtgärdar ett problem där användare får ett felmeddelande när de lägger till mer än en konfigurerbar produkt i kundvagnen med GraphQL. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.6 har installerats. Korrigerings-ID är MDVA-41597. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
+MDVA-41597-korrigeringen åtgärdar ett problem där användare får ett felmeddelande när de lägger till mer än en konfigurerbar produkt i kundvagnen med GraphQL. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.6 har installerats. Korrigerings-ID är MDVA-41597. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.4.
 
 ## Berörda produkter och versioner
 
@@ -27,7 +27,7 @@ Adobe Commerce (alla distributionsmetoder) 2.4.2 - 2.4.3-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=sv-SE). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -49,8 +49,8 @@ Endast den första produkten läggs i varukorgen.
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 

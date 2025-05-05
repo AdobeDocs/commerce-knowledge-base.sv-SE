@@ -51,7 +51,7 @@ Kontrollera sessionsposten som skapats i tabellen `admin_user_session`. Om värd
 
 ### Ändra sessionslagring
 
-Försök att ändra sessionslagringen. Använd informationen från artikeln [Hitta dina sessionsfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) i vår utvecklardokumentation för att ta reda på var din session är lagrad och ändra den genom att redigera filen `app/etc/env.php`.
+Försök att ändra sessionslagringen. Använd informationen från artikeln [Hitta dina sessionsfiler](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) i vår utvecklardokumentation för att ta reda på var din session är lagrad och ändra den genom att redigera filen `app/etc/env.php`.
 
 Om du till exempel vill börja lagra sessionen i filsystemet ändrar du avsnittet `'session'` så här:
 
@@ -69,9 +69,9 @@ Kör kommandot `bin/magento app:config:import` om du vill importera konfiguratio
 
 ## Relaterad läsning
 
-* [Importera data från konfigurationsfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) i utvecklardokumentationen
-* [Konfigurera [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) i utvecklardokumentationen
-* [Omdirigera tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet&quot;Ditt konto är tillfälligt inaktiverat&quot; ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) i vår kunskapsbas för support
-* [Omdirigera tillbaka till inloggningsformuläret utan fel när du försöker logga in på [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) i vår kunskapsbas för support
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Importera data från konfigurationsfiler](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) i utvecklardokumentationen
+* [Konfigurera [!DNL Redis]](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cache/redis/config-redis) i utvecklardokumentationen
+* [Omdirigera tillbaka till inloggningsformuläret [!UICONTROL Commerce Admin] med felet&quot;Ditt konto är tillfälligt inaktiverat&quot; ](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) i vår kunskapsbas för support
+* [Omdirigera tillbaka till inloggningsformuläret utan fel när du försöker logga in på [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) i vår kunskapsbas för support
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
 

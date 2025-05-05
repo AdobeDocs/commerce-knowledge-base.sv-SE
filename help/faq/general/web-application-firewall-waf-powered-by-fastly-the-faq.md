@@ -104,7 +104,7 @@ Varje begäran som inte cachelagras har en fördröjning på cirka 1,5 milliseku
 
 ## Kan kunderna skapa och ändra IP-svarta listor för att blockera trafik?
 
-Ja, kunderna kan aktivera blockering per land och åtkomstkontrollista (ACL) från administratörsgränssnittet för Adobe Commerce i molninfrastrukturen. Använd dessa funktioner om du vill blockera åtkomst för besökare som kommer från specifika länder eller vissa IP-intervall. Om du vill att blockerade besökare ska se en anpassad sida i stället för en felkod, kan du skapa en anpassad felsida genom att överföra HTML på snabbkonfigurationsmenyn. Se [Skapa en anpassad fel-/underhållssida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i utvecklardokumentationen.
+Ja, kunderna kan aktivera blockering per land och åtkomstkontrollista (ACL) från administratörsgränssnittet för Adobe Commerce i molninfrastrukturen. Använd dessa funktioner om du vill blockera åtkomst för besökare som kommer från specifika länder eller vissa IP-intervall. Om du vill att blockerade besökare ska se en anpassad sida i stället för en felkod, kan du skapa en anpassad felsida genom att överföra HTML på snabbkonfigurationsmenyn. Se [Skapa en anpassad fel-/underhållssida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE) i utvecklardokumentationen.
 
 ## Var kan jag kontrollera driftstatusen för min WAF-tjänst?
 
@@ -118,7 +118,7 @@ För närvarande erbjuds inte incidenthantering.
 
 Även om Adobe Commerce inte har något säkerhetscenter har vi en säkerhetsverksamhetsprocess som gör att vi kan använda rätt resurser för att hantera säkerhetsincidenter i realtid. Vi erbjuder också support dygnet runt, alla dagar, året om.
 
-Du kan även få säkerhetsnyheter och uppdateringar relaterade till Adobe Commerce från [Säkerhetscenter](https://helpx.adobe.com/security.html).
+Du kan även få säkerhetsnyheter och uppdateringar relaterade till Adobe Commerce från [Säkerhetscenter](https://helpx.adobe.com/se/security.html).
 
 ## Vilken support finns?
 
@@ -160,7 +160,7 @@ I följande tabell sammanfattas supportkanalerna och tillgängligheten för WAF 
 </tr>
 <tr>
 <td>Eskalering av nödsituationer*</td>
-<td>Läs artikeln <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html">Adobe Commerce P1 notification hotline</a> för amerikanska och internationella nummer.</td>
+<td>Läs artikeln <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html?lang=sv-SE">Adobe Commerce P1 notification hotline</a> för amerikanska och internationella nummer.</td>
 </tr>
 </tbody>
 </table>

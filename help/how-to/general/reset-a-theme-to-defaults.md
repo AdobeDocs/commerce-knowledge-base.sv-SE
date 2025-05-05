@@ -30,7 +30,7 @@ Medan du utvecklar Adobe Commerce-komponenter (alla distributioner) och Magento 
 
 Om du behöver återställa butikstemat men inte kan komma åt administratörspanelen kan du återställa det i databasen genom att göra följande:
 
-1. Använd ett databasverktyg som [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga: `UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
+1. Använd ett databasverktyg som [phpMyAdmin](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga: `UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
 1. Rensa följande kataloger:
    * `pub/static/frontend`
    * `var/view_preprocessing`

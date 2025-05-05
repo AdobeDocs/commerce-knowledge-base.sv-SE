@@ -58,4 +58,4 @@ Kontrollera din skräppostmapp för e-postmeddelandet. Om e-postmeddelandet visa
 
 ## Relaterad läsning
 
-* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) i utvecklardokumentationen.
+* [SendGrid](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/project/sendgrid) i utvecklardokumentationen.

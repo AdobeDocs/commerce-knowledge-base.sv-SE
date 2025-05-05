@@ -1,6 +1,6 @@
 ---
 title: Identifiera avvikelser med hjälp av dataexport
-description: Den här artikeln innehåller lösningar för felsökning av avvikelser i data från Magento BI. Dataexport är ett användbart verktyg för att jämföra dina Magento BI-data med dina källdata för att identifiera datameddelanden i dina rapporter, särskilt om [checklista för diagnostik av diskrepanser](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) inte hjälper dig att identifiera problemet. I den här artikeln får du ett exempel på hur datameddelanden kan identifieras med hjälp av dataexport.
+description: Den här artikeln innehåller lösningar för felsökning av avvikelser i data från Magento BI. Dataexport är ett användbart verktyg för att jämföra dina Magento BI-data med dina källdata för att identifiera datameddelanden i dina rapporter, särskilt om [checklista för diagnostik av diskrepanser](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) inte hjälper dig att identifiera problemet. I den här artikeln får du ett exempel på hur datameddelanden kan identifieras med hjälp av dataexport.
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Identifiera avvikelser med hjälp av dataexport
 
-Den här artikeln innehåller lösningar för felsökning av avvikelser i data från Magento BI. Dataexport är ett användbart verktyg för att jämföra dina Magento BI-data med dina källdata för att identifiera datamatchningsskillnader i dina rapporter, särskilt om checklistan för [diagnostik av datameddelanden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) inte hjälper dig att identifiera problemet. I den här artikeln får du ett exempel på hur datameddelanden kan identifieras med hjälp av dataexport.
+Den här artikeln innehåller lösningar för felsökning av avvikelser i data från Magento BI. Dataexport är ett användbart verktyg för att jämföra dina Magento BI-data med dina källdata för att identifiera datamatchningsskillnader i dina rapporter, särskilt om checklistan för [diagnostik av datameddelanden](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) inte hjälper dig att identifiera problemet. I den här artikeln får du ett exempel på hur datameddelanden kan identifieras med hjälp av dataexport.
 
 Ta den här analysen, till exempel:
 
@@ -51,7 +51,7 @@ Nu när alla data finns på ett och samma ställe kan vi leta efter orsaken till
 
 Om båda systemen har samma radantal och måttet **Intäkter** inte matchar källdata, måste **order\_total** vara avstängd någonstans. Det är möjligt att fältet **order\_total** har uppdaterats i källdatabasen och att Magento BI inte kan hämta dessa ändringar.
 
-Kontrollera detta genom att kontrollera om kolumnen **order\_total** ommarkeras eller inte. Gå till tabellhanteraren och klicka på Datan Warehouse **`orders`**. Du ser [kontrollfrekvensen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) som anges i avsnittet &#39;Ändringar?&#39; kolumn. Fältet **order\_total** ska ställas in så att det kontrolleras igen så ofta som det förväntas ändras. Om så inte är fallet ska du ställa in den till önskad frekvens för omkontroll.
+Kontrollera detta genom att kontrollera om kolumnen **order\_total** ommarkeras eller inte. Gå till tabellhanteraren och klicka på Datan Warehouse **`orders`**. Du ser [kontrollfrekvensen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=sv-SE) som anges i avsnittet &#39;Ändringar?&#39; kolumn. Fältet **order\_total** ska ställas in så att det kontrolleras igen så ofta som det förväntas ändras. Om så inte är fallet ska du ställa in den till önskad frekvens för omkontroll.
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
@@ -69,7 +69,7 @@ Gå till sidan Anslutningar och ta en titt på statusen för datakällan som inn
 
 ## Källdatabasen har FÄRRE rader än Magento BI {#lessrows}
 
-Om källdatabasen har färre rader än Magento BI kan det hända att rader tas bort från källdatabasen och Magento BI inte kan hämta dessa borttagningar. **&#x200B; [Om du tar bort data](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) kan det leda till avvikelser, längre uppdateringstider och en rad logistiska problem**. Därför rekommenderar vi att du aldrig tar bort data om det inte är nödvändigt.
+Om källdatabasen har färre rader än Magento BI kan det hända att rader tas bort från källdatabasen och Magento BI inte kan hämta dessa borttagningar. **&#x200B; [Om du tar bort data](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=sv-SE) kan det leda till avvikelser, längre uppdateringstider och en rad logistiska problem**. Därför rekommenderar vi att du aldrig tar bort data om det inte är nödvändigt.
 
 Om du däremot tar bort rader från tabellen bör du titta på hur ofta kontrollen ska göras om primärnyckeln. Om du upprepar primärnyckeln kontrolleras om tabellen innehåller borttagna rader.
 
@@ -89,7 +89,7 @@ Om du inte kan hitta källan till problemet måste du göra en slinga i RJ-stöd
 
 ## Relaterad läsning
 
-* [Checklista för diagnostisk datameddelandekontroll](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
-* [Adobe Commerce Intelligence tjänstprinciper](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Checklista för diagnostisk datameddelandekontroll](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
+* [Adobe Commerce Intelligence tjänstprinciper](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
 

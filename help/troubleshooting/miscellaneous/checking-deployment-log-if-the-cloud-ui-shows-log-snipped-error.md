@@ -30,11 +30,11 @@ När du försöker visa distributionsloggen i molnprojektgränssnittet visas fö
 
 ## Orsak
 
-Observera att loggen som visas i användargränssnittet inte ska behandlas som en källa till sanningen, särskilt om du upptäcker att webbplatsen inte svarar eller fungerar som den ska efter att distributionen hade statusen Slutfört. Du bör även verifiera med loggarna på servern. Se [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) i utvecklardokumentationen.
+Observera att loggen som visas i användargränssnittet inte ska behandlas som en källa till sanningen, särskilt om du upptäcker att webbplatsen inte svarar eller fungerar som den ska efter att distributionen hade statusen Slutfört. Du bör även verifiera med loggarna på servern. Se [Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=sv-SE) i utvecklardokumentationen.
 
 ## Lösning
 
-1. Kontrollera att du har [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) installerat i din lokala miljö.
+1. Kontrollera att du har [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=sv-SE) installerat i din lokala miljö.
 1. Du kan köra något av följande kommandon:
 
    ```bash
@@ -70,5 +70,5 @@ Observera att loggen som visas i användargränssnittet inte ska behandlas som e
 
 ## Relaterade läsningar i vår dokumentation för utvecklare:
 
-* [Adobe Commerce i molninfrastruktur > Skapa och distribuera](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
-* [Adobe Commerce i molninfrastruktur > Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+* [Adobe Commerce i molninfrastruktur > Skapa och distribuera](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=sv-SE)
+* [Adobe Commerce i molninfrastruktur > Visa och hantera loggar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=sv-SE)

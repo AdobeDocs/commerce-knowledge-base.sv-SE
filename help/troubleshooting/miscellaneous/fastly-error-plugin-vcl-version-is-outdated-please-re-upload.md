@@ -33,15 +33,15 @@ Tillägget Snabbt uppdaterades (tillsammans med en paketerad VCL-konfiguration o
 
 ## Lösning
 
-1. Kontrollera att du har de senaste ECE-verktygen installerade och i den [aktuella versionen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html) i utvecklardokumentationen. ECE-Tools har en version av snabbpaketet i sina beroenden.
+1. Kontrollera att du har de senaste ECE-verktygen installerade och i den [aktuella versionen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html?lang=sv-SE) i utvecklardokumentationen. ECE-Tools har en version av snabbpaketet i sina beroenden.
 
    Detta är kanske inte den senaste versionen av Fastly-pluginen, men det är sannolikt en senare version än den som du har installerat och det är bäst att ha den senaste ECE-verktygen installerad.
 
-1. Om du inte har tillgång till den aktuella versionen av ECE-verktygen följer du de här stegen för att [uppgradera](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) i vår utvecklardokumentation.
+1. Om du inte har tillgång till den aktuella versionen av ECE-verktygen följer du de här stegen för att [uppgradera](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=sv-SE) i vår utvecklardokumentation.
 1. När du har uppgraderat ECE-Tools bör du kontrollera om du nu har en aktuell version av [Fastly plugin](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets) installerad.
-1. Om Fastly-plugin-programmet inte är den aktuella versionen följer du de här stegen för att [uppgradera plugin-programmet till den senaste versionen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upgrade-the-fastly-module) i utvecklardokumentationen.
+1. Om Fastly-plugin-programmet inte är den aktuella versionen följer du de här stegen för att [uppgradera plugin-programmet till den senaste versionen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE#upgrade-the-fastly-module) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-* Mer information om hur du konfigurerar och konfigurerar snabbt finns i [Konfigurera snabbtjänster](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) i utvecklardokumentationen.
+* Mer information om hur du konfigurerar och konfigurerar snabbt finns i [Konfigurera snabbtjänster](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=sv-SE) i utvecklardokumentationen.
 * Allmän information om Fastly finns på [fastly.com](https://www.fastly.com/).

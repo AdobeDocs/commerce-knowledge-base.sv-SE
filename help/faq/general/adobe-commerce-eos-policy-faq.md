@@ -18,7 +18,7 @@ Följande frågor och svar är avsedda att hjälpa handlare, utvecklare och part
 
 ### Var hittar jag supportdatum för alla versioner av Adobe Commerce?
 
-Du hittar Adobe Commerce livscykelpolicy och datum för programvarusupport i [Adobe Commerce Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Vi publicerar också slutdatum för support (EOS) på [utvecklardokumentationssidan](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+Du hittar Adobe Commerce livscykelpolicy och datum för programvarusupport i [Adobe Commerce Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Vi publicerar också slutdatum för support (EOS) på [utvecklardokumentationssidan](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/versions).
 
 ### Vad innebär det när Adobe slutar stödja en version av Adobe Commerce?
 
@@ -68,9 +68,9 @@ Det finns flera sätt att hålla dig à jour med dina Adobe Commerce-program:
 
 Er handelsplattform är ett viktigt affärssystem för ert företag och att hålla er uppdaterade och aktuella är en viktig pågående investering i företaget. De senaste teknologierna och säkerhetsuppdateringarna för er digitala butik är viktiga på många nivåer och kan bidra till att förbättra innovationer och tillväxt.
 
-Att gå över till den senaste versionen av Adobe Commerce kan ta tid och resurser att bli bra. Det är bäst att ni planerar så långt före supportdagens slut som möjligt för att försäkra er om att ni har den tid och de resurser som behövs för att uppnå era strategiska mål i tid och inom budgeten. För att hjälpa dig med nästa uppgradering har Adobe publicerat [2.4 Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) som innehåller bästa praxis och tekniska steg samt verktyg och resurser som du kan använda när du uppgraderar.
+Att gå över till den senaste versionen av Adobe Commerce kan ta tid och resurser att bli bra. Det är bäst att ni planerar så långt före supportdagens slut som möjligt för att försäkra er om att ni har den tid och de resurser som behövs för att uppnå era strategiska mål i tid och inom budgeten. För att hjälpa dig med nästa uppgradering har Adobe publicerat [2.4 Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=sv-SE) som innehåller bästa praxis och tekniska steg samt verktyg och resurser som du kan använda när du uppgraderar.
 
-En annan viktig faktor är att förbehålla utvecklare och partners resurser så tidigt som möjligt. Partnertid och resurser bokas ofta långt före supportdatumet, vilket resulterar i betydligt färre resurser för att hjälpa till med migreringsprojekt. Vi rekommenderar att du har en treårig löpande plan som du diskuterar årligen med minimum och ser till att nästa år planeras och budgeteras för. Använd [Adobe&#39;s release calendar](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) för att hålla reda på releasedatum.
+En annan viktig faktor är att förbehålla utvecklare och partners resurser så tidigt som möjligt. Partnertid och resurser bokas ofta långt före supportdatumet, vilket resulterar i betydligt färre resurser för att hjälpa till med migreringsprojekt. Vi rekommenderar att du har en treårig löpande plan som du diskuterar årligen med minimum och ser till att nästa år planeras och budgeteras för. Använd [Adobe&#39;s release calendar](https://experienceleague.adobe.com/sv/docs/commerce-operations/release/planning/schedule) för att hålla reda på releasedatum.
 
 ### Kan jag använda en tredjeparts tjänsteleverantör för programsupport när Adobe Commerce Support upphör?
 

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41236: Det går inte att skapa nya eller redigera befintliga schemalagda uppdateringar för produkten'
-description: MDVA-41236-korrigeringen åtgärdar ett problem där användare inte kan skapa nya eller redigera befintliga schemalagda uppdateringar för produkten om slutdatumet har tagits bort tidigare. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5 är installerat. Korrigerings-ID är MDVA-41236. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
+description: MDVA-41236-korrigeringen åtgärdar ett problem där användare inte kan skapa nya eller redigera befintliga schemalagda uppdateringar för produkten om slutdatumet har tagits bort tidigare. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5 är installerat. Korrigerings-ID är MDVA-41236. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 exl-id: 00d6c0af-f248-49f6-aaa2-3ae3c0294832
 feature: Products, Staging
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-41236: Det går inte att skapa nya eller redigera befintliga schemalagda uppdateringar för produkten
 
-MDVA-41236-korrigeringen åtgärdar ett problem där användare inte kan skapa nya eller redigera befintliga schemalagda uppdateringar för produkten om slutdatumet har tagits bort tidigare. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5 har installerats. Korrigerings-ID är MDVA-41236. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
+MDVA-41236-korrigeringen åtgärdar ett problem där användare inte kan skapa nya eller redigera befintliga schemalagda uppdateringar för produkten om slutdatumet har tagits bort tidigare. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5 har installerats. Korrigerings-ID är MDVA-41236. Observera att problemet är planerat att åtgärdas i Adobe Commerce 2.4.5.
 
 ## Berörda produkter och versioner
 
@@ -27,7 +27,7 @@ Adobe Commerce (alla distributionsmetoder) 2.3.0 - 2.4.3-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=sv-SE). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 ## Problem
 
@@ -61,8 +61,8 @@ Användarna får följande felmeddelande:
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 

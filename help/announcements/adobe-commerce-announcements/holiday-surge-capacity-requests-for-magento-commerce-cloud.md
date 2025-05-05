@@ -34,7 +34,7 @@ Följande information finns för varje begäran om storleksändring:
 
 **Begär överkapacitet**
 
-Adobe Commerce handlare i vår molninfrastruktur som förutser ett behov av extra kapacitet under semestersäsongen bör [skicka en supportanmälan för överkapacitet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) via vårt [Help Center](/help/overview.md), vilket anger datum och förväntade kapacitetsbehov i biljetten. Observera att ökad kapacitet kräver att du använder den licensierade överlagringskapaciteten.
+Adobe Commerce handlare i vår molninfrastruktur som förutser ett behov av extra kapacitet under semestersäsongen bör [skicka en supportanmälan för överkapacitet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=sv-SE) via vårt [Help Center](/help/overview.md), vilket anger datum och förväntade kapacitetsbehov i biljetten. Observera att ökad kapacitet kräver att du använder den licensierade överlagringskapaciteten.
 
 **Vi rekommenderar att du skickar dessa biljetter minst 48 arbetstimmar innan du behöver kapaciteten. Vi rekommenderar dessutom att du gör en begäran om måndag mellan fredag och måndag i svartvitt så långt som möjligt, eftersom kapaciteten under perioden är begränsad.**
 
@@ -47,7 +47,7 @@ Behöver du mer vägledning om hur man förbereder sig för högtrafik? Adobe Co
 
 I vår kunskapsbas:
 
-* [Beräkning av processorallokering för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
-* [Kontrollera om det krävs en uppgradering för värdinstanser för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html)
-* [Kontrollera värddatorns processorkonfiguration för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html)
-* [Identifiera och mät avbrott för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html)
+* [Beräkning av processorallokering för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html?lang=sv-SE)
+* [Kontrollera om det krävs en uppgradering för värdinstanser för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html?lang=sv-SE)
+* [Kontrollera värddatorns processorkonfiguration för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html?lang=sv-SE)
+* [Identifiera och mät avbrott för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html?lang=sv-SE)

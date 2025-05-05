@@ -40,7 +40,7 @@ kan även visas på kommandoraden.
 
 ## Lösning {#solution}
 
-Vi rekommenderar att du [tilldelar 2 GB minne till PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) i vår utvecklardokumentation för att vara säker på att installationen eller uppgraderingen lyckas.
+Vi rekommenderar att du [tilldelar 2 GB minne till PHP](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/php-settings) i vår utvecklardokumentation för att vara säker på att installationen eller uppgraderingen lyckas.
 
 Om du redan har gjort det skapar du en växlingsfil på datorn. En Linux-dator använder *växlingsutrymme* om den behöver mer minnesresurser och RAM-minnet är fullt. Växlingsutrymmet används för inaktiva sidor i minnet.
 

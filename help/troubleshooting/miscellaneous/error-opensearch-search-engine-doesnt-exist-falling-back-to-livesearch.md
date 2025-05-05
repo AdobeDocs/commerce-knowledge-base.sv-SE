@@ -43,4 +43,4 @@ Följande meddelande visas i loggarna (och kan observeras i [!DNL New Relic]):
 
 ## Relaterad läsning
 
-* [Installera [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) i vår Live Search-guide
+* [Installera [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=sv-SE) i vår Live Search-guide

@@ -29,7 +29,7 @@ Adobe Commerce 2.4.5, som planeras släppas i augusti 2022, kommer att innehåll
 ## Lappa
 
 Patch-ID:t är AC-3022 som finns i Quality Patches Tool version 1.1.16.
-Mer information om hur du använder QPT och installerar korrigeringsfiler finns i artikeln [Quality Patches Tool (QPT) > Usage](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i utvecklardokumentationen.
+Mer information om hur du använder QPT och installerar korrigeringsfiler finns i artikeln [Quality Patches Tool (QPT) > Usage](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/usage) i utvecklardokumentationen.
 
 Patchen gäller för följande Adobe Commerce-versioner:
 
@@ -38,5 +38,5 @@ Patchen gäller för följande Adobe Commerce-versioner:
 
 ## Relaterad läsning
 
-* [Transportföretag > DHL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) i användarhandboken
-* [Leveransmetoder](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/delivery-methods) i användarhandboken
+* [Transportföretag > DHL](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) i användarhandboken
+* [Leveransmetoder](https://experienceleague.adobe.com/sv/docs/commerce-admin/config/sales/delivery-methods) i användarhandboken

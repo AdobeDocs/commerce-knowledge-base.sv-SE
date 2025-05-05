@@ -30,12 +30,12 @@ Ett meddelande om ett inspelningsfel eller ett viktigt problem med molnprojektet
 
 Det finns två sätt att stoppa meddelandena genom att ta bort användare från projektet:
 
-* Metod 1: Använder molnet [!DNL Project URL]. Mer information finns i [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) i guiden för molninfrastruktur för Commerce.
-* Metod 2: Använder magento-cloud [!DNL CLI]. Mer information finns i [Hantera användare med  [!DNL CLI]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-with-the-cli) i guiden för molninfrastruktur i Commerce.
+* Metod 1: Använder molnet [!DNL Project URL]. Mer information finns i [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE) i guiden för molninfrastruktur för Commerce.
+* Metod 2: Använder magento-cloud [!DNL CLI]. Mer information finns i [Hantera användare med  [!DNL CLI]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE#manage-users-with-the-cli) i guiden för molninfrastruktur i Commerce.
 
 Om detta redan har gjorts och e-postmeddelandena fortfarande omfattar dessa användare, skickar du en supportanmälan och begär att de tas bort från inställningen *[!UICONTROL Always CC]* för kontot.
 
 ## Relaterad läsning
 
-* [Visa en användares projektroll](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#view-a-user&#39;s-project-role) i guiden för Commerce om molninfrastruktur.
-* [Så här inkluderar du en teammedlem i supportmeddelanden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html) i Commerce KB.
+* [Visa en användares projektroll](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE#view-a-user&?lang=sv-SE#39;s-project-role) i guiden för Commerce om molninfrastruktur.
+* [Så här inkluderar du en teammedlem i supportmeddelanden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html?lang=sv-SE) i Commerce KB.

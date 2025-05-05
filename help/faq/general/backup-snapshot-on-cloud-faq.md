@@ -59,7 +59,7 @@ Observera också att stödet inte utför återställning eller återställning a
 
 ## Återställ en ögonblicksbild av miljön
 
-Om du vill återställa en befintlig ögonblicksbild (i den miljö som stöds: integrering, mellanlagring, produktion på startplan eller integrering på Pro-plan) följer du stegen i [Säkerhetskopieringshantering: Återställ en manuell säkerhetskopia](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) i vår Commerce on Cloud Infrastructure Guide.
+Om du vill återställa en befintlig ögonblicksbild (i den miljö som stöds: integrering, mellanlagring, produktion på startplan eller integrering på Pro-plan) följer du stegen i [Säkerhetskopieringshantering: Återställ en manuell säkerhetskopia](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) i vår Commerce on Cloud Infrastructure Guide.
 
 ## Säkerhetskopiering av databas (DB)
 

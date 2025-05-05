@@ -78,7 +78,7 @@ Mer information om hur du kan öka diskutrymmet om du använder Adobe Commerce f
        php ./vendor/bin/ece-tools deploy
    ```
 
-   Använd artikeln [Uppgradera till ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) som referens.
+   Använd artikeln [Uppgradera till ece-tools](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) som referens.
 
 1. Kontrollera att ECE-verktygspaketet finns i filen `composer.lock` genom att köra följande kommando:
 
@@ -92,7 +92,7 @@ Mer information om hur du kan öka diskutrymmet om du använder Adobe Commerce f
    "name": "magento/ece-tools", "version": "2002.0.20",
    ```
 
-Referens finns i artikeln [Uppgradera till delade verktyg](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package).
+Referens finns i artikeln [Uppgradera till delade verktyg](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package).
 
 ### Orsakar korrigeringen problemet?
 

@@ -34,11 +34,11 @@ Dessa undantag beror på filsystemets behörighetsinställningar.
 
 ### Lösning
 
-[Ange ägarskap och behörigheter för filsystemet igen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) som en användare med `root`-behörighet.
+[Ange ägarskap och behörigheter för filsystemet igen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=sv-SE) som en användare med `root`-behörighet.
 
 ## Symptom (produktionsläge)
 
-Om du är inställd för [produktionsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html) misslyckas installationen av exempeldata om du använder kommandot [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html):
+Om du är inställd för [produktionsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=sv-SE) misslyckas installationen av exempeldata om du använder kommandot [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html?lang=sv-SE):
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -48,7 +48,7 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 Installera inte exempeldata i produktionsläge. Växla till utvecklarläge, rensa några `var`-kataloger och försök igen.
 
-Ange följande kommandon i den ordning som visas som ägare av [Adobe Commerce-filsystemet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html):
+Ange följande kommandon i den ordning som visas som ägare av [Adobe Commerce-filsystemet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html?lang=sv-SE):
 
 ```php
 cd <magento_root>

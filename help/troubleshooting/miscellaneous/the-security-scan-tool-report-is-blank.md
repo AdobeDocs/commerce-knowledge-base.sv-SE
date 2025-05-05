@@ -23,7 +23,7 @@ I den här artikeln finns en korrigering av problemet där verktyget för säker
 
 <u>Steg som ska återskapas</u>:
 
-1. Konfigurera verktyget för säkerhetsgenomsökning för att kontrollera din webbplats, enligt beskrivningen i [Säkerhetsgenomsökning](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) i användarhandboken.
+1. Konfigurera verktyget för säkerhetsgenomsökning för att kontrollera din webbplats, enligt beskrivningen i [Säkerhetsgenomsökning](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/security-scan) i användarhandboken.
 1. Välj **Kör skanning** i åtgärdskolumnen.
 
 <u>Förväntade resultat</u>:
@@ -47,5 +47,5 @@ Försök att öppna din webbplats.
 
 ## Relaterad läsning
 
-* [Publicera och starta](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview) i utvecklardokumentationen.
-* [Säkerhetsgenomsökning](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) i vår användarhandbok.
+* [Publicera och starta](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/launch/overview) i utvecklardokumentationen.
+* [Säkerhetsgenomsökning](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/security-scan) i vår användarhandbok.

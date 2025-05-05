@@ -44,4 +44,4 @@ bin/magento maintenance:disable
 
 ## Relaterad läsning
 
-Mer information om när underhållsläge ska användas finns i [Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) i utvecklardokumentationen.
+Mer information om när underhållsläge ska användas finns i [Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) i utvecklardokumentationen.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Elasticsearch-värden måste vara konfigurerad och konfigurerad innan du kan installera version 2.4.0. Mer information finns i [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) i utvecklardokumentationen.
+> [MySQL-katalogsökmotorn tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Elasticsearch-värden måste vara konfigurerad och konfigurerad innan du kan installera version 2.4.0. Mer information finns i [Installera och konfigurera Elasticsearch](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/search/overview-search) i utvecklardokumentationen.
 
 I den här artikeln finns en patch för det kända problemet med Adobe Commerce i molninfrastruktur 2.2.3 som rör hämtning av olika sökresultat för samma sökfråga med MySQL och Elasticsearch.
 

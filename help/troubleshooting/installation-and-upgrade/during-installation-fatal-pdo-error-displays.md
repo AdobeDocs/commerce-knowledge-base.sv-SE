@@ -23,4 +23,4 @@ PHP Fatal error:  Class 'PDO' not found in /var/www/html/magento2/setup/module/M
 
 ## Lösning
 
-Kontrollera att du har installerat alla [nödvändiga PHP-tillägg](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
+Kontrollera att du har installerat alla [nödvändiga PHP-tillägg](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/php-settings).

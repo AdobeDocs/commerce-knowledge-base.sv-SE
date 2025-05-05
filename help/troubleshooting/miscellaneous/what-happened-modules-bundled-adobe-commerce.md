@@ -35,4 +35,4 @@ Installera/köp de officiella tilläggen separat. Dessa finns på [Commerce Mark
 
 ## Relaterad läsning
 
-[Leverantörspaketerade tillägg](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) i Adobe Commerce Documentation > Release Information > Versionsinformation för Adobe Commerce 2.4.4.
+[Leverantörspaketerade tillägg](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?lang=sv-SE&#vendor-bundled-extensions) i Adobe Commerce Documentation > Release Information > Versionsinformation för Adobe Commerce 2.4.4.

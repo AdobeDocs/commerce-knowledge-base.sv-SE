@@ -1,6 +1,6 @@
 ---
 title: Installera de senaste patcharna för att åtgärda Adobe Commerce Redis-problem
-description: Den här artikeln innehåller information om de senaste Redis-relaterade korrigeringsfilerna som finns i [Adobe Commerce on cloud infrastructure Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) package.
+description: Den här artikeln innehåller information om de senaste Redis-relaterade korrigeringsfilerna som finns i [Adobe Commerce on cloud infrastructure Patches](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) package.
 exl-id: 0335bc11-f679-4629-b4e7-6a0e68c3ae44
 feature: Cache, Install, Services
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Installera de senaste patcharna för att åtgärda Adobe Commerce Redis-problem
 
-I den här artikeln finns information om de senaste Redis-relaterade korrigeringsfilerna som finns i [Adobe Commerce för molninfrastrukturkorrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) .
+I den här artikeln finns information om de senaste Redis-relaterade korrigeringsfilerna som finns i [Adobe Commerce för molninfrastrukturkorrigeringsfiler](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) .
 
 ## Berörda produkter och versioner
 
@@ -25,7 +25,7 @@ Extra processor- och minnesanvändning av Redis kan minska Adobe Commerce presta
 
 ## Lösning
 
-Använd de senaste patcharna från Adobe Commerce i molninfrastrukturspaketet. Mer information finns i [Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen.
+Använd de senaste patcharna från Adobe Commerce i molninfrastrukturspaketet. Mer information finns i [Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen.
 
 De senaste Redis-korrigeringsfilerna som levereras av Adobe Commerce om molninfrastrukturkorrigeringspaketet bidrar till följande:
 

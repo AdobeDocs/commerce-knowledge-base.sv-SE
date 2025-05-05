@@ -114,5 +114,5 @@ Installationen eller uppgraderingen av [!DNL B2B] version 1.4.0 på Adobe Commer
 
 1. Slutför installations- eller uppgraderingsprocessen.
 
-   * [Installera [!DNL B2B] i molninfrastrukturen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
-   * [Installera lokalt](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html)
+   * [Installera [!DNL B2B] i molninfrastrukturen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html?lang=sv-SE)
+   * [Installera lokalt](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html?lang=sv-SE)

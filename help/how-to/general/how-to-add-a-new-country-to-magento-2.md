@@ -24,8 +24,8 @@ Läs följande avsnitt i utvecklardokumentationen innan du försöker skapa en n
 
 * [Utvecklarhandbok för PHP](https://developer.adobe.com/commerce/php/development/)
 * [Modulöversikt](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
-* [Skapa en ny modul](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module)
-* [Modulkonfigurationsfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
+* [Skapa en ny modul](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/backend-development/create-module)
+* [Modulkonfigurationsfiler](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/files/module-files)
 
 ## Nödvändig information
 

@@ -22,7 +22,7 @@ Alla Adobe Commerce storefront-ansikten sorteras i bokstavsordning med alternati
 
 ## Tillfällig lösning
 
-I vissa kantfall kanske inte ansiktena sorteras i alfabetisk ordning enligt inställningarna i [[!DNL Live Search] Motstående arbetsyta](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace).
+I vissa kantfall kanske inte ansiktena sorteras i alfabetisk ordning enligt inställningarna i [[!DNL Live Search] Motstående arbetsyta](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace).
 
 Som en tillfällig lösning kan du sortera produktattribut i avsnittet [!UICONTROL Admin]-attribut.
 

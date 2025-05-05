@@ -52,5 +52,5 @@ Så här undviker du det:
    * Uppgradera disposition till en version som är senare än 26 november 2015: `composer self-update`.
 
 1. Ta bort din Adobe Commerce-katalog och underkataloger.
-1. Försök hämta igen med antingen `[composer create-project](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)` eller `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`.
+1. Försök hämta igen med antingen `[composer create-project](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/composer)` eller `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`.
 1. Uppdatera disposition: `composer self-update` när du har hämtat Adobe Commerce-programmet.

@@ -47,9 +47,9 @@ Insvepning är en säkerhetsfunktion som gör det möjligt för Adobe Commerce a
 ## Lösning
 
 * Om din molnsajt är aktiv växlar du till https://mydomain.com/.
-* Om du har en aktiv plats (ej molnet), som använder domänen https://mydomain.com/, konfigurerar du en underdomän `mcprod.mydomain.com` och uppdaterar **bas-URL** till *https://mcprod.mydomain.com* i stället, pekar [DNS på Fast](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
+* Om du har en aktiv plats (ej molnet), som använder domänen https://mydomain.com/, konfigurerar du en underdomän `mcprod.mydomain.com` och uppdaterar **bas-URL** till *https://mcprod.mydomain.com* i stället, pekar [DNS på Fast](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
 
 ## Relaterad läsning
 
 * [Vanliga frågor och svar om insvepning med snabb ursprung](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) i vår kunskapsbas för support
-* [Checklista för att konfigurera en ny domän](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain) i vår kunskapsbas för support
+* [Checklista för att konfigurera en ny domän](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain) i vår kunskapsbas för support

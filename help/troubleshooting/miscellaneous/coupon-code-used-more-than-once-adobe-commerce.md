@@ -62,8 +62,8 @@ Lägg till `sales.rule.update.coupon.usage`-konsumenten i filen `app/etc/env.php
 ...
 ```
 
-Mer information finns i [Hantera meddelandeköer > Konfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) i utvecklardokumentationen.
+Mer information finns i [Hantera meddelandeköer > Konfiguration](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-[Message Queues - översikt](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) i utvecklardokumentationen.
+[Message Queues - översikt](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) i utvecklardokumentationen.

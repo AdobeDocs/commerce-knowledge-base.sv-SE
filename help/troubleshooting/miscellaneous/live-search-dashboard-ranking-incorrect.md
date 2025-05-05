@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Instrumentpanelen [!DNL Live Search] och rankningen av sökresultat är felaktig
 
-Om du observerar att de data som visas på kontrollpanelen [!DNL Live Search] är felaktiga eller om [rankningen av sökresultaten](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) inte är vad du förväntar dig, kan du läsa följande av möjliga orsaker:
+Om du observerar att de data som visas på kontrollpanelen [!DNL Live Search] är felaktiga eller om [rankningen av sökresultaten](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) inte är vad du förväntar dig, kan du läsa följande av möjliga orsaker:
 
 * Fältet `topLevelSku` i produktkontexten i `productView`-händelser saknas. Detta orsakar tomma konverteringar och andra oväntade mätvärden.
 

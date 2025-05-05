@@ -57,7 +57,7 @@ Alla 2.3.5+ Adobe Commerce lokala handlare ska köra följande CLI-kommando:
 
 **Så här korrigerar du Adobe Commerce i molninfrastrukturen:**
 
-Kör ovanstående kommandon eller uppgradera till den senaste versionen av ECE-verktygen (ece-tools: 2002.1.7), som kommer att vara tillgänglig torsdagen den 29 juli. Anvisningar om hur du gör detta finns i [Cloud för Adobe Commerce > Uppdatera versionen för verktygen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) i utvecklardokumentationen.
+Kör ovanstående kommandon eller uppgradera till den senaste versionen av ECE-verktygen (ece-tools: 2002.1.7), som kommer att vara tillgänglig torsdagen den 29 juli. Anvisningar om hur du gör detta finns i [Cloud för Adobe Commerce > Uppdatera versionen för verktygen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) i utvecklardokumentationen.
 
 Den fullständiga korrigeringen släpps i Adobe Commerce (alla distributionsmetoder) 2.4.4.
 

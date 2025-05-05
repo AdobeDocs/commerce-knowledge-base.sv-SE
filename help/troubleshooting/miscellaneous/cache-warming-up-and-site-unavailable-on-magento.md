@@ -37,8 +37,8 @@ Webbplatsen är inte tillgänglig eller så är svarstiden för hög.
 
 ## Lösning
 
-Begränsa antalet samtidiga anslutningar under cacheuppvarningen. Detta kräver att variabeln `WARM_UP_CONCURRENCY` post-deploy läggs till för att ange antalet uppvärmningsbegäranden som cacheuppvärmarskriptet kan skicka samtidigt. Om du anger det här alternativet kan belastningen på Adobe Commerce molninfrastruktur hanteras. Anvisningar finns i [Efterdistribuera variabler > WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) i vår utvecklardokumentation.
+Begränsa antalet samtidiga anslutningar under cacheuppvarningen. Detta kräver att variabeln `WARM_UP_CONCURRENCY` post-deploy läggs till för att ange antalet uppvärmningsbegäranden som cacheuppvärmarskriptet kan skicka samtidigt. Om du anger det här alternativet kan belastningen på Adobe Commerce molninfrastruktur hanteras. Anvisningar finns i [Efterdistribuera variabler > WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 
-[Helsidescache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) i användarhandboken
+[Helsidescache](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/cache-management#full-page-caching) i användarhandboken

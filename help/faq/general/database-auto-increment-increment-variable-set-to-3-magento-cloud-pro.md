@@ -31,5 +31,5 @@ Om den valda huvudsidan är nod 1 där `auto_increment_offset = 1`, ökas ID:t m
 
 Läs mer i vår utvecklardokumentation:
 
-* [Cloud för Adobe Commerce > Pro-arkitektur > Säkerhetskopiering och katastrofåterställning](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Cloud för Adobe Commerce > Installationskrav: databas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)
+* [Cloud för Adobe Commerce > Pro-arkitektur > Säkerhetskopiering och katastrofåterställning](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud för Adobe Commerce > Installationskrav: databas](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/overview)

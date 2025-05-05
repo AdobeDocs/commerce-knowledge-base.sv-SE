@@ -30,7 +30,7 @@ b. NO - Underhållsavbrott eller globala driftavbrott. Kontrollera om det finns 
 
 +++**Finns det distributioner i andra miljöer som blockerar distributionen i den befintliga miljön?**
 
-För att få en lista över pågående aktiviteter kör du följande kommando med magento-cloud CLI (om du bara har lagts till i ett molnprojekt). **Obs!** Kontrollera att du har den senaste versionen av magento-cloud CLI. Anvisningar finns i [Uppdatera CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) i guiden för Commerce om molninfrastruktur.
+För att få en lista över pågående aktiviteter kör du följande kommando med magento-cloud CLI (om du bara har lagts till i ett molnprojekt). **Obs!** Kontrollera att du har den senaste versionen av magento-cloud CLI. Anvisningar finns i [Uppdatera CLI](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) i guiden för Commerce om molninfrastruktur.
 
 ```bash
 magento-cloud --state=in_progress
@@ -42,7 +42,7 @@ För att få en lista över pågående aktiviteter kör du följande kommando me
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-Om du vill hitta information om en befintlig distributionsaktivitet (se [Kontrollera distributionsloggen om molngränssnittet har felet&quot;loggad&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error))
+Om du vill hitta information om en befintlig distributionsaktivitet (se [Kontrollera distributionsloggen om molngränssnittet har felet&quot;loggad&quot;](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error))
 om du vill ha mer information) kan du köra det här kommandot för att få en logg över aktiviteten:
 
 ```bash
@@ -79,7 +79,7 @@ b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento
 +++**Använder du Bitbucket?**
 
 a. JA - Kontrollera [status.bitbucket.com](https://bitbucket.status.atlassian.com/).\
-b. NO - Kontrollera distributionsloggfel i [Build and Deploy logs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations). Fortsätt till [Steg 6](#step-6).
+b. NO - Kontrollera distributionsloggfel i [Build and Deploy logs](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/test/log-locations). Fortsätt till [Steg 6](#step-6).
 
 +++
 
@@ -124,7 +124,7 @@ b. NEJ - Fortsätt till [steg 11](#step-11).
 +++**Tillgänglig lagring fungerar?**
 
 a. JA - Fortsätt med [steg 11](#step-11).\
-b. NEJ - Granska [Hantera diskutrymme](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space).
+b. NEJ - Granska [Hantera diskutrymme](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space).
 
 +++
 
@@ -132,7 +132,7 @@ b. NEJ - Granska [Hantera diskutrymme](https://experienceleague.adobe.com/en/doc
 
 +++**_filen kunde inte skrivas med varning _?**
 
-a. JA - Öka diskvärdet i .magento.app.yaml[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) och återdistribuera.  Om detta inte fungerar skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+a. JA - Öka diskvärdet i .magento.app.yaml[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=sv-SE#application-disk-space) och återdistribuera.  Om detta inte fungerar skickar [en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NEJ - Fortsätt med [steg 12](#step-12).
 
 +++
@@ -159,7 +159,7 @@ b. NEJ - Fortsätt till [steg 14](#step-14).
 
 +++**Filsystemet har slut på noder eller utrymme?**
 
-a. JA - Se [Hantera diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space).\
+a. JA - Se [Hantera diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=sv-SE#application-disk-space).\
 b. NEJ - Fortsätt till [steg 15](#step-15).
 
 +++
@@ -201,7 +201,7 @@ b. NEJ - Fortsätt till [steg 18](#step-18).
 
 +++**Efterbeställning av krokfel/hängande?**
 
-a. JA - Databas: [Ledigt diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space), skadade, ofullständiga/skadade tabeller.\
+a. JA - Databas: [Ledigt diskutrymme](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=sv-SE#allocate-disk-space), skadade, ofullständiga/skadade tabeller.\
 b. NEJ - Fortsätt till [steg 19](#step-19).
 
 +++
@@ -210,7 +210,7 @@ b. NEJ - Fortsätt till [steg 19](#step-19).
 
 +++**Använda tillägg från tredje part?**
 
-a. JA - Prova [Inaktivera tillägg från tredje part](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions) och kör distributionen (för att se om de är orsaken till problemet), särskilt om det finns tilläggsnamn i några fel.\
+a. JA - Prova [Inaktivera tillägg från tredje part](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/configure-store/extensions) och kör distributionen (för att se om de är orsaken till problemet), särskilt om det finns tilläggsnamn i några fel.\
 b. NEJ - Fortsätt till [steg 20](#step-20).
 
 +++

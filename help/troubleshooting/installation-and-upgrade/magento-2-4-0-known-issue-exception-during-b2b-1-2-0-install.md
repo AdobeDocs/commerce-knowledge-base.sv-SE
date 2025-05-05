@@ -69,8 +69,8 @@ Se [Använda en kompositkorrigering från Adobe](/help/how-to/general/how-to-app
 
 <u>Git-korrigering </u>
 
-* Se [Tillämpa korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce i molninfrastrukturen.
-* Se [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce.
+* Se [Tillämpa korrigeringsfiler](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce i molninfrastrukturen.
+* Se [Använda korrigeringsfiler: Anpassade korrigeringsfiler](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) i utvecklardokumentationen för Git-korrigeringsanvisningar för Adobe Commerce.
 
 ## Relaterad läsning
 

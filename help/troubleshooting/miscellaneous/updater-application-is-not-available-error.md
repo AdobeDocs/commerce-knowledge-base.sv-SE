@@ -29,4 +29,4 @@ Följande meddelande visas i beredskapskontrollen:
 
 ## Lösning
 
-Du kan lösa det här problemet genom att kontrollera om det finns en `<magento_root>/update`-katalog som innehåller filer och underkataloger. Annars kan du läsa [Konfigurera uppdateraren](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error) i utvecklardokumentationen.
+Du kan lösa det här problemet genom att kontrollera om det finns en `<magento_root>/update`-katalog som innehåller filer och underkataloger. Annars kan du läsa [Konfigurera uppdateraren](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error) i utvecklardokumentationen.

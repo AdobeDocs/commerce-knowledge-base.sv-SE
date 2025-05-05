@@ -58,7 +58,7 @@ Korrigeringen är kopplad till den här artikeln. Klicka på följande länk om 
 
 >[!NOTE]
 >
->Dessutom för Adobe Commerce på återförsäljare av molninfrastruktur: Adobe har tagit med korrigeringen i Cloud Patches for Commerce version 1.0.18. Se [Cloud Patches for Commerce release notes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) i utvecklardokumentationen för att hitta instruktioner om hur du använder det senaste paketet.
+>Dessutom för Adobe Commerce på återförsäljare av molninfrastruktur: Adobe har tagit med korrigeringen i Cloud Patches for Commerce version 1.0.18. Se [Cloud Patches for Commerce release notes](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) i utvecklardokumentationen för att hitta instruktioner om hur du använder det senaste paketet.
 
 ### Kompatibla Adobe Commerce-versioner:
 

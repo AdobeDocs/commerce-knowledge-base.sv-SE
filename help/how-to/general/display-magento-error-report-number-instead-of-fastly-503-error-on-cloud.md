@@ -20,7 +20,7 @@ Som standard döljer Fastly alla Adobe Commerce-fel bakom felet **503-tjänsten 
 
 När du ser det äkta Adobe Commerce-felet och felrapportnumret kan du få information i felrapportfilen genom att följa dessa steg:
 
-1. SSH till den drabbade miljön. Se [SSH till en miljö](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) i utvecklardokumentationen.
+1. SSH till den drabbade miljön. Se [SSH till en miljö](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections) i utvecklardokumentationen.
 1. Leta reda på filen `./var/report/{error_number}`.
 
 ## Lägg till programdomän och IP-adress till din värdfil: detaljerade steg

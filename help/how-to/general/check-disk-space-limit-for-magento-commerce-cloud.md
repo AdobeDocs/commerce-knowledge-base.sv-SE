@@ -21,4 +21,4 @@ Så här ser du hur mycket utrymme du har för varje Adobe Commerce i molninfras
 
 ## Relaterad läsning
 
-[Hantera diskutrymme](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) i utvecklardokumentationen.
+[Hantera diskutrymme](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) i utvecklardokumentationen.

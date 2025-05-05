@@ -42,7 +42,7 @@ web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Du måste tilldela mer utrymme för databasen i `services.yaml` och distribuera om det finns utrymme som inte används. Mer information finns i [Service Disk Space](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
+Du måste tilldela mer utrymme för databasen i `services.yaml` och distribuera om det finns utrymme som inte används. Mer information finns i [Service Disk Space](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
 
 Obs! I Pro-arkitekturplanen kan du kontrollera det tilldelade utrymmet på din partition genom att köra följande kommando: `df -h`
 
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## Relaterad läsning
 
-[Hantera diskutrymme](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) i utvecklardokumentationen
+[Hantera diskutrymme](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) i utvecklardokumentationen

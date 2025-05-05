@@ -39,10 +39,10 @@ Ett problem med inställningarna för [!DNL OPcache].
 
 ## Lösning
 
-Uppgradera [!DNL ECE Tools] till den senaste versionen, [ 2002.1.13](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
+Uppgradera [!DNL ECE Tools] till den senaste versionen, [ 2002.1.13](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
 
 ## Relaterad läsning
 
-* [Långsam prestanda, långsam och långsam [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html) i vår kunskapsbas för support.
-* [[!DNL Cron] aktiviteter låser aktiviteter från andra grupper](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en) i vår kunskapsbas för support.
-* [[!DNL Cron] jobbet har fastnat i statusen&quot;kör&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) i vår kunskapsbas för support.
+* [Långsam prestanda, långsam och långsam [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html?lang=sv-SE) i vår kunskapsbas för support.
+* [[!DNL Cron] aktiviteter låser aktiviteter från andra grupper](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=sv-SE) i vår kunskapsbas för support.
+* [[!DNL Cron] jobbet har fastnat i statusen&quot;kör&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=sv-SE) i vår kunskapsbas för support.

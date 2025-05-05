@@ -70,6 +70,6 @@ Oroa dig inte! Skicka in en ny supportanmälan (se till att du anger ditt Commer
 
 ## Relaterade ämnen i vår kunskapsbas för support:
 
-* [Lägger till en ny användare och anger behörigheter](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
-* [Hur uppdaterar jag min e-postadress eller mitt lösenord?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html)
-* [Hur återställer jag mitt lösenord?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html)
+* [Lägger till en ny användare och anger behörigheter](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=sv-SE)
+* [Hur uppdaterar jag min e-postadress eller mitt lösenord?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html?lang=sv-SE)
+* [Hur återställer jag mitt lösenord?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html?lang=sv-SE)

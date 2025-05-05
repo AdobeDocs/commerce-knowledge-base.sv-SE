@@ -29,7 +29,7 @@ Detta är en funktion som ska säkerställa att utvecklardata och interaktioner 
 
 ## Lösning
 
-Om du alltid vill att Google Analytics ska vara aktiverat anger du distributionsvariabeln `ENABLE_GOOGLE_ANALYTICS = true` enligt beskrivningen i [Distribuera variabler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) i utvecklardokumentationen.
+Om du alltid vill att Google Analytics ska vara aktiverat anger du distributionsvariabeln `ENABLE_GOOGLE_ANALYTICS = true` enligt beskrivningen i [Distribuera variabler](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) i utvecklardokumentationen.
 
 >[!NOTE]
 >

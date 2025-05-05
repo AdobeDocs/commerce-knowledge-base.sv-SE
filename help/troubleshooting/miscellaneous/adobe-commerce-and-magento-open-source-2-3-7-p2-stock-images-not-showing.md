@@ -50,4 +50,4 @@ Ta bort överförda Adobe Stock-bilder från mapparna `pub/media` och `pub/media
 
 ## Relaterad läsning
 
-* [Medielagring](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) i användarhandboken.
+* [Medielagring](https://experienceleague.adobe.com/sv/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) i användarhandboken.

@@ -30,7 +30,7 @@ En orsak till prestandaförsämring kan vara att vissa cachetyper i Adobe Commer
 
 ## Lösning
 
-1. Kontrollera först statusen för din Adobe Commerce-cache för att se om detta är problemet. För detta [SSH till din miljö](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) och kör följande kommando:
+1. Kontrollera först statusen för din Adobe Commerce-cache för att se om detta är problemet. För detta [SSH till din miljö](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) och kör följande kommando:
 
    ```bash
    php bin/magento cache:status
@@ -48,7 +48,7 @@ En orsak till prestandaförsämring kan vara att vissa cachetyper i Adobe Commer
 Dokumentation om Adobe Commerce-cache finns i vår utvecklardokumentation:
 
 * [Översikt över Adobe Commerce-cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [Hantera cachen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [Hantera cachen](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 Andra möjliga orsaker till prestandaproblem och lösningar:
 

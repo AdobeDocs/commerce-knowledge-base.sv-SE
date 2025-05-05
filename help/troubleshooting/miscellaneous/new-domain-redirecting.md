@@ -29,15 +29,15 @@ Det inträffar när variablerna inte uppdateras efter att en ny domän har lagts
 
 ## Lösning
 
-1. Om domänen omdirigeras inom samma miljö kontrollerar du att du har konfigurerat [Variabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#modify-variables).
+1. Om domänen omdirigeras inom samma miljö kontrollerar du att du har konfigurerat [Variabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=sv-SE#modify-variables).
 1. Om domänen omdirigeras till en annan miljö kontrollerar du om du har konfigurerat rätt [!DNL Fastly]-tjänst genom att köra följande kommando: `bin/magento fastly:conf:get -s`
 
 >[!NOTE]
 >
->Du kan hitta API-autentiseringsuppgifterna för [!DNL Fastly] genom att logga in i varje miljö (mellanlagring/produktion) och kontrollera filen `/mnt/shared/fastly_tokens.txt`. Mer information finns i [Konfigurera [!DNL Fastly] tjänster](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i Commerce on Cloud Infrastructure Guide.
+>Du kan hitta API-autentiseringsuppgifterna för [!DNL Fastly] genom att logga in i varje miljö (mellanlagring/produktion) och kontrollera filen `/mnt/shared/fastly_tokens.txt`. Mer information finns i [Konfigurera [!DNL Fastly] tjänster](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE) i Commerce on Cloud Infrastructure Guide.
 
 Om båda konfigurationerna ovan är korrekta skickar du in en supportanmälan.
 
 ## Relaterad läsning
 
-* [Checklista för att konfigurera en ny domän](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html) i vår kunskapsbas för support.
+* [Checklista för att konfigurera en ny domän](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html?lang=sv-SE) i vår kunskapsbas för support.

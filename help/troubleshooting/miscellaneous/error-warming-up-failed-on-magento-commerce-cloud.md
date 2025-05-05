@@ -47,5 +47,5 @@ Kontrollera att du inte har åtkomstkontroll aktiverad: gå till den specifika g
 
 ## Relaterad läsning
 
-* [Adobe Commerce Användarhandbok > Helsidescache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) i vår användarhandbok.
+* [Adobe Commerce Användarhandbok > Helsidescache](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/tools/cache-management#full-page-caching) i vår användarhandbok.
 * [Cacheuppvärmning och webbplatsen är inte tillgänglig på Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) i vår kunskapsbas för support.

@@ -29,7 +29,7 @@ När du uppdaterar till Adobe Commerce 2.4.4 eller senare efter juli 2022 kan du
 
 Krav: Adobe Commerce 2.4.3 eller tidigare är installerat.
 
-1. Starta uppgraderingen enligt beskrivningen i [Utför en uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
+1. Starta uppgraderingen enligt beskrivningen i [Utför en uppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=sv-SE).
 1. Kör kommandot `composer update` för att uppgradera Adobe Commerce-programmet.
 
 <u>Förväntade resultat</u>:
@@ -64,7 +64,7 @@ Efter juli 2022 ändrar Composer standardvärdet för alternativet [`allow-plugi
 
 Lägg till följande i din `composer.json`-fil, beroende på hur du har installerat Adobe Commerce:
 
-* Om projektet har skapats [med `composer create-project`-kommandot](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
+* Om projektet har skapats [med `composer create-project`-kommandot](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
 
   ```json
   "config": {

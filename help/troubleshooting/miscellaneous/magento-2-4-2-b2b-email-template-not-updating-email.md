@@ -45,4 +45,4 @@ Kör cron-jobbet eller konsumenten manuellt för att sprida den nya informatione
 
 ## Relaterad läsning
 
-* [Hantera meddelandeköer](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) i utvecklardokumentationen.
+* [Hantera meddelandeköer](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) i utvecklardokumentationen.

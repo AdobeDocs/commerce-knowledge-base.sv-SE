@@ -46,6 +46,6 @@ Om du befinner dig i en situation där din anpassade SSL har ersatts av vår int
 ## Relaterad läsning
 
 * [SSL-certifikat (TLS) för Magento Commerce Cloud: Frågor och svar](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) i vår kunskapsbas för support.
-* [Referens för kommandoradsverktyg: magento-cloud certificate:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) i utvecklardokumentationen.
-* [Starta checklistan](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist)i utvecklardokumentationen.
-* [Använd webbplatsövergripande analysverktyg](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) i vår användarhandbok.
+* [Referens för kommandoradsverktyg: magento-cloud certificate:add](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) i utvecklardokumentationen.
+* [Starta checklistan](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/launch/checklist)i utvecklardokumentationen.
+* [Använd webbplatsövergripande analysverktyg](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) i vår användarhandbok.

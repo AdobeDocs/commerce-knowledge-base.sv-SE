@@ -27,7 +27,7 @@ Under installationen visas ett meddelande som liknar följande:
 
 Rensa alla kataloger och filer under Adobe Commerce `var`-underkatalog och installera Adobe Commerce-programmet igen.
 
-Ange följande kommandon som [Adobe Commerce-filsystemsägare](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) eller som en användare med `root` behörighet:
+Ange följande kommandon som [Adobe Commerce-filsystemsägare](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) eller som en användare med `root` behörighet:
 
 ```bash
 $ cd <your Magento install directory>/var

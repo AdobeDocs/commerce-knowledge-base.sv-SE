@@ -14,7 +14,7 @@ ht-degree: 0%
 # Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-61]
 
 Den 13 augusti 2024 släppte Adobe en regelbundet schemalagd säkerhetsuppdatering för Adobe Commerce, Magento Open Source och Adobe Commerce Webhooks Plugin.
-Uppdateringen åtgärdar säkerhetsluckorna [[!DNL critical, important] och  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html). Ett lyckat utnyttjande kan leda till exekvering av godtycklig kod, läsning av godtyckliga filsystem, åsidosättande av säkerhetsfunktioner och eskalering av behörigheter. Bulletinen är [Säkerhetsbulletin för Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+Uppdateringen åtgärdar säkerhetsluckorna [[!DNL critical, important] och  [!DNL moderate]](https://helpx.adobe.com/se/security/severity-ratings.html). Ett lyckat utnyttjande kan leda till exekvering av godtycklig kod, läsning av godtyckliga filsystem, åsidosättande av säkerhetsfunktioner och eskalering av behörigheter. Bulletinen är [Säkerhetsbulletin för Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/se/security/products/magento/apsb24-61.html).
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Använd följande Isolerade plåster:
 
 ## Så här applicerar du det isolerade plåstret
 
-Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) i vår kunskapsbas för support för instruktioner.
+Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=sv-SE) i vår kunskapsbas för support för instruktioner.
 
 ## Endast för Adobe Commerce på molnhandlare - Hur du ser om de isolerade korrigeringarna har tillämpats
 
@@ -55,7 +55,7 @@ Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats, kansk
 
 <u>Du kan göra detta genom att utföra följande steg, med filen `VULN-27015-2.4.7_COMPOSER.patch` som exempel</u>:
 
-1. [Installera verktyget för kvalitetskorrigeringar](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installera verktyget för kvalitetskorrigeringar](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=sv-SE).
 1. Kör kommandot:<br>
    ![cve-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Du bör se utdata som liknar detta, där VULN-27015 returnerar statusen *Används*:
@@ -74,4 +74,4 @@ Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats, kansk
 
 Säkerhetsuppdateringar för Adobe Commerce:
 
-* [Säkerhetsbulletin för Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html)
+* [Säkerhetsbulletin för Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/se/security/products/magento/apsb24-61.html)

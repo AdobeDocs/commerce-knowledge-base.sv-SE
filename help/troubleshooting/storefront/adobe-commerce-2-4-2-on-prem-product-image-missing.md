@@ -33,7 +33,7 @@ Adobe Commerce installerat med Nginx.
 <u>Steg som ska återskapas</u>:
 
 1. Konfigurera Adobe Commerce att använda AWS `s3` som medielagring.
-1. Konfigurera Nginx med konfigurationsfilen `nginx.conf.sample` som finns i Adobe Commerce installationskatalog och ett virtuellt Nginx-värdsystem. Se [Konfigurera Nginx](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) i utvecklardokumentationen.
+1. Konfigurera Nginx med konfigurationsfilen `nginx.conf.sample` som finns i Adobe Commerce installationskatalog och ett virtuellt Nginx-värdsystem. Se [Konfigurera Nginx](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) i utvecklardokumentationen.
 1. Skapa en enkel produkt med en produktbild.
 1. Nginx har en okommenterad konfiguration för storleksändring av bilder i `nginx.conf.sample` som den här:
 

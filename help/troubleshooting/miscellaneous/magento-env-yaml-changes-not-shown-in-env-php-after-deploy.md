@@ -29,7 +29,7 @@ Den här artikeln innehåller en lösning på problemet där ändringar i filen 
 
 <u>Steg att återskapa:</u>
 
-Ändra ett värde i `.magento.env.yaml` och skicka till servern, där konfigurationen (och distributionsinställningarna) för den utcheckade miljön ska definieras. Stegen finns i [Miljövariabler > Distribuera variabler](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) i utvecklardokumentationen.
+Ändra ett värde i `.magento.env.yaml` och skicka till servern, där konfigurationen (och distributionsinställningarna) för den utcheckade miljön ska definieras. Stegen finns i [Miljövariabler > Distribuera variabler](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) i utvecklardokumentationen.
 
 <u>Förväntat resultat:</u>
 
@@ -45,11 +45,11 @@ Problemet kan bero på det felaktiga värdet för parametern `opcache.enable_cli
 
 ## Lösning
 
-1. Kontrollera att systemet är konfigurerat enligt [Adobe Commerce Performance Best Practices > Software recommendations](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/software).
+1. Kontrollera att systemet är konfigurerat enligt [Adobe Commerce Performance Best Practices > Software recommendations](https://experienceleague.adobe.com/sv/docs/commerce-operations/performance-best-practices/software).
 1. Kontrollera om direktivet `opcache.enable_cli` i `php.ini` är inställt på `0` genom att köra: `php -i | grep opcache.enable_cli`
 1. Om utdata ser ut som `opcache.enable_cli=1` redigerar du filen `php.ini` i projektets rotkatalog och ändrar `opcache.enable_cli=1` till `opcache.enable_cli=0`
 1. Distribuera om projektet.
 
 ## Relaterad läsning
 
-* [Cloud för Adobe Commerce > Skapa och distribuera](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml).
+* [Cloud för Adobe Commerce > Skapa och distribuera](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml).

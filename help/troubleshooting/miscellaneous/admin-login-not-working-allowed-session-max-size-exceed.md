@@ -57,6 +57,6 @@ Du kan ange högre än *50000* beroende på den befintliga maxstorleken som rapp
 
 ## Relaterad läsning
 
-* [Sessionsstorlek](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) i handboken för administratörssystem
-* [Åtgärdsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) i konfigurationshandboken
-* [Säkra anslutningar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) i Commerce on Cloud Infrastructure Guide
+* [Sessionsstorlek](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/security-session-management#admin-sessions) i handboken för administratörssystem
+* [Åtgärdsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/set-mode) i konfigurationshandboken
+* [Säkra anslutningar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections) i Commerce on Cloud Infrastructure Guide

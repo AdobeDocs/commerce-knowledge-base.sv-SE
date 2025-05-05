@@ -30,6 +30,6 @@ Om du inaktiverar en modulutdata under **Lagrar** > **Inställningar** > **Konfi
 
 ## Lösning
 
-Om du behöver inaktivera modulfunktioner inaktiverar du modulen enligt beskrivningen i [Aktivera eller inaktivera moduler](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) i utvecklardokumentationen.
+Om du behöver inaktivera modulfunktioner inaktiverar du modulen enligt beskrivningen i [Aktivera eller inaktivera moduler](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/manage-modules) i utvecklardokumentationen.
 
 Funktionen för inaktivering av modulutdata har tagits bort från version 2.2.0.

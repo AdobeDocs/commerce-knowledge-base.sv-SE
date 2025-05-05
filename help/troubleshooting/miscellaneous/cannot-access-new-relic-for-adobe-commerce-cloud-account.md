@@ -33,4 +33,4 @@ Kontakta New Relic-kontoägaren och begär att de lägger till dig i deras konto
 
 ## Relaterad läsning
 
-[Hantera [!DNL New Relic] konto](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen.
+[Hantera [!DNL New Relic] konto](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen.

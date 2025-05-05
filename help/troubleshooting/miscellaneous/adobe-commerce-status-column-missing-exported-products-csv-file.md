@@ -50,5 +50,5 @@ Produktens statusattribut har bytt namn i CSV-filen. Det är nu kolumnen [!UICON
 
 ## Relaterad läsning
 
-* [Arbeta med CSV-filer](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) i vår användarhandbok.
-* [Referens för produktexportattribut](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) i användarhandboken.
+* [Arbeta med CSV-filer](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-csv) i vår användarhandbok.
+* [Referens för produktexportattribut](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/data-attributes-product) i användarhandboken.

@@ -25,7 +25,7 @@ Du kan inte använda MDVA-43395-korrigeringen.
 
 ## Orsak
 
-Molnhandlare behöver inte tillämpa MDVA-43395-korrigeringen separat om de har [magento/magento-cloud-patches 1.0.16](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) installerad, som redan innehåller korrigeringen.
+Molnhandlare behöver inte tillämpa MDVA-43395-korrigeringen separat om de har [magento/magento-cloud-patches 1.0.16](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) installerad, som redan innehåller korrigeringen.
 
 ## Lösning
 
@@ -45,4 +45,4 @@ $ vendor/bin/magento-patches -n status |grep 43443
 ## Relaterad läsning
 
 * [Använda en kompositörkorrigering från Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) i vår kunskapsbas för support.
-* [Molnkorrigeringar för Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) i utvecklardokumentationen.
+* [Molnkorrigeringar för Commerce](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) i utvecklardokumentationen.

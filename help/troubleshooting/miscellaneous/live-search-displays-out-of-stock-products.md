@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Problemet har åtgärdats i [[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html). Information om hur du installerar den senaste versionen finns i [Uppdatera [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#update) i användarhandboken.
+>Problemet har åtgärdats i [[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html?lang=sv-SE). Information om hur du installerar den senaste versionen finns i [Uppdatera [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=sv-SE#update) i användarhandboken.
 
 Den här artikeln innehåller information om det kända problemet där PLP (Product Listing Page) visar *Vi kan inte hitta produkter som matchar felet* när sökleverantören returnerar några objekt.
 
@@ -49,4 +49,4 @@ Det finns för närvarande ingen lösning på det här problemet. Vårt [!DNL Li
 
 ## Relaterad läsning
 
-[Installera [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) i användarhandboken.
+[Installera [!DNL Live Search]](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/live-search/install) i användarhandboken.

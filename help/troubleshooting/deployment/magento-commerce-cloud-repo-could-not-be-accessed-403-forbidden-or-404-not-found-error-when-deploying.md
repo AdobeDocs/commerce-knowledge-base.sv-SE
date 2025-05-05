@@ -66,11 +66,11 @@ Gör så här för att lösa problemet med auktoriseringsnycklarna (se avsnitten
 
 Om du använder nycklarna som skapats med det delade kontot måste du kontakta den Adobe Commerce-licensägare som ger dig åtkomst och begära att de genererar nycklarna åt dig.
 
-Om din licens har återkallats tidigare på grund av betalningsproblem och du har löst problemen och din licens har förnyats, måste du [generera de nya autentiseringsnycklarna](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html).
+Om din licens har återkallats tidigare på grund av betalningsproblem och du har löst problemen och din licens har förnyats, måste du [generera de nya autentiseringsnycklarna](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=sv-SE).
 
 ### 2. Lägg till nyckelvärdet i variabeln env:COMPOSER\_AUTH och kontrollera om samma nycklar anges i auth.json
 
-Se instruktionerna och relaterad information i [Förbered ditt befintliga system](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) och [Lägg till autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) i utvecklardokumentationen.
+Se instruktionerna och relaterad information i [Förbered ditt befintliga system](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/project/overview) och [Lägg till autentiseringsnycklar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/project/overview) i utvecklardokumentationen.
 
 ### 3. Uppdatera eller ta bort auth.json
 

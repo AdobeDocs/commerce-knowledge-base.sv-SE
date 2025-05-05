@@ -37,9 +37,9 @@ Du omdirigeras tillbaka till inloggningsformuläret med följande felmeddelande:
 ## Lösning
 
 1. Skapa en säkerhetskopia av databasen.
-1. Använd ett databasverktyg som [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden. I databastabellen `admin_user` kontrollerar du om `is_active` är inställd på `1` och `lock_expires` är `NULL` för din administratörsanvändarpost. Återställ dessa värden om det behövs.
+1. Använd ett databasverktyg som [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden. I databastabellen `admin_user` kontrollerar du om `is_active` är inställd på `1` och `lock_expires` är `NULL` för din administratörsanvändarpost. Återställ dessa värden om det behövs.
 
 ## Relaterad läsning
 
-* [Omdirigera tillbaka till inloggningsformuläret utan fel vid inloggning till [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin)
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Omdirigera tillbaka till inloggningsformuläret utan fel vid inloggning till [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin)
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

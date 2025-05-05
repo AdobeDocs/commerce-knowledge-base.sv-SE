@@ -45,12 +45,12 @@ Din version av MariaDB är inte kompatibel med den version av Adobe Commerce som
 Du måste uppgradera MariaDB-tjänsten till en kompatibel version innan du uppgraderar programmet.
 
 
-För integreringsgrenen på Adobe Commerce för molninfrastruktur Pro-planarkitekturen (och alla grenar i Starter-arkitekturen) följer du [Konfigurera tjänsten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) i utvecklardokumentationen.
+För integreringsgrenen på Adobe Commerce för molninfrastruktur Pro-planarkitekturen (och alla grenar i Starter-arkitekturen) följer du [Konfigurera tjänsten](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) i utvecklardokumentationen.
 
 För tjänsten Staging and Production i Adobe Commerce på Cloud Infrastructure Pro-planarkitekturen ska du [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära att tjänsterna uppgraderas innan du distribuerar Adobe Commerce-versionsuppgraderingen.
 
 
 ## Relaterad läsning
 
-* [Bästa tillvägagångssätt för byggen och distribution](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices) i utvecklardokumentationen.
-* [Uppgradering av Adobe Commerce 2.3.5: kompakt till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) i vår kunskapsbas.
+* [Bästa tillvägagångssätt för byggen och distribution](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices) i utvecklardokumentationen.
+* [Uppgradering av Adobe Commerce 2.3.5: kompakt till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=sv-SE) i vår kunskapsbas.

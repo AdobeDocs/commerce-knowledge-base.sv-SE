@@ -40,5 +40,5 @@ innehåll:
 
 ## Relaterad läsning
 
-* [Brandvägg för webbaserade program (WAF)](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) i guiden för Commerce om molninfrastruktur.
-* [Komma igång med anpassad VCL](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) i guiden för molninfrastruktur i Commerce.
+* [Brandvägg för webbaserade program (WAF)](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) i guiden för Commerce om molninfrastruktur.
+* [Komma igång med anpassad VCL](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) i guiden för molninfrastruktur i Commerce.

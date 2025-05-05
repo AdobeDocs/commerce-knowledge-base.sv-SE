@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2024, versionsplan
 
-I [2023 uppdaterade vi vår versionsstrategi](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) för att utöka supportfönstret, tillhandahålla fler säkerhetsuppdateringar och snabba upp implementeringen av innovationer. Från och med 2024 fortsätter vi våra ansträngningar att ge bättre support för verksamhetskritiska kundbehov och har publicerat vårt [releasematerial](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) för att ge våra kunder tid att planera och budgetera resurser för det kommande året. För att sammanfatta ändringarna tittar vi på strategin för 2023 och 2024 för att avgöra vad som är detsamma och vad som förändras.
+I [2023 uppdaterade vi vår versionsstrategi](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) för att utöka supportfönstret, tillhandahålla fler säkerhetsuppdateringar och snabba upp implementeringen av innovationer. Från och med 2024 fortsätter vi våra ansträngningar att ge bättre support för verksamhetskritiska kundbehov och har publicerat vårt [releasematerial](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=sv-SE) för att ge våra kunder tid att planera och budgetera resurser för det kommande året. För att sammanfatta ändringarna tittar vi på strategin för 2023 och 2024 för att avgöra vad som är detsamma och vad som förändras.
 
 ## Vad som förblir detsamma
 
@@ -27,6 +27,6 @@ I [2023 uppdaterade vi vår versionsstrategi](https://business.adobe.com/blog/th
 * Under 2024 har vi ökat till fem säkerhetsuppdateringar, för alla Adobe Commerce-versioner som stöds för att hålla verksamheten säker och kompatibel.
 * Vi kommer att ta bort vår tvåveckorsperiod för förhandsversionen för att ge tidigare tillgång till den senaste versionen av plattformen genom betaversioner upp till sex månader i förväg.
 
-I vår kalender för 2024 med dessa strategiska ändringar ingår fem releaser som kan granskas i vårt [Release Schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) på Adobe Experience League.
+I vår kalender för 2024 med dessa strategiska ändringar ingår fem releaser som kan granskas i vårt [Release Schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=sv-SE) på Adobe Experience League.
 
 Vi hoppas att du använder det här schemat i dina årliga planeringscykler för att bättre förbereda och fördela resurser kring dessa releasefönster. Mer resurser för uppgraderingsplanering finns i [Översikt över uppgraderingsprocessen](/docs/commerce-operations/upgrade-guide/overview.html) i vår uppgraderingshandbok.

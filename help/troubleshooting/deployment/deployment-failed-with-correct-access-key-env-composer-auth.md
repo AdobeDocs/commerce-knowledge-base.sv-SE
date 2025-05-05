@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Distributionen misslyckas med rätt åtkomstnycklar i env:COMPOSER_AUTH eller auth.json
 
-Den här artikeln innehåller en lösning på problemet när distributionen misslyckas med ett fel som det nedan i [distributionsloggen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
+Den här artikeln innehåller en lösning på problemet när distributionen misslyckas med ett fel som det nedan i [distributionsloggen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -40,7 +40,7 @@ Du har distribuerats.
 >
 >Detta är ett exempelfel. Du kan få ett fel som anger en annan fil (beroende på vilken Adobe Commerce-version du distribuerar).
 
-Distributionen misslyckades. Ett fel som *Filen &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; kunde inte hämtas (HTTP/1.1 404 Hittades inte)* i [distributionsloggen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+Distributionen misslyckades. Ett fel som *Filen &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; kunde inte hämtas (HTTP/1.1 404 Hittades inte)* i [distributionsloggen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 ### Orsak
 
@@ -53,7 +53,7 @@ De angivna åtkomstnycklarna för dispositionen som finns på någon av dessa pl
 
 Uppdatera variabeln `env:COMPOSER_AUTH` på projektnivå och kontrollera att den är konfigurerad med nycklar som har åtkomst till koden.
 
-Anvisningar finns i [Variabelnivåer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) i Commerce on Cloud Infrastructure Guide.
+Anvisningar finns i [Variabelnivåer](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) i Commerce on Cloud Infrastructure Guide.
 
 ## Relaterad läsning
 

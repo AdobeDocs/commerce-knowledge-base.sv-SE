@@ -13,5 +13,5 @@ ht-degree: 0%
 
 Läs följande artiklar i utvecklardokumentationen:
 
-* Adobe Commerce 2.3: [Ange åtgärdsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode)
-* Adobe Commerce 2.4: [Ange åtgärdsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode)
+* Adobe Commerce 2.3: [Ange åtgärdsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/set-mode)
+* Adobe Commerce 2.4: [Ange åtgärdsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/set-mode)

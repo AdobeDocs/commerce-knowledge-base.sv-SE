@@ -95,7 +95,7 @@ Om du vill lägga till processen som ett cron-jobb måste du lägga till variabe
 
 >[!TIP]
 >
->[YAML-filer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) är skiftlägeskänsliga och tillåter inte tabbar. Var noga med att använda konsekvent indrag i hela .magento.env.yaml-filen, annars kanske inte konfigurationen fungerar som förväntat. Exemplen i dokumentationen och i exempelfilen använder indrag med två mellanslag. Kontrollera konfigurationen med hjälp av kommandot validate för verktygen.
+>[YAML-filer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=sv-SE) är skiftlägeskänsliga och tillåter inte tabbar. Var noga med att använda konsekvent indrag i hela .magento.env.yaml-filen, annars kanske inte konfigurationen fungerar som förväntat. Exemplen i dokumentationen och i exempelfilen använder indrag med två mellanslag. Kontrollera konfigurationen med hjälp av kommandot validate för verktygen.
 
 >[!NOTE]
 >

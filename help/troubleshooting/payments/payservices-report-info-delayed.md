@@ -29,7 +29,7 @@ När du har fakturerat (hämtat) en order eller utfärdat en kreditnota för en 
 
 Krav: En beställning görs med funktionen Betalningstjänster.
 
-1. En order är [fakturerad](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) (eller [annullerad](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) eller [återbetald via kreditnota](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)) i [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin).
+1. En order är [fakturerad](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) (eller [annullerad](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) eller [återbetald via kreditnota](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)) i [Admin](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/admin/admin).
 1. Navigera till rapporten Orderbetalningsstatus för att se information om den ordern.
 1. Statusen visas som `AUTHORIZED`, vilket är orderstatus före faktureringen eller annan orderåtgärd.
 
@@ -37,7 +37,7 @@ Krav: En beställning görs med funktionen Betalningstjänster.
 
 >[!NOTE]
 >
->Detta är bara ett vanligt användningsfall. Det kan finnas andra användningsfall när en [orderåtgärd](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) inträffar och data inte är omedelbart tillgängliga i den tillämpliga rapporten.
+>Detta är bara ett vanligt användningsfall. Det kan finnas andra användningsfall när en [orderåtgärd](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) inträffar och data inte är omedelbart tillgängliga i den tillämpliga rapporten.
 
 <u>Förväntat resultat</u>:
 Rapportdata fylls i omedelbart efter en åtgärd för en order.
@@ -49,7 +49,7 @@ Det kan uppstå en fördröjning i synliga rapportdata för just slutförda orde
 
 Det finns två faktorer som påverkar fördröjningen av synliga data i Admin:
 
-* Hur ofta du väljer att synkronisera (exportera och behålla) data från Commerce via [konfigurationen i Admin](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html).
+* Hur ofta du väljer att synkronisera (exportera och behålla) data från Commerce via [konfigurationen i Admin](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html?lang=sv-SE).
 * Tidsram inom vilken PayPal publicerar rapportdata.
 
 ## Lösning

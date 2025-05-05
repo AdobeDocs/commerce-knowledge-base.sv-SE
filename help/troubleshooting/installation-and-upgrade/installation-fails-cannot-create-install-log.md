@@ -32,7 +32,7 @@ Du löser problemet genom att ändra värdet för `open_basedir` och starta om w
 
 Om du är osäker på hur du ska ändra det här värdet gör du så här:
 
-1. Om du inte redan har gjort det skapar du [phpinfo.php](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software).
+1. Om du inte redan har gjort det skapar du [phpinfo.php](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/optional-software).
 1. Ange följande URL i webbläsarens adress- eller platsfält: `https://<your web server IP or hostname>/<path to docroot>/phpinfo.php`
 1. Leta efter platsen för `php.ini`.     `php.ini` anges vanligtvis som **Inläst konfigurationsfil** i det resultat som visas.
 1. Som användare med rotbehörighet öppnar du `php.ini` i en textredigerare.

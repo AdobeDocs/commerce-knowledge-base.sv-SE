@@ -26,7 +26,7 @@ Användaren får ett fel vid valideringen av snabbinloggningsuppgifterna.
 
 ## Lösning
 
-1. Kontrollera att du har rätt ID och API-token för tjänsten och försök validera igen. Mer information finns i [Testa snabbinloggningsuppgifterna](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) i utvecklardokumentationen.
+1. Kontrollera att du har rätt ID och API-token för tjänsten och försök validera igen. Mer information finns i [Testa snabbinloggningsuppgifterna](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) i utvecklardokumentationen.
 1. Om verifieringen av inloggningsuppgifterna misslyckas kör du följande kommando för att bekräfta tjänstens status:
 
    ```curl
@@ -45,6 +45,6 @@ Användaren får ett fel vid valideringen av snabbinloggningsuppgifterna.
 
 ## Relaterade läsningar i vår dokumentation för utvecklare:
 
-* [Cloud för Adobe Commerce > Snabbt > Snabbt tjänstkonto och autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
+* [Cloud för Adobe Commerce > Snabbt > Snabbt tjänstkonto och autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
 
-* [Cloud för Adobe Commerce > Konfigurera snabbt > Testa snabbinloggningsuppgifterna](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)
+* [Cloud för Adobe Commerce > Konfigurera snabbt > Testa snabbinloggningsuppgifterna](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)

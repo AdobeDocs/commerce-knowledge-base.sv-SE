@@ -120,7 +120,7 @@ Kontrollera `/tmp` efter `.sql`- eller `.sql.gz`-filer och rensa dem. Dessa kan 
 
 Följ de här rekommendationerna för att undvika att få problem med att `/tmp` är full:
 
-* Använd inte MySQL för sökning. Elasticsearch för sökning eliminerar vanligtvis behovet av de flesta komplicerade temporära tabellskapanden. Se [Konfigurera Adobe Commerce att använda Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) i utvecklardokumentationen.
+* Använd inte MySQL för sökning. Elasticsearch för sökning eliminerar vanligtvis behovet av de flesta komplicerade temporära tabellskapanden. Se [Konfigurera Adobe Commerce att använda Elasticsearch](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/search/configure-search-engine) i utvecklardokumentationen.
 * Undvik att köra `SELECT`-frågan på kolumner utan index eftersom det här kräver mycket temporärt diskutrymme. Du kan också lägga till index.
 * Skapa en cron för att rensa upp `/tmp` genom att köra följande kommando i CLI:
 

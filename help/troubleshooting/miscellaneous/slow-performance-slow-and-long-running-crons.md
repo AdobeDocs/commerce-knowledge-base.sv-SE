@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >I alla Adobe Commerce-versioner, eftersom vissa tillägg bara fungerar med platta tabeller, finns det en risk om du inaktiverar platta tabeller. Om du vet att du har tillägg som använder platta katalogindexerare kan du behöva ta hänsyn till det när du anger värdena till *Nej*.
 
-I den här artikeln beskrivs hur du löser problem med webbplatsprestanda och kör långsamt och fastnålade cron som orsakas av att [platta tabeller och indexerare](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/catalog-flat) har aktiverats.
+I den här artikeln beskrivs hur du löser problem med webbplatsprestanda och kör långsamt och fastnålade cron som orsakas av att [platta tabeller och indexerare](https://experienceleague.adobe.com/sv/docs/commerce-admin/catalog/catalog/catalog-flat) har aktiverats.
 
 BERÖRDA PRODUKTER OCH VERSIONER
 

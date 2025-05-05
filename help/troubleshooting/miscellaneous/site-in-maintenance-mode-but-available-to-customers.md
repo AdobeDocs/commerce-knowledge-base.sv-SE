@@ -45,4 +45,4 @@ Sidorna är fortfarande cachelagrade, så underhållssidan visas inte.
 
 ## Relaterad läsning
 
-[Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) i utvecklardokumentationen.
+[Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) i utvecklardokumentationen.

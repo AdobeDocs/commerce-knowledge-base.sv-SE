@@ -25,7 +25,7 @@ Jag utvecklar en headless implementation av Adobe Commerce. Måste jag fortfaran
 Nej, det gör du inte. I den här situationen kan du hoppa över att använda Fastt - åtminstone i början av utvecklingen.
 
 Den enda situation som du kanske inte vill aktivera är en headless-distribution.
-Se [Cloud för Adobe Commerce > Snabbt](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) i utvecklardokumentationen.
+Se [Cloud för Adobe Commerce > Snabbt](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/fastly) i utvecklardokumentationen.
 
 Men du behöver antagligen Fast för att kunna använda SSL-certifikatet.
 
@@ -34,4 +34,4 @@ Alla kunder som har en molninfrastruktur får ett delat SSL-certifikat från Fas
 ## Mer information
 
 * [Headless Websites: What&#39;s the Big Deal with Decouattached Architecture?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) av [Josh Koenig](https://pantheon.io/team/josh-koenig).
-* [Snabbt](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) i vår utvecklardokumentation.
+* [Snabbt](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/fastly) i vår utvecklardokumentation.

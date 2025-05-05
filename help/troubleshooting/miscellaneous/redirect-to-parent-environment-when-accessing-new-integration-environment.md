@@ -59,7 +59,7 @@ update core_config_data set value = %your_new_environment_secure_url% where path
 
 #### Korrigera databasen med Adobe Commerce CLI (finns för version 2.2.X)
 
-1. Logga in som, eller växla till, ägare av [Adobe Commerce-filsystemet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html).
+1. Logga in som, eller växla till, ägare av [Adobe Commerce-filsystemet](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html?lang=sv-SE).
 1. Kör följande kommandon:
 
 ```bash
@@ -87,4 +87,4 @@ php <your_magento_install_dir>/bin/magento cache:clean config
 
 ## Relaterad artikel i vår utvecklardokumentation:
 
-[Distribuera variabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html)
+[Distribuera variabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=sv-SE)

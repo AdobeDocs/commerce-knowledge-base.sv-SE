@@ -33,4 +33,4 @@ När du först installerar/uppgraderar tilldelas alla produkter standardkällan 
 
 Om du har fler än en webbplats måste du lägga till dessa webbplatser som Sales Channeler i standardlagret eller andra anpassade resurser.
 
-Se avsnittet [Stock i wiki-/användarhandboken](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) i vår användarhandbok för mer information om hur du gör detta.
+Se avsnittet [Stock i wiki-/användarhandboken](https://experienceleague.adobe.com/sv/docs/commerce-admin/inventory/stocks/stocks-manage) i vår användarhandbok för mer information om hur du gör detta.

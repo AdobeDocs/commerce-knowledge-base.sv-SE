@@ -67,7 +67,7 @@ Om det finns en tillfällig lösning anger du den som ett separat avsnitt under 
 
 ## Relaterad läsning
 
-* [Artikelämne](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) i vår användarhandbok.
+* [Artikelämne](https://experienceleague.adobe.com/sv/docs/commerce-admin/user-guides/home) i vår användarhandbok.
 * [Artikelämne](https://developer.adobe.com/commerce/docs/) i utvecklardokumentationen. Du kan också säga att du ska skilja mellan instruktioner i devdocs för moln och lokala användare: &quot;[Artikelavsnitt](https://developer.adobe.com/commerce/docs/) i vår utvecklardokumentation för Adobe Commerce om molninfrastruktur.&quot; vs &quot;[Artikelämne](https://developer.adobe.com/commerce/docs/) i vår utvecklardokumentation för Adobe Commerce lokalt.&quot;
 * [Artikelämne](https://support.magento.com/hc/en-us) i vår kunskapsbas för support.
 * Relaterade resurser (bloggar, forum, StackOverflow osv.)

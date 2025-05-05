@@ -65,4 +65,4 @@ Mer information finns i [Använda en dispositionsruta från Adobe Commerce](/hel
 
 ## Användbara länkar
 
-[Använd anpassade korrigeringar för Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
+[Använd anpassade korrigeringar för Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.

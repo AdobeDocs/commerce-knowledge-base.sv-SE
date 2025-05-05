@@ -46,6 +46,6 @@ Adobe Commerce inbyggda sökfunktion som används i 2.3.x ger exakt matchande s�
 
 ## Relaterad läsning
 
-[Installera Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) i vår användarhandbok.
+[Installera Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=sv-SE) i vår användarhandbok.
 
-[Livesökning](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview) i utvecklardokumentationen.
+[Livesökning](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/live-search/overview) i utvecklardokumentationen.

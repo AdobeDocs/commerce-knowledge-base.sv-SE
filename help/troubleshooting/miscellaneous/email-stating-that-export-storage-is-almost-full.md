@@ -41,8 +41,8 @@ De typiska platserna där fillagringen troligen kommer att fyllas i är mapparna
 
 `du -shc` */path/to/folder*
 
-Om mediediskanvändningen utgör en stor del av det totala diskutrymmet kanske du vill aktivera [Optimering av djup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) och sedan ta bort filerna i mappen *pub/media/catalog/product/cache* på servern manuellt.
+Om mediediskanvändningen utgör en stor del av det totala diskutrymmet kanske du vill aktivera [Optimering av djup](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) och sedan ta bort filerna i mappen *pub/media/catalog/product/cache* på servern manuellt.
 
 ## Relaterad läsning
 
-[Kontrollera dedikerade kluster](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) i vår kunskapsbas för support.
+[Kontrollera dedikerade kluster](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) i vår kunskapsbas för support.

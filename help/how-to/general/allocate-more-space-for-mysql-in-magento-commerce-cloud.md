@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-Se artikeln [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) för referens.
+Se artikeln [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/service/mysql) för referens.
 
 När du har ändrat filen `.magento/services.yaml` måste du implementera och överföra dina ändringar för att de ska tillämpas. Tryckningen kommer att utlösa distributionsprocessen.
 

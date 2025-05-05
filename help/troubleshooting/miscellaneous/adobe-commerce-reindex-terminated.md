@@ -37,5 +37,5 @@ Den vanligaste orsaken till detta är ett stort antal produkter, butiker och/ell
 
 I vår utvecklardokumentation:
 
-* [Pro-arkitektur > Integreringsmiljö](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Startarkitektur > Mellanlagringsmiljö](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)
+* [Pro-arkitektur > Integreringsmiljö](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Startarkitektur > Mellanlagringsmiljö](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)

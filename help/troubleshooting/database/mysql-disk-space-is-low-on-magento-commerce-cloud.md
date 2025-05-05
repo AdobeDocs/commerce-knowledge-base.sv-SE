@@ -78,7 +78,7 @@ Monteringen `/data/mysql` kan bli full på grund av en rad problem, som att det 
 
 Det finns ett omedelbart steg som du kan ta för att få [!DNL MySQL] tillbaka på spår (eller förhindra att den fastnar): frigör utrymme genom att tömma stora tabeller.
 
-Men en långsiktig lösning skulle allokera mer utrymme och följa [Bästa praxis för databaser](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html), inklusive aktivering av funktionen [Arkiv för beställning/faktura/leverans](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+Men en långsiktig lösning skulle allokera mer utrymme och följa [Bästa praxis för databaser](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=sv-SE), inklusive aktivering av funktionen [Arkiv för beställning/faktura/leverans](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 Här följer information om både snabba och långsiktiga lösningar.
 
@@ -124,7 +124,7 @@ Kontrollera om det finns stora `ibtmp1`-filer på `/data/mysql` i varje nod: det
 
 >[!WARNING]
 >
->Vi rekommenderar starkt att du skapar en säkerhetskopia av databasen innan du utför några ändringar och undviker dem under höga belastningsperioder på platsen. Se [Dumpa databasen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) i utvecklardokumentationen.
+>Vi rekommenderar starkt att du skapar en säkerhetskopia av databasen innan du utför några ändringar och undviker dem under höga belastningsperioder på platsen. Se [Dumpa databasen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) i utvecklardokumentationen.
 
 Kontrollera om det finns stora tabeller och tänk på om någon av dem kan tömmas. Gör detta på den primära (käll-) noden.
 
@@ -132,7 +132,7 @@ Tabeller med rapporter kan till exempel oftast tömmas. Mer information om hur d
 
 Om det inte finns några stora rapporttabeller bör du överväga att tömma `_index`-tabeller, bara för att returnera Adobe Commerce-programmet på rätt spår. `index_price` tabeller skulle vara de bästa kandidaterna. Exempel: `catalog_category_product_index_storeX` tabeller, där X kan ha värden från &quot;1&quot; till det maximala antalet arkiv. Tänk på att du måste indexera om för att återställa data i dessa tabeller, och om det gäller stora kataloger kan omindexeringen ta lång tid.
 
-När du har tömt dem väntar du på att wsrep-synkroniseringen ska slutföras. Nu kan du skapa säkerhetskopior och utföra fler viktiga steg för att lägga till mer utrymme, som att allokera/köpa mer utrymme och aktivera funktionen [Arkiv för beställning/faktura/leverans](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+När du har tömt dem väntar du på att wsrep-synkroniseringen ska slutföras. Nu kan du skapa säkerhetskopior och utföra fler viktiga steg för att lägga till mer utrymme, som att allokera/köpa mer utrymme och aktivera funktionen [Arkiv för beställning/faktura/leverans](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ### Kontrollera inställningar för binär loggning
 
@@ -151,4 +151,4 @@ Om du har nått din utrymmesgräns och fortfarande har problem med lite utrymme 
 
 ## Relaterad läsning
 
-[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

@@ -53,7 +53,7 @@ Konstant tömning och indexåterskapande är några av orsakerna till prestandaf
 
 ### Lösning
 
-Kör bara omindexering när det behövs. Om du vill veta mer går du till [Konfigurera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) i utvecklardokumentationen. En allmän rekommendation och bästa praxis är att tillåta den partiella omindexeringsmekanismen att hantera omindexering av data utan manuell åtgärd från en handlare. All omindexering ska göras med den inbyggda Adobe Commerce-funktionen (Mview). Mview utför partiell omindexering, vilket är det mest effektiva sättet att indexera om data. Mer information om Mview finns i [Indexeringsöversikt: Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) i utvecklardokumentationen.
+Kör bara omindexering när det behövs. Om du vill veta mer går du till [Konfigurera indexerare](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) i utvecklardokumentationen. En allmän rekommendation och bästa praxis är att tillåta den partiella omindexeringsmekanismen att hantera omindexering av data utan manuell åtgärd från en handlare. All omindexering ska göras med den inbyggda Adobe Commerce-funktionen (Mview). Mview utför partiell omindexering, vilket är det mest effektiva sättet att indexera om data. Mer information om Mview finns i [Indexeringsöversikt: Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) i utvecklardokumentationen.
 
 ## Relaterad läsning
 

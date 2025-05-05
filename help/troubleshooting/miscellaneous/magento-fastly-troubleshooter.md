@@ -48,7 +48,7 @@ b. NO - Kontrollera DNS genom att köra i CLI/terminal: `dig [your website.com] 
 
 +++**Vad händer när du kör `dig`?**
 
-När du körde `dig` returnerade det en post som pekar på prod.magentocloud.map.fastly.net eller någon av följande IP-adresser (se [Uppdatera DNS-konfiguration med produktionsinställning](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist#update-dns-configuration-with-production-settings) i utvecklardokumentationen):
+När du körde `dig` returnerade det en post som pekar på prod.magentocloud.map.fastly.net eller någon av följande IP-adresser (se [Uppdatera DNS-konfiguration med produktionsinställning](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/launch/checklist#update-dns-configuration-with-production-settings) i utvecklardokumentationen):
 
 * 151.101.1.124
 * 151.101.65.124
@@ -56,7 +56,7 @@ När du körde `dig` returnerade det en post som pekar på prod.magentocloud.map
 * 151.101.193.124
 
 a. JA - Problemet är inte DNS-relaterat. Fortsätt till [Steg 5](#step-5).\
-b. NEJ - Problemet är sannolikt DNS-relaterat. Kunden bör [kontrollera DNS-konfigurationen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist#update-dns-configuration-with-production-settings) eller kontakta sin DNS-leverantör för mer information.
+b. NEJ - Problemet är sannolikt DNS-relaterat. Kunden bör [kontrollera DNS-konfigurationen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/launch/checklist#update-dns-configuration-with-production-settings) eller kontakta sin DNS-leverantör för mer information.
 
 +++
 
@@ -74,7 +74,7 @@ b. NEJ - Besök [http://fastly-debug.com](https://www.fastly-debug.com/) och del
 +++**Har certifikatet gått ut?**
 
 a. JA - Du måste förnya ditt TLS-certifikat med certifikatutfärdaren.\
-b. NEJ - Du kanske inte har något certifikat alls. Om du har Adobe Commerce rekommenderar vi att du köper ett TLS-certifikat. Om du använder Adobe Commerce i en molninfrastruktur kan du ha ett domänvaliderat Låt oss kryptera SSL-/TLS-certifikat för säker HTTPS-trafik från Fast. Se [etablera SSL-/TLS-certifikat](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) i utvecklardokumentationen.
+b. NEJ - Du kanske inte har något certifikat alls. Om du har Adobe Commerce rekommenderar vi att du köper ett TLS-certifikat. Om du använder Adobe Commerce i en molninfrastruktur kan du ha ett domänvaliderat Låt oss kryptera SSL-/TLS-certifikat för säker HTTPS-trafik från Fast. Se [etablera SSL-/TLS-certifikat](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) i utvecklardokumentationen.
 
 +++
 

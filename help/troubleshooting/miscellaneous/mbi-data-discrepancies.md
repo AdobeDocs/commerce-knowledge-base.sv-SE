@@ -18,7 +18,7 @@ Ser siffrorna i en viss rapport felaktiga ut? Ser du oväntade NULL-värden? Om 
 * [Checklista för diagnostisk diskrepans](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Använda export för att identifiera dataavvikelser](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Vi rekommenderar även att du kontrollerar att rätt [replikeringsmetoder](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) och [rechecks](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) har angetts för de tabeller och kolumner som är inblandade i avvikelsen. Observera att du behöver administratörsbehörighet för att komma åt replikeringsmetoden och för att kontrollera information igen.
+Vi rekommenderar även att du kontrollerar att rätt [replikeringsmetoder](https://experienceleague.adobe.com/sv/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) och [rechecks](https://experienceleague.adobe.com/sv/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) har angetts för de tabeller och kolumner som är inblandade i avvikelsen. Observera att du behöver administratörsbehörighet för att komma åt replikeringsmetoden och för att kontrollera information igen.
 
 ## Jag behöver fortfarande hjälp!
 
@@ -32,4 +32,4 @@ Om rapporten fortfarande är felaktig, oroa dig inte - vårt supportteam hjälpe
 ## Relaterad läsning
 
 * [Beräknade kolumner](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [Strukturella databasändringar](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
+* [Strukturella databasändringar](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=sv-SE)

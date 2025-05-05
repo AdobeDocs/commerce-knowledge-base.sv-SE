@@ -36,6 +36,6 @@ Kör om du vill aktivera [`CleanExpiredTokens.php`](https://github.com/magento/m
 
 ## Relaterad läsning
 
-* [Tjänster > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html) i referenshandboken för Commerce-konfigurationen
+* [Tjänster > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html?lang=sv-SE) i referenshandboken för Commerce-konfigurationen
 * [Autentiseringshandbok](https://developer.adobe.com/developer-console/docs/guides/authentication/) i Adobe Developer-handboken
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

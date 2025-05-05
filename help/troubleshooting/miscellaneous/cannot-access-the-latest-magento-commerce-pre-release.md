@@ -40,7 +40,7 @@ Detta är de vanligaste orsakerna till problem:
 
 Under förhandsversionen finns versionspaket på två platser:
 
-1. Via Composer på [magento.com](https://repo.magento.com/) med hjälp av det primära MageID:t för kontot. Mer information om hur du använder Composer finns i [Installera Adobe Commerce med Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) i utvecklardokumentationen.
+1. Via Composer på [magento.com](https://repo.magento.com/) med hjälp av det primära MageID:t för kontot. Mer information om hur du använder Composer finns i [Installera Adobe Commerce med Composer](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/composer) i utvecklardokumentationen.
 1. **Mitt konto** > **Nedladdningar** på [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]

@@ -65,7 +65,7 @@ Korrigeringen är kopplad till den här artikeln. Klicka på följande länk om 
 
 ## Så här sätter du på plåstret
 
-Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) i vår kunskapsbas för support för instruktioner.
+Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=sv-SE) i vår kunskapsbas för support för instruktioner.
 
 ## Hur man vet om plåstren har använts
 
@@ -73,7 +73,7 @@ Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats kanske
 
 <u>Du kan göra detta genom att utföra följande steg</u>:
 
-1. [Installera  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installera  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=sv-SE).
 1. Kör kommandot:
 
    ```bash

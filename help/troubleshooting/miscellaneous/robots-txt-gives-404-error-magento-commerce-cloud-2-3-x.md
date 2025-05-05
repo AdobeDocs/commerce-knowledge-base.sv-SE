@@ -33,10 +33,10 @@ Lösningen är att inaktivera Nginx-regeln som omdirigerar `/robots.txt`-begära
 
 Om du inte har aktiverat självbetjäning (eller inte vet om det är aktiverat) [skickar du en Magento-supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär att Nginx-omdirigeringsregeln ska tas bort från `/robots.txt`-begäranden till `/media/robots.txt`.
 
-Om du har aktiverat självbetjäning kan du uppgradera ECE-Tools till minst 2002.0.12 och ta bort Nginx-omdirigeringsregeln i filen `.magento.app.yaml`. Mer information finns i [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html) i utvecklardokumentationen.
+Om du har aktiverat självbetjäning kan du uppgradera ECE-Tools till minst 2002.0.12 och ta bort Nginx-omdirigeringsregeln i filen `.magento.app.yaml`. Mer information finns i [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html?lang=sv-SE) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
 * [Så här blockerar du skadlig trafik för Magento Commerce Cloud på snabbnivå](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) i vår kunskapsbas för support.
-* [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) i utvecklardokumentationen.
-* [Sökmotorrobotar](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) i användarhandboken.
+* [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) i utvecklardokumentationen.
+* [Sökmotorrobotar](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=sv-SE#search-engine-robots) i användarhandboken.

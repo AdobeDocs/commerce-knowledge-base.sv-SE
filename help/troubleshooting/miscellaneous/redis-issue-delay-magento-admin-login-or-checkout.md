@@ -80,6 +80,6 @@ När du har tillämpat korrigeringen med korrigeringen behövs inte lösningen l
 
 ## Adobe Commerce om molninfrastruktur 2.2.0: använd ECE-Tools v2002.0.8 eller senare {#h_64593789291526919876198}
 
-Distributionsskriptpaketet [ECE-Tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) med version 2002.0.3 - 2002.0.7 [tillämpar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) lösningen automatiskt med inställningen `disable_locking` till `1`. Detta inaktiverar sessionslåsmekanismen för Adobe Commerce 2.2.0, där det ursprungliga problemet inte uppstår.
+Distributionsskriptpaketet [ECE-Tools](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) med version 2002.0.3 - 2002.0.7 [tillämpar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=sv-SE) lösningen automatiskt med inställningen `disable_locking` till `1`. Detta inaktiverar sessionslåsmekanismen för Adobe Commerce 2.2.0, där det ursprungliga problemet inte uppstår.
 
 Om du kör Adobe Commerce i molninfrastruktur 2.2.0 ska du uppgradera ECE-Tools till v2002.0.8 eller senare. Du kan också överväga att uppgradera din Adobe Commerce i molninfrastruktur till 2.2.2 eller senare.

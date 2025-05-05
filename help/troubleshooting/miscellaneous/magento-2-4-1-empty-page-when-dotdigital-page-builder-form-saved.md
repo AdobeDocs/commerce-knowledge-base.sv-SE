@@ -45,6 +45,6 @@ Lösningen är att använda en annan webbläsare än Safari. Problemet kommer at
 ## Relaterad läsning
 
 * [Vad är Page Builder?](https://developer.adobe.com/commerce/frontend-core/page-builder/) i vår utvecklardokumentation.
-* [Utskriftsformat för Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) i utvecklardokumentationen.
-* [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/introduction) i vår användarhandbok.
-* [Page Builder - Elements](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/workspace#elements) i vår användarhandbok.
+* [Utskriftsformat för Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html?lang=sv-SE) i utvecklardokumentationen.
+* [Page Builder](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/introduction) i vår användarhandbok.
+* [Page Builder - Elements](https://experienceleague.adobe.com/sv/docs/commerce-admin/page-builder/workspace#elements) i vår användarhandbok.

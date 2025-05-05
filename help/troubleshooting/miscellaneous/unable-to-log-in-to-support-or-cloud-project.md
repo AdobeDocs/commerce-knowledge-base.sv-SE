@@ -51,7 +51,7 @@ Du kan logga in på kontot med:
 - Ett befintligt företagskonto/personkonto för Adobe.
 - Om du inte har något Adobe-konto skapar du ett med samma e-postadress.
 
-Anvisningar finns i [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) i Adobe Experience League.
+Anvisningar finns i [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html?lang=sv-SE) i Adobe Experience League.
 
 ## Relaterad läsning
 

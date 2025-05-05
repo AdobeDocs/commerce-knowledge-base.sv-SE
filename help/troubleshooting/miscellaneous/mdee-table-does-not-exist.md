@@ -17,7 +17,7 @@ Den här artikeln innehåller en lösning för att åtgärda datasynkroniserings
 
 ## Berörda produkter och versioner
 
-Adobe Commerce-instanser där anpassad kod har tillämpats på dataexportfunktionen (`commerce-data-exporter` eller `saas-exporter`). Felet uppstår om den installerade [[!DNL SaaS] dataexportversionen är 103.3.0](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes#release-6) eller senare och koden refererar direkt till `catalog_data_exporter_products`-indexet.
+Adobe Commerce-instanser där anpassad kod har tillämpats på dataexportfunktionen (`commerce-data-exporter` eller `saas-exporter`). Felet uppstår om den installerade [[!DNL SaaS] dataexportversionen är 103.3.0](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/saas-data-export/release-notes#release-6) eller senare och koden refererar direkt till `catalog_data_exporter_products`-indexet.
 
 ## Problem
 
@@ -29,7 +29,7 @@ Handlare kan upptäcka att datauppdateringar saknas i matningstabellerna för ka
 
 ## Orsak
 
-På grund av namnändringar i flödestabeller, index och ändringsloggtabeller i [!DNL Commerce Data Export] [version 103.3.0](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes#release-9) kanske [!DNL Mview]-prenumerationerna i anpassade tillägg som använder [!DNL Commerce Data Export] inte fungerar som de ska.
+På grund av namnändringar i flödestabeller, index och ändringsloggtabeller i [!DNL Commerce Data Export] [version 103.3.0](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/saas-data-export/release-notes#release-9) kanske [!DNL Mview]-prenumerationerna i anpassade tillägg som använder [!DNL Commerce Data Export] inte fungerar som de ska.
 
 I det här fallet finns inte felet *table* eftersom tabellnamnet `catalog_data_exporter` ändrades till `cde_products_feed` och du har en egen kod som refererar till det gamla namnet i prenumerationen [!DNL Data Exporter Mview].
 
@@ -49,5 +49,5 @@ I följande exempel visas koden som anger tabellerna som spåras av prenumeratio
 
 ## Relaterad läsning
 
-* [[!DNL SaaS] Versionsinformation om dataexporttillägg](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) i Adobe Commerce dataexportguide för [!DNL SaaS]-tjänster
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [[!DNL SaaS] Versionsinformation om dataexporttillägg](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/saas-data-export/release-notes) i Adobe Commerce dataexportguide för [!DNL SaaS]-tjänster
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

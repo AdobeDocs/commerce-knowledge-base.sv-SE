@@ -52,9 +52,9 @@ Mellanlagring2:
 ## Tillfällig lösning
 
 * Använd inte bifogade filer som är större än 6 MB eller 10 MB.
-* Överväg att använda en SMTP-fjärrserver på din Adobe Commerce-instans. Anvisningar finns i [Konfigurera e-postkommunikation](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) i handboken för Admin Systems.
+* Överväg att använda en SMTP-fjärrserver på din Adobe Commerce-instans. Anvisningar finns i [Konfigurera e-postkommunikation](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html?lang=sv-SE) i handboken för Admin Systems.
 * Konfigurera om servern så att filer kan sparas i modulen och bifoga sedan länken till filerna i e-postmeddelandena.
 
 ## Relaterad läsning
 
-* [[!DNL SendGrid] e-posttjänst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html) i vår Commerce on Cloud Infrastructure Guide.
+* [[!DNL SendGrid] e-posttjänst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=sv-SE) i vår Commerce on Cloud Infrastructure Guide.

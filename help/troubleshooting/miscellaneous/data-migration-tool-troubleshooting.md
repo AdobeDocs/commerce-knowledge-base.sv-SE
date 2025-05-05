@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Orsak
 
-Det gick inte att hitta en klass från Adobe Commerce 1-kodbasen i Adobe Commerce 2 under migreringssteget [EAV](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) i utvecklardokumentationen. I de flesta fall tillhör den klass som saknas ett [tillägg](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#extension).
+Det gick inte att hitta en klass från Adobe Commerce 1-kodbasen i Adobe Commerce 2 under migreringssteget [EAV](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/data-migration/basics/technical-specification) i utvecklardokumentationen. I de flesta fall tillhör den klass som saknas ett [tillägg](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/glossary#extension).
 
 ### Möjliga lösningar
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Orsak
 
-Det här felet inträffar under [inkrementell migrering](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) (i vår utvecklardokumentation) av dataändringar. Det betyder att deltabulatorer (med prefix `m2_cl_*`) inte hittades i Adobe Commerce 1-databasen. Verktyget installerar dessa tabeller under [datamigrering](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) (i vår utvecklardokumentation) samt databasutlösare som spårar ändringar och fyller i deltabeller.
+Det här felet inträffar under [inkrementell migrering](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/data-migration/migrate-data/delta) (i vår utvecklardokumentation) av dataändringar. Det betyder att deltabulatorer (med prefix `m2_cl_*`) inte hittades i Adobe Commerce 1-databasen. Verktyget installerar dessa tabeller under [datamigrering](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/data-migration/migrate-data/data) (i vår utvecklardokumentation) samt databasutlösare som spårar ändringar och fyller i deltabeller.
 
 En orsak till felet kan vara att du försöker migrera från en *kopia* av din Adobe Commerce 1-butik, inte från själva livebutiken. När du gör en kopia från en Adobe Commerce 1-butik som aldrig har migrerats innehåller kopian inte de utlösare och ytterligare delatabeller som behövs för att slutföra en deltamigrering, så migreringen misslyckas. Datamigreringsverktyget gör INTE jämförelser mellan databasen för AC1 och AC2 för att migrera skillnaderna. Verktyget använder i stället de utlösare och delatogtabeller som installerats under den första migreringen för att utföra efterföljande deltmigreringar. I så fall kommer ditt exemplar av Adobe Commerce 1 DB inte att innehålla de utlösare och delatabeller som datamigreringsverktyget använder för att utföra en migrering.
 
@@ -165,5 +165,5 @@ Vi rekommenderar att du testar migreringsprocessen från en kopia av din Adobe C
 
 ## Relaterad läsning
 
-[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
 

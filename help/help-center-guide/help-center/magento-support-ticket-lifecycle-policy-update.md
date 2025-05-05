@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Uppdatering av livscykelpolicy för Adobe Commerce Support-biljetter
 
-I den här dokumentationen beskrivs förbättringar av Adobe DX Support-ärendets livscykel i syfte att öka kommunikationen och tillhandahålla lösningar för kunder så snabbt som möjligt för att säkerställa att kunderna lyckas. Detta finns också i [Adobe Success Plans Overview: Support Case Lifecycle](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
+I den här dokumentationen beskrivs förbättringar av Adobe DX Support-ärendets livscykel i syfte att öka kommunikationen och tillhandahålla lösningar för kunder så snabbt som möjligt för att säkerställa att kunderna lyckas. Detta finns också i [Adobe Success Plans Overview: Support Case Lifecycle](https://experienceleague.adobe.com/sv/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
 Nedan visas tidslinjer och meddelanden för olika scenarier som påträffats under supportprocessen:
 
 ## Påminnelser om uppföljning av ärenden
@@ -47,7 +47,7 @@ Kunderna kan öppna ett stängt ärende på nytt inom 14 dagar för att fortsät
 
 ## Relaterad läsning
 
-* [Skicka in en supportanmälan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
-* Länken [&quot;Skicka en biljett&quot; visas inte på startsidan för Adobe Commerce Help Center ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
-* [Formulär för anmälan av biljett: handlaren visas inte i listrutan Organisation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
-* [Adobe Success Plans - översikt: Supportärende - livscykel](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
+* [Skicka in en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
+* Länken [&quot;Skicka en biljett&quot; visas inte på startsidan för Adobe Commerce Help Center ](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
+* [Formulär för anmälan av biljett: handlaren visas inte i listrutan Organisation](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
+* [Adobe Success Plans - översikt: Supportärende - livscykel](https://experienceleague.adobe.com/sv/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)

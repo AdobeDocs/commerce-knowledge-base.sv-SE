@@ -45,4 +45,4 @@ Ta bort JSON från avsnittet **Runtime** > **Extensions** i `.magento.app.yaml` 
 
 ## Relaterad läsning
 
-[PHP-programmet](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) i utvecklardokumentationen.
+[PHP-programmet](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/app/php-settings) i utvecklardokumentationen.

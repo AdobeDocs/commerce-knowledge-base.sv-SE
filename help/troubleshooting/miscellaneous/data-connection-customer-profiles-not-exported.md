@@ -21,7 +21,7 @@ I den här artikeln beskrivs felsökningssteg om kundprofildata inte visas i Exp
 
 ## Problem
 
-Du har installerat och konfigurerat tillägget [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) och aktiverat att kundprofildata skickas till Experience Platform, men profildata visas inte i Experience Platform.
+Du har installerat och konfigurerat tillägget [[!DNL Data Connection]](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/data-connection/overview) och aktiverat att kundprofildata skickas till Experience Platform, men profildata visas inte i Experience Platform.
 
 ## Lösning
 
@@ -31,7 +31,7 @@ Om kundprofilsinformationen inte visas i Experience Platform ska du kontrollera 
 
 Kontrollera att du har installerat den senaste versionen av tillägget `experience-platform-connector`.
 
-Mer information om den senaste versionen finns i [[!DNL Data Connection] versionsinformationen för tillägget](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/release-notes).
+Mer information om den senaste versionen finns i [[!DNL Data Connection] versionsinformationen för tillägget](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/data-connection/release-notes).
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Bekräfta att modulen `customers-connector` har konfigurerats baserat på ditt i
 
 #### Adobe Commerce i molninfrastruktur
 
-1. Aktivera den globala variabeln `ENABLE_EVENTING` i `.magento.env.yaml`. [Läs mer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global).
+1. Aktivera den globala variabeln `ENABLE_EVENTING` i `.magento.env.yaml`. [Läs mer](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global).
 
    ```bash
        stage:
@@ -116,14 +116,14 @@ select * from event_data_saas;
    "error_code": "403003" } } }
    ```
 
-1. Gå till sidan *[!UICONTROL Commerce Services Connector]* i Admin och kontrollera att de angivna [!UICONTROL sandbox/production]-nycklarna är korrekt konfigurerade. Bekräfta även att inställningarna för Commerce-kontot [!UICONTROL sandbox/production] matchar dem som visas i [!UICONTROL Commerce Services Connector]. Läs [mer](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
+1. Gå till sidan *[!UICONTROL Commerce Services Connector]* i Admin och kontrollera att de angivna [!UICONTROL sandbox/production]-nycklarna är korrekt konfigurerade. Bekräfta även att inställningarna för Commerce-kontot [!UICONTROL sandbox/production] matchar dem som visas i [!UICONTROL Commerce Services Connector]. Läs [mer](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
 
 ### Kontrollera om tjänst-ID:t finns i tillåtelselista och bekräfta med Adobe Commerce support
 
 1. Kontrollera att [!UICONTROL Commerce Services Connector] `serviceId` visas i tillåtelselista i Adobe Commerce.
-1. Kontakta [Adobe Commerce support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) för att bekräfta tillåtelselista status.
+1. Kontakta [Adobe Commerce support](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) för att bekräfta tillåtelselista status.
 
 ## Relaterad läsning
 
-* [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)-tillägget i användarhandboken för Commerce Services
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [[!DNL Data Connection]](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/data-connection/overview)-tillägget i användarhandboken för Commerce Services
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

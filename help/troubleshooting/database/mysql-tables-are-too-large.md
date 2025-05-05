@@ -34,5 +34,5 @@ Tänk på följande alternativ för att undvika prestandaförsämring:
 
 ## Relaterad läsning
 
-* [Överdimensionerade ändringsloggtabeller orsakar fördröjningar i entitetsuppdateringar](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) i vår kunskapsbas för support
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Överdimensionerade ändringsloggtabeller orsakar fördröjningar i entitetsuppdateringar](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) i vår kunskapsbas för support
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

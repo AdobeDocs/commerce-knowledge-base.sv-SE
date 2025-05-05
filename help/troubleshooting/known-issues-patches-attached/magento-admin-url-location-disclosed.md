@@ -48,4 +48,4 @@ Adobe rekommenderar också starkt att handlare använder verktyg för att säkra
 * [5 Omedelbara åtgärder mot attacker från Protect mot akutstyrda attacker](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
 * [Protect Ditt installationslösenord för Magento Garanterar en ny uppdatering](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
 * [Bästa praxis för säkerhet](https://magento.com/security/best-practices/security-best-practices)
-* Lägger till och konfigurerar tvåfaktorsautentisering i Adobe Commerce för [2.4.x](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication)
+* Lägger till och konfigurerar tvåfaktorsautentisering i Adobe Commerce för [2.4.x](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication)

@@ -82,4 +82,4 @@ Om en inställning saknas i din `composer.json`-fil kopieras inte vissa kataloge
 
 ## Relaterad läsning
 
-* [Uppgraderingar och korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices) i utvecklardokumentationen.
+* [Uppgraderingar och korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices) i utvecklardokumentationen.

@@ -42,9 +42,9 @@ Då visas en kompatibilitetsrapport. Om du har inkompatibiliteter måste du uppg
 Se följande dokumentation för instruktioner om hur du uppgraderar:
 
 * Om du vill uppgradera till PWA Studio söker du efter avsnittet Uppgradera från en tidigare version i [PWA versionsinformation](https://github.com/magento/pwa-studio/releases/) för den version du behöver uppgradera till.
-* [Uppgradera Adobe Commerce på molninfrastrukturversion](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) i utvecklardokumentationen
-* [Uppgradera Adobe Commerce lokalt (installeras med&quot;create-project&quot; eller arkiv för disposition&quot;)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) i utvecklardokumentationen
-* [Uppgradera Adobe Commerce lokalt (installeras genom kloning av Adobe Commerce repo)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/developer/git-installs) i utvecklardokumentationen
+* [Uppgradera Adobe Commerce på molninfrastrukturversion](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) i utvecklardokumentationen
+* [Uppgradera Adobe Commerce lokalt (installeras med&quot;create-project&quot; eller arkiv för disposition&quot;)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) i utvecklardokumentationen
+* [Uppgradera Adobe Commerce lokalt (installeras genom kloning av Adobe Commerce repo)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/developer/git-installs) i utvecklardokumentationen
 
 ## Relaterad läsning
 

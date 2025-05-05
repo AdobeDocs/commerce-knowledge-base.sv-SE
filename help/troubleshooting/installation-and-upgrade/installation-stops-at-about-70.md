@@ -32,7 +32,7 @@ Ställ in följande på lämpligt sätt.
 
 ### Alla webbservrar och lack {#all-web-servers-and-varnish}
 
-1. Leta upp `php.ini` med hjälp av en [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software)-fil.
+1. Leta upp `php.ini` med hjälp av en [`phpinfo.php`](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/optional-software)-fil.
 1. Som användare med `root`-behörighet öppnar du `php.ini` i en textredigerare.
 1. Leta reda på inställningen `max_execution_time`.
 1. Ändra värdet till `18000`.

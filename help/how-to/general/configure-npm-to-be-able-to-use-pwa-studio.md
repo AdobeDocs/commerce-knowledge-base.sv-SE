@@ -54,4 +54,4 @@ Om du vill ange den NPM-version som behövs anger du den i konfigurationsfilen `
 
 ## Relaterad dokumentation
 
-* [Programkonfiguration: hookar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) i vår Adobe Commerce on Cloud Infrastructure Guide.
+* [Programkonfiguration: hookar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=sv-SE) i vår Adobe Commerce on Cloud Infrastructure Guide.

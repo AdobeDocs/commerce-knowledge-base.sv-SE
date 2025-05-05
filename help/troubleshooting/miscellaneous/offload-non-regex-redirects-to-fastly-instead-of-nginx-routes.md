@@ -103,4 +103,4 @@ Om du inte vill köra en mellanlagringsmiljö från Adobe Commerce, men vill se 
 * [Konfigurera vägar](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) i utvecklardokumentationen
 * [Konfigurera [!DNL Fastly]](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i utvecklardokumentationen
 * [[!DNL VCL] informationsblad för reguljära uttryck](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) i utvecklardokumentationen
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

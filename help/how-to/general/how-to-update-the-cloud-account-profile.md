@@ -42,4 +42,4 @@ När du ändrar det här fältet beror det på de enskilda omständigheterna.
 
 Om du behöver överföra ägarskapet för ditt aktuella konto till en ny ägare eller en annan e-postadress måste du uppdatera den primära användarens e-postadress som är kopplad till kontot.
 
-Se: [https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en)
+Se: [https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=sv-SE](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=sv-SE)

@@ -338,11 +338,11 @@ ht-degree: 0%
       * [Bästa tillvägagångssätt för cachestorlek för Realpath](/help/best-practices/configuration/realpath-cache-size-best-practice.md)
       * [Optimera CSS- och JS-filer i Adobe Commerce](/help/best-practices/configuration/optimize-css-and-js-files-in-magento-commerce.md)
    * Databas {#database}
-      * [Uppgradering av Adobe Commerce 2.3.5: komprimera till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+      * [Uppgradering av Adobe Commerce 2.3.5: komprimera till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=sv-SE)
       * [Bästa praxis för användning av utlösare](/help/best-practices/database/best-practice-for-triggers-usage.md)
-      * [De vanligaste databasproblemen i Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+      * [De vanligaste databasproblemen i Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=sv-SE)
       * [Bästa praxis för Adobe Commerce i molninfrastruktur för MySQL-slavanslutning](/help/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.md)
-      * [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+      * [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=sv-SE)
    * Allmänt {#general}
       * [_isScopePrivate i privata innehållsblock saktar ned Adobe Commerce prestanda](/help/best-practices/general/isscopeprivate-in-private-content-blocks-slows-magento-performance.md)
       * [Felsökning av bästa praxis för Adobe Commerce i molninfrastruktur](/help/best-practices/general/troubleshooting-best-practices-for-magento-commerce-cloud.md)
@@ -370,7 +370,7 @@ ht-degree: 0%
       * [Bästa tillvägagångssätt för bilder i Adobe Commerce på molninfrastruktur](/help/best-practices/performance/best-practice-for-images-in-magento-commerce-cloud.md)
       * [Adobe Commerce bästa praxis: utföra viktiga åtgärder i Admin](/help/best-practices/performance/magento-best-practice-conducting-critical-actions-in-admin.md)
       * [Adobe Commerce bästa praxis: inaktivera rapporter om de inte använder](/help/best-practices/performance/magento-best-practice-disable-reports-if-not-using.md)
-      * [Indexerare &quot;Update On Schedule&quot; optimerar Adobe Commerce prestanda](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
+      * [Indexerare &quot;Update On Schedule&quot; optimerar Adobe Commerce prestanda](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=sv-SE)
       * [Bästa praxis för Adobe Commerce produktvariationer](/help/best-practices/performance/best-practice-magento-product-variations.md)
       * [Bästa praxis Adobe Commerce orderplacering](/help/best-practices/performance/best-practice-magento-order-placement-performance.md)
       * [Adobe Commerce bästa praxis: aktivera asynkron orderbehandling](/help/best-practices/performance/magento-best-practice-enable-asynchronous-orders-processing.md)

@@ -74,4 +74,4 @@ $ curl 127.0.0.1:9200
 
 ## Relaterad läsning
 
-[Konfigurera OpenSearch-tjänsten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) i guiden för Commerce om molninfrastruktur.
+[Konfigurera OpenSearch-tjänsten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=sv-SE) i guiden för Commerce om molninfrastruktur.

@@ -54,7 +54,7 @@ Distributionen kan misslyckas med följande felmeddelanden:
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-Om du använder Adobe Commerce i molninfrastrukturslösningen visas det här felmeddelandet i [distributionsloggen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations). För Adobe Commerce lokalt visas felet på kommandoraden.
+Om du använder Adobe Commerce i molninfrastrukturslösningen visas det här felmeddelandet i [distributionsloggen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/test/log-locations). För Adobe Commerce lokalt visas felet på kommandoraden.
 
 ## Orsak
 
@@ -70,4 +70,4 @@ Gör så här:
    * om Fastly-modulen ingår i magento-cloud-metapackage:    <pre>Composer update magento/magento-cloud-metapackage</pre>
    * om modulen Fastly installerades separat (om du till exempel använder Adobe Commerce lokalt, inte molnutgåvan) <pre>snabbuppdatering/magento2</pre>
 1. Genomför och skicka ändringarna och utlösa distributionsprocessen om det inte görs automatiskt.
-1. I Admin [överför du den nya VCL:en till Snabbt](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).
+1. I Admin [överför du den nya VCL:en till Snabbt](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).

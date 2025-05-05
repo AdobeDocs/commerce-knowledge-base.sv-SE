@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ![login_panel_s.png](assets/login_panel_s.png)
 
-Läs stegen i avsnittet [Återställ ditt lösenord i Admin Sign In](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in) i användarhandboken.
+Läs stegen i avsnittet [Återställ ditt lösenord i Admin Sign In](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html?lang=sv-SE#admin-sign-in) i användarhandboken.
 
 Nedan finns viktig användningsinformation.
 
 ### Aktivera utgående e-post
 
-Innan du använder formuläret **Har du glömt ditt lösenord** måste du [aktivera utgående e-post](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) med [molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+Innan du använder formuläret **Har du glömt ditt lösenord** måste du [aktivera utgående e-post](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html?lang=sv-SE) med [molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=sv-SE).
 
 ### Kontrollera skräppostmappen
 
@@ -32,5 +32,5 @@ Om du inte kan hitta meddelandet med länken Återställ lösenord kontrollerar 
 
 Om du inte kan återställa lösenordet för den befintliga användaren kan du skapa en ny Admin-användare och ange ett lösenord för den här användaren. Gör så här:
 
-1. Använd [SSH för att logga in i fjärrmiljön](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. Använd [SSH för att logga in i fjärrmiljön](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
 1. Kör följande kommando: `bin/magento admin:user:create   --admin-user=%user_name% --admin-password=%your_password% --admin-email=%your_email% --admin-firstname=%admin_user_first_name% --admin-lastname=%admin_user_last_name%`

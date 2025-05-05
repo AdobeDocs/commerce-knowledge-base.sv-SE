@@ -27,7 +27,7 @@ Exempel:
 
 `max_execution_time = 120`
 
-Läs artikeln [Anpassa inställningar för php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+Läs artikeln [Anpassa inställningar för php.ini](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Exempel
 
@@ -35,7 +35,7 @@ Allvarligt fel i PHP för *: Tillåten minnesstorlek på 792723456 byte är slut
 
 ## Lösning
 
-Anpassa dina `php.ini`-inställningar. Läs den här [Anpassa php.ini-inställningsartikeln](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+Anpassa dina `php.ini`-inställningar. Läs den här [Anpassa php.ini-inställningsartikeln](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Exempel
 
@@ -65,9 +65,9 @@ Kontrollera katalogen `<root>/tmp` eftersom den förmodligen är full. Om den ä
 
 I vår utvecklardokumentation:
 
-* [PHP-inställningsfel](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Nödvändiga PHP-inställningar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
-* [Redis-verifiering](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
-* [Konfigurera Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
-* [PHP-minnesbegränsningsfel](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [PHP-inställningsfel](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Nödvändiga PHP-inställningar](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Redis-verifiering](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Konfigurera Redis](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [PHP-minnesbegränsningsfel](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/overview)
 * [Lösningar på vanliga problem - minnesbegränsning](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)

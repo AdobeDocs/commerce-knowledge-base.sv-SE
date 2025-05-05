@@ -19,7 +19,7 @@ I den här artikeln finns en korrigering för *Ett fel inträffade på serverfel
 >
 >**Meddelande om borttagning**
 >
->På grund av betaltjänstdirektivet [PSD2](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) och den fortsatta utvecklingen av många API:er riskerar Authorize.Net att bli inaktuell och inte längre kompatibel med säkerhet i framtiden. Därför är den nu föråldrad och vi rekommenderar att du inaktiverar den i din Adobe Commerce-konfiguration och övergår till motsvarande [Commerce Marketplace-tillägg](https://marketplace.magento.com/extensions.html).
+>På grund av betaltjänstdirektivet [PSD2](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) och den fortsatta utvecklingen av många API:er riskerar Authorize.Net att bli inaktuell och inte längre kompatibel med säkerhet i framtiden. Därför är den nu föråldrad och vi rekommenderar att du inaktiverar den i din Adobe Commerce-konfiguration och övergår till motsvarande [Commerce Marketplace-tillägg](https://marketplace.magento.com/extensions.html).
 >
 >**Den här integreringen har tagits bort från Adobe Commerce 2.4.0 och har tagits bort från de aktuella versionerna av 2.3.**
 >
@@ -27,7 +27,7 @@ I den här artikeln finns en korrigering för *Ett fel inträffade på serverfel
 
 ## Problem
 
-Om du placerar en order med sandlådekontot [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) visas ett felmeddelande:
+Om du placerar en order med sandlådekontot [Authorize.Net Direct Post](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) visas ett felmeddelande:
 
 &#x200B;>>
 &quot;Ett fel uppstod på servern. Försök beställa igen&quot;

@@ -36,7 +36,7 @@ Adobe Commerce-kunder.
 
 ## Installera uppgraderingskompatibilitetsverktyget 1.1.0
 
-Installationsanvisningar finns i Adobe Commerce: [Upgrade Compatibility Tool > Install](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) i utvecklardokumentationen. Information om krav för att använda verktyget finns i Adobe Commerce: [Upgrade Compatibility Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) i utvecklardokumentationen.
+Installationsanvisningar finns i Adobe Commerce: [Upgrade Compatibility Tool > Install](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) i utvecklardokumentationen. Information om krav för att använda verktyget finns i Adobe Commerce: [Upgrade Compatibility Tool](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) i utvecklardokumentationen.
 
 ## Vilket nummer har varje nummer?
 
@@ -47,7 +47,7 @@ Felmeddelandena för verktyget Kompatibilitet för uppgradering är indelade eft
 * Felkod: Felmeddelandets Adobe Commerce-tilldelade identifierare.
 * Felbeskrivning: En beskrivning som sammanfattar orsaken till felet.
 * Föreslagen felåtgärd: Om det är tillämpligt ger det vägledning om hur du felsöker och löser felet.
-* Koderna listas och beskrivs på [referenssidan för felmeddelanden](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages).
+* Koderna listas och beskrivs på [referenssidan för felmeddelanden](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages).
 
 ## Var kan jag få feedback om verktyget?
 
@@ -56,4 +56,4 @@ Du kan kontakta UCT-teamet på vår [#upgrade-compatibility-tool](https://magent
 ## Relaterad läsning
 
 * Adobe Commerce-blogg: [Introduktion till uppgraderingskompatibilitetsverktyget (Alpha)](https://magento.com/blog/magento-news/introducing-upgrade-compatibility-tool)
-* Adobe Commerce: [Kompatibilitetsverktyg för uppgradering](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) i utvecklardokumentationen.
+* Adobe Commerce: [Kompatibilitetsverktyg för uppgradering](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) i utvecklardokumentationen.

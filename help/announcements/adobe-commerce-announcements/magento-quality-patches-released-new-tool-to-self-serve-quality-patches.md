@@ -29,5 +29,5 @@ När du har installerat verktyget kan du söka efter tillgängliga patchar, till
 
 Mer information finns i utvecklardokumentationen:
 
-* [Patchar tillgängliga i verktyget för kvalitetspatchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
-* [Versionskommentarer för verktyget Kvalitetspatchar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Patchar tillgängliga i verktyget för kvalitetspatchar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=sv-SE)
+* [Versionskommentarer för verktyget Kvalitetspatchar](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/release-notes)

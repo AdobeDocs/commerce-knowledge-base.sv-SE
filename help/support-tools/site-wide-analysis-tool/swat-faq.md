@@ -21,7 +21,7 @@ Den här artikeln innehåller en beskrivning av [!DNL Site-Wide Analysis Tool]-r
 
 >[!NOTE]
 >
->I Adobe Commerce i molninfrastruktur v2.4.1 och senare är [!DNL Site-Wide Analysis Tool] tillgängligt via Commerce Admin Panel. Därför kan [!DNL Site-Wide Analysis Tool] rapporter köras direkt av kunden. Mer information finns i [[!DNL Site-Wide Analysis Tool] handboken](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html).
+>I Adobe Commerce i molninfrastruktur v2.4.1 och senare är [!DNL Site-Wide Analysis Tool] tillgängligt via Commerce Admin Panel. Därför kan [!DNL Site-Wide Analysis Tool] rapporter köras direkt av kunden. Mer information finns i [[!DNL Site-Wide Analysis Tool] handboken](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html?lang=sv-SE).
 
 ## Vad är [!DNL Site-Wide Analysis Tool]?
 

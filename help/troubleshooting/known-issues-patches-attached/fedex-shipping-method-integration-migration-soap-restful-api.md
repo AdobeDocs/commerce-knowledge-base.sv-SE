@@ -18,11 +18,11 @@ ht-degree: 0%
 >
 >Använd patchen ACSD-61622 från version [!DNL Quality Patches Tool] (QPT) 1.1.57 i stället för den tidigare patchen. Den nya korrigeringen är kompatibel med Adobe Commerce-versioner (alla distributionsmetoder) 2.4.6-p1 - 2.4.6-p8. Det kan bli tillämpligt på andra versioner med nya [!DNL Quality Patches Tool]-versioner.
 >
->Mer information finns i artikeln [ACSD-61622-korrigering](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response) i Adobe Commerce-handboken.
+>Mer information finns i artikeln [ACSD-61622-korrigering](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response) i Adobe Commerce-handboken.
 
 >[!WARNING]
 >
->Innan du installerar den nya korrigeringen måste du avinstallera den tidigare korrigeringen som finns i den här artikeln. Instruktioner om hur du avinstallerar korrigeringsfiler finns i [Återställa en anpassad korrigeringsfil](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#revert-a-custom-patch) i användarhandboken.
+>Innan du installerar den nya korrigeringen måste du avinstallera den tidigare korrigeringen som finns i den här artikeln. Instruktioner om hur du avinstallerar korrigeringsfiler finns i [Återställa en anpassad korrigeringsfil](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#revert-a-custom-patch) i användarhandboken.
 
 
 I den här artikeln finns en patch som löser problem med migrering av [!DNL FedEx]-leveransmetodintegration från SOAP till RESTful API för Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
@@ -75,7 +75,7 @@ Använd följande bifogade patchar, beroende på vilken version av Adobe Commerc
 
 ## Så här sätter du på plåstret
 
-Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) i vår kunskapsbas för support för instruktioner.
+Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=sv-SE) i vår kunskapsbas för support för instruktioner.
 
 ## Hur man vet om plåstren har använts
 
@@ -83,7 +83,7 @@ Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats kanske
 
 <u>Du kan göra detta genom att utföra följande steg</u>:
 
-1. [Installera  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installera  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=sv-SE).
 1. Kör kommandot:
 
    ```bash

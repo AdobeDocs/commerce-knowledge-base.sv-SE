@@ -34,7 +34,7 @@ E-postadressen på ditt [Magento.com](https://account.magento.com)-konto är lä
 
 <u>Lösning</u>
 
-1. [Skicka en supportförfrågan](https://experienceleague.adobe.com/home#support) på https://experienceleague.adobe.com/home#support med följande information:
+1. [Skicka en supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE#support) på https://experienceleague.adobe.com/home?lang=sv-SE#support med följande information:
 
    * Befintlig e-postadress som ska uppdateras
    * Ny e-postadress
@@ -48,7 +48,7 @@ E-postadressen på ditt [Magento.com](https://account.magento.com)-konto är lä
 
 <u>Lösning</u>
 
-Om du har åtkomst till postlådan för den [aktuella ägarens e-postadress] kan du återställa lösenordet för den aktuella ägarens e-postadress enligt guiden [Återställ eller ändra ditt Adobe-lösenord](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) i användarhandboken för Creative Cloud.
+Om du har åtkomst till postlådan för den [aktuella ägarens e-postadress] kan du återställa lösenordet för den aktuella ägarens e-postadress enligt guiden [Återställ eller ändra ditt Adobe-lösenord](https://helpx.adobe.com/se/manage-account/using/change-or-reset-password.html) i användarhandboken för Creative Cloud.
 
 1. Leta upp länken för återställning av lösenord som skickas till den aktuella ägarens postlåda med instruktioner.
 1. Ange ett nytt lösenord och ändra e-postadressen till [ny e-postadress för ägare].
@@ -62,5 +62,5 @@ Om du inte har tillgång till e-postmeddelanden som skickas till den [aktuella �
 
 ## Relaterad läsning
 
-[Återställ glömt lösenord](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) i användarhandboken för Creative Cloud.
-[Uppdatera din kontoprofil](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) i användarhandboken för Creative Cloud.
+[Återställ glömt lösenord](https://helpx.adobe.com/se/manage-account/using/change-or-reset-password.html) i användarhandboken för Creative Cloud.
+[Uppdatera din kontoprofil](https://helpx.adobe.com/se/manage-account/using/edit-adobe-account-personal-profile.html) i användarhandboken för Creative Cloud.

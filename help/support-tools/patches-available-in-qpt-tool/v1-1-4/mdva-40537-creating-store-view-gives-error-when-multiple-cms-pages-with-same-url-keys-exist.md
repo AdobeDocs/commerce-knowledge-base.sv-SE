@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40537: Om du skapar en butiksvy uppstår ett fel när flera CMS-sidor har samma URL-nyckel.'
-description: Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 är installerat. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
+description: Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 är installerat. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
 exl-id: d92400c9-0c5a-4416-820d-99ab4ba34003
 feature: CMS
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40537: Om du skapar en butiksvy uppstår ett fel när flera CMS-sidor har samma URL-nyckel.
 
-Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 har installerats. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
+Korrigeringen MDVA-40537 åtgärdar ett problem där användare får ett fel när de skapar en butiksvy om flera CMS-sidor har samma URL-nyckel. Den här korrigeringen är tillgänglig när [QPT-verktyget (Quality Patches Tool)](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 har installerats. Korrigerings-ID är MDVA-40537. Observera att problemet har åtgärdats i Adobe Commerce 2.4.1.
 
 ## Berörda produkter och versioner
 
@@ -27,7 +27,7 @@ Adobe Commerce (alla distributionsmetoder) 2.3.4 - 2.4.0-p1
 
 >[!NOTE]
 >
->Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Använd patch-ID:t som söknyckelord för att hitta patchen.
+>Patchen kan bli tillämplig på andra versioner med nya Quality Patches Tool-versioner. Om du vill kontrollera om korrigeringen är kompatibel med din Adobe Commerce-version uppdaterar du `magento/quality-patches`-paketet till den senaste versionen och kontrollerar kompatibiliteten på [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=sv-SE). Använd patch-ID:t som söknyckelord för att hitta patchen.
 
 
 ## Problem
@@ -88,8 +88,8 @@ Exception message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplica
 
 Använd följande länkar beroende på distributionsmetod för att tillämpa enskilda korrigeringsfiler:
 
-* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
-* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
+* Lokalt hos Adobe Commerce eller Magento Open Source: [Programuppdateringsguide > Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/usage) i vår utvecklardokumentation.
+* Adobe Commerce i molninfrastruktur: [Uppgraderingar och korrigeringar > Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) i vår utvecklardokumentation.
 
 ## Relaterad läsning
 

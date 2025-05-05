@@ -23,4 +23,4 @@ Vi rekommenderar att du använder [Delad text](https://www.sublimetext.com/2) f�
 1. Klicka på &#x200B; **Arkiv** > **Spara som** &#x200B; &#x200B; och välj &#x200B; **Kommaavgränsade värden (.csv)** för att spara filen.
 1. Öppna CSV-filen i Publicera text.
 1. I Publicera text går du till &#x200B; **Arkiv** > **Spara med kodning** > **UTF-8\* &#x200B;** . Detta sparar CSV-filen med UTF-8-kodning.    ![csv_file_UTF-8_sublime_3.2.2_magento_BI.png](assets/csv_file_UTF-8_sublime_3.2.2_magento_BI.png)
-1. [Överför data](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/connecting/using-file-uploader) (i vår användarhandbok) till en ny tabell i Magento BI.
+1. [Överför data](https://experienceleague.adobe.com/sv/docs/commerce-business-intelligence/mbi/analyze/connecting/using-file-uploader) (i vår användarhandbok) till en ny tabell i Magento BI.

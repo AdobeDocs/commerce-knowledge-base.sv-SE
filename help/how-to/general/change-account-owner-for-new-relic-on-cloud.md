@@ -20,4 +20,4 @@ Om någon måste läggas till som användare, men ingen befintlig ägare eller a
 
 ## Relaterad läsning
 
-* [New Relic-tjänster](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen.
+* [New Relic-tjänster](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) i utvecklardokumentationen.

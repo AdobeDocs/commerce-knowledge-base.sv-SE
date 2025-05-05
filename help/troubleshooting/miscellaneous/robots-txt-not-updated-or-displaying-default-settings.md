@@ -42,8 +42,8 @@ Indexering med sökmotorer är inaktiverat.
 
 ## Lösning
 
-Aktivera indexering av sökmotorer. Se [Konfigurera indexering med hjälp av sökmotor](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) i utvecklardokumentationen.
+Aktivera indexering av sökmotorer. Se [Konfigurera indexering med hjälp av sökmotor](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-* [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) i utvecklardokumentationen.
+* [Lägg till webbplatskarta och sökrobotar](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) i utvecklardokumentationen.

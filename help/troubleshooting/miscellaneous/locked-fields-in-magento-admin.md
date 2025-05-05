@@ -52,6 +52,6 @@ Kontrollera att konfigurationen inte har sparats i `app/etc/env.php` eller `app/
 
 ## Relaterad läsning
 
-* [Exportera konfigurationen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration) i utvecklardokumentationen.
-* [Ange konfigurationsvärden](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values) i utvecklardokumentationen.
+* [Exportera konfigurationen](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration) i utvecklardokumentationen.
+* [Ange konfigurationsvärden](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values) i utvecklardokumentationen.
 * [Adobe Commerce i molninfrastruktur: minska driftsättningsdriftsavbrott med Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) i vår kunskapsbas för support.

@@ -25,14 +25,14 @@ När du installerar tillägget Betalningstjänster kan ett felmeddelande visas o
 
 <u>Steg som ska återskapas</u>:
 
-1. Försök att [installera betalningstjänsterna](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. Försök att [installera betalningstjänsterna](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=sv-SE).
 1. Se följande fel:
 
    *Det gick inte att hitta en matchande version av paketets magento/payment-services. Kontrollera paketstavningen, versionens begränsning och att paketet är tillgängligt i en stabilitet som matchar minimistabiliteten (stabil).*
 
 <u>Förväntat resultat</u>:
 
-Du kan följa dessa [installationsanvisningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) i utvecklardokumentationen för att installera betaltjänster.
+Du kan följa dessa [installationsanvisningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=sv-SE) i utvecklardokumentationen för att installera betaltjänster.
 
 <u>Faktiskt resultat</u>:
 
@@ -44,7 +44,7 @@ Du använde felaktiga dispositionsnycklar under installationen.
 
 ### Lösning
 
-Kontrollera att [dina dispositionsnycklar är länkade till det Magento-ID](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) som användes vid registreringen av betalningstjänsterna.
+Kontrollera att [dina dispositionsnycklar är länkade till det Magento-ID](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=sv-SE#incorrect-composer-keys) som användes vid registreringen av betalningstjänsterna.
 
 ## Problem - Använda samma dataspace i flera instanser
 
@@ -59,7 +59,7 @@ När du skapar ett SaaS-projekt genererar Commerce ett eller flera SaaS-datamall
 * Adobe Commerce - ett produktionsdatautrymme; två testdatautrymme
 * Magento Open Source - Ett produktionsdatautrymme utan testdatautrymme
 
-Följ anvisningarna i [Commerce API-nyckel och privat nyckel](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) för att konfigurera ditt betaltjänsttillägg.
+Följ anvisningarna i [Commerce API-nyckel och privat nyckel](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html?lang=sv-SE#obtain-api-credentials) för att konfigurera ditt betaltjänsttillägg.
 
 ## Problem - Det finns inte tillräckligt med minne för PHP
 
@@ -67,14 +67,14 @@ När du installerar tillägget Betalningstjänster kan ett felmeddelande visas s
 
 <u>Steg som ska återskapas</u>:
 
-1. Försök att [installera betalningstjänsterna](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. Försök att [installera betalningstjänsterna](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=sv-SE).
 1. Se följande fel eller liknande:
 
    *Allvarligt fel: Den tillåtna minnesstorleken på 2146435072 byte är slut (försök gjordes att allokera 4096 byte) i phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php på rad 52.*
 
 <u>Förväntat resultat</u>:
 
-Du kan följa dessa [installationsanvisningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) i utvecklardokumentationen för att installera betaltjänster.
+Du kan följa dessa [installationsanvisningar](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=sv-SE) i utvecklardokumentationen för att installera betaltjänster.
 
 <u>Faktiskt resultat</u>:
 
@@ -86,4 +86,4 @@ Gränsvärdet för PHP i din miljö är inte inställt på ett tillräckligt hö
 
 ### Lösning
 
-[Öka minnesgränsen för PHP](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#not-enough-memory-for-php) i din miljö i `php.ini`.
+[Öka minnesgränsen för PHP](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=sv-SE#not-enough-memory-for-php) i din miljö i `php.ini`.

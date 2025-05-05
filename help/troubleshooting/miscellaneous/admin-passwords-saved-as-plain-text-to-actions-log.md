@@ -45,5 +45,5 @@ När säkerhetsuppdateringen har installerats krypteras lösenordet och visas in
 ## Mer information {#Adminpasswordsaresavedasplaintexttoactionslog('magento_logging_event_changes'table)-Moreinformation}
 
 * [Adobe Commerce 2.0.16 och 2.1.9 Security Update page](https://magento.com/security/patches/magento-2016-and-219-security-update) i vårt säkerhetscenter
-* [Uppgradera Adobe Commerce-programmet och -komponenterna](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) i utvecklardokumentationen
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Uppgradera Adobe Commerce-programmet och -komponenterna](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=sv-SE) i utvecklardokumentationen
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

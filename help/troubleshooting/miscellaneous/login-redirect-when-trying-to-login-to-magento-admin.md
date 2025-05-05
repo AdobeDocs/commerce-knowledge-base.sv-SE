@@ -52,7 +52,7 @@ Försök använda en annan webbläsare och öka administratörssessionens livsti
 Så här ökar du administratörssessionens livstid:
 
 1. Skapa en säkerhetskopia av databasen.
-1. Använd ett databasverktyg som [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
+1. Använd ett databasverktyg som [phpMyAdmin](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
 
    ```sql
    UPDATE core_config_data SET value = 7200 WHERE path = 'admin/security/session_lifetime';
@@ -69,7 +69,7 @@ Så här ökar du administratörssessionens livstid:
 Så här kontrollerar du cookies-inställningsvärdena och rensar dem:
 
 1. Skapa en säkerhetskopia av databasen.
-1. Använd ett databasverktyg som [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
+1. Använd ett databasverktyg som [phpMyAdmin](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) eller öppna databasen manuellt från kommandoraden för att köra följande SQL-fråga:
 
    ```sql
    SELECT * FROM core_config_data WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");

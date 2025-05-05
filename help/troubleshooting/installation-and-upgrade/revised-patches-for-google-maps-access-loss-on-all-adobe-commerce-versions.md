@@ -72,4 +72,4 @@ Problemet kommer att åtgärdas permanent inom området för säkerhetsuppdateri
 
 ## Relaterad läsning
 
-[Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)
+[Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)

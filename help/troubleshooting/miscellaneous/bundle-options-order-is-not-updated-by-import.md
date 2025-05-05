@@ -29,7 +29,7 @@ Du har en giltig CSV-fil som innehåller paketprodukter.
 
 <u>Steg som ska återskapas</u>:
 
-1. Importera filen med [importfunktionen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import).
+1. Importera filen med [importfunktionen](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/import/data-import).
 1. Öppna produktsidan för paketet.
 
 <u>Förväntade resultat</u>:
@@ -46,7 +46,7 @@ Alternativpositionen har inte deklarerats explicit.
 
 ## Lösning
 
-1. Deklarera en position explicit för varje alternativ i parametern `position` i kolumnen `bundle_values` i CSV-filen. Mer information finns i [Redigera produktdata](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) i vår användarhandbok.
+1. Deklarera en position explicit för varje alternativ i parametern `position` i kolumnen `bundle_values` i CSV-filen. Mer information finns i [Redigera produktdata](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) i vår användarhandbok.
 1. Upprepa importåtgärden.
 
-Allmän information om import finns i [Importera paketprodukt](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) i användarhandboken.
+Allmän information om import finns i [Importera paketprodukt](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) i användarhandboken.

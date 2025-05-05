@@ -1,6 +1,6 @@
 ---
 title: Huvudmeny (kategorier) visas inte på undersidor med snabbaktiverad
-description: I den här artikeln finns en fix som anger när huvudmenyn (eller menyn [Kategori > navigering](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) i användarhandboken) inte visas på butiken för undersidor (till exempel *blog/page*) när Fastly eller Varnish är aktiverat.
+description: I den här artikeln finns en fix som anger när huvudmenyn (eller menyn [Kategori > navigering](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=sv-SE) i användarhandboken) inte visas på butiken för undersidor (till exempel *blog/page*) när Fastly eller Varnish är aktiverat.
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer

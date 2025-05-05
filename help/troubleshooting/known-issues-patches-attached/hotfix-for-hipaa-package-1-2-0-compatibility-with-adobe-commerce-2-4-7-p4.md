@@ -22,8 +22,8 @@ Adobe Commerce om molninfrastruktur 2.4.7-p4 och tidigare
 
 ## Förutsättningar
 
-* Adobe har etablerat ditt Adobe Commerce-konto för att komma åt tillägget **[!DNL HIPAA Ready]**. Se [[!DNL HIPAA] beredskap för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) för mer information i vår **Adobe Commerce: Starthandbok**.
-* Åtkomst till [repo.magento.com](https://repo.magento.com) för att installera tillägget. Om du vill ha nyckelgenerering och de nödvändiga rättigheterna kan du läsa [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) i **Adobe Commerce: Installationshandbok**.
+* Adobe har etablerat ditt Adobe Commerce-konto för att komma åt tillägget **[!DNL HIPAA Ready]**. Se [[!DNL HIPAA] beredskap för Adobe Commerce](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) för mer information i vår **Adobe Commerce: Starthandbok**.
+* Åtkomst till [repo.magento.com](https://repo.magento.com) för att installera tillägget. Om du vill ha nyckelgenerering och de nödvändiga rättigheterna kan du läsa [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) i **Adobe Commerce: Installationshandbok**.
 
 ## Problem
 
@@ -43,7 +43,7 @@ För att åtgärda problemet med Adobe Commerce i molninfrastrukturen 2.4.7-p4 b
 
 ## Så här sätter du på plåstret
 
-Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) i vår kunskapsbas för support för instruktioner.
+Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=sv-SE) i vår kunskapsbas för support för instruktioner.
 
 ## Endast för Adobe Commerce på molnhandlare - Hur du ser om korrigeringen har tillämpats
 
@@ -53,7 +53,7 @@ Eftersom det inte är enkelt att kontrollera om problemet har åtgärdats, kansk
 >
 ><u>Du kan göra detta genom att följa de här stegen och använda filen `VULN-27015-2.4.7_COMPOSER.patch` **som ett exempel**</u>:
 
-1. [Installera verktyget för kvalitetskorrigeringar](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installera verktyget för kvalitetskorrigeringar](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=sv-SE).
 1. Kör kommandot:<br>
    ![cve-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Du bör se utdata som liknar detta, **<u>där exemplet som används här, VULN-27015</u>**, returnerar statusen *Används*:

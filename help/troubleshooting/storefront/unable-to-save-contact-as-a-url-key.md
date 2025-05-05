@@ -63,5 +63,5 @@ Utför följande steg:
 
 ## Relaterad läsning
 
-* [URL-omskrivningar](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) i användarhandboken.
-* [SEO Best Practices](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) i vår användarhandbok.
+* [URL-omskrivningar](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) i användarhandboken.
+* [SEO Best Practices](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/seo-overview) i vår användarhandbok.

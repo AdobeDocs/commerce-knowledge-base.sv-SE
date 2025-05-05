@@ -23,7 +23,7 @@ Adobe Commerce 2.3.x
 
 <u>Steg som ska återskapas</u>
 
-(Krav: kontrollera att arkivet inte är i [underhållsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show).)
+(Krav: kontrollera att arkivet inte är i [underhållsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show).)
 
 Navigera till Commerce Admin eller Store i en webbläsare.
 

@@ -31,6 +31,6 @@ Om du vill göra det inaktiverar du widgeten i Admin. [!DNL Live Search] använd
 
 ## Relaterad läsning
 
-* [[!DNL Live Search] Översikt över guiden](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) i vår Adobe Commerce Live Search-dokumentation
+* [[!DNL Live Search] Översikt över guiden](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=sv-SE) i vår Adobe Commerce Live Search-dokumentation
 
-* [Installerar [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) i vår Adobe Commerce Live Search-dokumentation
+* [Installerar [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=sv-SE) i vår Adobe Commerce Live Search-dokumentation

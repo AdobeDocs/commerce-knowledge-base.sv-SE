@@ -31,4 +31,4 @@ If you are using the sample nginx configuration, please go to http://ce.mtf03.bc
 
 ### Tillfällig lösning
 
-Installera Adobe Commerce-programmet med kommandoraden [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced).
+Installera Adobe Commerce-programmet med kommandoraden [&#128279;](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/advanced).

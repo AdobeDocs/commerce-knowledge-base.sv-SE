@@ -99,5 +99,5 @@ Du kan också köra kommandot `setup:static-content:deploy` följt av argumentet
 
 I vår utvecklardokumentation:
 
-* [Konfigurera Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
-* [Kommandoradsuppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)
+* [Konfigurera Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html?lang=sv-SE)
+* [Kommandoradsuppgradering](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=sv-SE)

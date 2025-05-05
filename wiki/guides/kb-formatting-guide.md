@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Författare i kod
 
-Vanligtvis använder vi [Adobe Experience League Markdown Syntax Style Guide](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), men det finns vissa skillnader och undantag. I vissa fall krävs även vissa HTML-taggar.
+Vanligtvis använder vi [Adobe Experience League Markdown Syntax Style Guide](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=sv-SE), men det finns vissa skillnader och undantag. I vissa fall krävs även vissa HTML-taggar.
 
 Nedan följer exempel på den Markdown-formatering som oftast används i vårt svar.
 

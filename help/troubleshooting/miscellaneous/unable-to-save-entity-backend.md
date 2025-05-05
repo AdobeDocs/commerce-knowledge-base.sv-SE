@@ -44,7 +44,7 @@ Regeln är inställd på inaktiv.
 
 ## Orsak
 
-Det här problemet har att göra med nya funktioner som nyligen introducerades och som har påverkat den maximala sessionsstorleken. Se [Sessionshantering](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) i utvecklardokumentationen.
+Det här problemet har att göra med nya funktioner som nyligen introducerades och som har påverkat den maximala sessionsstorleken. Se [Sessionshantering](https://experienceleague.adobe.com/sv/docs/commerce-admin/systems/security/security-session-management) i utvecklardokumentationen.
 
 ## Lösning
 
@@ -52,4 +52,4 @@ Det här problemet har att göra med nya funktioner som nyligen introducerades o
 
 ## Relaterad läsning
 
-* [Marknadsföringsmeny](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/marketing-menu) i vår användarhandbok.
+* [Marknadsföringsmeny](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/marketing-menu) i vår användarhandbok.

@@ -36,7 +36,7 @@ BAK-filerna är en produkt i distributionsprocessen. Om du ändrar en konfigurat
 
 Så här återställer du konfigurationsfilerna:
 
-1. Logga in på fjärrdatabasen med [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
+1. Logga in på fjärrdatabasen med [SSH](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 1. Visa en lista över tillgängliga säkerhetskopieringsfiler.
 
    ```

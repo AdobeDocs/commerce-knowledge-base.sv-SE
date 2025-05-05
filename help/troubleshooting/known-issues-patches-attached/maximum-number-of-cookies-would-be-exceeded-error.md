@@ -18,9 +18,9 @@ Den här artikeln innehåller korrigeringsfiler som löser felet med att *det h�
 
 Adobe Commerce (alla distributionsmetoder) 2.4.4-2.4.7, med någon av följande korrigeringar:
 
-* MDVA-12304-korrigering tillämpad med [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* MDVA-12304-korrigering tillämpad med [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/release-notes)
 * [APSB25-08 isolerad säkerhetsuppdatering](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
-* [Molnkorrigeringar för [!DNL Commerce] 1.1.4](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+* [Molnkorrigeringar för [!DNL Commerce] 1.1.4](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
 
 ## Problem
 
@@ -49,6 +49,6 @@ Problemet inträffar eftersom det maximala antalet tillåtna cookies är *50*.
 
 ### Relaterad läsning
 
-* [Tillämpa korrigeringar](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/apply) i Adobe Commerce uppgraderingsguide
-* [Bästa tillvägagångssätt för att distribuera Adobe Commerce-korrigeringsfiler i stor skala](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) i Adobe Commerce Implementeringsspelbok
-* [Versionsinformation om Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) i Commerce on Cloud Guide.
+* [Tillämpa korrigeringar](https://experienceleague.adobe.com/sv/docs/commerce-operations/upgrade-guide/patches/apply) i Adobe Commerce uppgraderingsguide
+* [Bästa tillvägagångssätt för att distribuera Adobe Commerce-korrigeringsfiler i stor skala](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) i Adobe Commerce Implementeringsspelbok
+* [Versionsinformation om Commerce Cloud Tools Suite](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) i Commerce on Cloud Guide.

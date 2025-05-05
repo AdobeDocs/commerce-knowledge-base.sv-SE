@@ -45,8 +45,8 @@ Standardvärdet 16 MB för inställningen [!DNL MySQL] `max_allowed_packets` är
 
 ## Relaterad läsning
 
-* [Lokal installationsöversikt](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) i utvecklardokumentationen.
-* [Databasöverföringen förlorar anslutningen till  [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) i vår kunskapsbas för support.
-* [Databasera bästa praxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) i vår kunskapsbas för support.
-* [Bästa tillvägagångssätt för att lösa databasprestandaproblem](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) i vår kunskapsbas för support.
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Lokal installationsöversikt](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/overview) i utvecklardokumentationen.
+* [Databasöverföringen förlorar anslutningen till  [!DNL MySQL]](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) i vår kunskapsbas för support.
+* [Databasera bästa praxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=sv-SE) i vår kunskapsbas för support.
+* [Bästa tillvägagångssätt för att lösa databasprestandaproblem](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=sv-SE) i vår kunskapsbas för support.
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

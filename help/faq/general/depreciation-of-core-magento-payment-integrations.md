@@ -1,6 +1,6 @@
 ---
 title: Avskrivning av Adobe Commerce grundläggande betalningsintegreringar
-description: På grund av betaltjänstdirektivet PSD2 (se närmare information om [Payment Services Directive](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html) i vår användarhandbok) och den fortsatta utvecklingen av många API:er finns det risk för att ett antal av Adobe Commerce kärnbetalningsintegreringar blir inaktuella och inte längre uppfyller säkerhetskraven i framtiden. Därför har många grundläggande betalningsintegreringar tagits bort eller kommer att tas bort, och vi rekommenderar en övergång till motsvarande tillägg för Commerce Marketplace. Läs resten av artikeln nedan om du vill se vilka borttagningar av betalningsintegreringar som gjorts nyligen. Var och en av länkarna **Status** finns i användarhandboken. **Integrationerna nedan kommer att tas bort från Adobe Commerce version 2.4.0 och har tagits bort från version 2.3.**
+description: På grund av betaltjänstdirektivet PSD2 (se närmare information om [Payment Services Directive](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html?lang=sv-SE) i vår användarhandbok) och den fortsatta utvecklingen av många API:er finns det risk för att ett antal av Adobe Commerce kärnbetalningsintegreringar blir inaktuella och inte längre uppfyller säkerhetskraven i framtiden. Därför har många grundläggande betalningsintegreringar tagits bort eller kommer att tas bort, och vi rekommenderar en övergång till motsvarande tillägg för Commerce Marketplace. Läs resten av artikeln nedan om du vill se vilka borttagningar av betalningsintegreringar som gjorts nyligen. Var och en av länkarna **Status** finns i användarhandboken. **Integrationerna nedan kommer att tas bort från Adobe Commerce version 2.4.0 och har tagits bort från version 2.3.**
 exl-id: c2c4b3b6-409d-466f-a4f3-dfe13ac7f972
 feature: Compliance, Integration
 source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Avskrivning av Adobe Commerce grundläggande betalningsintegreringar
 
-På grund av betaltjänstdirektivet PSD2 (se information om [direktivet om betaltjänster](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html) i vår användarhandbok) och den fortsatta utvecklingen av många API:er, riskerar ett antal Adobe Commerce kärnbetalningsintegreringar att bli inaktuella och inte längre säkerhetskompatibla i framtiden. Därför har många grundläggande betalningsintegreringar tagits bort eller kommer att tas bort, och vi rekommenderar en övergång till motsvarande tillägg för Commerce Marketplace. Läs resten av artikeln nedan om du vill se vilka borttagningar av betalningsintegreringar som gjorts nyligen. Var och en av **Status**-länkarna finns i användarhandboken. **Integreringarna nedan kommer att tas bort från Adobe Commerce version 2.4.0 och har tagits bort från version 2.3.**
+På grund av betaltjänstdirektivet PSD2 (se information om [direktivet om betaltjänster](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive.html?lang=sv-SE) i vår användarhandbok) och den fortsatta utvecklingen av många API:er, riskerar ett antal Adobe Commerce kärnbetalningsintegreringar att bli inaktuella och inte längre säkerhetskompatibla i framtiden. Därför har många grundläggande betalningsintegreringar tagits bort eller kommer att tas bort, och vi rekommenderar en övergång till motsvarande tillägg för Commerce Marketplace. Läs resten av artikeln nedan om du vill se vilka borttagningar av betalningsintegreringar som gjorts nyligen. Var och en av **Status**-länkarna finns i användarhandboken. **Integreringarna nedan kommer att tas bort från Adobe Commerce version 2.4.0 och har tagits bort från version 2.3.**
 
 <table style="height: 243px;" width="712">
 <tbody>
@@ -23,27 +23,27 @@ På grund av betaltjänstdirektivet PSD2 (se information om [direktivet om betal
 </tr>
 <tr>
 <td style="width: 225.455px;">Worldplay</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">Borttagen sedan 2.3.5</a><br>2.4.0 - Kommer att tas bort helt</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=sv-SE#recommended-solutions">Borttagen sedan 2.3.5</a><br>2.4.0 - Kommer att tas bort helt</td>
 <td style="width: 226.364px;">Fråga din betalningsleverantör vilken lösning de rekommenderar för att uppfylla PSD2-kraven.</td>
 </tr>
 <tr>
 <td style="width: 225.455px;">Authorize.net</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">Borttagen sedan 2.3.4</a><br>2.4.0 - Kommer att tas bort helt</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=sv-SE#recommended-solutions">Borttagen sedan 2.3.4</a><br>2.4.0 - Kommer att tas bort helt</td>
 <td style="width: 226.364px;">Använd det <a href="https://marketplace.magento.com/authorizenet-magento-module-authorizenet.html">officiella tillägget</a> från Commerce Marketplace i stället.</td>
 </tr>
 <tr>
 <td style="width: 225.455px;">Authorize.net (Post direkt)</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">Borttagen sedan 2.3.1</a><br>2.4.0 - Kommer att tas bort helt</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=sv-SE#recommended-solutions">Borttagen sedan 2.3.1</a><br>2.4.0 - Kommer att tas bort helt</td>
 <td style="width: 226.364px;">Använd det <a href="https://marketplace.magento.com/authorizenet-magento-module-authorizenet.html">officiella tillägget</a> från Commerce Marketplace i stället.</td>
 </tr>
 <tr>
 <td style="width: 225.455px;">CyberSource</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">Borttagen sedan 2.3.3</a><br>2.4.0 - Kommer att tas bort helt</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=sv-SE#recommended-solutions">Borttagen sedan 2.3.3</a><br>2.4.0 - Kommer att tas bort helt</td>
 <td style="width: 226.364px;">Använd det <a href="https://marketplace.magento.com/cybersource-global-payment-management.html">officiella tillägget</a> från Commerce Marketplace i stället.</td>
 </tr>
 <tr>
 <td style="width: 225.455px;">eWay</td>
-<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=en#recommended-solutions">Borttagen sedan 2.3.3</a><br>2.4.0 - Kommer att tas bort helt</td>
+<td style="width: 226.364px;">2.3.x - <a href="https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=sv-SE#recommended-solutions">Borttagen sedan 2.3.3</a><br>2.4.0 - Kommer att tas bort helt</td>
 <td style="width: 226.364px;">Fråga din betalningsleverantör vilken lösning de rekommenderar för att uppfylla PSD2-kraven.</td>
 </tr>
 </tbody>

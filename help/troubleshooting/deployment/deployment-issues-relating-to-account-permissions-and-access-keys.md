@@ -64,4 +64,4 @@ Om du har tillgång till det Marketplace-konto som är kopplat till den gamla ny
 
 ## Relaterad läsning
 
-* [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) i utvecklardokumentationen.
+* [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) i utvecklardokumentationen.

@@ -24,7 +24,7 @@ I den här artikeln beskrivs ett känt Adobe Commerce 2.4.1-problem där vertex-
 
 Förutsättningar:
 
-Aktivera **vertex-adressrensning**. Anvisningar finns i [Konfigurera adressrensning för Storefront](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) i användarhandboken.
+Aktivera **vertex-adressrensning**. Anvisningar finns i [Konfigurera adressrensning för Storefront](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html?lang=sv-SE) i användarhandboken.
 
 <u>Steg att återskapa:</u>
 

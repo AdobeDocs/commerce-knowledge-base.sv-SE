@@ -14,11 +14,11 @@ ht-degree: 0%
 # Avställning av Adobe Commerce Help Center
 
 Under vår resa har Adobe Commerce migrerat vår process för supportinhämtning från Adobe Commerce Help Center till Adobe Experience League för att få bättre kontakt med lösningar i Adobe-familjen.
-Den 29 juli 2024 fick Adobe Commerce Help Center skrivskyddad status och alla nya supportärenden skickas nu via [Adobe Experience League](https://experienceleague.adobe.com/).
+Den 29 juli 2024 fick Adobe Commerce Help Center skrivskyddad status och alla nya supportärenden skickas nu via [Adobe Experience League](https://experienceleague.adobe.com/sv).
 
 >[!NOTE]
 >
->**Använd det formulärflöde för Experience League som beskrivs [här](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) för att skicka supportärenden.**
+>**Använd det formulärflöde för Experience League som beskrivs [här](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) för att skicka supportärenden.**
 
 ## Visa historiska fall i Adobe Commerce Help Center
 
@@ -34,4 +34,4 @@ Om du vill granska supportärenden som skapats i Adobe Commerce Help Center efte
 
 >[!NOTE]
 >
->Kunskapsbasen i Adobe Commerce Help Center har också migrerats till [Adobe Experience League-portalen](https://experienceleague.adobe.com/). När du skapar en supportanmälan visas tillhörande artiklar i kunskapsbasen tillsammans med annan relevant Adobe Commerce-dokumentation från Adobe Experience League.
+>Kunskapsbasen i Adobe Commerce Help Center har också migrerats till [Adobe Experience League-portalen](https://experienceleague.adobe.com/sv). När du skapar en supportanmälan visas tillhörande artiklar i kunskapsbasen tillsammans med annan relevant Adobe Commerce-dokumentation från Adobe Experience League.

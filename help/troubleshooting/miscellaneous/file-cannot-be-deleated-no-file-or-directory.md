@@ -57,4 +57,4 @@ Lokal Adobe Commerce: Använd ACSD-50165 med [kvalitetskorrigeringsverktyg > Anv
 ## Relaterad läsning
 
 * [[!DNL Quality Patches Tool] > Versionsinformation](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) i Commerce-handboken.
-* [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) i Commerce Tools Guide.
+* [[!DNL Quality Patches Tool]: Sök efter korrigeringsfiler](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=sv-SE) i Commerce Tools Guide.

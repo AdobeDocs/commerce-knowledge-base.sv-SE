@@ -25,7 +25,7 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 >[!NOTE]
 >
->Det här felet inträffar endast i kodversioner före den 28 september 2015. Om du installerar kod som är daterad 29 september eller senare bör det här felet inte inträffa. Mer information om konfigurationsalternativ för Redis finns i [Konfigurera Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) i utvecklardokumentationen. Mer information om hur du anger Redis med kommandoradsinstallationsprogrammet finns i [installationsavsnittet](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced) eller [avsnittet om distributionskonfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/deployment) i utvecklardokumentationen.
+>Det här felet inträffar endast i kodversioner före den 28 september 2015. Om du installerar kod som är daterad 29 september eller senare bör det här felet inte inträffa. Mer information om konfigurationsalternativ för Redis finns i [Konfigurera Redis](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cache/redis/config-redis) i utvecklardokumentationen. Mer information om hur du anger Redis med kommandoradsinstallationsprogrammet finns i [installationsavsnittet](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/advanced) eller [avsnittet om distributionskonfiguration](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/deployment) i utvecklardokumentationen.
 
 ## Orsak
 
@@ -33,7 +33,7 @@ Detta inträffar när din `session.save_handler` PHP-parameter är inställd på
 
 ## Lösningar:
 
-* Uppgradera din Adobe Commerce-kod. Se [Installationshandbok > Uppdatera Adobe Commerce-programvaran](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall) i utvecklardokumentationen.
+* Uppgradera din Adobe Commerce-kod. Se [Installationshandbok > Uppdatera Adobe Commerce-programvaran](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/uninstall) i utvecklardokumentationen.
 * Använd följande lösning med befintlig kod:
 
 ## Hitta `php.ini` {#locate-php-ini}

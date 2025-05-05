@@ -29,7 +29,7 @@ I det här steget definierar vi säkra URL:er för butiken. Gå till [Steg 2: Ak
 1. Ange **Använd säkra URL:er i Storefront** och **Använd säkra URL:er i Admin**-inställningarna till **Ja**.    ![magento-admin_base-urls-secure-settings.png](assets/magento-admin_base-urls-secure-settings.png)
 1. Klicka på **Spara konfig** i det övre högra hörnet om du vill använda ändringarna.
 
-**Relaterad dokumentation i vår användarhandbok:**   [Lagra URL:er](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
+**Relaterad dokumentation i vår användarhandbok:**   [Lagra URL:er](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 ### Steg 2: Aktivera Tvinga TLS {#step-2-enable-force-tls}
 

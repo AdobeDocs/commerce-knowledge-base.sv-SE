@@ -51,7 +51,7 @@ Följande orsaker kan finnas:
 
 För att lösa problemen måste du utföra ytterligare en Varnish-konfiguration och starta om Varnish.
 
-1. Som användare med `root`-behörighet öppnar du konfigurationsfilen för spanska i en textredigerare. Se [Ändra systemkonfigurationen för lack](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) i utvecklardokumentationen för mer information om var filen kan finnas för olika operativsystem.
+1. Som användare med `root`-behörighet öppnar du konfigurationsfilen för spanska i en textredigerare. Se [Ändra systemkonfigurationen för lack](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cache/config-varnish-server) i utvecklardokumentationen för mer information om var filen kan finnas för olika operativsystem.
 1. I `DAEMON_OPTS variable` lägger du till `-p feature=+esi_ignore_https`, `-p  feature=+esi_ignore_other_elements`, `-p  feature=+esi_disable_xml_check`. Det här skulle se ut så här:
 
    ```bash
@@ -64,5 +64,5 @@ För att lösa problemen måste du utföra ytterligare en Varnish-konfiguration 
 
 ## Relaterad läsning
 
-* [Konfigurera lack och din webbserver](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) i utvecklardokumentationen.
+* [Konfigurera lack och din webbserver](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cache/config-varnish-server) i utvecklardokumentationen.
 * [Varnish-dokumentation](https://varnish-cache.org/docs/5.1/reference/index.html)
