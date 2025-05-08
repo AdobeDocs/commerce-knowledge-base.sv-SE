@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar på Adobe Commerce-problem
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: fec99ebd6b03f2dc1b70c0ea388935dc5e60ad57
+source-git-commit: 5911b436fdcc08e695fb14d35784287945593815
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Katalogdata är inte korrekt synkroniserade eller så har en ny produkt lagts ti
 
 <u>Steg som ska återskapas</u>
 
-1. Konfigurera och anslut Live Search för din Adobe Commerce-instans enligt beskrivningen i [Installera Live Search > Konfigurera API-nycklar](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=sv-SE#configure-api-keys) i användardokumentationen.
-1. Efter 30 minuter kontrollerar du de exporterade katalogdata som beskrivs i [Installera Live Search > Verifiera export](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=sv-SE#verify-export) i användardokumentationen.
-1. Efter 30 minuter testar du anslutningen enligt beskrivningen i [Installera Live Search > Testa anslutningen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=sv-SE#test-connection) i användardokumentationen.
+1. Konfigurera och anslut Live Search för din Adobe Commerce-instans enligt beskrivningen i [Installera Live Search > Konfigurera API-nycklar](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) i användardokumentationen.
+1. Efter 30 minuter kontrollerar du de exporterade katalogdata som beskrivs i [Installera Live Search > Verifiera export](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) i användardokumentationen.
+1. Efter 30 minuter testar du anslutningen enligt beskrivningen i [Installera Live Search > Testa anslutningen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) i användardokumentationen.
 
 eller
 
@@ -150,13 +150,13 @@ bin/magento saas:resync --feed categories --cleanup-feed
 bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
-[Skicka en supportförfrågan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support) om du vill begära omindexering av Live Search-indexet. I felbeskrivningen tar du med ditt ID för datautrymme/miljö som finns på administratörspanelen under **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**.
+[Skicka en supportförfrågan](https://experienceleague.adobe.com/home?support-tab=home#support) om du vill begära omindexering av Live Search-indexet. I felbeskrivningen tar du med ditt ID för datautrymme/miljö som finns på administratörspanelen under **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**.
 
 >[!IMPORTANT]
->Använd bara alternativet `--cleanup-feed` om du har uppdaterat API-konfigurationen, eller om du kör kommandot `saas:resync` med alternativet [ - torr](https://experienceleague.adobe.com/sv/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run). Om du använder alternativet `--cleanup-feed` i andra fall uppstår problem med förlorade data och datasynkronisering.
+>Om du använder alternativet `--cleanup-feed` i andra fall kan det orsaka dataförlust och problem med datasynkronisering.  Använd den bara när du har en ny, tom miljö, när Adobe-teamet har slutfört en rensningsåtgärd för datautrymme eller när du kör kommandot `saas:resync` med alternativet [—dry-run](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run) . Om du använder alternativet `--cleanup-feed` i andra fall kan det orsaka dataförlust och problem med datasynkronisering.
 
 ## Relaterad läsning
 
-* [Onboard Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html?lang=sv-SE) i vår användardokumentation
-* [Granska loggar och felsöka dataexport och synkronisering i Adobe Commerce SaaS](https://experienceleague.adobe.com/sv/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) i Adobe Commerce SaaS dataexportguide
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Onboard Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) i vår användardokumentation
+* [Granska loggar och felsöka dataexport och synkronisering i Adobe Commerce SaaS](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) i Adobe Commerce SaaS dataexportguide
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
