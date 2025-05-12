@@ -4,9 +4,9 @@ description: I den här artikeln beskrivs hur du inkluderar en teammedlem i supp
 feature: Cloud, Support, Admin Workspace
 role: Admin, Developer
 exl-id: 63ea3f60-a509-447c-ac3d-bb2133141c80
-source-git-commit: 771793d45000e65c1bf41137cd984d2977b0a9ff
+source-git-commit: 6a4c1115aa92663ce12ce848dc583538e155509b
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -31,12 +31,14 @@ I den här artikeln beskrivs hur du inkluderar en teammedlem som automatiskt få
 
 Om de inte har lagts till i projektet måste du lägga till dem som en [!DNL Super User] och bevilja [!DNL Shared Access]:
 
-* [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE) i vår användarhandbok.
-* [Det går inte att lägga till användare i Adobe Commerce molnprojekt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html?lang=sv-SE) i Commerce kunskapsbas.
-* [Användarhandbok för Adobe Commerce Help Center: Delad åtkomst](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#shared-access) i Commerce Knowledge Base.
+* [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) i vår användarhandbok.
+* [Det går inte att lägga till användare i Adobe Commerce molnprojekt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html) i Commerce kunskapsbas.
+* [Användarhandbok för Adobe Commerce Help Center: Delad åtkomst](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) i Commerce Knowledge Base.
 
-Om de har lagts till i [!DNL cloud project], men inte har [!DNL Super User role], uppdaterar du deras [!DNL role] i [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE).
+Om de har lagts till i [!DNL cloud project], men inte har [!DNL Super User role], uppdaterar du deras [!DNL role] i [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
+
+Om du vill att en teammedlem ska kunna bevaka alla ärenden som har öppnats för din organisation skickar du en [supportanmälan](https://experienceleague.adobe.com/home?lang=en&amp;support-tab=home#support).
 
 ## Relaterad läsning
 
-[Före detta teammedlemmar får e-postmeddelanden om molnmeddelanden från Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html?lang=sv-SE)
+[Före detta teammedlemmar får e-postmeddelanden om molnmeddelanden från Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html)
