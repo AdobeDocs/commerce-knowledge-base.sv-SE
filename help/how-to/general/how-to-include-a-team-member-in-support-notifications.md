@@ -31,14 +31,14 @@ I den här artikeln beskrivs hur du inkluderar en teammedlem som automatiskt få
 
 Om de inte har lagts till i projektet måste du lägga till dem som en [!DNL Super User] och bevilja [!DNL Shared Access]:
 
-* [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) i vår användarhandbok.
-* [Det går inte att lägga till användare i Adobe Commerce molnprojekt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html) i Commerce kunskapsbas.
-* [Användarhandbok för Adobe Commerce Help Center: Delad åtkomst](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) i Commerce Knowledge Base.
+* [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE) i vår användarhandbok.
+* [Det går inte att lägga till användare i Adobe Commerce molnprojekt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html?lang=sv-SE) i Commerce kunskapsbas.
+* [Användarhandbok för Adobe Commerce Help Center: Delad åtkomst](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#shared-access) i Commerce Knowledge Base.
 
-Om de har lagts till i [!DNL cloud project], men inte har [!DNL Super User role], uppdaterar du deras [!DNL role] i [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
+Om de har lagts till i [!DNL cloud project], men inte har [!DNL Super User role], uppdaterar du deras [!DNL role] i [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE).
 
-Om du vill att en teammedlem ska kunna bevaka alla ärenden som har öppnats för din organisation skickar du en [supportanmälan](https://experienceleague.adobe.com/home?lang=en&amp;support-tab=home#support).
+Om du vill att en teammedlem ska kunna bevaka alla ärenden som har öppnats för din organisation skickar du en [supportanmälan](https://experienceleague.adobe.com/home?lang=sv-SE&amp;support-tab=home#support).
 
 ## Relaterad läsning
 
-[Före detta teammedlemmar får e-postmeddelanden om molnmeddelanden från Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html)
+[Före detta teammedlemmar får e-postmeddelanden om molnmeddelanden från Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html?lang=sv-SE)
