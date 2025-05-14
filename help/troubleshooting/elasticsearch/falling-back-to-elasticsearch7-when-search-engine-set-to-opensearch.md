@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på problemet när en *Fa
 feature: Search
 role: Developer
 exl-id: 965d2929-5cf0-4e0a-9eed-6a656daaa120
-source-git-commit: 6b8eecb3df0bb32344a5861a604a40402bb4d392
+source-git-commit: d17af0f8f92726aa5a6914fc9e1ff13268256d04
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,13 @@ Den här artikeln innehåller en lösning på problemet när ett *fel som return
 
 ## Berörda versioner
 
-Adobe Commerce om molninfrastruktur 2.4.4 - 2.4.5
+Adobe Commerce i molninfrastruktur
+2.4.4 - 2.4.4-p12
+2.4.5 - 2.4.5-p11
 
 >[!NOTE]
 >
->[!DNL OpenSearch] är tillgänglig som sökmotor från och med Adobe Commerce 2.4.6.
+>[!DNL OpenSearch] är tillgängligt som sökmotor från Adobe Commerce 2.4.6, 2.4.5-p12, 2.4.4-p13.
 
 ## Problem
 
@@ -50,4 +52,4 @@ Uppdatera variabeln `SEARCH_CONFIGURATION` i filen `.magento.env.yaml` och se ti
 
 ## Relaterad läsning
 
-[Konfigurera OpenSearch-tjänsten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=sv-SE) i guiden för Commerce om molninfrastruktur.
+[Konfigurera OpenSearch-tjänsten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) i guiden för Commerce om molninfrastruktur.
