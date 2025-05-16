@@ -33,4 +33,4 @@ Användare på [accounts.magento.cloud](https://accounts.magento.cloud/) kan ans
 ## Relaterad läsning
 
 * [Det går inte att logga in på Adobe Commerce support eller molnkonto](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
-* [MageID-kontoägaren kan inte logga in och skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [MageID-kontoägaren kan inte logga in och skicka en supportanmälan](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-25231)
