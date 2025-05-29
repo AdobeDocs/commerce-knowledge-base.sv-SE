@@ -3,9 +3,9 @@ title: Vanliga frågor om Adobe Commerce Security Scan Tool
 description: I den här artikeln besvaras några vanliga frågor och svar om Adobe Commerce säkerhetssökningsverktyg.
 exl-id: 380ce617-e3d9-491b-b425-8489abd3c541
 feature: Compliance
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: cff17a83648e10e85d95a5895acd8d1916a8eef9
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,6 @@ Handlare kan registrera sig för att använda verktyget för säkerhetsgenomsök
 
 ## Vad gör jag om jag stöter på ett falskt positivt resultat i skanningsrapporten? {#what-do-i-do-if-i-come-across-a-false-positive-in-the-scan-report}
 
-Vi rekommenderar våra handlare att undersöka alla misslyckade sökningar och vidta lämpliga åtgärder för att lösa sådana problem. Om handlarna efter en utredning får ett inskannat resultat som verkar vara falskt positivt ber vi handlaren att meddela Adobe om att vidta lämpliga åtgärder.
+Vi rekommenderar våra handlare att undersöka alla misslyckade sökningar och vidta lämpliga åtgärder för att lösa sådana problem. Om handlarna efter en utredning får ett inskannat resultat som verkar vara falskt positivt ber vi handlaren att meddela Adobe att han eller hon ska vidta lämpliga åtgärder.
 
-Om du vill skicka in en falskt positiv rapport anger du en biljett med Adobe Commerce handlarsupport så att vi kan utvärdera det falska positiva meddelandet, göra nödvändiga ändringar och/eller lämna rekommendationer för att undvika att få sådana meddelanden i framtiden. Merchants kan även rapportera ett falskt positivt resultat genom att skicka ett e-postmeddelande till oss på [securityscan@magento.com](mailto:securityscan@magento.com).
+Om du vill skicka in en falskt positiv rapport anger du en biljett med Adobe Commerce handlarsupport så att vi kan utvärdera det falska positiva meddelandet, göra nödvändiga ändringar och/eller lämna rekommendationer för att undvika att få sådana meddelanden i framtiden.
