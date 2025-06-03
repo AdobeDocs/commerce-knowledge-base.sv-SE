@@ -30,7 +30,7 @@ Se [Adobe Commerce Support Knowledge Base](https://support.magento.com/hc/en-us)
 
 Partners med ett Partner Sandbox Cloud-projekt kan inte skicka biljetter för sandlåderelaterade problem via Experience League. Använd inte ett handlarkonto för att skicka biljetterna, eftersom de kan förefalla ha skickats för deras räkning och orsaka förvirring.
 
-Om du skickar en biljett för en handlare som inte har fått delad åtkomst ber du kontoägaren att få åtkomst. Anvisningar om hur du begär åtkomst finns i [Delad åtkomst: Bevilja behörigheter för andra användare att få åtkomst till ditt konto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access).
+Om du skickar en biljett för en handlare som inte har fått delad åtkomst ber du kontoägaren att få åtkomst. Anvisningar om hur du begär åtkomst finns i [Delad åtkomst: Bevilja behörigheter för andra användare att få åtkomst till ditt konto](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access).
 
 * Solution Partners ska skicka sandlåderelaterade supportförfrågningar via e-post [SPPHelp@adobe.com](mailto:SPPHelp@adobe.com). Dessa förfrågningar dirigeras till partnerns tekniska supportteam.
 * Tekniska partners bör kontakta [Marketplace Support](mailto:commercemarketplacesupport@adobe.com).
