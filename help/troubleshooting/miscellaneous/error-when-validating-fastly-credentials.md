@@ -29,7 +29,7 @@ Stegen som beskrivs i den här artikeln gäller även om du av säkerhetsskäl m
 
 ## Lösning
 
-1. Kontrollera att du har rätt [!DNL Fastly] tjänst-ID och API-token och försök validera igen. Mer information finns i [Testa  [!DNL Fastly] inloggningsuppgifterna](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) i utvecklardokumentationen.
+1. Kontrollera att du har rätt [!DNL Fastly] tjänst-ID och API-token och försök validera igen. Mer information finns i [Testa  [!DNL Fastly] inloggningsuppgifterna](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) i utvecklardokumentationen.
 1. Om verifieringen av inloggningsuppgifterna misslyckas kör du följande kommando för att bekräfta tjänstens status:
 
    ```curl
@@ -50,6 +50,6 @@ Stegen som beskrivs i den här artikeln gäller även om du av säkerhetsskäl m
 
 ## Relaterade läsningar i vår dokumentation för utvecklare:
 
-* [Cloud för Adobe Commerce > [!DNL Fastly] > [!DNL Fastly] tjänstkonto och autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
+* [Cloud för Adobe Commerce > [!DNL Fastly] > [!DNL Fastly] tjänstkonto och autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
 
-* [Cloud för Adobe Commerce > Konfigurera [!DNL Fastly] > Testa  [!DNL Fastly] inloggningsuppgifterna](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)
+* [Cloud för Adobe Commerce > Konfigurera [!DNL Fastly] > Testa  [!DNL Fastly] inloggningsuppgifterna](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)
