@@ -17,7 +17,7 @@ I den här artikeln visas hur du återställer en DB [!DNL snapshot] från [!DNL
 >[!NOTE]
 >
 >Dessa metoder återställer den **fullständiga ögonblicksbilden**.
->>Om du behöver återställa ögonblicksbilden **delvis** - till exempel bara återställa katalogtabellerna utan att behöva ändra ordningsföljden - måste du rådfråga utvecklaren eller DBA.
+>&#x200B;>Om du behöver återställa ögonblicksbilden **delvis** - till exempel bara återställa katalogtabellerna utan att behöva ändra ordningsföljden - måste du rådfråga utvecklaren eller DBA.
 
 
 ## Berörda produkter och versioner
