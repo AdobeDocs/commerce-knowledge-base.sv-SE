@@ -79,7 +79,7 @@ Stegen är:
    ```
 
 1. Kopiera databasen [!DNL dump file] (till exempel: `<cluster ID>.sql.gz` för [!DNL Production] eller `<cluster ID_stg>.sql.gz` för [!DNL Staging]) till den lokala datorn.
-1. Kontrollera att du har konfigurerat [!DNL SSH tunnel] för fjärranslutning till databasen: [[!DNL SSH]  och [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) i utvecklardokumentationen.
+1. Kontrollera att du har konfigurerat [!DNL SSH tunnel] för fjärranslutning till databasen: [[!DNL SSH]  och [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) i utvecklardokumentationen.
 1. Anslut till databasen.
 
    ```bash
@@ -175,6 +175,6 @@ Stegen är:
 
 I vår utvecklardokumentation:
 
-* [Importera kod: Importera databasen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] och [!DNL backup] hantering: [!DNL Dump] din databas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Säkerhetskopiera (ögonblicksbild) i molnet: Vanliga frågor ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Importera kod: Importera databasen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] och [!DNL backup] hantering: [!DNL Dump] din databas](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Säkerhetskopiera (ögonblicksbild) i molnet: Vanliga frågor ](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)

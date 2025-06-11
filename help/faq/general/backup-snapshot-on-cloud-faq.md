@@ -40,7 +40,7 @@ Du kan [skicka en Adobe Commerce Support-biljett](/help/help-center-guide/help-c
 Observera också att stödet inte utför återställning eller återställning av databasen åt dig. De hämtar ögonblicksbilden, men du måste återställa databasen själv.
 * Säkerhetskopiorna skapas med **krypterade ögonblicksbilder av Amazon Web Services Elastic Block Store (AWS EBS)**.
 * Miljöögonblicksbilder innehåller hela systemet (filsystemet och databasen).
-* Bevarandetiden för automatiska ögonblicksbilder **skiljer sig åt** och följer [schemat](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
+* Bevarandetiden för automatiska ögonblicksbilder **skiljer sig åt** och följer [schemat](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
 
 >[!NOTE]
 >
@@ -57,8 +57,8 @@ Observera också att stödet inte utför återställning eller återställning a
 
 **Relaterade artiklar i utvecklardokumentationen:**
 
-* [Säkerhetskopiering och katastrofåterställning](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Skapa en ögonblicksbild](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
+* [Säkerhetskopiering och katastrofåterställning](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Skapa en ögonblicksbild](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
 
 ## Miljöögonblicksbild, Starter-plan
 
@@ -68,7 +68,7 @@ Observera också att stödet inte utför återställning eller återställning a
 
 ## Återställ en ögonblicksbild av miljön
 
-Om du vill återställa en befintlig ögonblicksbild (i den miljö som stöds: integrering, mellanlagring, produktion på startplan eller integrering på Pro-plan) följer du stegen i [Säkerhetskopieringshantering: Återställ en manuell säkerhetskopia](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) i vår Commerce on Cloud Infrastructure Guide.
+Om du vill återställa en befintlig ögonblicksbild (i den miljö som stöds: integrering, mellanlagring, produktion på startplan eller integrering på Pro-plan) följer du stegen i [Säkerhetskopieringshantering: Återställ en manuell säkerhetskopia](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) i vår Commerce on Cloud Infrastructure Guide.
 
 ## Säkerhetskopiering av databas (DB)
 
@@ -78,8 +78,8 @@ En ögonblicksbild är en fullständig säkerhetskopia av en miljö som innehål
 
 >[!NOTE]
 >
->De monterade volymerna innehåller/refererar endast till [skrivbara monteringar](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) och kommer inte att innehålla hela din `/app`-katalog. Liksom för de andra filerna skapas/skapas de av [bygg- och distributionsprocessen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), och du måste även checka ut de återstående filerna från Git-databasen.
+>De monterade volymerna innehåller/refererar endast till [skrivbara monteringar](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) och kommer inte att innehålla hela din `/app`-katalog. Liksom för de andra filerna skapas/skapas de av [bygg- och distributionsprocessen](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), och du måste även checka ut de återstående filerna från Git-databasen.
 
-[Ögonblicksbilder och hantering av säkerhetskopiering](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) i utvecklardokumentationen.
+[Ögonblicksbilder och hantering av säkerhetskopiering](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) i utvecklardokumentationen.
 
 Skicka bara en [supportförfrågan](/help/help-center-guide/help-center/magento-help-center-user-guide.md) för en DB-ögonblicksbild från Pro Production och Staging om du behöver databasen från en viss tidpunkt. Om du bara behöver en aktuell säkerhetskopia av din databas (i vilken miljö som helst) kan du läsa artikeln i kunskapsbasen: [Generera databasdumpar i molnet](/help/how-to/general/create-database-dump-on-cloud.md).
