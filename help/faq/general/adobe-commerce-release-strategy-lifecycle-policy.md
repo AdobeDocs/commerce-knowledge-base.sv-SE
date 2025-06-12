@@ -1,6 +1,6 @@
 ---
 title: Frågor och svar för 2024 och 2023 Adobe Commerce Release Strategy och Lifecycle Policy
-description: För att tillgodose de uppdragskritiska behoven hos Adobe Commerce-kunder utökar vi supportperioden för Adobe Commerce 2.4.4 och senare versioner till **3 år från och med version [!DNL GA] date**. Supporten inkluderar **patchar för både säkerhet och kvalitet**. Se vår nya [releasekalender](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) för information om timing.
+description: För att tillgodose de uppdragskritiska behoven hos Adobe Commerce-kunder utökar vi supportperioden för Adobe Commerce 2.4.4 och senare versioner till **3 år från och med version [!DNL GA] date**. Supporten inkluderar **patchar för både säkerhet och kvalitet**. Se vår nya [releasekalender](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=sv-SE) för information om timing.
 exl-id: f2bfd79c-9766-4a82-a65c-bf66b80bd34a
 feature: Compliance
 source-git-commit: 68587ca3e861ef326e006a7ab086d197f37ae9b3
@@ -28,7 +28,7 @@ Det längre supportfönstret är en inblick i den komplexitet som våra kunder m
 
 ### När kommer kunder som har 2.4.4, 2.4.5, 2.4.6 och 2.4.7 att få support som upphör enligt denna nya policy?
 
-Kunder som har Adobe Commerce 2.4.4+ får säkerhets- och kvalitetskorrigeringar i 3 år från datumet för version [!DNL GA] enligt tidslinjen nedan. På sidan [Released Versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) på [!DNL Experience League] finns information om specifika supportdatum.
+Kunder som har Adobe Commerce 2.4.4+ får säkerhets- och kvalitetskorrigeringar i 3 år från datumet för version [!DNL GA] enligt tidslinjen nedan. På sidan [Released Versions](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=sv-SE) på [!DNL Experience League] finns information om specifika supportdatum.
 
 ![Diagram 1](assets/MSKB-1978-1.jpg)
 
@@ -44,14 +44,14 @@ Genom att tillhandahålla nya funktioner som sammansättningsbara [!DNL SaaS]-tj
 
 2023 har kunderna tillgång till Adobe Commerce patch-releaser ungefär två veckor innan de blir tillgängliga.
 
-Från och med 2024 har Adobe inte längre tillgång till förhandsversioner av korrigeringsfiler. För version 2.4.7 och senare kan kunder i stället använda [betaversioner](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html) för att komma åt tillgänglighetskod före generell för test- och utvecklingsändamål. Åtkomst före lansering planeras fortfarande för följande versioner från 2023:
+Från och med 2024 har Adobe inte längre tillgång till förhandsversioner av korrigeringsfiler. För version 2.4.7 och senare kan kunder i stället använda [betaversioner](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html?lang=sv-SE) för att komma åt tillgänglighetskod före generell för test- och utvecklingsändamål. Åtkomst före lansering planeras fortfarande för följande versioner från 2023:
 
 * 8 augusti 2023 är tillgång till förhandsversionen 25 juli 2023
 * 10 oktober 2023 års åtkomst före utgivningen är 26 september 2023
 
 ### Var finns Adobe Commerce release Schedule?
 
-Mer information finns i [Adobe Commerce Release Schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) [!DNL Experience League].
+Mer information finns i [Adobe Commerce Release Schedule](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=sv-SE) [!DNL Experience League].
 
 ### Vilka typer av releaser ingår i schemat?
 
@@ -62,11 +62,11 @@ Mer information finns i [Adobe Commerce Release Schedule](https://experienceleag
 
 ### Var får kunderna tag på patchar med hög kvalitet?
 
-Patchar är ett sätt att distribuera korrigeringar för enskilda kvalitetsproblem. Kunder kan kontakta Adobe Support eller använda [[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) för att hitta korrigeringsfiler av hög kvalitet.
+Patchar är ett sätt att distribuera korrigeringar för enskilda kvalitetsproblem. Kunder kan kontakta Adobe Support eller använda [[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) för att hitta korrigeringsfiler av hög kvalitet.
 
 ### Vilka resurser finns tillgängliga för att hjälpa till med planering, budgetering och uppgraderingar i allmänhet?
 
-Tillgängliga resurser innehåller en omfattande 2.4-uppgraderingshandbok, Technical Upgrade Workshop Recording samt [!DNL Upgrade Compatibility Tool]. En omfattande lista med resurser finns på [Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html).
+Tillgängliga resurser innehåller en omfattande 2.4-uppgraderingshandbok, Technical Upgrade Workshop Recording samt [!DNL Upgrade Compatibility Tool]. En omfattande lista med resurser finns på [Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html?lang=sv-SE).
 
 ### Hur kan kundkonstruktion hjälpa mig att uppgradera till 2.4.4+ som Managed Services-kund?
 
@@ -191,7 +191,7 @@ Dessa planer omfattar både kvalitets- och säkerhetsuppdateringar för kärnpro
 
 Under den utökade supporten kommer vårt kundkonstruktörsteam att fortsätta att tillhandahålla samma kvalitets- och säkerhetsuppdateringar som vanligt, utan att behöva göra någon försämring av omfattningen. Kunderna måste dock vidta ytterligare åtgärder för att hålla [!DNL PCI]-kompatibel om underliggande tredjepartstekniker, som [!DNL MariaDB], når slutet av supporten.
 
-Adobe har inte stöd för tredjepartstekniker som har nått supportslutet. Adobe rekommenderar att kunderna samarbetar med sin [[!DNL PCI] utvärderare](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) för att säkerställa regelefterlevnad. Se [Adobe Commerce systemkrav](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) för en fullständig lista över testade och stödda tredjepartstekniker.
+Adobe har inte stöd för tredjepartstekniker som har nått supportslutet. Adobe rekommenderar att kunderna samarbetar med sin [[!DNL PCI] utvärderare](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) för att säkerställa regelefterlevnad. Se [Adobe Commerce systemkrav](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements) för en fullständig lista över testade och stödda tredjepartstekniker.
 
 <table style="height: 444px; width: 632.2px;">
 <tbody>
