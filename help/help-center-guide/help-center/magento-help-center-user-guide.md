@@ -210,7 +210,7 @@ Du kan visa de ärenden som du har skickat personligen genom att klicka på **[!
 
 #### Visa historikärenden från Adobe Commerce Help Center
 
-Läs mer om hur du kan **visa dina historiska fall** från Adobe Commerce Help Center i [Avställning av Adobe Commerce Help Center](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) i Adobe Commerce Knowledge Base.
+Läs mer om hur du kan **visa dina historiska fall** från Adobe Commerce Help Center i [Avställning av Adobe Commerce Help Center](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) i Adobe Commerce Knowledge Base.
 
 #### Visa bevakade ärenden
 
@@ -290,7 +290,7 @@ Så här skickar du en ny supportanmälan via molnkonsolen:
 
 ### Operativmodellen Adobe Commerce Shared Responsibility {#shared-responsibility-operational-model}
 
-Läs artikeln om [Adobe Commerce Shared Responsibility Operational Model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
+Läs artikeln om [Adobe Commerce Shared Responsibility Operational Model](https://experienceleague.adobe.com/sv/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
 som syftar till att förtydliga det operativa ansvaret för vår Pro-infrastruktur.
 
 ### Öppna en uppföljningsbiljett {#follow-up}
