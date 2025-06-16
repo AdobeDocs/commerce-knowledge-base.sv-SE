@@ -3,7 +3,7 @@ title: Adobe Commerce P1 notification hotline
 description: I den här artikeln finns snabbradsnummer för P1-meddelanden för Adobe Commerce som kan användas för att rapportera ett P1-ärende och en förklaring av vilken information som ska tillhandahållas.
 feature: Communications
 exl-id: 48c4fe93-676e-4c69-a96c-8fb3e6872973
-source-git-commit: 8c0c128f2469086c44dcea0e9edc87f934578a69
+source-git-commit: bbff778a020a05953b82b452cdede7c46f20c990
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Så som definieras i [Adobe Commerce Support Services-villkor](https://www.adobe
 ## P1-meddelande - telefonprinciper för hotline
 
 * P1-meddelandetjänsten är tillgänglig för att rapportera P1-nivåproblem. (se definitionen av P1-incidenten i föregående avsnitt).
-* [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket) innan du anropar snabbraden för Adobe Commerce P1-meddelanden.
+* [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) innan du anropar snabbraden för Adobe Commerce P1-meddelanden.
 * Utredning, felsökning och kommunikation sker uteslutande inom supportbiljetten.
 * Lägg till all ytterligare information som du kan ha angående problemet direkt till biljetten, innan du ringer.
 * Se till att du har biljettnumret när du ringer.
@@ -32,7 +32,7 @@ Så som definieras i [Adobe Commerce Support Services-villkor](https://www.adobe
 Obs! Om du av någon anledning ringer röstbrevlådan, lämna dina uppgifter: Fullständigt namn, Företag, Telefonnummer och Biljettnummer. Linjerna övervakas och en tekniker returnerar ditt samtal så snart som möjligt.
 
 * USA
-   * Avgiftsfritt nummer: (+1) 800 497 0335 (På första menyn trycker du på 6 för Adobe Commerce P1 hotline)
+   * Avgiftsfritt nummer: (+1) 800 497 0335 (På första menyn trycker du på 3 för Adobe Commerce P1 hotline)
 * EMEA
    * Storbritannien: (+44) 800 169 0454 (På första menyn trycker du på 6 för Adobe Commerce P1 hotline)
    * Danmark: (+45) 80206017 (På första menyn trycker du på 6 för snabblinjen Adobe Commerce P1)
