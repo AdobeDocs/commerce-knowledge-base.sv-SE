@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: e5f5fda302aa5023cc4c05ec0971086bffbeaf39
+source-git-commit: 4f4d516ab4250249928c676d9451a1efe041c207
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3533'
 ht-degree: 0%
 
 ---
@@ -181,10 +181,8 @@ ht-degree: 0%
       * [Kan inte komma åt Adobe Commerce på molninfrastrukturens gränssnitt](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
       * [Vertex Address Cleansing: olika adresser tillåts inte](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md)
       * [Ändringar av kategorier sparas inte](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
-      * [Live Search visar färdiga produkter oavsett vilka inställningar för Stock-status som gäller i administratören](/help/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products.md)
       * [Problem med Adobe Commerce 2.4.0 - Export Tax Rates fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Magento Order Management System (OMS) för Adobe Commerce-bearbetningsfel](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
-      * [Exakt matchningssökning fungerar inte i Adobe Commerce 2.4.x](/help/troubleshooting/miscellaneous/exact-match-search-for-product-not-working-in-adobe-commerce.md)
       * [Långsam prestanda på grund av icke-cachelagrade sidor](/help/troubleshooting/miscellaneous/slow-performance-due-to-non-cacheable-pages.md)
       * [Cachelagrade bilder läses inte in efter 2.2.X- till 2.3.X-uppgradering](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
       * [504 gatewaytimeout-fel när en kategori sparas med 1k+-produkter](/help/troubleshooting/miscellaneous/504-gateway-time-out-error-when-saving-a-category-with-1k-products.md)
@@ -216,7 +214,6 @@ ht-degree: 0%
       * [Problem efter att en modul har inaktiverats](/help/troubleshooting/miscellaneous/issues-after-disabling-a-module.md)
       * [Avlasta icke-regex-omdirigeringar till Fast istället för Nginx (rutter)](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
       * [Adobe Commerce 2.4.0: Knapparna Skapa ny order saknas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-create-new-order-buttons-missing.md)
-      * [laminas/laminas-escape 2.7.1 orsakar fel på sidorna Adobe Commerce FrontTand och Admin](/help/troubleshooting/miscellaneous/laminas-escaper-2-7-1-causes-error-adobe-commerce-frontend-and-admin-pages.md)
       * [403 fel vid åtkomst till Site-Wide Analysis Tool i Adobe Commerce](/help/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento.md)
       * [Felsökning för avancerad rapportering för Adobe Commerce](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [Vanliga PHP-allvarliga fel och lösningar](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
@@ -252,7 +249,6 @@ ht-degree: 0%
       * [PWA Studio: Webpack låser sig innan kompileringen börjar](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [Installera de senaste patcharna för att åtgärda Adobe Commerce Redis-problem](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md)
       * [Åtgärda ett ogiltigt förskjutningsfel](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
-      * [GraphQL-fråga för att dölja kategorier fungerar inte med den delade B2B-katalogen](/help/troubleshooting/miscellaneous/graphql-categories-cannot-hide-categories-shared-catalog.md)
       * [Produktstatusen är felaktig när den skapas programmatiskt](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
       * [Snabbt fel: Plugin VCL-versionen är inaktuell. Ladda upp igen](/help/troubleshooting/miscellaneous/fastly-error-plugin-vcl-version-is-outdated-please-re-upload.md)
       * [Adobe Commerce 2.4.0: Uppdatering av kundens aktiviteter fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
@@ -297,7 +293,6 @@ ht-degree: 0%
       * [Den nya domänen dirigeras om till standarddomänen](/help/troubleshooting/miscellaneous/new-domain-redirecting.md)
       * [Det går inte att lägga till användare i Adobe Commerce molnprojekt](/help/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.md)
       * [Kron-stopp på grund av felkonfigurerad eller saknad [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
-      * [Det går inte att ta bort filen. Varning! Bryt länk: Det finns inget sådant fil- eller katalogfel* från  [!DNL Admin]](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md)
       * [[!DNL Admin]-inloggningen fungerar inte - den tillåtna maxstorleken för sessionen har överskridits](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
       * [Konfigurera Adobe Commerce Intelligence-anslutning för befintliga molnstartprojekt](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
       * [[!DNL Google Tag Manager] har brutits av widgeten Live-sökning](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
@@ -313,15 +308,11 @@ ht-degree: 0%
       * [Distributionsfel från aktivering av tidig alfavärde-modulen](/help/troubleshooting/deployment/deployment-errors-from-enabling-early-alpha-baler-javascript-bundling-build.md)
       * [Felet &quot;Aktuell version av RDBMS stöds inte&quot; vid distribution](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
       * [Driftsättningen misslyckas med snabb inkompatibel Adobe Commerce-version](/help/troubleshooting/deployment/deployment-fails-fastly-module-incompatible-magento-version.md)
-      * [Omdistributionen av miljön misslyckades eller MySQL-servern har försvunnit](/help/troubleshooting/deployment/environment-redeployment-failed-or-mysql-server-gone-away.md)
       * [Distributionsfel: SQLSTATE[HY000]](/help/troubleshooting/deployment/deployment-error-sql-hy000.md)
       * [Distributionsproblem relaterade till kontobehörigheter och åtkomstnycklar](/help/troubleshooting/deployment/deployment-issues-relating-to-account-permissions-and-access-keys.md)
       * [Adobe Commerce felsökare vid driftsättning](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md)
       * [Ett fel uppstod vid distributionen när versionen som stöder PHP 8.1 uppgraderades](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
-      * [E: Fel vid verifiering av vägar.yaml-fel under mellanlagrings- eller produktionsdistributionen](/help/troubleshooting/deployment/e-error-verifying-routes-yaml-error-during-staging-or-production-deploy.md)
       * [Distributionen misslyckas med felet&quot;Error building project: The build krok failed with status code 1&quot;](/help/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.md)
-      * [Det gick inte att komma åt Adobe Commerce i molnet: 403 Otillåten eller 404 Inte hittad vid distribution](/help/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.md)
-      * [Distributionen fastnade med felet&quot;Det gick inte att överföra programmet till fjärrklustret&quot;](/help/troubleshooting/deployment/deployment-stuck-with-unable-to-upload-the-application-to-the-remote-cluster-error.md)
       * [Distributionsfel: &quot;fel 7 vid hämtning ... port 443: Anslutningen nekades&quot;](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Distributionsfel vid implementering av felaktiga filer](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [Distributionsfel där korrigeringar inte hittas](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
@@ -364,7 +355,6 @@ ht-degree: 0%
       * [Elasticsearch-indexstatus är &quot;gul&quot; eller &quot;röd&quot;](/help/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.md)
       * [Elasticsearch-tjänsten körs inte](/help/troubleshooting/elasticsearch/elasticsearch-service-not-running.md)
       * [MySQL och Elasticsearch ger olika resultat](/help/troubleshooting/elasticsearch/mysql-and-elasticsearch-show-different-results.md)
-      * [Elasticsearch visas som sökmotor trots OpenSearch-installationen](/help/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search.md)
 * Help Center Guide {#help-center-guide}
    * [Experience League Support User Guide for Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
    * [Uppdatering av livscykelpolicy för Adobe Commerce Support-biljetter](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
@@ -467,6 +457,5 @@ ht-degree: 0%
    * [Säkerhetskopiering (ögonblicksbild) i molnet: Vanliga frågor och svar](/help/faq/general/backup-snapshot-on-cloud-faq.md)
    * [Frågor och svar för 2024 och 2023 Adobe Commerce Release Strategy och Lifecycle Policy](/help/faq/general/adobe-commerce-release-strategy-lifecycle-policy.md)
    * [Kan jag schemalägga Content Staging-uppdateringar för priser i en delad katalog?](/help/faq/general/can-i-schedule-content-staging-updates-for-prices-in-a-shared-catalog.md)
-   * [Vanliga frågor om Adobe Commerce Security Scan Tool](/help/faq/general/magento-security-scan-tool-faq.md)
    * [Vanliga frågor om Adobe Commerce-programvarans slut](/help/faq/general/adobe-commerce-eos-policy-faq.md)
    * [Behöver jag Fast för en Headless Adobe Commerce-sajt?](/help/faq/general/do-i-need-fastly-for-a-headless-magento-site.md)
