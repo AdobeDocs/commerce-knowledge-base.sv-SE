@@ -21,7 +21,7 @@ I den här artikeln ges förslag på lösningar för situationen när utrymmet t
 
 ## Problem
 
-Diskutrymmet på disken med skrivbara kataloger är snart slut. Ett symtom kan vara [fast distribution](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26878).
+Diskutrymmet på disken med skrivbara kataloger är snart slut. Ett symtom kan vara [fast distribution](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26878).
 
 Kör följande kommando för att kontrollera diskanvändningen:
 
@@ -45,7 +45,7 @@ Lösningsalternativ:
 * Rensa katalogen `var`.
 * Konfigurera ett cron-jobb för att spåra storleken på katalogen `var` och rensa den.
 * Allokera mer diskutrymme om du inte har använt något. (Se avsnittet nedan för mer information om hur du kontrollerar din utrymmesgräns.)
-   * I Starter-planen, alla miljöer och Pro-planintegreringsmiljöer kan du allokera diskutrymme om du inte har använt något, vilket beskrivs i [Hantera diskutrymme: Allokera diskutrymme](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space).
+   * I Starter-planen, alla miljöer och Pro-planintegreringsmiljöer kan du allokera diskutrymme om du inte har använt något, vilket beskrivs i [Hantera diskutrymme: Allokera diskutrymme](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space).
    * För Pro-planmiljöer för mellanlagrings- och produktionsmiljöer kontaktar du support för att tilldela mer diskutrymme om du har oanvänt något.
 * Om du har nått din utrymmesgräns och fortfarande har problem med lite utrymme kan du överväga att köpa mer diskutrymme. Kontakta Adobe Account Team för mer information.
 
