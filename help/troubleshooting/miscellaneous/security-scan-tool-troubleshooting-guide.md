@@ -104,7 +104,7 @@ Du kan generera de 10 föregående rapporterna från din sida. Kontakta Adobe Co
 
 ### Vilken information behövs när du skickar in en supportanmälan?
 
-Ange domännamnet exakt som det skickas för [säkerhetsgenomsökningen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID och Creative_ID för molnet. Observera att Creative Cloud Project_ID inte krävs för Adobe Commerce lokalt.
+Ange domännamnet exakt som det skickas för [säkerhetsgenomsökningen](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID och Creative_ID för molnet. Observera att Creative Cloud Project_ID inte krävs för Adobe Commerce lokalt.
 
 ### Vad händer om jag tar bort min butik från skanning av skanningsverktyg?
 
