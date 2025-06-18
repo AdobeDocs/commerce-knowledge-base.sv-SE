@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 2ed731574bb25c31d0fcb800fcf8f98b85ff0bc2
+source-git-commit: 51f693c29781029adc0f3d6214d7f784b873998b
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3449'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 0%
       * [Frågor och svar om den uppdaterade livscykelpolicyn för Adobe Commerce-releaser](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
       * [Byt till OpenSearch för Adobe Commerce i molnet 2.4.4](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
       * [Adobe Commerce Recommendations for PHP Vulnerabilities](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
-      * [Quality Patches Tool released: new tool to self-service quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)
       * [Sökmotorn för MySQL-kataloger kommer att tas bort i Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Adobe ger stöd för åtkomst och integritet av kunddata](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [UPS-API:er har tagits bort](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)

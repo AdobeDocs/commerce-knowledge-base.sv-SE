@@ -4,9 +4,9 @@ description: 'Adobe Commerce tillhandahåller kvalitetskorrigeringar för en min
 exl-id: 4aa601d0-ee1d-4f1f-a684-188772a58dd1
 feature: Compliance, Support
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2898089896cc2cdc88110a999564669341a52136
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerce tillhandahåller kvalitetskorrigeringar för en mindre release i minst 12 månader från det allmänna tillgänglighetsdatumet för nästa mindre programversion. Det sätt på vilket vi tillhandahåller kvalitetskorrigeringar under den här perioden ändras:
 
 * **Tidigare princip:** Kvalitetskorrigeringarna till föregående rad som finns i EOS-fönstret för 12 månader levereras i vår kvartalsvisa korrigeringsutgåva, vilket gör att kvartalsvisa korrigeringar blir en kombination av säkerhet + kvalitet.
-* **Ny princip:** Från och med 2.4 som den senaste delversionsraden kommer versionsfixar för föregående rad som stöds (2.3) att flyttas till enbart säkerhet. Vi kommer fortfarande att leverera kvalitetskorrigeringar för den föregående raden som stöds under 12-månadersperioden efter att en delversion (som 2.4) och efterföljande mindre versionsrader släppts. Dessa kommer dock att göras tillgängliga via [QPT-verktyget ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) (Quality Patches Tool) och fokuseras endast på kritiska problem.
+* **Ny princip:** Från och med 2.4 som den senaste delversionsraden kommer versionsfixar för föregående rad som stöds (2.3) att flyttas till enbart säkerhet. Vi kommer fortfarande att leverera kvalitetskorrigeringar för den föregående raden som stöds under 12-månadersperioden efter att en delversion (som 2.4) och efterföljande mindre versionsrader släppts. Dessa kommer dock att göras tillgängliga via [QPT-verktyget ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) (Quality Patches Tool) och fokuseras endast på kritiska problem.
 
 ## När börjar denna policy gälla?
 
@@ -34,11 +34,11 @@ Endast säkerhetsreleaser innehåller säkerhetskorrigeringar och ingen kvalitet
 
 ## Kommer det fortfarande att finnas en säkerhetsuppdatering för den senaste raden (från och med publiceringen, 2.4)?
 
-Adobe kommer även i fortsättningen att ha säkerhetsversioner för den senaste releaseraden. Processen för dessa beskrivs i [Introduktion till DevBlog-inlägget New Security-only Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287).
+Adobe kommer även i fortsättningen att ha säkerhetsrelaterade versioner för den senaste releaseraden. Processen för dessa beskrivs i [Introduktion till DevBlog-inlägget New Security-only Patch Release](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287).
 
 ## Vad är Quality Patches Tool?
 
-Se artikeln [Quality Patches Tool som släpps: ett nytt verktyg för självbetjäning av kvalitetspatchar](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) i vår kunskapsbas.
+Se artikeln [Quality Patches Tool som släpps: ett nytt verktyg för självbetjäning av kvalitetspatchar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) i vår kunskapsbas.
 
 ## Vem bör överväga att använda den här nya policyn?
 
@@ -50,7 +50,7 @@ I slutändan bör alla affärsmän fortfarande prioritera planeringen för att i
 
 ## Hur får jag kvalitetskorrigeringar för mindre versioner som stöds och som inte är den senaste raden?
 
-Korrigeringar blir tillgängliga via [kvalitetskorrigeringsverktyget](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+Korrigeringar blir tillgängliga via [kvalitetskorrigeringsverktyget](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patche).
 
 ## Hur får jag tag i kvalitetsfixar på den senaste raden?
 
@@ -62,7 +62,7 @@ Endast viktiga kvalitetsproblem som bryter mot kärnflödena kommer att åtgärd
 
 ## Kommer några kvalitetskorrigeringar att ingå i den kvartalsvisa utgåvan för mindre versioner som stöds och som inte är den senaste raden?
 
-Ja, som en del av säkerhetslinjen släpper vi det som Adobe kallar &quot;snabbkorrigeringar&quot; på den raden, som är mycket viktiga problem som påverkar Adobe Commerce-programmet.
+Ja, som en del av säkerhetslinjen släpper vi det som Adobe kallar &quot;snabbkorrigeringar&quot; på den raden. Det här är mycket viktiga problem som påverkar Adobe Commerce-programmet.
 
 ## Kommer säkerhetsförbättringar och QPT att levereras samtidigt?
 
@@ -72,7 +72,7 @@ Raden för enbart säkerhet följer kvartalsplanen för lansering och släpps me
 
 Föregående rad som enbart avser säkerhet innebär att den största fördelen är att den förblir säker. Endast korrigeringsfiler för större problem som bryter kärnflöden kommer att göras tillgängliga via QPT.
 
-Problem som inte påverkar kärnflöden eller som har tillfälliga lösningar kommer att åtgärdas endast på den senaste raden. Adobe uppmuntrar dem som vill ha både kritiska och icke-kritiska korrigeringar att gå över till den senaste linjen.
+Problem som inte påverkar kärnflöden eller som har tillfälliga lösningar kommer att åtgärdas endast på den senaste raden. Adobe rekommenderar alla som vill ha både kritiska och icke-kritiska korrigeringar att gå över till den senaste linjen.
 
 ## Kommer uppgraderingar att bli dyrare eller svårare för Merchants om de inte längre har säkerhetsfunktionerna till dess att säkerhetssupporten upphör?
 
@@ -84,6 +84,6 @@ Genom att tillämpa många enskilda kvalitetskorrigeringar blir Adobe Commerce-k
 
 ## Hur är det med efterlevnad för teknikstackar?
 
-Under en lanseringslinjs livstid kommer det att finnas uppdateringar till olika tekniska stackar som PHP eller Elasticsearch som måste uppgraderas för att följa gällande regler. Vi kommer att meddela våra handlare så mycket som möjligt att de kommer.
+Under en lanseringslinjs livstid kommer det att finnas uppdateringar till olika tekniska stackar, som PHP eller Elasticsearch, som måste uppgraderas för att fortsätta uppfylla kraven. Vi kommer att meddela våra handlare så mycket som möjligt att de kommer.
 
 Obs! Under andra kvartalet 2021 måste vi uppdatera PHP och Redis på 2.3.x-raden för att hålla oss uppdaterade. Detta gör att raden ökas till 2.3.7. Mer information finns i [PHP 7.4-stöd för Adobe Commerce 2.3.x-versionsrad](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946) DevBlog-inlägg.
