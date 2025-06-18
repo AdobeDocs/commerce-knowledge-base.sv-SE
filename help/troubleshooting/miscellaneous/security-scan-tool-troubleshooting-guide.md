@@ -4,9 +4,9 @@ description: Lär dig hur du felsöker de olika problemen med verktyget för sä
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
-source-git-commit: 525352027bfa4a8728bdbbfe61af3dca5dbb18f9
+source-git-commit: c6e338fb33477ab107fe4de382b485339b57275a
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Om du får ett fel och inte kan skicka din webbplats för genomsökningen kan du
 
 ## Problem: Tomma rapporter som har genererats av verktyget Säkerhetskontroll
 
-Du får tomma genomsökningsrapporter från verktyget för säkerhetsgenomsökning eller får rapporter som bara innehåller ett fel, t.ex. *Säkerhetsverktyget kunde inte nå bas-URL:en* eller så hittades inte *Magento-installationen på den angivna URL:en*.
+Du får tomma genomsökningsrapporter från verktyget för säkerhetsgenomsökning eller får rapporter som bara innehåller ett fel, t.ex. *Säkerhetsverktyget kunde inte nå bas-URL:en* eller *Magento-installationen finns inte på den angivna URL:en*.
 
 ### Lösning
 
-1. Kontrollera att IP-adresserna för 52.87.98.44, 34.196.167.176 och 3.218.25.102 inte blockeras vid 80- och 443-portar.
+1. Kontrollera att 52.87.98.44, 34.196.167.176 och 3.218.25.102 IP-adresser inte blockeras vid 80- och 443-portar.
 1. Kontrollera den skickade URL:en för omdirigeringar (t.ex. omdirigeras `https://mystore.com` till `https://www.mystore.com` eller vice versa eller omdirigeras till andra domännamn).
 1. Undersök åtkomstloggar för WAF-/webbservrar för nekade/ej fullgjorda begäranden. HTTP 403 `Forbidden` och HTTP 500 `Internal server error` är de vanligaste serversvaren som orsakar tom rapportgenerering. Här är ett exempel på den bekräftelsekod som blockerar begäranden från användaragenter:
 
@@ -76,7 +76,7 @@ Du får ett meddelande om felet &quot;BotNet Suspect&quot;.
 
 1. Kontrollera om det finns nyligen skapade SSH-konton, ändringar i filsystemet osv.
 1. Genomför en säkerhetsgranskning.
-1. Kontrollera Adobe Commerce version och uppgradering, särskilt om Magento 1 fortfarande körs, vilket inte stöds längre.
+1. Kontrollera Adobe Commerce-versionen och uppgraderingen, särskilt om den fortfarande kör Magento 1, som inte stöds längre.
 1. Om problemet kvarstår [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och anger butikens URL.
 
 ## Problem: Komprometterad inmatningsfel
@@ -104,8 +104,8 @@ Du kan generera de 10 föregående rapporterna från din sida. Kontakta Adobe Co
 
 ### Vilken information behövs när du skickar in en supportanmälan?
 
-Ange domännamnet.
+Ange domännamnet exakt som det skickas för [säkerhetsgenomsökningen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID och Creative_ID för molnet. Observera att Creative Cloud Project_ID inte krävs för Adobe Commerce lokalt.
 
 ### Vad händer om jag tar bort min butik från skanning av skanningsverktyg?
 
-Om du tar bort arkivöverföringen tas alla relaterade data, inklusive genomsökningsrapporter, bort. Åtgärden kan inte ångras. Om du skickar arkivdomänen efter att den har tagits bort skapas en NY överföring.
+Om du tar bort arkivöverföringen tas alla relaterade data, inklusive genomsökningsrapporter, bort. Åtgärden kan inte ångras. Om du skickar arkivdomänen efter att den tagits bort skapas en NY överföring.
