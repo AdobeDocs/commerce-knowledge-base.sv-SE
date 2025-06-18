@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 4f4d516ab4250249928c676d9451a1efe041c207
+source-git-commit: 2ed731574bb25c31d0fcb800fcf8f98b85ff0bc2
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3459'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,6 @@ ht-degree: 0%
       * [Uppdaterade korrigeringsfiler för åtkomst till Google Maps för alla Adobe Commerce-versioner](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Diverse {#miscellaneous}
       * [Åtgärda data som inte har uppdaterats i  [!DNL Commerce Data Exporter] feeds och [!DNL cron] loggar fel med ändringsloggtabellen finns inte](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [Så här kontrollerar du varför [!DNL cron] inaktiverades](/help/troubleshooting/miscellaneous/how-to-check-why-cron-was-disabled.md)
       * [Fel [!DNL opensearch] sökmotorn finns inte. Återgår till  [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-post som anger att exportlagringen är nästan full](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Indexen har gjorts ogiltig och &quot;indexer_reindex_all_invalid&quot; körs hela tiden](/help/troubleshooting/miscellaneous/constant-reindexing-with-cron-job-indexer-reindex-all-invalid.md)
@@ -165,7 +164,6 @@ ht-degree: 0%
       * [Fel på tom sida eller omdirigeringsslinga vid åtkomst till storefront eller Commerce Admin](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
       * [Adobe Commerce 2.4.1 Vertex Address validation message post address update](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md)
       * [Extension Manager visar inga tillägg i Adobe Commerce 2.3.x](/help/troubleshooting/miscellaneous/extension-manager-shows-no-extensions-in-magento-commerce-2-3-x.md)
-      * [Använd en patch för att fortsätta erbjuda DHL som fraktfirma](/help/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.md)
       * [Omdirigering vid inloggning till Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [Lös problem med krypteringsnyckeln](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
       * [Felet &quot;Updater application is not available&quot;](/help/troubleshooting/miscellaneous/updater-application-is-not-available-error.md)
@@ -195,7 +193,6 @@ ht-degree: 0%
       * [Rapporten för verktyget för säkerhetsgenomsökning är tom](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
       * [Adobe Commerce 2.4.2-p1: fakturafaktura med felaktigt värde](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
       * [Det går inte att komma åt den senaste förhandsversionen av Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
-      * [Administratörslösenord sparade som oformaterad text i åtgärdsloggen](/help/troubleshooting/miscellaneous/admin-passwords-saved-as-plain-text-to-actions-log.md)
       * [Index är låst av en annan process](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
       * [Diagnostisera en datadiskrepans](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
       * [Admin 2FA-e-postmeddelanden tas inte emot](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
@@ -206,7 +203,6 @@ ht-degree: 0%
       * [Blockerare som startar på Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
       * [Fel i PHP-inställningar](/help/troubleshooting/miscellaneous/php-settings-errors.md)
       * [Utelämna fördröjning vid problem med inloggning eller utcheckning av Commerce Admin](/help/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.md)
-      * [Problem med plugin-program för Composer vid uppgradering till Adobe Commerce 2.4.4](/help/troubleshooting/miscellaneous/adobe-commerce-244-update-composer.md)
       * [PHP-krypteringstillägget har inte installerats korrekt](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1 Känt fel: dotdigital inloggning](/help/troubleshooting/miscellaneous/magento-2-3-6-2-4-0-p1-2-4-1-known-issue-dotdigital-login.md)
       * [Kronjobbet har fastnat i körningsstatus](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
@@ -214,7 +210,6 @@ ht-degree: 0%
       * [Problem efter att en modul har inaktiverats](/help/troubleshooting/miscellaneous/issues-after-disabling-a-module.md)
       * [Avlasta icke-regex-omdirigeringar till Fast istället för Nginx (rutter)](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
       * [Adobe Commerce 2.4.0: Knapparna Skapa ny order saknas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-create-new-order-buttons-missing.md)
-      * [403 fel vid åtkomst till Site-Wide Analysis Tool i Adobe Commerce](/help/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento.md)
       * [Felsökning för avancerad rapportering för Adobe Commerce](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [Vanliga PHP-allvarliga fel och lösningar](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
       * [Det går inte att uppdatera disposition på Adobe Commerce: Inkompatibel argumenttyp](/help/troubleshooting/miscellaneous/composer-update-fail-on-adobe-commerce-incompatible-argument-type.md)
@@ -304,15 +299,12 @@ ht-degree: 0%
       * [Dåliga prestanda i integreringsmiljöer](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * Distribution {#deployment}
       * [Driftsättningen misslyckas: Elasticsearch- och Adobe Commerce-versionerna är inte kompatibla](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
-      * [Distributionen misslyckades: Det går inte att använda MDVA-43395-korrigering](/help/troubleshooting/deployment/deployment-failed-unable-to-apply-mdva-43395-patch.md)
-      * [Distributionsfel från aktivering av tidig alfavärde-modulen](/help/troubleshooting/deployment/deployment-errors-from-enabling-early-alpha-baler-javascript-bundling-build.md)
       * [Felet &quot;Aktuell version av RDBMS stöds inte&quot; vid distribution](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
       * [Driftsättningen misslyckas med snabb inkompatibel Adobe Commerce-version](/help/troubleshooting/deployment/deployment-fails-fastly-module-incompatible-magento-version.md)
       * [Distributionsfel: SQLSTATE[HY000]](/help/troubleshooting/deployment/deployment-error-sql-hy000.md)
       * [Distributionsproblem relaterade till kontobehörigheter och åtkomstnycklar](/help/troubleshooting/deployment/deployment-issues-relating-to-account-permissions-and-access-keys.md)
       * [Adobe Commerce felsökare vid driftsättning](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md)
       * [Ett fel uppstod vid distributionen när versionen som stöder PHP 8.1 uppgraderades](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
-      * [Distributionen misslyckas med felet&quot;Error building project: The build krok failed with status code 1&quot;](/help/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.md)
       * [Distributionsfel: &quot;fel 7 vid hämtning ... port 443: Anslutningen nekades&quot;](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Distributionsfel vid implementering av felaktiga filer](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [Distributionsfel där korrigeringar inte hittas](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
