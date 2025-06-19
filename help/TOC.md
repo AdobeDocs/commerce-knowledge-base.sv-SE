@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+source-git-commit: dc2149f886d46826610f2f74b48ef9060a4ff376
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3263'
 ht-degree: 0%
 
 ---
@@ -76,14 +76,11 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.0: fel vid visning av beställningar](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce lokal 2.4.2: produktbild saknas](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
       * [Efter installationen läses inte bilder och formatmallar in; endast textvisning, ingen grafik](/help/troubleshooting/storefront/after-installing-images-and-stylesheets-do-not-load-only-text-displays-no-graphics.md)
-      * [Det går inte att spara &quot;leverans&quot; som URL-nyckel](/help/troubleshooting/storefront/storefront-unable-to-enter-shipping-as-a-url-key.md)
       * [Produkten visas inte i butiken](/help/troubleshooting/storefront/product-is-not-displayed-on-storefront.md)
       * [Adobe Commerce 2.4.0-utgåva: visning av råa meddelanden i butiker](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
       * [Store credit issue in checkout in Adobe Commerce 2.3.5](/help/troubleshooting/storefront/store-credit-issue-during-checkout-in-magento-2-3-5.md)
       * [Lagra bilder som inte visas efter distributionen](/help/troubleshooting/storefront/store-images-not-displayed-after-deployment.md)
       * [Produktjämförelse - känt fel i Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
-      * [Övre navigeringspanelen läses inte in i butiken](/help/troubleshooting/storefront/top-navigation-panel-does-not-load-on-storefront.md)
-      * [Produktbilder visas inte trots produktredigeringsroller](/help/troubleshooting/storefront/product-images-do-not-display-despite-product-edit-image-roles.md)
       * [Adobe Commerce 2.4.0: 404 error removing rewards points on multi-shipping checkout](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
       * [Kunderna loggas ut eller förlorar kundvagnsinnehåll på Adobe Commerce store](/help/troubleshooting/storefront/customers-get-logged-out-or-lose-cart-content-on-magento-storefront.md)
       * [Det går inte att spara kontakten som URL-nyckel](/help/troubleshooting/storefront/unable-to-save-contact-as-a-url-key.md)
@@ -108,7 +105,6 @@ ht-degree: 0%
       * [Uppgradering till B2B 1.5.2 misslyckas med SQL-syntaxfel eftersom funktionen REGEXP_LIKE saknas](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
       * [Prestandaproblem i moduluppgraderingen Magento_Company efter uppdatering av B2B 1.5.2](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
    * Webbplatsen är nere eller svarar inte {#site-down-or-unresponsive}
-      * [Webbplatsen är inte tillgänglig på grund av ursprungsinsvepning](/help/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking.md)
       * [503-fel vid åtkomst till Adobe Commerce i webbläsaren](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
       * [Platsen kan inte läsas in på grund av att underhållsläge är aktiverat](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
       * [Felsökningsdiagram för nedstängd webbplats](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md)
@@ -120,7 +116,6 @@ ht-degree: 0%
       * [Åtgärda data som inte har uppdaterats i  [!DNL Commerce Data Exporter] feeds och [!DNL cron] loggar fel med ändringsloggtabellen finns inte](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
       * [Fel [!DNL opensearch] sökmotorn finns inte. Återgår till  [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-post som anger att exportlagringen är nästan full](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-      * [Indexen har gjorts ogiltig och &quot;indexer_reindex_all_invalid&quot; körs hela tiden](/help/troubleshooting/miscellaneous/constant-reindexing-with-cron-job-indexer-reindex-all-invalid.md)
       * [Konfigurationsfilen saknas eller har ändrats](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-fel 60: SSL-certifikatet har upphört att gälla](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
       * [Felsöka produktrekommendationsmodulen i Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
@@ -148,7 +143,6 @@ ht-degree: 0%
       * [Lösa UTF-8-fel för CSV-filöverföringar](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
       * [Felsöka prestanda med New Relic på Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
       * [Ett problem har uppstått med produktantalet för gruppåtgärd i Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
-      * [Inaktivera utdata från Adobe Commerce Banner för att förbättra webbplatsens prestanda](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md)
       * [Söker efter DDoS-attack från CLI](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
       * [Fel på tom sida eller omdirigeringsslinga vid åtkomst till storefront eller Commerce Admin](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
       * [Adobe Commerce 2.4.1 Vertex Address validation message post address update](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md)
@@ -160,7 +154,6 @@ ht-degree: 0%
       * [Stock-statusen är felaktig efter installation av Inventory management](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [Adobe Commerce 2.3.5: Problem med beställningar av virtuella produkter för flera leveranser](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
       * [Identifiera avvikelser med hjälp av dataexport](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
-      * [Composer-plugin mot attacker med beroendekonfusion](/help/troubleshooting/miscellaneous/composer-plugin-against-dependency-confusion-attacks.md)
       * [Stock-bilder visas inte, Adobe Commerce och Magento Open Source 2.3.7-p2](/help/troubleshooting/miscellaneous/adobe-commerce-and-magento-open-source-2-3-7-p2-stock-images-not-showing.md)
       * [Fel vid aktivering av bildoptimering i Adobe Commerce](/help/troubleshooting/miscellaneous/error-enabling-image-optimization-in-magento-commerce.md)
       * [Felsökning av datamigreringsverktyget](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
@@ -208,7 +201,6 @@ ht-degree: 0%
       * [Felsökning av 503-fel orsakad av att standardinställningarna för lack måste ändras](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Begränsad administratörsåtkomst som orsakar prestandaproblem](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Kravuppgifter låser uppgifter från andra grupper](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
-      * [Det går inte att ändra sökmotorn med Commerce Admin (sökmotormenyn är inte tillgänglig)](/help/troubleshooting/miscellaneous/cannot-change-search-engine-using-magento-admin-search-engine-menu-is-inaccessible.md)
       * [Installations-xdebug för högsta funktionskkapslingsnivåfel](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [Det går inte att spara enheten Adobe Commerce backend](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
       * [PHP-versionsfel eller 404-fel vid åtkomst till Adobe Commerce i webbläsaren](/help/troubleshooting/miscellaneous/php-version-error-or-404-error-when-accessing-magento-in-browser.md)

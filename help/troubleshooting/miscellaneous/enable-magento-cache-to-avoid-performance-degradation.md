@@ -4,9 +4,9 @@ description: I den här artikeln beskrivs hur du löser ett långsamt webbplatsp
 exl-id: e4e5a753-efa3-4552-aaf6-28e44efcfa5b
 feature: Cache, Observability
 role: Developer
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+source-git-commit: bd6aa238ff8273c60a4cf5160fb614de6ff00d21
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ En orsak till prestandaförsämring kan vara att vissa cachetyper i Adobe Commer
 
 ## Lösning
 
-1. Kontrollera först statusen för din Adobe Commerce-cache för att se om detta är problemet. För detta [SSH till din miljö](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) och kör följande kommando:
+1. Kontrollera först statusen för din Adobe Commerce-cache för att se om detta är problemet. För detta [SSH till din miljö](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) och kör följande kommando:
 
    ```bash
    php bin/magento cache:status
@@ -48,11 +48,11 @@ En orsak till prestandaförsämring kan vara att vissa cachetyper i Adobe Commer
 Dokumentation om Adobe Commerce-cache finns i vår utvecklardokumentation:
 
 * [Översikt över Adobe Commerce-cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [Hantera cachen](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [Hantera cachen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 Andra möjliga orsaker till prestandaproblem och lösningar:
 
-* [Inaktivera utdata från Adobe Commerce Banner för att förbättra webbplatsens prestanda](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md)
-* [MySQL-tabeller är för stora](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26945)
+* [Inaktivera utdata från Adobe Commerce Banner för att förbättra webbplatsens prestanda](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [MySQL-tabeller är för stora](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945)
 * [Långsamma prestanda, långsamma och långvariga kroner](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
 * [Begränsad administratörsåtkomst som orsakar prestandaproblem](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
