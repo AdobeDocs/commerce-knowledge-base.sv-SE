@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar på problem med att bearbe
 exl-id: f0772515-8456-4f08-84b4-aeef44516f2a
 feature: Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Om betalningsmetoden PayPal innefattar API med faktureringsavtal och referenstra
 
 Se följande artiklar:
 
-* [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) i vår kunskapsbas för support.
+* [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) i vår kunskapsbas för support.
 * [Ändra inkrement-ID för ny lagringsenhet](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) i vår kunskapsbas för support.
 
 ## Kontakta supporten för att samla in avancerade betalningsloggar

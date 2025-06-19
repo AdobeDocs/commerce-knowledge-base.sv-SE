@@ -2,9 +2,9 @@
 title: Det går inte att ändra sökmotorn i "app/etc/env.php"
 description: Den här artikeln innehåller en lösning på problemet där du försöker byta sökmotor i Commerce Admin, men fälten är låsta.
 exl-id: 61006ce7-34f9-4e4d-a197-f3d627dd277f
-source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ Sökmotorkonfigurationen är låst i filen `app/etc/env.php` eller så definiera
 
 ## Relaterad läsning
 
-* [Låsta (nedtonade) fält i Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) i Commerce i molninfrastrukturguiden.
+* [Låsta (nedtonade) fält i Commerce Admin](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879) i Commerce i molninfrastrukturguiden.

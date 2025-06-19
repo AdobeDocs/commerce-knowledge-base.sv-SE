@@ -4,9 +4,9 @@ description: Den här artikeln är ett felsökningsverktyg för kunder som har p
 exl-id: f7b09023-7129-4fd0-9bb5-02a2228bc148
 feature: Observability, Services, Storage, Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Om du har något av de symtom som beskrivs ovan bör du kontrollera status på d
 
 Är IUse% > 90%?
 
-a. JA - Detta beror på att det finns för många filer. Granska stegen för att ta bort filer på ett säkert sätt i [Ta bort filer när det inte finns tillräckligt med diskutrymme, Adobe Commerce i molninfrastrukturen](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md). Fortsätt till [Steg 2](#step-2) när du har slutfört de här stegen. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill begära mer utrymme.\
+a. JA - Detta beror på att det finns för många filer. Granska stegen för att ta bort filer på ett säkert sätt i [Ta bort filer när det inte finns tillräckligt med diskutrymme, Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26889). Fortsätt till [Steg 2](#step-2) när du har slutfört de här stegen. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill begära mer utrymme.\
 b. NEJ - Kontrollera utrymmet. Kör `df -h | grep mysql` och sedan `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i katalogerna `/tmp` och `/data/mysql`. Fortsätt till [Steg 3](#step-3).
 
 +++
@@ -93,4 +93,4 @@ b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento
 
 ## Relaterad läsning
 
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

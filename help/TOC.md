@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 51f693c29781029adc0f3d6214d7f784b873998b
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '3449'
+source-wordcount: '3327'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,6 @@ ht-degree: 0%
       * [MySQL-servern har gått &#x200B; fel på Adobe Commerce i molnet](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
       * [Det är ont om diskutrymme på Adobe Commerce i molninfrastrukturen](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
       * [Felsökare för databaslagring på Adobe Commerce](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
-      * [MySQL-tabeller är för stora](/help/troubleshooting/database/mysql-tables-are-too-large.md)
       * [Databasfel relaterade till max_allowed_packet på Adobe Commerce](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Adobe Commerce-databasens numeriska värde ligger utanför intervallet, [!DNL INT] till [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)
       * [Läs replikeringsproblem i Adobe Commerce Cloud 2.4.6 med MariaDB 10.6](/help/troubleshooting/database/read-replicas-issues-synchronization-mariadb-10-6.md)
@@ -56,9 +55,7 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.0: Braintree inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
       * [2.3.4 Säkerhetsuppdatering för PayPal](/help/troubleshooting/payments/2-3-4-paypal-issue-hotfix.md)
       * [Adobe Commerce 2.4.1: fel meddelande i PayPal-Braintree gästutcheckning](/help/troubleshooting/payments/magento-2-4-1-wrong-message-on-paypal-via-braintree-guest-checkout.md)
-      * [PayPal-sandlådekontot har inte verifierats](/help/troubleshooting/payments/payservices-paypal-acct.md)
       * [Det gick inte att montera beställningen med Authorize.net Sandbox-konto (ett fel uppstod på servern)](/help/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server.md)
-      * [Fördröjda betalningstjänster - rapportdata](/help/troubleshooting/payments/payservices-report-info-delayed.md)
       * [Utcheckningen fastnar när Authorize.net betalningsmetod används](/help/troubleshooting/payments/checkout-is-stuck-when-authorize-net-payment-method-is-used.md)
       * [Adobe Commerce 2.4.1 Känt fel: fel vid utcheckning med PayPal Braintree](/help/troubleshooting/payments/magento-2-4-1-known-issue-error-popping-up-on-checkout-with-paypal-braintree.md)
       * [Adobe Commerce 2.4.0 Braintree Virtual Terminal-sida är skadad](/help/troubleshooting/payments/magento-2-4-0-known-issue-braintree-virtual-terminal-page-is-corrupted.md)
@@ -70,14 +67,11 @@ ht-degree: 0%
       * [PayPal Payflow Pro - aktiv kodningsaktivitet](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Felsökning av PayPal på Adobe Commerce](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
       * [Adobe Commerce 2.4.0, 2.4.1: Aktivera partiell faktura för Braintree Venmo](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
-      * [Kreditkortet underkändes vid betalningar i sandlådemiljö](/help/troubleshooting/payments/payservices-cc-sandbox-failure.md)
       * [Adobe Commerce 2.4.2 B2B: Rabatten är fortfarande en lönemetodändring](/help/troubleshooting/payments/magento-2-4-2-b2b-discount-remains-pay-method-change.md)
       * [Adobe Commerce 2.4.2: Betalningen till Braintree Venmo fungerar inte](/help/troubleshooting/payments/magento-2-4-2-braintree-venmo-payment-does-not-work.md)
       * [Betalningsmetoder som inte visas vid utcheckning med flera adresser](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
       * [EU-kunder kan inte slutföra betalningar](/help/troubleshooting/payments/eu-customers-cannot-complete-payments.md)
-      * [PayPal-gateway avvisade begäran - dubblettfakturautleverans](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md)
       * [Adobe Commerce 2.4.0: Klarna On-Site Messaging - tomma sidor](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
-      * [Felsök installationen av betaltjänster](/help/troubleshooting/payments/payservices-install.md)
    * Storefront {#storefront}
       * [Adobe Commerce 2.4.0: fel vid visning av beställningar](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce lokal 2.4.2: produktbild saknas](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
@@ -96,7 +90,6 @@ ht-degree: 0%
    * Installation och uppgradering {#installation-and-upgrade}
       * [[!UICONTROL Recommendations] [!DNL JS] fel efter uppgradering till Adobe Commerce version 2.4.5](/help/troubleshooting/installation-and-upgrade/recommendations-js-errors-after-upgrade-to-adobe-commerce-version-2-4-5.md)
       * [Installationen av [!DNL B2B] 1.4.0 misslyckas på Adobe Commerce 2.4.6-p1 lokalt](/help/troubleshooting/installation-and-upgrade/b2b-1-4-0-installation-fails-on-adobe-commerce-2-4-6-p1-on-premises.md)
-      * [Minska utgångna&quot;oauth_tokens&quot; före uppgradering 2.4.6](/help/troubleshooting/installation-and-upgrade/reduce-expired-oauth-tokens-before-2-4-6-upgrade.md)
       * [Kan inte installera med nginx](/help/troubleshooting/installation-and-upgrade/cannot-install-using-nginx.md)
       * [Önsklistefel vid uppgradering till Adobe Commerce version 2.3.4-p1 eller 2.3.5](/help/troubleshooting/installation-and-upgrade/wishlist-error-during-upgrade-to-magento-versions-2-3-4-p1-or-2-3-5.md)
       * [Installationen av Adobe Commerce 2.4.0 misslyckas med inaktuell arkivcache](/help/troubleshooting/installation-and-upgrade/magento-2-4-0-known-issue-2-4-0-installation-fails-with-outdated-stores-cache.md)
@@ -111,7 +104,6 @@ ht-degree: 0%
       * [Installationen avbryts med cirka 70 %](/help/troubleshooting/installation-and-upgrade/installation-stops-at-about-70.md)
       * [Adobe Commerce upgrade 2.4.3, 2.3.7-p1 PHP Fatal error Hotfix](/help/troubleshooting/installation-and-upgrade/hotfix-unsupported-php8-command-in-adobe-commerce-2-4-3.md)
       * [Adobe Commerce 2.4.0: undantag under installationen av B2B 1.2.0](/help/troubleshooting/installation-and-upgrade/magento-2-4-0-known-issue-exception-during-b2b-1-2-0-install.md)
-      * [Felsöka fel i verktyg för uppgraderingskompatibilitet](/help/troubleshooting/installation-and-upgrade/uct-segmentation-fault-error.md)
       * [Slut på minne under installation eller uppgradering](/help/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade.md)
       * [Uppgradering till B2B 1.5.2 misslyckas med SQL-syntaxfel eftersom funktionen REGEXP_LIKE saknas](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
       * [Prestandaproblem i moduluppgraderingen Magento_Company efter uppdatering av B2B 1.5.2](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
@@ -132,8 +124,6 @@ ht-degree: 0%
       * [Konfigurationsfilen saknas eller har ändrats](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-fel 60: SSL-certifikatet har upphört att gälla](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
       * [Felsöka produktrekommendationsmodulen i Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
-      * [Radera filer säkert när det inte finns tillräckligt med utrymme på disken i Adobe Commerce i molninfrastrukturen](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md)
-      * [robots.txt har inte uppdaterats eller standardinställningar visas](/help/troubleshooting/miscellaneous/robots-txt-not-updated-or-displaying-default-settings.md)
       * [Felsök fullständigt /tmp-paket för Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md)
       * [Okänd modul, Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
       * [Problem med beredskapskontroll av kron](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
@@ -180,7 +170,6 @@ ht-degree: 0%
       * [Ändringar av kategorier sparas inte](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
       * [Problem med Adobe Commerce 2.4.0 - Export Tax Rates fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Magento Order Management System (OMS) för Adobe Commerce-bearbetningsfel](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
-      * [Långsam prestanda på grund av icke-cachelagrade sidor](/help/troubleshooting/miscellaneous/slow-performance-due-to-non-cacheable-pages.md)
       * [Cachelagrade bilder läses inte in efter 2.2.X- till 2.3.X-uppgradering](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
       * [504 gatewaytimeout-fel när en kategori sparas med 1k+-produkter](/help/troubleshooting/miscellaneous/504-gateway-time-out-error-when-saving-a-category-with-1k-products.md)
       * [Felmeddelande när webbplatser läggs till i säkerhetsgenomsökningen](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
@@ -217,11 +206,8 @@ ht-degree: 0%
       * [Manuell orderexport till MOM misslyckas. Knappen Exportera ordning returnerar HTTP 404-fel](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio: webbläsaren litar inte på det SSL-certifikat som genererats](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [Felsökning av 503-fel orsakad av att standardinställningarna för lack måste ändras](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
-      * [Dirigera om till överordnad miljö vid åtkomst till den nya integreringsmiljön](/help/troubleshooting/miscellaneous/redirect-to-parent-environment-when-accessing-new-integration-environment.md)
-      * [robots.txt ger 404 fel Adobe Commerce i molninfrastruktur 2.3.x](/help/troubleshooting/miscellaneous/robots-txt-gives-404-error-magento-commerce-cloud-2-3-x.md)
       * [Begränsad administratörsåtkomst som orsakar prestandaproblem](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Kravuppgifter låser uppgifter från andra grupper](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
-      * [Låsta (nedtonade) fält i Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md)
       * [Det går inte att ändra sökmotorn med Commerce Admin (sökmotormenyn är inte tillgänglig)](/help/troubleshooting/miscellaneous/cannot-change-search-engine-using-magento-admin-search-engine-menu-is-inaccessible.md)
       * [Installations-xdebug för högsta funktionskkapslingsnivåfel](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [Det går inte att spara enheten Adobe Commerce backend](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
@@ -279,7 +265,6 @@ ht-degree: 0%
       * [Fel vid rensning av cache i Commerce Admin](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
       * [Adobe Commerce 2.4.1: tom sida när ett digitalt Page Builder-formulär har sparats](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [Adobe Commerce-moln: omindexering avslutas med stoppat meddelande](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
-      * [Uppgradera till DHL-schema version 10.0 för att fortsätta erbjuda DHL-leverans](/help/troubleshooting/miscellaneous/upgrade-to-v10-dhl-schema-to-continue-using-dhl-as-a-carrier.md)
       * [Adobe Commerce statuskolumn saknar exporterad produkt, CSV-fil](/help/troubleshooting/miscellaneous/adobe-commerce-status-column-missing-exported-products-csv-file.md)
       * [Kan inte komma åt New Relic på Adobe Commerce molnkonto](/help/troubleshooting/miscellaneous/cannot-access-new-relic-for-adobe-commerce-cloud-account.md)
       * [Moduler saknas i Adobe Commerce 2.4.4](/help/troubleshooting/miscellaneous/what-happened-modules-bundled-adobe-commerce.md)
@@ -308,7 +293,6 @@ ht-degree: 0%
       * [Distributionsfel vid implementering av felaktiga filer](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [Distributionsfel där korrigeringar inte hittas](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [Distributionen misslyckades vid cachetömning: &quot;Det finns inga definierade kommandon i namnutrymmesfelet &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
-      * [Distributionen misslyckas med rätt åtkomstnycklar i env:COMPOSER_AUTH eller auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Kända fel {#known-issues-patches-attached}
       * [Adobe Commerce 2.4.7-p4 [!DNL HIPAA] 1.2.0-kompatibilitetspaket Hotfix](/help/troubleshooting/known-issues-patches-attached/hotfix-for-hipaa-package-1-2-0-compatibility-with-adobe-commerce-2-4-7-p4.md)
       * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB25-08]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
