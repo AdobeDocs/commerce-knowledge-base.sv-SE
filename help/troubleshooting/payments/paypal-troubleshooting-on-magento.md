@@ -41,7 +41,7 @@ Om betalningsmetoden PayPal innefattar API med faktureringsavtal och referenstra
 
 Se följande artiklar:
 
-* [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) i vår kunskapsbas för support.
+* [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26838) i vår kunskapsbas för support.
 * [Ändra inkrement-ID för ny lagringsenhet](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) i vår kunskapsbas för support.
 
 ## Kontakta supporten för att samla in avancerade betalningsloggar

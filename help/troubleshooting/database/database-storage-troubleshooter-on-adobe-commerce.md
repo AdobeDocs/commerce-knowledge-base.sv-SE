@@ -30,7 +30,7 @@ Om du har något av de symtom som beskrivs ovan bör du kontrollera status på d
 
 Är IUse% > 90%?
 
-a. JA - Detta beror på att det finns för många filer. Granska stegen för att ta bort filer på ett säkert sätt i [Ta bort filer när det inte finns tillräckligt med diskutrymme, Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26889). Fortsätt till [Steg 2](#step-2) när du har slutfört de här stegen. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill begära mer utrymme.\
+a. JA - Detta beror på att det finns för många filer. Granska stegen för att ta bort filer på ett säkert sätt i [Ta bort filer när det inte finns tillräckligt med diskutrymme, Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26889). Fortsätt till [Steg 2](#step-2) när du har slutfört de här stegen. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill begära mer utrymme.\
 b. NEJ - Kontrollera utrymmet. Kör `df -h | grep mysql` och sedan `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i katalogerna `/tmp` och `/data/mysql`. Fortsätt till [Steg 3](#step-3).
 
 +++
@@ -93,4 +93,4 @@ b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento
 
 ## Relaterad läsning
 
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

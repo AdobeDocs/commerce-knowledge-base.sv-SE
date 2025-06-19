@@ -26,7 +26,7 @@ Berörda produkter och versioner:
 
 ## Orsak
 
-Om indexerarna är [konfigurerade att uppdateras av schema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) kan problemet bero på en eller flera tabeller där ändringsloggarna är för stora eller att MySQL-utlösare inte har konfigurerats.
+Om indexerarna är [konfigurerade att uppdateras av schema](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) kan problemet bero på en eller flera tabeller där ändringsloggarna är för stora eller att MySQL-utlösare inte har konfigurerats.
 
 ### Stora ändringsloggtabeller
 
@@ -71,7 +71,7 @@ Använd följande kommando för att utföra den här åtgärden.
 
 >[!WARNING]
 >
->Innan du byter indexeringsläge rekommenderar vi att du sätter din webbplats i [underhållsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) och [inaktiverar cron-jobb](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) för att undvika databaslås.
+>Innan du byter indexeringsläge rekommenderar vi att du sätter din webbplats i [underhållsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=sv-SE#maintenance-mode) och [inaktiverar cron-jobb](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=sv-SE#disable-cron-jobs) för att undvika databaslås.
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
@@ -83,6 +83,6 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## Relaterad läsning
 
-* [[!DNL MySQL] tabeller är för stora](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945) i vår kunskapsbas för support
+* [[!DNL MySQL] tabeller är för stora](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26945) i vår kunskapsbas för support
 * [Indexering: [!DNL Mview]](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) i utvecklardokumentationen
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

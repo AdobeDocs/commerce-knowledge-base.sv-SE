@@ -42,4 +42,4 @@ Sökmotorkonfigurationen är låst i filen `app/etc/env.php` eller så definiera
 
 ## Relaterad läsning
 
-* [Låsta (nedtonade) fält i Commerce Admin](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879) i Commerce i molninfrastrukturguiden.
+* [Låsta (nedtonade) fält i Commerce Admin](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26879) i Commerce i molninfrastrukturguiden.
