@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: dc2149f886d46826610f2f74b48ef9060a4ff376
+source-git-commit: 9defec16bbe62e13320d20fcbd0b5e65e946d9f7
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3257'
 ht-degree: 0%
 
 ---
@@ -253,7 +253,6 @@ ht-degree: 0%
       * [Nya miljöer som placerats under produktion när de trycks ned från Git](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Fel efter inloggning på Commerce Admin](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [Tidsgräns för Magento Order Management System (OMS) för Adobe Commerce](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
-      * [Felaktig adress för leverans hämtas](/help/troubleshooting/miscellaneous/drop-shipping-picks-up-wrong-address.md)
       * [Fel vid rensning av cache i Commerce Admin](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
       * [Adobe Commerce 2.4.1: tom sida när ett digitalt Page Builder-formulär har sparats](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [Adobe Commerce-moln: omindexering avslutas med stoppat meddelande](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
