@@ -4,9 +4,9 @@ description: Du kan lösa problem med avancerad rapportering på Adobe Commerce 
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 842c329b5d8bacf72ac689412fde5a5d76d16e85
+source-git-commit: 50262a7b98091d4388668c984cfd8237bd534bad
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,10 @@ Du kan lösa problem med avancerad rapportering på Adobe Commerce med hjälp av
 
 +++**Uppfyller din webbplats avancerade rapporteringskrav?**
 
-Du har en 404-felsida när du använder Avancerad rapportering. Uppfyller webbplatsen [avancerade rapporteringskrav](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements)?
+Du har en 404-felsida när du använder Avancerad rapportering. Uppfyller webbplatsen [avancerade rapporteringskrav](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements)?
 
 a. JA - Fortsätt till [Steg 2](#step-2).\
-b. NEJ - Slutför de avancerade rapporteringskraven för din webbplats genom att följa stegen i [Avancerade rapporteringskrav](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). Fortsätt sedan till [Steg 2](#step-2).
+b. NEJ - Slutför de avancerade rapporteringskraven för din webbplats genom att följa stegen i [Avancerade rapporteringskrav](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). Fortsätt sedan till [Steg 2](#step-2).
 
 +++
 
@@ -32,7 +32,7 @@ b. NEJ - Slutför de avancerade rapporteringskraven för din webbplats genom att
 
 Används flera basvalutor (i order och konfiguration)? Kör det här [!DNL SQL]-kommandot för att hämta den aktuella konfigurationen: `SELECT value FROM core_config_data WHERE path = 'currency/options/base';`.
 
-a. JA - Om frågan returnerar flera rader kan du inte använda Avancerad rapportering eftersom vi bara har stöd för en valuta.\
+a. JA - Om det finns flera rader returnerade av frågan kan du inte använda **[!UICONTROL Advanced Reporting]** eftersom vi bara har stöd för en valuta. Du måste använda [Adobe Commerce Intelligence](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/guide-overview). Kontakta ditt kontoteam för att konfigurera detta.
 b. NEJ - Utdata visar endast en valuta. Exempel: `USD`. Har flera basvalutor använts (i order)? Kör det här [!DNL SQL]-kommandot för att hämta historikorderdata:\
 `SELECT DISTINCT base_currency_code FROM sales_order;`.
 **Obs! Det här kommandot kräver en fullständig tabellsökning, så för tabeller med ett stort antal poster kan detta påverka prestanda medan frågan kör** för att hämta historiska orderdata.
@@ -44,7 +44,7 @@ Om flera basvalutor har använts kan du inte använda avancerad rapportering eft
 
 +++**Använder du en delad databaslösning?**
 
-Använder du [delad databaslösning](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/storage/split-db/multi-master)?
+Använder du [delad databaslösning](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master)?
 
 a. JA - Använd korrigeringen **MDVA-26831** i Advanced Reporting 404-felet för delad databaslösning och rensning av cache. Vänta i 24 timmar tills jobbet körs igen och försök igen.\
 b. NEJ - Fortsätt till [steg 4](#step-4).
@@ -55,10 +55,10 @@ b. NEJ - Fortsätt till [steg 4](#step-4).
 
 +++**Är avancerad rapportering aktiverat?**
 
-Kontrollera **Admin** > **Lagrar** > **Inställningar** > **Konfiguration** > **Allmänt** > **Avancerad rapportering**. Granska [Avancerad rapportering: Aktivera avancerad rapportering](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) om du vill ha mer information.
+Kontrollera **Admin** > **Lagrar** > **Inställningar** > **Konfiguration** > **Allmänt** > **Avancerad rapportering**. Granska [Avancerad rapportering: Aktivera avancerad rapportering](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) om du vill ha mer information.
 
 a. JA - Fortsätt till [steg 5](#step-5).\
-b. NEJ - [Aktivera avancerad rapportering](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) och spara, och vänta i 24 timmar på att Adobe Commerce och Advanced Reporting ska synkroniseras. Kontrollera om dina data nu läses in. Om den gör det har du löst problemet. Om det inte fortsätter till [steg 5](#step-5).
+b. NEJ - [Aktivera avancerad rapportering](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) och spara, och vänta i 24 timmar på att Adobe Commerce och Advanced Reporting ska synkroniseras. Kontrollera om dina data nu läses in. Om den gör det har du löst problemet. Om det inte fortsätter till [steg 5](#step-5).
 
 +++
 
@@ -81,9 +81,9 @@ Kontrollera räknarvärdet i flaggtabellen genom att köra den här frågan: ``S
 
 a. JA - Gör följande: 1. Kör frågan nedan:\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
-2\. [Inaktivera och aktivera modulen för avancerad rapportering](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) i inställningarna och [auktorisera token igen](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
+2\. [Inaktivera och aktivera modulen för avancerad rapportering](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) i inställningarna och [auktorisera token igen](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 3\. Vänta i 24 timmar tills Adobe Commerce och Advanced Reporting har synkroniserats. Om du fortfarande inte kan se data i avancerad rapportering [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NO - Om frågan inte returnerar något, gör du så här: 1. [Inaktivera och aktivera modulen för avancerad rapportering](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) i inställningarna och [auktorisera token igen](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
+b. NO - Om frågan inte returnerar något, gör du så här: 1. [Inaktivera och aktivera modulen för avancerad rapportering](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) i inställningarna och [auktorisera token igen](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 2\. Vänta i 24 timmar tills Adobe Commerce och Advanced Reporting har synkroniserats. Om du fortfarande inte kan se data i avancerad rapportering [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
@@ -145,7 +145,7 @@ b. NEJ - Fortsätt till [steg 10](#step-10).
 
 Exempel: I tabellen `cron_schedule` ser du felet *Filen &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0 kan inte tas bort*. Varning!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0?lang=en): Ingen sådan fil eller katalog*
 
-a. JA - Använd ACSD-50165-korrigeringen i [Det går inte att ta bort filen. Varning!unlink: Det finns inget sådant fil- eller katalogfel från Admin](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26887), vänta 24 timmar tills jobbet körs igen och försök sedan igen.\
+a. JA - Använd ACSD-50165-korrigeringen i [Det går inte att ta bort filen. Varning!unlink: Det finns inget sådant fil- eller katalogfel från Admin](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26887), vänta 24 timmar tills jobbet körs igen och försök sedan igen.\
 b. NEJ - Fortsätt till [steg 11](#step-11).
 
 +++
@@ -165,4 +165,4 @@ b. NEJ - [skicka en supportanmälan](/help/help-center-guide/help-center/magento
 
 ## Relaterad läsning
 
-[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
