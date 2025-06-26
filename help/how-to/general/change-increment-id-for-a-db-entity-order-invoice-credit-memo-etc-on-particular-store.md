@@ -3,9 +3,9 @@ title: Ändra öknings-ID för en databasenhet (order, faktura, kreditnota osv.)
 description: I den här artikeln beskrivs hur du ändrar tilläggs-ID för en Adobe Commerce-databasentitet (order, faktura, kreditnota osv.) på en viss Adobe Commerce-butik med SQL-satsen "ALTER TABLE".
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+source-git-commit: e33d0bf6c857d0d54ec1373db79910d78296b054
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,19 @@ ht-degree: 0%
 
 I den här artikeln beskrivs hur du ändrar tilläggs-ID för en Adobe Commerce-databasentitet (order, faktura, kreditnota osv.) på en viss Adobe Commerce-butik med hjälp av SQL-satsen `ALTER TABLE`.
 
+>[!NOTE]
+>
+>I den här artikeln beskrivs bara hur du ändrar det numeriska startvärdet för öknings-ID för order, fakturor, kreditnotor osv.
+>
+>Det handlar inte om hur du ändrar ID-formatet för ökning eller lägger till anpassade prefix/suffix (t.ex. ändrar 1000001 till ORDER-10000001, MYSTORE-1000001, 2A1000000 1 osv.)
+>
+>Om du vill anpassa formatet behöver du ett anpassat tillägg eller utvecklingsarbete.
+
 ## Berörda versioner
 
 * Lokal Adobe Commerce: 2.x.x
 * Adobe Commerce i molninfrastruktur: 2.x.x
-* MySQL: any [supported version](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements)
+* MySQL: any [supported version](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
 
 ## När behöver du ändra ID för ökning (fall)
 
@@ -29,12 +37,12 @@ Du kan behöva ändra ID:t för ökning för nya DB-entiteter i följande fall:
 
 >[!NOTE]
 >
->Du kan också åtgärda problemet med betalningsgateway för PayPal genom att tillåta flera betalningar per faktura-ID i PayPals Inställningar för betalningsmottagning. Se [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26838) i vår kunskapsbas för support.
+>Du kan också åtgärda problemet med betalningsgateway för PayPal genom att tillåta flera betalningar per faktura-ID i PayPals Inställningar för betalningsmottagning. Se [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) i vår kunskapsbas för support.
 
 ## Krav på steg
 
 1. Sök efter butiker och enheter som det nya tilläggs-ID:t ska ändras för.
-1. [Anslut](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) till din MySQL-databas. För Adobe Commerce i molninfrastruktur måste du först [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
+1. [Anslut](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) till din MySQL-databas. För Adobe Commerce i molninfrastruktur måste du först [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Kontrollera det aktuella auto\_increment-värdet för entitetssekvenstabellen med följande fråga:
 
 ```sql
@@ -53,7 +61,7 @@ Om värdet för kolumnen `auto_increment` är *1234* får nästa ordning som pla
 
 ### Relaterad dokumentation
 
-* [Konfigurera en MySQL-fjärrdatabasanslutning](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) i utvecklardokumentationen.
+* [Konfigurera en MySQL-fjärrdatabasanslutning](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) i utvecklardokumentationen.
 
 ## Uppdatera enhet för att ändra öknings-ID
 
@@ -87,5 +95,5 @@ Innan vi kör `ALTER TABLE`-frågan i Adobe Commerce produktionsmiljö i molninf
 ## Relaterad dokumentation
 
 * [Skapa databasdump i Cloud](/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas för support
-* [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE) i utvecklardokumentationen
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) i utvecklardokumentationen
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
