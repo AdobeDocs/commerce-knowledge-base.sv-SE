@@ -44,7 +44,7 @@ Två metoder för att kontrollera när den senaste distributionen utfördes:
 
 Om distributionen har slutförts förnyas [!DNL SSL certificate] automatiskt.
 
-Om distributionen misslyckas och du behöver hjälp med att lösa den, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Om distributionen misslyckas och du behöver hjälp med att lösa den, [skickar du en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket).
 
 ### Metod 1: Använd [!DNL magento-cloud] CLI {#meth2}
 
@@ -59,9 +59,9 @@ Gå till, till exempel: `https://demo.magento.cloud/#/projects/<project>/environ
 I vår utvecklardokumentation:
 
 * [Cloud Manager API: SSLCertificates](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/SSLCertificates)
-* [Konfigurera snabbt: Etablera SSL-/TLS-certifikat](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
+* [Konfigurera snabbt: Etablera SSL-/TLS-certifikat](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
 
 I vår kunskapsbas:
 
-* [Information om förfallodatum för anpassat SSL-certifikat](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.html)
-* [SSL-certifikat (TLS) för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html)
+* [Information om förfallodatum för anpassat SSL-certifikat](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.html?lang=sv-SE)
+* [SSL-certifikat (TLS) för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html?lang=sv-SE)
