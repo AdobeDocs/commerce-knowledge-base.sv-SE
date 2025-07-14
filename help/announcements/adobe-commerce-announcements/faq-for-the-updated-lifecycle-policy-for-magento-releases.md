@@ -4,7 +4,7 @@ description: 'Adobe Commerce tillhandahåller kvalitetskorrigeringar för en min
 exl-id: 4aa601d0-ee1d-4f1f-a684-188772a58dd1
 feature: Compliance, Support
 role: Admin
-source-git-commit: 2898089896cc2cdc88110a999564669341a52136
+source-git-commit: f11596ea844fead42141c7e1fea586b2a11f757a
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerce tillhandahåller kvalitetskorrigeringar för en mindre release i minst 12 månader från det allmänna tillgänglighetsdatumet för nästa mindre programversion. Det sätt på vilket vi tillhandahåller kvalitetskorrigeringar under den här perioden ändras:
 
 * **Tidigare princip:** Kvalitetskorrigeringarna till föregående rad som finns i EOS-fönstret för 12 månader levereras i vår kvartalsvisa korrigeringsutgåva, vilket gör att kvartalsvisa korrigeringar blir en kombination av säkerhet + kvalitet.
-* **Ny princip:** Från och med 2.4 som den senaste delversionsraden kommer versionsfixar för föregående rad som stöds (2.3) att flyttas till enbart säkerhet. Vi kommer fortfarande att leverera kvalitetskorrigeringar för den föregående raden som stöds under 12-månadersperioden efter att en delversion (som 2.4) och efterföljande mindre versionsrader släppts. Dessa kommer dock att göras tillgängliga via [QPT-verktyget ](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) (Quality Patches Tool) och fokuseras endast på kritiska problem.
+* **Ny princip:** Från och med 2.4 som den senaste delversionsraden kommer versionsfixar för föregående rad som stöds (2.3) att flyttas till enbart säkerhet. Vi kommer fortfarande att leverera kvalitetskorrigeringar för den föregående raden som stöds under 12-månadersperioden efter att en delversion (som 2.4) och efterföljande mindre versionsrader släppts. Dessa kommer dock att göras tillgängliga via [QPT-verktyget ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) (Quality Patches Tool) och fokuseras endast på kritiska problem.
 
 ## När börjar denna policy gälla?
 
@@ -38,7 +38,7 @@ Adobe kommer även i fortsättningen att ha säkerhetsrelaterade versioner för 
 
 ## Vad är Quality Patches Tool?
 
-Se artikeln [Quality Patches Tool som släpps: ett nytt verktyg för självbetjäning av kvalitetspatchar](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) i vår kunskapsbas.
+Se artikeln [Quality Patches Tool som släpps: ett nytt verktyg för självbetjäning av kvalitetspatchar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) i vår kunskapsbas.
 
 ## Vem bör överväga att använda den här nya policyn?
 
@@ -50,7 +50,7 @@ I slutändan bör alla affärsmän fortfarande prioritera planeringen för att i
 
 ## Hur får jag kvalitetskorrigeringar för mindre versioner som stöds och som inte är den senaste raden?
 
-Korrigeringar blir tillgängliga via [kvalitetskorrigeringsverktyget](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patche).
+Korrigeringar blir tillgängliga via [kvalitetskorrigeringsverktyget](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
 
 ## Hur får jag tag i kvalitetsfixar på den senaste raden?
 
