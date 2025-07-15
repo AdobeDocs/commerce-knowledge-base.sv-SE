@@ -78,7 +78,7 @@ Monteringen `/data/mysql` kan bli full på grund av en rad problem, som att det 
 
 Det finns ett omedelbart steg som du kan ta för att få [!DNL MySQL] tillbaka på spår (eller förhindra att den fastnar): frigör utrymme genom att tömma stora tabeller.
 
-Men en långsiktig lösning skulle allokera mer utrymme och följa [Bästa praxis för databaser](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html), inklusive aktivering av funktionen [Arkiv för beställning/faktura/leverans](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+Men en långsiktig lösning skulle allokera mer utrymme och följa [Bästa praxis för databaser](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=sv-SE), inklusive aktivering av funktionen [Arkiv för beställning/faktura/leverans](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 Här följer information om både snabba och långsiktiga lösningar.
 
@@ -124,7 +124,7 @@ Kontrollera om det finns stora `ibtmp1`-filer på `/data/mysql` i varje nod: det
 
 >[!WARNING]
 >
->Vi rekommenderar starkt att du skapar en säkerhetskopia av databasen innan du utför några ändringar och undviker dem under höga belastningsperioder på platsen. Se [Dumpa databasen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) i utvecklardokumentationen.
+>Vi rekommenderar starkt att du skapar en säkerhetskopia av databasen innan du utför några ändringar och undviker dem under höga belastningsperioder på platsen. Se [Dumpa databasen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) i utvecklardokumentationen.
 
 Kontrollera om det finns stora tabeller och tänk på om någon av dem kan tömmas. Gör detta på den primära (käll-) noden.
 
@@ -132,7 +132,7 @@ Tabeller med rapporter kan till exempel oftast tömmas. Mer information om hur d
 
 Om det inte finns några stora rapporttabeller bör du överväga att tömma `_index`-tabeller, bara för att returnera Adobe Commerce-programmet på rätt spår. `index_price` tabeller skulle vara de bästa kandidaterna. Exempel: `catalog_category_product_index_storeX` tabeller, där X kan ha värden från &quot;1&quot; till det maximala antalet arkiv. Tänk på att du måste indexera om för att återställa data i dessa tabeller, och om det gäller stora kataloger kan omindexeringen ta lång tid.
 
-När du har tömt dem väntar du på att wsrep-synkroniseringen ska slutföras. Nu kan du skapa säkerhetskopior och utföra fler viktiga steg för att lägga till mer utrymme, som att allokera/köpa mer utrymme och aktivera funktionen [Arkiv för beställning/faktura/leverans](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+När du har tömt dem väntar du på att wsrep-synkroniseringen ska slutföras. Nu kan du skapa säkerhetskopior och utföra fler viktiga steg för att lägga till mer utrymme, som att allokera/köpa mer utrymme och aktivera funktionen [Arkiv för beställning/faktura/leverans](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ### Kontrollera inställningar för binär loggning
 
@@ -148,7 +148,7 @@ Om du inte har tillgång till serverinställningarna för [!DNL MySQL] ber du su
    mysql -h127.0.0.1 -p`php -r "echo (include('app/etc/env.php'))['db']['connection']['default']['password'];"` -u`whoami` `whoami`
    ```
 
-   Detaljerade anvisningar finns i [Ansluta och köra frågor mot Adobe Commerce-databasen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/remote-db-connection-execute-queries).
+   Detaljerade anvisningar finns i [Ansluta och köra frågor mot Adobe Commerce-databasen](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/backend-development/remote-db-connection-execute-queries).
 
 1. Sök efter oanvänt utrymme:
 
@@ -167,7 +167,7 @@ Om du inte har tillgång till serverinställningarna för [!DNL MySQL] ber du su
    Kontrollera utdata för att se om det finns minne som har allokerats men inte används. Detta inträffar när data har tagits bort från en tabell, men minnet fortfarande är allokerat till den tabellen.
 
 
-1. Placera platsen i underhållsläge och stoppa kroniska jobb så att det inte sker några interaktioner i databasen. Anvisningar finns i [Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) och [Inaktivera cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
+1. Placera platsen i underhållsläge och stoppa kroniska jobb så att det inte sker några interaktioner i databasen. Anvisningar finns i [Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) och [Inaktivera cron-jobb](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
 1. Frigör det utrymmet genom att återskapa tabellen med följande kommando (exempel: använd tabellen ovan med det mest oanvända utrymmet):
 
    ```sql
@@ -182,7 +182,7 @@ Om du inte har tillgång till serverinställningarna för [!DNL MySQL] ber du su
    ```
 
 
-1. [Inaktivera underhållsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#enable-or-disable-maintenance-mode-1) och [Aktivera cron-jobb](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
+1. [Inaktivera underhållsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#enable-or-disable-maintenance-mode-1) och [Aktivera cron-jobb](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
 
 
 ### Allokera/köp mer utrymme
@@ -196,4 +196,4 @@ Om du har nått din utrymmesgräns och fortfarande har problem med lite utrymme 
 
 ## Relaterad läsning
 
-[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+[Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
