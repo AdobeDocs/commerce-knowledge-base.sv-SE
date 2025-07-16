@@ -3,9 +3,10 @@ title: Ökad körningstid för asynkrona webbslutpunkter efter APSB25-08-säkerh
 description: Den här artikeln innehåller en snabbkorrigering för problemet där POST rest/all/async/bulk/V1/products begär in 1000+ poster får en avsevärt ökad körningstid efter att APSB25-08-säkerhetsuppdateringen har tillämpats.
 feature: Security, Cache, REST, Products, Customers
 role: Admin, Developer
-source-git-commit: fce7f860b9fddd694b311ffc4acd56a48c06e14b
+exl-id: 784a48cb-1ef1-432b-b09f-ebcbb9bebf01
+source-git-commit: f0c2e20e0bd6dab713be59c1c686ee2948445bd4
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -55,8 +56,8 @@ Du löser problemet genom att använda [AC-14078-2-4x-comser-patch.zip](assets/A
 
 ## Så här sätter du på plåstret
 
-Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=sv-SE) i vår kunskapsbas för support för instruktioner.
+Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) i vår kunskapsbas för support för instruktioner.
 
 ## Relaterad läsning
 
-* [Säkerhetsuppdatering för Adobe Commerce - APSB25-08](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
+* [Säkerhetsuppdatering för Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
