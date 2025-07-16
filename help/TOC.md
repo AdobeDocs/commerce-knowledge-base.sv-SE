@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 9defec16bbe62e13320d20fcbd0b5e65e946d9f7
+source-git-commit: 86fcde85e7e751125c47f3bc3693b8155d1e972f
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3220'
 ht-degree: 0%
 
 ---
@@ -294,10 +294,6 @@ ht-degree: 0%
       * [Felsöker rotering av krypteringsnyckel: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
       * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-40] har ändrats så att den innehåller isolerad korrigering för  [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [Migrering av [!DNL UPS]-leveransmetodintegrering från [!DNL SOAP] till [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
-      * [[!DNL USPS] Stöd för snabbkorrigering för leveransmetod för markförmåner för AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
-      * [Adobe Commerce 2.4.3-p2 - 2.4.5 säkerhetsuppdatering för CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
-      * [Adobe Commerce 2.4.4: Det går inte att skapa partiella fakturor](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
-      * [Avancerad sökning som inte visar de mest relevanta resultaten](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [Fel vid filtrering av order i Admin](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [Användare kan inte lägga till produkten i kundvagnen om inget har valts i Tillåt länder](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
       * [URL för Adobe Commerce Admin - adress visas](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
