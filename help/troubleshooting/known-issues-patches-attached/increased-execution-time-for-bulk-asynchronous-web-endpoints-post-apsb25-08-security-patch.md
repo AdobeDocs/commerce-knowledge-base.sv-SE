@@ -56,8 +56,8 @@ Du löser problemet genom att använda [AC-14078-2-4x-comser-patch.zip](assets/A
 
 ## Så här sätter du på plåstret
 
-Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) i vår kunskapsbas för support för instruktioner.
+Zippa upp filen och se [Använda en kompositkorrigering från Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=sv-SE) i vår kunskapsbas för support för instruktioner.
 
 ## Relaterad läsning
 
-* [Säkerhetsuppdatering för Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
+* [Säkerhetsuppdatering för Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27149)
