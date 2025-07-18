@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 4d3f571c55feb4752037429b9708e71dcf2c571b
+source-git-commit: 2d9b1c0934e7f2646462a73a786e126ab29719b0
 workflow-type: tm+mt
-source-wordcount: '3164'
+source-wordcount: '3193'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 0%
       * [Installationskommandot för Composer åsidosätter .gitignore-filen, Adobe Commerce](/help/troubleshooting/installation-and-upgrade/custom-gitignore-file-overridden.md)
       * [Vid installationen visas en varning om PHP-datum](/help/troubleshooting/installation-and-upgrade/during-installation-php-date-warning.md)
       * [Fel vid reflektionsundantag vid installation](/help/troubleshooting/installation-and-upgrade/during-installation-reflection-exception-error.md)
-      * [Områdeskoden anges inte som ett fel vid installation:uppgradering](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
+      * [Områdeskoden anges inte som ett fel när installationsprogrammet körs](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
       * [Installationen misslyckades; det går inte att skapa install.log](/help/troubleshooting/installation-and-upgrade/installation-fails-cannot-create-install-log.md)
       * [Undantag under installationen](/help/troubleshooting/installation-and-upgrade/exceptions-during-installation.md)
       * [Fel vid installation av valfria exempeldata](/help/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data.md)
@@ -286,10 +286,14 @@ ht-degree: 0%
       * [Distributionen misslyckades vid cachetömning: &quot;Det finns inga definierade kommandon i namnutrymmesfelet &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * Kända fel {#known-issues-patches-attached}
       * [Vägledning om hur du skyddar din butik och roterar krypteringsnycklar: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
-      * [Fel vid filtrering av order i Admin](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
-      * [Användare kan inte lägga till produkten i kundvagnen om inget har valts i Tillåt länder](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
-      * [URL för Adobe Commerce Admin - adress visas](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
-      * [Administratören kan inte skapa en beställning/beställning när Braintree-betalning är aktiverat](/help/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.md)
+      * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
+      * [Felsöker rotering av krypteringsnyckel: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
+      * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-40] har ändrats så att den innehåller isolerad korrigering för  [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
+      * [Migrering av [!DNL UPS]-leveransmetodintegrering från [!DNL SOAP] till [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
+      * [[!DNL USPS] Stöd för snabbkorrigering för leveransmetod för markförmåner för AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
+      * [Adobe Commerce 2.4.3-p2 - 2.4.5 säkerhetsuppdatering för CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
+      * [Adobe Commerce 2.4.4: Det går inte att skapa partiella fakturor](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
+      * [Avancerad sökning som inte visar de mest relevanta resultaten](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [Paket som nedgraderats efter uppgradering från 2.4.4 till 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
       * [E-postbeställning har skickats från serverns e-postadress](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [Adobe Commerce 2.4.6 error placing order from Admin panel](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
