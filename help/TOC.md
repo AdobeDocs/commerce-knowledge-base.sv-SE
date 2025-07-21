@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 2d9b1c0934e7f2646462a73a786e126ab29719b0
+source-git-commit: 3ac35387a6ccf5b8ee721f1cc3777f20adb919f0
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3128'
 ht-degree: 0%
 
 ---
@@ -286,14 +286,6 @@ ht-degree: 0%
       * [Distributionen misslyckades vid cachetömning: &quot;Det finns inga definierade kommandon i namnutrymmesfelet &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * Kända fel {#known-issues-patches-attached}
       * [Vägledning om hur du skyddar din butik och roterar krypteringsnycklar: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
-      * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
-      * [Felsöker rotering av krypteringsnyckel: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
-      * [Säkerhetsuppdatering för Adobe Commerce - [!DNL APSB24-40] har ändrats så att den innehåller isolerad korrigering för  [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
-      * [Migrering av [!DNL UPS]-leveransmetodintegrering från [!DNL SOAP] till [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
-      * [[!DNL USPS] Stöd för snabbkorrigering för leveransmetod för markförmåner för AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
-      * [Adobe Commerce 2.4.3-p2 - 2.4.5 säkerhetsuppdatering för CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
-      * [Adobe Commerce 2.4.4: Det går inte att skapa partiella fakturor](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
-      * [Avancerad sökning som inte visar de mest relevanta resultaten](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [Paket som nedgraderats efter uppgradering från 2.4.4 till 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
       * [E-postbeställning har skickats från serverns e-postadress](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [Adobe Commerce 2.4.6 error placing order from Admin panel](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
