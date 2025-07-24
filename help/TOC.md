@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 15d38d9b0cb18536326c0afbb12b8a21eaee596c
+source-git-commit: 0569b4874400e0d313ad556cc7c07abfc7647368
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3013'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,6 @@ ht-degree: 0%
 * [Adobe Commerce Support Knowledge Base](/help/overview.md)
 * Supportverktyg {#support-tools}
    * [Supportverktyg - översikt](/help/support-tools/overview.md)
-   * Webbplatsövergripande analysverktyg {#site-wide-analysis-tool}
-      * [Site-Wide Analysis Tool från Adobe: översikt](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
-      * [Adobe Commerce Site-Wide Analysis Tool - rapport, frågor och svar](/help/support-tools/site-wide-analysis-tool/swat-faq.md)
 * Meddelanden {#announcements}
    * [Översikt över meddelanden](/help/announcements/overview.md)
    * Adobe Commerce Announcements {#commerce-announcements}
