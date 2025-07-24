@@ -17,11 +17,11 @@ Adobe Commerce erbjuder en mängd supportverktyg som hjälper dig att förbättr
 
 * Webbplatsövergripande analysverktyg
 
-   * [Webbplatsövergripande analysverktyg från Adobe: översikt](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro)
+   * [Webbplatsövergripande analysverktyg från Adobe: översikt](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/site-wide-analysis-tool/intro)
 
 * [!DNL Quality Patches Tool] (QPT)
 
-   * [Patchar tillgängliga i QPT-verktyget - översikt](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview)
+   * [Patchar tillgängliga i QPT-verktyget - översikt](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview)
 
      [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) (QPT) är ett verktyg som gör att du kan använda enskilda kvalitetspatchar som utvecklats av Adobe och Magento Open Source-communityn.
 
@@ -35,20 +35,20 @@ Adobe Commerce erbjuder en mängd supportverktyg som hjälper dig att förbättr
 
 * Observation för Adobe Commerce
 
-   * [Observera Adobe Commerce - översikt](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/observation-for-adobe-commerce/intro)
+   * [Observera Adobe Commerce - översikt](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/observation-for-adobe-commerce/intro)
 
 * Hanterade aviseringar om Adobe Commerce
-   * [Hanterade aviseringar på Adobe Commerce: Redis memory critical alert](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)
-   * [Hanterade aviseringar för Adobe Commerce: diskvarning](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)
-   * [Hanterade aviseringar för Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
-   * [Hanterade aviseringar för Adobe Commerce: Diskkritisk avisering](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert)
-   * [Hanterade aviseringar på Adobe Commerce: Redis Memory-varning](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
-   * [Hanterade aviseringar för Adobe Commerce: minnesvarning](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert)
-   * [Hanterade aviseringar på Adobe Commerce: CPU-kritisk avisering](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert)
-   * [Hanterade aviseringar på Adobe Commerce: minneskritisk avisering](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert)
-   * [Hanterade aviseringar för Adobe Commerce: ADOBE-kritisk avisering](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert)
-   * [Hanterade aviseringar på Adobe Commerce: MariaDB-aviseringar](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts)
-   * [Hanterade aviseringar för Adobe Commerce: Apdex-varning](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert)
-   * [Hanterade aviseringar för Adobe Commerce: CPU-varning](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert)
+   * [Hanterade aviseringar på Adobe Commerce: Redis memory critical alert](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)
+   * [Hanterade aviseringar för Adobe Commerce: diskvarning](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)
+   * [Hanterade aviseringar för Adobe Commerce](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
+   * [Hanterade aviseringar för Adobe Commerce: Diskkritisk avisering](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert)
+   * [Hanterade aviseringar på Adobe Commerce: Redis Memory-varning](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
+   * [Hanterade aviseringar för Adobe Commerce: minnesvarning](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert)
+   * [Hanterade aviseringar på Adobe Commerce: CPU-kritisk avisering](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert)
+   * [Hanterade aviseringar på Adobe Commerce: minneskritisk avisering](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert)
+   * [Hanterade aviseringar för Adobe Commerce: ADOBE-kritisk avisering](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert)
+   * [Hanterade aviseringar på Adobe Commerce: MariaDB-aviseringar](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts)
+   * [Hanterade aviseringar för Adobe Commerce: Apdex-varning](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert)
+   * [Hanterade aviseringar för Adobe Commerce: CPU-varning](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert)
 * Commerce Site Assessment
-   * [Utvärdering av Commerce webbplats](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html)
+   * [Utvärdering av Commerce webbplats](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html?lang=sv-SE)
