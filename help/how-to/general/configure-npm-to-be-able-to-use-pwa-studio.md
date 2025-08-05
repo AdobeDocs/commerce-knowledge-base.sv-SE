@@ -48,10 +48,10 @@ Om du vill ange den NPM-version som behövs anger du den i konfigurationsfilen `
    > ```
 
 1. Spara ändringarna i filen.
-1. Git skickar den redigerade filen till din [integreringsmiljö](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
+1. Git skickar den redigerade filen till din [integreringsmiljö](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27242).
 
 Ändringarna träder i kraft efter att du har överfört den uppdaterade YAML-filen till miljön.
 
 ## Relaterad dokumentation
 
-* [Programkonfiguration: hookar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) i vår Adobe Commerce on Cloud Infrastructure Guide.
+* [Programkonfiguration: hookar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=sv-SE) i vår Adobe Commerce on Cloud Infrastructure Guide.

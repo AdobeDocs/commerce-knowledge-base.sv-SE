@@ -26,7 +26,7 @@ I den här artikeln beskrivs hur du åtgärdar problemet där det sätt som du a
 1. I den lokala miljön skriver du en anpassad klass med ett beroende på den automatiskt genererade klassen.
 1. Kör scenariot, där din anpassade klass aktiveras, och se hur den fungerar korrekt.
 1. Genomför och överför ändringarna till integreringsmiljön. Detta skulle utlösa distributionsprocessen. Distributionen har slutförts.
-1. Kör scenariot där din anpassade klass utlöses i [integreringsmiljön](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
+1. Kör scenariot där din anpassade klass utlöses i [integreringsmiljön](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27242).
 
 <u>Förväntat resultat</u>
 

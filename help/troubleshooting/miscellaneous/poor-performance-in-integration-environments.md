@@ -31,10 +31,10 @@ Beroende på storleken på katalogen/data eller kraven för integreringar/anpass
 
 För att åtgärda prestandaproblem måste du se till att du följer de bästa metoderna för bästa prestanda i integreringsmiljön. Du kan också behöva begära en uppgradering av miljöerna för att förbättra integreringen.
 
-Kontrollera först om miljön finns på [konfigurationen för förbättrad integrering](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
+Kontrollera först om miljön finns på [konfigurationen för förbättrad integrering](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27242).
 
-* [Pro Architecture](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Startarkitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
+* [Pro Architecture](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Startarkitektur](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
 Kontrollera distributionsloggen på något av följande sätt.
 
@@ -59,10 +59,10 @@ opensearch (type: opensearch:2, size: L, disk: 1024)
 rabbitmq (type: rabbitmq:3.12, size: L, disk: 1024)
 ```
 
-Om du inte har den förbättrade integreringskonfigurationen kan du [begära en förbättring/uppgradering](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
+Om du inte har den förbättrade integreringskonfigurationen kan du [begära en förbättring/uppgradering](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27242).
 Om du redan använder konfigurationen Förbättrad integrering eller fortfarande stöter på prestandaproblem efter uppgraderingen bör du följa de bästa metoderna för optimala prestanda i integreringsmiljön:
 
-* [Pro Architecture](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Startarkitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
+* [Pro Architecture](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Startarkitektur](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
-Om du har uppfyllt ovanstående rekommendationer [skickar du en supportförfrågan](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) för ytterligare hjälp.
+Om du har uppfyllt ovanstående rekommendationer [skickar du en supportförfrågan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) för ytterligare hjälp.

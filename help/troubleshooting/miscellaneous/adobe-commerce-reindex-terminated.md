@@ -31,11 +31,11 @@ Den vanligaste orsaken till detta är ett stort antal produkter, butiker och/ell
 1. Minska antalet produkter (samt kundgrupper och butiker - om tillämpligt).
 1. Begränsa användningen till en eller två samtidiga användare.
 1. Inaktivera cron-jobb och kör manuellt efter behov.
-1. Om detta inte har gjorts tidigare, begär du en uppgradering till Enhanced Integration-miljöerna - notera begränsningen av antalet miljöer som du begränsas till när uppgraderingen har utförts. Mer information finns i artikeln [Förbättrad integreringsmiljö - Pro och Starter](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) i vår kunskapsbas för support.
+1. Om detta inte har gjorts tidigare, begär du en uppgradering till Enhanced Integration-miljöerna - notera begränsningen av antalet miljöer som du begränsas till när uppgraderingen har utförts. Mer information finns i artikeln [Förbättrad integreringsmiljö - Pro och Starter](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27242) i vår kunskapsbas för support.
 
 ## Relaterad läsning:
 
 I vår utvecklardokumentation:
 
-* [Pro-arkitektur > Integreringsmiljö](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Startarkitektur > Mellanlagringsmiljö](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)
+* [Pro-arkitektur > Integreringsmiljö](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Startarkitektur > Mellanlagringsmiljö](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)

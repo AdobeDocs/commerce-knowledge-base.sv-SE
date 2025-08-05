@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Allokera utrymme på Starter-planen och Pro-plansintegrering
 
-För alla startplansmiljöer och Pro-planens [integreringsmiljö](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) kan du tilldela mer utrymme för MySQL i filen `.magento/services.yaml` genom att öka parametern `mysql: disk:`. Exempel:
+För alla startplansmiljöer och Pro-planens [integreringsmiljö](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27242) kan du tilldela mer utrymme för MySQL i filen `.magento/services.yaml` genom att öka parametern `mysql: disk:`. Exempel:
 
 ```yaml
 mysql:
@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-Se artikeln [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) för referens.
+Se artikeln [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/service/mysql) för referens.
 
 När du har ändrat filen `.magento/services.yaml` måste du implementera och överföra dina ändringar för att de ska tillämpas. Tryckningen kommer att utlösa distributionsprocessen.
 
