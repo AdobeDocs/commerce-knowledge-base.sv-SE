@@ -1,12 +1,12 @@
 ---
-title: Felet '"Klassen kan inte sparas i kodkatalogen"'
+title: Felet "Klassen kan inte sparas i kodkatalogen"
 description: I den här artikeln beskrivs hur du åtgärdar ett problem där du angav beroenden som förhindrar att klasser genereras automatiskt i farten, och du får felmeddelandet *"Klassen kan inte sparas i den genererade katalogen/kodkatalogen"*.
 exl-id: e2c00d4d-31c3-4446-a317-a8ac92c707d5
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ I den här artikeln beskrivs hur du åtgärdar problemet där det sätt som du a
 1. I den lokala miljön skriver du en anpassad klass med ett beroende på den automatiskt genererade klassen.
 1. Kör scenariot, där din anpassade klass aktiveras, och se hur den fungerar korrekt.
 1. Genomför och överför ändringarna till integreringsmiljön. Detta skulle utlösa distributionsprocessen. Distributionen har slutförts.
-1. Kör scenariot där din anpassade klass utlöses i [integreringsmiljön](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md).
+1. Kör scenariot där din anpassade klass utlöses i [integreringsmiljön](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
 
 <u>Förväntat resultat</u>
 

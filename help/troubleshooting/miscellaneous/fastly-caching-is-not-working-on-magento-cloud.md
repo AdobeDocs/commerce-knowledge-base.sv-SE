@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en korrigering för snabb cachelagrin
 exl-id: 725949e9-b69b-456f-9c56-e2163143a71e
 feature: Cache, Cloud, Console, Paas
 role: Developer
-source-git-commit: 586a8c6340bfd2cbf773d1b009d6e106e930117d
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
@@ -112,7 +112,7 @@ curl -k https://www.mymagento.biz.c.sv7gVom4qrpek.ent.magento.cloud -H 'Host: ww
 * Cache-Control: max-age ska vara större än 0
 * Pragma ska vara cache
 
-I följande exempel visas de korrekta värdena för Pragma, X-Magento-Tags och Fast-Module-Enabled.
+I följande exempel visas de korrekta värdena för Pragma, X-Magento-Tags och Fastly-Module-Enabled.
 
 Utdata för böjkommandon kan vara långa. Här följer en sammanfattning:
 
@@ -170,13 +170,13 @@ Kontrollera konfigurationen i Commerce Admin för varje miljö om du vill kontro
    "fastly-magento2": {    "type": "vcs",    "url": "https://github.com/fastly/fastly-magento2.git"    }
    ```
 
-1. Om du använder Configuration Management bör du ha en konfigurationsfil. Redigera filen app/etc/config.app.php (2.0, 2.1) eller app/etc/config.php (2.2) och kontrollera att inställningen `'Fastly_Cdn' => 1` är korrekt. Inställningen ska inte vara `'Fastly_Cdn' => 0` (d.v.s. inaktiverad).Om du aktiverade snabbt tar du bort konfigurationsfilen och kör kommandot bin/magento magento-cloud:scd-dump för att uppdatera. En genomgång av den här filen finns i [Exempel på hantering av systemspecifika inställningar](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=sv-SE#manage-the-system-specific-configuration) i konfigurationshandboken.
+1. Om du använder Configuration Management bör du ha en konfigurationsfil. Redigera filen app/etc/config.app.php (2.0, 2.1) eller app/etc/config.php (2.2) och kontrollera att inställningen `'Fastly_Cdn' => 1` är korrekt. Inställningen ska inte vara `'Fastly_Cdn' => 0` (d.v.s. inaktiverad).Om du har aktiverat Snabbt tar du bort konfigurationsfilen och kör kommandot bin/magento-cloud:scd-dump för att uppdatera. En genomgång av den här filen finns i [Exempel på hantering av systemspecifika inställningar](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) i konfigurationshandboken.
 
-Om modulen inte är installerad måste du installera i en [integreringsmiljö](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) -gren och distribuera den till Förproduktion och produktion. Se [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE) för instruktioner i Commerce om Cloud Infrastructure Guide.
+Om modulen inte är installerad måste du installera i en [integreringsmiljö](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) -gren och distribuera den till Förproduktion och produktion. Se [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) för instruktioner i Commerce om Cloud Infrastructure Guide.
 
 ### Fast-Magento-VCL-Uploaded finns inte
 
-Under installation och konfiguration bör du ha laddat upp Snabbt VCL. Det här är de grundläggande VCL-kodfragmenten från snabbmodulen, inte anpassade VCL-kodfragment som du skapar. Instruktioner finns i [Överför snabbt VCL-kodfragment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE#upload-vcl-to-fastly) i Commerce on Cloud Infrastructure Guide.
+Under installation och konfiguration bör du ha laddat upp Snabbt VCL. Det här är de grundläggande VCL-kodfragmenten från snabbmodulen, inte anpassade VCL-kodfragment som du skapar. Instruktioner finns i [Överför snabbt VCL-kodfragment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upload-vcl-to-fastly) i Commerce on Cloud Infrastructure Guide.
 
 ### X-Cache innehåller MISS
 
@@ -190,7 +190,7 @@ Om du får samma resultat kan du använda rullningskommandona och verifiera svar
 
 Om problemet kvarstår är det troligt att ett annat tillägg återställer dessa rubriker. Upprepa följande procedur i Förproduktion för att inaktivera tillägg för att hitta vilket som orsakar problemet. När du har hittat de tillägg som orsakar problemet måste du inaktivera tilläggen i produktionen.
 
-1. Följ stegen i avsnittet [Hantera tillägg](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=sv-SE#manage-extensions) i guiden för molninfrastruktur för att inaktivera tilläggen.
+1. Följ stegen i avsnittet [Hantera tillägg](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) i guiden för molninfrastruktur för att inaktivera tilläggen.
 1. När du har inaktiverat tilläggen går du till **[!UICONTROL System]** > **[!UICONTROL Tools]** > **[!UICONTROL Cache Management]**.
 1. Klicka på **[!UICONTROL Flush Magento Cache]**.
 1. Aktivera nu ett tillägg i taget, spara konfigurationen och tömma cachen.
@@ -201,6 +201,6 @@ När du isolerar det tillägg som återställer snabbrubriker kontaktar du till�
 
 ## Mer information i vår utvecklardokumentation:
 
-* [Om snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=sv-SE)
-* [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE)
-* [Anpassade VCL-kodfragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=sv-SE)
+* [Om snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+* [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
+* [Anpassade VCL-kodfragment snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
