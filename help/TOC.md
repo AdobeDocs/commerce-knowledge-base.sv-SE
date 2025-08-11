@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: acb00b0e25b85a558675993d63a80a59df7af5d7
+source-git-commit: 66ac9de94e9a4a1eccdb5aac1875ecf0a0637e90
 workflow-type: tm+mt
-source-wordcount: '2998'
+source-wordcount: '2993'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,6 @@ ht-degree: 0%
       * [503-fel vid åtkomst till Adobe Commerce i webbläsaren](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
       * [Platsen kan inte läsas in på grund av att underhållsläge är aktiverat](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
       * [Felsökningsdiagram för nedstängd webbplats](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md)
-      * [Felsökning av Adobe Commerce webbplats ned](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md)
       * [När du använder en korrigeringsfil tar det längre tid att lägga på webbplatsen](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [Fel 404 på alla sidor på grund av problem med Content Staging](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md)
       * [Uppdaterade korrigeringsfiler för åtkomst till Google Maps för alla Adobe Commerce-versioner](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
