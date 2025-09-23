@@ -4,9 +4,9 @@ description: Artikeln rekommenderar hur du åtgärdar Redis.
 exl-id: 5eb8fb70-0f41-433a-8d3f-c368781a2d1d
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 649e01b29b59bf77e6396acbeb7a83bd9c67e1ef
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,15 @@ redis-cli -p REDIS_PORT -h REDIS_HOST info | egrep --color "(role|used_memory_pe
 ```
 
 Variablerna *REDIS\_PORT* och *REDIS\_HOST* kan hämtas från `app/etc/env.php`.
+
+>[!NOTE]
+>
+>Du kan även hämta Redis värdadress och portnummer genom att köra det här CLI-kommandot:
+>   
+```bash
+>   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+>   ```
+
 
 Om utdata från körning av ovanstående fråga visar att procentandelen ledigt minne är mindre än 40 %, [skickar du en biljett till Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begär en ökning av inställningen `maxmemory` i Redis Server. Om värdet för de borttagna tangenterna inte är &quot;0&quot; eller Redis-uppspelningstiden i dagar är lika med 0 (vilket anger att Redis har kraschat idag), bör du även [skicka en biljett till Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära en utredning och en korrigering av problemet.
 
