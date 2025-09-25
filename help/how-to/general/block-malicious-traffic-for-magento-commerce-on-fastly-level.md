@@ -26,7 +26,7 @@ I den här artikeln antar vi att du redan har de skadliga IP-adresserna och/elle
 
 Om webbplatsen är överbelastad av DoS kanske du inte kan logga in på din Commerce Admin (och utföra alla steg som beskrivs nedan).
 
-Om du vill få åtkomst till Admin placerar du webbplatsen i underhållsläge enligt beskrivningen i [Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) och vitlistar din IP-adress. Inaktivera underhållsläget när detta är klart.
+Om du vill få åtkomst till Admin placerar du webbplatsen i underhållsläge enligt beskrivningen i [Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) och vitlistar din IP-adress. Inaktivera underhållsläget när detta är klart.
 
 ## Blockera trafik efter IP
 
@@ -76,7 +76,7 @@ Det finns två viktiga saker att tänka på när du använder `robots.txt`:
 * Roboter kan ignorera din `robots.txt`. I synnerhet robotar för skadlig kod som skannar webben efter säkerhetsproblem och e-postadresskörare som används av spamrerare kommer inte att bry sig.
 * Filen `robots.txt` är en offentligt tillgänglig fil. Vem som helst kan se vilka delar av servern som du inte vill att robotar ska använda.
 
-Grundläggande information och standardkonfigurationen för Adobe Commerce `robots.txt` finns i artikeln [ Sökmotorrobotar ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) i vår utvecklardokumentation.
+Grundläggande information och standardkonfigurationen för Adobe Commerce `robots.txt` finns i artikeln [ Sökmotorrobotar ](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) i vår utvecklardokumentation.
 
 Allmän information och rekommendationer om `robots.txt` finns i:
 
@@ -88,4 +88,4 @@ Arbeta med utvecklaren och/eller SEO-experten för att avgöra vilka användarag
 ## Relaterad läsning
 
 * [Produktspecifika licensieringsvillkor för Adobe Commerce i molnet](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* [Anpassad VCL för blockeringsbegäranden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) i handboken för Commerce on Cloud
+* [Anpassad VCL för blockeringsbegäranden](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) i handboken för Commerce on Cloud
