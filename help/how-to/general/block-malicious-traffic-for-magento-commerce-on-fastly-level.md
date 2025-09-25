@@ -3,16 +3,18 @@ title: Blockera skadlig trafik för Adobe Commerce på snabbnivå
 description: I den här artikeln beskrivs de åtgärder du kan vidta för att blockera skadlig trafik när du misstänker att en DoS-attack inträffar i din Adobe Commerce på molninfrastrukturbutik.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: b58e182c64b3fad508145d9078619ddbe0e2b887
+source-git-commit: 2555fbdb8a7a53d41c746df6414a7b0bad2de5d9
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
 
 # Blockera skadlig trafik för Adobe Commerce på snabbnivå
 
-I den här artikeln beskrivs de åtgärder du kan vidta för att blockera skadlig trafik när du misstänker att en DoS-attack inträffar i din Adobe Commerce på molninfrastrukturbutik.
+I den här artikeln beskrivs hur du blockerar oönskad trafik till din butik, inte bara som svar på skadliga hot, utan även som en metod för geografisk filtrering.
+
+Adobe Commerce i molninfrastruktur (och Fast CDN) innehåller verktyg för att hantera trafik till din butik som svar på skadliga hot som DDoS-attacker. Dessutom kan ni blockera förfrågningar från specifika länder eller regioner, även om inga skadliga avsikter upptäcks, för att uppfylla affärspolicyer, lagstadgade krav eller andra operativa behov.
 
 ## Berörda produkter och versioner:
 
@@ -24,7 +26,7 @@ I den här artikeln antar vi att du redan har de skadliga IP-adresserna och/elle
 
 Om webbplatsen är överbelastad av DoS kanske du inte kan logga in på din Commerce Admin (och utföra alla steg som beskrivs nedan).
 
-Om du vill få åtkomst till Admin placerar du webbplatsen i underhållsläge enligt beskrivningen i [Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) och vitlistar din IP-adress. Inaktivera underhållsläget när detta är klart.
+Om du vill få åtkomst till Admin placerar du webbplatsen i underhållsläge enligt beskrivningen i [Aktivera eller inaktivera underhållsläge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) och vitlistar din IP-adress. Inaktivera underhållsläget när detta är klart.
 
 ## Blockera trafik efter IP
 
@@ -74,7 +76,7 @@ Det finns två viktiga saker att tänka på när du använder `robots.txt`:
 * Roboter kan ignorera din `robots.txt`. I synnerhet robotar för skadlig kod som skannar webben efter säkerhetsproblem och e-postadresskörare som används av spamrerare kommer inte att bry sig.
 * Filen `robots.txt` är en offentligt tillgänglig fil. Vem som helst kan se vilka delar av servern som du inte vill att robotar ska använda.
 
-Grundläggande information och standardkonfigurationen för Adobe Commerce `robots.txt` finns i artikeln [ Sökmotorrobotar ](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) i vår utvecklardokumentation.
+Grundläggande information och standardkonfigurationen för Adobe Commerce `robots.txt` finns i artikeln [ Sökmotorrobotar ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) i vår utvecklardokumentation.
 
 Allmän information och rekommendationer om `robots.txt` finns i:
 
@@ -86,4 +88,4 @@ Arbeta med utvecklaren och/eller SEO-experten för att avgöra vilka användarag
 ## Relaterad läsning
 
 * [Produktspecifika licensieringsvillkor för Adobe Commerce i molnet](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* [Anpassad VCL för blockeringsbegäranden](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) i handboken för Commerce on Cloud
+* [Anpassad VCL för blockeringsbegäranden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) i handboken för Commerce on Cloud
