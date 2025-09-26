@@ -1,12 +1,12 @@
 ---
-title: "Adobe Commerce 2.4.0 Känt fel: Skapa nya beställningsknappar saknas"
+title: 'Adobe Commerce 2.4.0: Knapparna Skapa ny order saknas'
 description: I den här artikeln finns en lösning på ett känt problem i Commerce Admin för två saknade knappar på sidan för att skapa order. När du skapar en ny beställning för en ny eller befintlig kund går det inte att lägga till produkter i beställningen från katalogen eftersom knapparna **Lägg till produkter efter SKU** och **Lägg till produkter** saknas. Detta orsakas av att JS-paketering har aktiverats. En fix kommer att finnas i Adobe Commerce 2.4.1.
 exl-id: 24ae880e-6d74-4444-9165-2744b12af81a
 feature: B2B
 role: Developer
-source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
+source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -42,12 +42,9 @@ Problemet åtgärdas genom att JS-paketering inaktiveras för Adobe Commerce-ins
 
 ## Relaterade läsningar i vår kunskapsbas
 
-* [Adobe Commerce 2.4.0: Raw-meddelandedata visas i butiken](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
 * [Adobe Commerce 2.4.0: Exportavgifter fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 * [Adobe Commerce 2.4.0: Braintree betalningsmetoder visas inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
 * [Problem med Adobe Commerce 2.4.0: Felmeddelande vid val av lokal betalningsmetod för vissa länder vid utcheckning](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
-* [Adobe Commerce 2.4.0 Känt fel: 404-fel vid borttagning av poäng vid utcheckning av flera leveranser](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
-* [Adobe Commerce 2.4.0: fel vid visning av beställningar](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
 * [Adobe Commerce 2.4.0 B2B Admin kan inte lägga till en konfigurerbar produkt att citera](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
 * [Problem med Adobe Commerce 2.4.0 - uppdateringen av kundens aktiviteter fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
 * [Adobe Commerce 2.4.0: Knappen &quot;Lägg till markeringar i kundvagnen&quot; fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)

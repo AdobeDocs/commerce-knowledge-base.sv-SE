@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 446b3f6d49a5534187bb8706d5cf6068d8f40fec
+source-git-commit: 2b12aeb9227944fc80da50d50fbc5668f4622269
 workflow-type: tm+mt
-source-wordcount: '2989'
+source-wordcount: '2898'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,6 @@ ht-degree: 0%
       * [Kontrollera långsamma frågor och processer MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Databasöverföringen förlorar anslutningen till MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
       * [Ändringar i databasen återspeglas inte i butiken](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
-      * [Deadlocks in MySQL](/help/troubleshooting/database/deadlocks-in-mysql.md)
       * [MySQL-flaskhalsar med hög belastning i Adobe Commerce i molninfrastruktur](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [MySQL-servern har gått &#x200B; fel på Adobe Commerce i molnet](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
       * [Det är ont om diskutrymme på Adobe Commerce i molninfrastrukturen](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
@@ -56,8 +55,6 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.0 Braintree Virtual Terminal-sida är skadad](/help/troubleshooting/payments/magento-2-4-0-known-issue-braintree-virtual-terminal-page-is-corrupted.md)
       * [Cybersource-betalning från Admin och framåt i olika domäner har inte bearbetats](/help/troubleshooting/payments/cybersource-payment-from-admin-and-front-on-different-domains-not-processed.md)
       * [Adobe Commerce 2.4.0: Amazon lönevillkor, inga betalningsmetoder](/help/troubleshooting/payments/magento-2-4-0-known-issue-amazon-pay-no-payment-methods.md)
-      * [Adobe Commerce 2.3.7-p1 Känt fel: inaktuell ordersumma för PayPal](/help/troubleshooting/payments/paypal-price-known-issue-commerce-237p1.md)
-      * [Patch for Amazon Pay checkout issue in Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
       * [Adobe Commerce 2.4.0: Utcheckningsfel vid val av lokala betalningar](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
       * [PayPal Payflow Pro - aktiv kodningsaktivitet](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Felsökning av PayPal på Adobe Commerce](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
@@ -65,18 +62,11 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.2 B2B: Rabatten är fortfarande en lönemetodändring](/help/troubleshooting/payments/magento-2-4-2-b2b-discount-remains-pay-method-change.md)
       * [Adobe Commerce 2.4.2: Betalningen till Braintree Venmo fungerar inte](/help/troubleshooting/payments/magento-2-4-2-braintree-venmo-payment-does-not-work.md)
       * [Betalningsmetoder som inte visas vid utcheckning med flera adresser](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
-      * [EU-kunder kan inte slutföra betalningar](/help/troubleshooting/payments/eu-customers-cannot-complete-payments.md)
       * [Adobe Commerce 2.4.0: Klarna On-Site Messaging - tomma sidor](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
    * Storefront {#storefront}
-      * [Adobe Commerce 2.4.0: fel vid visning av beställningar](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce lokal 2.4.2: produktbild saknas](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
-      * [Efter installationen läses inte bilder och formatmallar in; endast textvisning, ingen grafik](/help/troubleshooting/storefront/after-installing-images-and-stylesheets-do-not-load-only-text-displays-no-graphics.md)
       * [Produkten visas inte i butiken](/help/troubleshooting/storefront/product-is-not-displayed-on-storefront.md)
-      * [Adobe Commerce 2.4.0-utgåva: visning av råa meddelanden i butiker](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
-      * [Store credit issue in checkout in Adobe Commerce 2.3.5](/help/troubleshooting/storefront/store-credit-issue-during-checkout-in-magento-2-3-5.md)
       * [Lagra bilder som inte visas efter distributionen](/help/troubleshooting/storefront/store-images-not-displayed-after-deployment.md)
-      * [Produktjämförelse - känt fel i Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
-      * [Adobe Commerce 2.4.0: 404 error removing rewards points on multi-shipping checkout](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
       * [Kunderna loggas ut eller förlorar kundvagnsinnehåll på Adobe Commerce store](/help/troubleshooting/storefront/customers-get-logged-out-or-lose-cart-content-on-magento-storefront.md)
       * [Det går inte att spara kontakten som URL-nyckel](/help/troubleshooting/storefront/unable-to-save-contact-as-a-url-key.md)
    * Installation och uppgradering {#installation-and-upgrade}
