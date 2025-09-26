@@ -41,6 +41,6 @@ Knappen **Lägg till markeringar i kundvagnen** som finns högst upp på sidan f
 
 ## Relaterad läsning
 
-* [MerchDocs&#39; Managing a Shopping Cart](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) i vår användarhandbok.
+* [MerchDocs&#39; Managing a Shopping Cart](https://experienceleague.adobe.com/sv/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) i vår användarhandbok.
 * [Problem med Adobe Commerce 2.4.0: Exportskattesatser fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) i vår kunskapsbas för support.
 * [Adobe Commerce 2.4.0: Braintree betalningsmetoder visas inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) i vår kunskapsbas för support.
