@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 2b12aeb9227944fc80da50d50fbc5668f4622269
+source-git-commit: 750c0c41580af90cc5c883472326f2073cfe0b23
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '2891'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 0%
 * Felsökning {#troubleshooting}
    * [Felsökning - översikt](/help/troubleshooting/overview.md)
    * Databas {#database}
-      * [Flera rader i databasen för samma entitet](/help/troubleshooting/database/multiple-rows-in-database-for-same-entity.md)
       * [Kontrollera långsamma frågor och processer MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Databasöverföringen förlorar anslutningen till MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
       * [Ändringar i databasen återspeglas inte i butiken](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
