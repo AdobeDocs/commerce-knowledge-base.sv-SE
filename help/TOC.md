@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: d1a9f509bdf4a4c75220145069810e55eddcc43e
+source-git-commit: 4ba5d701280fa41bea1102fa1ca46e1e3cc35256
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2860'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,8 @@ ht-degree: 0%
    * Databas {#database}
       * [Kontrollera långsamma frågor och processer MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Databasöverföringen förlorar anslutningen till MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-      * [Ändringar i databasen återspeglas inte i butiken](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
       * [MySQL-flaskhalsar med hög belastning i Adobe Commerce i molninfrastruktur](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [MySQL-servern har gått &#x200B; fel på Adobe Commerce i molnet](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
-      * [Det är ont om diskutrymme på Adobe Commerce i molninfrastrukturen](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
       * [Felsökare för databaslagring på Adobe Commerce](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
       * [Databasfel relaterade till max_allowed_packet på Adobe Commerce](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Adobe Commerce-databasens numeriska värde ligger utanför intervallet, [!DNL INT] till [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)

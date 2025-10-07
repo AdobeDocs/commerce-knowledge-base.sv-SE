@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning för när "/tmp"-monterin
 exl-id: e72d0f99-0060-474b-bb1c-2851896e1e43
 feature: Storage
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: aa4cfbceb745f1a06b8a8f9e93cbdebbc151458b
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -92,9 +92,9 @@ Det finns flera tjänster som kanske sparar filer i `/tmp`.
 
 #### Kontrollera och frigör MySQL-utrymme
 
-Följ instruktionerna i [MySQL-diskutrymmet har slut på Adobe Commerce i molninfrastrukturen > Kontrollera och frigör lagringsutrymme](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md#check_and_free) i vår supportkunskapsbas.
+Följ instruktionerna i [MySQL-diskutrymmet har slut på Adobe Commerce i molninfrastrukturen > Kontrollera och frigör lagringsutrymme](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) i vår supportkunskapsbas.
 
-#### Kontrollera Elasticsearch-heapdumpar
+#### Kontrollera Elasticsearch-hjälptexter
 
 >[!WARNING]
 >
@@ -106,7 +106,7 @@ Ta bort stackar (`*.hprof`) med systemgränssnitt:
 find /tmp/*.hprof -type f -delete
 ```
 
-Om du inte har behörighet att ta bort filer som har skapats av en annan användare (i det här fallet Elasticsearch), men du ser att filerna är stora, kan du [skapa en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att hantera dem.
+Om du inte har behörighet att ta bort filer som har skapats av en annan användare (i det här fallet Elasticsearch), men du ser att filerna är stora, [skapar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att hantera dem.
 
 #### Kontrollera databasdumpar/säkerhetskopior
 
@@ -120,7 +120,7 @@ Kontrollera `/tmp` efter `.sql`- eller `.sql.gz`-filer och rensa dem. Dessa kan 
 
 Följ de här rekommendationerna för att undvika att få problem med att `/tmp` är full:
 
-* Använd inte MySQL för sökning. Elasticsearch för sökning eliminerar vanligtvis behovet av de flesta komplicerade temporära tabellskapanden. Se [Konfigurera Adobe Commerce att använda Elasticsearch](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/search/configure-search-engine) i utvecklardokumentationen.
+* Använd inte MySQL för sökning. Elasticsearch för sökningar eliminerar vanligtvis behovet av de flesta komplicerade temporära tabellskapanden. Se [Konfigurera Adobe Commerce att använda Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) i utvecklardokumentationen.
 * Undvik att köra `SELECT`-frågan på kolumner utan index eftersom det här kräver mycket temporärt diskutrymme. Du kan också lägga till index.
 * Skapa en cron för att rensa upp `/tmp` genom att köra följande kommando i CLI:
 
@@ -130,4 +130,4 @@ Följ de här rekommendationerna för att undvika att få problem med att `/tmp`
 
 ## Relaterad läsning
 
-[Det är ont om diskutrymme på MySQL på Adobe Commerce i molninfrastrukturen](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) i vår kunskapsbas för support.
+[Det är ont om diskutrymme på MySQL på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) i vår kunskapsbas för support.
