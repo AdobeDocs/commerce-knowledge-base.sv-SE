@@ -21,7 +21,7 @@ Den här artikeln är ett felsökningsverktyg för kunder som har problem med da
 
 Detta kan indikeras av en rad symtom som att `/tmp`-monteringen är full, att platsen är nere eller att SSH inte kan placeras i en nod. Det kan också uppstå fel som _Inget utrymme kvar på enheten (28)_. En lista med fel som beror på att `/tmp` är full finns i [/tmp-monteringen full](/help/troubleshooting/miscellaneous/tmp-mount-full.md).
 
-Eller har du ett `/data/mysql`-problem på grund av otillräckligt utrymme? Detta kan också indikeras av en mängd olika symtom, bland annat ett webbplatsavbrott, kunder som inte kan lägga till produkter i kundvagnen, anslutningsfel i databasen och Galeriafel som _SQLSTATE\[08S01\]: Kommunikationslänksfel: 1047 WSREP_. En lista över fel som beror på brist på [!DNL MySQL] diskutrymme finns i [[!DNL MySQL] det är ont om diskutrymme på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806).
+Eller har du ett `/data/mysql`-problem på grund av otillräckligt utrymme? Detta kan också indikeras av en mängd olika symtom, bland annat ett webbplatsavbrott, kunder som inte kan lägga till produkter i kundvagnen, anslutningsfel i databasen och Galeriafel som _SQLSTATE\[08S01\]: Kommunikationslänksfel: 1047 WSREP_. En lista över fel som beror på brist på [!DNL MySQL] diskutrymme finns i [[!DNL MySQL] det är ont om diskutrymme på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27806).
 
 Om du är osäker på om du har ett problem med diskutrymme och har ett New Relic-konto går du till [sidan New Relic Infrastructure Monitoring Hosts](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/). Därifrån klickar du på fliken **Lagring**, ändrar listrutan **Diagramvisning** från 5 till 20 resultat och letar i tabellen efter hög diskanvändning i tabellen eller tabellen Diskanvändning. Mer detaljerad information finns i [New Relic Infrastructure Monitoring (Infrastrukturövervakning) > fliken Storage (Lagring)]https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage).
 
@@ -30,7 +30,7 @@ Om du har något av de symtom som beskrivs ovan bör du kontrollera status på d
 
 Är IUse% > 90%?
 
-a. JA - Detta beror på att det finns för många filer. Granska stegen för att ta bort filer på ett säkert sätt i [Ta bort filer när det inte finns tillräckligt med diskutrymme, Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26889). Fortsätt till [Steg 2](#step-2) när du har slutfört de här stegen. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill begära mer utrymme.\
+a. JA - Detta beror på att det finns för många filer. Granska stegen för att ta bort filer på ett säkert sätt i [Ta bort filer när det inte finns tillräckligt med diskutrymme, Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26889). Fortsätt till [Steg 2](#step-2) när du har slutfört de här stegen. [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill begära mer utrymme.\
 b. NEJ - Kontrollera utrymmet. Kör `df -h | grep mysql` och sedan `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i katalogerna `/tmp` och `/data/mysql`. Fortsätt till [Steg 3](#step-3).
 
 +++
@@ -81,7 +81,7 @@ b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento
 
 +++**Kontrollera standard**
 
-Databaskonfigurationen kanske inte längre är den ursprungliga standardinställningen. Hitta tmpdir-konfigurationen för databasen genom att köra i [!DNL MySQL] CLI: `SELECT @@DATADIR;`. Om `/data/mysql/` är utdata skrivs databasens tmpdir nu till `/data/mysql/`. Försök att öka utrymmet i den här katalogen genom att följa stegen i [[!DNL MySQL] diskutrymmet börjar ta slut på Adobe Commerce i vår molninfrastruktur](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806). Kör sedan `df -h | grep mysql` och `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i `/data/mysql` och `/tmp`.\
+Databaskonfigurationen kanske inte längre är den ursprungliga standardinställningen. Hitta tmpdir-konfigurationen för databasen genom att köra i [!DNL MySQL] CLI: `SELECT @@DATADIR;`. Om `/data/mysql/` är utdata skrivs databasens tmpdir nu till `/data/mysql/`. Försök att öka utrymmet i den här katalogen genom att följa stegen i [[!DNL MySQL] diskutrymmet börjar ta slut på Adobe Commerce i vår molninfrastruktur](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27806). Kör sedan `df -h | grep mysql` och `df -h | grep tmp` i CLI/Terminal för att kontrollera diskutrymmesanvändningen i `/data/mysql` och `/tmp`.\
   &lt; 70 % används?
 
 a. JA - Du har löst problemet. \
@@ -93,4 +93,4 @@ b. NEJ - [Skicka en supportanmälan](/help/help-center-guide/help-center/magento
 
 ## Relaterad läsning
 
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

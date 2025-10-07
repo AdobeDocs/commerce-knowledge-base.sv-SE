@@ -92,7 +92,7 @@ Det finns flera tjänster som kanske sparar filer i `/tmp`.
 
 #### Kontrollera och frigör MySQL-utrymme
 
-Följ instruktionerna i [MySQL-diskutrymmet har slut på Adobe Commerce i molninfrastrukturen > Kontrollera och frigör lagringsutrymme](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) i vår supportkunskapsbas.
+Följ instruktionerna i [MySQL-diskutrymmet har slut på Adobe Commerce i molninfrastrukturen > Kontrollera och frigör lagringsutrymme](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) i vår supportkunskapsbas.
 
 #### Kontrollera Elasticsearch-hjälptexter
 
@@ -120,7 +120,7 @@ Kontrollera `/tmp` efter `.sql`- eller `.sql.gz`-filer och rensa dem. Dessa kan 
 
 Följ de här rekommendationerna för att undvika att få problem med att `/tmp` är full:
 
-* Använd inte MySQL för sökning. Elasticsearch för sökningar eliminerar vanligtvis behovet av de flesta komplicerade temporära tabellskapanden. Se [Konfigurera Adobe Commerce att använda Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) i utvecklardokumentationen.
+* Använd inte MySQL för sökning. Elasticsearch för sökningar eliminerar vanligtvis behovet av de flesta komplicerade temporära tabellskapanden. Se [Konfigurera Adobe Commerce att använda Elasticsearch](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/search/configure-search-engine) i utvecklardokumentationen.
 * Undvik att köra `SELECT`-frågan på kolumner utan index eftersom det här kräver mycket temporärt diskutrymme. Du kan också lägga till index.
 * Skapa en cron för att rensa upp `/tmp` genom att köra följande kommando i CLI:
 
@@ -130,4 +130,4 @@ Följ de här rekommendationerna för att undvika att få problem med att `/tmp`
 
 ## Relaterad läsning
 
-[Det är ont om diskutrymme på MySQL på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) i vår kunskapsbas för support.
+[Det är ont om diskutrymme på MySQL på Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27806) i vår kunskapsbas för support.
