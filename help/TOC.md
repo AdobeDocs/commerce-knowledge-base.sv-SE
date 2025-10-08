@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 4ba5d701280fa41bea1102fa1ca46e1e3cc35256
+source-git-commit: 4b92294b26082da2ac5984b729cea2a49663f4b2
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,6 @@ ht-degree: 0%
       * [Betalningsmetoder som inte visas vid utcheckning med flera adresser](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
       * [Adobe Commerce 2.4.0: Klarna On-Site Messaging - tomma sidor](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
    * Storefront {#storefront}
-      * [Adobe Commerce lokal 2.4.2: produktbild saknas](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
       * [Produkten visas inte i butiken](/help/troubleshooting/storefront/product-is-not-displayed-on-storefront.md)
       * [Lagra bilder som inte visas efter distributionen](/help/troubleshooting/storefront/store-images-not-displayed-after-deployment.md)
       * [Kunderna loggas ut eller förlorar kundvagnsinnehåll på Adobe Commerce store](/help/troubleshooting/storefront/customers-get-logged-out-or-lose-cart-content-on-magento-storefront.md)
