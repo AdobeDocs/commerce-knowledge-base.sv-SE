@@ -60,7 +60,7 @@ Om e-postmeddelandet visas i din skräppostmapp kanske din domäns e-postautenti
 
 Om du använder tjänsten SendGrid som hanteras av Adobe:
 
-[Skicka in en supportanmälan](https://experienceleague.adobe.com/home?support-tab=home#support) som begär att din sändande domän autentiseras (kallas ibland *white-label*) med SendGrid.
+[Skicka in en supportanmälan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support) som begär att din sändande domän autentiseras (kallas ibland *white-label*) med SendGrid.
 Den här processen innebär att lägga till DNS-poster (DKIM och SPF) för att auktorisera SendGrid att skicka e-post för din domäns räkning, vilket ökar sannolikheten för att dina e-postmeddelanden levereras till inkorgen i stället för till skräppostmappen.
 
 Om du använder ditt eget SendGrid-konto:
@@ -74,4 +74,4 @@ Du ansvarar för att hantera inställningarna för domänautentisering direkt p�
 
 ## Relaterad läsning
 
-* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) i utvecklardokumentationen.
+* [SendGrid](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/project/sendgrid) i utvecklardokumentationen.
