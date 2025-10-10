@@ -17,7 +17,7 @@ I den här artikeln visas hur du återställer en DB [!DNL snapshot] från [!DNL
 >[!NOTE]
 >
 >Dessa metoder återställer den **fullständiga ögonblicksbilden**.
->>Om du behöver återställa ögonblicksbilden **delvis** - till exempel bara återställa katalogtabellerna utan att behöva ändra ordningsföljden - måste du rådfråga utvecklaren eller DBA.
+>&#x200B;>Om du behöver återställa ögonblicksbilden **delvis** - till exempel bara återställa katalogtabellerna utan att behöva ändra ordningsföljden - måste du rådfråga utvecklaren eller DBA.
 
 
 ## Berörda produkter och versioner
@@ -181,4 +181,4 @@ I vår utvecklardokumentation:
 
 * [Importera kod: Importera databasen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
 * [[!DNL Snapshots] och [!DNL backup] hantering: [!DNL Dump] din databas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Säkerhetskopiera (ögonblicksbild) i molnet: Vanliga frågor ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Säkerhetskopiera (ögonblicksbild) i molnet: Vanliga frågor &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
