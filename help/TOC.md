@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 4b92294b26082da2ac5984b729cea2a49663f4b2
+source-git-commit: 5c4d76b3dbaf34b2ded10b520297087562fcaad2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2834'
 ht-degree: 0%
 
 ---
@@ -86,8 +86,6 @@ ht-degree: 0%
       * [Uppgradering till B2B 1.5.2 misslyckas med SQL-syntaxfel eftersom funktionen REGEXP_LIKE saknas](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
       * [Prestandaproblem i moduluppgraderingen Magento_Company efter uppdatering av B2B 1.5.2](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
    * Webbplatsen är nere eller svarar inte {#site-down-or-unresponsive}
-      * [503-fel vid åtkomst till Adobe Commerce i webbläsaren](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
-      * [Platsen kan inte läsas in på grund av att underhållsläge är aktiverat](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
       * [När du använder en korrigeringsfil tar det längre tid att lägga på webbplatsen](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [Uppdaterade korrigeringsfiler för åtkomst till Google Maps för alla Adobe Commerce-versioner](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Diverse {#miscellaneous}
