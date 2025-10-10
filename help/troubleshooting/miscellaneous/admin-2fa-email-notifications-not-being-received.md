@@ -4,9 +4,9 @@ description: I den här artikeln finns felsökning när du inte får e-postmedde
 exl-id: 7ab6b2b4-6aca-4323-a45b-2b4e52955160
 feature: Admin Workspace, Communications
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 9eaea028886e74fc06c9516801919cd7f650f98c
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -54,8 +54,24 @@ Eftersom du inte har åtkomst till administratören måste du infoga konfigurati
 php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 ```
 
-Kontrollera din skräppostmapp för e-postmeddelandet. Om e-postmeddelandet visades där [skickar du en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) för att begära att domänen får en vit etikett i SendGrid.
+Kontrollera din skräppostmapp för e-postmeddelandet.
+
+Om e-postmeddelandet visas i din skräppostmapp kanske din domäns e-postautentisering inte är helt konfigurerad för utgående leverans via SendGrid.
+
+Om du använder tjänsten SendGrid som hanteras av Adobe:
+
+[Skicka in en supportanmälan](https://experienceleague.adobe.com/home?support-tab=home#support) som begär att din sändande domän autentiseras (kallas ibland *white-label*) med SendGrid.
+Den här processen innebär att lägga till DNS-poster (DKIM och SPF) för att auktorisera SendGrid att skicka e-post för din domäns räkning, vilket ökar sannolikheten för att dina e-postmeddelanden levereras till inkorgen i stället för till skräppostmappen.
+
+Om du använder ditt eget SendGrid-konto:
+
+Du ansvarar för att hantera inställningarna för domänautentisering direkt på kontrollpanelen för ditt SendGrid-konto. Mer information finns i [Konfigurera domänautentisering](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/how-to-set-up-domain-authentication) i dokumentationen för SendGrid.
+
+>[!NOTE]
+>
+>Vissa kunder kan välja att använda en separat provisionerad SendGrid-tjänst för full kontroll över e-postleveransen och efterlevnaden (t.ex. HIPAA-krav). Kontrollera att du följer rätt felsökningssteg baserat på vilken typ av SendGrid-tjänst (Adobe-hanterad eller självhanterad) du använder.
+
 
 ## Relaterad läsning
 
-* [SendGrid](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/project/sendgrid) i utvecklardokumentationen.
+* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) i utvecklardokumentationen.
