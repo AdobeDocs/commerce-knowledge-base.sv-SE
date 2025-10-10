@@ -3,9 +3,9 @@ title: Hur man begär tillfälliga Adobe Commerce-lösningar för molninfrastruk
 description: Om din organisation planerar en onlinehändelse där du förväntar dig hög trafik, eller om du plötsligt upptäcker att din webbplats håller på att genomgå en stor trafikaktivitet, kan du arkivera en [supportbiljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) och begära tillfällig ytterligare molnkapacitet för din Adobe Commerce i molninfrastrukturbutiken.
 exl-id: 561e2bdd-718a-45c1-8b6c-a0e3a6c8ad04
 feature: Cloud, Iaas
-source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
+source-git-commit: e59335b67e1f33e138e34cab93ce593836d14b48
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Om du får ett varningsmeddelande som tyder på en hög trafikhändelse kan du b
 
 ## Så här övervakar du webbplatsens prestanda
 
-Adobe tillhandahåller en uppsättning New Relic aviseringspolicyer för Adobe Commerce om molninfrastruktur Pro-planarkitekturen och Adobe Commerce om molninfrastruktur Starter-planens arkitektur Produktionsmiljöer för att spåra följande viktiga prestandamått:
+Adobe tillhandahåller en uppsättning av New Relic aviseringspolicyer för Adobe Commerce om molninfrastruktur Pro-planarkitekturen och Adobe Commerce om molninfrastruktur Starter-planens arkitektur Produktionsmiljöer för att spåra följande viktiga prestandamått:
 
 * [API-poäng](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction)
 * Felfrekvens
@@ -51,21 +51,53 @@ Följ den här länken om du vill lära dig hur du [konfigurerar prestandabasera
 
 ## Steg för att begära tillfällig storlek
 
-Följ stegen nedan för att skicka en [supportanmälan](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) för att begära tillfällig ytterligare molnkapacitet:
-
-Skicka en [supportanmälan till Adobe Commerce Support Center](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) efter att du har angett följande information:
+Om du vill begära tillfällig ytterligare molnkapacitet skickar du en [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) till Adobe Commerce Support Center med följande information:
 
 >[!NOTE]
 >
 >Valet *Helgdagsbegäran* är bara ett alternativ mellan oktober- och december-månaderna.
 
-1. Välj den Adobe Commerce-produkt som du vill ha support för.
-1. Fyll i de fyra första fälten (Produkt, Organisation, Implementeringstyp, Ämne).
-1. Välj *Adobe Commerce molninfrastruktur* i listrutan **Kontaktorsak**.
-1. Välj *Begäran om överkapacitet för helgdag* i listrutan **Kontaktorsak till Adobe Commerce-infrastruktur** . Klicka på **OK** i popup-meddelandet med en begäran om 48 arbetstimmar för tillfälliga ytterligare begäranden om molnkapacitet.
-1. Välj datum för de obligatoriska fälten **Ändra storlek på startdatum** och **Ändra storlek på slutdatum**. Det önskade **Ändra storlek på starttid** är också ett obligatoriskt fält.
-1. Fyll i de följande fyra fälten.
-1. Om du har ytterligare information om storlek i fältet **Beskrivning** anger du den här. Om ingen specifik större storlek begärs kommer du att uppgraderas till nästa större kapacitet för miljön. Överstrålningsbegäranden får som standard nästa större storlek från den aktuella storleken. Om du behöver ytterligare kapacitet anger du det i fältet **Beskrivning**. Ökad kapacitet dras av från dina avtalade tilläggsdagar eller vCPU-dagar. Det typiska fönstret för kapacitetsökning är fem dagar, men om du behöver fler eller färre dagar anger du detta i din [supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Välj den [!DNL Adobe Commerce]-produkt som du behöver support för:
+   * [!DNL Commerce Cloud]
+   * [!DNL Commerce on Managed Service]
+
+1. Ange följande fält:
+   * **[!UICONTROL Case Title]**
+   * **[!UICONTROL Case Description]** *(se till att dessa tydligt beskriver problemet och sammanhanget.)*
+
+1. Välj *Begäran om infrastrukturändring* i listrutan **[!UICONTROL Issue Reason]**.
+
+1. Välj **[!UICONTROL Environment]** i listrutan.
+
+1. Välj lämplig **[!UICONTROL Product Version]** i listrutan.
+
+1. Välj *Storleksändring för molnprojekt (vCPU)* i listrutan **[!UICONTROL Which Infra Change you would like to do today]**.
+
+1. **Välj[!UICONTROL Architecture]**:
+   * *Standardarkitektur:* Välj *Nästa tillgängliga storlek* i listrutan **Välj storlek**.
+   * *Skalad arkitektur:* När du väljer det här alternativet ändras skärmen till två ytterligare fält:
+      * *Storlek för webbnod*
+      * *Storlek för servicenod* *(ange önskad storlek för varje nod.)*
+
+1. Ange **[!UICONTROL From Date]** i UTC-format (datum och tid).
+
+1. Ange **[!UICONTROL To Date]** i UTC-format (datum och tid).
+
+1. Ange **[!UICONTROL Project URL]** *(finns under https://accounts.magento.cloud/, vanligtvis i formatet `https://[REGION].magento.cloud/projects/PROJECT_ID`)*
+
+1. Ange **[!UICONTROL Project ID]**.
+
+1. Ange **[!UICONTROL Affected URL]** *(måste börja med `http://` eller `https://`.)*
+
+1. Välj **[!UICONTROL Priority]**.
+
+1. Välj **[!UICONTROL Business Impact]**.
+
+1. Bekräfta **[!UICONTROL Time Zone]** *(t.ex. `(UTC-5:00) Indiana (East)`)*
+
+1. Ange **[!UICONTROL Phone Number]** *(t.ex. `+12015550123`)*
+
+1. Klicka på **[!UICONTROL Submit]** för att slutföra ditt supportärende.
 
 >[!NOTE]
 >
@@ -86,7 +118,7 @@ Följande information finns för varje begäran om storleksändring:
 ## Relaterad läsning
 
 * Information, metoder och exempel på hur du mäter och förbättrar webbplatsens prestanda finns i följande ingående artiklar i vår kunskapsbas för support:
-   * [Beräkning av processorallokering för Adobe Commerce i molnet](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
+   * [CPU allokeringsberäkning för Adobe Commerce i molnet](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
    * [Kontrollera om det krävs en uppstorlek för värdinstanserna för Adobe Commerce i molnet](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html)
    * [Kontrollera värddatorns CPU-konfiguration för Adobe Commerce i molnet](/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html)
 * Mer information om hur du identifierar avbrott finns i [Identifiera och mäta avbrott för Adobe Commerce i molnet](/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html) i vår kunskapsbas för support.
