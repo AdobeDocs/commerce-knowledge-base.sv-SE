@@ -2,9 +2,9 @@
 title: Återställ en DB-ögonblicksbild från mellanlagring eller produktion
 description: I den här artikeln beskrivs hur du återställer en DB-ögonblicksbild från Staging eller Production på Adobe Commerce i molninfrastrukturen.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 193b5118342f380cef925766c0f7956a6592800c
+source-git-commit: 62815213ce54f72d27812b9c2d7b3997f2e88897
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ I den här artikeln visas hur du återställer en DB [!DNL snapshot] från [!DNL
 >[!NOTE]
 >
 >Dessa metoder återställer den **fullständiga ögonblicksbilden**.
->&#x200B;>Om du behöver återställa ögonblicksbilden **delvis** - till exempel bara återställa katalogtabellerna utan att behöva ändra ordningsföljden - måste du rådfråga utvecklaren eller DBA.
+>>Om du behöver återställa ögonblicksbilden **delvis** - till exempel bara återställa katalogtabellerna utan att behöva ändra ordningsföljden - måste du rådfråga utvecklaren eller DBA.
 
 
 ## Berörda produkter och versioner
@@ -25,6 +25,10 @@ I den här artikeln visas hur du återställer en DB [!DNL snapshot] från [!DNL
 * Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 Välj det alternativ som passar bäst:
+
+>[!NOTE]
+>
+> Om du importerar en ögonblicksbild till en integreringsmiljö bör du tänka på databasstorleken. Stora databaser kan försämra prestanda efter import. Vi rekommenderar att du först importerar ögonblicksbilden till en staging eller lokal miljö för att granska och minska dess storlek innan du överför den till integrering. Du kan även inaktivera cron-jobb i integrationsgrenen om prestandaproblem uppstår efter importen. Mer information finns i [Integreringsmiljö](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) i guiden för Commerce om molninfrastruktur.
 
 * [Metod 1: Överför databasen [!DNL dump] till den lokala datorn och importera den](#meth2).
 * [Metod 2: Importera databasen [!DNL dump] direkt från servern](#meth3).
@@ -79,7 +83,7 @@ Stegen är:
    ```
 
 1. Kopiera databasen [!DNL dump file] (till exempel: `<cluster ID>.sql.gz` för [!DNL Production] eller `<cluster ID_stg>.sql.gz` för [!DNL Staging]) till den lokala datorn.
-1. Kontrollera att du har konfigurerat [!DNL SSH tunnel] för fjärranslutning till databasen: [[!DNL SSH]  och [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) i utvecklardokumentationen.
+1. Kontrollera att du har konfigurerat [!DNL SSH tunnel] för fjärranslutning till databasen: [[!DNL SSH]  och [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) i utvecklardokumentationen.
 1. Anslut till databasen.
 
    ```bash
@@ -175,6 +179,6 @@ Stegen är:
 
 I vår utvecklardokumentation:
 
-* [Importera kod: Importera databasen](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] och [!DNL backup] hantering: [!DNL Dump] din databas](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Säkerhetskopiera (ögonblicksbild) i molnet: Vanliga frågor ](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Importera kod: Importera databasen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] och [!DNL backup] hantering: [!DNL Dump] din databas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Säkerhetskopiera (ögonblicksbild) i molnet: Vanliga frågor ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
