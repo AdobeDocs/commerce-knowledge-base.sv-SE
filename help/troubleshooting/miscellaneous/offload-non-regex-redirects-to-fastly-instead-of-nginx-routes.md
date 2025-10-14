@@ -43,7 +43,7 @@ I följande steg beskrivs hur du placerar omdirigeringar på [!DNL Fastly] i st�
 
    Några kavaater till detta:
 
-   * [!DNL Fastly] kan inte göra [!DNL regex] för ordlisteposter. Det är bara en exakt träff. Mer information om de här begränsningarna finns i [[!DNL Fastly]s dokument om begränsningar för kantordlistor ](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
+   * [!DNL Fastly] kan inte göra [!DNL regex] för ordlisteposter. Det är bara en exakt träff. Mer information om de här begränsningarna finns i [[!DNL Fastly]s dokument om begränsningar för kantordlistor &#x200B;](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
    * [!DNL Fastly] har en gräns på 1 000 poster i en enda ordlista. [!DNL Fastly] kan utöka den här gränsen, men det leder till den tredje grottan.
    * Varje gång du uppdaterar posterna och distribuerar de uppdaterade [!DNL VCL] till alla noder ökar den geometriska inläsningstiden med expanderande ordlistor, vilket innebär att en 2 000-postordlista läses in 3x-4x långsammare än en 1 000-postordlista. Men det är bara ett problem när du distribuerar [!DNL VCL] (uppdaterar ordlistan eller ändrar [!DNL VCL]-funktionskoden).
 

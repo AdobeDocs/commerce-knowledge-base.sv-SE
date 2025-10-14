@@ -48,6 +48,6 @@ Kunderna kan öppna ett stängt ärende på nytt inom 14 dagar för att fortsät
 ## Relaterad läsning
 
 * [Skicka in en supportanmälan](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
-* Länken [&quot;Skicka en biljett&quot; visas inte på startsidan för Adobe Commerce Help Center ](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
+* Länken [&quot;Skicka en biljett&quot; visas inte på startsidan för Adobe Commerce Help Center &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
 * [Formulär för anmälan av biljett: handlaren visas inte i listrutan Organisation](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
 * [Adobe Success Plans - översikt: Supportärende - livscykel](https://experienceleague.adobe.com/sv/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)

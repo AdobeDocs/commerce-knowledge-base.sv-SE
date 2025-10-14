@@ -20,6 +20,6 @@ I den här videon får du lära dig:
 * [visualisera dina resultat](/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html) <!-- Link fails-->
 * Så här sparar du rapporten på en kontrollpanel
 
-Om du vill titta på videon går du till [Commerce Intelligence - SQL Report Builder ](/docs/commerce-learn/tutorials/business-intelligence/sql-report-builder.html) i Adobe Experience League.
+Om du vill titta på videon går du till [Commerce Intelligence - SQL Report Builder &#x200B;](/docs/commerce-learn/tutorials/business-intelligence/sql-report-builder.html) i Adobe Experience League.
 
 **Vill du följa med?** Titta i vår [SQL Report Builder-självstudiekurs](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) för skrivna instruktioner.

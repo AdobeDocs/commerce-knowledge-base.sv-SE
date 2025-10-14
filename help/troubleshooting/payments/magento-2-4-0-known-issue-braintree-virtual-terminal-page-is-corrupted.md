@@ -26,7 +26,7 @@ Den här artikeln innehåller en patch för det kända Adobe Commerce 2.4.0-prob
 
 <u>Steg att återskapa:</u>
 
-Gå till **Sales** > **Braintree Virtual Terminal** i Commerce Admin. **&#x200B; **
+Gå till **Sales** > **Braintree Virtual Terminal** i Commerce Admin. **&#x200B; &#x200B;**
 
 <u>Förväntat resultat:</u>
 
@@ -40,7 +40,7 @@ Gränssnittet för den virtuella terminalsidan **Braintree** har brutits.
 
 <u>Steg att återskapa:</u>
 
-Gå till **Sales** > **Braintree Virtual Terminal** i Commerce Admin. **&#x200B; **
+Gå till **Sales** > **Braintree Virtual Terminal** i Commerce Admin. **&#x200B; &#x200B;**
 
 <u>Förväntat resultat:</u>
 

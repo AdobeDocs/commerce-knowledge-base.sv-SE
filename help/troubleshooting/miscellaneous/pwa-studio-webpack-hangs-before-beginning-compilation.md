@@ -21,7 +21,7 @@ I den här artikeln beskrivs en föreslagen lösning för när ett javascript [W
 
 ## Problem
 
-[Kontrollera vilken senaste version av pwa-buildpack som är ](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack) och
+[Kontrollera vilken senaste version av pwa-buildpack som är &#x200B;](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack) och
 
 ```yaml
 pwa-buildpack

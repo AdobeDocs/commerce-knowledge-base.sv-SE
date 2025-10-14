@@ -131,7 +131,7 @@ När du har identifierat IP-adresserna som orsakar hög serverbelastning kan du 
 
 Om du inte kan komma åt din administratör på grund av stor belastning kan du använda API:t Fastly för att konfigurera blockeringsreglerna:
 
-1. Skapa åtkomstkontrollistan enligt beskrivningen i [Arbeta med åtkomstkontrollistor med API:t ](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) Snabbt.
+1. Skapa åtkomstkontrollistan enligt beskrivningen i [Arbeta med åtkomstkontrollistor med API:t &#x200B;](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) Snabbt.
 1. I avsnittet `recv` skapar du ett VCL-fragment med följande innehåll, som har ersatt ACL\_NAME\_GOES\_HERE med namnet på den åtkomstkontrollista som skapades i föregående steg:
 
    ```

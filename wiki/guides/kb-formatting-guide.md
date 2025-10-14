@@ -84,7 +84,7 @@ your code here
 </pre></code>
 ```
 
-Där ``%language-code%`` är de koder som definieras av [språk som stöds av Prism.js ](https://prismjs.com/#supported-languages).
+Där ``%language-code%`` är de koder som definieras av [språk som stöds av Prism.js &#x200B;](https://prismjs.com/#supported-languages).
 
 ## Listor
 

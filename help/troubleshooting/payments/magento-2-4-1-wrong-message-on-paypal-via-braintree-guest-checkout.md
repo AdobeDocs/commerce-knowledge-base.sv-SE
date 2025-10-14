@@ -60,5 +60,5 @@ Lösningen på problemet är att kunden kan logga in på en butik (inloggade anv
 ## Relaterad läsning
 
 * [Bästa praxis för antal produkter i kundvagn i Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) i vår kunskapsbas för support.
-* [Beställningsexempel: Steg 1. Lägg till artiklar i kundvagnen ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) i utvecklardokumentationen
-* [GraphQL självstudiekurs: Steg 1. Lägg till produkter i kundvagnen ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) i utvecklardokumentationen
+* [Beställningsexempel: Steg 1. Lägg till artiklar i kundvagnen &#x200B;](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) i utvecklardokumentationen
+* [GraphQL självstudiekurs: Steg 1. Lägg till produkter i kundvagnen &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) i utvecklardokumentationen

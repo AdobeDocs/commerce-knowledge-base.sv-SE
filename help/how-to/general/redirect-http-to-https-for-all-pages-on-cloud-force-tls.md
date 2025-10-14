@@ -39,7 +39,7 @@ I det här steget definierar vi säkra URL:er för butiken. Gå till [Steg 2: Ak
 1. Klicka på **Överför** i den dialogruta som visas.    ![magento-admin_force-tls-confirmation-dialog.png](assets/magento-admin_force-tls-confirmation-dialog.png)
 1. När dialogrutan stängs kontrollerar du att det aktuella läget för Tvinga TLS visas som **aktiverat**.    ![magento-admin_force-tls-enabled.png](assets/magento-admin_force-tls-enabled.png)
 
-**Snabbt relaterad dokumentation:**   [ Tvinga TLS-guide ](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) för Adobe Commerce 2.
+**Snabbt relaterad dokumentation:**   [&#x200B; Tvinga TLS-guide &#x200B;](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) för Adobe Commerce 2.
 
 ## Om Tvinga TLS
 

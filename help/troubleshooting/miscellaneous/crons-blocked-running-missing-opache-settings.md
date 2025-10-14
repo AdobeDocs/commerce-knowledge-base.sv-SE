@@ -25,7 +25,7 @@ Kronen slutade fungera.
 
 ## Orsak
 
-Modulen [!DNL OpCache] uppdaterades till en nyare version som introducerade ett [!DNL GraphQL]-plugin som skriver om `env.php` i körningsmiljön och kan åsidosätta referensinställningen, som kan ha orsakat problemet. Konfigurationen [!DNL OpCache] måste uppdateras för att inga problem med `env.php file` ska uppstå. Den löstes i [ version 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) av paketet [!DNL ECE Tools].
+Modulen [!DNL OpCache] uppdaterades till en nyare version som introducerade ett [!DNL GraphQL]-plugin som skriver om `env.php` i körningsmiljön och kan åsidosätta referensinställningen, som kan ha orsakat problemet. Konfigurationen [!DNL OpCache] måste uppdateras för att inga problem med `env.php file` ska uppstå. Den löstes i [&#x200B; version 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) av paketet [!DNL ECE Tools].
 
 ## Lösning
 

@@ -37,7 +37,7 @@ Om de inte har lagts till i projektet måste du lägga till dem som en [!DNL Sup
 
 Om de har lagts till i [!DNL cloud project], men inte har [!DNL Super User role], uppdaterar du deras [!DNL role] i [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE).
 
-Om du vill att en teammedlem ska kunna bevaka alla ärenden som har öppnats för din organisation skickar du en [supportanmälan](https://experienceleague.adobe.com/home?lang=sv-SE&amp;support-tab=home#support).
+Om du vill att en teammedlem ska kunna bevaka alla ärenden som har öppnats för din organisation skickar du en [supportanmälan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support).
 
 ## Relaterad läsning
 

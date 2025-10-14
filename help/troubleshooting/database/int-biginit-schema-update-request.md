@@ -50,7 +50,7 @@ Vilken lösning du använder beror på vad som har orsakat problemet. Se stegen 
 
 Kontrollera det högsta värdet för primärnyckeln genom att köra följande kommando i terminalen: `SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]` och `[ AUTO_INCREMENT ]` har ett värde som är större än eller lika med `max int(11) [ 4294967296 ]`, kan du överväga att [uppdatera `[ AUTO_INCREMENT ]` till nästa värde från tabellen](#update-the-auto-increment-to-the-next-value-from-the-table). Annars bör du överväga en [`INT` till `BIGINT` schemauppdatering ](#int_to_bigint_schema_update).
+Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]` och `[ AUTO_INCREMENT ]` har ett värde som är större än eller lika med `max int(11) [ 4294967296 ]`, kan du överväga att [uppdatera `[ AUTO_INCREMENT ]` till nästa värde från tabellen](#update-the-auto-increment-to-the-next-value-from-the-table). Annars bör du överväga en [`INT` till `BIGINT` schemauppdatering &#x200B;](#int_to_bigint_schema_update).
 
 ## Uppdatera `AUTO_INCREMENT` till nästa värde från tabellen {#update-the-auto-increment-to-the-next-value-from-the-table}
 

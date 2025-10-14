@@ -112,7 +112,7 @@ Det första steget är att granska ditt kontrakt. De flesta av dessa uppgifter i
 **Betalningsremissa**, den finns alltid längst ned på fakturan.
 
 * Vi kan bara ta emot kreditkortsbetalningar under 75 000 dollar.
-* **Merchants på månadsfakturering måste betala via kreditkort på autopay.** [Se avsnittet CC autopay ](#cc-autopay).
+* **Merchants på månadsfakturering måste betala via kreditkort på autopay.** [Se avsnittet CC autopay &#x200B;](#cc-autopay).
 * Handlare på kvartalsvis, halvårsvis och årsvis kan betala med kreditkort, men det måste göras manuellt av handlaren.
 
 ## Ytterligare faktureringskontakter

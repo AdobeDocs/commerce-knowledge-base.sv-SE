@@ -279,7 +279,7 @@ ComponentRegistrar::register(ComponentRegistrar::MODULE, 'VendorName_ExtraCountr
 
 Det här är ett exempel på filen Composer.json.
 
-Mer information om Composer.json finns i [PHP Developer Guide > Filen Composer.json ](https://developer.adobe.com/commerce/php/development/build/composer-integration/) i utvecklardokumentationen.
+Mer information om Composer.json finns i [PHP Developer Guide > Filen Composer.json &#x200B;](https://developer.adobe.com/commerce/php/development/build/composer-integration/) i utvecklardokumentationen.
 
 ```json
 {

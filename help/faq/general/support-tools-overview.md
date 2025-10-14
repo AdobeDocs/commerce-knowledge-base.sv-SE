@@ -24,7 +24,7 @@ I den här artikeln finns en översikt över de tillgängliga verktygen:
 
 [!DNL Observation for Adobe Commerce] är en [!DNL New Relic nerdlet] för att se status för din Adobe Commerce-webbplats, aktuella eller tidigare vyer. En nördlet är ett anpassat program som skapats med [!DNL New Relic One] programmeringsbarhet. Den presenterar den mest relevanta [!DNL New Relic]-informationen i ett enkelt format mot en gemensam tidslinje.
 
-Om du vill veta mer om hur du använder [!DNL Observation for Adobe Commerce] i molnarkitekturen kan du läsa [[!DNL Observation for Adobe Commerce] > Introduktion ](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=sv-SE).
+Om du vill veta mer om hur du använder [!DNL Observation for Adobe Commerce] i molnarkitekturen kan du läsa [[!DNL Observation for Adobe Commerce] > Introduktion &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=sv-SE).
 
 ## Hanterade aviseringar för Adobe Commerce - få aviseringar om kritisk lagring och API-nivåer  {#managed-alerts-for-adobe-commerce}
 

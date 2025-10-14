@@ -76,7 +76,7 @@ Det finns två viktiga saker att tänka på när du använder `robots.txt`:
 * Roboter kan ignorera din `robots.txt`. I synnerhet robotar för skadlig kod som skannar webben efter säkerhetsproblem och e-postadresskörare som används av spamrerare kommer inte att bry sig.
 * Filen `robots.txt` är en offentligt tillgänglig fil. Vem som helst kan se vilka delar av servern som du inte vill att robotar ska använda.
 
-Grundläggande information och standardkonfigurationen för Adobe Commerce `robots.txt` finns i artikeln [ Sökmotorrobotar ](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) i vår utvecklardokumentation.
+Grundläggande information och standardkonfigurationen för Adobe Commerce `robots.txt` finns i artikeln [&#x200B; Sökmotorrobotar &#x200B;](https://experienceleague.adobe.com/sv/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) i vår utvecklardokumentation.
 
 Allmän information och rekommendationer om `robots.txt` finns i:
 

@@ -42,7 +42,7 @@ Mer information om säkerhetskopiering finns i [Säkerhetskopiera och återstäl
 Om säkerhetskopieringen misslyckas på grund av otillräckligt diskutrymme bör du vanligtvis frigöra diskutrymme genom att flytta vissa filer till en annan lagringsenhet eller enhet. Det kan dock finnas andra sätt att lösa problemet. Tips finns på någon av följande resurser:
 
 * [8 Tips för att lösa problem med hårddisken i Linux &amp; Unix Systems som t.ex. disken full eller inte kan skriva till disken](https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk)
-* [serverdefault: df säger att disken är full, men inte ](https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not)
+* [serverdefault: df säger att disken är full, men inte &#x200B;](https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not)
 * [unix.stackexchange.com: Spåra var diskutrymmet har pågått i Linux?](https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux)
 
 ## Operativsystemfel {#operating-system-error-trouble-backup-os-}

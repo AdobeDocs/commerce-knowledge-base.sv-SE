@@ -30,7 +30,7 @@ Problemet kan uppstå på grund av ACL-begränsningar för Adobe Commerce instan
 
 ## Lösning för felaktig produktstatus
 
-Ange en dynamisk ID-inställning för `Magento\Framework\Authorization\PolicyInterface`, enligt beskrivningen i avsnittet [ ObjectManager>Programmatiska produktuppdateringar](https://developer.adobe.com/commerce/php/development/components/object-manager/) i utvecklardokumentationen.
+Ange en dynamisk ID-inställning för `Magento\Framework\Authorization\PolicyInterface`, enligt beskrivningen i avsnittet [&#x200B; ObjectManager>Programmatiska produktuppdateringar](https://developer.adobe.com/commerce/php/development/components/object-manager/) i utvecklardokumentationen.
 
 ## Relaterad läsning
 

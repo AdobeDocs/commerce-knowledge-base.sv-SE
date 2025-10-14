@@ -54,16 +54,16 @@ När du släpper kartinnehållsblocket från menyn **[!DNL PageBuilder]** till s
 Använd följande bifogade patchar, beroende på vilken version av Adobe Commerce det är:
 
 **För version 2.4.4:**
-[ ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_Composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
+[&#x200B; ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_Composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
 
 **För version 2.4.5:**
-[ ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_Composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
+[&#x200B; ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_Composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
 
 **För version 2.4.6:**
-[ ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_Composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
+[&#x200B; ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_Composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
 
 **För version 2.4.7:**
-[ ACSD-60245_Google_maps_API_2.4.7_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.7_composer.patch.zip)
+[&#x200B; ACSD-60245_Google_maps_API_2.4.7_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.7_composer.patch.zip)
 
 **Obs!**
 

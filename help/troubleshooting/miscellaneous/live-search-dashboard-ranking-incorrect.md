@@ -21,4 +21,4 @@ Om du observerar att de data som visas på kontrollpanelen [!DNL Live Search] ä
 
 * Miljötypen är felaktig. Om miljön till exempel är inställd på *[!UICONTROL Testing]* i stället för *[!UICONTROL Production]*. Mer information finns i [StoreFront-kontext](https://github.com/adobe/commerce-events/blob/main/examples/events/example-contexts/mock-storefront-context.md).
 
-* Sökresultatkontexten saknas i [sökproduktklickhändelsen ](https://github.com/adobe/commerce-events/blob/main/examples/events/search-product-click.md).
+* Sökresultatkontexten saknas i [sökproduktklickhändelsen &#x200B;](https://github.com/adobe/commerce-events/blob/main/examples/events/search-product-click.md).

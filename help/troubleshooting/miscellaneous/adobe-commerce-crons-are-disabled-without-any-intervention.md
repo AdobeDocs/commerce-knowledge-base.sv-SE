@@ -39,7 +39,7 @@ Ett problem med inställningarna för [!DNL OPcache].
 
 ## Lösning
 
-Uppgradera [!DNL ECE Tools] till den senaste versionen, [ 2002.1.13](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
+Uppgradera [!DNL ECE Tools] till den senaste versionen, [&#x200B; 2002.1.13](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
 
 ## Relaterad läsning
 

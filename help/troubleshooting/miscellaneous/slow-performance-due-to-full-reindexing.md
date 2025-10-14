@@ -57,6 +57,6 @@ Kör bara omindexering när det behövs. Om du vill veta mer går du till [Konfi
 
 ## Relaterad läsning
 
-* [Indexeringsöversikt: Så här indexerar du om ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) i utvecklardokumentationen.
+* [Indexeringsöversikt: Så här indexerar du om &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) i utvecklardokumentationen.
 * [Ovaliderat cacheminne orsakar en försämring av svarstiden](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) i vår kunskapsbas för support.
 

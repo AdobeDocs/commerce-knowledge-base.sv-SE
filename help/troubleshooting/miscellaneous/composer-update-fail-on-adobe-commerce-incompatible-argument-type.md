@@ -63,4 +63,4 @@ Den fullständiga korrigeringen släpps i Adobe Commerce (alla distributionsmeto
 
 ## Relaterad läsning
 
-* Github: [2021-07-27 Dispositionsuppdatering Inkompatibel argumenttyp: Obligatorisk typ: int. Faktisk typ: sträng ](https://github.com/magento/magento2/issues/33595)
+* Github: [2021-07-27 Dispositionsuppdatering Inkompatibel argumenttyp: Obligatorisk typ: int. Faktisk typ: sträng &#x200B;](https://github.com/magento/magento2/issues/33595)

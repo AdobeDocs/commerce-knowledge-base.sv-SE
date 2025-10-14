@@ -52,7 +52,7 @@ Det finns inget &quot;riktigt&quot;-värde för `max-input-vars`. Det beror på 
 
 ## xdebug maximum function nesting level error
 
-Se [Under installationen kan du felsöka högsta antal funktionsfel på kapslingsnivån ](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md).
+Se [Under installationen kan du felsöka högsta antal funktionsfel på kapslingsnivån &#x200B;](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md).
 
 ## Fel visas när du öppnar en PHTML-mall
 

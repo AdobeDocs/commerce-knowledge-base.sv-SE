@@ -32,7 +32,7 @@ Kontrollen misslyckas eftersom du använder en PHP-version som inte stöds.
 
 ### Lösning
 
-Du löser det här problemet genom att använda en av de versioner som stöds i utvecklardokumentationen [2.3.x systemkrav](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements) och [ 2.2.x systemkrav](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements).
+Du löser det här problemet genom att använda en av de versioner som stöds i utvecklardokumentationen [2.3.x systemkrav](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements) och [&#x200B; 2.2.x systemkrav](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/system-requirements).
 
 ## PHP-beredskapskontrollen visas inte
 
