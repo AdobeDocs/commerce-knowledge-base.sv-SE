@@ -25,7 +25,7 @@ Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://www.adob
 >Innan du fortsätter med domänkonfigurationen bör du kontrollera att:
 >
 >Alla bas-URL:er är konfigurerade att använda HTTPS under **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**, som omfång till rätt webbplats- eller butiksvy.
->> [Tvinga TLS](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) har aktiverats för att omdirigera all HTTP-trafik till HTTPS över din Adobe Commerce-webbplats i molninfrastruktur.
+>&#x200B;> [Tvinga TLS](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) har aktiverats för att omdirigera all HTTP-trafik till HTTPS över din Adobe Commerce-webbplats i molninfrastruktur.
 
 ### Steg 1 - Är detta för [!DNL Integration, Staging] eller [!DNL Production environment]?
 
