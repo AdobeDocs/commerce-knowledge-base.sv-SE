@@ -25,21 +25,21 @@ Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://www.adob
 >Innan du fortsätter med domänkonfigurationen bör du kontrollera att:
 >
 >Alla bas-URL:er är konfigurerade att använda HTTPS under **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**, som omfång till rätt webbplats- eller butiksvy.
->&#x200B;> [Tvinga TLS](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) har aktiverats för att omdirigera all HTTP-trafik till HTTPS över din Adobe Commerce-webbplats i molninfrastruktur.
+>&#x200B;> [Tvinga TLS](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) har aktiverats för att omdirigera all HTTP-trafik till HTTPS över din Adobe Commerce-webbplats i molninfrastruktur.
 
 ### Steg 1 - Är detta för [!DNL Integration, Staging] eller [!DNL Production environment]?
 
-* **[!DNL Integration]**: [!DNL Custom domains] stöds inte. Du måste använda den här metoden i stället: [Konfigurera flera webbplatser eller butiker: Konfigurera lokal installation](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains) i användarhandboken.
+* **[!DNL Integration]**: [!DNL Custom domains] stöds inte. Du måste använda den här metoden i stället: [Konfigurera flera webbplatser eller butiker: Konfigurera lokal installation](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=sv-SE#add-new-domains) i användarhandboken.
 * **[!DNL Staging]**: Gå till **Steg 2**.
 * **[!DNL Production]**: Gå till **Steg 3**.
 
 ### Steg 2 - [!DNL Staging environment]: är du på [!DNL Pro] eller [!DNL Starter]?
 
-* **[!DNL Pro]**: **Skicka en begäran** om att lägga till domänen i [!DNL Fastly, Nginx] och konfigurera [!DNL SSL certificate] (samt [!DNL Sendgrid domain] om det behövs). När konfigurationen är klar [uppdaterar  [!DNL DNS] konfigurationen med  [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings).
+* **[!DNL Pro]**: **Skicka en begäran** om att lägga till domänen i [!DNL Fastly, Nginx] och konfigurera [!DNL SSL certificate] (samt [!DNL Sendgrid domain] om det behövs). När konfigurationen är klar [uppdaterar  [!DNL DNS] konfigurationen med  [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE#update-dns-configuration-with-development-settings).
 
 >[!NOTE]
 >
->För PRO-arkitektur måste en supportförfrågan skickas till Adobe Commerce om du lägger till en ny domän. Även om vissa kunder kan konfigurera Fast manuellt via Admin Console gäller detta endast i vissa fall, t.ex. när domänen inte är kopplad till någon annan tjänst eller ett annat projekt. Nginx-konfiguration krävs dock alltid och det här steget måste hanteras av Adobe. På grund av detta rekommenderar vi att du skickar en [supportanmälan](https://experienceleague.adobe.com/home?support-tab=home#support) och låter Adobe hantera hela domänkonfigurationsprocessen.
+>För PRO-arkitektur måste en supportförfrågan skickas till Adobe Commerce om du lägger till en ny domän. Även om vissa kunder kan konfigurera Fast manuellt via Admin Console gäller detta endast i vissa fall, t.ex. när domänen inte är kopplad till någon annan tjänst eller ett annat projekt. Nginx-konfiguration krävs dock alltid och det här steget måste hanteras av Adobe. På grund av detta rekommenderar vi att du skickar en [supportanmälan](https://experienceleague.adobe.com/home?lang=sv-SE&support-tab=home#support) och låter Adobe hantera hela domänkonfigurationsprocessen.
 
 
 * **[!DNL Starter]**: [!DNL Custom domains] stöds inte i mellanlagringsmiljön.
@@ -50,7 +50,7 @@ Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://www.adob
 
 >[!NOTE]
 >
->Du kan lägga till den nya [!DNL domain] till [!DNL Fastly] själv genom att uppdatera konfigurationen i [!DNL Admin] i **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!DNL Fastly Configuration]** > **[!UICONTROL Domains]** [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) i användarhandboken.
+>Du kan lägga till den nya [!DNL domain] till [!DNL Fastly] själv genom att uppdatera konfigurationen i [!DNL Admin] i **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!DNL Fastly Configuration]** > **[!UICONTROL Domains]** [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html?lang=sv-SE#manage-domains) i användarhandboken.
 >
 >
 >Om du inte kan lägga till domänen kan det bero på något av följande:
@@ -62,12 +62,12 @@ Adobe Commerce i molninfrastruktur, [alla versioner som stöds](https://www.adob
 
 ### Steg 4 - Är [!DNL domain] live?
 
-* **JA**: [Uppdatera  [!DNL DNS] konfigurationen med [!UICONTROL production] inställningar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html#update-dns-configuration-with-production-settings).
-* **NO**: [Uppdatera  [!DNL DNS] konfigurationen med [!UICONTROL development] inställningar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings).
+* **JA**: [Uppdatera  [!DNL DNS] konfigurationen med [!UICONTROL production] inställningar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=sv-SE#update-dns-configuration-with-production-settings).
+* **NO**: [Uppdatera  [!DNL DNS] konfigurationen med [!UICONTROL development] inställningar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE#update-dns-configuration-with-development-settings).
 
 ### Steg 5 - Har domänomdirigeringar konfigurerats i `magento-vars.php`?
 
-När domänen har konfigurerats måste du [ändra variablerna](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites#modify-variables) i filen `magento-vars.php` för att dirigera domänen till rätt webbplats-/butiks-URL.
+När domänen har konfigurerats måste du [ändra variablerna](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites#modify-variables) i filen `magento-vars.php` för att dirigera domänen till rätt webbplats-/butiks-URL.
 
 ### Steg 6 - Är [!DNL domain]-konfigurationen verifierad?
 
@@ -159,11 +159,11 @@ Om du har lagt till nya butiker, butiksgrupper och webbplatser i **[!UICONTROL S
 ]
 ```
 
-Det innebär att du har konfigurerat [SCD för Build](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/static-content#setting-the-scd-on-build) genom att köra kommandot `config:dump` i paketet `ece-tools` tidigare.
+Det innebär att du har konfigurerat [SCD för Build](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/develop/deploy/static-content#setting-the-scd-on-build) genom att köra kommandot `config:dump` i paketet `ece-tools` tidigare.
 
 Om du upptäcker att den nya butiken/webbplatsen som du har skapat inte visas i filen `app/etc/config.php` måste du köra kommandot igen för att synkronisera filen `config.php` med ändringarna i databasen, sedan implementera filen `config.php` och sedan distribuera den igen. Detta gör det lättare att distribuera statiskt innehåll för den nya butiken/webbplatsen/webbplatserna till rätt filsökvägar.
 
 ## Relaterad läsning
 
-* [Konfigurera flera webbplatser eller butiker: Lägg till ny [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains) i användarhandboken.
-* [Webbplatsen är inte tillgänglig på grund av ursprungsinsvepning](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26856)
+* [Konfigurera flera webbplatser eller butiker: Lägg till ny [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=sv-SE#add-new-domains) i användarhandboken.
+* [Webbplatsen är inte tillgänglig på grund av ursprungsinsvepning](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26856)
