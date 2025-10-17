@@ -21,7 +21,7 @@ Så som definieras i [Adobe Commerce Support Services-villkor](https://www.adobe
 ## P1-meddelande - telefonprinciper för hotline
 
 * Hotline för P1-meddelanden är tillgänglig för att rapportera P1-nivåproblem (se definitionen av P1-incidenten i föregående avsnitt).
-* [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) innan du anropar snabbraden för Adobe Commerce P1-meddelanden.
+* [Skicka en supportanmälan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=sv-SE#submit-ticket) innan du anropar snabbraden för Adobe Commerce P1-meddelanden.
 * Utredning, felsökning och kommunikation sker uteslutande inom supportbiljetten.
 * Lägg till all ytterligare information som du kan ha angående problemet direkt till biljetten, innan du ringer.
 * Se till att du har biljettnumret när du ringer.
