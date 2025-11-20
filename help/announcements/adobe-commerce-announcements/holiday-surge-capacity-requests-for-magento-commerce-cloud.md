@@ -1,19 +1,21 @@
 ---
 title: Förfrågningar om överkapacitet på heldag för Adobe Commerce i vår molninfrastruktur
-description: Under högsädessäsongen (ungefär mellan mitten november och mitten av januari) rekommenderar Adobe att alla Adobe Commerce handlare som är värdar i vår molninfrastruktur förbereder sig för ökad trafik.
+description: Under högsädessäsongen (cirka mellan mitten av november och mitten av januari) rekommenderar Adobe att alla Adobe Commerce handlare som finns på vår molninfrastruktur förbereder sig för ökad trafik.
 exl-id: 9d6910bf-30bc-4117-bf7f-a0316f9506b5
 feature: Cloud, Paas
 role: Admin
-source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
+source-git-commit: 9cd7eeb6af379fa94e234bb677b532051079995c
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
 # Förfrågningar om överkapacitet på heldag för Adobe Commerce i vår molninfrastruktur
 
-Under högsädessäsongen (ungefär mellan mitten november och mitten av januari) rekommenderar Adobe att alla Adobe Commerce handlare som är värdar i vår molninfrastruktur förbereder sig för ökad trafik.
+Under högsädessäsongen (cirka mellan mitten av november och mitten av januari) rekommenderar Adobe att alla Adobe Commerce handlare som finns på vår molninfrastruktur förbereder sig för ökad trafik.
+
+En omfattande checklista för olika lösningar och bästa praxis för förberedelse av system och team inför högsäsong finns i [Adobe DX Unified Holiday Readiness Guide](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/unified-holiday-readiness).
 
 **Planerings- och utvärderingstrafik**
 
@@ -34,20 +36,20 @@ Följande information finns för varje begäran om storleksändring:
 
 **Begär överkapacitet**
 
-Adobe Commerce handlare i vår molninfrastruktur som förutser ett behov av extra kapacitet under semestersäsongen bör [skicka en supportanmälan för överkapacitet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=sv-SE) via vårt [Help Center](/help/overview.md), vilket anger datum och förväntade kapacitetsbehov i biljetten. Observera att ökad kapacitet kräver att du använder den licensierade överlagringskapaciteten.
+Adobe Commerce handlare i vår molninfrastruktur som förutser ett behov av extra kapacitet under semestersäsongen bör [skicka en supportanmälan för överkapacitet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) via vårt [Help Center](/help/overview.md), vilket anger datum och förväntade kapacitetsbehov i biljetten. Observera att ökad kapacitet kräver att du använder den licensierade överlagringskapaciteten.
 
 **Vi rekommenderar att du skickar dessa biljetter minst 48 arbetstimmar innan du behöver kapaciteten. Vi rekommenderar dessutom att du gör en begäran om måndag mellan fredag och måndag i svartvitt så långt som möjligt, eftersom kapaciteten under perioden är begränsad.**
 
 
 **Mer hjälp?**
 
-Behöver du mer vägledning om hur man förbereder sig för högtrafik? Adobe Commerce handlare i vår molninfrastruktur kan kontakta sitt kontoteam på Adobe för att få hjälp, strategi och planeringstips för att förbereda sig för en lyckad högsäsong. Vi rekommenderar också att du tittar på [Magento-bloggen](https://magento.com/blog) för strategitips året om.
+Behöver du mer vägledning om hur man förbereder sig för högtrafik? Adobe Commerce handlare i vår molninfrastruktur kan kontakta sitt kontoteam på Adobe för att få hjälp, strategi och planeringstips för att förbereda sig för en lyckad högsäsong. Vi rekommenderar även att du tittar på [Magento-bloggen](https://magento.com/blog) för strategitips året om.
 
 ## Resurser för att granska din kapacitet
 
 I vår kunskapsbas:
 
-* [Beräkning av processorallokering för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html?lang=sv-SE)
-* [Kontrollera om det krävs en uppgradering för värdinstanser för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html?lang=sv-SE)
-* [Kontrollera värddatorns processorkonfiguration för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html?lang=sv-SE)
-* [Identifiera och mät avbrott för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html?lang=sv-SE)
+* [CPU-allokeringsberäkning för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
+* [Kontrollera om det krävs en uppgradering för värdinstanser för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html)
+* [Kontrollera värddatorns CPU-konfiguration för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html)
+* [Identifiera och mät avbrott för Adobe Commerce i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html)
