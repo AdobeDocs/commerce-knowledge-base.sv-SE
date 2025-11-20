@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Den bifogade PDF-filen innehåller tips om hur du förbereder din infrastruktur för hög trafik, förhindrar driftstopp och optimerar prestanda under semesterperioden.
 
-Mer information om hur du förbereder organisationen, infrastrukturen och teamen för högsäsong finns i [Adobe DX Solutions Unified Holiday Readiness Guide](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/unified-holiday-readiness).
+Mer information om hur du förbereder organisationen, infrastrukturen och teamen för högsäsong finns i [Adobe DX Solutions Unified Holiday Readiness Guide](https://experienceleague.adobe.com/sv/docs/support-resources/data-sheets/unified-holiday-readiness).
 
 ## Berörda produkter och versioner
 
