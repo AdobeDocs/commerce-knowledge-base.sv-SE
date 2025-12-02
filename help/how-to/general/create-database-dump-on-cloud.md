@@ -18,7 +18,7 @@ Du behöver bara använda en variant (alternativ) för att dumpa din databas. De
 
 ## Krav: SSH i din miljö
 
-Om du vill dumpa din databas på Adobe Commerce i molninfrastruktur med någon variant som beskrivs i den här artikeln måste du först [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+Om du vill dumpa din databas på Adobe Commerce i molninfrastruktur med någon variant som beskrivs i den här artikeln måste du först [SSH till din miljö](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=sv-SE).
 
 >[!WARNING]
 >
@@ -26,7 +26,7 @@ Om du vill dumpa din databas på Adobe Commerce i molninfrastruktur med någon v
 
 ## Alternativ 1: db-dump (**ece-tools; rekommenderas**)
 
-Du kan dumpa din databas med kommandot [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html):
+Du kan dumpa din databas med kommandot [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=sv-SE):
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +34,7 @@ vendor/bin/ece-tools db-dump
 
 Detta är det rekommenderade och säkraste alternativet.
 
-Se [Dumpa din databas (ECE-verktyg)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) i vår Commerce on Cloud Infrastructure Guide.
+Se [Dumpa din databas (ECE-verktyg)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html?lang=sv-SE) i vår Commerce on Cloud Infrastructure Guide.
 
 ## Alternativ 2: mariadb-dump (eller mysqldump för äldre versioner)
 
@@ -73,4 +73,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **Relaterad dokumentation:**
 
 * [mysqldump - Ett program för säkerhetskopiering av databas](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) i officiell MySQL-dokumentation.
-* [Molnspecifika variabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (se `MAGENTO_CLOUD_RELATIONSHIPS`) i vår Commerce on Cloud Infrastructure Guide.
+* [Molnspecifika variabler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=sv-SE) (se `MAGENTO_CLOUD_RELATIONSHIPS`) i vår Commerce on Cloud Infrastructure Guide.
