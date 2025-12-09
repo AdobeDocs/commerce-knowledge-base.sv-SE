@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: ed116b8fddfb6f5e22c2da2fdad5d0d0d2b4a377
+source-git-commit: 3a482f7e5ddc872ddaf9634da8ca4f41a3b46ab4
 workflow-type: tm+mt
-source-wordcount: '2769'
+source-wordcount: '2763'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ ht-degree: 0%
       * [Cybersource-betalning från Admin och framåt i olika domäner har inte bearbetats](/help/troubleshooting/payments/cybersource-payment-from-admin-and-front-on-different-domains-not-processed.md)
       * [Adobe Commerce 2.4.0: Amazon lönevillkor, inga betalningsmetoder](/help/troubleshooting/payments/magento-2-4-0-known-issue-amazon-pay-no-payment-methods.md)
       * [Adobe Commerce 2.4.0: Utcheckningsfel vid val av lokala betalningar](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
-      * [PayPal Payflow Pro - aktiv kodningsaktivitet](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Felsökning av PayPal på Adobe Commerce](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
       * [Adobe Commerce 2.4.0, 2.4.1: Aktivera partiell faktura för Braintree Venmo](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
       * [Adobe Commerce 2.4.2 B2B: Rabatten är fortfarande en lönemetodändring](/help/troubleshooting/payments/magento-2-4-2-b2b-discount-remains-pay-method-change.md)
