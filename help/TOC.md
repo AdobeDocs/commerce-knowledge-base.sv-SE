@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 9c17f1a10303f91ac95813171191983471d345a1
+source-git-commit: ed116b8fddfb6f5e22c2da2fdad5d0d0d2b4a377
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2769'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,6 @@ ht-degree: 0%
       * [Uppdateringar av schemalagd förproduktion av innehåll visas inte med snabb inlagring](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Felsök kron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [CSV-filen för exporterade produkter visas inte](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
-      * [Felet &quot;Klassen kan inte sparas i kodkatalogen&quot;](/help/troubleshooting/miscellaneous/class-cannot-be-saved-in-the-code-directory-error.md)
       * [Kontrollerar distributionsloggen om molnanvändargränssnittet har fel av typen&quot;loggutdragen&quot;](/help/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.md)
       * [Hämtningen misslyckas på grund av ändringar i Composer](/help/troubleshooting/miscellaneous/download-fails-because-of-changes-in-composer.md)
       * [FEL: Det gick inte att värma på Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/error-warming-up-failed-on-magento-commerce-cloud.md)
