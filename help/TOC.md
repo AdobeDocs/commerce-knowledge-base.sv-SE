@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: dff3d2101da7264fe5e6af9ac5c9a6c1c8c97bc9
+source-git-commit: 0c5164641f171a92612417dbc8586b6b6ed442b1
 workflow-type: tm+mt
-source-wordcount: '2700'
+source-wordcount: '2679'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,6 @@ ht-degree: 0%
       * [Felsökning för avancerad rapportering för Adobe Commerce](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [Vanliga PHP-allvarliga fel och lösningar](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
       * [Det går inte att uppdatera disposition på Adobe Commerce: Inkompatibel argumenttyp](/help/troubleshooting/miscellaneous/composer-update-fail-on-adobe-commerce-incompatible-argument-type.md)
-      * [Kan inte ta bort källan eller ändra dess kod](/help/troubleshooting/miscellaneous/cannot-delete-the-source-or-change-its-code.md)
       * [Adobe Commerce 2.4.2 B2B: E-postmallen uppdateras inte](/help/troubleshooting/miscellaneous/magento-2-4-2-b2b-email-template-not-updating-email.md)
       * [Manuell orderexport till MOM misslyckas. Knappen Exportera ordning returnerar HTTP 404-fel](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio: webbläsaren litar inte på det SSL-certifikat som genererats](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
@@ -176,7 +175,6 @@ ht-degree: 0%
       * [Anpassade serverskript körs inte i pub-mediekatalogen](/help/troubleshooting/miscellaneous/custom-server-side-scripts-not-executed-in-pub-media-directory.md)
       * [Problem med beredskapskontroll av PHP-version](/help/troubleshooting/miscellaneous/php-version-readiness-check-issues.md)
       * [Molnwebbplatsen är långsam](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
-      * [Fel vid rensning av snabbcache i molnet (rensningsbegäran bearbetades inte korrekt)](/help/troubleshooting/miscellaneous/error-purging-fastly-cache-on-cloud-the-purge-request-was-not-processed-successfully.md)
       * [Information om förfallodatum för anpassat SSL-certifikat](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio: Valideringsfel vid körning av utvecklarläge](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Inaktivera e-post från Amazon varje timme när du använder Adobe Commerce](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
