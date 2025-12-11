@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en korrigering för dålig prestanda 
 exl-id: 4f20a862-cf54-4196-8a88-101f0c80f8f1
 feature: Best Practices
 role: Developer
-source-git-commit: 72ee49a8667f575a58e0cf1b3d5c9df936cc628b
+source-git-commit: 0786763a1db386fbea7f809eba9bc7f202cdd27a
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,10 @@ Konstant tömning och indexåterskapande är några av orsakerna till prestandaf
 
 ### Lösning
 
-Kör bara omindexering när det behövs. Om du vill veta mer går du till [Konfigurera indexerare](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) i utvecklardokumentationen. En allmän rekommendation och bästa praxis är att tillåta den partiella omindexeringsmekanismen att hantera omindexering av data utan manuell åtgärd från en handlare. All omindexering ska göras med den inbyggda Adobe Commerce-funktionen (Mview). Mview utför partiell omindexering, vilket är det mest effektiva sättet att indexera om data. Mer information om Mview finns i [Indexeringsöversikt: Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) i utvecklardokumentationen.
+Kör bara omindexering när det behövs. Om du vill veta mer går du till [Konfigurera indexerare](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) i utvecklardokumentationen. En allmän rekommendation och bästa praxis är att tillåta den partiella omindexeringsmekanismen att hantera omindexering av data utan manuell åtgärd från en handlare. All omindexering ska göras med den inbyggda Adobe Commerce-funktionen (Mview). Mview utför partiell omindexering, vilket är det mest effektiva sättet att indexera om data. Mer information om Mview finns i [Indexeringsöversikt: Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) i utvecklardokumentationen.
 
 ## Relaterad läsning
 
-* [Indexeringsöversikt: Så här indexerar du om &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) i utvecklardokumentationen.
-* [Ovaliderat cacheminne orsakar en försämring av svarstiden](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) i vår kunskapsbas för support.
+* [Indexeringsöversikt: Så här indexerar du om ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) i utvecklardokumentationen.
+
 
