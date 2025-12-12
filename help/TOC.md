@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 0c5164641f171a92612417dbc8586b6b6ed442b1
+source-git-commit: 898424645c2ef0435c1a75604a47b7d5713670d8
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,6 @@ ht-degree: 0%
       * [Information om förfallodatum för anpassat SSL-certifikat](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio: Valideringsfel vid körning av utvecklarläge](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Inaktivera e-post från Amazon varje timme när du använder Adobe Commerce](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
-      * [Okänd cache orsakar försämrad svarstid](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
       * [Nyckelprocedurer för Github-token och Composer](/help/troubleshooting/miscellaneous/github-token-issue-and-composer-key-procedures.md)
       * [Adobe Commerce 2.4.1 utgåva: det går inte att ändra Amazon-konto i Chrome](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
       * [ECE-verktyg och korrigeringsuppdateringsfel Adobe Commerce cloud infrastructure 2.2.x, 2.3.x](/help/troubleshooting/miscellaneous/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
@@ -202,7 +201,6 @@ ht-degree: 0%
       * [Kundprofiler visas inte i Experience Platform](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio: webbläsaren kan inte tolka .local.pwadev-webbplatsen](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [Produktrekommendationer visas inte i Page Builder](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
-      * [Adobe Commerce snabbfelsökare](/help/troubleshooting/miscellaneous/magento-fastly-troubleshooter.md)
       * [Hög genomströmning för AJAX-begäranden orsakar dålig prestanda](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md)
       * [PWA Studio: Felet &quot;Kan inte proxyvisa&quot; visas i webbläsaren](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
       * [kör installationsproblem:static-content:distribuerat_version.txt](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
