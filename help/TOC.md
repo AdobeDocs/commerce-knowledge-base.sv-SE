@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: de5dd9b057f2dbe79f9c931ef6d3473d809aedab
+source-git-commit: 9a2dadfbb5ca0a2c04d4e86454a1145b97924f61
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2656'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,6 @@ ht-degree: 0%
       * [Felsökning av 503-fel orsakad av att standardinställningarna för lack måste ändras](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Kravuppgifter låser uppgifter från andra grupper](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
       * [Installations-xdebug för högsta funktionskkapslingsnivåfel](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
-      * [Det går inte att spara enheten Adobe Commerce backend](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
       * [PHP-versionsfel eller 404-fel vid åtkomst till Adobe Commerce i webbläsaren](/help/troubleshooting/miscellaneous/php-version-error-or-404-error-when-accessing-magento-in-browser.md)
       * [Ordningen för paketalternativ uppdateras inte vid import](/help/troubleshooting/miscellaneous/bundle-options-order-is-not-updated-by-import.md)
       * [Adobe Commerce 2.4.0: &quot;Lägg till markeringar i kundvagnen&quot; fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
