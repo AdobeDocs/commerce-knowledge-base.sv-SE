@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 9a2dadfbb5ca0a2c04d4e86454a1145b97924f61
+source-git-commit: b03b34be26ed42280036ccda5a94ebc664cdaf7d
 workflow-type: tm+mt
-source-wordcount: '2656'
+source-wordcount: '2649'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,6 @@ ht-degree: 0%
       * [Konfigurationsfilen saknas eller har ändrats](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-fel 60: SSL-certifikatet har upphört att gälla](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
       * [Felsöka produktrekommendationsmodulen i Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
-      * [Felsök fullständigt /tmp-paket för Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md)
       * [Okänd modul, Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
       * [Problem med beredskapskontroll av kron](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
       * [Redis-tjänsten kraschade](/help/troubleshooting/miscellaneous/redis-service-crashed.md)
