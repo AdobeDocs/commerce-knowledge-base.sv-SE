@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 1374f09d481ffd79014d00952c734cf83504df6b
+source-git-commit: d1fe74501ffcb908e9434a0988087ae6c9e73088
 workflow-type: tm+mt
-source-wordcount: '2628'
+source-wordcount: '2617'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,6 @@ ht-degree: 0%
       * [Problem med Adobe Commerce 2.4.0 - Export Tax Rates fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Magento Order Management System (OMS) för Adobe Commerce-bearbetningsfel](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
       * [Cachelagrade bilder läses inte in efter 2.2.X- till 2.3.X-uppgradering](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
-      * [504 gatewaytimeout-fel när en kategori sparas med 1k+-produkter](/help/troubleshooting/miscellaneous/504-gateway-time-out-error-when-saving-a-category-with-1k-products.md)
       * [Felmeddelande när webbplatser läggs till i säkerhetsgenomsökningen](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
       * [Felsökning av delad åtkomst](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
       * [Långsamma prestanda, långsamma och långvariga kroner](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
