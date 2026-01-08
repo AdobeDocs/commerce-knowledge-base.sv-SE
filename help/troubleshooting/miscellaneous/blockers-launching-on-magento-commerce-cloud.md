@@ -23,26 +23,26 @@ Den här artikeln innehåller en korrigering för blockering av starter på Adob
 >
 >När FPC (Full Page Cache) är aktiverat fungerar webbplatsen annorlunda. Kontrollera att du testar den innan du publicerar den.
 
-Processen med snabb konfiguration beskrivs i detalj i avsnittet [Konfigurera fast](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i användarhandboken. Nedan beskrivs de viktiga stegen.
+Processen med snabb konfiguration beskrivs i detalj i avsnittet [Konfigurera fast](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE) i användarhandboken. Nedan beskrivs de viktiga stegen.
 
 ### 1a. Kontrollera att du har den senaste versionen av snabbmodulen installerad
 
-Kontrollera att du har den senaste versionen av modulen Snabbt installerad för att få de senaste funktionerna och förbättringarna. Om du vill kontrollera om du har den senaste versionen av Snabbt går du igenom [Uppgradera snabbmodulen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upgrade-the-fastly-module) i användarhandboken. Mer information finns i [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i användarhandboken.
+Kontrollera att du har den senaste versionen av modulen Snabbt installerad för att få de senaste funktionerna och förbättringarna. Om du vill kontrollera om du har den senaste versionen av Snabbt går du igenom [Uppgradera snabbmodulen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE#upgrade-the-fastly-module) i användarhandboken. Mer information finns i [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE) i användarhandboken.
 
 ### 1b. Aktivera och konfigurera snabbt med Commerce Admin
 
-Mer information finns i [Få dina inloggningsuppgifter snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials) i användarhandboken.
+Mer information finns i [Få dina inloggningsuppgifter snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE#get-fastly-credentials) i användarhandboken.
 
 ### 1c. Ladda upp VCL-fragment snabbt
 
-Mer information finns i [Överför VCL till Snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i användarhandboken.
+Mer information finns i [Överför VCL till Snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE) i användarhandboken.
 
-Du kan också [skapa och lägga till egna VCL-fragment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html).
+Du kan också [skapa och lägga till egna VCL-fragment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=sv-SE).
 
 ### 1d. Konfigurera DNS för snabb
 
 
-Mer information finns i den här artikeln: [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings) i användarhandboken.
+Mer information finns i den här artikeln: [Konfigurera snabbt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE#update-dns-configuration-with-development-settings) i användarhandboken.
 
 ## &#x200B;2. Giltigt SSL-certifikat (TLS)
 
@@ -63,9 +63,9 @@ http://www.mywebsite.com/old-category-page.html **>** http://www.mywebsite.com/n
 
 **Relaterade artiklar:**
 
-* [Dirigerar om via route.yaml](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/redirects.html) i användarhandboken.
-* [Dirigerar om via molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) i vår användarhandbok.
-* [URL-omskrivningar](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite.html) i användarhandboken.
+* [Dirigerar om via route.yaml](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/redirects.html?lang=sv-SE) i användarhandboken.
+* [Dirigerar om via molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=sv-SE) i vår användarhandbok.
+* [URL-omskrivningar](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite.html?lang=sv-SE) i användarhandboken.
 
 ## &#x200B;4. Resursprestanda
 
@@ -78,8 +78,8 @@ Rekommendation: Om du vill identifiera möjliga orsaker till dålig prestanda b�
 * [New Relic](https://support.newrelic.com/): Söker efter processer och områden på webbplatsen som orsakar långsamma prestanda med spårad tid per åtgärd, som överföring av data, frågor, Redis osv.
 * [WebPageTest](https://www.webpagetest.org/) (kostnadsfritt) och [Passagerare](https://www.pingdom.com/) (betalt): Realtidsanalys av webbplatssidorna läses in med olika ursprungsplatser.
 
-Du kan också överväga [minification](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) för CSS, JavaScript och HTML.
+Du kan också överväga [minification](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=sv-SE) för CSS, JavaScript och HTML.
 
 **Relaterade artiklar:**
 
-* [Testa distributionen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production.html) i utvecklardokumentationen.
+* [Testa distributionen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/staging-and-production.html?lang=sv-SE) i utvecklardokumentationen.
