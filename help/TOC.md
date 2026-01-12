@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 557cfbab3dd2c612255c177848d9faf98024a04b
+source-git-commit: fd5d542ca580060c3f0b3ad28024365a43758cfb
 workflow-type: tm+mt
-source-wordcount: '2612'
+source-wordcount: '2597'
 ht-degree: 0%
 
 ---
@@ -249,7 +249,6 @@ ht-degree: 0%
    * [Uppdatering av livscykelpolicy för Adobe Commerce Support-biljetter](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
 * Instruktioner {#how-to}
    * [Instruktioner - översikt](/help/how-to/overview.md)
-   * [Adobe Commerce P1 Notification hotline](/help/how-to/general/adobe-commerce-p1-notification-hotline.md)
    * [Inkludera en teammedlem i supportmeddelanden](/help/how-to/general/how-to-include-a-team-member-in-support-notifications.md)
    * [Så här skaffar och tillämpar du säkerhetsuppdateringar](/help/how-to/general/how-to-obtain-and-apply-security-patches.md)
    * [Checklista för att konfigurera en ny  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
@@ -296,7 +295,6 @@ ht-degree: 0%
    * [Blockera skadlig trafik för Adobe Commerce på snabbnivå](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
    * [Skapa en patch för Adobe Commerce Composer-installation från en GitHub-implementering](/help/how-to/general/create-a-patch-for-a-magento-2-composer-installation-from-a-github-commit.md)
    * [Ändra administratörslösenord för Adobe Commerce i molninfrastruktur](/help/how-to/general/change-magento-admin-password-on-cloud.md)
-   * [Hur man begär tillfälliga Adobe Commerce-lösningar för molninfrastruktur](/help/how-to/general/how-to-request-temporary-magento-upsize.md)
    * [Visa miljöns vCPU-nivå i ditt kluster på Adobe Commerce](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
    * [Adobe Commerce i molninfrastruktur: Kontrollera värddatorns CPU-konfiguration](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
    * [Adobe Commerce i molnet: ändra autentiseringsnycklar och återdistribuera](/help/how-to/general/redeploy-with-another-key.md)
