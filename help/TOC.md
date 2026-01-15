@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 881fdb528850471fcf34dbdf94c7980fff0f248b
+source-git-commit: d9d2382570c53d8da835d770dfae108fe64b31cc
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,6 @@ ht-degree: 0%
       * [Driftsättningen misslyckas med snabb inkompatibel Adobe Commerce-version](/help/troubleshooting/deployment/deployment-fails-fastly-module-incompatible-magento-version.md)
       * [Distributionsfel: SQLSTATE[HY000]](/help/troubleshooting/deployment/deployment-error-sql-hy000.md)
       * [Distributionsproblem relaterade till kontobehörigheter och åtkomstnycklar](/help/troubleshooting/deployment/deployment-issues-relating-to-account-permissions-and-access-keys.md)
-      * [Adobe Commerce felsökare vid driftsättning](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md)
       * [Ett fel uppstod vid distributionen när versionen som stöder PHP 8.1 uppgraderades](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
       * [Distributionsfel: &quot;fel 7 vid hämtning ... port 443: Anslutningen nekades&quot;](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Distributionsfel vid implementering av felaktiga filer](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
