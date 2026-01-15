@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: fd5d542ca580060c3f0b3ad28024365a43758cfb
+source-git-commit: f729183422f29ce4485f640e66e65a1eeb0c4525
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2583'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,6 @@ ht-degree: 0%
       * [Vanliga PHP-allvarliga fel och lösningar](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
       * [Det går inte att uppdatera disposition på Adobe Commerce: Inkompatibel argumenttyp](/help/troubleshooting/miscellaneous/composer-update-fail-on-adobe-commerce-incompatible-argument-type.md)
       * [Adobe Commerce 2.4.2 B2B: E-postmallen uppdateras inte](/help/troubleshooting/miscellaneous/magento-2-4-2-b2b-email-template-not-updating-email.md)
-      * [Manuell orderexport till MOM misslyckas. Knappen Exportera ordning returnerar HTTP 404-fel](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio: webbläsaren litar inte på det SSL-certifikat som genererats](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [Felsökning av 503-fel orsakad av att standardinställningarna för lack måste ändras](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Kravuppgifter låser uppgifter från andra grupper](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
