@@ -49,7 +49,7 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Se till att du anger filsystembehörigheter enligt beskrivningen i artikeln [Översikt över ägarskap och behörigheter](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) i utvecklardokumentationen.
+Se till att du anger filsystembehörigheter enligt beskrivningen i artikeln [Översikt över ägarskap och behörigheter](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) i utvecklardokumentationen.
 
 ## Status för komponentberoendekontroll ändras aldrig {#trouble-depend-state}
 
