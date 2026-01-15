@@ -4,9 +4,9 @@ description: I den här artikeln beskrivs ett känt fel i Commerce Admin vid han
 exl-id: 73f7231b-b496-4250-b9e2-29427c772d56
 feature: Admin Workspace, B2B, Catalog Management, Configuration, Products, Quotes
 role: Developer
-source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,4 @@ I den här artikeln beskrivs ett känt fel i Commerce Admin vid hantering av en 
 ## Rekommendation
 
 För närvarande finns det ingen lösning på problemet med B2B-offertredigering, men för beställnings- och kundvagnshantering går det att välja produkter i **produktlistan** i stället för att lägga till dem med **SKU**. Det kommer att finnas en patch för att lösa problemet för Adobe Commerce 2.4.1, som kommer att släppas 4:e kvartalet 2020.
-
-## Relaterad läsning
-
-* [Problem med Adobe Commerce 2.4.0: Uppdatering av kundens aktiviteter fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
-* [Adobe Commerce 2.4.0 Känt fel: Exportskattesatser fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 

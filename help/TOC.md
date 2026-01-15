@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 466435b0f73d1fb26ce492c0063104b1dd932e2d
+source-git-commit: 881fdb528850471fcf34dbdf94c7980fff0f248b
 workflow-type: tm+mt
-source-wordcount: '2570'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,6 @@ ht-degree: 0%
       * [Redis-tjänsten kraschade](/help/troubleshooting/miscellaneous/redis-service-crashed.md)
       * [SQL-frågor: FÖRKLARA kostnadsfel](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
       * [Adobe Commerce 2.4.0 B2B Admin kan inte lägga till en konfigurerbar produkt att citera](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
-      * [Adobe Commerce 2.3.6: oändlig snurra som visas när adressen sparas](/help/troubleshooting/miscellaneous/magento-2-3-6-endless-spinner-displayed-on-address-save.md)
       * [Felsöka New Relic på Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
       * [Aktivera cache för att undvika prestandaförsämring](/help/troubleshooting/miscellaneous/enable-magento-cache-to-avoid-performance-degradation.md)
       * [Felsökningsguide för verktyget Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
@@ -124,7 +123,6 @@ ht-degree: 0%
       * [Problem med komponentberoendekontroll](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
       * [Kan inte komma åt Adobe Commerce på molninfrastrukturens gränssnitt](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
       * [Ändringar av kategorier sparas inte](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
-      * [Problem med Adobe Commerce 2.4.0 - Export Tax Rates fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Magento Order Management System (OMS) för Adobe Commerce-bearbetningsfel](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
       * [Cachelagrade bilder läses inte in efter 2.2.X- till 2.3.X-uppgradering](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
       * [Felmeddelande när webbplatser läggs till i säkerhetsgenomsökningen](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
@@ -146,37 +144,24 @@ ht-degree: 0%
       * [PHP-krypteringstillägget har inte installerats korrekt](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1 Känt fel: dotdigital inloggning](/help/troubleshooting/miscellaneous/magento-2-3-6-2-4-0-p1-2-4-1-known-issue-dotdigital-login.md)
       * [Kronjobbet har fastnat i körningsstatus](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
-      * [.magento.env.yaml ändringar som inte visas i env.php efter distribution](/help/troubleshooting/miscellaneous/magento-env-yaml-changes-not-shown-in-env-php-after-deploy.md)
-      * [Problem efter att en modul har inaktiverats](/help/troubleshooting/miscellaneous/issues-after-disabling-a-module.md)
       * [Avlasta icke-regex-omdirigeringar till Fast istället för Nginx (rutter)](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
-      * [Adobe Commerce 2.4.0: Knapparna Skapa ny order saknas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-create-new-order-buttons-missing.md)
       * [Felsökning för avancerad rapportering för Adobe Commerce](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [Vanliga PHP-allvarliga fel och lösningar](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
-      * [Det går inte att uppdatera disposition på Adobe Commerce: Inkompatibel argumenttyp](/help/troubleshooting/miscellaneous/composer-update-fail-on-adobe-commerce-incompatible-argument-type.md)
       * [Adobe Commerce 2.4.2 B2B: E-postmallen uppdateras inte](/help/troubleshooting/miscellaneous/magento-2-4-2-b2b-email-template-not-updating-email.md)
       * [PWA Studio: webbläsaren litar inte på det SSL-certifikat som genererats](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [Felsökning av 503-fel orsakad av att standardinställningarna för lack måste ändras](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Kravuppgifter låser uppgifter från andra grupper](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
       * [Installations-xdebug för högsta funktionskkapslingsnivåfel](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
-      * [PHP-versionsfel eller 404-fel vid åtkomst till Adobe Commerce i webbläsaren](/help/troubleshooting/miscellaneous/php-version-error-or-404-error-when-accessing-magento-in-browser.md)
-      * [Ordningen för paketalternativ uppdateras inte vid import](/help/troubleshooting/miscellaneous/bundle-options-order-is-not-updated-by-import.md)
-      * [Adobe Commerce 2.4.0: &quot;Lägg till markeringar i kundvagnen&quot; fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
       * [MBI: Dataavvikelser](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
       * [Anpassade serverskript körs inte i pub-mediekatalogen](/help/troubleshooting/miscellaneous/custom-server-side-scripts-not-executed-in-pub-media-directory.md)
-      * [Problem med beredskapskontroll av PHP-version](/help/troubleshooting/miscellaneous/php-version-readiness-check-issues.md)
       * [Molnwebbplatsen är långsam](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
       * [Information om förfallodatum för anpassat SSL-certifikat](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio: Valideringsfel vid körning av utvecklarläge](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Inaktivera e-post från Amazon varje timme när du använder Adobe Commerce](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
       * [Nyckelprocedurer för Github-token och Composer](/help/troubleshooting/miscellaneous/github-token-issue-and-composer-key-procedures.md)
-      * [Adobe Commerce 2.4.1 utgåva: det går inte att ändra Amazon-konto i Chrome](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
-      * [ECE-verktyg och korrigeringsuppdateringsfel Adobe Commerce cloud infrastructure 2.2.x, 2.3.x](/help/troubleshooting/miscellaneous/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
       * [PWA Studio: Webpack låser sig innan kompileringen börjar](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
-      * [Installera de senaste patcharna för att åtgärda Adobe Commerce Redis-problem](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md)
       * [Åtgärda ett ogiltigt förskjutningsfel](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [Produktstatusen är felaktig när den skapas programmatiskt](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
-      * [Snabbt fel: Plugin VCL-versionen är inaktuell. Ladda upp igen](/help/troubleshooting/miscellaneous/fastly-error-plugin-vcl-version-is-outdated-please-re-upload.md)
-      * [Adobe Commerce 2.4.0: Uppdatering av kundens aktiviteter fungerar inte](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
       * [Behörighetsproblem för var-/exportmappen för Adobe Commerce i molnet](/help/troubleshooting/miscellaneous/issue-in-the0email-folder-adobe-commerce.md)
       * [Uppdateringar av schemalagd förproduktion av innehåll visas inte med snabb inlagring](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Felsök kron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
@@ -199,12 +184,10 @@ ht-degree: 0%
       * [Felsökning av Adobe Commerce Intelligence-kontoutelåsning](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
       * [Kända fel som påverkar xdebug-installationen](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md)
       * [Det går inte att logga in på Adobe Commerce support eller molnkonto](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
-      * [Komponentberoenden i konflikt](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md)
       * [Adobe Commerce Intelligence servicepolicyer](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [Nya miljöer som placerats under produktion när de trycks ned från Git](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Fel efter inloggning på Commerce Admin](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [Tidsgräns för Magento Order Management System (OMS) för Adobe Commerce](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
-      * [Fel vid rensning av cache i Commerce Admin](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
       * [Adobe Commerce 2.4.1: tom sida när ett digitalt Page Builder-formulär har sparats](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [Adobe Commerce-moln: omindexering avslutas med stoppat meddelande](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
       * [Adobe Commerce statuskolumn saknar exporterad produkt, CSV-fil](/help/troubleshooting/miscellaneous/adobe-commerce-status-column-missing-exported-products-csv-file.md)

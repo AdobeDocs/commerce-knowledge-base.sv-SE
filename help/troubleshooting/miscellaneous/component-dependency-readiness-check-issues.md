@@ -4,9 +4,9 @@ description: Den här artikeln innehåller lösningar på konflikter för kompon
 exl-id: e0865226-2aaf-4bdd-8c28-28f32f38ce0c
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,6 @@ We found conflicting component dependencies.
 >
 >Det meddelande du ser kommer troligtvis att vara annorlunda.
 
-Se [Komponentberoenden i konflikt för en lösning](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) i vår kunskapsbas för support.
-
 ## Behörighetsproblem i filsystemet {#trouble-depend-permission}
 
 Om filsystemsägaren i Adobe Commerce inte har behörighet att skriva till kataloger i Adobe Commerce-filsystemet visas ett meddelande som liknar det här:
@@ -51,7 +49,7 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Se till att du anger filsystembehörigheter enligt beskrivningen i artikeln [Översikt över ägarskap och behörigheter](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) i utvecklardokumentationen.
+Se till att du anger filsystembehörigheter enligt beskrivningen i artikeln [Översikt över ägarskap och behörigheter](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) i utvecklardokumentationen.
 
 ## Status för komponentberoendekontroll ändras aldrig {#trouble-depend-state}
 
