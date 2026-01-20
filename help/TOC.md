@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: d9d2382570c53d8da835d770dfae108fe64b31cc
+source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2407'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ ht-degree: 0%
    * [Felsökning - översikt](/help/troubleshooting/overview.md)
    * Databas {#database}
       * [Kontrollera långsamma frågor och processer MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
-      * [Databasöverföringen förlorar anslutningen till MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
       * [MySQL-servern har gått &#x200B; fel på Adobe Commerce i molnet](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
       * [Databasfel relaterade till max_allowed_packet på Adobe Commerce](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Adobe Commerce-databasens numeriska värde ligger utanför intervallet, [!DNL INT] till [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)

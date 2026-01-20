@@ -4,9 +4,9 @@ description: I den här artikeln finns lösningar för när du inte kan spara en
 exl-id: e2a00371-9032-4e81-b60e-5456ba35be94
 feature: Services
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Innan marknadsförare implementerar lösningen i den här artikeln (`INT` till `BIGINT` schemauppdatering) måste de alltid kontrollera att fältet som de ska ändra inte har några relationer med främmande nycklar till en annan tabell. Om fältet har sekundärnyckelrelationer till en annan tabell uppstår problem eftersom det relaterade fältet fortfarande är `INT`. De kan använda följande fråga för att verifiera detta. Den här frågan visar vilka sekundärnyckelrelationer som är tillgängliga i databasen för det angivna tabellfältet:
 >
->```mysql
+```mysql
 >SELECT 
 >     TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
 >FROM
@@ -50,13 +50,13 @@ Vilken lösning du använder beror på vad som har orsakat problemet. Se stegen 
 
 Kontrollera det högsta värdet för primärnyckeln genom att köra följande kommando i terminalen: `SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]` och `[ AUTO_INCREMENT ]` har ett värde som är större än eller lika med `max int(11) [ 4294967296 ]`, kan du överväga att [uppdatera `[ AUTO_INCREMENT ]` till nästa värde från tabellen](#update-the-auto-increment-to-the-next-value-from-the-table). Annars bör du överväga en [`INT` till `BIGINT` schemauppdatering &#x200B;](#int_to_bigint_schema_update).
+Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]` och `[ AUTO_INCREMENT ]` har ett värde som är större än eller lika med `max int(11) [ 4294967296 ]`, kan du överväga att [uppdatera `[ AUTO_INCREMENT ]` till nästa värde från tabellen](#update-the-auto-increment-to-the-next-value-from-the-table). Annars bör du överväga en [`INT` till `BIGINT` schemauppdatering ](#int_to_bigint_schema_update).
 
 ## Uppdatera `AUTO_INCREMENT` till nästa värde från tabellen {#update-the-auto-increment-to-the-next-value-from-the-table}
 
 >[!WARNING]
 >
->Säkerhetskopiera databasen innan du ändrar tabellerna. Placera webbplatsen i [underhållsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=sv-SE#maintenance-mode). Vi rekommenderar även att du kör optimeringskommandot [!DNL MySQL] i databastabellerna (endast i tabeller där ändringar har gjorts) efter att du har gjort ändringarna.
+>Säkerhetskopiera databasen innan du ändrar tabellerna. Placera webbplatsen i [underhållsläge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode). Vi rekommenderar även att du kör optimeringskommandot [!DNL MySQL] i databastabellerna (endast i tabeller där ändringar har gjorts) efter att du har gjort ändringarna.
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 
 ## `INT` till `BIGINT` schemauppdatering {#int_to_bigint_schema_update}
 
-Om värdet som visas är högre än `max int(11) [ 4294967296 ]` när du kör följande fråga `SELECT MAX(value_id) FROM catalog_product_entity_int;` kan du överväga att göra en `INT` till `BIGINT`-schemauppdatering. Datatypen `BIGINT` har ett större värdeintervall.
+Om värdet som visas är högre än `SELECT MAX(value_id) FROM catalog_product_entity_int;` när du kör följande fråga `max int(11) [ 4294967296 ]` kan du överväga att göra en `INT` till `BIGINT`-schemauppdatering. Datatypen `BIGINT` har ett större värdeintervall.
 
 Så här gör du:
 
@@ -111,8 +111,7 @@ Så här gör du:
 
 ## Relaterad läsning
 
-* [Allmänna [!DNL MySQL] riktlinjer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=sv-SE) i Commerce installationshandbok
-* [Databasöverföringen förlorar anslutningen till  [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html?lang=sv-SE) i vår kunskapsbas för support
-* [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=sv-SE) i vår kunskapsbas för support
-* [De vanligaste databasproblemen i Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=sv-SE) i vår kunskapsbas för support
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Allmänna [!DNL MySQL] riktlinjer](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html) i Commerce installationshandbok
+* [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) i vår kunskapsbas för support
+* [De vanligaste databasproblemen i Adobe Commerce i molninfrastrukturen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) i vår kunskapsbas för support
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

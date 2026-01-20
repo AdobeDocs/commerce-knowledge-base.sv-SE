@@ -4,9 +4,9 @@ description: I den här artikeln beskrivs lösningen på problemet där du får 
 exl-id: 14cb9a6d-6d25-4044-8f52-d65648c03431
 feature: Cloud, Paas, Services, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Distributionen lyckades.
 
 <u>Faktiskt resultat</u>
 
-Felmeddelande i `cron.log` :&quot; *SQLSTATE\[HY000\] \[2006\] MySQL-servern har lämnat at/app/AAAAAAAAA/vendor/magento/zendframework1/library/Zend/Db/Adapter/Pdo/Abstract.php:144&quot;*
+Felmeddelande i `cron.log` :&quot; *SQLSTATE\[HY000\] \[2006\] MySQL-servern har försvunnit at/app/AAAAAAAAA/vendor/magento/zendframework1/library/Zend/Db/Adapter/Pdo/Abstract.php:144&quot;*
 
 ## Orsak
 
@@ -47,6 +47,5 @@ Värdet `default_socket_timeout` är för lågt. Detta orsakas av inställningen
 
 ## Relaterad läsning
 
-* [Databasöverföringen förlorar anslutningen till MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-* [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=sv-SE)
-* [De vanligaste databasproblemen i Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=sv-SE)
+* [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+* [De vanligaste databasproblemen i Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
