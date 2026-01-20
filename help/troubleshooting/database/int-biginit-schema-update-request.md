@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Innan marknadsförare implementerar lösningen i den här artikeln (`INT` till `BIGINT` schemauppdatering) måste de alltid kontrollera att fältet som de ska ändra inte har några relationer med främmande nycklar till en annan tabell. Om fältet har sekundärnyckelrelationer till en annan tabell uppstår problem eftersom det relaterade fältet fortfarande är `INT`. De kan använda följande fråga för att verifiera detta. Den här frågan visar vilka sekundärnyckelrelationer som är tillgängliga i databasen för det angivna tabellfältet:
 >
-```mysql
+>```mysql
 >SELECT 
 >     TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
 >FROM
@@ -50,7 +50,7 @@ Vilken lösning du använder beror på vad som har orsakat problemet. Se stegen 
 
 Kontrollera det högsta värdet för primärnyckeln genom att köra följande kommando i terminalen: `SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]` och `[ AUTO_INCREMENT ]` har ett värde som är större än eller lika med `max int(11) [ 4294967296 ]`, kan du överväga att [uppdatera `[ AUTO_INCREMENT ]` till nästa värde från tabellen](#update-the-auto-increment-to-the-next-value-from-the-table). Annars bör du överväga en [`INT` till `BIGINT` schemauppdatering ](#int_to_bigint_schema_update).
+Om `max(value_id)` är lägre än `max int(11) [ 4294967296 ]` och `[ AUTO_INCREMENT ]` har ett värde som är större än eller lika med `max int(11) [ 4294967296 ]`, kan du överväga att [uppdatera `[ AUTO_INCREMENT ]` till nästa värde från tabellen](#update-the-auto-increment-to-the-next-value-from-the-table). Annars bör du överväga en [`INT` till `BIGINT` schemauppdatering &#x200B;](#int_to_bigint_schema_update).
 
 ## Uppdatera `AUTO_INCREMENT` till nästa värde från tabellen {#update-the-auto-increment-to-the-next-value-from-the-table}
 
