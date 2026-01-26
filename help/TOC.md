@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 2118d569e032293f0609becaf10ba4e903ae4b5d
+source-git-commit: e73894751543dcd1197cc0d20cfac61c44b3ecaa
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2395'
 ht-degree: 0%
 
 ---
@@ -311,7 +311,6 @@ ht-degree: 0%
    * [Hur många kuponger kan en kund använda i Adobe Commerce?](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
    * [Beskrivningar av orsaker till supportärende](/help/faq/general/support-ticket-contact-reason-descriptions.md)
    * [Partner-Adobe Commerce om sandlådeförfrågningar om molninfrastruktur](/help/faq/general/partner-magento-commerce-cloud-sandbox-requests.md)
-   * [Google Shopping ads Channel - frågor och svar](/help/faq/general/google-shopping-ads-channel-faqs.md)
    * [Adobe Commerce GDPR-resurser](/help/faq/general/magento-gdpr-resources.md)
    * [Basprisändringen påverkar det delade katalogpriset](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md)
    * [Autentisering med två faktorer i administratörspanelen på Adobe Commerce - frågor och svar](/help/faq/general/two-factor-authentication-in-admin-panel-on-magento-faq.md)
