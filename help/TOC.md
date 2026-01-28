@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 4d40c0e6c8a73fac19e03d72aa1b1cc584a0228a
+source-git-commit: 12e17359c84e3a71425fce1b378cb57ed7fca86d
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2367'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,6 @@ ht-degree: 0%
       * [Blockerare som startar på Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
       * [Fel i PHP-inställningar](/help/troubleshooting/miscellaneous/php-settings-errors.md)
       * [PHP-krypteringstillägget har inte installerats korrekt](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
-      * [Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1 Känt fel: dotdigital inloggning](/help/troubleshooting/miscellaneous/magento-2-3-6-2-4-0-p1-2-4-1-known-issue-dotdigital-login.md)
       * [Kronjobbet har fastnat i körningsstatus](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
       * [Avlasta icke-regex-omdirigeringar till Fast istället för Nginx (rutter)](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
       * [Felsökning för avancerad rapportering för Adobe Commerce](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
