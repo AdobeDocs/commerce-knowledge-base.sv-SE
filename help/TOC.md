@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 27b0836380c3040b26076b9cb81b9328cb2c9ff2
+source-git-commit: ce183e2135380a360ec48399c82e104f00e64f01
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2389'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,6 @@ ht-degree: 0%
       * [Stock-statusen är felaktig efter installation av Inventory management](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [Adobe Commerce 2.3.5: Problem med beställningar av virtuella produkter för flera leveranser](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
       * [Identifiera avvikelser med hjälp av dataexport](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
-      * [Fel vid aktivering av bildoptimering i Adobe Commerce](/help/troubleshooting/miscellaneous/error-enabling-image-optimization-in-magento-commerce.md)
       * [Felsökning av datamigreringsverktyget](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
       * [Problem med komponentberoendekontroll](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
       * [Kan inte komma åt Adobe Commerce på molninfrastrukturens gränssnitt](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
