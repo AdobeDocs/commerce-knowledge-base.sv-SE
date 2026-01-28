@@ -2,9 +2,9 @@
 user-guide-title: Adobe Commerce Knowldge Base
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: d9985fecdafa63882f8411b32e296cc47583c93d
+source-git-commit: 27b0836380c3040b26076b9cb81b9328cb2c9ff2
 workflow-type: tm+mt
-source-wordcount: '9207'
+source-wordcount: '9208'
 ht-degree: 0%
 
 ---
@@ -338,11 +338,11 @@ ht-degree: 0%
       * [Bästa tillvägagångssätt för cachestorlek för Realpath](/help/best-practices/configuration/realpath-cache-size-best-practice.md)
       * [Optimera CSS- och JS-filer i Adobe Commerce](/help/best-practices/configuration/optimize-css-and-js-files-in-magento-commerce.md)
    * Databas {#database}
-      * [Uppgradering av Adobe Commerce 2.3.5: komprimera till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=sv-SE)
+      * [Uppgradering av Adobe Commerce 2.3.5: komprimera till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
       * [Bästa praxis för användning av utlösare](/help/best-practices/database/best-practice-for-triggers-usage.md)
-      * [De vanligaste databasproblemen i Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=sv-SE)
+      * [De vanligaste databasproblemen i Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
       * [Bästa praxis för Adobe Commerce i molninfrastruktur för MySQL-slavanslutning](/help/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.md)
-      * [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=sv-SE)
+      * [Bästa databaspraxis för Adobe Commerce i molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
    * Allmänt {#general}
       * [_isScopePrivate i privata innehållsblock saktar ned Adobe Commerce prestanda](/help/best-practices/general/isscopeprivate-in-private-content-blocks-slows-magento-performance.md)
       * [Felsökning av bästa praxis för Adobe Commerce i molninfrastruktur](/help/best-practices/general/troubleshooting-best-practices-for-magento-commerce-cloud.md)
@@ -370,7 +370,7 @@ ht-degree: 0%
       * [Bästa tillvägagångssätt för bilder i Adobe Commerce på molninfrastruktur](/help/best-practices/performance/best-practice-for-images-in-magento-commerce-cloud.md)
       * [Adobe Commerce bästa praxis: utföra viktiga åtgärder i Admin](/help/best-practices/performance/magento-best-practice-conducting-critical-actions-in-admin.md)
       * [Adobe Commerce bästa praxis: inaktivera rapporter om de inte använder](/help/best-practices/performance/magento-best-practice-disable-reports-if-not-using.md)
-      * [Indexerare &quot;Update On Schedule&quot; optimerar Adobe Commerce prestanda](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=sv-SE)
+      * [Indexerare &quot;Update On Schedule&quot; optimerar Adobe Commerce prestanda](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
       * [Bästa praxis för Adobe Commerce produktvariationer](/help/best-practices/performance/best-practice-magento-product-variations.md)
       * [Bästa praxis Adobe Commerce orderplacering](/help/best-practices/performance/best-practice-magento-order-placement-performance.md)
       * [Adobe Commerce bästa praxis: aktivera asynkron orderbehandling](/help/best-practices/performance/magento-best-practice-enable-asynchronous-orders-processing.md)
@@ -471,7 +471,7 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.2-p1: fakturafaktura med felaktigt värde](/help/troubleshooting/general/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
       * [Det går inte att komma åt den senaste förhandsversionen av Adobe Commerce](/help/troubleshooting/general/cannot-access-the-latest-magento-commerce-pre-release.md)
       * [Administratörslösenord sparade som oformaterad text i åtgärdsloggen](/help/troubleshooting/general/admin-passwords-saved-as-plain-text-to-actions-log.md)
-      * [Fel vid körning av &#x200B;](/help/troubleshooting/general/error-running-the-setup-di-compile-command-manually.md)
+      * [Fel vid körning av ](/help/troubleshooting/general/error-running-the-setup-di-compile-command-manually.md)
       * [Index är låst av en annan process](/help/troubleshooting/general/index-is-locked-by-another-process.md)
       * [Diagnostisera en datadiskrepans](/help/troubleshooting/general/diagnosing-a-data-discrepancy.md)
       * [Distributionsfel: SQLSTATE[HY000]](/help/troubleshooting/general/deployment-error-sql-hy000.md)
@@ -855,7 +855,7 @@ ht-degree: 0%
    * [Problem med beredskapskontroll av filbehörigheter](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
    * [Snabb cachelagring fungerar inte på Adobe Commerce i molninfrastrukturen](/help/troubleshooting/miscellaneous/fastly-caching-is-not-working-on-magento-cloud.md)
    * [Diagnostisera intäktsavvikelser i Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
-   * [Jag har konfigurerat API-nycklar för Sensei men bara ser ett SaaS-datautrymme](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
+   * [Jag har konfigurerat API-nycklar för Adobe AI men bara ser ett SaaS-datautrymme](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
    * [Huvudmeny (kategorier) visas inte på undersidor med snabbaktiverad](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
    * [Låg fillagring, specifika sidinläsningar tar lång tid](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
    * [Långsam prestanda på grund av fullständig omindexering](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
@@ -902,12 +902,12 @@ ht-degree: 0%
    * [Adobe Commerce 2.4.2-p1: fakturafaktura med felaktigt värde](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
    * [Det går inte att komma åt den senaste förhandsversionen av Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
    * [Administratörslösenord sparade som oformaterad text i åtgärdsloggen](/help/troubleshooting/miscellaneous/admin-passwords-saved-as-plain-text-to-actions-log.md)
-   * [Fel vid körning av &#x200B;](/help/troubleshooting/miscellaneous/error-running-the-setup-di-compile-command-manually.md)
+   * [Fel vid körning av ](/help/troubleshooting/miscellaneous/error-running-the-setup-di-compile-command-manually.md)
    * [Index är låst av en annan process](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
    * [Diagnostisera en datadiskrepans](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
    * [Admin 2FA-e-postmeddelanden tas inte emot](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
    * [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Din nuvarande session har gått ut&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-   * [Avserialiseringsfel &#x200B;](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
+   * [Avserialiseringsfel ](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
    * [Webbplatsen är i underhållsläge men tillgänglig för kunder](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
    * [Git pull origin-utveckling misslyckas vid uppdatering av Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
    * [Blockerare som startar på Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
@@ -976,7 +976,7 @@ ht-degree: 0%
    * [Adobe Commerce snabbfelsökare](/help/troubleshooting/miscellaneous/magento-fastly-troubleshooter.md)
    * [Hög genomströmning för AJAX-begäranden orsakar dålig prestanda](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md)
    * [PWA Studio: Felet &quot;Kan inte proxyvisa&quot; visas i webbläsaren](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
-   * [run &#x200B;](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed_version.txt-issue.md)
+   * [run ](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed_version.txt-issue.md)
    * [Kupong för engångsbruk används flera gånger, Adobe Commerce](/help/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.md)
    * [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Ditt konto är tillfälligt inaktiverat&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
    * [Google Analytics inaktiveras efter distributionen](/help/troubleshooting/miscellaneous/google-analytics-gets-disabled-after-deployment.md)
@@ -992,7 +992,7 @@ ht-degree: 0%
    * [Fel vid rensning av cache i Commerce Admin](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
    * [E-postmeddelanden skickas inte när SendGrid-krediter överskrids på Adobe Commerce](/help/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded.md)
    * [Adobe Commerce 2.4.1: tom sida när ett digitalt Page Builder-formulär har sparats](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
-   * [Adobe Commerce cloud: omindexering avslutas med &#x200B;](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
+   * [Adobe Commerce cloud: omindexering avslutas med ](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
    * [Driftsättningen misslyckas: Elasticsearch- och Adobe Commerce-versionerna är inte kompatibla](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
    * [Distributionen misslyckades: Det går inte att använda MDVA-43395-korrigering](/help/troubleshooting/deployment/deployment-failed-unable-to-apply-mdva-43395-patch.md)
    * [Distributionsfel från aktivering av tidig alfavärde-modulen](/help/troubleshooting/deployment/deployment-errors-from-enabling-early-alpha-baler-javascript-bundling-build.md)
