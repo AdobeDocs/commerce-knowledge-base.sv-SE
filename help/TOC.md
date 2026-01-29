@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 6e47f604af3a498f4f9e10c0175875766ebd7e2a
+source-git-commit: 7f7e26f07e921577b1dd7686f5dace396888aa60
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2340'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,6 @@ ht-degree: 0%
       * [PWA Studio: Webpack låser sig innan kompileringen börjar](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [Åtgärda ett ogiltigt förskjutningsfel](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [Produktstatusen är felaktig när den skapas programmatiskt](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
-      * [Behörighetsproblem för var-/exportmappen för Adobe Commerce i molnet](/help/troubleshooting/miscellaneous/issue-in-the0email-folder-adobe-commerce.md)
       * [Uppdateringar av schemalagd förproduktion av innehåll visas inte med snabb inlagring](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Felsök kron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [CSV-filen för exporterade produkter visas inte](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
@@ -302,7 +301,6 @@ ht-degree: 0%
    * [Länka Magento.com och konton.magento.cloud-kontoinloggningar](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
    * [Vanliga frågor och svar om insvepning med snabb ursprung](/help/faq/general/fastly-origin-cloaking-enablement-faq.md)
    * [Auto_increment-variabeln database inställd på &quot;3&quot; Adobe Commerce på vår molnprofessionella arkitektur](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
-   * [Faktablad för övervakning av Adobe Commerce om molnbaserad infrastruktur](/help/faq/general/monitoring-whitepaper.md)
    * [Få tillgång till New Relic tjänster](/help/faq/general/access-new-relic-services.md)
    * [Web Content Accessibility for Adobe Commerce](/help/faq/general/accessibility.md)
    * [Hur många kuponger kan en kund använda i Adobe Commerce?](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
