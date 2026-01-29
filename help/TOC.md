@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 12e17359c84e3a71425fce1b378cb57ed7fca86d
+source-git-commit: 6e47f604af3a498f4f9e10c0175875766ebd7e2a
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
@@ -315,5 +315,4 @@ ht-degree: 0%
    * [Säkerhetskopiering (ögonblicksbild) i molnet: Vanliga frågor och svar](/help/faq/general/backup-snapshot-on-cloud-faq.md)
    * [Frågor och svar för 2024 och 2023 Adobe Commerce Release Strategy och Lifecycle Policy](/help/faq/general/adobe-commerce-release-strategy-lifecycle-policy.md)
    * [Kan jag schemalägga Content Staging-uppdateringar för priser i en delad katalog?](/help/faq/general/can-i-schedule-content-staging-updates-for-prices-in-a-shared-catalog.md)
-   * [Vanliga frågor om Adobe Commerce-programvarans slut](/help/faq/general/adobe-commerce-eos-policy-faq.md)
    * [Behöver jag Fast för en Headless Adobe Commerce-sajt?](/help/faq/general/do-i-need-fastly-for-a-headless-magento-site.md)
