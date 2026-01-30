@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 85d91886a6656b28da91fb3aa40016a800ecd53f
+source-git-commit: 3786fde60a4161a155da798a9deda0184e6d1e6a
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,6 @@ ht-degree: 0%
       * [PHP-krypteringstillägget har inte installerats korrekt](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [Kronjobbet har fastnat i körningsstatus](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
       * [Avlasta icke-regex-omdirigeringar till Fast istället för Nginx (rutter)](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
-      * [Felsökning för avancerad rapportering för Adobe Commerce](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [Vanliga PHP-allvarliga fel och lösningar](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
       * [Adobe Commerce 2.4.2 B2B: E-postmallen uppdateras inte](/help/troubleshooting/miscellaneous/magento-2-4-2-b2b-email-template-not-updating-email.md)
       * [PWA Studio: webbläsaren litar inte på det SSL-certifikat som genererats](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
