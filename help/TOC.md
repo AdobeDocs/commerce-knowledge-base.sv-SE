@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 3786fde60a4161a155da798a9deda0184e6d1e6a
+source-git-commit: 87955322d02a499cf97d297761c9c1f7ebbca3c3
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2308'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,6 @@ ht-degree: 0%
    * [Återställ en DB-ögonblicksbild från mellanlagring eller produktion](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
    * [Adobe Commerce Intelligence Essentials: uppdatera betalningsmetod eller avbryt prenumeration](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [Adobe commerce Intelligence Training Video: SQL Report Builder](/help/how-to/general/mbi-training-video-sql-report-builder.md)
-   * [Ange cache-TTL för bilder och annat statiskt innehåll](/help/how-to/general/set-cache-ttl-for-images-and-other-static-content.md)
    * [Erbjud rabatt endast för första köpet (inga kuponger)](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
    * [Återställningsmiljö utan ögonblicksbild i molnet](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Logga platser (kataloger) för Starter-planen](/help/how-to/general/log-locations-directories-for-starter-plan.md)
