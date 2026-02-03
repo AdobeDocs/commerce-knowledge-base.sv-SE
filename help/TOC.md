@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 5e179296b668aec143c309dd56a7561fe0ccbd09
+source-git-commit: 038d6e68093742a0ef7d6bd76996f416559ba5c0
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2286'
 ht-degree: 0%
 
 ---
@@ -299,7 +299,6 @@ ht-degree: 0%
    * [Få tillgång till New Relic tjänster](/help/faq/general/access-new-relic-services.md)
    * [Web Content Accessibility for Adobe Commerce](/help/faq/general/accessibility.md)
    * [Hur många kuponger kan en kund använda i Adobe Commerce?](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
-   * [Beskrivningar av orsaker till supportärende](/help/faq/general/support-ticket-contact-reason-descriptions.md)
    * [Partner-Adobe Commerce om sandlådeförfrågningar om molninfrastruktur](/help/faq/general/partner-magento-commerce-cloud-sandbox-requests.md)
    * [Adobe Commerce GDPR-resurser](/help/faq/general/magento-gdpr-resources.md)
    * [Basprisändringen påverkar det delade katalogpriset](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md)
