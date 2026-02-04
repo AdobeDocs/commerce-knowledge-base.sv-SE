@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 038d6e68093742a0ef7d6bd76996f416559ba5c0
+source-git-commit: db498cd9d256e542c7b2db7ee383c296f782800b
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -189,7 +189,6 @@ ht-degree: 0%
       * [Det går inte att lägga till användare i Adobe Commerce molnprojekt](/help/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.md)
       * [Kron-stopp på grund av felkonfigurerad eller saknad [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
       * [[!DNL Admin]-inloggningen fungerar inte - den tillåtna maxstorleken för sessionen har överskridits](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
-      * [Konfigurera Adobe Commerce Intelligence-anslutning för befintliga molnstartprojekt](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
       * [[!DNL Google Tag Manager] har brutits av widgeten Live-sökning](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
       * [Sårbarheter som hittas av säkerhetssökningar från tredje part bör gå till  [!DNL HackerOne]](/help/troubleshooting/miscellaneous/third-party-test-reports-are-handled-by-hackerone.md)
       * [Få tusentals sökresultat efter uppgradering från 2.4.2 till 2.4.5-p3](/help/troubleshooting/miscellaneous/getting-thousands-of-search-results-after-upgrading-to-2-4-5-p3.md)
