@@ -3,16 +3,16 @@ title: Experience League Support User Guide for Adobe Commerce
 description: Lär dig hur du skickar en supportanmälan till Experience League Support, ger delad åtkomst till konton och navigerar i Adobe Commerce Knowledge Base.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: be3f8d0b9c6ef46d2ba7105b32a7ce1ab957ae14
+source-git-commit: 307252b30091f2ba397cba09e840050a86f610b5
 workflow-type: tm+mt
-source-wordcount: '3121'
+source-wordcount: '3345'
 ht-degree: 0%
 
 ---
 
 # Experience League Support User Guide for Adobe Commerce
 
-Läs om hur du skickar en supportanmälan till [Experience League Support](https://experienceleague.adobe.com/home?lang=sv-SE#support) och ger delad åtkomst till Adobe Commerce-konton i den här guiden.
+Läs om hur du skickar en supportanmälan till [Experience League Support](https://experienceleague.adobe.com/home#support) och ger delad åtkomst till Adobe Commerce-konton i den här guiden.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Läs om hur du skickar en supportanmälan till [Experience League Support](https
 
 >[!NOTE]
 >
->För att kunna se dina tidigare inskickade ärenden på Adobe Commerce Help Center måste du nu gå till https://support.magento.com/hc/en-us/requests eftersom dessa fall inte har migrerats till det nya supportsystemet. Hjälpcentret är nu skrivskyddat. Om du vill fortsätta få stöd för det ursprungliga problemet måste du skicka en uppföljningsanmälan till [Experience League Support](https://experienceleague.adobe.com/home?lang=sv-SE#support).
+>För att kunna se dina tidigare inskickade ärenden på Adobe Commerce Help Center måste du nu gå till https://support.magento.com/hc/en-us/requests eftersom dessa fall inte har migrerats till det nya supportsystemet. Hjälpcentret är nu skrivskyddat. Om du vill fortsätta få stöd för det ursprungliga problemet måste du skicka en uppföljningsanmälan till [Experience League Support](https://experienceleague.adobe.com/home#support).
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Om du loggar in kan du skicka, uppdatera och besvara frågor från agenter på s
 
 Så här loggar du in på Adobe Experience League Support:
 
-1. Navigera till [experience.adobe.com](https://experienceleague.adobe.com/sv).
+1. Navigera till [experience.adobe.com](https://experienceleague.adobe.com/).
 1. Logga in med dina inloggningsuppgifter för Adobe.
 
 ![inloggning-experience-leag](assets/experience_league_sign_in.png)
@@ -146,7 +146,7 @@ Följ de här stegen för att skicka in ett nytt supportärende från Adobe Expe
 >1. Navigera till accounts.magento.com och logga in med samma profil (företag, skola eller personlig) som du använder för att hantera supportärenden i Adobe Experience League.
 >1. När du har loggat in på din accounts.magento.com går du tillbaka till experienceleague.adobe.com och loggar in.
 >1. Välj din organisation i listrutan för organisation.
->1. Om din organisation fortfarande inte visas kontaktar du Commerce-administratören för att få behörighet som supportrepresentant. Mer information finns i hjälpartikeln för [Commerce Account Share](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/commerce-account/commerce-account-share).
+>1. Om din organisation fortfarande inte visas kontaktar du Commerce-administratören för att få behörighet som supportrepresentant. Mer information finns i hjälpartikeln för [Commerce Account Share](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share).
 
 >[!NOTE]
 >
@@ -163,6 +163,25 @@ Följ de här stegen för att skicka in ett nytt supportärende från Adobe Expe
 >1. Om du har skickat in ärendet för OrgA men problemet faktiskt påverkar OrgB, kommer medlemmar i OrgB inte att kunna se det här fallet under [!UICONTROL My Cases] i framtiden.
 >1. Dessutom kan medlemmar i OrgA se fall under [!UICONTROL My Cases] som faktiskt är avsedda för OrgB, vilket kan leda till sekretessproblem.
 
+>[!NOTE]
+>
+> För att vara säker på att du får den snabbaste och mest korrekta supporten väljer du rätt detaljer när du skapar supportförfrågningar. Ett korrekt urval hjälper dig att dirigera ärendet direkt till rätt team och minskar svarstiderna.
+>
+>Om din organisation har berättiganden för Adobe Commerce Intelligence/Commerce Reporting (MBI) men du behöver hjälp med avancerad rapportering, ska du inte välja **Commerce Reporting** som produkt. Commerce Reporting-teamet har inte stöd för avancerade rapporteringsproblem.
+>
+>Om du inte kan välja en annan produkt (t.ex. om listrutan **Välj en produkt** är tom eller inte visas) beror det oftast på någon av följande orsaker:
+>
+>* Dina Commerce-berättiganden har gått ut eller är inaktiva (till exempel på grund av ett utestående fakturerings- eller licensieringsproblem).
+>* För instanser som finns på Adobe Commerce i molninfrastruktur (PaaS) har du inte lagts till i molnprojektet.
+>
+>Kontakta din kontoägare för Adobe Commerce i molnprojekt och be om att få delta i det aktuella Cloud-projektet. Mer information finns i [Hantera användaråtkomst](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) för Adobe Commerce i molninfrastruktur.
+>
+>När du har beviljats delad åtkomst och lagts till i molnprojektet:
+>
+>1. Gå till sidan [Adobe Support](https://experienceleague.adobe.com/home?lang=en#support).
+>1. I listrutan till vänster väljer du den organisation vars namn slutar med **(Commerce)**.
+>1. Skicka biljetten för den aktuella produkten och välj inte **Commerce Reporting** för problem som är specifikt relaterade till avancerad rapportering.
+
 Du måste ha ett konto på både https://account.adobe.com och https://account.magento.com för att kunna logga in på Experience League och skicka in ett supportärende. Du kan inte skicka in ett supportärende förrän du är inloggad.
 
 >[!NOTE]
@@ -178,14 +197,14 @@ Du måste ha ett konto på både https://account.adobe.com och https://account.m
 
 Så här skickar du en ny supportanmälan på din Adobe Commerce-kontosida:
 
-1. Logga in på ditt Adobe Commerce-konto. Se [detaljerade instruktioner](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=sv-SE#create-a-commerce-account) i vår användarhandbok.
+1. Logga in på ditt Adobe Commerce-konto. Se [detaljerade instruktioner](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=en#create-a-commerce-account) i vår användarhandbok.
 1. Klicka på fliken **Support**.
 
    ![magento_account_support_tab](assets/magento_account_support_tab.png){width="800"}
 
 1. Adobe Experience Leagas supportsida laddas för er.
 1. Välj **[!UICONTROL Open Ticket]** på den vänstra menyn.
-1. Fyll i [fälten](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-support-ticket-contact-reason-descriptions).
+1. Fyll i [fälten](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-support-ticket-contact-reason-descriptions).
 1. Klicka på **Skicka**.
 
 #### *Verifiera din e-postadress*-fel på Adobe Commerce-kontosida {#verify-email-address-error}
@@ -215,7 +234,7 @@ Du kan visa de Commerce-ärenden som du har skickat personligen genom att klicka
 
 #### Visa historikärenden från Adobe Commerce Help Center
 
-Läs mer om hur du kan **visa dina historiska fall** från Adobe Commerce Help Center i [Avställning av Adobe Commerce Help Center](https://experienceleague.adobe.com/sv/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) i Adobe Commerce Knowledge Base.
+Läs mer om hur du kan **visa dina historiska fall** från Adobe Commerce Help Center i [Avställning av Adobe Commerce Help Center](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) i Adobe Commerce Knowledge Base.
 
 #### Visa bevakade ärenden
 
@@ -258,7 +277,7 @@ Du kan lägga till bevakare för supportärenden som skickats in av medlemmar i 
 
 >[!NOTE]
 >
->Mer information om hur du lägger till och tar bort bevakare för ditt ärende finns i videon [Lägg till och ta bort bevakare, stäng och öppna biljetterna igen](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>Mer information om hur du lägger till och tar bort bevakare för ditt ärende finns i videon [Lägg till och ta bort bevakare, stäng och öppna biljetterna igen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 ### Kommentarer {#comments-in-your-case}
 
@@ -278,17 +297,17 @@ Om du vill stänga ditt ärende klickar du på **[!UICONTROL Close case]** läng
 
 >[!NOTE]
 >
->Mer information om hur du stänger ditt ärende finns i videon [Lägg till och ta bort bevakare, stäng och öppna biljetterna igen](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>Mer information om hur du stänger ditt ärende finns i videon [Lägg till och ta bort bevakare, stäng och öppna biljetterna igen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 ### Öppna ärendet igen {#reopen-case}
 
 >[!NOTE]
 >
->**Du kan bara öppna ett ärende igen inom 14 dagar efter att det har avslutats.** Om du är längre än 14 dagar efter att ärendet har avslutats, men ändå vill begära hjälp om ett problem, måste du öppna ett nytt ärende.<br>Mer information om att stänga och öppna ärenden finns i videon [Lägg till och ta bort bevakare, stäng och öppna biljetter igen](https://experienceleague.adobe.com/sv/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>**Du kan bara öppna ett ärende igen inom 14 dagar efter att det har avslutats.** Om du är längre än 14 dagar efter att ärendet har avslutats, men ändå vill begära hjälp om ett problem, måste du öppna ett nytt ärende.<br>Mer information om att stänga och öppna ärenden finns i videon [Lägg till och ta bort bevakare, stäng och öppna biljetter igen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 >[!NOTE]
 >
->Du kan inte öppna ett ärende igen genom att svara på ett e-postmeddelande från en stängd biljett. Om du vill öppna ärendet igen måste kontoägaren ha gett dig [delad åtkomst](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26164).
+>Du kan inte öppna ett ärende igen genom att svara på ett e-postmeddelande från en stängd biljett. Om du vill öppna ärendet igen måste kontoägaren ha gett dig [delad åtkomst](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26164).
 
 ### Skicka biljett med molnkonsolen {#cloud-console}
 
@@ -298,16 +317,16 @@ Så här skickar du en ny supportanmälan via molnkonsolen:
 1. Välj **[!UICONTROL Support]** på användarmenyn.
 1. Sidan **[!UICONTROL My Tickets]** visas.
 1. Klicka på **[!UICONTROL Submit a ticket]** i det övre högra hörnet.
-1. Fyll i [fälten](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-support-ticket-contact-reason-descriptions).
+1. Fyll i [fälten](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-support-ticket-contact-reason-descriptions).
 1. Klicka på **[!UICONTROL Submit]**.
 
 ### Adobe Commerce P1 hotline {#P1-hotline}
 
-[Adobe Commerce P1 hotline](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html?lang=sv-SE) -artikeln innehåller P1-hotline-nummer för Adobe Commerce när man söker hjälp under en P1-incident och förklarar vilken information som ska anges.
+[Adobe Commerce P1 hotline](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) -artikeln innehåller P1-hotline-nummer för Adobe Commerce när man söker hjälp under en P1-incident och förklarar vilken information som ska anges.
 
 ### Operativmodellen Adobe Commerce Shared Responsibility {#shared-responsibility-operational-model}
 
-Läs artikeln om [Adobe Commerce Shared Responsibility Operational Model](https://experienceleague.adobe.com/sv/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
+Läs artikeln om [Adobe Commerce Shared Responsibility Operational Model](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
 som syftar till att förtydliga det operativa ansvaret för vår Pro-infrastruktur.
 
 ### Öppna en uppföljningsbiljett {#follow-up}
@@ -332,17 +351,17 @@ Användare som har fått delad åtkomst kan inte överföra eller ge sådan åtk
 
 ### Ge delad åtkomst {#provide-shared-access}
 
-I avsnittet [Dela ett Commerce-konto](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/commerce-account/commerce-account-share) i Adobe Commerce Starthandbok finns mer information om hur du konfigurerar ett delat konto.
+I avsnittet [Dela ett Commerce-konto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) i Adobe Commerce Starthandbok finns mer information om hur du konfigurerar ett delat konto.
 
 >[!NOTE]
 >
->Användaren måste ha ett befintligt konto innan han/hon kan beviljas delad åtkomst - se [Skapa ett Commerce-konto](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account) för mer information.
+>Användaren måste ha ett befintligt konto innan han/hon kan beviljas delad åtkomst - se [Skapa ett Commerce-konto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account) för mer information.
 
 När en ny användare har fått delad åtkomst är den relaterade informationen tillgänglig i **Delad åtkomst** > **Hantera behörigheter** på din Adobe Commerce-kontosida.
 
 >[!NOTE]
 >
->Delad åtkomst ger inte automatiskt åtkomst till Commerce Cloud Console. Du måste [lägga till användaren separat i molnprojektet](https://experienceleague.adobe.com/sv/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
+>Delad åtkomst ger inte automatiskt åtkomst till Commerce Cloud Console. Du måste [lägga till användaren separat i molnprojektet](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
 
 ![magento-account-shared-manage-permissions](assets/magento_account_shared_manage_permissions.png)
 
@@ -390,14 +409,14 @@ När du har återkallat behörigheten för dessa användare med delad åtkomst h
 
 ![grant-account-permissions-image](assets/help-center-user-guide-grant-account-permissions-image.png){width="800"}
 
-Mer information finns i dokumentationen [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE#manage-users-from-the-project-web-interface) i vår Commerce om molninfrastrukturguide.
+Mer information finns i dokumentationen [Hantera användaråtkomst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) i vår Commerce om molninfrastrukturguide.
 
 ### Få åtkomst till ditt delade konto (växlingskonton) {#switch-accounts}
 
 >[!NOTE]
 >
 >Det här steget behövs inte för att skicka in biljetter till Adobe Commerce.
->En demonstration om hur du skickar in en Adobe Commerce-biljett [finns i den här videon](https://experienceleague.adobe.com/sv/playlists/support-requests).
+>En demonstration om hur du skickar in en Adobe Commerce-biljett [finns i den här videon](https://experienceleague.adobe.com/en/playlists/support-requests).
 
 Följ de här stegen för att använda den delade åtkomst du fått:
 
