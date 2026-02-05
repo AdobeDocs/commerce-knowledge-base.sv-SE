@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: eb9dce9eaf08283ff20d4a30b619e4c00207f551
+source-git-commit: a1ce42bcd018d2c9b9b40060c225a22112d878fc
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2257'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,6 @@ ht-degree: 0%
       * [Felsöka prestanda med New Relic på Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
       * [Söker efter DDoS-attack från CLI](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
       * [Fel på tom sida eller omdirigeringsslinga vid åtkomst till storefront eller Commerce Admin](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
-      * [Extension Manager visar inga tillägg i Adobe Commerce 2.3.x](/help/troubleshooting/miscellaneous/extension-manager-shows-no-extensions-in-magento-commerce-2-3-x.md)
       * [Omdirigering vid inloggning till Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [Lös problem med krypteringsnyckeln](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
       * [PWA Studio: Venia GraphQL-frågor till Adobe Commerce skapar valideringsfel](/help/troubleshooting/miscellaneous/pwa-studio-venia-graphql-queries-to-magento-produce-validation-errors.md)
