@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: db498cd9d256e542c7b2db7ee383c296f782800b
+source-git-commit: 538514ebb9a262af74aa1304ea7d70aefcf08dbe
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,6 @@ ht-degree: 0%
       * [Diagnostisera en datadiskrepans](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
       * [Admin 2FA-e-postmeddelanden tas inte emot](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
       * [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Din nuvarande session har gått ut&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-      * [Avserialisera felinstallation:static-content:distribuera igen](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
       * [Webbplatsen är i underhållsläge men tillgänglig för kunder](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
       * [Git pull origin-utveckling misslyckas vid uppdatering av Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [Blockerare som startar på Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
@@ -156,7 +155,6 @@ ht-degree: 0%
       * [Åtgärda ett ogiltigt förskjutningsfel](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [Produktstatusen är felaktig när den skapas programmatiskt](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
       * [Uppdateringar av schemalagd förproduktion av innehåll visas inte med snabb inlagring](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
-      * [Felsök kron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [CSV-filen för exporterade produkter visas inte](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
       * [Kontrollerar distributionsloggen om molnanvändargränssnittet har fel av typen&quot;loggutdragen&quot;](/help/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.md)
       * [Hämtningen misslyckas på grund av ändringar i Composer](/help/troubleshooting/miscellaneous/download-fails-because-of-changes-in-composer.md)
