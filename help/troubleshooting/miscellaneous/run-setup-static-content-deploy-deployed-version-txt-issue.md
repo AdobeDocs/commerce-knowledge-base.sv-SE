@@ -4,7 +4,7 @@ description: Den här artikeln innehåller en korrigering för "deploy_version.t
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Den här artikeln innehåller en korrigering för `deployed_version.txt` som int
 
 ## Problem
 
-Om du följer Adobe Commerce rekommendationer för molninfrastruktur för att använda [Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) (och flyttar genereringen av statiska resurser till byggfasen för att minska webbplatsens driftstopp under distributionen) kan du råka ut för följande fel när du kör kommandot `setup:static-content:deploy` manuellt:
+Om du följer Adobe Commerce rekommendationer för molninfrastruktur för att använda Configuration Management (och flyttar genereringen av statiska resurser till byggfasen för att minska webbplatsens driftstopp under distributionen) kan du råka ut för följande fel när du kör kommandot `setup:static-content:deploy` manuellt:
 
 ```
 {{cloud-project-id}}_stg@i:~$ php bin/magento setup:static-content:deploy

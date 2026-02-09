@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 943a85cb94073190654ae8abd7315f3014c40170
+source-git-commit: ceea083458aef5f8d0fcabef66399046d0d2016b
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2234'
 ht-degree: 0%
 
 ---
@@ -220,8 +220,6 @@ ht-degree: 0%
    * [Adobe commerce Intelligence Training Video: SQL Report Builder](/help/how-to/general/mbi-training-video-sql-report-builder.md)
    * [Erbjud rabatt endast för första köpet (inga kuponger)](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
    * [Återställningsmiljö utan ögonblicksbild i molnet](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
-   * [Logga platser (kataloger) för Starter-planen](/help/how-to/general/log-locations-directories-for-starter-plan.md)
-   * [Minska driftstoppen på Adobe Commerce i molninfrastrukturen](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md)
    * [Så här lägger du till ett nytt land i Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Anpassa designkonfigurationen i Commerce Admin](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
    * [Öka diskutrymmet för integreringsmiljön i molnet](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md)
