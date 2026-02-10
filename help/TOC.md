@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: ceea083458aef5f8d0fcabef66399046d0d2016b
+source-git-commit: 014b425a0db4b5824a1caf033318fe7fd74d9a92
 workflow-type: tm+mt
-source-wordcount: '2234'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -217,7 +217,6 @@ ht-degree: 0%
    * [Checklista för att konfigurera en ny  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [Återställ en DB-ögonblicksbild från mellanlagring eller produktion](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
    * [Adobe Commerce Intelligence Essentials: uppdatera betalningsmetod eller avbryt prenumeration](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
-   * [Adobe commerce Intelligence Training Video: SQL Report Builder](/help/how-to/general/mbi-training-video-sql-report-builder.md)
    * [Erbjud rabatt endast för första köpet (inga kuponger)](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
    * [Återställningsmiljö utan ögonblicksbild i molnet](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Så här lägger du till ett nytt land i Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
