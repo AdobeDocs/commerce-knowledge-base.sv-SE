@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 014b425a0db4b5824a1caf033318fe7fd74d9a92
+source-git-commit: 41585ba5bc50e9a65d5d28963f43054f5f98b918
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,6 @@ ht-degree: 0%
       * [Fel på tom sida eller omdirigeringsslinga vid åtkomst till storefront eller Commerce Admin](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
       * [Omdirigering vid inloggning till Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [Lös problem med krypteringsnyckeln](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
-      * [PWA Studio: Venia GraphQL-frågor till Adobe Commerce skapar valideringsfel](/help/troubleshooting/miscellaneous/pwa-studio-venia-graphql-queries-to-magento-produce-validation-errors.md)
       * [Identifiera avvikelser med hjälp av dataexport](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
       * [Felsökning av datamigreringsverktyget](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
       * [Problem med komponentberoendekontroll](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
