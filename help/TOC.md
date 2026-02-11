@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 950cbe6a4886f1f4f9f38250a46eb7f82bda73d4
+source-git-commit: 0e5465d2d3ef177f8d42f791f4652fc9139695fb
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2192'
 ht-degree: 0%
 
 ---
@@ -230,7 +230,6 @@ ht-degree: 0%
    * [Identifiera och mäta avbrott för Adobe Commerce i molninfrastrukturen](/help/how-to/general/how-to-identify-outages.md)
    * [Ändra kontoägare för New Relic i molnet](/help/how-to/general/change-account-owner-for-new-relic-on-cloud.md)
    * [Ändra administratörs-URL på Adobe Commerce i molninfrastruktur](/help/how-to/general/change-magento-admin-url-on-cloud.md)
-   * [Aktivera Elasticsearch i molnet](/help/how-to/general/enable-elasticsearch-on-cloud.md)
    * [Konfigurera NPM för att kunna använda PWA Studio](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md)
    * [Ordna om molngrenar i Adobe Commerce](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
    * [Hitta Adobe Commerce produktdokumentation](/help/how-to/general/how-to-find-magento-product-documentation.md)
