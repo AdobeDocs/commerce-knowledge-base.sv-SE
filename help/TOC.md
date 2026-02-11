@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: c6d036ff57ede5dbdb031f00f099e00c811d7b0a
+source-git-commit: 950cbe6a4886f1f4f9f38250a46eb7f82bda73d4
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2196'
 ht-degree: 0%
 
 ---
@@ -223,7 +223,6 @@ ht-degree: 0%
    * [Adobe Commerce om molninfrastruktur: CPU allokeringsberäkning](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Uppdatera priser för delad katalog med hjälp av REST API](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [Söka efter stora MySQL-tabeller](/help/how-to/general/find-large-mysql-tables.md)
-   * [Synkronisera data och filer Produktion till Förproduktion eller Förproduktion till integrering](/help/how-to/general/sync-data-and-files-from-production-to-staging-or-staging-to-integration.md)
    * [Kontrollera diskutrymme med CLI på Adobe Commerce i molninfrastrukturmiljö](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [Återställa Adobe Commerce som fastnat i cron-jobb för molninfrastruktur manuellt](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Testa snabbt i produktionen om en Live Site använder samma domän](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
