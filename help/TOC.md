@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 4c8bb0d63cd7826b24c2f6c85fbb9bb5982b2a35
+source-git-commit: 6ad8716b066a89fd60d5c9300607889f891e5e3f
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2161'
 ht-degree: 0%
 
 ---
@@ -217,7 +217,6 @@ ht-degree: 0%
    * [Återställ en DB-ögonblicksbild från mellanlagring eller produktion](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
    * [Adobe Commerce Intelligence Essentials: uppdatera betalningsmetod eller avbryt prenumeration](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [Återställningsmiljö utan ögonblicksbild i molnet](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
-   * [Så här lägger du till ett nytt land i Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Adobe Commerce om molninfrastruktur: CPU allokeringsberäkning](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Söka efter stora MySQL-tabeller](/help/how-to/general/find-large-mysql-tables.md)
    * [Kontrollera diskutrymme med CLI på Adobe Commerce i molninfrastrukturmiljö](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
