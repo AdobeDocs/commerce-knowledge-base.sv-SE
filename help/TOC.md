@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 0e5465d2d3ef177f8d42f791f4652fc9139695fb
+source-git-commit: 888089e960017477364b3b3dae7e9cc5c69892ba
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -219,7 +219,6 @@ ht-degree: 0%
    * [Återställningsmiljö utan ögonblicksbild i molnet](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Så här lägger du till ett nytt land i Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Anpassa designkonfigurationen i Commerce Admin](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
-   * [Öka diskutrymmet för integreringsmiljön i molnet](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md)
    * [Adobe Commerce om molninfrastruktur: CPU allokeringsberäkning](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Uppdatera priser för delad katalog med hjälp av REST API](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [Söka efter stora MySQL-tabeller](/help/how-to/general/find-large-mysql-tables.md)
