@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 6ad8716b066a89fd60d5c9300607889f891e5e3f
+source-git-commit: 9d80bfb801d55c25627e92e9777699c14056e2dd
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2140'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,6 @@ ht-degree: 0%
    * [Experience League Support User Guide for Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
 * Instruktioner {#how-to}
    * [Instruktioner - översikt](/help/how-to/overview.md)
-   * [Inkludera en teammedlem i supportmeddelanden](/help/how-to/general/how-to-include-a-team-member-in-support-notifications.md)
    * [Så här skaffar och tillämpar du säkerhetsuppdateringar](/help/how-to/general/how-to-obtain-and-apply-security-patches.md)
    * [Checklista för att konfigurera en ny  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [Återställ en DB-ögonblicksbild från mellanlagring eller produktion](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
@@ -219,7 +218,6 @@ ht-degree: 0%
    * [Återställningsmiljö utan ögonblicksbild i molnet](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Adobe Commerce om molninfrastruktur: CPU allokeringsberäkning](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Söka efter stora MySQL-tabeller](/help/how-to/general/find-large-mysql-tables.md)
-   * [Kontrollera diskutrymme med CLI på Adobe Commerce i molninfrastrukturmiljö](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [Återställa Adobe Commerce som fastnat i cron-jobb för molninfrastruktur manuellt](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Testa snabbt i produktionen om en Live Site använder samma domän](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [Statiska alternativ för innehållsdistribution för att minska driftsättningsdriftsavbrott i molnet](/help/how-to/general/static-content-deployment-options-to-reduce-deployment-downtime-on-cloud.md)
