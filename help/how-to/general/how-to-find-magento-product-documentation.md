@@ -103,4 +103,4 @@ Adobe Commerce i molninfrastruktur</td>
 
 * Adobe Trust Center (säkerhetsuppdateringar och korrigeringar): [https://www.adobe.com/trust/resources.html](https://www.adobe.com/trust/resources.html)
 * Adobe Commerce Community Developer Blog (tips, metodtips och tekniska nyheter från communityn): [https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog](https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog)
-* Adobe Commerce Blog (high level e-commerce):[https://business.adobe.com/blog/](https://business.adobe.com/blog/)
+* Adobe Commerce Blog (high level e-commerce):[https://business.adobe.com/se/blog/](https://business.adobe.com/se/blog/)

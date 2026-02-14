@@ -19,7 +19,7 @@ En omfattande checklista för olika lösningar och bästa praxis för förberede
 
 **Planerings- och utvärderingstrafik**
 
-Vi rekommenderar att alla Adobe Commerce-handlare i vår molninfrastruktur [använder den här uppsättningen rekommendationer för hur man beräknar säsongstrafik](https://business.adobe.com/blog/how-to/the-5-ps-of-peak-season-performance-a-guide-to-preparing-your-infrastructure-for-high-traffic) för högsäsong varje år.
+Vi rekommenderar att alla Adobe Commerce-handlare i vår molninfrastruktur [använder den här uppsättningen rekommendationer för hur man beräknar säsongstrafik](https://business.adobe.com/se/blog/how-to/the-5-ps-of-peak-season-performance-a-guide-to-preparing-your-infrastructure-for-high-traffic) för högsäsong varje år.
 
 När du är klar med den rekommenderade beräkningen kan du fortsätta med nästa steg för att få information om hur du begär överkapacitet om ditt team har identifierat datum där du tror att du kommer att behöva ytterligare kapacitet.
 
