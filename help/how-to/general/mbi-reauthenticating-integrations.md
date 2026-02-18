@@ -1,22 +1,22 @@
 ---
 title: 'MBI: Återautentiserar integreringar'
-description: Den här artikeln innehåller lösningar för att återauktorisera en integrering för att ge Magento Business Intelligence (MBI) de behörigheter som krävs för att hämta data från en tredjepartstjänst. Återauktorisering krävs när dessa behörigheter återkallas.
+description: Den här artikeln innehåller lösningar för omauktorisering av en integrering för att ge Magento Business Intelligence (MBI) den behörighet som krävs för att hämta data från en tredjepartstjänst. Återauktorisering krävs när dessa behörigheter återkallas.
 exl-id: c608d6f9-64a5-44f8-9d7b-9a85a2668775
 feature: Commerce Intelligence, Integration
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
 # MBI: Återautentiserar integreringar
 
-Den här artikeln innehåller lösningar för att återauktorisera en integrering för att ge Magento Business Intelligence (MBI) de behörigheter som krävs för att hämta data från en tredjepartstjänst. Återauktorisering krävs när dessa behörigheter återkallas.
+Den här artikeln innehåller lösningar för omauktorisering av en integrering för att ge Magento Business Intelligence (MBI) den behörighet som krävs för att hämta data från en tredjepartstjänst. Återauktorisering krävs när dessa behörigheter återkallas.
 
 ## Integreringar mellan databaser och SaaS
 
-En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med hjälp av en integrering](https://experienceleague.adobe.com/sv/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) i utvecklardokumentationen. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
+En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med hjälp av en integrering](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) i utvecklardokumentationen. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
 
 ## Har du anslutningsproblem?
 
@@ -35,4 +35,4 @@ Status för alla integreringar finns på integreringssidan ( **Hantera data > In
 
 Om du vill återautentisera måste du kanske ange dina kontouppgifter igen. I vissa fall kanske du måste generera nya API-nycklar för problemintegreringen. Klicka på namnet på den problemintegration som du vill starta omauktoriseringsprocessen.
 
-[Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om problemet kvarstår.
+[Skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) om problemet kvarstår.

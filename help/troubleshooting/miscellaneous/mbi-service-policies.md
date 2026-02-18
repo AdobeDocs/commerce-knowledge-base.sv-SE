@@ -4,9 +4,9 @@ description: På Commerce Intelligence är vårt mål att erbjuda fantastisk kun
 exl-id: 2e1ef4b3-a77c-4281-8337-fb90574a44f7
 feature: Commerce Intelligence, User Account
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -50,4 +50,4 @@ Förutom de datasäkerhetsfunktioner som listas ovan finns det några produktrel
 
 ## Hur skickar jag in en biljett?
 
-Du kan [skicka en biljett](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) till vårt supportteam genom att klicka på länken **Skicka en biljett** överst på sidan. Vi rekommenderar att du checkar ut [Information i din supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#info-in-support-ticket) innan du kontaktar oss för att se till att all nödvändig information finns i din första anmälan.
+Du kan [skicka en biljett](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) till vårt supportteam genom att klicka på länken **Skicka en biljett** överst på sidan. Vi rekommenderar att du checkar ut [Information i din supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) innan du kontaktar oss för att se till att all nödvändig information finns i din första anmälan.

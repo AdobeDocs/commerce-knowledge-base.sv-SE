@@ -4,9 +4,9 @@ description: 'Den här artikeln innehåller en lösning för när en distributio
 exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
 feature: Deploy
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ Din version av MariaDB är inte kompatibel med den version av Adobe Commerce som
 Du måste uppgradera MariaDB-tjänsten till en kompatibel version innan du uppgraderar programmet.
 
 
-För integreringsgrenen på Adobe Commerce för molninfrastruktur Pro-planarkitekturen (och alla grenar i Starter-arkitekturen) följer du [Konfigurera tjänsten](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) i utvecklardokumentationen.
+För integreringsgrenen på Adobe Commerce för molninfrastruktur Pro-planarkitekturen (och alla grenar i Starter-arkitekturen) följer du [Konfigurera tjänsten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) i utvecklardokumentationen.
 
-För tjänsten Staging and Production i Adobe Commerce på Cloud Infrastructure Pro-planarkitekturen ska du [skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och begära att tjänsterna uppgraderas innan du distribuerar Adobe Commerce-versionsuppgraderingen.
+För tjänsten Staging and Production i Adobe Commerce på Cloud Infrastructure Pro-planarkitekturen ska du [skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) och begära att tjänsterna uppgraderas innan du distribuerar Adobe Commerce-versionsuppgraderingen.
 
 
 ## Relaterad läsning
 
-* [Bästa tillvägagångssätt för byggen och distribution](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices) i utvecklardokumentationen.
-* [Uppgradering av Adobe Commerce 2.3.5: kompakt till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=sv-SE) i vår kunskapsbas.
+* [Bästa tillvägagångssätt för byggen och distribution](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices) i utvecklardokumentationen.
+* [Uppgradering av Adobe Commerce 2.3.5: kompakt till dynamiska tabeller](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) i vår kunskapsbas.

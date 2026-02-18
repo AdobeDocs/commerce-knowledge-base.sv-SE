@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 3e4d6106345c2a05108171fa6b8d9646f40efbc5
+source-git-commit: 688cdb1d0e76850aa953c602a78820fe6208ae41
 workflow-type: tm+mt
-source-wordcount: '2123'
+source-wordcount: '2112'
 ht-degree: 0%
 
 ---
@@ -207,8 +207,6 @@ ht-degree: 0%
    * Elasticsearch {#elasticsearch}
       * [Återgår till  [!DNL Elasticsearch7] när sökmotorn är inställd på  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Spårningsindex för ElasticSuite orsakar problem med Elasticsearch](/help/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.md)
-* Help Center Guide {#help-center-guide}
-   * [Experience League Support User Guide for Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
 * Instruktioner {#how-to}
    * [Instruktioner - översikt](/help/how-to/overview.md)
    * [Checklista för att konfigurera en ny  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)

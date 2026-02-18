@@ -4,9 +4,9 @@ description: I den här artikeln finns en lösning på problemet med molninfrast
 exl-id: b5b9e8b3-373c-4f93-af9c-85da84dbc928
 feature: Configuration
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Tidigare användes Jenkins-servern i vår molnmiljö för att köra [!DNL cron] 
 
 ## Lösning
 
-1. Kontakta [Adobe Commerce support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) om du vill att självhanterade [!DNL crons] ska aktiveras.
+1. Kontakta [Adobe Commerce support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) om du vill att självhanterade [!DNL crons] ska aktiveras.
 1. Redigera filen `.magento.app.yaml` i rotkatalogen för koden för Adobe Commerce i grenen [!DNL Git]. Lägg till följande:
 
    ```yaml
@@ -71,5 +71,5 @@ Om du vill kontrollera om den självhanterade [!DNL cron] är aktiverad kör du 
 
 ## Relaterad läsning
 
-* [Konfigurera [!DNL cron] jobb](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) i utvecklardokumentationen
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Konfigurera [!DNL cron] jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) i utvecklardokumentationen
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

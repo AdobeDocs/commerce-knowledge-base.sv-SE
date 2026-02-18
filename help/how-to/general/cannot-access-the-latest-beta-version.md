@@ -2,9 +2,9 @@
 title: Kan inte komma åt den senaste Beta-versionen
 description: I den här artikeln beskrivs lösningar på problem när du försöker använda de senaste Beta-versionerna av koden för Adobe Commerce. Beta-kod är endast tillgänglig för officiella Adobe-partners som har följt den process som beskrivs i [Adobe Commerce Beta Program](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Detta är de vanligaste orsakerna till problem:
 
 ### Kodplats för tidig åtkomst
 
-Under betaåtkomstperioder är versionspaket endast tillgängliga via Composer på [repo.magento.com](https://repo.magento.com/). Versionspaket är inte tillgängliga på GitHub- och Adobe Commerce-portaler under den här perioden, och vi kommer att publicera dem på dessa platser på GA-datumet. Klicka [här](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/composer) om du vill ha mer information om hur du använder Composer.
+Under betaåtkomstperioder är versionspaket endast tillgängliga via Composer på [repo.magento.com](https://repo.magento.com/). Versionspaket är inte tillgängliga på GitHub- och Adobe Commerce-portaler under den här perioden, och vi kommer att publicera dem på dessa platser på GA-datumet. Klicka [här](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) om du vill ha mer information om hur du använder Composer.
 
 ### MageID som du behöver använda
 
@@ -47,7 +47,7 @@ Ta reda på om ditt MageID är primärt genom att göra följande:
    * Om du ser den aktiva partnerlicensinformationen är ditt MageID primärt. Partnerlicensen är aktiv om värdet END DATE är ett datum i framtiden.
    * Om du inte ser den aktiva partnerlicensinformationen har ditt MageID bara delad åtkomst. Om du vill ta reda på vem som är primär ID-hållare går du till **Delad med mig**-meddelandet som SHARENAME har angett där. Klicka på **Byt konto** och välj det värde du har angett i SHARENAME. På välkomstsidan ser du e-postadressen till den primära ID-innehavaren.
 1. Kontakta din Partner Manager om du av någon anledning inte hittar den här informationen på [magento.com](https://account.magento.com/customer/account/login).
-1. [Kontakta support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed) om inget av ovanstående fungerar.
+1. [Kontakta support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) om inget av ovanstående fungerar.
 
 #### Utvecklaren har inte rätt åtkomst till nycklar
 
@@ -60,4 +60,4 @@ Om du är primär MageID-ägare och behöver ge åtkomst till en utvecklare i di
 
 ### Inte en del av programmet för tidig åtkomst
 
-Vårt Beta Access-program är bara tillgängligt för våra Solution- och Technical Partners så att de kan utvärdera vår förproduktionskod. För att kunna inkluderas i Beta Access-programmet måste din organisation ha ett aktivt partnerkonto för Adobe som är i god ordning och har signerat Beta-sekretessavtal [här](https://github.com/magento/magento2/wiki/Magento-Beta-Program). Om du anser att du uppfyller dessa kriterier och inte kan komma åt betakoden kontaktar du [commercebeta@adobe.com](mailto:commercebeta@adobe.com).
+Vårt Beta Access-program är bara tillgängligt för våra Solution- och Technical Partners så att de kan utvärdera vår förproduktionskod. För att kunna inkluderas i Beta Access-programmet måste din organisation ha ett aktivt Adobe Partner-konto som är i god ordning och har signerat Beta-sekretessavtal [här](https://github.com/magento/magento2/wiki/Magento-Beta-Program). Om du anser att du uppfyller dessa kriterier och inte kan komma åt betakoden kontaktar du [commercebeta@adobe.com](mailto:commercebeta@adobe.com).

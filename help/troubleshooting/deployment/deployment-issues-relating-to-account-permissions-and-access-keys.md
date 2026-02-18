@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på problem med distribut
 exl-id: e8d72ebe-453f-4d18-a25e-c76e685aa667
 feature: Deploy, Roles/Permissions
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Om en distribution misslyckas efter att en ändring har gjorts i den primära ko
 
 ### Inaktivera åtkomstnyckeln
 
-Om du inte har åtkomst till det [Commerce Marketplace](https://marketplace.magento.com/)-konto som är kopplat till den gamla nyckeln, [kontaktar du Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) för att inaktivera nyckeln.
+Om du inte har tillgång till det [Commerce Marketplace](https://marketplace.magento.com/)-konto som är kopplat till den gamla nyckeln [kontaktar du Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) för att inaktivera nyckeln.
 
 Om du har tillgång till det Marketplace-konto som är kopplat till den gamla nyckeln utför du följande steg för att inaktivera nyckeln:
 
@@ -64,4 +64,4 @@ Om du har tillgång till det Marketplace-konto som är kopplat till den gamla ny
 
 ## Relaterad läsning
 
-* [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) i utvecklardokumentationen.
+* [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) i utvecklardokumentationen.

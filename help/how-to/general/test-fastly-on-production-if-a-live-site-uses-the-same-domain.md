@@ -1,11 +1,11 @@
 ---
 title: Testa snabbt i produktionen om en Live Site använder samma domän
-description: Om du har en aktiv webbplats som är igång i din produktionsdomän (&grave;example.com&grave;) och du behöver testa din nya butik på Adobe Commerce i molninfrastrukturens produktionsmiljö med Fastly CDN aktiverat, rekommenderar vi att du använder underdomänen (som "prod.example.com"), som tidigare har lagt till den i Fastly, för alla testaktiviteter före start. I den här artikeln beskrivs detaljerna och här finns användbara länkar till Adobe Commerce dokumentationsresurser.
+description: Om du har en aktiv webbplats som är igång i din produktionsdomän (`example.com`) och du behöver testa din nya butik på Adobe Commerce i molninfrastrukturens produktionsmiljö med Fastly CDN aktiverat, rekommenderar vi att du använder underdomänen (som "prod.example.com"), som tidigare har lagt till den i Fastly, för alla testaktiviteter före start. I den här artikeln beskrivs detaljerna och här finns användbara länkar till Adobe Commerce dokumentationsresurser.
 exl-id: bc9d11c8-ce47-461d-b5b8-c03494bc4ceb
 feature: Cache
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ När du planerar ditt Adobe Commerce-projekt för molninfrastruktur kan du ange 
 
 Följ de här stegen för att bearbeta underdomänen i ditt Adobe Commerce i ett molninfrastrukturprojekt:
 
-* [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) som begär att underdomänen ska läggas till i Snabb-tjänsten/Nginx-konfigurationen (för Adobe Commerce i Cloud Infrastructure Pro-planarkitekturen).
+* [Skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) som begär att underdomänen ska läggas till i Snabb-tjänsten/Nginx-konfigurationen (för Adobe Commerce i Cloud Infrastructure Pro-planarkitekturen).
 * Konfigurera motsvarande DNS-inställningar.
 
 När du har utfört stegen för konfiguration av underdomäner måste du också göra följande för att validera din produktionsdomän för SSL-certifikatet:
 
 * Överför DNS TXT-posten för SSL-validering av produktionsdomänen.
-* [Skicka en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) som begär att få verifiera produktionsdomänen för SSL-certifikatet.
+* [Skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) som begär att få verifiera produktionsdomänen för SSL-certifikatet.
 
 Om du använder underdomänen kan du göra en &quot;mjuk start&quot; av din butik i framtiden, eftersom en sådan start bara kräver att motsvarande DNS-inställningar uppdateras.
 
@@ -48,11 +48,11 @@ Om du använder underdomänen kan du göra en &quot;mjuk start&quot; av din buti
 
 I vår kunskapsbas:
 
-* [Konfigurera snabbt DNS-inställningar i mellanlagrings- och produktionsmiljöer](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=sv-SE)
-* [Konfigurera snabbt för Starter-plan i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html?lang=sv-SE)
-* [Potentiella blockerare för att starta Adobe Commerce på molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=sv-SE)
+* [Konfigurera snabbt DNS-inställningar i mellanlagrings- och produktionsmiljöer](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
+* [Konfigurera snabbt för Starter-plan i molnet](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html)
+* [Potentiella blockerare för att starta Adobe Commerce på molninfrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
 
 I vår utvecklardokumentation:
 
-* [Snabbt översikt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=sv-SE)
-* [Go live checklist: DNS-konfigurationer för Fast](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=sv-SE)
+* [Snabbt översikt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+* [Go live checklist: DNS-konfigurationer för Fast](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)

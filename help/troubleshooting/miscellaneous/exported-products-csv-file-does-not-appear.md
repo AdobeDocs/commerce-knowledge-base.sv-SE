@@ -4,9 +4,9 @@ description: I den här artikeln finns en korrigering av problemet där du förs
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: b6f1222918b027eaecda42b767e6f83b2cf0f5d0
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -95,8 +95,8 @@ Om du vill lägga till processen som ett cron-jobb måste du lägga till variabe
 
 >[!TIP]
 >
->[YAML-filer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=sv-SE) är skiftlägeskänsliga och tillåter inte tabbar. Var noga med att använda konsekvent indrag i hela .magento.env.yaml-filen, annars kanske inte konfigurationen fungerar som förväntat. Exemplen i dokumentationen och i exempelfilen använder indrag med två mellanslag. Kontrollera konfigurationen med hjälp av kommandot validate för verktygen.
+>[YAML-filer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) är skiftlägeskänsliga och tillåter inte tabbar. Var noga med att använda konsekvent indrag i hela .magento.env.yaml-filen, annars kanske inte konfigurationen fungerar som förväntat. Exemplen i dokumentationen och i exempelfilen använder indrag med två mellanslag. Kontrollera konfigurationen med hjälp av kommandot validate för verktygen.
 
 >[!NOTE]
 >
->I Adobe Commerce-projekt för molninfrastruktur på Pro måste funktionen [för automatiska kroner](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) vara aktiverad i din Adobe Commerce i molninfrastruktur innan du kan lägga till anpassade kron-jobb i miljöer för förproduktion och produktion med `.magento.app.yaml`. Om den här funktionen inte är aktiverad kan du [skapa en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) och lägga till jobbet åt dig.
+>I Adobe Commerce-projekt för molninfrastruktur på Pro måste funktionen [för automatiska kroner](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) vara aktiverad i din Adobe Commerce i molninfrastruktur innan du kan lägga till anpassade kron-jobb i miljöer för förproduktion och produktion med `.magento.app.yaml`. Om den här funktionen inte är aktiverad kan du [skapa en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) och lägga till jobbet åt dig.

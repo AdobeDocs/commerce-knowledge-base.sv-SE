@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på problemet med cachela
 exl-id: 3e6bd5aa-bd5d-4880-8b78-64f280647abe
 feature: Cache, Upgrade
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,8 @@ Problemet orsakas av den felaktiga Nginx-konfigurationsuppsättningen i `.magent
    * Starter Plan: korrigera filen själv och skicka ändringarna vidare.
    * Proffsplan:
    * Integrering: korrigera filen själv och skicka ändringarna.
-   * Mellanlagring och produktion: korrigera filen själv, skicka ändringarna och skapa en [Adobe Commerce-supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) som den ska tillämpas på.
+   * Mellanlagring och produktion: korrigera filen själv, skicka ändringarna och skapa en [Adobe Commerce-supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) som den ska tillämpas på.
 
-1. Aktivera Snabb bildoptimering i Commerce Admin (snabbast måste konfigureras före) enligt beskrivningen i <https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization>.
+1. Aktivera Snabb bildoptimering i Commerce Admin (snabbast måste konfigureras före) enligt beskrivningen i <https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization>.
 
-Om konfigurationen är korrekt, men problemet kvarstår, kan du fortsätta med undersökningen eller kontakta [Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Om konfigurationen är korrekt, men problemet kvarstår, kan du fortsätta med undersökningen eller kontakta [Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

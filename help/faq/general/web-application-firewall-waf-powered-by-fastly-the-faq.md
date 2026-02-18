@@ -3,9 +3,9 @@ title: 'Brandvägg för webbaserade program (WAF) med stöd för Fast: Frågor o
 description: Brandväggar för webbaserade program (WAF) förhindrar att skadlig trafik kommer in på webbplatser och nätverk genom att filtrera trafik mot en uppsättning säkerhetsregler. Trafik som utlöser någon av reglerna blockeras innan den kan skada dina platser eller nätverk.
 exl-id: d977ea68-7d8c-4863-b026-acdc25d8c430
 feature: Cache
-source-git-commit: f384ff9d5d8a8c5c5da20b582c02a2d783b32d7e
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1655'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Brandväggar för webbaserade program (WAF) förhindrar att [skadlig trafik](/he
 
 Adobe Commerce cloud WAF har en WAF-policy med en regeluppsättning som är utformad för att skydda dina Adobe Commerce webbprogram från en mängd olika attacker.
 
-WAF undersöker webb- och administratörstrafik för att identifiera misstänkta aktiviteter. Den utvärderar GET- och POST-trafik (HTTP API-anrop) och använder regeluppsättningen för att avgöra vilken trafik som ska blockeras. WAF kan blockera en mängd olika attacker, bland annat SQL-injektionsattacker, serveröverskridande skriptattacker (cross-site scripting), dataexfiltreringsattacker och HTTP-protokollöverträdelser.
+WAF undersöker webb- och administratörstrafik för att identifiera misstänkta aktiviteter. Den utvärderar GET och POST-trafiken (HTTP API-anrop) och använder regeluppsättningen för att avgöra vilken trafik som ska blockeras. WAF kan blockera en mängd olika attacker, bland annat SQL-injektionsattacker, serveröverskridande skriptattacker (cross-site scripting), dataexfiltreringsattacker och HTTP-protokollöverträdelser.
 
 WAF är en molnbaserad tjänst som inte kräver någon maskin- eller programvara för att kunna installera eller underhålla. Snabb, en befintlig teknikpartner, tillhandahåller programvara och expertis. Deras högpresterande, alltid installerade WAF finns i varje cache-nod över Fastlys globala leveransnätverk.
 
@@ -104,7 +104,7 @@ Varje begäran som inte cachelagras har en fördröjning på cirka 1,5 milliseku
 
 ## Kan kunderna skapa och ändra IP-svarta listor för att blockera trafik?
 
-Ja, kunderna kan aktivera blockering per land och åtkomstkontrollista (ACL) från administratörsgränssnittet för Adobe Commerce i molninfrastrukturen. Använd dessa funktioner om du vill blockera åtkomst för besökare som kommer från specifika länder eller vissa IP-intervall. Om du vill att blockerade besökare ska se en anpassad sida i stället för en felkod, kan du skapa en anpassad felsida genom att överföra HTML på snabbkonfigurationsmenyn. Se [Skapa en anpassad fel-/underhållssida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=sv-SE) i utvecklardokumentationen.
+Ja, kunderna kan aktivera blockering per land och åtkomstkontrollista (ACL) från administratörsgränssnittet för Adobe Commerce i molninfrastrukturen. Använd dessa funktioner om du vill blockera åtkomst för besökare som kommer från specifika länder eller vissa IP-intervall. Om du vill att blockerade besökare ska se en anpassad sida i stället för en felkod, kan du skapa en anpassad felsida genom att överföra HTML på snabbkonfigurationsmenyn. Se [Skapa en anpassad fel-/underhållssida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) i utvecklardokumentationen.
 
 ## Var kan jag kontrollera driftstatusen för min WAF-tjänst?
 
@@ -118,7 +118,7 @@ För närvarande erbjuds inte incidenthantering.
 
 Även om Adobe Commerce inte har något säkerhetscenter har vi en säkerhetsverksamhetsprocess som gör att vi kan använda rätt resurser för att hantera säkerhetsincidenter i realtid. Vi erbjuder också support dygnet runt, alla dagar, året om.
 
-Du kan även få säkerhetsnyheter och uppdateringar relaterade till Adobe Commerce från [Säkerhetscenter](https://helpx.adobe.com/se/security.html).
+Du kan även få säkerhetsnyheter och uppdateringar relaterade till Adobe Commerce från [Säkerhetscenter](https://helpx.adobe.com/security.html).
 
 ## Vilken support finns?
 
@@ -132,7 +132,7 @@ Se villkoren för [Cloud SLA](https://www.adobe.com/content/dam/cc/en/legal/term
 
 ## Hur kan jag få hjälp om WAF blockerar legitim trafik eller orsakar andra problem?
 
-[Skicka in en supportanmälan](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) på [Adobe Commerce Help Center](https://support.magento.com). Ange att biljetten är relaterad till WAF-tjänsten och inkludera ID:t för spärrad begäran.
+[Skicka in en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) på [Adobe Commerce Help Center](https://support.magento.com). Ange att biljetten är relaterad till WAF-tjänsten och inkludera ID:t för spärrad begäran.
 
 Adobe Commerce supportsystem spårar kommunikationen mellan våra supporttekniker och en kunds personal. Det här systemet innehåller en tidstämplad kopia av kommunikationen och skickar e-post till kunder och Adobe Commerce personal när biljetterna uppdateras.
 
@@ -160,7 +160,7 @@ I följande tabell sammanfattas supportkanalerna och tillgängligheten för WAF 
 </tr>
 <tr>
 <td>Eskalering av nödsituationer*</td>
-<td>Läs artikeln <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html?lang=sv-SE">Adobe Commerce P1 notification hotline</a> för amerikanska och internationella nummer.</td>
+<td>Läs artikeln <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html">Adobe Commerce P1 notification hotline</a> för amerikanska och internationella nummer.</td>
 </tr>
 </tbody>
 </table>

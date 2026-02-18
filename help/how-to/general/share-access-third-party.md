@@ -3,9 +3,9 @@ title: Testtips för Adobe Commerce om molninfrastruktur från tredje part
 description: Den här artikeln innehåller alternativ för att dela åtkomst med en tredje part för att testa/validera när du har problem med ett tillägg för Adobe Commerce i molninfrastruktur.
 exl-id: e2d80aa9-8b68-48ed-bec5-68e128611a1e
 feature: Best Practices, Cloud
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 9e218e3fadbf9941c94d309fcfb6f258d2f4faf2
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Beroende på dina interna säkerhetsstandarder kan du välja att låta tredjepar
 
 * Ge tredjepartsleverantörer åtkomst till molnmiljön. Relaterade artiklar:
 
-   * [Användarhandbok för Adobe Commerce Help Center > DELAD ÅTKOMST: BEHÖRIGHET FÖR ANDRA ANVÄNDARE ATT FÅ ÅTKOMST TILL DITT KONTO](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) i vår supportkunskapsbas.
-   * [Dela ditt Commerce-konto](https://experienceleague.adobe.com/sv/docs/commerce-admin/start/commerce-account/commerce-account-share) i användarhandboken.
+   * [Användarhandbok för Adobe Commerce Help Center > DELAD ÅTKOMST: BEHÖRIGHET FÖR ANDRA ANVÄNDARE ATT FÅ ÅTKOMST TILL DITT KONTO](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guidee#shared-access) i vår supportkunskapsbas.
+   * [Dela ditt Commerce-konto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) i användarhandboken.
 
 * Skapa en databasdump (eller ge tredjepartsleverantören åtkomst för att göra detta). Det kan göras med CLI eller Commerce Admin. Databasdumpen kommer att förfalska kunddata, så allt de får är kod och produkt-SKU:er, etc., inga egna data/kunddata. Använd [Dela ditt Commerce-konto] (/help/how-to/general/create-database-dump-on-cloud.md) i vår kunskapsbas.
-* När testningen är klar måste du se till att återkalla den delade åtkomsten till din molnmiljö, enligt beskrivningen i [Adobe Commerce Help Center User Guide > Återkalla (ta bort delad åtkomst)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) i vår kunskapsbas för support.
+* När testningen är klar måste du se till att återkalla den delade åtkomsten till din molnmiljö, enligt beskrivningen i [Adobe Commerce Help Center User Guide > Återkalla (ta bort delad åtkomst)](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#revoke-shared-access) i vår kunskapsbas för support.
 
 ## Testa bästa praxis
 
