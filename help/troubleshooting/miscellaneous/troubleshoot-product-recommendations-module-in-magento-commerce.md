@@ -49,7 +49,7 @@ modul korrekt (Kontrollera [[!UICONTROL Product Recommendations - Install and Co
 
 >[!NOTE]
 >
->Om [**[!UICONTROL Cookie Restriction Mode]**](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) (i vår användarhandbok) är *aktiverad* samlar Adobe Commerce inte in beteendedata förrän kunden godkänner det. Om **[!UICONTROL Cookie Restriction Mode]**är *inaktiverad* samlar Adobe Commerce in beteendedata som standard.
+>Om [**[!UICONTROL Cookie Restriction Mode]**](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) (i vår användarhandbok) är *aktiverad* samlar Adobe Commerce inte in beteendedata förrän kunden godkänner det. Om **[!UICONTROL Cookie Restriction Mode]**&#x200B;är *inaktiverad* samlar Adobe Commerce in beteendedata som standard.
 
 ## Exporteringsmodul för katalog [!DNL SaaS]
 
