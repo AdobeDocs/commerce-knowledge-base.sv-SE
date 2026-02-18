@@ -40,7 +40,7 @@ Detta är de vanligaste orsakerna till problem:
 
 Under förhandsversionen finns versionspaket på två platser:
 
-1. Via Composer på [magento.com](https://repo.magento.com/) med hjälp av det primära MageID:t för kontot. Mer information om hur du använder Composer finns i [Installera Adobe Commerce med Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) i utvecklardokumentationen.
+1. Via Composer på [magento.com](https://repo.magento.com/) med hjälp av det primära MageID:t för kontot. Mer information om hur du använder Composer finns i [Installera Adobe Commerce med Composer](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/composer) i utvecklardokumentationen.
 1. **Mitt konto** > **Nedladdningar** på [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]
@@ -61,7 +61,7 @@ Ta reda på om ditt MageID är primärt genom att göra följande:
    * Om du ser licensinformationen för Adobe Commerce är ditt MageID primärt.
    * Om du inte ser licensinformationen för Adobe Commerce har ditt MageID bara delad åtkomst. Om du vill ta reda på vem som är primär ID-hållare går du till **Delad med mig**-meddelandet som SHARENAME har angett där. Klicka på **Byt konto** och välj det värde du har angett i SHARENAME. På välkomstsidan ser du e-postadressen till den primära ID-innehavaren.
 1. Om du av någon anledning inte kan hitta den här informationen på [magento.com](https://account.magento.com/customer/account/login) kontaktar du ditt Adobe-kontoteam.
-1. [Kontakta support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) om inget av ovanstående fungerar.
+1. [Kontakta support](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) om inget av ovanstående fungerar.
 
 **För partner**
 
@@ -71,8 +71,8 @@ Ta reda på om ditt MageID är primärt genom att göra följande:
    * Om du ser den aktiva partnerlicensinformationen är ditt MageID primärt. Partnerlicensen är aktiv om värdet END DATE är ett datum i framtiden.
    * Om du inte ser den aktiva partnerlicensinformationen har ditt MageID bara delad åtkomst. Om du vill ta reda på vem som är primär ID-hållare går du till **Delad med mig**-meddelandet som SHARENAME har angett där. Klicka på **Byt konto** och välj det värde du har angett i SHARENAME. På välkomstsidan ser du e-postadressen till den primära ID-innehavaren.
 1. Kontakta din Partner Manager om du av någon anledning inte hittar den här informationen på [magento.com](https://account.magento.com/customer/account/login).
-1. [с Kontakta support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) om inget av ovanstående fungerar.
+1. [с Kontakta support](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) om inget av ovanstående fungerar.
 
 ### Inte en del av programmet för förhandsversioner
 
-För att kunna inkluderas i programmet för åtkomst före lansering måste din organisation ha ett aktivt Adobe Commerce- eller partnerkonto som är i gott skick. Om du tror att du uppfyller det här villkoret och inte kan komma åt koden för förhandsversionen [kontaktar du support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) med ditt MageID.
+För att kunna inkluderas i programmet för åtkomst före lansering måste din organisation ha ett aktivt Adobe Commerce- eller partnerkonto som är i gott skick. Om du tror att du uppfyller det här villkoret och inte kan komma åt koden för förhandsversionen [kontaktar du support](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) med ditt MageID.

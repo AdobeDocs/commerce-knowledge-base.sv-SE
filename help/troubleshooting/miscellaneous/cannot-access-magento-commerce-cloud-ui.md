@@ -23,12 +23,12 @@ När du försöker logga in på ditt Adobe Commerce i molninfrastruktursgränssn
 
 Om du får ett 403-fel första gången du öppnar URL:en kontrollerar du att du har en roll i huvudgrenen.
 
-1. С till licensägaren eller en superanvändare i projektet och se till att de gett dig åtkomst som en **användare på miljönivå**, vilket även beskrivs i [Cloud-projekt > Hantera användare från molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-cloud-console) i vår utvecklardokumentation.
+1. С till licensägaren eller en superanvändare i projektet och se till att de gett dig åtkomst som en **användare på miljönivå**, vilket även beskrivs i [Cloud-projekt > Hantera användare från molnkonsolen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE#manage-users-from-the-cloud-console) i vår utvecklardokumentation.
 
    Om du bara har en tillämplig roll i en viss gren måste du gå till URL:en för den grenen, t.ex.
    `https://console.adobecommerce.com/<owner-name>/<project-id>/<branch-name>`
 
    Nästa gång du öppnar huvudwebbadressen används den senaste miljön som standard.
 
-1. Om du fortfarande inte kan logga in kontaktar du с licensägaren eller en superanvändare i projektet och ser till att de gett dig åtkomst som en **projektanvändare**, vilket beskrivs i [Cloud-projekt > Lägg till en användare i projektet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#add-a-user-to-the-project) i vår utvecklardokumentation.
-1. Om felet kvarstår [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+1. Om du fortfarande inte kan logga in kontaktar du с licensägaren eller en superanvändare i projektet och ser till att de gett dig åtkomst som en **projektanvändare**, vilket beskrivs i [Cloud-projekt > Lägg till en användare i projektet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=sv-SE#add-a-user-to-the-project) i vår utvecklardokumentation.
+1. Om felet kvarstår [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).

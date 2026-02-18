@@ -42,7 +42,7 @@ Du löser problemet genom att uppdatera din Composer-version till 1.10.22:
 1. Detta lägger till kravet för den versionen av Composer-paketet. Kontrollera låsfilen - `composer/composer`-versionen måste vara 1.0.22 eller senare.
 1. Bekräfta `composer.json` och `composer.lock` och skicka en distribution.
 
-Om den här metoden inte fungerar [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+Om den här metoden inte fungerar [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Relaterad läsning
 

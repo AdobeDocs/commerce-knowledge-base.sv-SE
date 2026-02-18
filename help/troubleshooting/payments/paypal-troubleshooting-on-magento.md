@@ -41,14 +41,14 @@ Om betalningsmetoden PayPal innefattar API med faktureringsavtal och referenstra
 
 Se följande artiklar:
 
-* [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) i vår kunskapsbas för support.
+* [PayPal-gatewayen avvisade begäran - dubblettfakturaproblem](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26838) i vår kunskapsbas för support.
 * [Ändra inkrement-ID för ny lagringsenhet](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) i vår kunskapsbas för support.
 
 ## Kontakta supporten för att samla in avancerade betalningsloggar
 
 Om du vill felsöka komplicerade betalningsproblem kan Adobe Commerce supportteam be dig att använda en dedikerad korrigeringsfil för att aktivera avancerad betalningsloggning. I det här fallet bör du göra följande:
 
-[Skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) med följande information:
+[Skicka en supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) med följande information:
 
 * Ange ditt problem med så många detaljer som möjligt.
 * Visa en lista över de steg du försökte utföra från den här artikeln, kunskapsbasen och andra resurser. Inkludera alla resultat.
@@ -57,5 +57,5 @@ Om du vill felsöka komplicerade betalningsproblem kan Adobe Commerce supporttea
 Om du får korrigeringsfilen för avancerad betalningsloggning:
 
 * Lägg på plåstret.
-* Samla in loggar och bifoga dem till din [supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+* Samla in loggar och bifoga dem till din [supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 * Vänta på ytterligare rekommendationer från Adobe Commerce Support Team.

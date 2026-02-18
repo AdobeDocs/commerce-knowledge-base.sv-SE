@@ -17,7 +17,7 @@ Den 3 september utfärdade MS-ISAC (Multi-State Information Sharing and Analysis
 
 >[!WARNING]
 >
->Observera att uppgraderingar av tjänster inte kan implementeras i produktionsmiljön utan att vårt infrastrukturteam får 48 arbetstimmar varsel om detta på Adobe Commerce molninfrastruktur. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom en önskad tidsram med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när dina ändringar behöver vara i produktion [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) med information om den nödvändiga uppgraderingen och den tidpunkt då du vill att uppgraderingen ska starta.
+>Observera att uppgraderingar av tjänster inte kan implementeras i produktionsmiljön utan att vårt infrastrukturteam får 48 arbetstimmar varsel om detta på Adobe Commerce molninfrastruktur. Detta är nödvändigt eftersom vi måste se till att det finns en infrastruktursupporttekniker tillgänglig som kan uppdatera din konfiguration inom en önskad tidsram med minimala driftavbrott i din produktionsmiljö. Så 48 timmar före när dina ändringar behöver vara i produktion [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) med information om den nödvändiga uppgraderingen och den tidpunkt då du vill att uppgraderingen ska starta.
 
 Läs vidare om du vill veta mer om konsekvenser och steg för Adobe Commerce webbplatser:
 
@@ -28,7 +28,7 @@ Om du använder Adobe Commerce i molninfrastruktur kan du samarbeta med teknikte
 Ytterligare information om omdistribution av din molnwebbplats för den här uppdateringen:
 
 * Om din webbplats fortfarande använder PHP version 7.0 måste du först uppgradera till en PHP-version som stöds innan du kan omdistribuera den för att kunna utnyttja dessa säkerhetsuppdateringar.
-* Mer information om uppgradering av PHP finns [här](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) för 2.1.x/2.2.x.
+* Mer information om uppgradering av PHP finns [här](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=sv-SE) för 2.1.x/2.2.x.
 
 \* *I tidigare versioner av den här artikeln och i vårt meddelande angavs 19 september, men våra team har slutfört sitt arbete i förväg.*
 

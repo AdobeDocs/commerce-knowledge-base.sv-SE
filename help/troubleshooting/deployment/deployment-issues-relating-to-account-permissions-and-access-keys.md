@@ -50,7 +50,7 @@ Om en distribution misslyckas efter att en ändring har gjorts i den primära ko
 
 ### Inaktivera åtkomstnyckeln
 
-Om du inte har tillgång till det [Commerce Marketplace](https://marketplace.magento.com/)-konto som är kopplat till den gamla nyckeln [kontaktar du Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) för att inaktivera nyckeln.
+Om du inte har tillgång till det [Commerce Marketplace](https://marketplace.magento.com/)-konto som är kopplat till den gamla nyckeln [kontaktar du Adobe Commerce Support](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) för att inaktivera nyckeln.
 
 Om du har tillgång till det Marketplace-konto som är kopplat till den gamla nyckeln utför du följande steg för att inaktivera nyckeln:
 
@@ -64,4 +64,4 @@ Om du har tillgång till det Marketplace-konto som är kopplat till den gamla ny
 
 ## Relaterad läsning
 
-* [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) i utvecklardokumentationen.
+* [Hämta dina autentiseringsnycklar](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) i utvecklardokumentationen.

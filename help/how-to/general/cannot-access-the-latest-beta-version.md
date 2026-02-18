@@ -33,7 +33,7 @@ Detta är de vanligaste orsakerna till problem:
 
 ### Kodplats för tidig åtkomst
 
-Under betaåtkomstperioder är versionspaket endast tillgängliga via Composer på [repo.magento.com](https://repo.magento.com/). Versionspaket är inte tillgängliga på GitHub- och Adobe Commerce-portaler under den här perioden, och vi kommer att publicera dem på dessa platser på GA-datumet. Klicka [här](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) om du vill ha mer information om hur du använder Composer.
+Under betaåtkomstperioder är versionspaket endast tillgängliga via Composer på [repo.magento.com](https://repo.magento.com/). Versionspaket är inte tillgängliga på GitHub- och Adobe Commerce-portaler under den här perioden, och vi kommer att publicera dem på dessa platser på GA-datumet. Klicka [här](https://experienceleague.adobe.com/sv/docs/commerce-operations/installation-guide/composer) om du vill ha mer information om hur du använder Composer.
 
 ### MageID som du behöver använda
 
@@ -47,7 +47,7 @@ Ta reda på om ditt MageID är primärt genom att göra följande:
    * Om du ser den aktiva partnerlicensinformationen är ditt MageID primärt. Partnerlicensen är aktiv om värdet END DATE är ett datum i framtiden.
    * Om du inte ser den aktiva partnerlicensinformationen har ditt MageID bara delad åtkomst. Om du vill ta reda på vem som är primär ID-hållare går du till **Delad med mig**-meddelandet som SHARENAME har angett där. Klicka på **Byt konto** och välj det värde du har angett i SHARENAME. På välkomstsidan ser du e-postadressen till den primära ID-innehavaren.
 1. Kontakta din Partner Manager om du av någon anledning inte hittar den här informationen på [magento.com](https://account.magento.com/customer/account/login).
-1. [Kontakta support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) om inget av ovanstående fungerar.
+1. [Kontakta support](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) om inget av ovanstående fungerar.
 
 #### Utvecklaren har inte rätt åtkomst till nycklar
 

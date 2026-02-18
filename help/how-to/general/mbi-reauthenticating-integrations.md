@@ -16,7 +16,7 @@ Den här artikeln innehåller lösningar för omauktorisering av en integrering 
 
 ## Integreringar mellan databaser och SaaS
 
-En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med hjälp av en integrering](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) i utvecklardokumentationen. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
+En lista över integreringar mellan databaser och SaaS finns i [Ansluta externa data med hjälp av en integrering](https://experienceleague.adobe.com/sv/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) i utvecklardokumentationen. (Använd innehållsförteckningen till vänster för navigering när du öppnar sidan.)
 
 ## Har du anslutningsproblem?
 
@@ -35,4 +35,4 @@ Status för alla integreringar finns på integreringssidan ( **Hantera data > In
 
 Om du vill återautentisera måste du kanske ange dina kontouppgifter igen. I vissa fall kanske du måste generera nya API-nycklar för problemintegreringen. Klicka på namnet på den problemintegration som du vill starta omauktoriseringsprocessen.
 
-[Skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) om problemet kvarstår.
+[Skicka en supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) om problemet kvarstår.

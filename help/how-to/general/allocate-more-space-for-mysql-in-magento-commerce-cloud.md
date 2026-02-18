@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Allokera utrymme på Starter-planen och Pro-plansintegrering
 
-För alla startplansmiljöer och Pro-planens [integreringsmiljö](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) kan du tilldela mer utrymme för MySQL i filen `.magento/services.yaml` genom att öka parametern `mysql: disk:`. Exempel:
+För alla startplansmiljöer och Pro-planens [integreringsmiljö](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-27242) kan du tilldela mer utrymme för MySQL i filen `.magento/services.yaml` genom att öka parametern `mysql: disk:`. Exempel:
 
 ```yaml
 mysql:
@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-Se artikeln [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) för referens.
+Se artikeln [Konfigurera MySQL-tjänsten](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/configure/service/mysql) för referens.
 
 När du har ändrat filen `.magento/services.yaml` måste du implementera och överföra dina ändringar för att de ska tillämpas. Tryckningen kommer att utlösa distributionsprocessen.
 
@@ -33,7 +33,7 @@ När du har ändrat filen `.magento/services.yaml` måste du implementera och ö
 
 ## Allokera utrymme på Pro-planmellanlagring eller -produktion
 
-Om du vill göra de här ändringarna för mellanlagrings- eller produktionsmiljön för Pro-planen måste du skapa en [supportbiljett](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). När en supportanmälan skickas för att öka lagringsutrymmet måste supporten veta hur mycket och vilken partition som lagringsutrymmet ska användas på (`/mysql` eller `/exports`). En begäran om lagringsökning kräver godkännande från ditt Adobe-kontoteam, som granskar ditt berättigade lagringsutrymme (enligt beställningsformuläret) innan de godkänner det.
+Om du vill göra de här ändringarna för mellanlagrings- eller produktionsmiljön för Pro-planen måste du skapa en [supportbiljett](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). När en supportanmälan skickas för att öka lagringsutrymmet måste supporten veta hur mycket och vilken partition som lagringsutrymmet ska användas på (`/mysql` eller `/exports`). En begäran om lagringsökning kräver godkännande från ditt Adobe-kontoteam, som granskar ditt berättigade lagringsutrymme (enligt beställningsformuläret) innan de godkänner det.
 
 ## Minska tilldelat utrymme är inte tillgängligt (Pro- och Starter-plan)
 

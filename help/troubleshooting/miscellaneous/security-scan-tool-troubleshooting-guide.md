@@ -59,7 +59,7 @@ Följande statusvärden kan visas vid kontroller:
 1. **Okänd**: Verktyget för säkerhetsgenomsökning har inga data om din domän än; vänta på nästa synkroniseringscykel.
 1. **Misslyckades**: Om statusen inte fungerar måste du åtgärda problemet (aktivera 2FA, ändra administratörs-URL osv.) och vänta på nästa synkroniseringscykel.
 
-Om 24 timmar har gått sedan ändringarna gjordes för instansen och de inte återspeglas i säkerhetsgenomsökningsrapporten, kan du [skicka en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Ange butiks-URL när du skickar biljetten.
+Om 24 timmar har gått sedan ändringarna gjordes för instansen och de inte återspeglas i säkerhetsgenomsökningsrapporten, kan du [skicka en supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Ange butiks-URL när du skickar biljetten.
 
 ## Misslyckad BotNet Suspect
 
@@ -77,7 +77,7 @@ Du får ett meddelande om felet &quot;BotNet Suspect&quot;.
 1. Kontrollera om det finns nyligen skapade SSH-konton, ändringar i filsystemet osv.
 1. Genomför en säkerhetsgranskning.
 1. Kontrollera Adobe Commerce-versionen och uppgraderingen, särskilt om den fortfarande kör Magento 1, som inte stöds längre.
-1. Om problemet kvarstår [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) och anger butikens URL.
+1. Om problemet kvarstår [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) och anger butikens URL.
 
 ## Problem: Komprometterad inmatningsfel
 
@@ -90,7 +90,7 @@ Du får ett felmeddelande om felet &quot;Kompromissinmatning&quot;.
 1. Granska ändringar av systemkonfigurationen, särskilt anpassade `HTML head`- och `Miscellaneous HTML`-värden i `footer`-avsnittsvärden.
 1. Utför kodgranskning och databasgranskning för att se om det finns några okända ändringar och tecken på inmatad skadlig kod.
 
-Om inget av ovanstående hjälper, [skickar du en supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) och anger butiks-URL:en och felmeddelandet från rapporten.
+Om inget av ovanstående hjälper, [skickar du en supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) och anger butiks-URL:en och felmeddelandet från rapporten.
 
 ## Vanliga frågor
 
@@ -104,7 +104,7 @@ Du kan generera de 10 föregående rapporterna från din sida. Kontakta Adobe Co
 
 ### Vilken information behövs när du skickar in en supportanmälan?
 
-Ange domännamnet exakt som det skickas för [säkerhetsgenomsökningen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID och Creative_ID för molnet. Observera att Creative Cloud Project_ID inte krävs för Adobe Commerce lokalt.
+Ange domännamnet exakt som det skickas för [säkerhetsgenomsökningen](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID och Creative_ID för molnet. Observera att Creative Cloud Project_ID inte krävs för Adobe Commerce lokalt.
 
 ### Vad händer om jag tar bort min butik från skanning av skanningsverktyg?
 

@@ -36,7 +36,7 @@ Tidigare användes Jenkins-servern i vår molnmiljö för att köra [!DNL cron] 
 
 ## Lösning
 
-1. Kontakta [Adobe Commerce support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) om du vill att självhanterade [!DNL crons] ska aktiveras.
+1. Kontakta [Adobe Commerce support](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) om du vill att självhanterade [!DNL crons] ska aktiveras.
 1. Redigera filen `.magento.app.yaml` i rotkatalogen för koden för Adobe Commerce i grenen [!DNL Git]. Lägg till följande:
 
    ```yaml
@@ -71,5 +71,5 @@ Om du vill kontrollera om den självhanterade [!DNL cron] är aktiverad kör du 
 
 ## Relaterad läsning
 
-* [Konfigurera [!DNL cron] jobb](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) i utvecklardokumentationen
-* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook
+* [Konfigurera [!DNL cron] jobb](https://experienceleague.adobe.com/sv/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) i utvecklardokumentationen
+* [Metodtips för att ändra databastabeller](https://experienceleague.adobe.com/sv/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) i Commerce Implementeringspellbook

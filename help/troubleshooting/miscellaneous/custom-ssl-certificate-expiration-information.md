@@ -41,11 +41,11 @@ Adobe Commerce uppdaterar alla certifikat när de är 30 dagar från utgångsdat
 
 När en handlare väljer att använda sitt eget anpassade SSL-certifikat måste det uppdateras mer än 30 dagar innan certifikatet upphör att gälla för att säkerställa att det inte ersätts av ett internt Adobe Commerce SSL-certifikat.
 
-Om du befinner dig i en situation där din anpassade SSL har ersatts av vår interna SSL och du vill ersätta den med ditt uppdaterade anpassade SSL-certifikat, [skickar du en supportförfrågan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) till den plats du överförde dina nya certifikatfiler. Ange startdatum för den nya SSL:en. När vi har fått den här informationen kan vi gå vidare med att installera det nya SSL-certifikatet.
+Om du befinner dig i en situation där din anpassade SSL har ersatts av vår interna SSL och du vill ersätta den med ditt uppdaterade anpassade SSL-certifikat, [skickar du en supportförfrågan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) till den plats du överförde dina nya certifikatfiler. Ange startdatum för den nya SSL:en. När vi har fått den här informationen kan vi gå vidare med att installera det nya SSL-certifikatet.
 
 ## Relaterad läsning
 
 * [SSL-certifikat (TLS) för Magento Commerce Cloud: Frågor och svar](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) i vår kunskapsbas för support.
-* [Referens för kommandoradsverktyg: magento-cloud-certifikat:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) i utvecklardokumentationen.
-* [Starta checklistan](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist)i utvecklardokumentationen.
-* [Använd webbplatsövergripande analysverktyg](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) i vår användarhandbok.
+* [Referens för kommandoradsverktyg: magento-cloud-certifikat:add](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) i utvecklardokumentationen.
+* [Starta checklistan](https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/launch/checklist)i utvecklardokumentationen.
+* [Använd webbplatsövergripande analysverktyg](https://experienceleague.adobe.com/sv/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) i vår användarhandbok.

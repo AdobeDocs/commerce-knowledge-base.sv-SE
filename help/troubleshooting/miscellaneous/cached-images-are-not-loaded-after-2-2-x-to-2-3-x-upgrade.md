@@ -43,8 +43,8 @@ Problemet orsakas av den felaktiga Nginx-konfigurationsuppsättningen i `.magent
    * Starter Plan: korrigera filen själv och skicka ändringarna vidare.
    * Proffsplan:
    * Integrering: korrigera filen själv och skicka ändringarna.
-   * Mellanlagring och produktion: korrigera filen själv, skicka ändringarna och skapa en [Adobe Commerce-supportanmälan](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) som den ska tillämpas på.
+   * Mellanlagring och produktion: korrigera filen själv, skicka ändringarna och skapa en [Adobe Commerce-supportanmälan](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) som den ska tillämpas på.
 
-1. Aktivera Snabb bildoptimering i Commerce Admin (snabbast måste konfigureras före) enligt beskrivningen i <https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization>.
+1. Aktivera Snabb bildoptimering i Commerce Admin (snabbast måste konfigureras före) enligt beskrivningen i <https://experienceleague.adobe.com/sv/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization>.
 
-Om konfigurationen är korrekt, men problemet kvarstår, kan du fortsätta med undersökningen eller kontakta [Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Om konfigurationen är korrekt, men problemet kvarstår, kan du fortsätta med undersökningen eller kontakta [Adobe Commerce Support](https://experienceleague.adobe.com/sv/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
