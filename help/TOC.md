@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 688cdb1d0e76850aa953c602a78820fe6208ae41
+source-git-commit: 4d86db1115489e83e58d82464abed8fbd82fea25
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2096'
 ht-degree: 0%
 
 ---
@@ -220,9 +220,7 @@ ht-degree: 0%
    * [Identifiera och mäta avbrott för Adobe Commerce i molninfrastrukturen](/help/how-to/general/how-to-identify-outages.md)
    * [Ändra kontoägare för New Relic i molnet](/help/how-to/general/change-account-owner-for-new-relic-on-cloud.md)
    * [Ändra administratörs-URL på Adobe Commerce i molninfrastruktur](/help/how-to/general/change-magento-admin-url-on-cloud.md)
-   * [Konfigurera NPM för att kunna använda PWA Studio](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md)
    * [Ordna om molngrenar i Adobe Commerce](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
-   * [Hitta Adobe Commerce produktdokumentation](/help/how-to/general/how-to-find-magento-product-documentation.md)
    * [Omdirigera HTTP till HTTPS för alla sidor på Adobe Commerce om molninfrastruktur (Force TLS)](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Tilldela mer utrymme för MySQL i Adobe Commerce i molnet](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [Ändra öknings-ID för en databasenhet (order, faktura, kreditnota osv.) på en viss butik](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
