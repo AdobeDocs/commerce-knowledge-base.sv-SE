@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 4d86db1115489e83e58d82464abed8fbd82fea25
+source-git-commit: 14dbbb4e661ea66c79a8532eaa8ea6cb5e45d0c0
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2091'
 ht-degree: 0%
 
 ---
@@ -270,7 +270,6 @@ ht-degree: 0%
    * [Avskrivning av Adobe Commerce grundläggande betalningsintegreringar](/help/faq/general/depreciation-of-core-magento-payment-integrations.md)
    * [Kan jag installera program från tredje part i min molninstans?](/help/faq/general/can-i-install-third-party-applications-on-my-cloud-instance.md)
    * [Länka Magento.com och konton.magento.cloud-kontoinloggningar](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
-   * [Vanliga frågor och svar om insvepning med snabb ursprung](/help/faq/general/fastly-origin-cloaking-enablement-faq.md)
    * [Auto_increment-variabeln database inställd på &quot;3&quot; Adobe Commerce på vår molnprofessionella arkitektur](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
    * [Få tillgång till New Relic tjänster](/help/faq/general/access-new-relic-services.md)
    * [Web Content Accessibility for Adobe Commerce](/help/faq/general/accessibility.md)
