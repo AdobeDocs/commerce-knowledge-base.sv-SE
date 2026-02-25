@@ -59,6 +59,6 @@ Om du vill kontrollera vem som har en superanvändare i projektet kan du läsa [
 
 ## Rekommenderad läsning
 
-* [Adobe Commerce felsökare för distribution](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640).
+* [Adobe Commerce felsökare för distribution](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-29640).
 * [Det gick inte att komma åt Adobe Commerce i molnet: 403 Otillåten eller 404 Det gick inte att hitta felet vid distributionen](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
 * [Distributionen misslyckas med felet&quot;Det gick inte att skapa projektet: Byggkopplingen misslyckades med statuskoden 1&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
