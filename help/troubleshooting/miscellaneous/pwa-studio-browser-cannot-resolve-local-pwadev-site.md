@@ -1,19 +1,19 @@
 ---
-title: 'PWA Studio: webbläsaren kan inte matcha .local.pwadev-platsen'
-description: Den här artikeln innehåller en lösning för när ett annat program eller en process har redigerat din [värdfil](https://en.wikipedia.org/wiki/Hosts_(file)) och tagit bort posten för din projektdomän.
+title: 'PWA Studio: webbläsaren kan inte tolka .local.pwadev-webbplatsen'
+description: Den här artikeln innehåller en lösning för när ett annat program eller en process har redigerat din [värdfil](https://en.wikipedia.org/wiki/Hosts_(file\)) och tagit bort posten för din projektdomän.
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1d0d51209bdc02360c6f8527701cdf0da811659d
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
-# PWA Studio: webbläsaren kan inte matcha .local.pwadev-platsen
+# PWA Studio: webbläsaren kan inte tolka .local.pwadev-webbplatsen
 
-Den här artikeln innehåller en lösning för när ett annat program eller en annan process har redigerat din [värdfil](https://en.wikipedia.org/wiki/Hosts_(file\)) och tagit bort posten för din projektdomän.
+Den här artikeln innehåller en lösning för när ett annat program eller en annan process har redigerat din [värdfil]&#x200B;(https://en.wikipedia.org/wiki/Hosts_(file\)) och tagit bort posten för din projektdomän.
 
 ## Berörda produkter och versioner
 
@@ -31,11 +31,11 @@ Den här posten talar om för alla webbläsare på utvecklarens dator att titta 
 
 ## Lösning
 
-Du kan [redigera din värdfil](https://support.rackspace.com/how-to/modify-your-hosts-file/) manuellt om du vill lägga till posten igen, men du bör undersöka ditt andra installerade program för att se vad som har skrivit över den tidigare ändringen.
+Du kan [redigera din värdfil](https://docs.rackspace.com/docs/modify-your-hosts-file) manuellt om du vill lägga till posten igen, men du bör undersöka ditt andra installerade program för att se vad som har skrivit över den tidigare ändringen.
 
 ## Relaterad läsning i vår kunskapsbas
 
 * [PWA Studio: Självsignerat certifikatförtroendefel](https://support.magento.com/hc/en-us/articles/360038973172)
-* [PWA Studio: Webpack låser sig innan kompileringen påbörjas](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
+* [PWA Studio: Webpack låser sig innan kompileringen börjar](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
 * [PWA Studio: Felet &quot;Kan inte proxyvisa&quot; visas i webbläsaren](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
-* [PWA Studio: Valideringsfel när utvecklarläget körs](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
+* [PWA Studio: Valideringsfel vid körning av utvecklarläge](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
