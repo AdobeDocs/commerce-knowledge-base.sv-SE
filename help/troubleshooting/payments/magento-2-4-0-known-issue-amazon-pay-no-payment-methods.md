@@ -4,9 +4,9 @@ description: Den här artikeln innehåller en lösning på ett Adobe Commerce 2.
 exl-id: efd792c7-8970-4366-b9d1-4bf284ea96db
 feature: B2B, Orders, Payments
 role: Developer
-source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
+source-git-commit: 7705b6030d2f0877c228dae1707916ad38c9d587
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -43,5 +43,4 @@ En upplösning planeras för 2.4.1.
 ## Relaterade läsningar i vår kunskapsbas:
 
 * [Problem med Adobe Commerce 2.4.0: Felmeddelande vid val av lokal betalningsmetod för vissa länder vid utcheckning](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
-* [Adobe Commerce 2.4.0 B2B Admin kan inte lägga till en konfigurerbar produkt att citera](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
 * [Adobe Commerce 2.4.0: Braintree betalningsmetoder visas inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)

@@ -4,9 +4,9 @@ description: Den här artikeln handlar om en lösning på ett känt problem i Ad
 exl-id: de2eafb0-d03c-4ff8-9615-0f2676d95848
 feature: B2B, Categories, Checkout, Orders, Payments
 role: Developer
-source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
+source-git-commit: 7705b6030d2f0877c228dae1707916ad38c9d587
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,3 @@ Lösningen är att ignorera det visade felmeddelandet och fortsätta med betalni
 ## Relaterad läsning
 
 * [Adobe Commerce 2.4.0: Braintree betalningsmetoder visas inte i kassan för flera adresser](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
-* [Adobe Commerce 2.4.0 B2B Admin kan inte lägga till en konfigurerbar produkt att citera](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)

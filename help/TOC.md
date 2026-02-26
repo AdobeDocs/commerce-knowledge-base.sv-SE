@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 14dbbb4e661ea66c79a8532eaa8ea6cb5e45d0c0
+source-git-commit: bb56e1f5ae48d9a8c370b1d19588551d76779b66
 workflow-type: tm+mt
-source-wordcount: '2091'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,6 @@ ht-degree: 0%
       * [Okänd modul, Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
       * [Problem med beredskapskontroll av kron](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
       * [SQL-frågor: FÖRKLARA kostnadsfel](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
-      * [Adobe Commerce 2.4.0 B2B Admin kan inte lägga till en konfigurerbar produkt att citera](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
       * [Felsöka New Relic på Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
       * [Aktivera cache för att undvika prestandaförsämring](/help/troubleshooting/miscellaneous/enable-magento-cache-to-avoid-performance-degradation.md)
       * [Felsökningsguide för verktyget Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
