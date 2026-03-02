@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: caefdec695d553b2681e8677b200e687ea824d55
+source-git-commit: d1169e70188408f48207d9ca9b5a9ec3aaabeea0
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2043'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,6 @@ ht-degree: 0%
       * [Moduler saknas i Adobe Commerce 2.4.4](/help/troubleshooting/miscellaneous/what-happened-modules-bundled-adobe-commerce.md)
       * [Före detta teammedlemmar får Adobe Commerce molnmeddelanden via e-post](/help/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.md)
       * [Den nya domänen dirigeras om till standarddomänen](/help/troubleshooting/miscellaneous/new-domain-redirecting.md)
-      * [Det går inte att lägga till användare i Adobe Commerce molnprojekt](/help/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.md)
       * [Kron-stopp på grund av felkonfigurerad eller saknad [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
       * [[!DNL Admin]-inloggningen fungerar inte - den tillåtna maxstorleken för sessionen har överskridits](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
       * [[!DNL Google Tag Manager] har brutits av widgeten Live-sökning](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
@@ -224,10 +223,8 @@ ht-degree: 0%
    * [Ändra öknings-ID för en databasenhet (order, faktura, kreditnota osv.) på en viss butik](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [Konfigurera Fast för Starter-planen i molnet](/help/how-to/general/set-up-fastly-for-starter-plan-on-cloud.md)
    * [Adobe Commerce Intelligence Training Video: Cohort Report Builder](/help/how-to/general/mbi-training-video-cohort-report-builder.md)
-   * [Uppgradera MariaDB 10.0 till 10.2 för Adobe Commerce i molnet](/help/how-to/general/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud.md)
    * [Återställ miljö på Adobe Commerce i molninfrastruktur](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI: Återautentiserar integreringar](/help/how-to/general/mbi-reauthenticating-integrations.md)
-   * [Konfigurera snabbt DNS-inställningar i mellanlagrings- och produktionsmiljöer](/help/how-to/general/configure-fastly-dns-settings-on-staging-and-production-environments.md)
    * [Loggplatser (kataloger) för Pro-planen: Integration, Förproduktion, Produktion](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
    * [Adobe Commerce i molnet: kontrollera om det krävs en uppstorlek för värdinstanserna](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
    * [Bootstrap Adobe Commerce 2 i ett sandlådeskript](/help/how-to/general/bootstrap-magento-2-in-a-sandbox-script.md)
