@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: d1169e70188408f48207d9ca9b5a9ec3aaabeea0
+source-git-commit: 37d987f5eab3d229f0f3230c7da5a7a79c910dc4
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2036'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,6 @@ ht-degree: 0%
       * [Kundprofiler visas inte i Experience Platform](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio: webbläsaren kan inte tolka .local.pwadev-webbplatsen](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [Produktrekommendationer visas inte i Page Builder](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
-      * [Hög genomströmning för AJAX-begäranden orsakar dålig prestanda](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md)
       * [PWA Studio: Felet &quot;Kan inte proxyvisa&quot; visas i webbläsaren](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
       * [kör installationsproblem:static-content:distribuerat_version.txt](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
       * [Omdirigera tillbaka till inloggningsformuläret för Commerce Admin med felmeddelandet&quot;Ditt konto är tillfälligt inaktiverat&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
