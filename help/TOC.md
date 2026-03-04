@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 37d987f5eab3d229f0f3230c7da5a7a79c910dc4
+source-git-commit: 3386035e973f1f839a9ff8792b4c2dbd55262139
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2028'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,6 @@ ht-degree: 0%
    * [Tilldela mer utrymme för MySQL i Adobe Commerce i molnet](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [Ändra öknings-ID för en databasenhet (order, faktura, kreditnota osv.) på en viss butik](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [Konfigurera Fast för Starter-planen i molnet](/help/how-to/general/set-up-fastly-for-starter-plan-on-cloud.md)
-   * [Adobe Commerce Intelligence Training Video: Cohort Report Builder](/help/how-to/general/mbi-training-video-cohort-report-builder.md)
    * [Återställ miljö på Adobe Commerce i molninfrastruktur](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI: Återautentiserar integreringar](/help/how-to/general/mbi-reauthenticating-integrations.md)
    * [Loggplatser (kataloger) för Pro-planen: Integration, Förproduktion, Produktion](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
