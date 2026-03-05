@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 3386035e973f1f839a9ff8792b4c2dbd55262139
+source-git-commit: 0d15e1ccd8acd9bd20d2665a8e0581c034432609
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2018'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,6 @@ ht-degree: 0%
    * [Adobe Commerce i molnet: ändra autentiseringsnycklar och återdistribuera](/help/how-to/general/redeploy-with-another-key.md)
    * [Så här skapar du en&quot;scrubbed&quot;-dump på supportagentens begäran](/help/how-to/general/create-dump-for-support.md)
    * [MBI: Skapa och redigera avancerade beräknade kolumner](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-   * [Kontrollera diskutrymmesgränsen för Adobe Commerce i molninfrastrukturen](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md)
    * [SSL-certifikat (TLS) för Adobe Commerce i molninfrastruktur](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
    * [Kan inte komma åt den senaste Beta-versionen](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [Växla programläge](/help/how-to/general/switch-the-magento-mode.md)
