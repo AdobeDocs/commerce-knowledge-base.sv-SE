@@ -2,9 +2,9 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 0d15e1ccd8acd9bd20d2665a8e0581c034432609
+source-git-commit: 27fdd8be38a2507601aba7d52a0cd4348ec9ed6e
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2009'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,6 @@ ht-degree: 0%
    * [Återställa Adobe Commerce som fastnat i cron-jobb för molninfrastruktur manuellt](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Testa snabbt i produktionen om en Live Site använder samma domän](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [Identifiera och mäta avbrott för Adobe Commerce i molninfrastrukturen](/help/how-to/general/how-to-identify-outages.md)
-   * [Ändra administratörs-URL på Adobe Commerce i molninfrastruktur](/help/how-to/general/change-magento-admin-url-on-cloud.md)
    * [Ordna om molngrenar i Adobe Commerce](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
    * [Omdirigera HTTP till HTTPS för alla sidor på Adobe Commerce om molninfrastruktur (Force TLS)](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Tilldela mer utrymme för MySQL i Adobe Commerce i molnet](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
