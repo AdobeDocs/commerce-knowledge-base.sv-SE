@@ -2,10 +2,10 @@
 user-guide-title: Kunskapsbas för Adobe Commerce
 user-guide-description: Allt du behöver för att felsöka och underhålla din Commerce-butik.
 breadcrumb-title: Commerce KB
-source-git-commit: 8351ff2e2ac3db4488ad61dc38974e4ca79c6ce6
+source-git-commit: 9eb525793f5401cf23931b9cbff92ba92c1024c1
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 0%
+source-wordcount: '1996'
+ht-degree: 1%
 
 ---
 
@@ -92,7 +92,6 @@ ht-degree: 0%
       * [Problem med beredskapskontroll av kron](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
       * [SQL-frågor: FÖRKLARA kostnadsfel](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
       * [Felsöka New Relic på Adobe Commerce i molninfrastruktur](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
-      * [Aktivera cache för att undvika prestandaförsämring](/help/troubleshooting/miscellaneous/enable-magento-cache-to-avoid-performance-degradation.md)
       * [Felsökningsguide för verktyget Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
       * [Problem med beredskapskontroll av filbehörigheter](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
       * [Diagnostisera intäktsavvikelser i Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
